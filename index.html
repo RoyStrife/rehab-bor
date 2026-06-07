@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#0F1923">
+<title>Rehab Bor v11</title>
+<link rel="manifest" href="manifest.json">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,500;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     TOPBAR
+════════════════════════════════════════════════════════════════ -->
+<div id="topbar">
+  <div class="topbar-title">Rehab Bor</div>
+  <div id="topWeekBadge" class="topbar-week">Sem 1</div>
+  <div class="topbar-actions">
+    <button class="icon-btn" onclick="openTimer()">⏱</button>
+    <button class="icon-btn" onclick="switchTab('settings')">⚙</button>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     TABBAR
+════════════════════════════════════════════════════════════════ -->
+<div id="tabbar">
+  <button class="tab-btn active" id="tabToday"    onclick="switchTab('today')">Sesión</button>
+  <button class="tab-btn"        id="tabTracker"  onclick="switchTab('tracker')">Síntomas</button>
+  <button class="tab-btn"        id="tabWeights"  onclick="switchTab('weights')">Pesos</button>
+  <button class="tab-btn"        id="tabMob"      onclick="switchTab('mob')">Movilidad</button>
+  <button class="tab-btn"        id="tabDash"     onclick="switchTab('dash')">Dashboard</button>
+  <button class="tab-btn"        id="tabSettings" onclick="switchTab('settings')">Config</button>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     PANEL — SESIÓN
+════════════════════════════════════════════════════════════════ -->
+<div class="panel active" id="panelToday">
+  <div id="daySelector"></div>
+  <div id="suggBanner" style="display:none;background:var(--damber);border:1px solid var(--amber)33;border-radius:var(--rsl);padding:12px 14px;margin-bottom:12px"></div>
+  <div id="sessionHero"></div>
+  <div id="blocksContainer"></div>
+  <div class="bottom-pad"></div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     PANEL — SÍNTOMAS / TRACKER
+════════════════════════════════════════════════════════════════ -->
+<div class="panel" id="panelTracker">
+  <div class="sec-hdr">Semana actual</div>
+  <div class="week-strip" id="wstrip"></div>
+  <div class="metrics-grid">
+    <div class="metric-card"><div class="metric-val" id="mD">-</div><div class="metric-lbl">Días registrados</div></div>
+    <div class="metric-card"><div class="metric-val" id="mP">-</div><div class="metric-lbl">Dolor medio</div></div>
+    <div class="metric-card"><div class="metric-val" id="mS">-</div><div class="metric-lbl">Sesiones activas</div></div>
+    <div class="metric-card"><div class="metric-val" id="mI">-</div><div class="metric-lbl">Días con irradiación</div></div>
+  </div>
+
+  <div class="sec-hdr">Dolor por franja</div>
+  <div class="card">
+    <div style="display:flex;gap:0;border-bottom:1px solid var(--b5);margin-bottom:14px">
+      <button class="trk-tab active" id="trkTabM" onclick="switchTrkTab('m')">🌅 Mañana</button>
+      <button class="trk-tab"        id="trkTabD" onclick="switchTrkTab('d')">☀️ Mediodía</button>
+      <button class="trk-tab"        id="trkTabN" onclick="switchTrkTab('n')">🌙 Noche</button>
+    </div>
+    <!-- Mañana -->
+    <div class="trk-panel active" id="trkPanelM">
+      <label class="fld-lbl">Dolor (0-10)</label>
+      <div class="pain-scale" id="painRowM"></div>
+      <div class="pain-desc"  id="painDescM">Selecciona un valor</div>
+      <label class="fld-lbl" style="margin-top:10px">Tipo de síntoma</label>
+      <div class="chip-group" id="ptChipsM">
+        <span class="chip" onclick="toggleChip(this)">Dolor sordo</span>
+        <span class="chip" onclick="toggleChip(this)">Dolor agudo</span>
+        <span class="chip" onclick="toggleChip(this)">Entumecimiento</span>
+        <span class="chip" onclick="toggleChip(this)">Rigidez</span>
+        <span class="chip" onclick="toggleChip(this)">DOMS</span>
+      </div>
+      <label class="fld-lbl" style="margin-top:10px">Irradiación S1</label>
+      <div class="chip-group" id="irrChipsM">
+        <span class="chip active green" onclick="toggleChip(this)">Sin irradiación</span>
+        <span class="chip" onclick="toggleChip(this)">Leve (glúteo)</span>
+        <span class="chip" onclick="toggleChip(this)">Moderada (muslo)</span>
+        <span class="chip" onclick="toggleChip(this)">Intensa (pie)</span>
+      </div>
+    </div>
+    <!-- Mediodía -->
+    <div class="trk-panel" id="trkPanelD">
+      <label class="fld-lbl">Dolor (0-10)</label>
+      <div class="pain-scale" id="painRowD"></div>
+      <div class="pain-desc"  id="painDescD">Selecciona un valor</div>
+      <label class="fld-lbl" style="margin-top:10px">Tipo de síntoma</label>
+      <div class="chip-group" id="ptChipsD">
+        <span class="chip" onclick="toggleChip(this)">Dolor sordo</span>
+        <span class="chip" onclick="toggleChip(this)">Dolor agudo</span>
+        <span class="chip" onclick="toggleChip(this)">Entumecimiento</span>
+        <span class="chip" onclick="toggleChip(this)">Rigidez</span>
+        <span class="chip" onclick="toggleChip(this)">DOMS</span>
+      </div>
+      <label class="fld-lbl" style="margin-top:10px">Irradiación S1</label>
+      <div class="chip-group" id="irrChipsD">
+        <span class="chip active green" onclick="toggleChip(this)">Sin irradiación</span>
+        <span class="chip" onclick="toggleChip(this)">Leve (glúteo)</span>
+        <span class="chip" onclick="toggleChip(this)">Moderada (muslo)</span>
+        <span class="chip" onclick="toggleChip(this)">Intensa (pie)</span>
+      </div>
+    </div>
+    <!-- Noche -->
+    <div class="trk-panel" id="trkPanelN">
+      <label class="fld-lbl">Dolor (0-10)</label>
+      <div class="pain-scale" id="painRowN"></div>
+      <div class="pain-desc"  id="painDescN">Selecciona un valor</div>
+      <label class="fld-lbl" style="margin-top:10px">Tipo de síntoma</label>
+      <div class="chip-group" id="ptChipsN">
+        <span class="chip" onclick="toggleChip(this)">Dolor sordo</span>
+        <span class="chip" onclick="toggleChip(this)">Dolor agudo</span>
+        <span class="chip" onclick="toggleChip(this)">Entumecimiento</span>
+        <span class="chip" onclick="toggleChip(this)">Rigidez</span>
+        <span class="chip" onclick="toggleChip(this)">DOMS</span>
+      </div>
+      <label class="fld-lbl" style="margin-top:10px">Irradiación S1</label>
+      <div class="chip-group" id="irrChipsN">
+        <span class="chip active green" onclick="toggleChip(this)">Sin irradiación</span>
+        <span class="chip" onclick="toggleChip(this)">Leve (glúteo)</span>
+        <span class="chip" onclick="toggleChip(this)">Moderada (muslo)</span>
+        <span class="chip" onclick="toggleChip(this)">Intensa (pie)</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="sec-hdr">Contexto del día</div>
+  <div class="card">
+    <label class="fld-lbl">Ubicación del dolor</label>
+    <div class="body-map" id="bodyMap">
+      <div class="body-zone" onclick="toggleZone(this)" data-z="lumbar-central"><span class="body-zone-icon">⬛</span><span class="body-zone-lbl">Lumbar central</span></div>
+      <div class="body-zone" onclick="toggleZone(this)" data-z="lumbar-izq"><span class="body-zone-icon">◀</span><span class="body-zone-lbl">Lumbar izquierdo</span></div>
+      <div class="body-zone" onclick="toggleZone(this)" data-z="lumbar-der"><span class="body-zone-icon">▶</span><span class="body-zone-lbl">Lumbar derecho</span></div>
+    </div>
+    <label class="fld-lbl" style="margin-top:10px">Irradiación</label>
+    <div class="body-map" id="irrMap">
+      <div class="body-zone" onclick="toggleZone(this)" data-z="gluteo-izq"><span class="body-zone-icon">◀</span><span class="body-zone-lbl">Glúteo izquierdo</span></div>
+      <div class="body-zone" onclick="toggleZone(this)" data-z="gluteo-der"><span class="body-zone-icon">▶</span><span class="body-zone-lbl">Glúteo derecho</span></div>
+      <div class="body-zone" onclick="toggleZone(this)" data-z="pierna-izq"><span class="body-zone-icon">◀</span><span class="body-zone-lbl">Pierna / pie izquierdo</span></div>
+    </div>
+    <label class="fld-lbl" style="margin-top:10px">Rigidez matutina</label>
+    <div class="chip-group" id="stiffRow">
+      <span class="chip active green" onclick="toggleChip(this)">Sin rigidez</span>
+      <span class="chip" onclick="toggleChip(this)">&lt;15 min</span>
+      <span class="chip" onclick="toggleChip(this)">15-30 min</span>
+      <span class="chip" onclick="toggleChip(this)">&gt;30 min</span>
+    </div>
+    <label class="fld-lbl" style="margin-top:10px">Actividad del día</label>
+    <div class="chip-group" id="actChips">
+      <span class="chip" onclick="toggleChip(this)">Gym</span>
+      <span class="chip" onclick="toggleChip(this)">Piscina</span>
+      <span class="chip" onclick="toggleChip(this)">Trabajo oficina</span>
+      <span class="chip" onclick="toggleChip(this)">Trabajo remoto</span>
+      <span class="chip" onclick="toggleChip(this)">Conducción larga</span>
+      <span class="chip" onclick="toggleChip(this)">Reposo</span>
+    </div>
+    <label class="fld-lbl" style="margin-top:10px">Notas del día</label>
+    <textarea class="note-field" id="dayNote" placeholder="Observaciones, reacciones, factores..."></textarea>
+  </div>
+
+  <div class="sec-hdr">Criterios Fase 3</div>
+  <div class="card">
+    <div class="crit-count" id="critCount">0 / 9 cumplidos</div>
+    <div class="crit-progress"><div class="crit-progress-bar" id="critBar" style="width:0%"></div></div>
+    <div id="criteriaList"></div>
+  </div>
+  <button class="btn-primary" style="margin-top:8px" onclick="saveDayEntry()">Guardar registro del día</button>
+  <div class="bottom-pad"></div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     PANEL — PESOS
+════════════════════════════════════════════════════════════════ -->
+<div class="panel" id="panelWeights">
+  <div class="sec-hdr">Registro de cargas</div>
+  <div id="wtSummary"></div>
+  <div class="bottom-pad"></div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     PANEL — MOVILIDAD (nuevo)
+════════════════════════════════════════════════════════════════ -->
+<div class="panel" id="panelMob">
+  <div class="sec-hdr">Movilidad de Cadera</div>
+  <div id="mobCaderaContainer"></div>
+  <div class="sec-hdr">Movilidad de Espalda</div>
+  <div id="mobEspaldaContainer"></div>
+  <div class="sec-hdr">Estabilidad, Fuerza y Foam Roller</div>
+  <div id="mobFoamContainer"></div>
+  <div class="bottom-pad"></div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     PANEL — DASHBOARD
+════════════════════════════════════════════════════════════════ -->
+<div class="panel" id="panelDash">
+  <div class="sec-hdr">Resumen de progreso</div>
+  <div class="dash-row">
+    <div class="dash-card"><div class="dash-big" id="dWk">-</div><div class="dash-lbl">Semana F2</div></div>
+    <div class="dash-card"><div class="dash-big" id="dDays">-</div><div class="dash-lbl">Días totales</div></div>
+    <div class="dash-card"><div class="dash-big" id="dStreak">-</div><div class="dash-lbl">Racha actual</div></div>
+  </div>
+  <div class="sec-hdr">Dolor (últimos 14 días)</div>
+  <div class="card"><div class="pain-chart" id="painChart"></div></div>
+  <div class="sec-hdr">Cargas registradas</div>
+  <div class="card">
+    <table class="wt-table" id="wtTable">
+      <thead><tr><th>Ejercicio</th><th>Sem</th><th>65%</th><th>Estado</th></tr></thead>
+      <tbody id="wtTableBody"></tbody>
+    </table>
+  </div>
+  <div class="sec-hdr">Informe semanal</div>
+  <div class="card">
+    <div class="report-box" id="reportBox">Genera el informe con el botón de abajo.</div>
+    <button class="btn-secondary" style="margin-top:8px" onclick="generateReport()">Generar informe</button>
+  </div>
+  <div class="bottom-pad"></div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     PANEL — CONFIG / SETTINGS
+════════════════════════════════════════════════════════════════ -->
+<div class="panel" id="panelSettings">
+  <div class="sec-hdr">Estado de la app</div>
+  <div class="card"><pre class="report-box" id="appStatus"></pre></div>
+
+  <div class="sec-hdr">Semana del programa</div>
+  <div class="card" style="display:flex;align-items:center;gap:12px">
+    <button class="btn-secondary" style="width:44px;padding:8px" onclick="changeWeek(-1)">−</button>
+    <div style="flex:1;text-align:center">
+      <div style="font-size:28px;font-weight:700;font-family:var(--mono);color:var(--blue)" id="weekDisplay">8</div>
+      <div style="font-size:11px;color:var(--text3)">semana actual F2</div>
+    </div>
+    <button class="btn-secondary" style="width:44px;padding:8px" onclick="changeWeek(1)">+</button>
+  </div>
+
+  <div class="sec-hdr">Sync con Google Sheets</div>
+  <div class="sync-bar">
+    <div class="sync-status"><span class="sync-dot" id="syncDot"></span><span id="syncStatus">Sin configurar</span></div>
+    <button class="btn-sync" onclick="testSync()">Probar</button>
+  </div>
+  <div class="sheets-config">
+    <label class="fld-lbl">URL del Apps Script</label>
+    <input type="url" id="sheetsUrl" placeholder="https://script.google.com/macros/s/...">
+    <div class="help-text">Despliega el script como app web y pega la URL aquí. Los datos se <b>suben</b> automáticamente cada 3 segundos tras cualquier cambio (copia de seguridad). Si pierdes los datos del navegador, usa "Restaurar" para descargarlos de vuelta.</div>
+    <div style="display:flex;gap:8px;margin-top:10px">
+      <button class="btn-primary" style="flex:1" onclick="saveUrl()">Guardar URL</button>
+      <button class="btn-secondary" style="flex:1" onclick="restoreFromSheets()">⬇ Restaurar de Sheets</button>
+    </div>
+  </div>
+
+  <div class="sec-hdr">Datos</div>
+  <div style="display:flex;flex-direction:column;gap:8px">
+    <button class="btn-secondary" onclick="exportLocal()">⬇ Exportar JSON local</button>
+    <button class="btn-secondary" onclick="importLocal()">⬆ Importar JSON</button>
+    <button class="btn-danger"    onclick="confirmClearData()">⚠ Borrar todos los datos</button>
+  </div>
+  <input type="file" id="importFileInput" accept=".json" style="display:none" onchange="handleImport(event)">
+  <div class="bottom-pad"></div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     MODAL — TIMER
+════════════════════════════════════════════════════════════════ -->
+<div class="modal" id="timerModal" style="display:none">
+  <div class="modal-inner" style="max-width:400px">
+    <div class="modal-hdr">
+      <div class="modal-ttl">⏱ Temporizador</div>
+      <button class="modal-close" onclick="closeTimer()">✕</button>
+    </div>
+    <div id="tDisp">01:00</div>
+    <div class="timer-presets">
+      <button class="t-preset" onclick="setTimer(30)">30s</button>
+      <button class="t-preset" onclick="setTimer(45)">45s</button>
+      <button class="t-preset" onclick="setTimer(60)">1 min</button>
+      <button class="t-preset" onclick="setTimer(90)">90s</button>
+      <button class="t-preset" onclick="setTimer(120)">2 min</button>
+      <button class="t-preset" onclick="setTimer(180)">3 min</button>
+      <button class="t-preset" onclick="setTimer(300)">5 min</button>
+      <button class="t-preset" onclick="setTimer(480)">8 min</button>
+    </div>
+    <div class="timer-btns">
+      <button class="btn-primary"   id="tStartBtn" onclick="toggleTimer()">Iniciar</button>
+      <button class="btn-secondary" onclick="resetTimer()">Reset</button>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     MODAL — EJERCICIO (ficha detalle)
+════════════════════════════════════════════════════════════════ -->
+<div class="modal" id="exModal" style="display:none">
+  <div class="modal-inner">
+    <div class="modal-hdr">
+      <div class="modal-ttl" id="exModalTitle">Ejercicio</div>
+      <button class="modal-close" onclick="closeExModal()">✕</button>
+    </div>
+    <div class="ex-modal-tabs">
+      <button class="ex-modal-tab active" onclick="switchExTab('info')">Info</button>
+      <button class="ex-modal-tab"        onclick="switchExTab('pasos')">Pasos</button>
+      <button class="ex-modal-tab"        onclick="switchExTab('errores')">Errores</button>
+      <button class="ex-modal-tab"        onclick="switchExTab('variantes')">Variantes</button>
+    </div>
+    <div class="ex-modal-panel active" id="exTabInfo">
+      <p class="ex-section-title">Categoría</p>
+      <p class="ex-desc" id="exCat"></p>
+      <p class="ex-section-title">Descripción</p>
+      <p class="ex-desc" id="exDesc"></p>
+      <p class="ex-section-title">Posición inicial</p>
+      <p class="ex-desc" id="exPos"></p>
+      <p class="ex-section-title">Nota columna</p>
+      <div class="ex-columna-box" id="exCol"></div>
+    </div>
+    <div class="ex-modal-panel" id="exTabPasos">
+      <ol class="ex-steps" id="exSteps"></ol>
+    </div>
+    <div class="ex-modal-panel" id="exTabErrores">
+      <ul class="ex-errors" id="exErrors"></ul>
+    </div>
+    <div class="ex-modal-panel" id="exTabVariantes">
+      <div id="exVariantesList"></div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     MODAL — PLAN (selector de sesión manual)
+════════════════════════════════════════════════════════════════ -->
+<div id="planModal" style="display:none;position:fixed;inset:0;z-index:500;background:#00000088;align-items:flex-end;justify-content:center">
+  <div style="background:var(--bg2);border-radius:16px 16px 0 0;padding:20px 16px 36px;width:100%;max-width:480px;max-height:80vh;overflow-y:auto">
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:14px">
+      <div id="planModalTitle" style="font-size:15px;font-weight:700;color:var(--text)"></div>
+      <button onclick="closePlanModal()" style="background:var(--bg3);border:1px solid var(--b5);color:var(--text2);width:30px;height:30px;border-radius:8px;cursor:pointer;font-size:16px">✕</button>
+    </div>
+    <div style="font-size:10px;color:var(--text3);font-family:var(--mono);margin-bottom:10px">MANTÉN PULSADO UN DÍA PARA ASIGNAR · PULSA PARA NAVEGAR</div>
+    <div id="planModalBody"></div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     SCRIPTS — orden de carga obligatorio
+════════════════════════════════════════════════════════════════ -->
+<script src="data.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
