@@ -122,29 +122,31 @@ const MOB_BLOCK_B_MIE = {
 };
 
 const MOB_BLOCK_B_JUE = {
-  id: 'B', name: 'Calentamiento — Pecho + Core', dur: '15 min', color: '#1A6E3A',
+  id: 'B', name: 'Calentamiento — Empuje/Tiro + Manguito', dur: '18 min', color: '#1A6E3A',
   exs: [
     { n: 'Heel sit', d: '2x45 seg', note: 'Primero · Tronco erguido estricto · Sin retroversion lumbar · Cuadriceps activos frenando', wid: 'heel-sit-ex' },
     { n: 'Cat-cow toracico', d: '2x8 lentos', note: 'Solo movimiento toracico · Lumbar estable', wid: 'cat-cow' },
     { n: 'Rotacion toracica en suelo', d: '2x6 cada lado', note: 'Hombros en suelo · Amplitud sin dolor', wid: 'rotacion-toracica' },
     { n: 'Extension toracica en foam roller', d: '2 min T4-T10', wid: 'ext-toracica-foam', note: 'Solo toracico — nunca lumbar · Prepara el arco de press' },
+    { n: 'Dislocaciones con banda elastica', d: '2x10 amplitud comoda', wid: 'dislocaciones', note: 'Movilidad de hombro · Prepara overhead, press y jalon · Solo rango sin dolor' },
+    { n: 'Apertura de pecho con banda', d: '2x10', note: 'Apertura pectoral + retraccion escapular · Patron especifico pre-press y pre-tiro', wid: 'retraccion-escapular' },
     { n: 'Retraccion escapular activa', d: '2x10 — pausa 2 seg', wid: 'retraccion-escapular', note: 'Prepara escapula para remo y press · Codos a 90' },
+    { n: 'Rotacion externa con banda (manguito)', d: '2x12 cada lado', note: 'Codo a 90° pegado al costado · Pre-activacion infraespinoso (pre-press/pre-remo)', wid: 'ext-rotation-banda', variant: 'S1-2: banda muy ligera ROM parcial · S3-4: banda ligera ROM completo · S5-6: banda media pausa 1s · S7+: banda media + exc 3s' },
+    { n: 'Rotacion interna con banda (manguito)', d: '2x12 cada lado', note: 'Mismo agarre · Direccion opuesta · Equilibra ratio rotadores · Pre-activacion subescapular', wid: 'int-rotation-banda', variant: 'S1-2: banda muy ligera · S3-4: banda ligera ROM completo · S5-6: banda media · S7+: banda media exc 3s' },
+    { n: 'Prone Y con banda ligera', d: '2x10', note: 'Brazos en Y 135° · Trapecio inferior y supraespinoso · Salud de hombro pre-empuje', wid: 'prone-y-banda', variant: 'S1-2: sin banda — solo activacion · S3-4: banda muy ligera · S5-6: banda ligera pausa 1s arriba · S7+: + T (brazos a 90°)' },
     { n: 'Deadbug activacion — un miembro', d: '2x6 cada lado', note: 'Core pre-sesion · Lumbar pegada al suelo', wid: 'dead-bug' },
   ]
 };
 
 const MOB_BLOCK_B_VIE = {
-  id: 'B', name: 'Calentamiento — Squat + Hombro', dur: '18 min', color: '#1A6E3A',
+  id: 'B', name: 'Calentamiento — Squat + Cadera', dur: '15 min', color: '#1A6E3A',
   exs: [
-    { n: 'Heel sit', d: '2x45 seg', note: 'Primero · Tronco erguido estricto · Sin retroversion · Pre-squat y bulgara', wid: 'heel-sit-ex' },
-    { n: 'Couch stretch', d: '2x40 seg cada lado', note: 'Psoas pre-squat y pre-bulgara · Rodilla trasera en suelo junto a pared', variant: 'S1-2: tronco erguido manos en rodilla delantera · S3-4: manos en cadera · S5-6: tronco ligeramente atras · S7+: pie en pared' },
+    { n: 'Heel sit', d: '2x45 seg', note: 'Primero · Tronco erguido estricto · Sin retroversion · Pre-squat y pierna', wid: 'heel-sit-ex' },
+    { n: 'Couch stretch', d: '2x40 seg cada lado', note: 'Psoas pre-squat y pre-split squat · Rodilla trasera en suelo junto a pared', variant: 'S1-2: tronco erguido manos en rodilla delantera · S3-4: manos en cadera · S5-6: tronco ligeramente atras · S7+: pie en pared' },
+    { n: 'Hip CARs', d: '2x5 cada lado', note: 'Movilidad de cadera en todo el rango · Tronco estatico · Patron especifico pre-sentadilla', wid: 'hip-cars' },
     { n: 'Sentadilla bodyweight con pausa', d: '2x8 — pausa 2 seg abajo', note: 'Patron squat sin carga · Activa cadena anterior', wid: 'sentadilla-bw' },
     { n: 'Leg swing frontal y lateral', d: '2x8 cada direccion cada lado', wid: 'leg-swing', note: 'Movilidad flexores cadera + abductores · Apoyo en pared' },
-    { n: 'Rotacion toracica en suelo', d: '2x6 cada lado', note: 'Movilidad pre-hombro posterior', wid: 'rotacion-toracica' },
-    { n: 'Rotacion externa con banda (manguito)', d: '2x12 cada lado', note: 'Codo a 90° pegado al costado · Solo rotacion externa · Sin compensar con el tronco · Pre-activacion infraespinoso', wid: 'ext-rotation-banda', variant: 'S1-2: banda muy ligera ROM parcial · S3-4: banda ligera ROM completo · S5-6: banda media pausa 1s en rotacion maxima · S7+: banda media + exc 3s' },
-    { n: 'Rotacion interna con banda (manguito)', d: '2x12 cada lado', note: 'Mismo agarre · Direccion opuesta · Equilibra ratio rotadores · Pre-activacion subescapular', wid: 'int-rotation-banda', variant: 'S1-2: banda muy ligera · S3-4: banda ligera ROM completo · S5-6: banda media · S7+: banda media exc 3s' },
-    { n: 'Prone Y con banda ligera', d: '2x10', note: 'Tumbado boca abajo o inclinado en banco · Brazos en Y — 135° · Trapecio inferior y supraespinoso · Sin elevar cabeza', wid: 'prone-y-banda', variant: 'S1-2: sin banda — solo activacion · S3-4: banda muy ligera 2x10 · S5-6: banda ligera pausa 1s arriba · S7+: banda ligera + T (brazos a 90°) misma serie' },
-    { n: 'Pajaros con banda ligera', d: '2x10', note: 'Activacion deltoides posterior pre-sesion · Sin fatiga', wid: 'pajaros' },
+    { n: 'Rotacion toracica en suelo', d: '2x6 cada lado', note: 'Movilidad general de columna alta · Lumbar estable', wid: 'rotacion-toracica' },
   ]
 };
 
