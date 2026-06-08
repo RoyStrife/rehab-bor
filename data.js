@@ -265,6 +265,17 @@ const POOL_UNIFICADA = {
   ]
 };
 
+// ─── BLOQUE CORE pre-piscina — colgado + planchas variadas (Mar/Vie) ───────
+const BLOCK_CORE_PISCINA = {
+  id: 'E', name: 'Core — colgado + planchas (pre-piscina)', dur: '15-20 min', color: '#993C1D',
+  exs: [
+    { n: 'Hollow body hang colgado en barra', d: '3x10-15 seg', note: 'Colgado de la barra en posicion hollow (lumbar neutra, pelvis en retroversion suave) · Doble efecto: core anti-extension + traccion descompresiva del colgado · Solo sin irradiacion · Soltar si falla el agarre o aparece irradiacion S1', wid: 'hollow-body', variant: 'S1-2: dead hang pasivo 3x20s — solo descompresion · S3-4: rodillas recogidas (tuck) 3x10s · S5-6: tuck + extension parcial 3x12s · S7+: hollow hang piernas extendidas 3x10-15s · F3: con elevacion de rodillas controlada' },
+    { n: 'Plancha anterior', d: '3x30-45 seg', note: 'Empujar el suelo con los codos · Gluteo y core activos · Lumbar neutra — ni hundida ni elevada', wid: 'plank-anterior', variant: 'S1-2: 20s rodillas · S3-4: 30s completo · S5-6: 45s · S7+: elevacion alterna de brazo/pierna' },
+    { n: 'Plancha lateral', d: '3x25-35 seg cada lado', note: 'Cadera elevada · Cuerpo en linea · Anti-flexion lateral', wid: 'plank-lateral', variant: 'S1-2: rodillas 20s · S3-4: completo 25s · S5-6: 35s · S7+: abduccion de pierna superior' },
+    { n: 'Copenhagen plank (plancha de aductores)', d: '3x15-25 seg cada lado', note: 'Variada · Pie/rodilla superior apoyado en banco · Aductor + oblicuo + estabilizador de cadera · Pelvis nivelada · Progresar muy gradual', wid: 'copenhagen-plank', variant: 'S1-2: rodilla apoyada en banco (palanca corta) 3x15s · S3-4: rodilla, mas tiempo 3x20s · S5-6: pie en banco palanca larga 3x15s · S7+: pie en banco + elevacion de pierna libre' },
+  ]
+};
+
 const SESSIONS = {
 
   // ─── 1 — LUNES: Cadena posterior + Core + Biceps ──────────────
@@ -327,6 +338,7 @@ const SESSIONS = {
     blocks: [
       MOB_BLOCK_A1,
       BLOCK_ESTAB_PIERNA,
+      BLOCK_CORE_PISCINA,
       POOL_UNIFICADA,
     ]
   },
@@ -389,6 +401,7 @@ const SESSIONS = {
     blocks: [
       MOB_BLOCK_A1,
       BLOCK_ESTAB_PIERNA,
+      BLOCK_CORE_PISCINA,
       POOL_UNIFICADA,
     ]
   },
