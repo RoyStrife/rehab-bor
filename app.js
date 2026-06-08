@@ -290,7 +290,7 @@ function refreshWW(wid){const old=document.getElementById('ww_'+wid);if(old){con
 function renderWtSummary(){
   const el=document.getElementById('wtSummary');if(!el)return;
   const wts=loadWeights();
-  const DN={0:'Dom',1:'Lun',2:'Mar',4:'Jue',5:'Vie'};
+  const DN={0:'Dom',1:'Lun',2:'Mar',4:'Jue',5:'Vie',6:'Sab'};
   const SC={green:'#3B9A6A',amber:'#D4831A',red:'#C94040'};
   const SB={green:'#132A1E',amber:'#2A1E0A',red:'#2A1010'};
   const SI={green:'+',amber:'=',red:'-'};
