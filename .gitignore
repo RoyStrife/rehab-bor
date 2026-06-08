@@ -1,6 +1,5 @@
-# Configuración local de Claude Code (personal, no se sube)
-.claude/settings.local.json
-.claude/launch.json
+# Configuración de Claude Code (personal, no se sube)
+.claude/
 
 # Sistema
 Thumbs.db
