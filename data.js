@@ -335,7 +335,7 @@ const SESSIONS = {
   4: {
     name: 'Jueves', tag: 'Empuje + Tiro', neural: false,
     dur: '110 min', loc: 'Gym', homeLoc: 'Casa',
-    keyExs: 'Jalon ancho · Remo maquina · Pec deck · Fondos asistidos',
+    keyExs: 'Scapular pull (descompresion) · Jalon ancho · Remo maquina · Pec deck · Fondos asistidos',
     cardio: 'Bici estatica — 15-20 min FC 110-120',
     blocks: [
       MOB_BLOCK_A1,
@@ -348,8 +348,9 @@ const SESSIONS = {
         ]
       },
       {
-        id: 'D', name: 'Empuje + Tiro (sin carga axial)', dur: '45 min', color: '#3C3489',
+        id: 'D', name: 'Empuje + Tiro (sin carga axial)', dur: '50 min', color: '#3C3489',
         exs: [
+          { n: 'Scapular pull en barra', d: '3x8-10', note: 'PRIMERO — descompresion + activacion · Colgado de la barra · Solo depresion y retraccion escapular · Sin flexion de codo · Traccion descompresiva L4-S1 (aprovecha el colgado para descomprimir) · PARAR si aparece irradiacion S1 al colgar', wid: 'scapular-pull', variant: 'S1-2: banda de suspension — pie en banda, carga parcial · S3-4: barra agarre ancho — ROM completo sin flexion codo · S5-6: pausa 2s en retraccion maxima · S7+: lastre ligero tobillera 1-2 kg' },
           { n: 'Jalon al pecho agarre ancho', d: '4x10 — excentrico 3 seg', note: 'Escapulas activas · Sin carga axial', wid: 'jalon-ancho', gym: true, variant: 'S1-2: 50% exc 4s · S3-4: 60% exc 3s · S5-6: 70% pausa abajo · S7+: dominada asistida',
             homeAlt: { n: 'Remo invertido en mesa (Australian row)', d: '4x10 — excentrico 3 seg', note: 'Tumbado bajo mesa · Agarre ancho · Escapulas activas · Sustituto directo del jalon en casa', variant: 'S1-2: rodillas muy flexionadas carga parcial · S3-4: rodillas a 90° exc 3s · S5-6: piernas extendidas · S7+: pies elevados en silla' } },
           { n: 'Remo en maquina sentado', d: '4x10 codos pegados', wid: 'remo-maquina', note: 'No flexionar columna al tirar · Respaldo de pecho si la maquina lo tiene', gym: true, variant: 'S1-2: carga ligera pausa 1s escapulas retraidas · S3-4: carga media pausa 1s · S5-6: carga alta exc 3s · S7+: carga alta pausa + exc 4s',
