@@ -516,7 +516,7 @@ const WEEK = {
     pool: 'Estabilidad + gluteo + sentadilla ligera (tierra) · Nado suave adaptable (espalda+crol+braza)',
     blocks: [
       MOB_BLOCK_A1,
-      BLOCK_ESTAB_PIERNA,
+      { id: 'D', name: 'Estabilidad + pierna ligera', dur: '25-30 min', color: '#0F6E56', exIds: ['HIP-A','HIP-G','GLUTE-B','GLUTE-A','GLUTE-C','GLUTE-D','QUAD-H','QUAD-G'] },
       { id: 'E', name: 'Core — general 3 planos (pre-piscina)', dur: '15-20 min', color: '#993C1D', exIds: ['CORE-F','CORE-G2','CORE-D','CORE-I'] },
       POOL_UNIFICADA,
     ]
@@ -552,7 +552,7 @@ const WEEK = {
     pool: 'Estabilidad + gluteo + sentadilla ligera (tierra) · Nado suave adaptable (espalda+crol+braza)',
     blocks: [
       MOB_BLOCK_A1,
-      BLOCK_ESTAB_PIERNA,
+      { id: 'D', name: 'Estabilidad + pierna ligera', dur: '25-30 min', color: '#0F6E56', exIds: ['HIP-A','HIP-G','GLUTE-B','GLUTE-A','GLUTE-C','GLUTE-D','QUAD-H','QUAD-G'] },
       { id: 'E', name: 'Core — general 3 planos (pre-piscina)', dur: '15-20 min', color: '#993C1D', exIds: ['CORE-F','CORE-G2','CORE-H','CORE-I'] },
       POOL_UNIFICADA,
     ]
