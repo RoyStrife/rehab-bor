@@ -468,11 +468,7 @@ const CAT = {};
 for (const [pfx, grp] of [['CORE',CORE],['HIP',HIP],['HINGE',HINGE],['PULL',PULL],['PUSH',PUSH],['SHOULDER',SHOULDER],['ARM',ARM],['QUAD',QUAD],['GLUTE',GLUTE],['CARD',CARD]])
   for (const k in grp) CAT[pfx + '-' + k] = grp[k];
 
-// Lookup combinado con IDs GLOBALES prefijados por grupo (CORE-A, HIP-B, ...)
-// Futuros grupos se anaden a este array.
-const CAT = {};
-for (const [pfx, grp] of [['CORE', CORE], ['HIP', HIP]])
-  for (const k in grp) CAT[pfx + '-' + k] = grp[k];
+// (CAT ya construido arriba con los 10 grupos)
 
 // Resolver: expande bloques con exIds (catalogo) o los pasa tal cual si ya tienen exs
 function expandBlock(b){
