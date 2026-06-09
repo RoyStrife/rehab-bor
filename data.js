@@ -256,14 +256,12 @@ const BLOCK_ESTAB_PIERNA = {
 
 // ─── BLOQUE PISCINA UNIFICADO — adaptable semanalmente (Mar/Vie) ───────────
 const POOL_UNIFICADA = {
-  id: 'G', name: 'Piscina — Largos adaptables + descompresion', dur: '35-40 min', color: '#185FA5',
+  id: 'G', name: 'Piscina — Largos adaptables + descompresion', dur: '25-35 min', color: '#185FA5',
   exs: [
     { n: 'Traccion lumbar en barra', d: '3x30 seg', note: 'Descompresion inicial · Rodillas recogidas · Dejar que el agua tire · Hombros relajados', wid: 'traccion-barra-agua' },
-    { n: 'Marcha / aquajogging suave', d: '8-10 min ritmo comodo', note: 'Cardio bajo impacto · Core activo · SIN sprints · Calentamiento del nado', wid: 'aqua-jogging', variant: 'S1-2: 6 min muy suave · S3-4: 8 min suave · S5-6: 10 min ritmo comodo · S7+: 10 min con cambios de ritmo suaves' },
     { n: 'Bloque espalda — tecnica (lo mas descompresivo)', d: 'Ver variante · Estilo principal L5-S1', note: 'Posicion supina la mas descompresiva · Bilateral por defecto · Empezar siempre por espalda', variant: 'S1-2: 6x50m espalda basica descanso 30s · S3-4: 8x50m espalda descanso 20s · S5-6: 4x100m espalda · S7+: 3x150m espalda + 2x25m sprint · F3: 400m continuo + 4x25m sprint' },
     { n: 'Bloque crol con pull buoy', d: 'Ver variante · Ritmo comodo', note: 'Pull buoy para descargar piernas · Respiracion bilateral cada 3 brazadas', variant: 'S1-2: 4x50m pull buoy descanso 30s · S3-4: 6x50m pull buoy descanso 20s · S5-6: 4x100m alternando · S7+: 3x150m · F3: 400m continuo' },
     { n: 'Bloque braza con pull buoy (sin patada)', d: 'Ver variante · Pull buoy obligatorio', note: 'SOLO brazada · Pull buoy fija las piernas · Sin patada de braza — evita extension lumbar activa', variant: 'S1-2: 4x25m descanso 30s · S3-4: 6x25m descanso 20s · S5-6: 4x50m · S7+: 2x100m · F3: 200m continuo' },
-    { n: 'Cierre — flotacion supina + respiracion', d: '3-5 min', note: 'Descompresion total · Columna sin carga · Respiracion diafragmatica lenta · Activacion parasimpatica', wid: 'flotacion-supino' },
   ]
 };
 
