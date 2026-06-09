@@ -344,7 +344,129 @@ const HIP = {
   'F': { grupo:'hip', plano:'flexibilidad-aductor', equipo:'bw',
     n:'Estiramiento de cadera en suelo (straddle / split modificado)', d:'2x40 seg', note:'Sentado en el suelo en straddle o split modificado · Elonga los aductores · Aumenta la flexibilidad progresivamente · No forzar, respiracion lenta',
     variant:'S1-2: straddle estrecho manos en suelo · S3-4: straddle medio inclinacion suave · S5-6: straddle amplio inclinacion adelante · S7+: split modificado progresivo' },
+  'G': { grupo:'hip', plano:'movilidad-rotacion', equipo:'bw',
+    n:'90/90 stretch activo', d:'2x40 seg cada lado', note:'Rotacion interna/externa de cadera · Pelvis neutra', wid:'90-90',
+    variant:'S1-2: pasivo — solo mantener posicion con apoyo de manos · S3-4: activo — contraccion gluteo 5s · S5-6: activo con inclinacion de tronco · S7+: ambas posiciones encadenadas + rotacion activa' },
+  'H': { grupo:'hip', plano:'flexibilidad-tfl', equipo:'bw',
+    n:'TFL stretch — piramidal en suelo', d:'2x40 seg cada lado', note:'Estiramiento TFL + rotadores externos · L5-S1 izq primero', wid:'tfl-stretch',
+    variant:'S1-2: figura 4 en suelo pasivo · S3-4: figura 4 activo con presion rodilla · S5-6: pigeon pose en suelo · S7+: pigeon pose con inclinacion tronco' },
 };
+
+// ─── HINGE — bisagra de cadera / cadena posterior ──────────────────
+const HINGE = {
+  'A': { grupo:'hinge', n:'Good morning con banda elastica', d:'3x12', note:'Activacion bisagra · Calentamiento patron hinge antes de carga · Espalda neutra siempre', wid:'good-morning',
+    variant:'S1-2: banda ligera 3x12 · S3-4: banda media 3x10 · S5-6: banda fuerte 3x10 · S7+: barra vacia 3x10 · F3: seated GM barra' },
+  'B': { grupo:'hinge', n:'Hiperextension banco 45 grados', d:'4x10', note:'Motor principal bilateral — progresion por estadios · Variacion: unilateral (S5+, 3x8 c/lado)', wid:'hiperext', gym:true,
+    variant:'S1-2: iso hold neutro 4x25s — rango parcial 4x20s · S3-4: rango completo sin peso exc 3s · S5-6: +20kg 4x8 exc 3s · S7+: +40kg 4x6-8 · F3: criterio 40kg 4x6 tecnica impecable',
+    homeAlt:{ n:'Superman con cinta yoga', d:'4x12 — pausa 2 seg arriba', note:'Cinta yoga bajo el abdomen como fulcro · Extension cadera pura · Cabeza neutra · Sin hiperlordosis', variant:'S1-2: iso hold 4x20s sin elevacion de piernas · S3-4: extension completa sin peso exc 3s · S5-6: tobillera ligera 1kg · S7+: tobillera 2kg + pausa 3s' } },
+  'C': { grupo:'hinge', n:'RDL con mancuernas', d:'3x8 — espalda neutra REQUISITO', note:'Columna neutra en todo el rango · Parar si irradiacion S1 · Variacion: RDL unilateral en banco (S3+, 3x8 c/lado exc 3s)', wid:'rdl-mancuernas', gym:true,
+    variant:'S1-2: 8-10 kg — patron y activacion glutea · S3-4: 12-14 kg rango parcial hasta rodillas · S5-6: 16-18 kg rango completo · S7+: 20 kg+ tecnica impecable (criterio F3)',
+    homeAlt:{ n:'RDL postural con banda yoga', d:'3x10 — foco en patron', note:'Cinta yoga anclada bajo los pies · Resistencia posterior leve · Espalda neutra requisito absoluto', variant:'S1-2: sin banda — patron puro bisagra · S3-4: banda yoga tension baja · S5-6: banda yoga tension media · S7+: banda yoga tension alta exc 3s' } },
+  'D': { grupo:'hinge', n:'Cable pancake en suelo', d:'3x40 seg', note:'Cierre · Elongacion cadena posterior completa · No forzar el rango', wid:'cable-pancake',
+    variant:'S1-2: apertura minima 30-40° tronco erguido · S3-4: apertura 45° inclinacion suave · S5-6: apertura 60° mayor inclinacion · S7+: apertura maxima comoda + inclinacion lateral izq para L5-S1' },
+  'E': { grupo:'hinge', n:'Hinge (bisagra de cadera) — rango parcial', d:'3x8 — rango comodo sin tiron', note:'ADVERTENCIA CIATICA: es el movimiento donde mas se tensa el nervio ciatico · Si sientes tiron como banda elastica a punto de romperse NO fuerces · Rango parcial permite ganar fuerza · Para si irradiacion S1', wid:'rdl-mancuernas', gym:true,
+    variant:'S1-2: good morning con banda — solo activacion sin carga · S3-4: RDL mancuernas livianas hasta rodillas · S5-6: RDL carga media rango comodo exc 3s · S7+: RDL rango completo si sin irradiacion · F3: RDL completo tecnica impecable',
+    homeAlt:{ n:'Good morning con banda elastica', d:'3x12 — foco en patron', note:'Banda anclada bajo los pies · Bisagra de cadera pura · Espalda neutra requisito absoluto · Parar si tiron ciatico', variant:'S1-2: banda ligera rango parcial · S3-4: banda media bisagra completa · S5-6: banda fuerte exc 3s · S7+: carga progresiva' } },
+};
+
+// ─── PULL — tiro (dorsal/espalda) sin carga axial ──────────────────
+const PULL = {
+  'A': { grupo:'pull', n:'Scapular pull en barra', d:'3x8-10', note:'Descompresion + activacion · Colgado · Solo depresion y retraccion escapular · Sin flexion de codo · Traccion descompresiva L4-S1 · PARAR si irradiacion S1 al colgar', wid:'scapular-pull',
+    variant:'S1-2: banda de suspension — pie en banda carga parcial · S3-4: barra agarre ancho ROM completo sin flexion codo · S5-6: pausa 2s en retraccion maxima · S7+: lastre ligero tobillera 1-2 kg' },
+  'B': { grupo:'pull', n:'Jalon al pecho agarre ancho', d:'4x10 — excentrico 3 seg', note:'Escapulas activas · Sin carga axial', wid:'jalon-ancho', gym:true,
+    variant:'S1-2: 50% exc 4s · S3-4: 60% exc 3s · S5-6: 70% pausa abajo · S7+: dominada asistida',
+    homeAlt:{ n:'Remo invertido en mesa (Australian row)', d:'4x10 — excentrico 3 seg', note:'Tumbado bajo mesa · Agarre ancho · Escapulas activas · Sustituto directo del jalon', variant:'S1-2: rodillas muy flexionadas carga parcial · S3-4: rodillas a 90° exc 3s · S5-6: piernas extendidas · S7+: pies elevados en silla' } },
+  'C': { grupo:'pull', n:'Remo en maquina sentado', d:'4x10 codos pegados', note:'No flexionar columna al tirar · Respaldo de pecho si la maquina lo tiene', wid:'remo-maquina', gym:true,
+    variant:'S1-2: carga ligera pausa 1s escapulas · S3-4: carga media pausa 1s · S5-6: carga alta exc 3s · S7+: carga alta pausa + exc 4s',
+    homeAlt:{ n:'Remo con banda anclada (sentado en suelo)', d:'4x10 codos pegados', note:'Banda anclada baja · Sentado en suelo · Tronco erguido · Sin carga axial', variant:'S1-2: banda ligera pausa 1s · S3-4: banda media pausa 1s · S5-6: banda fuerte exc 3s · S7+: banda fuerte pausa + exc 4s' } },
+};
+
+// ─── PUSH — empuje sin carga axial ─────────────────────────────────
+const PUSH = {
+  'A': { grupo:'push', n:'Aperturas en maquina pec deck', d:'3x12', note:'Empuje sin carga axial · Espalda fija en respaldo — sin separar de la maquina', wid:'pec-deck', gym:true,
+    variant:'S1-2: carga ligera rango parcial · S3-4: carga media rango completo · S5-6: carga alta exc 3s · S7+: carga alta pausa 1s en contraccion',
+    homeAlt:{ n:'Aperturas con banda cruzada', d:'3x12', note:'Banda anclada a ambos lados altura de pecho · Aduccion horizontal controlada', variant:'S1-2: banda ligera · S3-4: banda media · S5-6: banda fuerte exc 3s · S7+: banda fuerte pausa 1s' } },
+  'B': { grupo:'push', n:'Fondos en maquina asistida (chest dip)', d:'3x12', note:'Empuje de pecho + triceps SIN carga axial · Maquina asistida (no colgarse del propio peso) · Codos a 90 max · Tronco ligeramente inclinado · Parar si molestia en hombro', wid:'fondos-triceps',
+    variant:'S1-2: asistencia alta rango parcial · S3-4: asistencia media rango completo · S5-6: asistencia baja exc 3s · S7+: asistencia minima control · F3: lastre ligero' },
+};
+
+// ─── SHOULDER — hombro (sin overhead axial) ────────────────────────
+const SHOULDER = {
+  'A': { grupo:'shoulder', n:'Elevaciones laterales con mancuernas', d:'3x15 peso ligero', note:'Deltoides medio — sentado · Sin overhead (evita carga axial)', wid:'elevaciones-lat', gym:true,
+    variant:'S1-2: sentado carga muy ligera · S3-4: sentado carga ligera exc 3s · S5-6: sentado carga media · S7+: de pie carga media + pausa 1s arriba',
+    homeAlt:{ n:'Elevaciones laterales con banda', d:'3x15 — sentado', note:'Banda bajo los pies · Agarre neutro · Deltoides medio', variant:'S1-2: banda muy ligera · S3-4: banda ligera exc 3s · S5-6: banda media · S7+: banda media + pausa 1s' } },
+};
+
+// ─── ARM — brazos ──────────────────────────────────────────────────
+const ARM = {
+  'A': { grupo:'arm', n:'Extension de triceps en polea alta', d:'4x15 codos fijos', note:'Cuerda — separar al final', wid:'triceps-polea', gym:true,
+    variant:'S1-2: carga minima codos bien fijados · S3-4: carga media + separacion al final · S5-6: carga alta exc 3s · S7+: unilateral alternando',
+    homeAlt:{ n:'Extension de triceps con banda sobre cabeza', d:'4x15 codos fijos', note:'Banda anclada alta o sostenida · Codos pegados', variant:'S1-2: banda ligera · S3-4: banda media exc 3s · S5-6: banda fuerte + separacion · S7+: unilateral banda fuerte' } },
+  'B': { grupo:'arm', n:'Curl de biceps en barra Z', d:'3x12', note:'Codos fijos al torso', wid:'curl-barra', gym:true,
+    variant:'S1-2: carga ligera rango completo · S3-4: carga media exc 3s · S5-6: carga alta pausa 1s arriba · S7+: carga alta exc 4s + pausa',
+    homeAlt:{ n:'Curl de biceps con banda', d:'3x12 — codos fijos', note:'Banda bajo los pies · Codos pegados al torso', variant:'S1-2: banda ligera · S3-4: banda media exc 3s · S5-6: banda fuerte pausa 1s · S7+: unilateral banda fuerte exc 4s' } },
+  'C': { grupo:'arm', n:'Curl martillo con mancuernas', d:'3x12', note:'Braquial + biceps', wid:'curl-martillo', gym:true,
+    variant:'S1-2: carga ligera alternado · S3-4: carga media bilateral · S5-6: carga media exc 3s · S7+: carga alta unilateral con apoyo',
+    homeAlt:{ n:'Curl martillo con banda (agarre neutro)', d:'3x12 — alternado', note:'Banda bajo los pies · Agarre neutro (pulgares arriba)', variant:'S1-2: banda ligera alternado · S3-4: banda media bilateral · S5-6: banda fuerte exc 3s · S7+: unilateral banda fuerte' } },
+};
+
+// ─── QUAD — cuadriceps / pierna (sin carga axial directa) ──────────
+const QUAD = {
+  'A': { grupo:'quad', n:'Leg Extension (extension de cuadriceps)', d:'3x12 — carga moderada', note:'Bajo impacto lumbar · CIATICA: si hay dolor no hagas dorsiflexion — apunta los dedos adelante · Si persiste: asiento atras + caderas adelante para crear holgura en el ciatico', wid:'leg-extension', gym:true,
+    variant:'S1-2: carga muy ligera rango parcial · S3-4: carga ligera rango completo dedos neutros · S5-6: carga media exc 2s · S7+: carga media-alta pausa 1s',
+    homeAlt:{ n:'Wall sit isometrico', d:'3x30-45 seg', note:'Espalda en la pared · Rodillas a 90° · Sin carga axial · Cuadriceps puro', variant:'S1-2: 100-110° 20s · S3-4: 90° 30s · S5-6: 90° 45s · S7+: unilateral 20s' } },
+  'B': { grupo:'quad', n:'Leg Curl (curl femoral)', d:'3x12 — carga moderada', note:'No pone carga axial · Evitar redondear la espalda · CIATICA: si hay tiron apunta dedos adelante e inclina el torso atras al extender', wid:'leg-curl', gym:true,
+    variant:'S1-2: carga muy ligera foco no redondear · S3-4: carga ligera torso neutro · S5-6: carga media exc 3s · S7+: carga alta pausa 1s',
+    homeAlt:{ n:'Nordic curl excentric asistido', d:'3x6 — descenso 4 seg', note:'Pies sujetos bajo sofa o cama · Bajar lento · Volver con manos · Cadena posterior sin carga axial', variant:'S1-2: descenso hasta 45° · S3-4: descenso completo asistido · S5-6: descenso + pausa · S7+: intento de subida sin asistencia' } },
+  'C': { grupo:'quad', n:'Prensa inclinada 45 grados', d:'4x10 — descenso 3 seg', note:'BUTTWINK: manos bajo la zona lumbar — si la espalda se redondea o el coxis se levanta has llegado al rango maximo · Coxis pegado al asiento siempre', wid:'prensa', gym:true,
+    variant:'S1-2: carga ligera talones elevados · S3-4: carga media sin buttwink · S5-6: rango completo carga alta exc 3s · S7+: unilateral — un pie bloquea la rotacion pelvica',
+    homeAlt:{ n:'Sentadilla sumo con banda (motor)', d:'4x15 — pausa 2 seg abajo', note:'Version principal en casa · Pies muy abiertos · Banda en muslos · Sin carga axial', variant:'S1-2: banda ligera ROM parcial · S3-4: banda media ROM completo · S5-6: banda fuerte pausa 2s · S7+: mancuerna goblet' } },
+  'D': { grupo:'quad', n:'Sumo squat con peso (KB o mancuerna)', d:'3x10 — profundidad comoda', note:'Sustituye a sentadilla con barra · Peso entre las piernas (goblet) · Pies anchos dedos afuera — fuerza la verticalidad del torso · Espalda neutra', wid:'sumo-squat-kb', gym:true,
+    variant:'S1-2: peso corporal ROM parcial · S3-4: KB 8-12kg ROM completo · S5-6: KB 16-20kg profundidad maxima · S7+: KB 24kg+ pausa 2s',
+    homeAlt:{ n:'Sentadilla sumo con banda', d:'3x15', note:'Pies muy abiertos · Puntas afuera 45° · Gluteo medio e interno · Sin carga axial', variant:'S1-2: banda ligera ROM parcial · S3-4: banda media ROM completo · S5-6: banda fuerte · S7+: mancuerna goblet' } },
+  'E': { grupo:'quad', n:'Split squat — sentadilla a una pierna', d:'3x10 cada lado — muy lento', note:'Unilateral bajo impacto lumbar · NIVEL AVANZADO (anti-rotacion): peso en un solo brazo opuesto a la pierna adelantada — obliga al QL y estabilizadores · Lento = dificil · Pausas isometricas abajo', wid:'bulgara',
+    variant:'S1-2: peso corporal ROM parcial — ambos brazos a los lados · S3-4: peso corporal ROM completo pausa 2s · S5-6: mancuerna ligera ambas manos · S7+: mancuerna un solo brazo (anti-rotacion QL) · F3: pie trasero en banco con carga anti-rotacion' },
+  'F': { grupo:'quad', n:'Step up al banco', d:'3x10 cada lado', note:'Banco a altura de rodilla · Subir con talon completo · Bajar controlado 3 seg · Sin impacto lumbar', wid:'step-up',
+    variant:'S1-2: escalon bajo 20cm · S3-4: banco 35-40cm · S5-6: banco + pausa arriba 2s · S7+: mancuernas ligeras' },
+  'G': { grupo:'quad', n:'Wall sit isometrico', d:'3x30-45 seg', note:'Espalda pegada a la pared · Rodillas 90° · Sin carga axial · Cuadriceps', wid:'wall-sit',
+    variant:'S1-2: 100-110° 20s · S3-4: 90° 30s · S5-6: 90° 45s · S7+: unilateral 20s' },
+  'H': { grupo:'quad', n:'Sentadilla goblet ligera con pausa', d:'3x10 — pausa 2 seg abajo', note:'Patron de sentadilla SIN fatiga · KB/mancuerna ligera entre las piernas · Tronco vertical · Espalda neutra · Movilidad y control', wid:'goblet-squat',
+    variant:'S1-2: peso corporal · S3-4: KB 8kg · S5-6: KB 12kg · S7+: KB 16kg pausa 3s' },
+};
+
+// ─── GLUTE — gluteo / hip (cadena posterior sin carga axial) ───────
+const GLUTE = {
+  'A': { grupo:'glute', n:'Hip thrust en banco', d:'3x12', note:'Motor gluteo · Objetivo de progresion', wid:'hip-thrust',
+    variant:'S1-2: glute bridge bilateral isometrico 5s · S3-4: hip thrust bilateral PC pausa 2s · S5-6: hip thrust unilateral PC · S7+: hip thrust bilateral con barra' },
+  'B': { grupo:'glute', n:'Glute bridge unilateral', d:'3x12 cada lado — pausa 2 seg', note:'Una pierna en el aire · Pelvis nivelada', wid:'glute-bridge-uni',
+    variant:'S1-2: bilateral como base · S3-4: unilateral pierna libre flexionada · S5-6: unilateral pierna libre extendida · S7+: mancuerna en cadera de trabajo' },
+  'C': { grupo:'glute', n:'Clamshell con banda elastica', d:'3x15 cada lado', note:'Gluteo medio · Pelvis estable · Rotadores externos', wid:'clamshell',
+    variant:'S1-2: sin banda · S3-4: banda ligera · S5-6: banda media · S7+: banda fuerte + pausa 2s arriba' },
+  'D': { grupo:'glute', n:'Monster walk lateral con banda', d:'3x15m', note:'Gluteo medio · Cadera neutral', wid:'monster-walk',
+    variant:'S1-2: banda en muslos ritmo lento · S3-4: banda en muslos 15m · S5-6: 15m + pausa isometrica cada 5 pasos · S7+: banda en tobillos si sin irradiacion' },
+  'E': { grupo:'glute', n:'Abduccion en maquina', d:'3x15', note:'Gluteo medio — sentado', wid:'abduccion-maq', gym:true,
+    variant:'S1-2: sin carga — solo ROM · S3-4: carga ligera · S5-6: carga media pausa 1s · S7+: carga alta exc 3s',
+    homeAlt:{ n:'Side-lying abduccion con banda', d:'3x15 cada lado', note:'Banda en tobillos · Tumbado de lado · Misma activacion que maquina', variant:'S1-2: sin banda · S3-4: banda ligera · S5-6: banda media · S7+: banda fuerte pausa 1s arriba' } },
+  'F': { grupo:'glute', n:'Single leg reverse hyper', d:'3x12 cada lado', note:'Tumbado boca abajo en banco · Extension cadera pura sin carga axial · Parar si irradiacion S1', wid:'single-leg-hyper',
+    variant:'S1-2: sin peso ROM parcial 3x8 · S3-4: sin peso ROM completo 3x10 · S5-6: tobillera ligera 1-2 kg · S7+: tobillera 3-4 kg exc 2s' },
+  'G': { grupo:'glute', n:'Cable pull-through en polea baja', d:'3x12', note:'Bisagra de cadera de pie · Cuerda entre piernas · Espalda neutra · Carga posterior (no axial)', wid:'cable-pull-through',
+    variant:'S1-2: carga muy ligera ROM parcial 30° · S3-4: carga ligera ROM completo · S5-6: carga media exc 3s · S7+: carga alta pausa 1s · F3: progresar a RDL barra' },
+};
+
+// ─── CARD — cardio de sala ─────────────────────────────────────────
+const CARD = {
+  'A': { grupo:'cardio', n:'Ergometro de remo', d:'2000m — FC 110-125', note:'Drive con piernas primero · Espalda neutra · Damper 3-4 · Anotar parcial 500m y media', wid:'ergometro', gym:true,
+    homeAlt:{ n:'Caminata activa o marcha', d:'20-25 min — ritmo moderado', note:'Alternativa cardio en casa · Paso largo · Tronco erguido · Sin impacto' } },
+  'B': { grupo:'cardio', n:'Bici estatica (spinning)', d:'15-20 min — FC 110-120 — sin standing', note:'Sin standing en F2 · Cadencia 70-85 rpm', wid:'bici-estatica', gym:true,
+    homeAlt:{ n:'Marcha activa o step en sitio', d:'20 min — ritmo moderado', note:'Step elevando rodillas · O marcha exterior' } },
+  'C': { grupo:'cardio', n:'Eliptica', d:'15-20 min — FC 110-125 — resistencia 3-5', note:'Sin impacto · Postura erguida', wid:'eliptica', gym:true,
+    homeAlt:{ n:'Marcha activa o step en sitio', d:'20 min — ritmo moderado', note:'Step elevando rodillas · O marcha en exterior' } },
+};
+
+// Lookup combinado con IDs GLOBALES prefijados por grupo (CORE-A, HIP-B, QUAD-C, ...)
+const CAT = {};
+for (const [pfx, grp] of [['CORE',CORE],['HIP',HIP],['HINGE',HINGE],['PULL',PULL],['PUSH',PUSH],['SHOULDER',SHOULDER],['ARM',ARM],['QUAD',QUAD],['GLUTE',GLUTE],['CARD',CARD]])
+  for (const k in grp) CAT[pfx + '-' + k] = grp[k];
 
 // Lookup combinado con IDs GLOBALES prefijados por grupo (CORE-A, HIP-B, ...)
 // Futuros grupos se anaden a este array.
@@ -364,6 +486,10 @@ function buildSessions(week){
   return out;
 }
 
+// Bloque de movilidad de cadera para la pestana Movilidad (disponible toda la semana)
+const MOB_BLOCK_HIP = expandBlock({ id:'MOB-H', name:'Movilidad de cadera — grupo HIP', dur:'15-20 min', color:'#7A3DAA',
+  exIds:['HIP-A','HIP-B','HIP-C','HIP-D','HIP-E','HIP-F','HIP-G','HIP-H'] });
+
 const WEEK = {
 
   // ─── 1 — LUNES: Cadena posterior + Core + Biceps ──────────────
@@ -375,39 +501,9 @@ const WEEK = {
     blocks: [
       MOB_BLOCK_A1,
       MOB_BLOCK_B_LUN,
-      {
-        id: 'C', name: 'Cardio sala — Ergometro', dur: '15-20 min', color: '#185FA5',
-        exs: [
-          { n: 'Ergometro de remo', d: '2000m — FC 110-125', note: 'Drive con piernas primero · Espalda neutra · Damper 3-4 · Anotar parcial 500m y media de carrera', wid: 'ergometro', gym: true,
-            homeAlt: { n: 'Caminata activa o marcha', d: '20-25 min — ritmo moderado', note: 'Alternativa cardio en casa · Paso largo · Tronco erguido · Sin impacto' } },
-        ]
-      },
-      {
-        id: 'D', name: 'Lumbar — Cadena posterior', dur: '45 min', color: '#3C3489',
-        exs: [
-          { n: 'Good morning con banda elastica', d: '3x12', note: 'Activacion bisagra · Calentamiento patron hinge antes de carga · Espalda neutra siempre', wid: 'good-morning',
-            variant: 'S1-2: banda ligera 3x12 · S3-4: banda media 3x10 · S5-6: banda fuerte 3x10 · S7+: barra vacia 3x10 · F3: seated GM barra' },
-          { n: 'Hiperextension banco 45 grados', d: '4x10', note: 'Motor principal bilateral — progresion por estadios · Variacion: unilateral (S5+, 3x8 c/lado)', wid: 'hiperext', gym: true,
-            variant: 'S1-2: iso hold neutro 4x25s — rango parcial 4x20s · S3-4: rango completo sin peso exc 3s · S5-6: +20kg 4x8 exc 3s · S7+: +40kg 4x6-8 · F3: criterio 40kg 4x6 tecnica impecable',
-            homeAlt: { n: 'Superman con cinta yoga', d: '4x12 — pausa 2 seg arriba', note: 'Cinta yoga bajo el abdomen como fulcro · Extension cadera pura · Cabeza neutra · Sin hiperlordosis', variant: 'S1-2: iso hold 4x20s sin elevacion de piernas · S3-4: extension completa sin peso exc 3s · S5-6: tobillera ligera 1kg · S7+: tobillera 2kg + pausa 3s' } },
-          { n: 'RDL con mancuernas', d: '3x8 — espalda neutra REQUISITO', note: 'Columna neutra en todo el rango · Parar si irradiacion S1 · Variacion: RDL unilateral en banco (S3+, 3x8 c/lado exc 3s)', wid: 'rdl-mancuernas', gym: true,
-            variant: 'S1-2: 8-10 kg — patron y activacion glutea · S3-4: 12-14 kg rango parcial hasta rodillas · S5-6: 16-18 kg rango completo · S7+: 20 kg+ tecnica impecable (criterio F3)',
-            homeAlt: { n: 'RDL postural con banda yoga', d: '3x10 — foco en patron', note: 'Cinta yoga anclada bajo los pies · Resistencia posterior leve · Espalda neutra requisito absoluto', variant: 'S1-2: sin banda — patron puro bisagra · S3-4: banda yoga tension baja · S5-6: banda yoga tension media · S7+: banda yoga tension alta exc 3s' } },
-          { n: 'Cable pancake en suelo', d: '3x40 seg', note: 'Cierre D · Elongacion cadena posterior completa · No forzar el rango', variant: 'S1-2: apertura minima 30-40° tronco erguido · S3-4: apertura 45° inclinacion suave · S5-6: apertura 60° mayor inclinacion · S7+: apertura maxima comoda + inclinacion lateral izq para L5-S1' },
-        ]
-      },
-      {
-        id: 'E', name: 'Core (anti-extension) + Biceps', dur: '35 min', color: '#993C1D',
-        exIds: ['CORE-A','CORE-B','CORE-C','CORE-E'],
-        exs: [
-          { n: 'Curl de biceps en barra Z', d: '3x12', note: 'Codos fijos al torso', wid: 'curl-barra', gym: true,
-            variant: 'S1-2: carga ligera rango completo · S3-4: carga media exc 3s · S5-6: carga alta pausa 1s arriba · S7+: carga alta exc 4s + pausa',
-            homeAlt: { n: 'Curl de biceps con banda', d: '3x12 — codos fijos', note: 'Banda bajo los pies · Codos pegados al torso · Mismo patron que barra Z', variant: 'S1-2: banda ligera · S3-4: banda media exc 3s · S5-6: banda fuerte pausa 1s arriba · S7+: unilateral banda fuerte exc 4s' } },
-          { n: 'Curl martillo con mancuernas', d: '3x12', note: 'Braquial + biceps', wid: 'curl-martillo', gym: true,
-            variant: 'S1-2: carga ligera alternado · S3-4: carga media bilateral · S5-6: carga media exc 3s · S7+: carga alta unilateral con apoyo',
-            homeAlt: { n: 'Curl martillo con banda (agarre neutro)', d: '3x12 — alternado', note: 'Banda bajo los pies · Agarre neutro (pulgares arriba) · Activa braquial y braquiorradial igual que mancuerna', variant: 'S1-2: banda ligera alternado · S3-4: banda media bilateral · S5-6: banda fuerte exc 3s · S7+: unilateral banda fuerte' } },
-        ]
-      },
+      { id: 'C', name: 'Cardio sala — Ergometro', dur: '15-20 min', color: '#185FA5', exIds: ['CARD-A'] },
+      { id: 'D', name: 'Lumbar — Cadena posterior', dur: '45 min', color: '#3C3489', exIds: ['HINGE-A','HINGE-B','HINGE-C','HINGE-D'] },
+      { id: 'E', name: 'Core (anti-extension) + Biceps', dur: '35 min', color: '#993C1D', exIds: ['CORE-A','CORE-B','CORE-C','CORE-E','ARM-B','ARM-C'] },
     ]
   },
 
@@ -435,32 +531,8 @@ const WEEK = {
     blocks: [
       MOB_BLOCK_A1,
       MOB_BLOCK_B_JUE,
-      {
-        id: 'C', name: 'Cardio sala — Bici estatica', dur: '15-20 min', color: '#185FA5',
-        exs: [
-          { n: 'Bici estatica (spinning)', d: '15-20 min — FC 110-120 — sin standing', note: 'Sin standing en F2 · Cadencia 70-85 rpm', wid: 'bici-estatica', gym: true,
-            homeAlt: { n: 'Marcha activa o step en sitio', d: '20 min — ritmo moderado', note: 'Step elevando rodillas · O marcha exterior · Alternativa cardio en casa' } },
-        ]
-      },
-      {
-        id: 'D', name: 'Empuje + Tiro (sin carga axial)', dur: '50 min', color: '#3C3489',
-        exs: [
-          { n: 'Scapular pull en barra', d: '3x8-10', note: 'PRIMERO — descompresion + activacion · Colgado de la barra · Solo depresion y retraccion escapular · Sin flexion de codo · Traccion descompresiva L4-S1 (aprovecha el colgado para descomprimir) · PARAR si aparece irradiacion S1 al colgar', wid: 'scapular-pull', variant: 'S1-2: banda de suspension — pie en banda, carga parcial · S3-4: barra agarre ancho — ROM completo sin flexion codo · S5-6: pausa 2s en retraccion maxima · S7+: lastre ligero tobillera 1-2 kg' },
-          { n: 'Jalon al pecho agarre ancho', d: '4x10 — excentrico 3 seg', note: 'Escapulas activas · Sin carga axial', wid: 'jalon-ancho', gym: true, variant: 'S1-2: 50% exc 4s · S3-4: 60% exc 3s · S5-6: 70% pausa abajo · S7+: dominada asistida',
-            homeAlt: { n: 'Remo invertido en mesa (Australian row)', d: '4x10 — excentrico 3 seg', note: 'Tumbado bajo mesa · Agarre ancho · Escapulas activas · Sustituto directo del jalon en casa', variant: 'S1-2: rodillas muy flexionadas carga parcial · S3-4: rodillas a 90° exc 3s · S5-6: piernas extendidas · S7+: pies elevados en silla' } },
-          { n: 'Remo en maquina sentado', d: '4x10 codos pegados', wid: 'remo-maquina', note: 'No flexionar columna al tirar · Respaldo de pecho si la maquina lo tiene', gym: true, variant: 'S1-2: carga ligera pausa 1s escapulas retraidas · S3-4: carga media pausa 1s · S5-6: carga alta exc 3s · S7+: carga alta pausa + exc 4s',
-            homeAlt: { n: 'Remo con banda anclada (sentado en suelo)', d: '4x10 codos pegados', note: 'Banda anclada baja · Sentado en suelo · Tronco erguido · Sin carga axial', variant: 'S1-2: banda ligera pausa 1s · S3-4: banda media pausa 1s · S5-6: banda fuerte exc 3s · S7+: banda fuerte pausa + exc 4s' } },
-          { n: 'Aperturas en maquina pec deck', d: '3x12', note: 'Empuje sin carga axial · Espalda fija en respaldo — sin separar de la maquina', wid: 'pec-deck', gym: true, variant: 'S1-2: carga ligera rango parcial · S3-4: carga media rango completo · S5-6: carga alta exc 3s · S7+: carga alta pausa 1s en contraccion',
-            homeAlt: { n: 'Aperturas con banda cruzada', d: '3x12', note: 'Banda anclada a ambos lados altura de pecho · Aduccion horizontal controlada', variant: 'S1-2: banda ligera · S3-4: banda media · S5-6: banda fuerte exc 3s · S7+: banda fuerte pausa 1s' } },
-          { n: 'Fondos en maquina asistida (chest dip)', d: '3x12', note: 'Empuje de pecho + triceps SIN carga axial · Maquina asistida (no colgarse del propio peso) · Codos a 90 max · Tronco ligeramente inclinado · Parar si molestia en hombro', wid: 'fondos-triceps', variant: 'S1-2: asistencia alta rango parcial · S3-4: asistencia media rango completo · S5-6: asistencia baja exc 3s · S7+: asistencia minima control · F3: lastre ligero' },
-          { n: 'Elevaciones laterales con mancuernas', d: '3x15 peso ligero', note: 'Deltoides medio — sentado · Sin overhead (evita carga axial)', wid: 'elevaciones-lat', gym: true, variant: 'S1-2: sentado carga muy ligera · S3-4: sentado carga ligera exc 3s · S5-6: sentado carga media · S7+: de pie carga media + pausa 1s arriba',
-            homeAlt: { n: 'Elevaciones laterales con banda', d: '3x15 — sentado', note: 'Banda bajo los pies · Agarre neutro · Deltoides medio', variant: 'S1-2: banda muy ligera · S3-4: banda ligera exc 3s · S5-6: banda media · S7+: banda media + pausa 1s' } },
-          { n: 'Extension de triceps en polea alta', d: '4x15 codos fijos', note: 'Cuerda — separar al final', wid: 'triceps-polea', gym: true, variant: 'S1-2: carga minima codos bien fijados · S3-4: carga media + separacion al final · S5-6: carga alta exc 3s · S7+: unilateral alternando',
-            homeAlt: { n: 'Extension de triceps con banda sobre cabeza', d: '4x15 codos fijos', note: 'Banda anclada alta o sostenida · Codos pegados', variant: 'S1-2: banda ligera · S3-4: banda media exc 3s · S5-6: banda fuerte + separacion · S7+: unilateral banda fuerte' } },
-          { n: 'Curl de biceps en barra Z', d: '3x12', note: 'Codos fijos al torso', wid: 'curl-barra', gym: true, variant: 'S1-2: carga ligera rango completo · S3-4: carga media exc 3s · S5-6: carga alta pausa 1s arriba · S7+: carga alta exc 4s + pausa',
-            homeAlt: { n: 'Curl de biceps con banda', d: '3x12 — codos fijos', note: 'Banda bajo los pies · Codos pegados al torso', variant: 'S1-2: banda ligera · S3-4: banda media exc 3s · S5-6: banda fuerte pausa 1s · S7+: unilateral banda fuerte exc 4s' } },
-        ]
-      },
+      { id: 'C', name: 'Cardio sala — Bici estatica', dur: '15-20 min', color: '#185FA5', exIds: ['CARD-B'] },
+      { id: 'D', name: 'Empuje + Tiro (sin carga axial)', dur: '50 min', color: '#3C3489', exIds: ['PULL-A','PULL-B','PULL-C','PUSH-A','PUSH-B','SHOULDER-A','ARM-A','ARM-B'] },
       {
         id: 'E', name: 'Core (anti-rotacion + anti-lateral) + Neural', dur: '25 min', color: '#993C1D',
         exIds: ['CORE-G','CORE-D','CORE-J','CORE-E'],
@@ -558,48 +630,9 @@ const WEEK = {
     blocks: [
       MOB_BLOCK_A1,
       MOB_BLOCK_B_VIE,
-      {
-        id: 'C', name: 'Cardio sala — Eliptica', dur: '15-20 min', color: '#185FA5',
-        exs: [
-          { n: 'Eliptica', d: '15-20 min — FC 110-125 — resistencia 3-5', note: 'Sin impacto · Postura erguida', wid: 'eliptica', gym: true,
-            homeAlt: { n: 'Marcha activa o step en sitio', d: '20 min — ritmo moderado', note: 'Step en sitio elevando rodillas · O marcha en exterior · Alternativa cardio en casa' } },
-        ]
-      },
-      {
-        id: 'D', name: 'Pierna — Squat + Bisagra', dur: '55 min', color: '#3C3489',
-        exs: [
-          { n: 'Leg Extension (extension de cuadriceps)', d: '3x12 — carga moderada', note: 'Bajo impacto lumbar · CIATICA: si sientes dolor no hagas dorsiflexion (dedos atras) — apunta los dedos hacia adelante · Si persiste: mueve el asiento atras y desplaza caderas hacia adelante para crear holgura en el nervio ciatico', wid: 'leg-extension', gym: true,
-            variant: 'S1-2: carga muy ligera rango parcial — foco en no activar tension neural · S3-4: carga ligera rango completo dedos neutros · S5-6: carga media rango completo exc 2s · S7+: carga media-alta pausa 1s en extension maxima',
-            homeAlt: { n: 'Wall sit isometrico', d: '3x30-45 seg', note: 'Espalda pegada a la pared · Rodillas a 90° · Sin carga axial · Activacion cuadriceps pura — sustituto directo de leg extension en casa', variant: 'S1-2: angulo 100-110° 20s · S3-4: 90° 30s · S5-6: 90° 45s · S7+: unilateral 20s' } },
-          { n: 'Leg Curl (curl femoral)', d: '3x12 — carga moderada', note: 'No pone carga axial sobre la columna · Evitar redondear la espalda · CIATICA: si sientes tiron como banda elastica — apunta dedos hacia adelante e inclina el torso ligeramente atras mientras extiendes las piernas', wid: 'leg-curl', gym: true,
-            variant: 'S1-2: carga muy ligera — foco en no redondear espalda · S3-4: carga ligera rango completo torso neutro · S5-6: carga media exc 3s · S7+: carga alta pausa 1s en flexion maxima',
-            homeAlt: { n: 'Nordic curl excentric asistido', d: '3x6 — descenso controlado 4 seg', note: 'Pies sujetos bajo sofa o cama · Bajar lento · Volver con ayuda de manos · Cadena posterior sin carga axial', variant: 'S1-2: descenso solo hasta 45° · S3-4: descenso completo asistido · S5-6: descenso controlado + pausa · S7+: intento de subida sin asistencia' } },
-          { n: 'Prensa inclinada 45 grados', d: '4x10 — descenso 3 seg', note: 'BUTTWINK: coloca ambas manos bajo la zona lumbar — si sientes que la espalda se redondea o el coxis se levanta has llegado a tu rango maximo · El coxis debe estar pegado al asiento en todo momento', wid: 'prensa', gym: true,
-            variant: 'S1-2: carga ligera talones elevados — foco en coxis pegado al asiento · S3-4: carga media rango controlado sin buttwink · S5-6: rango completo carga alta exc 3s · S7+: variacion unilateral — un pie en plataforma bloquea mecanicamente la rotacion pelvica',
-            homeAlt: { n: 'Sentadilla sumo con banda (motor)', d: '4x15 — pausa 2 seg abajo', note: 'Version principal en casa · Pies muy abiertos · Banda en muslos · Sin carga axial — sustituto directo de prensa', variant: 'S1-2: banda ligera ROM parcial · S3-4: banda media ROM completo · S5-6: banda fuerte pausa 2s · S7+: mancuerna goblet' } },
-          { n: 'Sumo squat con peso (KB o mancuerna)', d: '3x10 — profundidad comoda', note: 'Sustituye a sentadilla con barra — evita carga sobre hombros · Sostener el peso entre las piernas (goblet) o apoyarlo en superficie elevada si es necesario · Pies anchos con dedos hacia afuera — esto fuerza la verticalidad del torso · Espalda neutra en todo el rango', wid: 'sumo-squat-kb', gym: true,
-            variant: 'S1-2: peso corporal ROM parcial · S3-4: KB 8-12kg ROM completo · S5-6: KB 16-20kg profundidad maxima comoda · S7+: KB 24kg+ pausa 2s abajo',
-            homeAlt: { n: 'Sentadilla sumo con banda', d: '3x15', note: 'Pies muy abiertos · Puntas hacia fuera 45° · Activa gluteo medio e interno · Sin carga axial con banda', variant: 'S1-2: banda ligera ROM parcial · S3-4: banda media ROM completo · S5-6: banda fuerte · S7+: mancuerna goblet' } },
-          { n: 'Split squat — sentadilla a una pierna', d: '3x10 cada lado — muy lento', note: 'Trabajo unilateral bajo impacto lumbar · NIVEL AVANZADO (anti-rotacion): sostener el peso en un solo brazo opuesto a la pierna adelantada — obliga al cuadrado lumbar y estabilizadores de columna a contraerse · Lento = dificil · Pausas isometricas abajo aumentan la intensidad sin mas carga', wid: 'bulgara',
-            variant: 'S1-2: peso corporal ROM parcial — ambos brazos a los lados · S3-4: peso corporal ROM completo pausa 2s abajo · S5-6: mancuerna ligera ambas manos — version simetrica · S7+: mancuerna un solo brazo (opuesto a pierna adelantada) — version anti-rotacion QL · F3: pie trasero elevado en banco (bulgara completa) con carga anti-rotacion' },
-          { n: 'Step up al banco', d: '3x10 cada lado', wid: 'step-up', note: 'Banco a altura de rodilla · Subir con talon completo · Bajar controlado 3 seg · Sin impacto lumbar', variant: 'S1-2: escalon bajo 20cm · S3-4: banco 35-40cm · S5-6: banco + pausa arriba 2s · S7+: mancuernas ligeras' },
-          { n: 'Hinge (bisagra de cadera) — rango parcial', d: '3x8 — rango comodo sin tiron', note: 'ADVERTENCIA CIATICA: es el movimiento donde mas se tensa el nervio ciatico · Si sientes tiron como una banda elastica a punto de romperse NO fuerces · No necesitas llegar al suelo — el rango parcial permite ganar fuerza · Para si aparece irradiacion S1', wid: 'rdl-mancuernas', gym: true,
-            variant: 'S1-2: good morning con banda — solo activacion bisagra sin carga · S3-4: RDL mancuernas livianas hasta rodillas sin forzar · S5-6: RDL carga media rango comodo exc 3s · S7+: RDL rango completo si sin irradiacion · F3: progresar a RDL completo con tecnica impecable (criterio fase 3)',
-            homeAlt: { n: 'Good morning con banda elastica', d: '3x12 — foco en patron', note: 'Banda anclada bajo los pies · Bisagra de cadera pura · Espalda neutra requisito absoluto · Parar si tirón ciatico', variant: 'S1-2: banda ligera rango parcial · S3-4: banda media bisagra completa · S5-6: banda fuerte exc 3s · S7+: carga progresiva' } },
-        ]
-      },
-      {
-        id: 'E', name: 'Hip, TFL y abductores', dur: '35 min', color: '#993C1D',
-        exs: [
-          { n: '90/90 stretch activo', d: '2x40 seg cada lado', note: 'Rotacion interna cadera', wid: '90-90', variant: 'S1-2: pasivo — solo mantener posicion con apoyo de manos · S3-4: activo — contraccion gluteo 5s en posicion de estiramiento · S5-6: activo con inclinacion de tronco hacia pierna delantera · S7+: ambas posiciones encadenadas + rotacion activa' },
-          { n: 'Clamshell con banda elastica', d: '3x15 cada lado', note: 'Pelvis estable · Rotadores externos', wid: 'clamshell', variant: 'S1-2: sin banda · S3-4: banda ligera · S5-6: banda media · S7+: banda fuerte + pausa 2s arriba' },
-          { n: 'Abduccion en maquina', d: '3x15', note: 'Gluteo medio — sentado', wid: 'abduccion-maq', gym: true, variant: 'S1-2: sin carga — solo ROM · S3-4: carga ligera · S5-6: carga media pausa 1s · S7+: carga alta exc 3s',
-            homeAlt: { n: 'Side-lying abduccion con banda', d: '3x15 cada lado', note: 'Banda en tobillos · Tumbado de lado · Misma activacion que maquina', variant: 'S1-2: sin banda · S3-4: banda ligera · S5-6: banda media · S7+: banda fuerte pausa 1s arriba' } },
-          { n: 'Monster walk lateral con banda', d: '3x15m', note: 'Gluteo medio · Cadera neutral', wid: 'monster-walk', variant: 'S1-2: banda en muslos ritmo lento · S3-4: banda en muslos 15m · S5-6: 15m + pausa isometrica cada 5 pasos · S7+: banda en tobillos si sin irradiacion' },
-          { n: 'TFL stretch — piramidal en suelo', d: '2x40 seg cada lado', note: 'Estiramiento TFL + rotadores externos · L5-S1 izq primero', wid: 'tfl-stretch', variant: 'S1-2: figura 4 en suelo pasivo · S3-4: figura 4 activo con presion rodilla · S5-6: pigeon pose en suelo · S7+: pigeon pose con inclinacion tronco' },
-          { n: 'Glute bridge unilateral', d: '3x12 cada lado — pausa 2 seg', note: 'Una pierna en el aire · Pelvis nivelada', wid: 'glute-bridge-uni', variant: 'S1-2: bilateral como base · S3-4: unilateral pierna libre flexionada · S5-6: unilateral pierna libre extendida · S7+: mancuerna en cadera de trabajo' },
-        ]
-      },
+      { id: 'C', name: 'Cardio sala — Eliptica', dur: '15-20 min', color: '#185FA5', exIds: ['CARD-C'] },
+      { id: 'D', name: 'Pierna — Squat + Bisagra', dur: '55 min', color: '#3C3489', exIds: ['QUAD-A','QUAD-B','QUAD-C','QUAD-D','QUAD-E','QUAD-F','HINGE-E'] },
+      { id: 'E', name: 'Hip, TFL y abductores', dur: '35 min', color: '#993C1D', exIds: ['HIP-G','GLUTE-C','GLUTE-E','GLUTE-D','HIP-H','GLUTE-B'] },
       { id: 'CR', name: 'Core — anti-rotacion + anti-extension (casa-posible)', dur: '15 min', color: '#993C1D', exIds: ['CORE-G2','CORE-C','CORE-A','CORE-K'] },
     ]
   },
