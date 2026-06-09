@@ -325,8 +325,32 @@ const CORE = {
     variant:'S1-2: pies 5cm 8s · S3-4: tucked 10s · S5-6: tucked 15s · S7+: piernas extendidas' },
 };
 
-// Lookup combinado (futuros grupos se anaden aqui: Object.assign(CAT, PUSH, PULL, ...))
-const CAT = Object.assign({}, CORE);
+// ─── HIP — Movilidad de cadera (grupo "pull de cadera") ────────────
+const HIP = {
+  'A': { grupo:'hip', plano:'movilidad', equipo:'bw',
+    n:'Hip CARs', d:'2x5 cada lado', note:'Movilidad de cadera en todo el rango (circulos controlados) · Tronco estatico · Pelvis estable', wid:'hip-cars',
+    variant:'S1-2: circulos pequenos con apoyo · S3-4: rango medio sin apoyo · S5-6: rango completo lento · S7+: rango completo + pausa en puntos finales' },
+  'B': { grupo:'hip', plano:'movilidad-rotacion', equipo:'banda',
+    n:'Rotacion de cadera int/ext con banda (tumbado)', d:'2x10 cada direccion/lado', note:'Tumbado en el suelo · Banda alrededor del pie · Mover la pierna en rotacion interna y externa de forma controlada · Movilidad de cadera sin carga axial', wid:'banded-hip-rotation',
+    variant:'S1-2: banda ligera ROM parcial · S3-4: banda ligera ROM completo · S5-6: banda media pausa 1s en rotacion maxima · S7+: banda media + excentrico lento' },
+  'C': { grupo:'hip', plano:'movilidad-aductor', equipo:'bw',
+    n:'Side lunges (zancada lateral / cossack)', d:'2x8 cada lado', note:'Desplazamiento lateral de lado a lado en sentadilla profunda · Estira aductores · Mejora movilidad de cadera · Tronco lo mas erguido posible · Talon apoyado', wid:'cossack-shifts',
+    variant:'S1-2: rango parcial con apoyo de manos · S3-4: rango medio sin apoyo · S5-6: sentadilla lateral profunda · S7+: profunda + pausa 2s + ligera carga goblet' },
+  'D': { grupo:'hip', plano:'fuerza-flexor', equipo:'foam',
+    n:'Elevaciones de pierna sentado sobre foam roller', d:'2x10 cada lado', note:'Sentado en el suelo, una pierna extendida sobre un foam roller · Elevar la pierna por encima del rodillo · Fuerza de flexores de cadera + flexibilidad activa · Tronco erguido', wid:'elevaciones-pierna-sentado',
+    variant:'S1-2: elevacion minima sobre el rodillo · S3-4: elevacion completa controlada · S5-6: + pausa 2s arriba · S7+: + tobillera ligera' },
+  'E': { grupo:'hip', plano:'fuerza-flexor', equipo:'silla',
+    n:'Movilidad de cadera sentado en silla', d:'2x10 cada lado', note:'Sentado en una silla con una pierna extendida · Elevarla y bajarla controlado · Mejora el rango activo y la fuerza de cadera · Util en oficina/descansos (anti-sedestacion)' },
+  'F': { grupo:'hip', plano:'flexibilidad-aductor', equipo:'bw',
+    n:'Estiramiento de cadera en suelo (straddle / split modificado)', d:'2x40 seg', note:'Sentado en el suelo en straddle o split modificado · Elonga los aductores · Aumenta la flexibilidad progresivamente · No forzar, respiracion lenta',
+    variant:'S1-2: straddle estrecho manos en suelo · S3-4: straddle medio inclinacion suave · S5-6: straddle amplio inclinacion adelante · S7+: split modificado progresivo' },
+};
+
+// Lookup combinado con IDs GLOBALES prefijados por grupo (CORE-A, HIP-B, ...)
+// Futuros grupos se anaden a este array.
+const CAT = {};
+for (const [pfx, grp] of [['CORE', CORE], ['HIP', HIP]])
+  for (const k in grp) CAT[pfx + '-' + k] = grp[k];
 
 // Resolver: expande bloques con exIds (catalogo) o los pasa tal cual si ya tienen exs
 function expandBlock(b){
@@ -374,7 +398,7 @@ const WEEK = {
       },
       {
         id: 'E', name: 'Core (anti-extension) + Biceps', dur: '35 min', color: '#993C1D',
-        exIds: ['A','B','C','E'],
+        exIds: ['CORE-A','CORE-B','CORE-C','CORE-E'],
         exs: [
           { n: 'Curl de biceps en barra Z', d: '3x12', note: 'Codos fijos al torso', wid: 'curl-barra', gym: true,
             variant: 'S1-2: carga ligera rango completo · S3-4: carga media exc 3s · S5-6: carga alta pausa 1s arriba · S7+: carga alta exc 4s + pausa',
@@ -397,7 +421,7 @@ const WEEK = {
     blocks: [
       MOB_BLOCK_A1,
       BLOCK_ESTAB_PIERNA,
-      { id: 'E', name: 'Core — general 3 planos (pre-piscina)', dur: '15-20 min', color: '#993C1D', exIds: ['F','G2','D','I'] },
+      { id: 'E', name: 'Core — general 3 planos (pre-piscina)', dur: '15-20 min', color: '#993C1D', exIds: ['CORE-F','CORE-G2','CORE-D','CORE-I'] },
       POOL_UNIFICADA,
     ]
   },
@@ -439,7 +463,7 @@ const WEEK = {
       },
       {
         id: 'E', name: 'Core (anti-rotacion + anti-lateral) + Neural', dur: '25 min', color: '#993C1D',
-        exIds: ['G','D','J','E'],
+        exIds: ['CORE-G','CORE-D','CORE-J','CORE-E'],
         exs: [
           { n: 'Neural flossing nervio ciatico', d: '2x10 cada lado', note: 'Sin dolor · Deslizamiento puro', wid: 'neural-flossing', variant: 'S1-2: angulo 30-40° muy suave · S3-4: angulo 60° ritmo lento · S5-6: angulo 80° · S7+: angulo completo + dorsiflexion' },
         ]
@@ -457,7 +481,7 @@ const WEEK = {
     blocks: [
       MOB_BLOCK_A1,
       BLOCK_ESTAB_PIERNA,
-      { id: 'E', name: 'Core — general 3 planos (pre-piscina)', dur: '15-20 min', color: '#993C1D', exIds: ['F','G2','H','I'] },
+      { id: 'E', name: 'Core — general 3 planos (pre-piscina)', dur: '15-20 min', color: '#993C1D', exIds: ['CORE-F','CORE-G2','CORE-H','CORE-I'] },
       POOL_UNIFICADA,
     ]
   },
@@ -576,7 +600,7 @@ const WEEK = {
           { n: 'Glute bridge unilateral', d: '3x12 cada lado — pausa 2 seg', note: 'Una pierna en el aire · Pelvis nivelada', wid: 'glute-bridge-uni', variant: 'S1-2: bilateral como base · S3-4: unilateral pierna libre flexionada · S5-6: unilateral pierna libre extendida · S7+: mancuerna en cadera de trabajo' },
         ]
       },
-      { id: 'CR', name: 'Core — anti-rotacion + anti-extension (casa-posible)', dur: '15 min', color: '#993C1D', exIds: ['G2','C','A','K'] },
+      { id: 'CR', name: 'Core — anti-rotacion + anti-extension (casa-posible)', dur: '15 min', color: '#993C1D', exIds: ['CORE-G2','CORE-C','CORE-A','CORE-K'] },
     ]
   },
 
