@@ -278,7 +278,69 @@ const BLOCK_CORE_PISCINA = {
   ]
 };
 
-const SESSIONS = {
+// ═══════════════════════════════════════════════════════════════════
+// ─── CATÁLOGO DE EJERCICIOS por grupo muscular (IDs globales) ──────
+// Fuente única consultable. El plan semanal (WEEK) referencia estos IDs.
+// Migracion incremental: empezamos por CORE; otros grupos se anaden igual.
+// ═══════════════════════════════════════════════════════════════════
+const CORE = {
+  'A':  { grupo:'core', plano:'anti-ext', equipo:'bw',
+    n:'Dead bug con extension completa', d:'3x10 cada lado', note:'Lumbar pegada al suelo siempre', wid:'dead-bug',
+    variant:'S1-2: un miembro solo · S3-4: contralateral completo · S5-6: press palma rodilla · S7+: con peso en pie' },
+  'B':  { grupo:'core', plano:'anti-rot', equipo:'bw',
+    n:'Bird dog con pausa', d:'3x10 cada lado — pausa 3 seg', note:'Control pelvico', wid:'bird-dog',
+    variant:'S1-2: brazo o pierna separado · S3-4: contralateral pausa 3s · S5-6: banda tobillo · S7+: superficie inestable' },
+  'C':  { grupo:'core', plano:'anti-ext', equipo:'bw',
+    n:'Plank anterior', d:'3x30-45 seg', note:'Empujar suelo con codos · Gluteo y core activos · Lumbar neutra', wid:'plank-anterior',
+    variant:'S1-2: 20s rodillas · S3-4: 30s completo · S5-6: 45s · S7+: elevacion alterna de brazo/pierna' },
+  'D':  { grupo:'core', plano:'anti-lat', equipo:'bw',
+    n:'Plank lateral', d:'3x25-35 seg cada lado', note:'Cadera elevada · Cuerpo en linea · Anti-flexion lateral', wid:'plank-lateral',
+    variant:'S1-2: rodillas 20s · S3-4: completo 25s · S5-6: 35s · S7+: abduccion de pierna superior' },
+  'E':  { grupo:'core', plano:'anti-ext', equipo:'bw',
+    n:'Hollow body hold', d:'3x20 seg', note:'Lumbar neutra obligatorio · Solo sin irradiacion', wid:'hollow-body',
+    variant:'S1-2: rodillas 15s · S3-4: piernas 45° 20s · S5-6: piernas 30° 25s · S7+: piernas 15° 30s · F3: en barra 3x10-15s' },
+  'F':  { grupo:'core', plano:'anti-ext+descomp', equipo:'barra',
+    n:'Hollow body hang colgado en barra', d:'3x10-15 seg', note:'Colgado de la barra en hollow (lumbar neutra, pelvis en retroversion suave) · Core anti-extension + traccion descompresiva · Solo sin irradiacion · Soltar si falla agarre o irradiacion S1', wid:'hollow-body',
+    variant:'S1-2: dead hang pasivo 3x20s — solo descompresion · S3-4: rodillas recogidas (tuck) 3x10s · S5-6: tuck + extension parcial 3x12s · S7+: hollow hang piernas extendidas 3x10-15s · F3: con elevacion de rodillas' },
+  'G':  { grupo:'core', plano:'anti-rot', equipo:'polea',
+    n:'Pallof press en polea', d:'3x10 diagonal cada lado', note:'Anti-rotacion · Resistir el giro sin generarlo — lo mas protector para la extrusion', wid:'pallof-press',
+    variant:'S1-2: isometrico pecho · S3-4: press diagonal · S5-6: press + paso lateral · S7+: de rodillas en superficie inestable' },
+  'G2': { grupo:'core', plano:'anti-rot', equipo:'banda',
+    n:'Pallof press con banda', d:'3x10 cada lado', note:'Anti-rotacion version banda (apta para casa) · Banda anclada al costado a altura de pecho · Pelvis y tronco fijos', wid:'pallof-press',
+    variant:'S1-2: banda ligera isometrico pecho · S3-4: banda media press diagonal · S5-6: banda fuerte · S7+: + paso lateral' },
+  'H':  { grupo:'core', plano:'anti-lat', equipo:'bw/banco',
+    n:'Copenhagen plank (plancha de aductores)', d:'3x15-25 seg cada lado', note:'Variada · Pie/rodilla superior en banco · Aductor + oblicuo + estabilizador de cadera · Pelvis nivelada', wid:'copenhagen-plank',
+    variant:'S1-2: rodilla apoyada (palanca corta) 3x15s · S3-4: rodilla mas tiempo 3x20s · S5-6: pie en banco palanca larga 3x15s · S7+: pie en banco + elevacion de pierna libre' },
+  'I':  { grupo:'core', plano:'transfer-agua', equipo:'piscina',
+    n:'Streamline + plancha flotante con pull buoy', d:'4x15-20 m / 30 seg', note:'Lleva el brace de la plancha al agua · Pull buoy entre los muslos · Cuerpo rigido en hollow/streamline (lumbar neutra) · Deslizar manteniendo el mismo brace que en tierra · Sin arquear', wid:'hollow-body',
+    variant:'S1-2: hold streamline estatico agarrado al borde 4x20s · S3-4: deslizamiento tras impulso 4x15m · S5-6: deslizamiento + patada suave manteniendo linea · S7+: deslizamiento largo + rotacion controlada' },
+  'J':  { grupo:'core', plano:'anti-ext-inf', equipo:'polea',
+    n:'Leg raise en polea baja', d:'3x10', note:'Decubito supino · Cable en tobillos · Lumbar pegada al suelo — PARAR si se despega', wid:'leg-raise-polea',
+    variant:'S1-4: no introducir · S5-6: rodillas semiflexionadas peso minimo 3x8 · S7+: piernas mas extendidas 3x10 · F3: piernas rectas rango completo' },
+  'K':  { grupo:'core', plano:'anti-lat', equipo:'mancuerna/banda',
+    n:'Suitcase carry / hold', d:'3x30-40 seg o 3x20m por lado', note:'Peso en UNA mano (mancuerna, KB o banda) · Anti-flexion lateral · Tronco vertical sin inclinarse hacia el peso · Hombros y caderas nivelados', wid:'flexion-lateral-mancuerna',
+    variant:'S1-2: hold ligero 30s · S3-4: hold medio 40s · S5-6: caminata (carry) 20m · S7+: carry pesado 20m + cambios de direccion' },
+  'L':  { grupo:'core', plano:'compuesto', equipo:'bw',
+    n:'L-sit progresion', d:'3x10-15 seg', note:'Flexores de cadera + core · Solo sin irradiacion', wid:'l-sit',
+    variant:'S1-2: pies 5cm 8s · S3-4: tucked 10s · S5-6: tucked 15s · S7+: piernas extendidas' },
+};
+
+// Lookup combinado (futuros grupos se anaden aqui: Object.assign(CAT, PUSH, PULL, ...))
+const CAT = Object.assign({}, CORE);
+
+// Resolver: expande bloques con exIds (catalogo) o los pasa tal cual si ya tienen exs
+function expandBlock(b){
+  if (b.exIds) return { id:b.id, name:b.name, dur:b.dur, color:b.color,
+    exs:[ ...b.exIds.map(id => CAT[id]).filter(Boolean), ...(b.exs || []) ] };
+  return b;
+}
+function buildSessions(week){
+  const out = {};
+  for (const k in week) out[k] = Object.assign({}, week[k], { blocks: week[k].blocks.map(expandBlock) });
+  return out;
+}
+
+const WEEK = {
 
   // ─── 1 — LUNES: Cadena posterior + Core + Biceps ──────────────
   1: {
@@ -311,14 +373,9 @@ const SESSIONS = {
         ]
       },
       {
-        id: 'E', name: 'Core F2 + Biceps + Calistenia', dur: '35 min', color: '#993C1D',
+        id: 'E', name: 'Core (anti-extension) + Biceps', dur: '35 min', color: '#993C1D',
+        exIds: ['A','B','C','E'],
         exs: [
-          { n: 'Dead bug con extension completa', d: '3x10 cada lado', note: 'Lumbar pegada al suelo siempre', wid: 'dead-bug', variant: 'S1-2: un miembro solo · S3-4: contralateral completo · S5-6: press palma rodilla · S7+: con peso en pie' },
-          { n: 'Bird dog con pausa', d: '3x10 cada lado — pausa 3 seg', note: 'Control pelvico', wid: 'bird-dog', variant: 'S1-2: brazo o pierna separado · S3-4: contralateral pausa 3s · S5-6: banda tobillo · S7+: superficie inestable' },
-          { n: 'Hollow body hold', d: '3x20 seg', note: 'Lumbar neutra obligatorio · Solo sin irradiacion', wid: 'hollow-body', variant: 'S1-2: rodillas 15s · S3-4: piernas 45° 20s · S5-6: piernas 30° 25s · S7+: piernas 15° 30s · F3: en barra 3x10-15s' },
-          { n: 'Plank anterior', d: '3x30 seg', note: 'Empujar suelo con codos', wid: 'plank-anterior', variant: 'S1-2: 20s rodillas · S3-4: 30s completo · S5-6: 45s · S7+: elevacion alterna' },
-          { n: 'Glute bridge unilateral', d: '3x12 cada lado — pausa 2 seg', note: 'Una pierna en el aire · Pelvis nivelada', wid: 'glute-bridge-uni', variant: 'S1-2: bilateral como base · S3-4: unilateral pierna libre flexionada · S5-6: unilateral pierna libre extendida · S7+: mancuerna en cadera de trabajo' },
-          { n: 'L-sit progresion', d: '3x10-15 seg', note: 'Solo sin irradiacion', wid: 'l-sit', variant: 'S1-2: pies 5cm 8s · S3-4: tucked 10s · S5-6: tucked 15s · S7+: piernas extendidas' },
           { n: 'Curl de biceps en barra Z', d: '3x12', note: 'Codos fijos al torso', wid: 'curl-barra', gym: true,
             variant: 'S1-2: carga ligera rango completo · S3-4: carga media exc 3s · S5-6: carga alta pausa 1s arriba · S7+: carga alta exc 4s + pausa',
             homeAlt: { n: 'Curl de biceps con banda', d: '3x12 — codos fijos', note: 'Banda bajo los pies · Codos pegados al torso · Mismo patron que barra Z', variant: 'S1-2: banda ligera · S3-4: banda media exc 3s · S5-6: banda fuerte pausa 1s arriba · S7+: unilateral banda fuerte exc 4s' } },
@@ -340,7 +397,7 @@ const SESSIONS = {
     blocks: [
       MOB_BLOCK_A1,
       BLOCK_ESTAB_PIERNA,
-      BLOCK_CORE_PISCINA,
+      { id: 'E', name: 'Core — general 3 planos (pre-piscina)', dur: '15-20 min', color: '#993C1D', exIds: ['F','G2','D','I'] },
       POOL_UNIFICADA,
     ]
   },
@@ -381,12 +438,9 @@ const SESSIONS = {
         ]
       },
       {
-        id: 'E', name: 'Core ligero + Neural', dur: '25 min', color: '#993C1D',
+        id: 'E', name: 'Core (anti-rotacion + anti-lateral) + Neural', dur: '25 min', color: '#993C1D',
+        exIds: ['G','D','J','E'],
         exs: [
-          { n: 'Pallof press en polea', d: '3x10 diagonal cada lado', note: 'Anti-rotacion', wid: 'pallof-press', variant: 'S1-2: isometrico pecho · S3-4: press diagonal · S5-6: press + paso lateral' },
-          { n: 'Dead bug con extension completa', d: '3x10 cada lado', note: 'Lumbar pegada al suelo siempre', wid: 'dead-bug', variant: 'S1-2: un miembro solo · S3-4: contralateral completo · S5-6: press palma rodilla · S7+: con peso en pie' },
-          { n: 'Plank lateral', d: '3x25 seg cada lado', note: 'Cadera elevada', wid: 'plank-lateral', variant: 'S1-2: rodillas 20s · S3-4: completo 25s · S5-6: 35s · S7+: abduccion pierna' },
-          { n: 'Hollow body hold', d: '3x20 seg', note: 'Lumbar neutra · Solo sin irradiacion', wid: 'hollow-body', variant: 'S1-2: rodillas 15s · S3-4: piernas 45 20s · S5-6: piernas 30 25s · S7+: piernas 15 30s · F3: en barra 3x10-15s' },
           { n: 'Neural flossing nervio ciatico', d: '2x10 cada lado', note: 'Sin dolor · Deslizamiento puro', wid: 'neural-flossing', variant: 'S1-2: angulo 30-40° muy suave · S3-4: angulo 60° ritmo lento · S5-6: angulo 80° · S7+: angulo completo + dorsiflexion' },
         ]
       },
@@ -403,7 +457,7 @@ const SESSIONS = {
     blocks: [
       MOB_BLOCK_A1,
       BLOCK_ESTAB_PIERNA,
-      BLOCK_CORE_PISCINA,
+      { id: 'E', name: 'Core — general 3 planos (pre-piscina)', dur: '15-20 min', color: '#993C1D', exIds: ['F','G2','H','I'] },
       POOL_UNIFICADA,
     ]
   },
@@ -522,10 +576,14 @@ const SESSIONS = {
           { n: 'Glute bridge unilateral', d: '3x12 cada lado — pausa 2 seg', note: 'Una pierna en el aire · Pelvis nivelada', wid: 'glute-bridge-uni', variant: 'S1-2: bilateral como base · S3-4: unilateral pierna libre flexionada · S5-6: unilateral pierna libre extendida · S7+: mancuerna en cadera de trabajo' },
         ]
       },
+      { id: 'CR', name: 'Core — anti-rotacion + anti-extension (casa-posible)', dur: '15 min', color: '#993C1D', exIds: ['G2','C','A','K'] },
     ]
   },
 
 };
+
+// Genera SESSIONS (forma que consume la app) a partir del plan WEEK + catalogo
+const SESSIONS = buildSessions(WEEK);
 
 // ═══════════════════════════════════════════════════════════════════
 // ─── MOB_BLOCK — BLOQUE EXTRA DE MOVILIDAD (nuevo) ────────────────
