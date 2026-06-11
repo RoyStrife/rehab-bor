@@ -486,6 +486,8 @@ const CARD = {
     homeAlt:{ n:'Marcha activa o step en sitio', d:'20 min — ritmo moderado', note:'Step elevando rodillas · O marcha exterior' } },
   'C': { grupo:'cardio', n:'Eliptica', d:'15-20 min — FC 110-125 — resistencia 3-5', note:'Sin impacto · Postura erguida', wid:'eliptica', gym:true,
     homeAlt:{ n:'Marcha activa o step en sitio', d:'20 min — ritmo moderado', note:'Step elevando rodillas · O marcha en exterior' } },
+  'D': { grupo:'cardio', n:'Eliptica — cierre largo', d:'60 min — FC 110-125 — resistencia 3-5', note:'Sesion de cierre · Ritmo aerobico constante · Sin standing · Postura erguida · Anotar FC media y distancia', wid:'eliptica', gym:true,
+    homeAlt:{ n:'Caminata exterior larga', d:'55-60 min — ritmo moderado', note:'Alternativa en casa · Paso largo activo · FC max 125' } },
 };
 
 // Lookup combinado con IDs GLOBALES prefijados por grupo (CORE-A, HIP-B, QUAD-C, ...)
@@ -546,13 +548,13 @@ const WEEK = {
   // ─── 4 — JUEVES: Pecho + Tiro horizontal + Core ────────────────
   4: {
     name: 'Jueves', tag: 'Empuje + Tiro', neural: false,
-    dur: '110 min', loc: 'Gym', homeLoc: 'Casa',
+    dur: '160 min', loc: 'Gym', homeLoc: 'Casa',
     keyExs: 'Scapular pull (descompresion) · Jalon ancho · Remo maquina · Pec deck · Fondos asistidos',
-    cardio: 'Bici estatica — 15-20 min FC 110-120',
+    cardio: 'Ergometro 2000m (apertura) · Eliptica 60 min (cierre)',
     blocks: [
       MOB_BLOCK_A1,
       MOB_BLOCK_B_JUE,
-      { id: 'C', name: 'Cardio sala — Bici estatica', dur: '15-20 min', color: '#185FA5', exIds: ['CARD-B'] },
+      { id: 'C', name: 'Cardio apertura — Ergometro 2000m', dur: '15-20 min', color: '#185FA5', exIds: ['CARD-A'] },
       { id: 'D', name: 'Empuje + Tiro (sin carga axial)', dur: '50 min', color: '#3C3489', exIds: ['PULL-A','PULL-B','PULL-C','PUSH-A','PUSH-B','SHOULDER-A','ARM-A'] },
       {
         id: 'E', name: 'Core (anti-rotacion + anti-lateral) + Neural', dur: '25 min', color: '#993C1D',
@@ -561,6 +563,7 @@ const WEEK = {
           { n: 'Neural flossing nervio ciatico', d: '2x10 cada lado', note: 'Sin dolor · Deslizamiento puro', wid: 'neural-flossing', variant: 'S1-2: angulo 30-40° muy suave · S3-4: angulo 60° ritmo lento · S5-6: angulo 80° · S7+: angulo completo + dorsiflexion' },
         ]
       },
+      { id: 'F', name: 'Cardio cierre — Eliptica 60 min', dur: '60 min', color: '#185FA5', exIds: ['CARD-D'] },
     ]
   },
 
