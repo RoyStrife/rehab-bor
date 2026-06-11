@@ -324,6 +324,12 @@ const CORE = {
   'M':  { grupo:'core', plano:'anti-ext+flexor-cadera', equipo:'bw',
     n:'Plancha con extension de cadera activa', d:'3x8-10 rep cada lado', note:'Desde plancha anterior — elevar una pierna extendida hacia atras hasta altura de cadera · Gluteo activo en la pierna elevada · Flexores de cadera opuestos trabajando isometricamente · Lumbar neutra obligatorio — no arquear al subir la pierna · Pelvis no rotar · Pausa 1-2 seg arriba', wid:'plank-hip-extension',
     variant:'S1-2: desde rodillas, elevar pierna 10 cm 3x6 · S3-4: plancha completa, elevacion parcial (45°) 3x8 · S5-6: plancha completa, elevacion hasta horizontal 3x10 · S7+: elevacion con tobillera ligera o banda en tobillos 3x10' },
+  'N':  { grupo:'core', plano:'flexor-cadera+anti-ext', equipo:'banco',
+    n:'Hip flexor plank (plancha flexor cadera en banco)', d:'3x10-12 rep cada lado', note:'Plancha con una rodilla apoyada en el banco y la otra pierna suspendida · Flexionar y extender la pierna suspendida de forma controlada · La rodilla en el banco estabiliza la pelvis · Core activo durante todo el movimiento', wid:'hip-flexor-plank',
+    variant:'S1-2: rodilla apoyada — solo mantener posicion 3x20s · S3-4: pierna suspendida, recorrido corto (30°) 3x10 · S5-6: recorrido completo rodilla al pecho 3x12 · S7+: tobillera ligera + pausa 1s en flexion maxima' },
+  'O':  { grupo:'core', plano:'flexor-cadera+anti-ext', equipo:'banco',
+    n:'Hip flexor pike (pike flexor cadera en banco)', d:'3x8-10 rep cada lado', note:'Plancha con una rodilla apoyada en el banco · Elevar la cadera al mismo tiempo que se extiende la pierna libre hacia arriba (movimiento pike) · Combina flexor de cadera con control lumbar · No hiperlordosis al bajar', wid:'hip-flexor-pike',
+    variant:'S1-2: solo elevacion de cadera (sin pierna extendida) 3x8 · S3-4: pike parcial pierna extendida 45° 3x8 · S5-6: pike completo pierna vertical 3x10 · S7+: pike completo + pausa 2s arriba 3x10' },
 };
 
 // ─── HIP — Movilidad de cadera (grupo "pull de cadera") ────────────
@@ -351,6 +357,18 @@ const HIP = {
   'H': { grupo:'hip', plano:'flexibilidad-tfl', equipo:'bw',
     n:'TFL stretch — piramidal en suelo', d:'2x40 seg cada lado', note:'Estiramiento TFL + rotadores externos · L5-S1 izq primero', wid:'tfl-stretch',
     variant:'S1-2: figura 4 en suelo pasivo · S3-4: figura 4 activo con presion rodilla · S5-6: pigeon pose en suelo · S7+: pigeon pose con inclinacion tronco' },
+  'I': { grupo:'hip', plano:'fuerza-flexor', equipo:'banco',
+    n:'HF fall back (banco)', d:'3x8-10 cada lado', note:'Sentado en el borde del banco · Inclinacion hacia atras manteniendo pierna extendida elevada — sujeta con la mano · Flexores de cadera en rango elongado bajo tension · Lumbar neutra en todo momento · Variante 2: rodilla flexionada', wid:'hf-fall-back',
+    variant:'S1-2: inclinacion minima (30°) pierna semiflexionada · S3-4: inclinacion 45° pierna extendida · S5-6: inclinacion 60° + pausa 2s · S7+: inclinacion maxima + variante rodilla flexionada' },
+  'J': { grupo:'hip', plano:'fuerza-flexor', equipo:'kettlebell',
+    n:'KB HF raise (plataforma)', d:'3x10 cada lado', note:'De pie sobre plataforma · KB colgada del pie (tobillera o lazo) · Elevar rodilla hasta la cadera — carga excentrica en descenso · Tronco erguido con apoyo · No balancear', wid:'kb-hf-raise',
+    variant:'S1-2: sin KB solo elevacion controlada 3x12 · S3-4: KB 4-6 kg 3x10 · S5-6: KB 8 kg 3x8 + pausa 2s arriba · S7+: KB 12 kg 3x8 exc 3s' },
+  'K': { grupo:'hip', plano:'fuerza-flexor', equipo:'banda',
+    n:'Banded HF raise (tumbado + de pie)', d:'3x10 cada lado', note:'Dos posiciones: tumbado en banco con banda al pie (rodilla al pecho) · De pie con apoyo en banco, rodilla resistida por la banda · Tension constante durante todo el rango · No compensar con el tronco', wid:'banded-hf-raise',
+    variant:'S1-2: tumbado banda ligera ROM parcial · S3-4: tumbado banda media ROM completo · S5-6: de pie banda media pausa 1s arriba · S7+: de pie banda fuerte + pausa 2s + excentrico 3s' },
+  'L2': { grupo:'hip', plano:'fuerza-flexor', equipo:'barra+pelota',
+    n:'Hanging ball raise (barra + pelota medicinal)', d:'3x8-10', note:'Colgado de barra de dominadas · Pelota medicinal sujeta entre los pies · Elevar ambas rodillas al pecho de forma controlada · Core activo todo el tiempo · No balancear el cuerpo', wid:'hanging-ball-raise',
+    variant:'S1-2: sin pelota — elevacion de rodillas controlada · S3-4: pelota 2-3 kg 3x8 · S5-6: pelota 4-5 kg 3x8 + pausa 1s arriba · S7+: pelota 6-8 kg 3x8 excentrico lento' },
 };
 
 // ─── HINGE — bisagra de cadera / cadena posterior ──────────────────
@@ -368,6 +386,12 @@ const HINGE = {
   'E': { grupo:'hinge', n:'Hinge (bisagra de cadera) — rango parcial', d:'3x8 — rango comodo sin tiron', note:'ADVERTENCIA CIATICA: es el movimiento donde mas se tensa el nervio ciatico · Si sientes tiron como banda elastica a punto de romperse NO fuerces · Rango parcial permite ganar fuerza · Para si irradiacion S1', wid:'rdl-mancuernas', gym:true,
     variant:'S1-2: good morning con banda — solo activacion sin carga · S3-4: RDL mancuernas livianas hasta rodillas · S5-6: RDL carga media rango comodo exc 3s · S7+: RDL rango completo si sin irradiacion · F3: RDL completo tecnica impecable',
     homeAlt:{ n:'Good morning con banda elastica', d:'3x12 — foco en patron', note:'Banda anclada bajo los pies · Bisagra de cadera pura · Espalda neutra requisito absoluto · Parar si tiron ciatico', variant:'S1-2: banda ligera rango parcial · S3-4: banda media bisagra completa · S5-6: banda fuerte exc 3s · S7+: carga progresiva' } },
+  'F': { grupo:'hinge', n:'Bulgarian split squat', d:'3x8 cada lado — excentrico 3 seg', note:'Pie trasero en plataforma baja · Pie delantero sobre disco de peso · Descender la cadera verticalmente · Estira el flexor de cadera trasero + carga cuadriceps · Tronco erguido', wid:'bulgarian-split-squat', gym:true,
+    variant:'S1-2: bw ROM parcial (60°) · S3-4: bw ROM completo · S5-6: mancuernas 6-8 kg · S7+: mancuernas 10-14 kg + pausa 2s abajo',
+    homeAlt:{ n:'Split squat con pie trasero en silla', d:'3x8 cada lado', note:'Sustituye la plataforma baja por una silla · Mismo patron · Sin carga o con mancuernas ligeras', variant:'S1-2: bw ROM parcial · S3-4: bw ROM completo · S5-6: mancuernas 5-8 kg · S7+: mancuernas 10 kg pausa abajo' } },
+  'G': { grupo:'hinge', n:'Long lunge (estocada profunda con carga)', d:'3x10 cada lado — posicion sostenida', note:'Estocada profunda con carga en las manos (mancuernas o barra con discos) · Mantener la posicion baja · Estira el flexor de cadera trasero · Activa el cuadriceps y gluteo delantero · Tronco erguido', wid:'long-lunge', gym:true,
+    variant:'S1-2: bw sin carga posicion sostenida 3x20s · S3-4: mancuernas 4-6 kg 3x10 · S5-6: mancuernas 8-10 kg + pausa 3s abajo · S7+: mancuernas 12-14 kg o barra con discos 3x10',
+    homeAlt:{ n:'Estocada estatica sostenida bw', d:'3x20 seg cada lado', note:'Misma posicion de estocada profunda · Sin carga · Foco en la tension del flexor de cadera trasero', variant:'S1-2: posicion semiflexionada 3x15s · S3-4: posicion completa 3x20s · S5-6: posicion profunda + respuracion lenta · S7+: + ligera carga goblet' } },
 };
 
 // ─── PULL — tiro (dorsal/espalda) sin carga axial ──────────────────
@@ -1025,6 +1049,244 @@ EX_DB['plank-hip-extension'] = {
   ],
   variantes: ['S1-2: desde rodillas, elevar pierna 10 cm 3x6 cada lado. S3-4: plancha completa, elevacion hasta 45° 3x8. S5-6: plancha completa, elevacion hasta horizontal 3x10. S7+: tobillera ligera o banda en tobillos 3x10.'],
   notas_columna: 'La extension de cadera activa en plancha es exigente para la lumbar si se supera la horizontal — la pierna NO debe subir mas alla de la cadera con extrusion activa. La pierna de apoyo trabaja los flexores de cadera isometricamente, lo cual es el estimulo terapeutico principal para el psoas iliaco sin carga axial.'
+};
+
+EX_DB['hf-fall-back'] = {
+  nombre: 'HF fall back (caida hacia atras en banco)',
+  categoria: 'Flexores de Cadera F2-F3',
+  color: '#7A3DAA',
+  descripcion: 'Ejercicio de fuerza excentriica e isometrica para los flexores de cadera realizado sentado en el borde de un banco. La persona se inclina progresivamente hacia atras manteniendo una pierna extendida elevada sujeta con la mano, poniendo los flexores de cadera bajo tension en rango elongado. La variante con rodilla flexionada reduce la demanda pero permite mayor rango de inclinacion.',
+  posicion: 'Sentado en el borde de un banco o caja. Tronco erguido. Una pierna extendida elevada por delante (sujeta con ambas manos bajo el muslo o el tobillo). La otra pierna con el pie apoyado en el suelo.',
+  pasos: [
+    'Sienta en el borde del banco con una pierna extendida y elevada — sujetala con las manos.',
+    'Activa el core para estabilizar la lumbar antes de inclinarte.',
+    'Inclinate lentamente hacia atras manteniendo la pierna elevada en la misma posicion.',
+    'Llega hasta el angulo donde sientas la tension en el flexor de cadera de la pierna elevada.',
+    'Manten la posicion 1-2 segundos y vuelve al inicio de forma controlada.',
+    'Variante 2: misma mecanica pero con la rodilla flexionada a 90° — permite mayor inclinacion con menos tension.',
+  ],
+  errores: [
+    'Soltar la pierna al inclinarse — siempre mantener la sujecion.',
+    'Lumbar que se flexiona en exceso al caer hacia atras — el movimiento viene de la cadera, no de la columna.',
+    'Inclinar demasiado rapido — el control excentrico es el objetivo principal.',
+    'Elevar la pierna mas alla de lo que el flexor permite — compensacion con la lumbar.',
+  ],
+  variantes: [
+    'S1-2: inclinacion minima 20-30°, pierna semiflexionada — solo isometrico 3x20s.',
+    'S3-4: inclinacion 45°, pierna extendida — movimiento controlado 3x8 cada lado.',
+    'S5-6: inclinacion 60°, pausa 2s en el punto de maxima tension 3x10.',
+    'S7+: inclinacion maxima + variante con rodilla flexionada encadenadas 3x10.',
+  ],
+  notas_columna: 'El HF fall back es uno de los pocos ejercicios que carga el psoas iliaco y el recto femoral en rango elongado sin carga axial sobre la columna. Especialmente util en recuperacion de hernia discal L4-L5/L5-S1 porque el paciente esta sentado (descarga) y la lumbar se puede mantener neutra con control activo. Progresar muy gradualmente en el angulo de inclinacion.'
+};
+
+EX_DB['kb-hf-raise'] = {
+  nombre: 'KB HF raise (elevacion de rodilla con kettlebell)',
+  categoria: 'Flexores de Cadera F3',
+  color: '#7A3DAA',
+  descripcion: 'Ejercicio de fuerza para los flexores de cadera de pie sobre una plataforma (caja, step o escalon), con una kettlebell colgada del pie mediante una tobillera o un lazo. La elevacion de la rodilla hasta la altura de la cadera trabaja los flexores en rango concentrico y excentriico contra la carga de la KB. La plataforma es imprescindible para dar recorrido a la bajada.',
+  posicion: 'De pie sobre una plataforma de 20-30 cm. Una mano apoyada en una barra o pared para equilibrio. KB colgada del pie de la pierna de trabajo mediante tobillera de carga o lazo seguro.',
+  pasos: [
+    'Sube a la plataforma. Asegura la KB al pie con la tobillera o el lazo.',
+    'Ponte de pie erguido con el core activo. Apoya la mano libre en una barra.',
+    'Eleva la rodilla de la pierna con KB hasta la altura de la cadera — movimiento controlado, sin balanceo.',
+    'Pausa 1-2 segundos en la posicion alta con la rodilla flexionada.',
+    'Baja con control excentrico — no dejes caer la pierna.',
+    'Repite sin que la KB toque el suelo entre repeticiones.',
+  ],
+  errores: [
+    'Balancear el torso para ayudar a subir — solo deben trabajar los flexores de la pierna de trabajo.',
+    'No usar plataforma — sin ella el recorrido es insuficiente.',
+    'KB mal sujeta — revisar el amarre antes de cada serie.',
+    'Subir la rodilla mas alla de la horizontal — no aporta beneficio adicional y desestabiliza.',
+    'Bajar demasiado rapido — el excentrico es fundamental.',
+  ],
+  variantes: [
+    'S1-2: sin KB, solo elevacion de rodilla controlada con pausa 2s 3x12.',
+    'S3-4: KB 4-6 kg, 3x10, excentrico 2s.',
+    'S5-6: KB 8 kg, 3x8, excentrico 3s + pausa 2s arriba.',
+    'S7+: KB 10-12 kg, 3x8, excentrico 3s + pausa 2s arriba.',
+  ],
+  notas_columna: 'La KB HF raise es la variante mas especifica de fortalecimiento del psoas iliaco y el recto femoral con carga externa directa. Al realizarse de pie y sin carga axial en la columna (la carga cuelga del pie), es compatible con fases intermedias de recuperacion discal. La plataforma es imprescindible para que la KB no toque el suelo y se mantenga la tension durante todo el recorrido.'
+};
+
+EX_DB['banded-hf-raise'] = {
+  nombre: 'Banded HF raise (elevacion de rodilla con banda)',
+  categoria: 'Flexores de Cadera F2-F3',
+  color: '#7A3DAA',
+  descripcion: 'Ejercicio de fuerza para los flexores de cadera con resistencia de banda elastica. Existen dos posiciones: (1) tumbado en un banco, donde la banda anclada al pie resiste la flexion de rodilla hacia el pecho; (2) de pie apoyado en un banco, donde la banda resiste la elevacion de rodilla. La banda proporciona resistencia variable y tension constante.',
+  posicion: 'Posicion 1 (tumbado): tumbado en un banco con la banda anclada a un punto fijo a los pies. Banda unida al pie de la pierna de trabajo. Posicion 2 (de pie): de pie frente a un banco o barra, una mano apoyada, banda anclada baja detras y unida al pie de la pierna de trabajo.',
+  pasos: [
+    'POSICION TUMBADO: Tumba en el banco con la banda lista. Flexiona la rodilla llevandola hacia el pecho de forma controlada contra la resistencia de la banda. Pausa 1s arriba. Baja con control excentrico.',
+    'POSICION DE PIE: De pie con la mano de apoyo. La banda tira del pie hacia atras. Eleva la rodilla hacia adelante y arriba hasta la altura de la cadera resistiendo la banda. Pausa 1s arriba. Baja con control.',
+    'En ambas posiciones: core activo, lumbar neutra, sin compensar con el tronco.',
+  ],
+  errores: [
+    'Compensar con el tronco para ayudar a subir la rodilla — solo trabajan los flexores de cadera.',
+    'Banda con demasiada tension al inicio — comienza con banda ligera.',
+    'No controlar el excentrico — dejar que la banda tire de la pierna.',
+    'Pelvis que rota al elevar la rodilla (de pie) — fijar la pelvis activamente.',
+  ],
+  variantes: [
+    'S1-2: tumbado, banda ligera, ROM parcial (rodilla a 90°) 3x10.',
+    'S3-4: tumbado, banda media, ROM completo (rodilla al pecho) 3x10.',
+    'S5-6: de pie, banda media, pausa 1s arriba 3x10.',
+    'S7+: de pie, banda fuerte, pausa 2s + excentrico 3s 3x10.',
+  ],
+  notas_columna: 'La variante tumbada es la mas segura en fases tempranas porque elimina la carga axial y el riesgo de inestabilidad. La variante de pie es mas funcional y transfiere mejor al patron de marcha. La banda genera tension progresiva — maxima en el punto de maxima flexion, lo que entrena exactamente el rango debil del psoas en personas con acortamiento por sedestacion prolongada.'
+};
+
+EX_DB['hip-flexor-plank'] = {
+  nombre: 'Hip flexor plank (plancha flexor cadera en banco)',
+  categoria: 'Core + Flexores de Cadera F2-F3',
+  color: '#993C1D',
+  descripcion: 'Variante de plancha sobre banco donde una rodilla esta apoyada en el banco y la otra pierna queda suspendida en el aire. Desde esa posicion estable, se realiza un movimiento de flexion y extension de la pierna suspendida. La rodilla en el banco actua como fulcro y estabilizador pelvico, permitiendo un trabajo de los flexores de cadera de la pierna libre en un entorno de core activo.',
+  posicion: 'Manos en el suelo en posicion de plancha alta (brazos extendidos). Una rodilla apoyada sobre el banco (colocado lateralmente al cuerpo). La otra pierna extendida y suspendida, sin tocar el suelo ni el banco.',
+  pasos: [
+    'Coloca las manos en el suelo y apoya una rodilla sobre el banco — el cuerpo queda en un plano inclinado.',
+    'Activa el core: lumbar neutra, pelvis estabilizada.',
+    'Flexiona la pierna suspendida llevando la rodilla hacia el pecho de forma controlada.',
+    'Extiende de nuevo la pierna hacia atras hasta la posicion inicial.',
+    'El tronco y la pelvis no deben moverse — solo la pierna libre.',
+    'Completa las repeticiones de un lado antes de cambiar.',
+  ],
+  errores: [
+    'Pelvis que rota o se inclina al mover la pierna — reducir el rango de movimiento.',
+    'Lumbar que se arquea al extender la pierna — es el error critico con extrusion discal.',
+    'Manos demasiado adelantadas respecto a los hombros — sobrecarga la zona lumbar.',
+    'Rodilla del banco que se desplaza — asegurar que el banco es estable.',
+  ],
+  variantes: [
+    'S1-2: posicion estatica mantenida sin mover la pierna suspendida — solo isometrico 3x20s.',
+    'S3-4: flexion parcial de rodilla (45°) 3x10 cada lado.',
+    'S5-6: flexion completa (rodilla al pecho) + extension hasta horizontal 3x12.',
+    'S7+: extension completa mas alla de la horizontal + tobillera ligera 3x10.',
+  ],
+  notas_columna: 'Este ejercicio es una progresion del bird dog en banco, con mayor demanda sobre los flexores de cadera de la pierna libre y mayor reto de estabilizacion. La inclinacion del cuerpo (manos en suelo, rodilla en banco) reduce la carga lumbar respecto a una plancha horizontal convencional. Contraindicado si la extension de la pierna genera irradiacion S1.'
+};
+
+EX_DB['hanging-ball-raise'] = {
+  nombre: 'Hanging ball raise (elevacion con pelota en barra)',
+  categoria: 'Core + Flexores de Cadera F3',
+  color: '#993C1D',
+  descripcion: 'Ejercicio avanzado de core y flexores de cadera realizado colgado de una barra de dominadas. Se sujeta una pelota medicinal entre los pies y se elevan ambas rodillas hacia el pecho de forma controlada. Combina la fuerza de prension y la descompresion lumbar del colgado con la activacion intensa del psoas, el recto femoral y el core anterior.',
+  posicion: 'Colgado de una barra de dominadas con agarre prono, anchura de hombros. Pelota medicinal sujeta entre los pies (entre los tobillos o entre los empeines). Cuerpo en ligera retroversion pelvica (hollow suave).',
+  pasos: [
+    'Sube a la barra y cuelgate con los brazos extendidos.',
+    'Coloca la pelota medicinal entre los pies — que quede bien sujeta antes de soltar el apoyo.',
+    'Activa el core: pelvis en ligera retroversion, lumbar no en hiperlordosis.',
+    'Eleva ambas rodillas hacia el pecho de forma controlada — no balancees el cuerpo.',
+    'Pausa 1 segundo con las rodillas en la posicion mas alta.',
+    'Baja con control excentrico completo — no dejes caer las piernas.',
+    'PARAR si irradiacion S1 al colgarse o al elevar las piernas.',
+  ],
+  errores: [
+    'Balancear el cuerpo para ayudar a elevar las rodillas — solo deben trabajar el core y los flexores de cadera.',
+    'Soltar la pelota entre repeticiones — riesgo de caida.',
+    'Pelvis en hiperlordosis al elevar — la retroversion es el criterio de seguridad lumbar.',
+    'Irradiacion S1 al colgarse — SUSPENDER el ejercicio.',
+    'Bajar las piernas demasiado rapido — el excentrico es fundamental.',
+  ],
+  variantes: [
+    'S1-2: solo elevacion de rodillas sin pelota — tuck raise 3x8.',
+    'S3-4: pelota 2-3 kg, elevacion de rodillas 3x8.',
+    'S5-6: pelota 4-5 kg, pausa 1s arriba 3x8.',
+    'S7+: pelota 6-8 kg, excentrico lento 3-4s 3x8.',
+  ],
+  notas_columna: 'El colgado descomprime los segmentos L4-L5 y L5-S1 de forma pasiva. Al anadir la elevacion de rodillas con pelota, se convierte en un ejercicio doble: descompresion + fuerza de flexores de cadera. Con extrusion activa, no introducir hasta S5 o superior y siempre evaluar si el colgado genera o alivia los sintomas antes de anadir la carga de la pelota.'
+};
+
+EX_DB['bulgarian-split-squat'] = {
+  nombre: 'Bulgarian split squat',
+  categoria: 'Fuerza Bilateral / Flexor Cadera F3',
+  color: '#7A3DAA',
+  descripcion: 'Variante de sentadilla unilateral con el pie trasero elevado sobre una plataforma baja y el pie delantero apoyado sobre un disco de peso. El descenso vertical de la cadera carga el cuadriceps y el gluteo del lado delantero mientras estira intensamente el flexor de cadera (psoas e iliaco) del lado trasero. La combinacion pie en plataforma + pie delantero en disco aumenta la demanda de estabilizacion del tobillo y la cadera.',
+  posicion: 'De pie con el pie trasero elevado sobre una plataforma baja (15-20 cm). El pie delantero sobre un disco de peso plano (5-10 cm de elevacion frontal). Distancia entre pies: la suficiente para que en el fondo la rodilla delantera no supere la punta del pie. Tronco erguido.',
+  pasos: [
+    'Establece la posicion: pie trasero en la plataforma baja, pie delantero centrado sobre el disco.',
+    'Coge las mancuernas en posicion neutra (a los lados) o en goblet (frente al pecho).',
+    'Activa el core antes de iniciar el descenso.',
+    'Desciende verticalmente controlando la rodilla delantera en tracking sobre el 2° dedo del pie.',
+    'La rodilla trasera desciende hacia el suelo — sin tocarlo.',
+    'Siente la tension del flexor de cadera trasero en el fondo del recorrido.',
+    'Sube empujando con el talon delantero y apretando el gluteo.',
+    'Excentrico de 3 segundos en el descenso.',
+  ],
+  errores: [
+    'Rodilla delantera que cae hacia adentro (valgo) — activar el gluteo medio.',
+    'Tronco que se inclina excesivamente hacia adelante — perder trabajo de gluteo.',
+    'Pie trasero en posicion inestable — asegurar el apoyo antes de cada serie.',
+    'Subir con impulso — el excentrico controlado es el objetivo.',
+    'Disco demasiado alto para el nivel — empezar con disco plano o sin disco.',
+  ],
+  variantes: [
+    'S1-2: solo peso corporal, sin disco ni plataforma, ROM parcial (60°).',
+    'S3-4: peso corporal, pie trasero en plataforma, ROM completo.',
+    'S5-6: mancuernas 6-8 kg c/u, pie delantero en disco, excentrico 3s.',
+    'S7+: mancuernas 10-14 kg c/u, pausa 2s en el fondo + excentrico 3s.',
+  ],
+  notas_columna: 'El Bulgarian split squat es uno de los ejercicios mas eficientes para combinar fuerza de cuadriceps y gluteo con estiramiento activo del psoas contralateral. La elevacion del pie delantero sobre el disco aumenta el rango de dorsiflexion del tobillo, lo que permite un descenso mas vertical y menos estres lumbar que la sentadilla convencional. Contraindicado en fases tempranas con irradiacion activa — introducir a partir de S5 sin dolor.'
+};
+
+EX_DB['long-lunge'] = {
+  nombre: 'Long lunge (estocada profunda con carga)',
+  categoria: 'Flexores de Cadera + Movilidad F3',
+  color: '#7A3DAA',
+  descripcion: 'Estocada profunda donde se mantiene la posicion baja durante toda la serie, con carga en las manos (mancuernas o barra con discos). El nombre "long" hace referencia tanto a la longitud del paso (paso largo) como a la duracion de la posicion sostenida. Combina estiramiento activo del flexor de cadera trasero, fuerza del cuadriceps y gluteo delantero, y exigencia de control lumbar bajo carga.',
+  posicion: 'De pie. Un paso largo hacia adelante hasta quedar en estocada profunda: rodilla delantera a 90°, rodilla trasera cerca del suelo. Tronco erguido. Carga en ambas manos (mancuernas a los lados o barra con discos sujeta delante).',
+  pasos: [
+    'Da un paso largo hacia adelante y baja hasta la posicion de estocada profunda.',
+    'Rodilla trasera cerca del suelo — sin apoyarla.',
+    'Tronco erguido — la carga en las manos actua como contrapeso que ayuda a mantener el equilibrio.',
+    'Siente la tension en el flexor de cadera de la pierna trasera.',
+    'Mantén la posicion el tiempo o las repeticiones indicadas.',
+    'Para las variantes dinamicas: sube y vuelve a bajar de forma controlada.',
+    'PARAR si irradiacion S1 al mantener la posicion baja.',
+  ],
+  errores: [
+    'Paso demasiado corto — la rodilla delantera supera la punta del pie y reduce el trabajo del gluteo.',
+    'Tronco que se inclina hacia adelante — perder la tension en el flexor de cadera trasero.',
+    'Rodilla trasera que golpea el suelo sin control.',
+    'Carga demasiado elevada para el nivel de estabilizacion lumbar actual.',
+    'Irradiacion S1 al bajar — SUSPENDER.',
+  ],
+  variantes: [
+    'S1-2: sin carga, posicion sostenida 3x20s cada lado, rodilla trasera en el suelo como apoyo.',
+    'S3-4: sin carga, posicion sostenida 3x20s, rodilla trasera suspendida.',
+    'S5-6: mancuernas 4-6 kg c/u, 3x10 cada lado.',
+    'S7+: mancuernas 8-12 kg c/u o barra con discos, 3x10 + pausa 3s abajo.',
+  ],
+  notas_columna: 'El long lunge es un estiramiento activo de alta intensidad para el psoas iliaco en rango elongado. La carga en las manos no solo aumenta la dificultad sino que actua como ancla que mantiene el tronco erguido, mejorando la eficacia del estiramiento del flexor de cadera trasero. En personas con hiperlordosis lumbar asociada al acortamiento del psoas, este ejercicio aborda directamente la causa mecanica del patron doloroso.'
+};
+
+EX_DB['hip-flexor-pike'] = {
+  nombre: 'Hip flexor pike (pike flexor cadera en banco)',
+  categoria: 'Core + Flexores de Cadera F2-F3',
+  color: '#993C1D',
+  descripcion: 'Variante de plancha en banco donde se combina la elevacion de cadera (movimiento pike) con la extension de una pierna libre hacia arriba. Una rodilla permanece apoyada en el banco como punto de estabilizacion, mientras la otra pierna se extiende. El movimiento sincrona flexion de cadera de la pierna de apoyo con extension de la pierna libre, creando un patron de anti-extension avanzado.',
+  posicion: 'Manos en el suelo en plancha alta. Una rodilla apoyada en el banco (estabilizador). La otra pierna extendida, paralela al suelo. Lumbar neutra al inicio.',
+  pasos: [
+    'Desde la posicion inicial (plancha con rodilla en banco, pierna libre extendida), activa el core.',
+    'Eleva la cadera hacia arriba (movimiento pike) al mismo tiempo que extiendes la pierna libre hacia el techo.',
+    'La rodilla del banco permanece en contacto con el banco durante todo el movimiento.',
+    'En el punto alto: cadera elevada, pierna libre apuntando hacia el techo, cuerpo formando una L invertida.',
+    'Baja de forma controlada volviendo a la posicion inicial de plancha.',
+    'No arquear la lumbar al volver a la posicion baja.',
+  ],
+  errores: [
+    'Arquear la lumbar en la posicion baja — es el error critico, genera presion discal posterior.',
+    'Rotar la pelvis al elevar la pierna libre — mantener las caderas alineadas.',
+    'Elevar la pierna libre demasiado rapido usando inercia — el movimiento debe ser controlado.',
+    'Rodilla del banco que se desplaza durante el pike — asegurar la posicion inicial.',
+    'No llegar a la posicion pike completa en fases tempranas — progresar gradualmente.',
+  ],
+  variantes: [
+    'S1-2: solo elevacion de cadera (sin pierna extendida) — pike parcial con ambas rodillas en banco 3x8.',
+    'S3-4: pike con pierna libre extendida a 45° 3x8 cada lado.',
+    'S5-6: pike completo, pierna libre vertical, pausa 1s arriba 3x10.',
+    'S7+: pike completo + pausa 2s + descenso excentrico 3s 3x10.',
+  ],
+  notas_columna: 'El hip flexor pike es una de las progresiones mas funcionales del trabajo de flexores de cadera en cadena cerrada parcial. La posicion invertida (cadera sobre hombros en el punto alto) descomprime brevemente la columna lumbar durante el movimiento, lo que puede generar alivio si el dolor es de componente compresivo. La dificultad principal es mantener la lumbar neutra en el descenso — si esto falla, volver a la variante anterior.'
 };
 
 // ─── NUEVOS EJERCICIOS — MOVILIDAD CADERA ─────────────────────────
