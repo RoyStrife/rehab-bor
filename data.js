@@ -321,6 +321,9 @@ const CORE = {
   'L':  { grupo:'core', plano:'compuesto', equipo:'bw',
     n:'L-sit progresion', d:'3x10-15 seg', note:'Flexores de cadera + core · Solo sin irradiacion', wid:'l-sit',
     variant:'S1-2: pies 5cm 8s · S3-4: tucked 10s · S5-6: tucked 15s · S7+: piernas extendidas' },
+  'M':  { grupo:'core', plano:'anti-ext+flexor-cadera', equipo:'bw',
+    n:'Plancha con extension de cadera activa', d:'3x8-10 rep cada lado', note:'Desde plancha anterior — elevar una pierna extendida hacia atras hasta altura de cadera · Gluteo activo en la pierna elevada · Flexores de cadera opuestos trabajando isometricamente · Lumbar neutra obligatorio — no arquear al subir la pierna · Pelvis no rotar · Pausa 1-2 seg arriba', wid:'plank-hip-extension',
+    variant:'S1-2: desde rodillas, elevar pierna 10 cm 3x6 · S3-4: plancha completa, elevacion parcial (45°) 3x8 · S5-6: plancha completa, elevacion hasta horizontal 3x10 · S7+: elevacion con tobillera ligera o banda en tobillos 3x10' },
 };
 
 // ─── HIP — Movilidad de cadera (grupo "pull de cadera") ────────────
@@ -998,6 +1001,30 @@ EX_DB['plank-anterior'] = {
   errores: ['Cadera que cae (lumbar hiperextendida) — el error mas comun.', 'Cadera demasiado elevada.', 'Codos muy adelantados respecto a los hombros.'],
   variantes: ['S1-2: 20s sobre rodillas. S3-4: 30s completo. S5-6: 45s. S7+: elevacion alterna de pie.'],
   notas_columna: 'La plancha anterior en codos es preferible a la plancha en manos en F2 porque el centro de gravedad mas bajo reduce la demanda lumbar. Con extrusion activa, la posicion prona puede generar molestia en algunos casos — evaluar individualmente.'
+};
+
+EX_DB['plank-hip-extension'] = {
+  nombre: 'Plancha con extension de cadera activa',
+  categoria: 'Core F2-F3',
+  color: '#993C1D',
+  descripcion: 'Variante dinamica de la plancha anterior: desde posicion de plancha sobre los codos, se eleva una pierna extendida hacia atras hasta la altura de la cadera. Combina anti-extension del core con activacion del gluteo y trabajo isometrico de los flexores de cadera de la pierna de apoyo.',
+  posicion: 'Plancha anterior sobre codos. Lumbar neutra. Pelvis nivelada.',
+  pasos: [
+    'Adopta la posicion de plancha anterior: codos bajo los hombros, cuerpo en linea.',
+    'Activa el core y los gluteos antes de mover la pierna.',
+    'Eleva una pierna extendida hacia atras hasta la altura de la cadera — no mas.',
+    'Manten la pelvis horizontal: no dejes que rote ni se incline hacia el lado de la pierna elevada.',
+    'Pausa 1-2 segundos arriba con gluteo apretado.',
+    'Baja con control y repite el mismo lado o alterna.',
+  ],
+  errores: [
+    'Arquear la lumbar al elevar la pierna — DETENER si ocurre.',
+    'Pelvis que rota hacia la pierna elevada — limitar la altura de elevacion.',
+    'Perder la tension del core durante el movimiento.',
+    'Elevar la pierna por encima de la cadera — genera hiperextension lumbar.',
+  ],
+  variantes: ['S1-2: desde rodillas, elevar pierna 10 cm 3x6 cada lado. S3-4: plancha completa, elevacion hasta 45° 3x8. S5-6: plancha completa, elevacion hasta horizontal 3x10. S7+: tobillera ligera o banda en tobillos 3x10.'],
+  notas_columna: 'La extension de cadera activa en plancha es exigente para la lumbar si se supera la horizontal — la pierna NO debe subir mas alla de la cadera con extrusion activa. La pierna de apoyo trabaja los flexores de cadera isometricamente, lo cual es el estimulo terapeutico principal para el psoas iliaco sin carga axial.'
 };
 
 // ─── NUEVOS EJERCICIOS — MOVILIDAD CADERA ─────────────────────────
