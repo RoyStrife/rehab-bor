@@ -4,6 +4,8 @@
 # Scripts locales del PC (no se suben)
 autopull.ps1
 autopull.log
+pull-ahora.ps1
+pull-ahora.bat
 
 # Sistema
 Thumbs.db
