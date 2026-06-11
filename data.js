@@ -420,6 +420,9 @@ const SHOULDER = {
   'A': { grupo:'shoulder', n:'Elevaciones laterales con mancuernas', d:'3x15 peso ligero', note:'Deltoides medio — sentado · Sin overhead (evita carga axial)', wid:'elevaciones-lat', gym:true,
     variant:'S1-2: sentado carga muy ligera · S3-4: sentado carga ligera exc 3s · S5-6: sentado carga media · S7+: de pie carga media + pausa 1s arriba',
     homeAlt:{ n:'Elevaciones laterales con banda', d:'3x15 — sentado', note:'Banda bajo los pies · Agarre neutro · Deltoides medio', variant:'S1-2: banda muy ligera · S3-4: banda ligera exc 3s · S5-6: banda media · S7+: banda media + pausa 1s' } },
+  'B': { grupo:'shoulder', n:'Rear delt fly en maquina (pajaros inverso)', d:'3x15 lento', note:'Deltoides posterior · Codos ligeramente flexionados · Pausa 1s en apertura maxima · Sin balancear torso', wid:'rear-delt-fly', gym:true,
+    variant:'S1-2: carga minima ROM parcial · S3-4: carga ligera ROM completo · S5-6: carga media exc 3s · S7+: carga media pausa 1s arriba',
+    homeAlt:{ n:'Pajaros inverso con mancuernas', d:'3x15 torso inclinado', note:'Sentado · Torso inclinado 45° · Lumbar neutra · Codos ligeramente doblados', wid:'rear-delt-fly', variant:'S1-2: mancuernas muy ligeras ROM parcial · S3-4: mancuernas ligeras ROM completo · S5-6: mancuernas medias exc 3s · S7+: mancuernas medias pausa 1s arriba' } },
 };
 
 // ─── ARM — brazos ──────────────────────────────────────────────────
@@ -669,6 +672,21 @@ const WEEK = {
 
 // Genera SESSIONS (forma que consume la app) a partir del plan WEEK + catalogo
 const SESSIONS = buildSessions(WEEK);
+
+// ─── JUEVES — rotación 3 semanas bloque D ────────────────────────
+// Todos los grupos musculares cada semana; varía el ejercicio concreto.
+// Ciclo A (WEEK_NUM % 3 === 1): jalón + pec deck
+// Ciclo B (WEEK_NUM % 3 === 2): remo + fondos
+// Ciclo C (WEEK_NUM % 3 === 0): jalón + fondos
+// app.js inyecta el bloque correcto en getCurSession() para sessId 4.
+const WEEK_D_CYCLE = [
+  { id:'D', name:'Empuje + Tiro — Ciclo A', dur:'45 min', color:'#3C3489',
+    exIds:['PULL-A','PULL-B','PUSH-A','SHOULDER-A','SHOULDER-B','ARM-A'] },
+  { id:'D', name:'Empuje + Tiro — Ciclo B', dur:'45 min', color:'#3C3489',
+    exIds:['PULL-A','PULL-C','PUSH-B','SHOULDER-A','SHOULDER-B','ARM-A'] },
+  { id:'D', name:'Empuje + Tiro — Ciclo C', dur:'45 min', color:'#3C3489',
+    exIds:['PULL-A','PULL-B','PUSH-B','SHOULDER-A','SHOULDER-B','ARM-A'] },
+];
 
 // ═══════════════════════════════════════════════════════════════════
 // ─── MOB_BLOCK — BLOQUE EXTRA DE MOVILIDAD (nuevo) ────────────────
@@ -1862,6 +1880,29 @@ EX_DB['neural-flossing'] = {
   errores: ['Movimiento brusco.', 'Continuar si hay irradiacion reproducida.'],
   variantes: ['S1-2: 30-40° muy suave · S3-4: 60° · S5-6: 80° + dorsiflexion pasiva · S7+: angulo completo + dorsiflexion activa.'],
   notas_columna: 'Solo realizar en ventanas sin irradiacion activa intensa. El nervio se desliza, no se estira.'
+};
+
+EX_DB['rear-delt-fly'] = {
+  nombre: 'Rear delt fly / Pajaros inverso',
+  categoria: 'Hombro posterior',
+  color: '#6B5B95',
+  descripcion: 'Ejercicio de aislamiento para el deltoides posterior y la musculatura escapular retractora. Contrarresta la postura cifótica que agrava las hernias discales.',
+  posicion: 'Sentado en la máquina de rear delt. Ajusta el asiento para que los mangos queden a la altura de los hombros con los brazos extendidos al frente.',
+  pasos: [
+    'Siéntate con el pecho apoyado en el respaldo (si lo tiene) o el torso ligeramente inclinado hacia adelante.',
+    'Agarra los mangos con codos ligeramente flexionados — NO los bloquees.',
+    'Abre los brazos hacia los lados en arco horizontal hasta alinear con los hombros.',
+    'Pausa 1 segundo en la apertura máxima — aprieta los deltoides posteriores.',
+    'Vuelve al inicio de forma muy controlada (3 seg de excéntrico).',
+  ],
+  errores: [
+    'Balancear el torso hacia atrás para ayudarse — genera compensación lumbar.',
+    'Extender los codos completamente (sobrecarga la articulación).',
+    'Encogerse de hombros — activa trapecios en vez de deltoides posteriores.',
+    'Rango parcial sin pausa — pierde el pico de contracción.',
+  ],
+  variantes: ['S1-2: carga mínima ROM parcial · S3-4: carga ligera ROM completo · S5-6: carga media exc 3s · S7+: carga media pausa 1s arriba'],
+  notas_columna: 'Movimiento en plano horizontal sin ninguna carga axial sobre L4-L5/L5-S1. El deltoides posterior y los romboides son estabilizadores escapulares clave: su debilidad contribuye a la postura cifótica que aumenta la presión discal. Realizar sentado evita cualquier carga de pie sobre la hernia.'
 };
 
 // ═══════════════════════════════════════════════════════════════════
