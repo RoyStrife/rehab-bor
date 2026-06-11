@@ -330,6 +330,10 @@ const CORE = {
   'O':  { grupo:'core', plano:'flexor-cadera+anti-ext', equipo:'banco',
     n:'Hip flexor pike (pike flexor cadera en banco)', d:'3x8-10 rep cada lado', note:'Plancha con una rodilla apoyada en el banco · Elevar la cadera al mismo tiempo que se extiende la pierna libre hacia arriba (movimiento pike) · Combina flexor de cadera con control lumbar · No hiperlordosis al bajar', wid:'hip-flexor-pike',
     variant:'S1-2: solo elevacion de cadera (sin pierna extendida) 3x8 · S3-4: pike parcial pierna extendida 45° 3x8 · S5-6: pike completo pierna vertical 3x10 · S7+: pike completo + pausa 2s arriba 3x10' },
+  'P':  { grupo:'core', plano:'anti-ext+anti-rot', equipo:'mancuerna',
+    n:'Superman unilateral con peso', d:'3x10 cada lado — pausa 2 seg', note:'Tumbado boca abajo · Brazo y pierna contralaterales extendidos · Mancuerna en la mano · Elevar brazo-pierna opuestos manteniendo lumbar neutra · Cabeza neutra — mirar al suelo · Parar si irradiacion S1', wid:'superman-uni-peso', gym:true,
+    variant:'S1-2: sin peso — ambos miembros simultaneos 3x8 pausa 2s · S3-4: sin peso unilateral brazo-pierna 3x10 · S5-6: mancuerna 1-2 kg 3x10 pausa 2s · S7+: mancuerna 3-5 kg 3x10 pausa 3s excentrico lento',
+    homeAlt: { n:'Superman unilateral en suelo sin peso', d:'3x10 cada lado — pausa 2 seg', note:'Misma mecanica · Sin mancuerna · Version bw' } },
 };
 
 // ─── HIP — Movilidad de cadera (grupo "pull de cadera") ────────────
@@ -526,7 +530,7 @@ const WEEK = {
       MOB_BLOCK_B_LUN,
       { id: 'C', name: 'Cardio apertura — Ergometro 2000m', dur: '15-20 min', color: '#185FA5', exIds: ['CARD-A'] },
       { id: 'D', name: 'Lumbar — Cadena posterior', dur: '45 min', color: '#3C3489', exIds: ['HINGE-A','HINGE-B','HINGE-C','HINGE-D'] },
-      { id: 'E', name: 'Core (anti-extension) + Biceps', dur: '35 min', color: '#993C1D', exIds: ['CORE-A','CORE-B','CORE-C','CORE-E','CORE-M','CORE-N','ARM-B','ARM-C'] },
+      { id: 'E', name: 'Core (anti-extension) + Biceps', dur: '35 min', color: '#993C1D', exIds: ['CORE-A','CORE-B','CORE-C','CORE-E','CORE-M','CORE-N','CORE-P','ARM-B','ARM-C'] },
       { id: 'F', name: 'Cardio cierre — Eliptica 60 min', dur: '60 min', color: '#185FA5', exIds: ['CARD-D'] },
     ]
   },
@@ -1862,6 +1866,37 @@ EX_DB['neural-flossing'] = {
   errores: ['Movimiento brusco.', 'Continuar si hay irradiacion reproducida.'],
   variantes: ['S1-2: 30-40° muy suave · S3-4: 60° · S5-6: 80° + dorsiflexion pasiva · S7+: angulo completo + dorsiflexion activa.'],
   notas_columna: 'Solo realizar en ventanas sin irradiacion activa intensa. El nervio se desliza, no se estira.'
+};
+
+EX_DB['superman-uni-peso'] = {
+  nombre: 'Superman unilateral con peso',
+  categoria: 'Core — Anti-extension + Anti-rotacion',
+  color: '#993C1D',
+  descripcion: 'Variante de carga del superman clasico realizada de forma unilateral: tumbado boca abajo, se elevan el brazo y la pierna contralaterales mientras la mano del brazo activo sostiene una mancuerna. El desequilibrio de carga genera un momento anti-rotatorio que trabaja la musculatura multifida y erectora espinal de forma asimetrica, mas proxima a los patrones funcionales reales.',
+  posicion: 'Tumbado boca abajo en el suelo o en banco de hiperextension. Brazos extendidos sobre la cabeza. Frente apoyada en el suelo (cabeza neutra). Mancuerna en la mano del brazo que se va a elevar.',
+  pasos: [
+    'Tumbado boca abajo, ambos brazos extendidos sobre la cabeza. Piernas juntas.',
+    'Coge la mancuerna con la mano del brazo a elevar (p.ej. mano derecha).',
+    'Activa el core: presiona el ombligo contra el suelo, sin arquear la lumbar.',
+    'Eleva simultaneamente el brazo derecho (con mancuerna) y la pierna izquierda (contralateral).',
+    'Mantén la cabeza neutra — mirar al suelo durante todo el movimiento.',
+    'Pausa 2 segundos en el punto alto sin que la lumbar hiperlordose.',
+    'Baja con control (excentrico 2-3 segundos). Repite todas las reps del mismo lado, luego cambia.',
+  ],
+  errores: [
+    'Hiperextension lumbar al subir — es la señal de que el peso es excesivo o el rango es demasiado alto.',
+    'Cabeza que se eleva mirando hacia delante — genera tension cervical innecesaria.',
+    'Elevar brazo y pierna ipsilaterales en vez de contralaterales — pierde el estimulo anti-rotatorio.',
+    'Pelvis que rota hacia el lado de la pierna elevada — activa el gluteo de la pierna de apoyo para estabilizar.',
+    'Parar si aparece irradiacion por la pierna (S1) durante la elevacion.',
+  ],
+  variantes: [
+    'S1-2: sin peso, ambos miembros simultaneos (superman bilateral) 3x8 pausa 2s — solo si no hay irradiacion.',
+    'S3-4: sin peso, unilateral brazo-pierna contralateral 3x10 pausa 2s.',
+    'S5-6: mancuerna 1-2 kg en la mano 3x10 pausa 2s.',
+    'S7+: mancuerna 3-5 kg 3x10 pausa 3s con excentrico lento 3s.',
+  ],
+  notas_columna: 'El superman con carga es uno de los pocos ejercicios que trabaja los erectores espinales en contraccion concentrica sin carga axial — la posicion prona elimina la compresion discal gravitacional. La version unilateral con mancuerna añade un componente anti-rotatorio que activa los multifidos ipsilaterales L4-L5 de forma selectiva, relevante para la hernia bilateral: la asimetria de carga permite identificar y corregir diferencias de fuerza entre ambos lados. Contraindicado si la extension activa reproduce irradiacion S1.'
 };
 
 // ═══════════════════════════════════════════════════════════════════
