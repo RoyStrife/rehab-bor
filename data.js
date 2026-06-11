@@ -37,6 +37,7 @@ const WEIGHTED_EX = [
   { id: 'press-smith-plano', name: 'Press Smith plano',         day: 4, note: 'Peso total',    w65init: 10 },
   { id: 'aperturas-cable',   name: 'Aperturas cable',           day: 4, note: 'Pila c/lado',   w65init: 36 },
   { id: 'pec-deck',          name: 'Aperturas pec deck',        day: 4, note: 'Pila maquina',  w65init: 20 },
+  { id: 'fondos-maq',        name: 'Fondos maquina asistida',   day: 4, note: 'Asistencia (kg)' },
   { id: 'face-pull',         name: 'Face pull polea',           day: 4, note: 'Pila maquina',  w65init: 12.5 },
   { id: 'remo-maquina',      name: 'Remo maquina sentado',      day: 4, note: 'Pila maquina',  w65init: 40 },
   { id: 'prensa',            name: 'Prensa 45',                 day: 6, note: 'Total platos',  w65init: 16 },
@@ -411,7 +412,7 @@ const PUSH = {
   'A': { grupo:'push', n:'Aperturas en maquina pec deck', d:'3x12', note:'Empuje sin carga axial · Espalda fija en respaldo — sin separar de la maquina', wid:'pec-deck', gym:true,
     variant:'S1-2: carga ligera rango parcial · S3-4: carga media rango completo · S5-6: carga alta exc 3s · S7+: carga alta pausa 1s en contraccion',
     homeAlt:{ n:'Aperturas con banda cruzada', d:'3x12', note:'Banda anclada a ambos lados altura de pecho · Aduccion horizontal controlada', variant:'S1-2: banda ligera · S3-4: banda media · S5-6: banda fuerte exc 3s · S7+: banda fuerte pausa 1s' } },
-  'B': { grupo:'push', n:'Fondos en maquina asistida (chest dip)', d:'3x12', note:'Empuje de pecho + triceps SIN carga axial · Maquina asistida (no colgarse del propio peso) · Codos a 90 max · Tronco ligeramente inclinado · Parar si molestia en hombro', wid:'fondos-triceps',
+  'B': { grupo:'push', n:'Fondos en maquina asistida (chest dip)', d:'3x12', note:'Empuje de pecho + triceps SIN carga axial · Maquina asistida (no colgarse del propio peso) · Codos a 90 max · Tronco ligeramente inclinado · Parar si molestia en hombro', wid:'fondos-maq',
     variant:'S1-2: asistencia alta rango parcial · S3-4: asistencia media rango completo · S5-6: asistencia baja exc 3s · S7+: asistencia minima control · F3: lastre ligero' },
 };
 
@@ -1887,6 +1888,7 @@ const BACKUP_WEIGHTS = {
   "press-smith-plano":{ w65: 10 },                                      // sin entrada en JSON → valor inicial
   "aperturas-cable":  { w65: 36 },
   "pec-deck":         { w65: 20 },                                      // sin entrada en JSON → valor inicial
+  "fondos-maq":       { w65: 0 },                                       // pendiente primer registro
   "face-pull":        { w65: 12.5,  history: { 3: "amber" }, lastLog: "S3: Mantenido (10/4/2026)" },  // JSON: 12.5
   "remo-maquina":     { w65: 40 },
   "remo-mancuerna":   { w65: 14 },                                      // nuevo en JSON v9
