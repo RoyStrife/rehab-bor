@@ -518,15 +518,16 @@ const WEEK = {
   // ─── 1 — LUNES: Cadena posterior + Core + Biceps ──────────────
   1: {
     name: 'Lunes', tag: 'Posterior + Core + Biceps', neural: false,
-    dur: '130 min', loc: 'Gym', homeLoc: 'Casa',
+    dur: '160 min', loc: 'Gym', homeLoc: 'Casa',
     keyExs: 'Hiperext bilateral · Hiperext unilateral · RDL bilateral · RDL unilateral banco',
-    cardio: 'Ergometro de remo — 2000m FC 110-125',
+    cardio: 'Ergometro 2000m (apertura) · Eliptica 60 min (cierre)',
     blocks: [
       MOB_BLOCK_A1,
       MOB_BLOCK_B_LUN,
-      { id: 'C', name: 'Cardio sala — Ergometro', dur: '15-20 min', color: '#185FA5', exIds: ['CARD-A'] },
+      { id: 'C', name: 'Cardio apertura — Ergometro 2000m', dur: '15-20 min', color: '#185FA5', exIds: ['CARD-A'] },
       { id: 'D', name: 'Lumbar — Cadena posterior', dur: '45 min', color: '#3C3489', exIds: ['HINGE-A','HINGE-B','HINGE-C','HINGE-D'] },
       { id: 'E', name: 'Core (anti-extension) + Biceps', dur: '35 min', color: '#993C1D', exIds: ['CORE-A','CORE-B','CORE-C','CORE-E','CORE-M','CORE-N','ARM-B','ARM-C'] },
+      { id: 'F', name: 'Cardio cierre — Eliptica 60 min', dur: '60 min', color: '#185FA5', exIds: ['CARD-D'] },
     ]
   },
 
