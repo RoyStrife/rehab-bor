@@ -5,41 +5,60 @@
 // Reconstruido desde rehab_v10.html y adaptado al HTML de index.html v11.
 // ═══════════════════════════════════════════════════════════════════
 
+// Safe localStorage wrapper — Brave Shields (and private mode) can block
+// localStorage entirely, throwing SecurityError and crashing the app.
+// Falls back to in-memory storage so the app works for the session.
+const _LS = (() => {
+  try {
+    localStorage.setItem('__r__', '1');
+    localStorage.removeItem('__r__');
+    return localStorage;
+  } catch(e) {
+    const m = {};
+    return {
+      getItem:    k    => Object.prototype.hasOwnProperty.call(m, k) ? m[k] : null,
+      setItem:    (k,v)=> { m[k] = v; },
+      removeItem: k    => { delete m[k]; },
+      clear:      ()   => { for (const k in m) delete m[k]; },
+    };
+  }
+})();
+
 // ─── ESTADO Y CONSTANTES DE RUNTIME ────────────────────────────────
 const NEURAL = NEURAL_DAYS; // alias (NEURAL_DAYS se define en data.js)
 const TODAY = new Date();
 const DS = ['Dom','Lun','Mar','Mie','Jue','Vie','Sab'];
 const DC = {0:{h:'#3C3489',l:'#EEEDFE22'},1:{h:'#185FA5',l:'#E6F1FB22'},2:{h:'#0F6E56',l:'#E1F5EE22'},3:{h:'#888780',l:'#F1EFE822'},4:{h:'#185FA5',l:'#E6F1FB22'},5:{h:'#993C1D',l:'#FAECE722'},6:{h:'#888780',l:'#F1EFE822'}};
 let curDay = TODAY.getDay(), openBlks = {}, syncTimeout = null;
-let PROG_STAGE = localStorage.getItem('rehab_prog_stage_v8') || 'S1-2';
+let PROG_STAGE = _LS.getItem('rehab_prog_stage_v8') || 'S1-2';
 
 const SK_ENT='rehab_ent_v8', SK_WTS='rehab_wts_v8', SK_CRIT='rehab_crit_v8';
 const SK_DONE = k => 'rehab_done_v8_' + k;
 const SK_PLAN = 'rehab_plan_v9';
 
 function computeWeekNum(){return Math.max(1,Math.floor((TODAY-START_DATE)/(7*86400000))+1);}
-let WEEK_NUM = parseInt(localStorage.getItem('rehab_week_override_v11')) || computeWeekNum();
+let WEEK_NUM = parseInt(_LS.getItem('rehab_week_override_v11')) || computeWeekNum();
 function changeWeek(delta){
   WEEK_NUM = Math.max(1, WEEK_NUM + delta);
-  localStorage.setItem('rehab_week_override_v11', WEEK_NUM);
+  _LS.setItem('rehab_week_override_v11', WEEK_NUM);
   const wd = document.getElementById('weekDisplay'); if(wd) wd.textContent = WEEK_NUM;
   renderAll(); renderWtSummary(); renderDash();
 }
 
 // ─── STORAGE HELPERS ───────────────────────────────────────────────
-function loadEntries(){try{return JSON.parse(localStorage.getItem(SK_ENT)||'{}')}catch{return{}}}
-function saveEntries(e){localStorage.setItem(SK_ENT,JSON.stringify(e));scheduleSync();}
-function loadWeights(){try{return JSON.parse(localStorage.getItem(SK_WTS)||'{}')}catch{return{}}}
-function saveWeights(w){localStorage.setItem(SK_WTS,JSON.stringify(w));scheduleSync();}
-function loadDone(k){try{return JSON.parse(localStorage.getItem(SK_DONE(k))||'{}')}catch{return{}}}
-function saveDone(k,d){localStorage.setItem(SK_DONE(k),JSON.stringify(d));scheduleSync();}
-function loadCriteria(){try{return JSON.parse(localStorage.getItem(SK_CRIT)||'[]')}catch{return[]}}
-function saveCriteria(c){localStorage.setItem(SK_CRIT,JSON.stringify(c));}
-function loadVStages(){try{return JSON.parse(localStorage.getItem('rehab_vstg_v8')||'{}')}catch{return{}}}
-function saveVStages(v){localStorage.setItem('rehab_vstg_v8',JSON.stringify(v));}
-function getSheetsUrl(){return localStorage.getItem('sheets_url_v8')||''}
-function loadPlan(){try{return JSON.parse(localStorage.getItem(SK_PLAN)||'{}')}catch{return{}}}
-function savePlan(p){localStorage.setItem(SK_PLAN,JSON.stringify(p));}
+function loadEntries(){try{return JSON.parse(_LS.getItem(SK_ENT)||'{}')}catch{return{}}}
+function saveEntries(e){_LS.setItem(SK_ENT,JSON.stringify(e));scheduleSync();}
+function loadWeights(){try{return JSON.parse(_LS.getItem(SK_WTS)||'{}')}catch{return{}}}
+function saveWeights(w){_LS.setItem(SK_WTS,JSON.stringify(w));scheduleSync();}
+function loadDone(k){try{return JSON.parse(_LS.getItem(SK_DONE(k))||'{}')}catch{return{}}}
+function saveDone(k,d){_LS.setItem(SK_DONE(k),JSON.stringify(d));scheduleSync();}
+function loadCriteria(){try{return JSON.parse(_LS.getItem(SK_CRIT)||'[]')}catch{return[]}}
+function saveCriteria(c){_LS.setItem(SK_CRIT,JSON.stringify(c));}
+function loadVStages(){try{return JSON.parse(_LS.getItem('rehab_vstg_v8')||'{}')}catch{return{}}}
+function saveVStages(v){_LS.setItem('rehab_vstg_v8',JSON.stringify(v));}
+function getSheetsUrl(){return _LS.getItem('sheets_url_v8')||''}
+function loadPlan(){try{return JSON.parse(_LS.getItem(SK_PLAN)||'{}')}catch{return{}}}
+function savePlan(p){_LS.setItem(SK_PLAN,JSON.stringify(p));}
 
 // ─── FECHAS ────────────────────────────────────────────────────────
 function todayKey(){return TODAY.toISOString().split('T')[0];}
@@ -151,7 +170,7 @@ function calcWeight(wid,wk){
 // ─── ERGÓMETRO LOG ─────────────────────────────────────────────────
 function buildErgLog(){
   const SK='rehab_erg_v8';
-  function loadErg(){try{return JSON.parse(localStorage.getItem(SK)||'{}')}catch{return{}}}
+  function loadErg(){try{return JSON.parse(_LS.getItem(SK)||'{}')}catch{return{}}}
   const key=todayKey();
   const d=loadErg();
   const entry=d[key]||{t:'',p:'',m:''};
@@ -190,11 +209,11 @@ function toggleErgLog(){
 }
 function saveErgField(field,val){
   const SK='rehab_erg_v8';
-  function loadErg(){try{return JSON.parse(localStorage.getItem(SK)||'{}')}catch{return{}}}
+  function loadErg(){try{return JSON.parse(_LS.getItem(SK)||'{}')}catch{return{}}}
   const d=loadErg();const key=todayKey();
   if(!d[key])d[key]={t:'',p:'',m:''};
   d[key][field]=val;
-  localStorage.setItem(SK,JSON.stringify(d));
+  _LS.setItem(SK,JSON.stringify(d));
   scheduleSync();
 }
 
@@ -776,10 +795,10 @@ async function loadFromSheets(){
 }
 function applyRemote_(data){
   if(!data)return false;
-  if(data.entries)localStorage.setItem(SK_ENT,JSON.stringify(data.entries));
-  if(data.weights)localStorage.setItem(SK_WTS,JSON.stringify(data.weights));
-  if(data.criteria)localStorage.setItem(SK_CRIT,JSON.stringify(data.criteria));
-  if(data.vStages)localStorage.setItem('rehab_vstg_v8',JSON.stringify(data.vStages));
+  if(data.entries)_LS.setItem(SK_ENT,JSON.stringify(data.entries));
+  if(data.weights)_LS.setItem(SK_WTS,JSON.stringify(data.weights));
+  if(data.criteria)_LS.setItem(SK_CRIT,JSON.stringify(data.criteria));
+  if(data.vStages)_LS.setItem('rehab_vstg_v8',JSON.stringify(data.vStages));
   return true;
 }
 async function restoreFromSheets(){
@@ -805,7 +824,7 @@ function renderSettingsStatus(){
   if(el)el.textContent='Version: v11\nSemana: '+WEEK_NUM+'\nInicio F2: 21/03/2026\nSheets: '+(url?'Configurado':'No configurado')+'\nDias registrados: '+Object.keys(loadEntries()).length+'\nEjercicios con peso: '+WEIGHTED_EX.filter(e=>{const d=loadWeights()[e.id];return d&&d.w65>0}).length;
   const urlInput=document.getElementById('sheetsUrl');if(urlInput&&url&&!urlInput.value)urlInput.value=url;
 }
-function saveUrl(){const inp=document.getElementById('sheetsUrl');if(!inp)return;localStorage.setItem('sheets_url_v8',inp.value.trim());setSyncStatus(inp.value.trim()?'ok':'','URL guardada');}
+function saveUrl(){const inp=document.getElementById('sheetsUrl');if(!inp)return;_LS.setItem('sheets_url_v8',inp.value.trim());setSyncStatus(inp.value.trim()?'ok':'','URL guardada');}
 function exportLocal(){const data={entries:loadEntries(),weights:loadWeights(),criteria:loadCriteria(),vStages:loadVStages(),week:WEEK_NUM,ts:new Date().toISOString()};const blob=new Blob([JSON.stringify(data,null,2)],{type:'application/json'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='rehab_bor_v11_'+todayKey()+'.json';a.click();}
 function importLocal(){const f=document.getElementById('importFileInput');if(f)f.click();}
 function handleImport(event){
@@ -813,15 +832,15 @@ function handleImport(event){
   const r=new FileReader();
   r.onload=e=>{try{
     const d=JSON.parse(e.target.result);
-    if(d.entries)localStorage.setItem(SK_ENT,JSON.stringify(d.entries));
-    if(d.weights)localStorage.setItem(SK_WTS,JSON.stringify(d.weights));
-    if(d.criteria)localStorage.setItem(SK_CRIT,JSON.stringify(d.criteria));
-    if(d.vStages)localStorage.setItem('rehab_vstg_v8',JSON.stringify(d.vStages));
+    if(d.entries)_LS.setItem(SK_ENT,JSON.stringify(d.entries));
+    if(d.weights)_LS.setItem(SK_WTS,JSON.stringify(d.weights));
+    if(d.criteria)_LS.setItem(SK_CRIT,JSON.stringify(d.criteria));
+    if(d.vStages)_LS.setItem('rehab_vstg_v8',JSON.stringify(d.vStages));
     renderAll();renderWtSummary();renderDash();alert('Datos importados correctamente.');
   }catch(err){alert('Error al importar: '+err.message);}};
   r.readAsText(file);
 }
-function confirmClearData(){if(confirm('Borrar TODOS los datos locales?')){[SK_ENT,SK_WTS,SK_CRIT].forEach(k=>localStorage.removeItem(k));getWeekDays().forEach(d=>localStorage.removeItem(SK_DONE(d.toISOString().split('T')[0])));renderAll();renderWtSummary();renderDash();alert('Datos borrados.');}}
+function confirmClearData(){if(confirm('Borrar TODOS los datos locales?')){[SK_ENT,SK_WTS,SK_CRIT].forEach(k=>_LS.removeItem(k));getWeekDays().forEach(d=>_LS.removeItem(SK_DONE(d.toISOString().split('T')[0])));renderAll();renderWtSummary();renderDash();alert('Datos borrados.');}}
 
 // ─── TAB ───────────────────────────────────────────────────────────
 function switchTab(t){
@@ -839,7 +858,7 @@ function switchTab(t){
 }
 
 // ─── PROGRESSION ───────────────────────────────────────────────────
-function setProgStage(stage){PROG_STAGE=stage;localStorage.setItem('rehab_prog_stage_v8',stage);renderBlocks();}
+function setProgStage(stage){PROG_STAGE=stage;_LS.setItem('rehab_prog_stage_v8',stage);renderBlocks();}
 
 // ─── RENDER ALL ────────────────────────────────────────────────────
 function renderAll(){
