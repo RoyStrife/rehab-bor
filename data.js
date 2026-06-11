@@ -675,17 +675,17 @@ const SESSIONS = buildSessions(WEEK);
 
 // ─── JUEVES — rotación 3 semanas bloque D ────────────────────────
 // Todos los grupos musculares cada semana; varía el ejercicio concreto.
-// Ciclo A (WEEK_NUM % 3 === 1): jalón + pec deck
-// Ciclo B (WEEK_NUM % 3 === 2): remo + fondos
-// Ciclo C (WEEK_NUM % 3 === 0): jalón + fondos
+// Ciclo A (WEEK_NUM % 3 === 1): jalón + pec deck + laterales
+// Ciclo B (WEEK_NUM % 3 === 2): remo + fondos  + rear delt
+// Ciclo C (WEEK_NUM % 3 === 0): jalón + fondos  + laterales
 // app.js inyecta el bloque correcto en getCurSession() para sessId 4.
 const WEEK_D_CYCLE = [
   { id:'D', name:'Empuje + Tiro — Ciclo A', dur:'45 min', color:'#3C3489',
-    exIds:['PULL-A','PULL-B','PUSH-A','SHOULDER-A','SHOULDER-B','ARM-A'] },
+    exIds:['PULL-A','PULL-B','PUSH-A','SHOULDER-A','ARM-A'] },
   { id:'D', name:'Empuje + Tiro — Ciclo B', dur:'45 min', color:'#3C3489',
-    exIds:['PULL-A','PULL-C','PUSH-B','SHOULDER-A','SHOULDER-B','ARM-A'] },
+    exIds:['PULL-A','PULL-C','PUSH-B','SHOULDER-B','ARM-A'] },
   { id:'D', name:'Empuje + Tiro — Ciclo C', dur:'45 min', color:'#3C3489',
-    exIds:['PULL-A','PULL-B','PUSH-B','SHOULDER-A','SHOULDER-B','ARM-A'] },
+    exIds:['PULL-A','PULL-B','PUSH-B','SHOULDER-A','ARM-A'] },
 ];
 
 // ═══════════════════════════════════════════════════════════════════
