@@ -1,0 +1,16 @@
+{
+  "name": "Rehabilitacion Borja",
+  "short_name": "Rehab",
+  "description": "Plan de rehabilitacion lumbar personalizado",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#1a1a1a",
+  "theme_color": "#0F6E56",
+  "icons": [
+    {
+      "src": "https://raw.githubusercontent.com/RoyStrife/rehab-bor/main/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}

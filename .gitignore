@@ -1,6 +1,10 @@
 # Configuración de Claude Code (personal, no se sube)
 .claude/
 
+# Scripts locales del PC (no se suben)
+autopull.ps1
+autopull.log
+
 # Sistema
 Thumbs.db
 desktop.ini
