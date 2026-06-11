@@ -553,7 +553,7 @@ const WEEK = {
       MOB_BLOCK_A1,
       MOB_BLOCK_B_JUE,
       { id: 'C', name: 'Cardio sala — Bici estatica', dur: '15-20 min', color: '#185FA5', exIds: ['CARD-B'] },
-      { id: 'D', name: 'Empuje + Tiro (sin carga axial)', dur: '50 min', color: '#3C3489', exIds: ['PULL-A','PULL-B','PULL-C','PUSH-A','PUSH-B','SHOULDER-A','ARM-A','ARM-B'] },
+      { id: 'D', name: 'Empuje + Tiro (sin carga axial)', dur: '50 min', color: '#3C3489', exIds: ['PULL-A','PULL-B','PULL-C','PUSH-A','PUSH-B','SHOULDER-A','ARM-A'] },
       {
         id: 'E', name: 'Core (anti-rotacion + anti-lateral) + Neural', dur: '25 min', color: '#993C1D',
         exIds: ['CORE-G','CORE-D','CORE-J','CORE-E','CORE-O'],
