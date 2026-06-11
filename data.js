@@ -509,7 +509,7 @@ function buildSessions(week){
 
 // Bloque de movilidad de cadera para la pestana Movilidad (disponible toda la semana)
 const MOB_BLOCK_HIP = expandBlock({ id:'MOB-H', name:'Movilidad de cadera — grupo HIP', dur:'15-20 min', color:'#7A3DAA',
-  exIds:['HIP-A','HIP-B','HIP-C','HIP-D','HIP-E','HIP-F','HIP-G','HIP-H'] });
+  exIds:['HIP-A','HIP-B','HIP-C','HIP-D','HIP-E','HIP-F','HIP-G','HIP-H','HIP-I','HIP-J','HIP-K','HIP-L2'] });
 
 const WEEK = {
 
@@ -524,7 +524,7 @@ const WEEK = {
       MOB_BLOCK_B_LUN,
       { id: 'C', name: 'Cardio sala — Ergometro', dur: '15-20 min', color: '#185FA5', exIds: ['CARD-A'] },
       { id: 'D', name: 'Lumbar — Cadena posterior', dur: '45 min', color: '#3C3489', exIds: ['HINGE-A','HINGE-B','HINGE-C','HINGE-D'] },
-      { id: 'E', name: 'Core (anti-extension) + Biceps', dur: '35 min', color: '#993C1D', exIds: ['CORE-A','CORE-B','CORE-C','CORE-E','ARM-B','ARM-C'] },
+      { id: 'E', name: 'Core (anti-extension) + Biceps', dur: '35 min', color: '#993C1D', exIds: ['CORE-A','CORE-B','CORE-C','CORE-E','CORE-M','CORE-N','ARM-B','ARM-C'] },
     ]
   },
 
@@ -537,7 +537,7 @@ const WEEK = {
     pool: 'Estabilidad + gluteo + sentadilla ligera (tierra) · Nado suave adaptable (espalda+crol+braza)',
     blocks: [
       MOB_BLOCK_A1,
-      { id: 'D', name: 'Estabilidad + pierna ligera', dur: '25-30 min', color: '#0F6E56', exIds: ['HIP-A','HIP-G','GLUTE-B','GLUTE-A','GLUTE-C','GLUTE-D','QUAD-H','QUAD-G'] },
+      { id: 'D', name: 'Estabilidad + pierna ligera', dur: '25-30 min', color: '#0F6E56', exIds: ['HIP-A','HIP-G','HIP-I','HIP-K','GLUTE-B','GLUTE-A','GLUTE-C','GLUTE-D','QUAD-H','QUAD-G'] },
       { id: 'E', name: 'Core — general 3 planos (pre-piscina)', dur: '15-20 min', color: '#993C1D', exIds: ['CORE-F','CORE-G2','CORE-D','CORE-I'] },
       POOL_UNIFICADA,
     ]
@@ -556,7 +556,7 @@ const WEEK = {
       { id: 'D', name: 'Empuje + Tiro (sin carga axial)', dur: '50 min', color: '#3C3489', exIds: ['PULL-A','PULL-B','PULL-C','PUSH-A','PUSH-B','SHOULDER-A','ARM-A','ARM-B'] },
       {
         id: 'E', name: 'Core (anti-rotacion + anti-lateral) + Neural', dur: '25 min', color: '#993C1D',
-        exIds: ['CORE-G','CORE-D','CORE-J','CORE-E'],
+        exIds: ['CORE-G','CORE-D','CORE-J','CORE-E','CORE-O'],
         exs: [
           { n: 'Neural flossing nervio ciatico', d: '2x10 cada lado', note: 'Sin dolor · Deslizamiento puro', wid: 'neural-flossing', variant: 'S1-2: angulo 30-40° muy suave · S3-4: angulo 60° ritmo lento · S5-6: angulo 80° · S7+: angulo completo + dorsiflexion' },
         ]
@@ -573,7 +573,7 @@ const WEEK = {
     pool: 'Estabilidad + gluteo + sentadilla ligera (tierra) · Nado suave adaptable (espalda+crol+braza)',
     blocks: [
       MOB_BLOCK_A1,
-      { id: 'D', name: 'Estabilidad + pierna ligera', dur: '25-30 min', color: '#0F6E56', exIds: ['HIP-A','HIP-G','GLUTE-B','GLUTE-A','GLUTE-C','GLUTE-D','QUAD-H','QUAD-G'] },
+      { id: 'D', name: 'Estabilidad + pierna ligera', dur: '25-30 min', color: '#0F6E56', exIds: ['HIP-A','HIP-G','HIP-I','HIP-K','GLUTE-B','GLUTE-A','GLUTE-C','GLUTE-D','QUAD-H','QUAD-G'] },
       { id: 'E', name: 'Core — general 3 planos (pre-piscina)', dur: '15-20 min', color: '#993C1D', exIds: ['CORE-F','CORE-G2','CORE-H','CORE-I'] },
       POOL_UNIFICADA,
     ]
@@ -592,6 +592,7 @@ const WEEK = {
           { n: 'Dead hang en barra', d: '4x35 seg', note: 'Traccion descompresiva + fuerza de agarre', wid: 'dead-hang', variant: 'S1-2: 4x20s · S3-4: 4x25s · S5-6: 4x35s · S7+: 4x45s · F3: hollow body hang 3x10-15s' },
           { n: 'Fondos de triceps en banco', d: '3x12', note: 'Version progresiva con piernas avanzadas (Domingo) · Solo sin irradiacion', wid: 'fondos-triceps', variant: 'S1-2: rodillas muy flexionadas · S3-4: piernas a 90° · S5-6: piernas extendidas · S7+: piernas elevadas en banco · F3: entre paralelas' },
           { n: 'Goblet squat — movilidad', d: '3x10 con pausa 3s abajo', note: 'Solo con mancuerna ligera · Movilidad + patron squat', wid: 'goblet-squat', variant: 'S1-2: peso corporal · S3-4: KB 8kg · S5-6: KB 12kg · S7+: KB 16kg' },
+          { n: 'Plancha con extension de cadera activa', d: '2x8 cada lado', note: 'Desde plancha sobre codos · Elevar pierna extendida hasta la cadera · Gluteo activo · Lumbar neutra — no arquear al subir · Version suave de recuperacion', wid: 'plank-hip-extension', variant: 'S1-2: desde rodillas 2x6 · S3-4: plancha completa elevacion parcial · S5-6: elevacion hasta horizontal · S7+: tobillera ligera' },
         ]
       },
       {
@@ -626,6 +627,8 @@ const WEEK = {
           { n: 'Iso hold cinta yoga puerta', d: '3x20 seg', note: 'Cinta colgada del marco · Tension isometrica posterior · Sin carga axial', wid: 'iso-hold-cinta', variant: 'S1-2: tension minima 10 seg · S3-4: 15 seg moderado · S5-6: 20 seg · S7+: 25 seg una mano' },
           { n: 'Hamstring squeeze', d: '2x8 cada lado', note: 'Isometrico suave · Angulo bajo', wid: 'hamstring-squeeze' },
           { n: 'L-sit progresion', d: '3x series segun nivel', note: 'Sin carga axial · Core + flexores cadera', wid: 'l-sit', variant: 'S1-2: tucked L-sit en sillas 3x5 seg · S3-4: tucked L-sit 3x8 seg · S5-6: un pie extendido 3x8 seg · S7+: L-sit completo 3x10 seg · F3: L-sit en paralelas o anillas' },
+          { n: 'HF fall back (banco)', d: '2x8 cada lado', note: 'Sentado en el borde del banco · Inclinacion suave hacia atras · Pierna extendida sujeta con la mano · Flexor de cadera en rango elongado · Lumbar neutra', wid: 'hf-fall-back', variant: 'S1-2: inclinacion 20-30° pierna semiflexionada · S3-4: 45° pierna extendida · S5-6: 60° + pausa 2s · S7+: variante rodilla flexionada encadenada' },
+          { n: 'Banded HF raise (tumbado)', d: '2x10 cada lado', note: 'Tumbado en banco · Banda ligera al pie · Rodilla al pecho de forma controlada · Version neural — sin carga alta', wid: 'banded-hf-raise', variant: 'S1-2: banda ligera ROM parcial · S3-4: banda media ROM completo · S5-6: + pausa 1s arriba · S7+: de pie version resistida' },
         ]
       },
       {
@@ -652,8 +655,8 @@ const WEEK = {
       MOB_BLOCK_A1,
       MOB_BLOCK_B_VIE,
       { id: 'C', name: 'Cardio sala — Eliptica', dur: '15-20 min', color: '#185FA5', exIds: ['CARD-C'] },
-      { id: 'D', name: 'Pierna — Squat + Bisagra', dur: '55 min', color: '#3C3489', exIds: ['QUAD-A','QUAD-B','QUAD-C','QUAD-D','QUAD-E','QUAD-F','HINGE-E'] },
-      { id: 'E', name: 'Hip, TFL y abductores', dur: '35 min', color: '#993C1D', exIds: ['HIP-G','GLUTE-C','GLUTE-E','GLUTE-D','HIP-H','GLUTE-B'] },
+      { id: 'D', name: 'Pierna — Squat + Bisagra', dur: '55 min', color: '#3C3489', exIds: ['QUAD-A','QUAD-B','QUAD-C','QUAD-D','QUAD-E','QUAD-F','HINGE-E','HINGE-F','HINGE-G'] },
+      { id: 'E', name: 'Hip, TFL y abductores', dur: '35 min', color: '#993C1D', exIds: ['HIP-G','GLUTE-C','GLUTE-E','GLUTE-D','HIP-H','GLUTE-B','HIP-J','HIP-L2'] },
       { id: 'CR', name: 'Core — anti-rotacion + anti-extension (casa-posible)', dur: '15 min', color: '#993C1D', exIds: ['CORE-G2','CORE-C','CORE-A','CORE-K'] },
     ]
   },
