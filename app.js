@@ -73,7 +73,15 @@ function getCurSession(){
     const nid=typeof entry.sessId==='number'?entry.sessId:curDow();
     return SESSIONS[nid]||SESSIONS[3]||null;
   }
-  return SESSIONS[entry.sessId]||null;
+  const sess=SESSIONS[entry.sessId]||null;
+  if(!sess)return null;
+  // Jueves (sessId=4): inyecta bloque D del ciclo de 3 semanas
+  if(entry.sessId===4&&typeof WEEK_D_CYCLE!=='undefined'){
+    const ci=(WEEK_NUM-1)%3;
+    const cb=expandBlock(WEEK_D_CYCLE[ci]);
+    return Object.assign({},sess,{blocks:sess.blocks.map(b=>b.id==='D'?cb:b)});
+  }
+  return sess;
 }
 function getCurMode(){const entry=getPlanEntry(curDateKey(),curDow());return entry?entry.mode:'gym';}
 function curDow(){return curDay;}
