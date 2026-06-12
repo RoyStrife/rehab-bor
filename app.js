@@ -41,6 +41,13 @@ function getSheetsUrl(){return localStorage.getItem('sheets_url_v8')||''}
 function loadPlan(){try{return JSON.parse(localStorage.getItem(SK_PLAN)||'{}')}catch{return{}}}
 function savePlan(p){localStorage.setItem(SK_PLAN,JSON.stringify(p));}
 
+// ─── CICLO JUEVES (selector manual del bloque D, por semana) ───────
+const SK_JUE_CYCLE='rehab_jue_cycle_v11';
+function loadJueCycle(){try{return JSON.parse(localStorage.getItem(SK_JUE_CYCLE)||'{}')}catch{return{}}}
+function isJueCycleManual(){return[0,1,2].includes(loadJueCycle()[WEEK_NUM]);}
+function getJueCycleIdx(){const v=loadJueCycle()[WEEK_NUM];return[0,1,2].includes(v)?v:(WEEK_NUM-1)%3;}
+function setJueCycle(idx){const o=loadJueCycle();if(idx===null)delete o[WEEK_NUM];else o[WEEK_NUM]=idx;localStorage.setItem(SK_JUE_CYCLE,JSON.stringify(o));renderAll();}
+
 // ─── FECHAS ────────────────────────────────────────────────────────
 function todayKey(){return TODAY.toISOString().split('T')[0];}
 function getWeekDays(){const dow=TODAY.getDay(),m=new Date(TODAY);m.setDate(TODAY.getDate()-((dow+6)%7));return Array.from({length:7},(_,i)=>{const d=new Date(m);d.setDate(m.getDate()+i);return d;});}
@@ -75,9 +82,9 @@ function getCurSession(){
   }
   const sess=SESSIONS[entry.sessId]||null;
   if(!sess)return null;
-  // Jueves (sessId=4): inyecta bloque D del ciclo de 3 semanas
+  // Jueves (sessId=4): inyecta bloque D del ciclo de 3 semanas (auto o manual)
   if(entry.sessId===4&&typeof WEEK_D_CYCLE!=='undefined'){
-    const ci=(WEEK_NUM-1)%3;
+    const ci=getJueCycleIdx();
     const cb=expandBlock(WEEK_D_CYCLE[ci]);
     return Object.assign({},sess,{blocks:sess.blocks.map(b=>b.id==='D'?cb:b)});
   }
@@ -635,6 +642,7 @@ function renderBlocks(){
   const s=getCurSession();if(!s){con.innerHTML='';return;}
   const mode=getCurMode();
   const isHome=mode==='home';
+  const planEntry=getPlanEntry(curDateKey(),curDow());
   const doneObj=loadDone(curDateKey());
   con.innerHTML='';
   s.blocks.forEach(blk=>{
@@ -655,6 +663,23 @@ function renderBlocks(){
       +'<div><div class="blk-name" style="color:'+blk.color+'">'+blk.name+badge+'</div><div style="font-size:11px;color:'+blk.color+'88">'+blk.dur+' · '+dn+'/'+resolvedExs.length+'</div></div>'
       +'<div class="blk-chev '+(isOpen?'open':'')+'" style="color:'+blk.color+'">v</div>';
     const body=document.createElement('div');body.className='blk-body';body.id='bb_'+bk;if(!isOpen)body.style.display='none';
+    // Jueves bloque D: pestañas para elegir el ciclo (Auto / A / B / C)
+    if(blk.id==='D'&&planEntry&&planEntry.sessId===4&&planEntry.mode!=='neural'&&typeof WEEK_D_CYCLE!=='undefined'){
+      const manual=isJueCycleManual(),cur=getJueCycleIdx(),autoIdx=(WEEK_NUM-1)%3;
+      const tabs=document.createElement('div');
+      tabs.style.cssText='display:flex;gap:6px;flex-wrap:wrap;padding:8px 10px;border-bottom:1px solid '+blk.color+'33';
+      const opts=[{lbl:'Auto · Ciclo '+'ABC'[autoIdx],idx:null,act:!manual}]
+        .concat(WEEK_D_CYCLE.map((c,i)=>({lbl:'Ciclo '+'ABC'[i],idx:i,act:manual&&cur===i})));
+      opts.forEach(o=>{
+        const b=document.createElement('button');
+        b.textContent=o.lbl;
+        b.style.cssText='font-size:10px;font-weight:700;font-family:var(--mono);padding:4px 10px;border-radius:12px;cursor:pointer;'
+          +(o.act?'background:'+blk.color+';border:1px solid '+blk.color+';color:#fff':'background:var(--bg3);border:1px solid var(--b6);color:var(--text2)');
+        b.onclick=function(e){e.stopPropagation();setJueCycle(o.idx);};
+        tabs.appendChild(b);
+      });
+      body.appendChild(tabs);
+    }
     resolvedExs.forEach((ex,i2)=>{
       const ek=bk+'_'+i2,isDone=!!doneObj[ek];
       const row=document.createElement('div');row.className='ex-row';
