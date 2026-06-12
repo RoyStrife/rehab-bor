@@ -7,6 +7,9 @@ autopull.log
 pull-ahora.ps1
 pull-ahora.bat
 
+# Documentación médica personal (datos sensibles, no se sube)
+docs-medicos/
+
 # Sistema
 Thumbs.db
 desktop.ini
