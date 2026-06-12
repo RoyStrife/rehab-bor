@@ -240,6 +240,11 @@ html, body { height:100%; background:var(--bg); color:var(--text); font-family:v
 .ex-variants li { font-size:12px; color:var(--text2); padding:4px 0 4px 18px; position:relative }
 .ex-variants li::before { content:'→'; position:absolute; left:0; color:var(--teal); font-size:10px; top:5px }
 .ex-columna-box { background:var(--lteal); border:1px solid var(--teal)44; border-radius:var(--rsm); padding:10px; font-size:12px; color:var(--text2); line-height:1.6; margin-top:2px }
+.ex-gif { width:100%; max-height:300px; object-fit:contain; border-radius:var(--rsm); display:block; margin:0 auto; background:var(--bg2) }
+.ex-gif-empty { text-align:center; padding:28px 16px; color:var(--text3); font-size:13px; line-height:1.6 }
+.ex-gif-empty p { margin:0 0 16px }
+.ex-gif-links { display:flex; flex-direction:column; gap:8px }
+.ex-gif-links a { display:block; padding:10px 14px; background:var(--bg3); border:1px solid var(--b5); border-radius:var(--rsm); color:var(--blue); font-size:12px; font-family:var(--mono); text-decoration:none; text-align:center; letter-spacing:.04em }
 .ex-variant-item  { display:flex; align-items:flex-start; gap:10px; padding:10px 0; border-bottom:1px solid var(--b5)44 }
 .ex-variant-item:last-child { border-bottom:none }
 .ex-variant-badge { flex-shrink:0; font-size:10px; font-weight:700; font-family:var(--mono); padding:3px 8px; border-radius:20px; background:var(--bg3); border:1px solid var(--b5); color:var(--text3); white-space:nowrap; margin-top:1px }

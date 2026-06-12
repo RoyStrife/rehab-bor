@@ -893,6 +893,7 @@ function openEx(nm){
   if(g('exSteps'))g('exSteps').innerHTML=(ex&&ex.pasos)?ex.pasos.map(s=>'<li>'+s+'</li>').join(''):'<li>Sin pasos detallados.</li>';
   if(g('exErrors'))g('exErrors').innerHTML=(ex&&ex.errores)?ex.errores.map(e=>'<li>'+e+'</li>').join(''):'<li>—</li>';
   if(g('exVariantesList'))g('exVariantesList').innerHTML=buildVariantes(ex);
+  if(g('exGifContainer'))g('exGifContainer').innerHTML=buildGifTab(ex,nm);
   switchExTab('info');
   if(g('exModal'))g('exModal').style.display='flex';
 }
@@ -910,10 +911,23 @@ function buildVariantes(ex){
       +'<span class="ex-variant-text'+(isA?' current':'')+'">'+text+'</span></div>';
   }).join('');
 }
+function buildGifTab(ex,nm){
+  if(ex&&ex.gif){
+    return '<img src="'+ex.gif+'" class="ex-gif" alt="'+(ex.nombre||nm)+'" loading="lazy">';
+  }
+  const term=encodeURIComponent((ex?ex.nombre:nm)||nm);
+  return '<div class="ex-gif-empty"><p>Animación no configurada.<br>Encuentra un GIF y añade el campo <code>gif:\'URL\'</code> en EX_DB.</p>'
+    +'<div class="ex-gif-links">'
+    +'<a href="https://tenor.com/search/'+term+'-exercise-gifs" target="_blank" rel="noopener">🔍 Buscar en Tenor</a>'
+    +'<a href="https://giphy.com/search/'+term+'" target="_blank" rel="noopener">🔍 Buscar en Giphy</a>'
+    +'<a href="https://www.exercisedb.io/exercises" target="_blank" rel="noopener">📚 ExerciseDB (API libre)</a>'
+    +'<a href="https://gymvisual.com" target="_blank" rel="noopener">🎬 GymVisual (pro)</a>'
+    +'</div></div>';
+}
 function switchExTab(tab){
-  const map={info:'exTabInfo',pasos:'exTabPasos',errores:'exTabErrores',variantes:'exTabVariantes'};
+  const map={info:'exTabInfo',pasos:'exTabPasos',errores:'exTabErrores',variantes:'exTabVariantes',demo:'exTabDemo'};
   Object.entries(map).forEach(([t,id])=>{const el=document.getElementById(id);if(el)el.classList.toggle('active',t===tab);});
-  const order=['info','pasos','errores','variantes'];
+  const order=['info','pasos','errores','variantes','demo'];
   document.querySelectorAll('#exModal .ex-modal-tab').forEach((b,i)=>b.classList.toggle('active',order[i]===tab));
 }
 function closeExModal(){const m=document.getElementById('exModal');if(m)m.style.display='none';}
