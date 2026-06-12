@@ -1056,6 +1056,7 @@ EX_DB['plank-hip-extension'] = {
   nombre: 'Plancha con extension de cadera activa',
   categoria: 'Core F2-F3',
   color: '#993C1D',
+  gif: null,
   descripcion: 'Variante dinamica de la plancha anterior: desde posicion de plancha sobre los codos, se eleva una pierna extendida hacia atras hasta la altura de la cadera. Combina anti-extension del core con activacion del gluteo y trabajo isometrico de los flexores de cadera de la pierna de apoyo.',
   posicion: 'Plancha anterior sobre codos. Lumbar neutra. Pelvis nivelada.',
   pasos: [
@@ -1903,6 +1904,824 @@ EX_DB['rear-delt-fly'] = {
   ],
   variantes: ['S1-2: carga mínima ROM parcial · S3-4: carga ligera ROM completo · S5-6: carga media exc 3s · S7+: carga media pausa 1s arriba'],
   notas_columna: 'Movimiento en plano horizontal sin ninguna carga axial sobre L4-L5/L5-S1. El deltoides posterior y los romboides son estabilizadores escapulares clave: su debilidad contribuye a la postura cifótica que aumenta la presión discal. Realizar sentado evita cualquier carga de pie sobre la hernia.'
+};
+
+// ═══════════════════════════════════════════════════════════════════
+// ─── FICHAS BLOQUE D — Ejercicios sin ficha previa ─────────────────
+// ═══════════════════════════════════════════════════════════════════
+
+// ── Hip CARs ────────────────────────────────────────────────────────
+EX_DB['hip-cars'] = {
+  nombre: 'Hip CARs (Controlled Articular Rotations)',
+  categoria: 'Movilidad de cadera',
+  color: '#7A3DAA',
+  gif: null,
+  descripcion: 'Circulos lentos y controlados de la cadera que recorren el rango articular completo en todas las direcciones. El objetivo es lubricar la articulacion de la cadera, mejorar la conciencia proprioceptiva y ganar rango activo de movimiento.',
+  posicion: 'De pie con una mano apoyada en una pared o barra para el equilibrio. Peso en una pierna. La otra pierna libre para moverse.',
+  pasos: [
+    'Activa el core y fija la pelvis — no debe moverse durante todo el ejercicio.',
+    'Eleva la rodilla hacia adelante (flexion de cadera).',
+    'Lleva la rodilla hacia el lado (abduccion) manteniendo la altura.',
+    'Lleva la rodilla hacia atras (extension de cadera) sin hiperextender la lumbar.',
+    'Cierra el circulo volviendo a la posicion inicial.',
+    'Haz el movimiento lo mas lento posible — 5-10 segundos por circulo.',
+    'Repite en la direccion opuesta.',
+  ],
+  errores: [
+    'La pelvis rota o se inclina con la pierna — el movimiento debe ser solo de la cadera.',
+    'Velocidad excesiva — la lentitud es el objetivo.',
+    'Rango limitado por compensacion lumbar — reduce el rango si la pelvis se mueve.',
+    'Ceder el equilibrio — apoya bien la mano.',
+  ],
+  variantes: [
+    'S1-2: circulos pequenos (30% rango) con apoyo de mano en pared 2x5 cada lado.',
+    'S3-4: rango medio (60%) sin balanceo de pelvis 2x5.',
+    'S5-6: rango completo lento 5-8 seg por circulo 2x5.',
+    'S7+: rango completo + pausa 2s en cada punto cardinal (flex, abd, ext, add) 2x5.',
+  ],
+  notas_columna: 'Los Hip CARs son fundamentales en recuperacion discal L4-L5/L5-S1 porque restauran el rango activo de la cadera sin carga axial. Una cadera hipomovil fuerza a la columna lumbar a compensar — causa directa de sobrecarga discal. La pelvis DEBE permanecer estatica: cualquier movimiento pelvico indica compensacion lumbar.'
+};
+
+// ── 90/90 Stretch ──────────────────────────────────────────────────
+EX_DB['90-90'] = {
+  nombre: '90/90 Stretch activo',
+  categoria: 'Movilidad de cadera',
+  color: '#7A3DAA',
+  gif: null,
+  descripcion: 'Estiramiento activo de cadera en posicion 90/90: ambas piernas forman angulos de 90 grados en la cadera y la rodilla. Trabaja simultaneamente la rotacion interna de la cadera delantera y la rotacion externa de la cadera trasera. La version activa incluye contraccion del gluteo para profundizar el estiramiento.',
+  posicion: 'Sentado en el suelo. Pierna delantera: rotacion externa (pie hacia afuera). Pierna trasera: rotacion interna (pie hacia atras). Ambas rodillas en 90 grados. Tronco erguido.',
+  pasos: [
+    'Sienta en posicion 90/90 con el tronco erguido.',
+    'Activa el core para mantener la pelvis neutra.',
+    'FASE ACTIVA: aprieta el gluteo de la pierna trasera durante 5 segundos.',
+    'Relaja y notaras que el rango aumenta ligeramente.',
+    'Mantén la posicion 30-40 segundos respirando con calma.',
+    'Para profundizar: inclina el tronco hacia adelante sobre la pierna delantera manteniendo la espalda recta.',
+    'Cambia de lado.',
+  ],
+  errores: [
+    'Redondear la espalda al inclinarse — la columna debe mantenerse neutra.',
+    'Forzar el estiramiento — debe ser comodo y progresivo.',
+    'No activar el gluteo en la fase activa — es lo que diferencia la version activa de la pasiva.',
+    'Pelvis que rota o se inclina — ajustar el angulo de las piernas si es necesario.',
+  ],
+  variantes: [
+    'S1-2: posicion pasiva solo manteniendo con apoyo de manos en el suelo 2x40s cada lado.',
+    'S3-4: posicion activa contraccion gluteo 5s x 5 repeticiones 2x40s.',
+    'S5-6: posicion activa + inclinacion de tronco sobre pierna delantera 2x40s.',
+    'S7+: posicion activa + inclinacion + rotacion de tronco hacia la pierna delantera (apertura toracica) 2x40s.',
+  ],
+  notas_columna: 'El 90/90 trabaja directamente la rotacion interna y externa de la cadera, movimientos que suelen estar limitados en pacientes con hernia discal por la postura antalgica. La rotacion interna limitada en L4-L5/L5-S1 fuerza la compensacion rotacional lumbar. No forzar el rango — la pelvis NEUTRA es el criterio de seguridad.'
+};
+
+// ── Glute Bridge Unilateral ─────────────────────────────────────────
+EX_DB['glute-bridge-uni'] = {
+  nombre: 'Glute Bridge Unilateral',
+  categoria: 'Gluteo / estabilidad pelvica',
+  color: '#0F6E56',
+  gif: null,
+  descripcion: 'Version unilateral del puente de gluteo. Una sola pierna empuja mientras la otra queda elevada, lo que exige mayor activacion del gluteo medio y el control pelvico. Es mas exigente para los estabilizadores que la version bilateral y revela asimetrias entre el lado izquierdo (afectado) y el derecho.',
+  posicion: 'Tumbado boca arriba. Una pierna con el pie en el suelo (rodilla 90°). La otra pierna elevada — puede estar con rodilla flexionada o extendida segun la variante. Brazos a los lados.',
+  pasos: [
+    'Tumbado boca arriba, activa el core.',
+    'Eleva una pierna (rodilla flexionada a 90° en la variante inicial).',
+    'Con el pie apoyado de la pierna de trabajo, empuja y eleva la cadera.',
+    'La pelvis debe permanecer nivelada — NO dejar caer el lado de la pierna elevada.',
+    'Aprieta el gluteo en el punto alto durante 2 segundos.',
+    'Baja lentamente — excentrico controlado.',
+    'El lado L5-S1 izquierdo: prestar atencion a si aparece irradiacion.',
+  ],
+  errores: [
+    'La pelvis cae hacia el lado de la pierna elevada — es el error mas frecuente, indica debilidad del gluteo medio.',
+    'Hiperextension lumbar en el punto alto — el gluteo debe subir la cadera, no la espalda.',
+    'Pie en punta (dedos) en lugar de con el talon — los talones activan mas el gluteo.',
+    'Descenso incontrolado.',
+  ],
+  variantes: [
+    'S1-2: bilateral como base — glute bridge bilateral con pausa 2s 3x12.',
+    'S3-4: unilateral con rodilla elevada flexionada — pelvis nivelada 3x10 cada lado.',
+    'S5-6: unilateral con pierna elevada extendida (mayor demanda de estabilidad) 3x10.',
+    'S7+: mancuerna o disco en la cadera de trabajo 3x10 cada lado.',
+  ],
+  notas_columna: 'La version unilateral del glute bridge es clave para detectar y corregir la asimetria glutea L/D habitual en la hernia L5-S1 izquierda. Si la pelvis cae al elevar el lado izquierdo, indica debilidad del gluteo medio ipsilateral — comun en la presentacion antalgica. Corregir la asimetria reduce la sobrecarga discal compensatoria.'
+};
+
+// ── Monster Walk ────────────────────────────────────────────────────
+EX_DB['monster-walk'] = {
+  nombre: 'Monster Walk lateral con banda',
+  categoria: 'Gluteo medio / activacion',
+  color: '#0F6E56',
+  gif: null,
+  descripcion: 'Marcha lateral con banda elastica resistiendo la abduccion de cadera. Activa de forma continua el gluteo medio durante el movimiento funcional de marcha, trabajando la estabilidad pelvica en carga.',
+  posicion: 'De pie con banda elastica alrededor de los muslos (inicio) o tobillos (avanzado). Pies a la anchura de caderas. Rodillas ligeramente flexionadas. Tronco erguido.',
+  pasos: [
+    'Coloca la banda en los muslos (version inicial) o en los tobillos (avanzado).',
+    'Flexiona ligeramente las rodillas y mantén el tronco erguido durante todo el ejercicio.',
+    'Da un paso lateral con el pie derecho, separandolo de la anchura de caderas.',
+    'Sigue con el pie izquierdo, manteniendo la tension en la banda — no juntes los pies completamente.',
+    'Mantén la pelvis nivelada — no dejar que caiga al lado del paso.',
+    'Continua durante 15 metros o el numero de pasos establecido.',
+    'Repite volviendo al inicio (lado contrario).',
+  ],
+  errores: [
+    'Juntar los pies completamente entre pasos — la banda debe mantenerse tensa.',
+    'Pelvis que se inclina al dar el paso — indica compensacion lumbar.',
+    'Tronco que oscila de lado a lado — mantenerlo erguido y estatico.',
+    'Pasos demasiado grandes que fuerzan la posicion — pasos moderados y controlados.',
+    'Rodillas que caen hacia dentro durante el movimiento.',
+  ],
+  variantes: [
+    'S1-2: banda en muslos, ritmo lento, 10 pasos a cada lado x 3 series.',
+    'S3-4: banda en muslos, 15 metros x 3 series.',
+    'S5-6: 15 metros + pausa isometrica de 2s cada 5 pasos x 3 series.',
+    'S7+: banda en tobillos si no hay irradiacion activa (mayor palanca) x 3 series.',
+  ],
+  notas_columna: 'El monster walk activa el gluteo medio en patron funcional de marcha lateral. Con hernia L5-S1, el gluteo medio debilitado produce el signo de Trendelenburg (caida pelvica al caminar) que sobrecarga el disco de forma asimetrica en cada paso. Este ejercicio corrige directamente ese patron.'
+};
+
+// ── Goblet Squat ────────────────────────────────────────────────────
+EX_DB['goblet-squat'] = {
+  nombre: 'Sentadilla goblet con pausa',
+  categoria: 'Cuadriceps / patron sentadilla',
+  color: '#185FA5',
+  gif: null,
+  descripcion: 'Sentadilla con el peso sostenido delante del pecho (como un goblet/copa). La posicion del peso fuerza el tronco vertical y facilita la apertura de caderas, siendo la variante de sentadilla mas segura para la columna. Permite trabajar la movilidad de tobillo y cadera simultaneamente.',
+  posicion: 'De pie, pies a la anchura de los hombros o ligeramente mas. Puntas ligeramente hacia afuera. KB o mancuerna sujeta con ambas manos delante del pecho (codos hacia abajo).',
+  pasos: [
+    'Sujeta el KB o mancuerna con ambas manos a la altura del pecho.',
+    'Activa el core y mantén el tronco erguido durante todo el movimiento.',
+    'Baja la cadera entre las rodillas empujando las rodillas hacia afuera con los codos.',
+    'PAUSA 2 segundos en el punto mas bajo — el tronco debe seguir vertical.',
+    'Sube activando el gluteo y los cuadriceps — exhala al subir.',
+    'NO dejes que las rodillas caigan hacia dentro al subir.',
+    'La lumbar debe permanecer neutra en todo el recorrido.',
+  ],
+  errores: [
+    'Tronco que se inclina hacia adelante — la carga delante del pecho debe corregirlo; si no, reducir profundidad.',
+    'Rodillas que caen hacia dentro — empujar activamente hacia afuera.',
+    'Coxis que se dobla abajo (buttwink) — reducir la profundidad al punto donde la lumbar se mantiene neutra.',
+    'No hacer la pausa — la pausa es la parte terapeutica del ejercicio (mejora movilidad de tobillo/cadera).',
+  ],
+  variantes: [
+    'S1-2: peso corporal — sentadilla sumo con pausa 2s 3x10.',
+    'S3-4: KB 8 kg goblet pausa 2s 3x10.',
+    'S5-6: KB 12 kg goblet pausa 2s profundidad maxima 3x10.',
+    'S7+: KB 16 kg pausa 3s 3x10.',
+  ],
+  notas_columna: 'La sentadilla goblet es la version de sentadilla que menos carga axial compresiva genera sobre L4-L5/L5-S1. El peso delante del pecho actua como contrapeso que mantiene el tronco vertical, reduciendo la cizalla discal. La pausa en el punto bajo mejora la movilidad de cadera y tobillo, que son los factores limitantes de la sentadilla profunda segura.'
+};
+
+// ── Wall Sit ────────────────────────────────────────────────────────
+EX_DB['wall-sit'] = {
+  nombre: 'Wall sit isometrico',
+  categoria: 'Cuadriceps / isometrico',
+  color: '#185FA5',
+  gif: null,
+  descripcion: 'Contraccion isometrica del cuadriceps con la espalda apoyada en la pared y rodillas a 90 grados. Genera una carga alta en el cuadriceps sin ningun impacto articular y con carga axial minima sobre la columna (la pared absorbe parte del peso).',
+  posicion: 'De pie de espaldas a la pared. Pies separados a la anchura de caderas, a unos 60-70 cm de la pared. Espalda completamente apoyada en la pared.',
+  pasos: [
+    'Desliza la espalda por la pared hasta que las rodillas esten a 90 grados.',
+    'Los muslos deben quedar paralelos al suelo.',
+    'Pies planos en el suelo, talones directamente bajo las rodillas.',
+    'Activa el core — la espalda baja DEBE estar en contacto con la pared, sin hueco lumbar.',
+    'Mantén la posicion el tiempo establecido respirando con normalidad.',
+    'Si sientes irradiacion, sube un poco (angulo mayor de 90°) para reducir la tension.',
+  ],
+  errores: [
+    'Rodillas por delante de los dedos de los pies — acerca mas los pies a la pared.',
+    'Hueco lumbar excesivo — el contacto de la espalda baja con la pared debe ser completo.',
+    'Pies en punta — planta completa en el suelo.',
+    'Aguantar la respiracion — respirar de forma normal durante el isometrico.',
+  ],
+  variantes: [
+    'S1-2: angulo 100-110° (menos de 90°) durante 20 segundos x 3 series.',
+    'S3-4: angulo 90° durante 30 segundos x 3 series.',
+    'S5-6: angulo 90° durante 45 segundos x 3 series.',
+    'S7+: unilateral (una pierna) angulo 90° durante 20 segundos cada lado x 3 series.',
+  ],
+  notas_columna: 'El wall sit activa el cuadriceps en contraccion isometrica sin carga axial directa (la pared absorbe parte del peso). En hernia L4-L5/L5-S1, es la alternativa mas segura a la leg extension o la sentadilla cuando hay dolor al cargarse axialmente. El contacto de la espalda con la pared funciona como biofeedback para mantener la lumbar neutra.'
+};
+
+// ── Cable Pancake ───────────────────────────────────────────────────
+EX_DB['cable-pancake'] = {
+  nombre: 'Cable pancake en suelo (apertura piernas sentado)',
+  categoria: 'Cadena posterior / cierre',
+  color: '#3C3489',
+  gif: null,
+  descripcion: 'Ejercicio de cierre de sesion en suelo con los pies abiertos en V. El cable (o banda) resistiendo la posicion de apertura crea tension en la cadena posterior completa (isquiotibiales, aductores, zona lumbar). La inclinacion suave del tronco hacia adelante alarga la cadena posterior de forma controlada.',
+  posicion: 'Sentado en el suelo frente a la polea baja. Piernas estiradas en V (apertura de 30 a 60 grados segun el estadio). Agarre de la cuerda de la polea con ambas manos. Espalda erguida.',
+  pasos: [
+    'Sienta en el suelo con las piernas abiertas en V al ancho confortable — no forzar.',
+    'Agarra la cuerda de la polea baja con ambas manos (o extremos de una banda).',
+    'Activa el core y mantén la espalda neutra.',
+    'Mantén la posicion durante el tiempo indicado sin tirar excesivamente de la cuerda.',
+    'Si el estadio lo permite, inclina el tronco suavemente hacia adelante manteniendo la espalda recta.',
+    'La apertura de piernas NO debe aumentar hasta que el rango actual sea comodo sin tiron ciatico.',
+  ],
+  errores: [
+    'Forzar la apertura de piernas — el rango comodo es el limite de seguridad.',
+    'Redondear la espalda al inclinar el tronco — la espalda debe mantenerse recta.',
+    'Tirar de la cuerda para inclinar el tronco — el tronco se inclina por si solo con la gravedad.',
+    'Sentir tiron tipo ciatico y continuar — PARAR inmediatamente.',
+  ],
+  variantes: [
+    'S1-2: apertura minima (30-40°), tronco erguido, sin inclinacion 3x40s.',
+    'S3-4: apertura 45°, inclinacion suave de tronco 5-10° 3x40s.',
+    'S5-6: apertura 60°, mayor inclinacion de tronco 3x40s.',
+    'S7+: apertura maxima comoda + inclinacion lateral hacia el lado izquierdo (L5-S1) 3x40s.',
+  ],
+  notas_columna: 'El cable pancake es un ejercicio de cierre que elonge la cadena posterior completa de forma pasiva controlada. Con extrusion L5-S1 izquierda, la inclinacion lateral hacia ese lado al final (S7+) genera una traccion selectiva sobre el nervio ciatico izquierdo — solo realizar cuando la irradiacion este ausente.'
+};
+
+// ── Scapular Pull ───────────────────────────────────────────────────
+EX_DB['scapular-pull'] = {
+  nombre: 'Scapular pull en barra (dead hang escapular)',
+  categoria: 'Dorsal / descompresion',
+  color: '#185FA5',
+  gif: null,
+  descripcion: 'Colgado en barra con activacion de las escapulas hacia abajo y atras (depresion y retraccion escapular) sin flexion de codo. Es el ejercicio de traccion mas seguro para L4-L5/L5-S1 porque ademas de activar el dorsal ancho genera traccion axial descompresiva sobre los discos lumbares.',
+  posicion: 'Colgado en barra de dominadas con agarre prono (palmas adelante) a la anchura de los hombros o algo mas. Brazos completamente extendidos. Cuerpo relajado.',
+  pasos: [
+    'Colgate de la barra con los brazos completamente extendidos.',
+    'Activa el core para que el cuerpo no oscile.',
+    'Sin doblar los codos, deprime las escapulas (como si quisieras meter los hombros en los bolsillos traseros).',
+    'Retrae las escapulas (juntalas ligeramente hacia la columna).',
+    'Manten esta posicion 1-2 segundos.',
+    'Relaja y vuelve a la posicion colgada completamente relajada.',
+    'PARAR inmediatamente si hay irradiacion S1 al colgar.',
+  ],
+  errores: [
+    'Doblar los codos — el movimiento es solo de las escapulas.',
+    'Colgar completamente pasivo sin activacion inicial — preparar el hombro antes de cargar.',
+    'Continuar si hay irradiacion reproducida al colgar — algunos pacientes con tension del nervio ciatico no toleran el dead hang.',
+    'Agarre demasiado ancho que fuerza la posicion del hombro.',
+  ],
+  variantes: [
+    'S1-2: banda de suspension con pie en banda — carga parcial, activacion escapular 3x8.',
+    'S3-4: barra, agarre ancho, ROM completo, sin flexion de codo 3x8-10.',
+    'S5-6: pausa 2s en posicion de retraccion maxima 3x8-10.',
+    'S7+: tobillera ligera de 1-2 kg para aumentar la traccion descompresiva 3x8.',
+  ],
+  notas_columna: 'El scapular pull es el primer ejercicio de traccion porque ademas de activar los dorsales genera traccion axial descompresiva sobre L4-L5/L5-S1. El peso del cuerpo elonge el espacio discal al colgar. IMPORTANTE: algunos pacientes con tension del nervio ciatico no toleran el dead hang porque la posicion de colgado con cadera en extension ya tensa el nervio. Monitorizar siempre.'
+};
+
+// ── Jalón ancho ─────────────────────────────────────────────────────
+EX_DB['jalon-ancho'] = {
+  nombre: 'Jalón al pecho agarre ancho',
+  categoria: 'Dorsal / tiro vertical',
+  color: '#185FA5',
+  gif: null,
+  descripcion: 'Tiro vertical hacia el pecho en polea alta con agarre prono ancho. Activa principalmente el dorsal ancho, el redondo mayor y el biceps. Sin carga axial sobre la columna lumbar porque el peso cuelga verticalmente.',
+  posicion: 'Sentado en la maquina de jalon. Rodillas sujetas bajo el soporte. Agarre prono (palmas adelante) a 20-30 cm mas ancho que los hombros. Tronco ligeramente inclinado hacia atras (10-15°).',
+  pasos: [
+    'Agarra la barra con agarre ancho. Sujeta bien los muslos bajo el soporte.',
+    'Activa el core y arquea ligeramente el tronco (10-15° hacia atras) — mantén esta posicion.',
+    'Inicia el movimiento llevando los codos hacia abajo y atras, como si quisieras meterlos en los bolsillos.',
+    'Lleva la barra hacia el pecho superior (clavicula). El pecho se abre hacia la barra.',
+    'Pausa 1s en el punto bajo — escapulas bien retraidas.',
+    'Sube lentamente controlando el excentrico (3 segundos de bajada).',
+  ],
+  errores: [
+    'Tirar con los biceps en lugar de iniciar con las escapulas.',
+    'Inclinar el tronco demasiado hacia atras — se convierte en remo, no en jalon.',
+    'Oscilar el cuerpo para usar el impulso.',
+    'Llevar la barra detras del cuello — innecesario y lesivo para el hombro y la cervical.',
+    'Codos hacia afuera en lugar de hacia abajo y atras.',
+  ],
+  variantes: [
+    'S1-2: 50% del maximo, excentrico 4s, foco en activacion escapular 4x10.',
+    'S3-4: 60%, excentrico 3s 4x10.',
+    'S5-6: 70%, pausa 1s abajo 4x10.',
+    'S7+: dominada asistida (misma mecanica pero colgado).',
+  ],
+  notas_columna: 'El jalon es el ejercicio de tiro vertical de referencia porque no genera carga axial sobre la columna — el peso cuelga verticalmente de los brazos. Con extrusion L4-L5/L5-S1, priorizar la activacion escapular (depresion + retraccion) antes de pensar en la carga. El tronco ligeramente inclinado es seguro; mas de 20° convierte el ejercicio en remo y cambia la mecanica.'
+};
+
+// ── Remo maquina ─────────────────────────────────────────────────────
+EX_DB['remo-maquina'] = {
+  nombre: 'Remo en maquina sentado',
+  categoria: 'Dorsal / tiro horizontal',
+  color: '#185FA5',
+  gif: null,
+  descripcion: 'Tiro horizontal en maquina de remo sentado. Activa el dorsal ancho, romboides y biceps con el tronco estabilizado por la maquina. Al estar sentado con el pecho apoyado (si la maquina lo tiene), la carga lumbar es minima.',
+  posicion: 'Sentado frente a la maquina. Pies apoyados en las plataformas. Si hay respaldo de pecho, el pecho apoyado en el. Agarre neutro (palmas enfrentadas) con codos pegados al cuerpo.',
+  pasos: [
+    'Sienta con una postura erguida. Si hay respaldo de pecho, apoyalo.',
+    'Agarra los mangos con agarre neutro.',
+    'Activa el core — NO flexionar la columna al tirar.',
+    'Inicia el movimiento llevando los codos hacia atras y las escapulas hacia la columna.',
+    'Los codos deben pasar cerca del cuerpo (no hacia afuera).',
+    'Pausa 1s en el punto final — escapulas bien retraidas.',
+    'Extiende los brazos lentamente (excentrico controlado 3 seg).',
+  ],
+  errores: [
+    'Flexionar el tronco hacia adelante y usar el rebote para tirar — la columna debe mantenerse estatica.',
+    'Codos hacia afuera — deben ir pegados al cuerpo.',
+    'No retraer las escapulas en el punto final.',
+    'Rango de movimiento incompleto en la extension.',
+  ],
+  variantes: [
+    'S1-2: carga ligera, pausa 1s con escapulas retraidas 4x10.',
+    'S3-4: carga media, pausa 1s 4x10.',
+    'S5-6: carga alta, excentrico 3s 4x10.',
+    'S7+: carga alta, pausa 1s + excentrico 4s 4x10.',
+  ],
+  notas_columna: 'El remo sentado en maquina es el ejercicio de tiro horizontal mas seguro en F2 porque el asiento y el respaldo de pecho estabilizan completamente la columna. Con extrusion L4-L5/L5-S1, evitar flexionar el tronco para tirar — ese patron de "remo con balanceo" genera cizalla repetida sobre los discos.'
+};
+
+// ── Pec Deck ────────────────────────────────────────────────────────
+EX_DB['pec-deck'] = {
+  nombre: 'Aperturas en maquina pec deck',
+  categoria: 'Pecho / empuje horizontal',
+  color: '#993C1D',
+  gif: null,
+  descripcion: 'Aduccion horizontal de hombro en maquina pec deck. Activa el pectoral mayor (porcion clavicular y esternal) sin carga axial sobre la columna. La espalda permanece fija en el respaldo de la maquina durante todo el ejercicio.',
+  posicion: 'Sentado en la maquina con la espalda completamente apoyada en el respaldo. Codos a la altura de los hombros (o ligeramente por debajo) sobre las almohadillas laterales.',
+  pasos: [
+    'Sienta en la maquina. Ajusta el asiento para que los codos queden a la altura de los hombros.',
+    'La espalda DEBE estar completamente apoyada en el respaldo durante todo el movimiento.',
+    'Activa el core y el pecho.',
+    'Lleva los codos hacia el centro (aduccion horizontal) apretando el pecho.',
+    'Pausa 1s en el centro cuando los codos esten proximos.',
+    'Abre lentamente resistiendo la apertura (excentrico 3s).',
+  ],
+  errores: [
+    'La espalda se separa del respaldo — reducir la carga.',
+    'Codos por encima de los hombros — riesgo para el hombro, ajustar el asiento.',
+    'Usar el impulso para cerrar — movimiento controlado.',
+    'Rango excesivo en la apertura que estira el pectoral mas alla de lo comodo.',
+  ],
+  variantes: [
+    'S1-2: carga ligera, rango parcial (75% apertura), espalda siempre en respaldo 3x12.',
+    'S3-4: carga media, rango completo 3x12.',
+    'S5-6: carga alta, excentrico 3s 3x12.',
+    'S7+: carga alta, pausa 1s en la contraccion maxima 3x12.',
+  ],
+  notas_columna: 'El pec deck es el ejercicio de pecho sin carga axial por excelencia — el movimiento en plano horizontal no comprime la columna. Con hernia L4-L5/L5-S1, evitar el press de banca convencional (carga axial + riesgo Valsalva) y usar el pec deck como alternativa principal. La espalda en el respaldo es la clave de la seguridad.'
+};
+
+// ── Fondos maquina asistida ─────────────────────────────────────────
+EX_DB['fondos-triceps'] = {
+  nombre: 'Fondos en maquina asistida (chest dip)',
+  categoria: 'Pecho y triceps / empuje',
+  color: '#993C1D',
+  gif: null,
+  descripcion: 'Fondos de pecho en maquina asistida. La maquina proporciona asistencia (plataforma que empuja hacia arriba), permitiendo hacer fondos sin soportar el peso corporal completo. Sin carga axial sobre la columna porque el movimiento es en traccion vertical, no compresion.',
+  posicion: 'Arrodillado sobre la plataforma asistida de la maquina de fondos. Manos en los mangos laterales. Codos a 90 grados maximo en el punto bajo. Tronco ligeramente inclinado hacia adelante para activar mas el pecho.',
+  pasos: [
+    'Ajusta la asistencia de la maquina al nivel correspondiente a tu estadio.',
+    'Sube a la plataforma y agarra los mangos.',
+    'Inclina el tronco ligeramente hacia adelante (activa mas pecho que triceps).',
+    'Baja lentamente hasta que los codos esten a 90 grados — NO mas abajo.',
+    'Empuja hacia arriba activando el pecho y el triceps.',
+    'Manten el core activo para no arquear la espalda en exceso.',
+    'PARAR si hay molestia en el hombro.',
+  ],
+  errores: [
+    'Bajar mas alla de 90° en el codo — aumenta el estres en el hombro.',
+    'Separar la espalda excesivamente (hiperextension).',
+    'Usar la asistencia incorrecta — demasiado alta hace el ejercicio inutil, demasiado baja puede lesionar.',
+    'Oscilar el cuerpo para subir.',
+  ],
+  variantes: [
+    'S1-2: asistencia alta (>50% del peso), rango parcial (45° en el codo) 3x12.',
+    'S3-4: asistencia media, rango completo hasta 90° en el codo 3x12.',
+    'S5-6: asistencia baja, excentrico 3s 3x12.',
+    'S7+: asistencia minima o cero, control total 3x12. F3: lastre ligero.',
+  ],
+  notas_columna: 'Los fondos asistidos en maquina son el ejercicio de empuje con la mayor activacion de pectoral + triceps sin carga axial. La posicion vertical del cuerpo no comprime los discos lumbares. Preferable al press de banca convencional en F2-F3. El limite de 90° en el codo protege el hombro — con irradiacion activa, limitar el rango aun mas.'
+};
+
+// ── Elevaciones laterales ───────────────────────────────────────────
+EX_DB['elevaciones-lat'] = {
+  nombre: 'Elevaciones laterales con mancuernas',
+  categoria: 'Deltoides medio',
+  color: '#993C1D',
+  gif: null,
+  descripcion: 'Abduccion de hombro en el plano frontal con mancuernas. Activa principalmente el deltoides medio y el supraespinoso. Realizado sentado para evitar la carga de pie sobre la columna. Sin riesgo de carga axial cuando se hace sentado.',
+  posicion: 'Sentado en un banco o silla. Espalda erguida. Mancuernas a los lados del cuerpo, palmas hacia dentro (agarre neutro). Codos ligeramente flexionados.',
+  pasos: [
+    'Sienta erguido con el core activo.',
+    'Agarra las mancuernas con agarre neutro (pulgares arriba).',
+    'Eleva ambos brazos lateralmente hasta la altura de los hombros.',
+    'Los codos ligeramente flexionados durante todo el movimiento.',
+    'Pausa 1s en el punto alto.',
+    'Baja lentamente (excentrico controlado 3s).',
+    'No elevar por encima de la altura del hombro — no aporta beneficio adicional.',
+  ],
+  errores: [
+    'Elevar por encima de los hombros — impacto en el acromion.',
+    'Inclinarse hacia un lado para ayudar a subir el brazo mas debil.',
+    'Usar impulso elevando los hombros (trampas).',
+    'Carga excesiva que fuerza a usar el trapecio en lugar del deltoides.',
+  ],
+  variantes: [
+    'S1-2: sentado, carga muy ligera (30-40% max) 3x15.',
+    'S3-4: sentado, carga ligera, excentrico 3s 3x15.',
+    'S5-6: sentado, carga media 3x15.',
+    'S7+: de pie, carga media + pausa 1s en el punto alto 3x15.',
+  ],
+  notas_columna: 'Las elevaciones laterales sentadas son un empuje de hombro en plano horizontal que no genera carga axial sobre L4-L5/L5-S1. El deltoides medio es clave para la salud del hombro — su fortalecimiento previene el sindrome subacromial, frecuente en personas que evitan actividad de brazos por dolor lumbar. Realizarlo SIEMPRE sentado en F2 para eliminar cualquier carga de pie.'
+};
+
+// ── Extension triceps polea ─────────────────────────────────────────
+EX_DB['triceps-polea'] = {
+  nombre: 'Extension de triceps en polea alta (cuerda)',
+  categoria: 'Triceps',
+  color: '#993C1D',
+  gif: null,
+  descripcion: 'Extension de codo con resistencia de polea alta y accesorio de cuerda. Activa los tres cabezales del triceps. Con los codos fijos al cuerpo y el tronco ligeramente inclinado hacia adelante, no genera carga axial sobre la columna.',
+  posicion: 'De pie frente a la polea alta con la cuerda como accesorio. Pies a la anchura de caderas, ligeramente escalonados. Tronco inclinado 10-15° hacia adelante. Codos pegados a los costados y fijos — NO deben moverse.',
+  pasos: [
+    'Agarra los extremos de la cuerda. Codos pegados al cuerpo a 90°.',
+    'Activa el core. Inclina el tronco ligeramente hacia adelante.',
+    'Extiende los codos hacia abajo llevando la cuerda hacia las caderas.',
+    'AL FINAL del movimiento, separa los extremos de la cuerda hacia afuera (hacia los costados) para maxima contraccion.',
+    'Pausa 1s en la extension completa.',
+    'Vuelve lentamente a la posicion de 90° en los codos (excentrico controlado).',
+  ],
+  errores: [
+    'Los codos se separan del cuerpo para tirar — anulan el trabajo del triceps.',
+    'Balancear el tronco para ayudar — la espalda permanece estatica.',
+    'No separar la cuerda al final — se pierde la contraccion maxima del cabezal lateral.',
+    'Rango de movimiento incompleto — bajar hasta la extension completa del codo.',
+  ],
+  variantes: [
+    'S1-2: carga minima, codos bien fijados, foco en la mecanica 4x15.',
+    'S3-4: carga media, separacion al final de la cuerda 4x15.',
+    'S5-6: carga alta, excentrico 3s 4x15.',
+    'S7+: unilateral (una mano a la vez) alternando 4x12 cada brazo.',
+  ],
+  notas_columna: 'La extension de triceps en polea no genera carga lumbar cuando se hace con el tronco ligeramente inclinado y los pies en posicion escalonada. Es un ejercicio complementario que mantiene la funcionalidad del brazo durante la fase de recuperacion. Evitar la version con barra EZ overhead (extension sobre la cabeza) que requiere flexion de codo profunda y puede generar carga cervical.'
+};
+
+// ── Leg Extension ───────────────────────────────────────────────────
+EX_DB['leg-extension'] = {
+  nombre: 'Leg Extension (extension de cuadriceps)',
+  categoria: 'Cuadriceps / maquina',
+  color: '#185FA5',
+  gif: null,
+  descripcion: 'Extension de rodilla en maquina sentado. Activa el cuadriceps en contraccion concentrica e excentrica. Sin carga axial sobre la columna porque se realiza sentado. La dosificacion en L4-L5/L5-S1 debe ser cuidadosa si hay sintomas ciaticos porque la dorsiflexion del tobillo puede aumentar la tension del nervio.',
+  posicion: 'Sentado en la maquina. Espalda apoyada en el respaldo. Hueco popliteo (parte trasera de la rodilla) apoyado en el borde del asiento. Tobillo en angulo neutro (NO en dorsiflexion si hay ciatica).',
+  pasos: [
+    'Sienta en la maquina. Ajusta el asiento para que las rodillas queden justo en el borde.',
+    'Ajusta la carga. Los dedos del pie en posicion neutra (hacia adelante).',
+    'Activa el cuadriceps y extiende la rodilla hasta la posicion completamente extendida.',
+    'Pausa 1s en la extension maxima.',
+    'Baja controlando el excentrico (2-3 segundos).',
+    'Si sientes tiron ciatico: apunta los dedos del pie hacia adelante (no en punta ni hacia ti).',
+  ],
+  errores: [
+    'Dorsiflexion del tobillo con ciatica activa — apuntar los dedos neutros o ligeramente hacia adelante.',
+    'Balancear el cuerpo para ayudar a subir — la espalda en el respaldo durante todo el movimiento.',
+    'Carga excesiva que fuerza el movimiento y levanta la espalda del respaldo.',
+    'Descenso incontrolado (solo concentrico) — el excentrico es la mitad del trabajo.',
+  ],
+  variantes: [
+    'S1-2: carga muy ligera, rango parcial (extensiones hasta 90°), dedos neutros 3x12.',
+    'S3-4: carga ligera, rango completo, dedos en posicion neutra 3x12.',
+    'S5-6: carga media, excentrico 2s 3x12.',
+    'S7+: carga media-alta, pausa 1s en extension maxima 3x12.',
+  ],
+  notas_columna: 'La leg extension es el ejercicio de cuadriceps sin carga axial por excelencia. ATENCION con L5-S1: la dorsiflexion del tobillo (tirar el pie hacia ti) aumenta la tension sobre el nervio ciatico. Si hay irradiacion, mantener el tobillo en posicion neutra o con los dedos ligeramente hacia adelante. Si persiste el dolor, adelantar el asiento y llevar las caderas ligeramente hacia adelante.'
+};
+
+// ── Leg Curl ────────────────────────────────────────────────────────
+EX_DB['leg-curl'] = {
+  nombre: 'Leg Curl (curl femoral)',
+  categoria: 'Isquiotibiales / maquina',
+  color: '#3C3489',
+  gif: null,
+  descripcion: 'Flexion de rodilla en maquina sentado o tumbado. Activa principalmente el biceps femoral, el semimembranoso y el semitendinoso (isquiotibiales). Sin carga axial sobre la columna. Cuidado con la posicion del tronco para no redondear la lumbar.',
+  posicion: 'Sentado en la maquina (version sentado): espalda apoyada en el respaldo. La almohadilla sobre el tobillo. Cadera al fondo del asiento. ALTERNATIVA tumbado (prono): pecho sobre la almohadilla, tobillos bajo el rodillo.',
+  pasos: [
+    'SENTADO: Sienta con la espalda apoyada en el respaldo. Ajusta la almohadilla sobre los tobillos.',
+    'Activa el core — NO redondear la espalda al tirar.',
+    'Flexiona la rodilla llevando el talon hacia los gluteos.',
+    'Pausa 1s en la flexion maxima.',
+    'Extiende la rodilla lentamente controlando el excentrico (3 segundos).',
+    'CIATICA: si hay tiron al extender la pierna, inclina el tronco ligeramente hacia atras.',
+  ],
+  errores: [
+    'Redondear la espalda al tirar — la columna debe permanecer neutra.',
+    'Levantar la cadera del asiento para conseguir mas rango.',
+    'Usar el impulso del cuerpo.',
+    'No controlar el excentrico — volver lentamente es el trabajo mas importante.',
+  ],
+  variantes: [
+    'S1-2: carga muy ligera, foco en no redondear la espalda 3x12.',
+    'S3-4: carga ligera, torso neutro en el respaldo 3x12.',
+    'S5-6: carga media, excentrico 3s 3x12.',
+    'S7+: carga alta, pausa 1s en la contraccion maxima 3x12.',
+  ],
+  notas_columna: 'El leg curl (curl femoral) es el ejercicio prioritario de isquiotibiales sin carga axial. Los isquiotibiales acortados por el sedentarismo y la posicion antalgica son un factor de riesgo para la hernia discal recurrente — su fortalecimiento excentriico reduce la tension sobre los discos. ATENCION en version tumbada: la posicion de extension de cadera con el cuerpo prono puede ser incomoda si hay irritacion del nervio.'
+};
+
+// ── Prensa inclinada 45° ────────────────────────────────────────────
+EX_DB['prensa'] = {
+  nombre: 'Prensa inclinada 45 grados',
+  categoria: 'Cuadriceps / pierna completa',
+  color: '#185FA5',
+  gif: null,
+  descripcion: 'Ejercicio de pierna en maquina inclinada a 45°. Activa cuadriceps, gluteo mayor e isquiotibiales en patron de empuje con la pierna. Al estar reclinado, la carga axial sobre la columna lumbar es minima comparada con la sentadilla con barra. El criterio de seguridad clave es el buttwink (levantamiento del coxis).',
+  posicion: 'Reclinado en la prensa a 45°. Pies a la anchura de caderas en la plataforma. Espalda y gluteos completamente apoyados en el respaldo. Manos en las asas laterales.',
+  pasos: [
+    'Sienta en la maquina y coloca los pies a la anchura de caderas en la plataforma.',
+    'Retira los seguros de la maquina.',
+    'ACTIVA: manos bajo la zona lumbar para sentir si se despega el respaldo.',
+    'Flexiona las rodillas bajando la plataforma lentamente (3 segundos de excentrico).',
+    'El LIMITE de seguridad: cuando el coxis empieza a levantarse del asiento (buttwink) — ese es el rango maximo.',
+    'Extiende las rodillas empujando con los talones para volver.',
+    'No bloquear las rodillas en la extension completa.',
+  ],
+  errores: [
+    'BUTTWINK: el coxis se levanta del asiento — indica que has pasado el rango seguro.',
+    'Talones que se despegan de la plataforma (exceso de dorsiflexion) — elevar los talones con un disco.',
+    'Rodillas que caen hacia dentro (valgo) al empujar.',
+    'Bloquear completamente las rodillas en la extension — dejar un ligero grado de flexion.',
+  ],
+  variantes: [
+    'S1-2: carga ligera, talones elevados en plataforma o disco, rango sin buttwink 4x10.',
+    'S3-4: carga media, rango completo sin buttwink, excentrico 3s 4x10.',
+    'S5-6: carga alta, rango completo, excentrico 3s 4x10.',
+    'S7+: unilateral (un pie) para bloquear la rotacion pelvica 4x8 cada lado.',
+  ],
+  notas_columna: 'La prensa a 45° genera carga compresiva sobre L4-L5/L5-S1 mucho menor que la sentadilla con barra pero mayor que ejercicios completamente sin carga axial. El buttwink (levantamiento del coxis) es la senal de alarma: en ese momento la pelvis retroversa y la presion discal se multiplica. Colocar las manos bajo la lumbar para sentir ese momento exacto y marcar el limite de profundidad segura.'
+};
+
+// ── Sumo Squat KB ───────────────────────────────────────────────────
+EX_DB['sumo-squat-kb'] = {
+  nombre: 'Sumo Squat con kettlebell (goblet sumo)',
+  categoria: 'Cuadriceps y gluteo / pierna completa',
+  color: '#185FA5',
+  gif: null,
+  descripcion: 'Sentadilla sumo profunda con kettlebell o mancuerna sostenida entre las piernas. La apertura ancha de pies (sumo) activa mas el aductor y el gluteo medio que la sentadilla convencional. El peso entre las piernas fuerza el tronco vertical y elimina la inclinacion hacia adelante que genera carga lumbar.',
+  posicion: 'De pie con los pies a 1.5-2 veces la anchura de los hombros. Puntas de los pies giradas hacia afuera 30-45 grados. KB o mancuerna sujeta con ambas manos entre las piernas (no delante del pecho como en goblet convencional).',
+  pasos: [
+    'Posiciona los pies en sumo. Agarra el KB por las orejas (o la mancuerna por el cabezal).',
+    'Activa el core. Mantén el tronco completamente vertical.',
+    'Baja la cadera directamente hacia abajo empujando las rodillas hacia afuera (en la direccion de los pies).',
+    'La profundidad maxima es cuando el KB toca casi el suelo o hasta donde el tronco permanezca vertical.',
+    'Pausa comoda en el punto bajo.',
+    'Sube activando el gluteo y empujando el suelo hacia abajo.',
+  ],
+  errores: [
+    'Rodillas que caen hacia dentro al bajar o subir — empujar activamente hacia afuera.',
+    'Tronco que se inclina hacia adelante — el peso entre las piernas debe corregirlo.',
+    'Coxis que se dobla abajo (buttwink) — reducir la profundidad.',
+    'Talones que se levantan — mejorar movilidad de tobillo o elevar los talones.',
+  ],
+  variantes: [
+    'S1-2: peso corporal, rango parcial, foco en la apertura de rodillas hacia afuera 3x10.',
+    'S3-4: KB 8-12 kg, rango completo 3x10.',
+    'S5-6: KB 16-20 kg, profundidad maxima comoda 3x10.',
+    'S7+: KB 24 kg + pausa 2s en el punto bajo 3x10.',
+  ],
+  notas_columna: 'El sumo squat con KB es la version de sentadilla que sustituye a la sentadilla con barra en F2. La apertura sumo de pies y el peso entre las piernas (no sobre los hombros) reducen drasticamente la cizalla lumbar. Con extrusion L4-L5/L5-S1, la sentadilla con barra esta contraindicada — el sumo KB mantiene el patron motor sin el riesgo de la carga axial alta.'
+};
+
+// ── Bulgara / Split squat ────────────────────────────────────────────
+EX_DB['bulgara'] = {
+  nombre: 'Split squat — sentadilla a una pierna',
+  categoria: 'Cuadriceps / unilateral',
+  color: '#185FA5',
+  gif: null,
+  descripcion: 'Sentadilla unilateral con un pie adelantado y el otro atras. Trabaja el cuadriceps de la pierna delantera y estira el flexor de cadera de la pierna trasera. La version anti-rotacion (peso en un solo brazo, lado opuesto a la pierna adelantada) activa el QL y los estabilizadores lumbares de forma adicional.',
+  posicion: 'De pie con un pie adelantado (paso largo) y el otro atras. Tronco erguido. Brazos a los lados o con mancuernas. El pie trasero puede estar en punta o plano en el suelo.',
+  pasos: [
+    'Posiciona los pies en paso largo — el de adelante con el pie plano, el de atras en punta.',
+    'Activa el core.',
+    'Baja la rodilla trasera hacia el suelo en una linea vertical — no empujar hacia adelante.',
+    'El tronco permanece ERGUIDO durante todo el descenso.',
+    'Pausa 2s en el punto bajo.',
+    'Sube empujando con el talon delantero.',
+    'VERSION ANTI-ROTACION: sostén la mancuerna en el brazo OPUESTO a la pierna adelantada.',
+  ],
+  errores: [
+    'Tronco que se inclina hacia adelante — indica debilidad de cuadriceps o falta de movilidad de tobillo.',
+    'Rodilla trasera que cae lateralmente.',
+    'Paso demasiado corto — la rodilla delantera pasa mucho mas alla del tobillo.',
+    'Rodilla delantera que cae hacia dentro (valgo) al subir.',
+  ],
+  variantes: [
+    'S1-2: peso corporal, rango parcial (bajar solo hasta la mitad), ambos brazos a los lados 3x10.',
+    'S3-4: peso corporal, rango completo (rodilla trasera toca casi el suelo), pausa 2s 3x10.',
+    'S5-6: mancuerna ligera en ambas manos 3x10 cada lado.',
+    'S7+: mancuerna en UN solo brazo (lado opuesto a la pierna adelantada) para activacion anti-rotacion del QL 3x10. F3: pie trasero en banco (bulgara).',
+  ],
+  notas_columna: 'El split squat unilateral genera minima carga axial comparado con la sentadilla bilateral y ademas activa los estabilizadores lumbares de forma asimetrica. La version anti-rotacion (peso unilateral en brazo opuesto) es un ejercicio avanzado de estabilidad lumbar que prepara para el retorno a la actividad funcional. Progresar despacio — la variante con pie trasero elevado (bulgara) es mas exigente para la cadera.'
+};
+
+// ── Step Up ─────────────────────────────────────────────────────────
+EX_DB['step-up'] = {
+  nombre: 'Step up al banco',
+  categoria: 'Cuadriceps / funcional unilateral',
+  color: '#185FA5',
+  gif: null,
+  descripcion: 'Subida unilateral a un escalon o banco. Ejercicio funcional que trabaja el cuadriceps, gluteo mayor y los estabilizadores unilaterales. Sin impacto y con minima carga axial sobre la columna cuando se controla el descenso.',
+  posicion: 'De pie frente a un banco o step a la altura indicada por el estadio. Un pie sobre el banco. El otro en el suelo. Tronco erguido.',
+  pasos: [
+    'Coloca un pie completo sobre el banco (talon incluido).',
+    'Activa el core.',
+    'Empuja con el talon del pie sobre el banco y sube el cuerpo de forma controlada.',
+    'El pie del suelo solo se eleva para igualar la altura — NO dar impulso con el pie del suelo.',
+    'Pausa 1-2s en el punto alto con los dos pies en el banco.',
+    'Baja lentamente CON el pie que subio (excentrico controlado, 3 segundos de descenso).',
+    'Repite sin bajar el otro pie hasta completar las repeticiones.',
+  ],
+  errores: [
+    'Dar impulso con el pie del suelo — el trabajo debe hacerlo completamente la pierna sobre el banco.',
+    'Inclinar el tronco hacia adelante para ayudar a subir.',
+    'Descenso incontrolado (saltar al suelo).',
+    'Banco demasiado alto — la cadera no debe quedar por encima de la rodilla en el punto bajo.',
+  ],
+  variantes: [
+    'S1-2: escalon bajo de 15-20 cm, sin carga, foco en el control excentrico 3x10 cada lado.',
+    'S3-4: banco de 35-40 cm, sin carga 3x10.',
+    'S5-6: banco + pausa 2s en el punto alto 3x10.',
+    'S7+: banco + mancuernas ligeras (5-8 kg) 3x10.',
+  ],
+  notas_columna: 'El step up es un ejercicio funcional que simula el patron de subir escaleras. El descenso excentriico controlado es la parte mas valiosa — el cuadriceps trabajando en excentriico mejora la estabilidad de rodilla y cadena cinetica. Con hernia L4-L5/L5-S1, el paso unilateral no genera carga axial significativa si se realiza con control — diferente de la sentadilla bilateral que comprime los discos uniformemente.'
+};
+
+// ── Superman ─────────────────────────────────────────────────────────
+EX_DB['superman'] = {
+  nombre: 'Superman hold en suelo',
+  categoria: 'Cadena posterior / extension lumbar',
+  color: '#3C3489',
+  gif: null,
+  descripcion: 'Extension de cadera y hombros tumbado boca abajo. Activa los erectores lumbares, el gluteo mayor y el trapecio inferior en co-contraccion. La posicion boca abajo descomprime el disco herniado (extension lumbar) en estadios avanzados.',
+  posicion: 'Tumbado boca abajo en el suelo. Brazos extendidos hacia adelante. Piernas extendidas hacia atras. Frente apoyada en el suelo.',
+  pasos: [
+    'Tumbado boca abajo, activa el core suavemente.',
+    'Eleva simultaneamente los brazos, el pecho y las piernas del suelo.',
+    'La cabeza va en linea con la columna — mirar al suelo, no hacia adelante.',
+    'Apretar el gluteo y los isquiotibiales al elevar las piernas.',
+    'Manten la posicion 2-3 segundos.',
+    'Baja lentamente.',
+  ],
+  errores: [
+    'Elevar la cabeza hacia atras en hiperextension cervical — cabeza neutra.',
+    'Elevar solo las piernas o solo los brazos — el esfuerzo es simultaneo.',
+    'Apnea durante el hold — respirar de forma suave.',
+    'Rango excesivo con discos herniados activos en estadios tempranos — comenzar con rango minimo.',
+  ],
+  variantes: [
+    'S1-2: solo elevar brazos (sin piernas) 3x8. Luego solo piernas (sin brazos) 3x8.',
+    'S3-4: extension completa arms+piernas sin peso 3x10 pausa 2s.',
+    'S5-6: extension completa + pausa 3s 3x10.',
+    'S7+: con tobilleras ligeras 1kg 3x10 + pausa 3s.',
+  ],
+  notas_columna: 'El Superman en suelo es una extension lumbar suave que puede ser terapeutica en hernia discal posterior (L4-L5/L5-S1) porque la extension moviliza el disco hernado hacia anterior. SOLO en estadios S3+ cuando la irradiacion este controlada. En S1-2 puede reproducir los sintomas — si es asi, suspender.'
+};
+
+// ── Iso hold cinta yoga ──────────────────────────────────────────────
+EX_DB['iso-hold-cinta'] = {
+  nombre: 'Iso hold cinta yoga (puerta)',
+  categoria: 'Flexores de cadera / isometrico',
+  color: '#7A3DAA',
+  gif: null,
+  descripcion: 'Contraccion isometrica de los flexores de cadera sujetando una cinta de yoga anclada en la parte alta de una puerta. La cinta resistiendo el tirón hacia abajo obliga a los flexores a mantener una contraccion sostenida en rango acortado o medio.',
+  posicion: 'De pie o sentado frente a la puerta. Cinta de yoga anclada en la parte superior de la puerta. Pie o rodilla metido en el lazo de la cinta. Mantén la rodilla elevada contra la tension de la cinta.',
+  pasos: [
+    'Ancla la cinta en la parte superior de la puerta (cerrar la puerta con la cinta atrapada).',
+    'De pie, mete el pie en el lazo de la cinta (o coloca el lazo sobre la rodilla).',
+    'Eleva la rodilla hacia la cadera hasta sentir la resistencia de la cinta.',
+    'Manten esa posicion (isometrico) el tiempo indicado.',
+    'Respira de forma normal durante el hold.',
+    'Baja controladamente.',
+  ],
+  errores: [
+    'Compensar inclinando el tronco hacia atras — mantener el cuerpo erguido.',
+    'Tension excesiva de la cinta que fuerza la posicion — ajustar la longitud.',
+    'Aguantar la respiracion durante el isometrico.',
+  ],
+  variantes: [
+    'S1-2: rodilla a 90°, isometrico 20s, cinta con poca tension 3x5.',
+    'S3-4: rodilla a 90°+, isometrico 30s, tension media 3x5.',
+    'S5-6: rodilla hacia el pecho, isometrico 30s, tension alta 3x5.',
+    'S7+: isometrico en rango elongado (rodilla baja contra cinta) 3x5 para trabajo excentriico isometrico.',
+  ],
+  notas_columna: 'El iso hold con cinta yoga es una alternativa de bajo impacto para el fortalecimiento de los flexores de cadera (psoas-iliaco) cuando no hay acceso a equipamiento. El psoas debilitado es comun en hernia L4-L5 porque su insercion en las vertebras lumbares lo hace vulnerable a la inflamacion. La version isometrica evita el movimiento repetido que puede irritar el disco.'
+};
+
+// ── Hamstring squeeze ────────────────────────────────────────────────
+EX_DB['hamstring-squeeze'] = {
+  nombre: 'Hamstring squeeze isometrico',
+  categoria: 'Isquiotibiales / isometrico',
+  color: '#3C3489',
+  gif: null,
+  descripcion: 'Contraccion isometrica de los isquiotibiales tumbado boca arriba. Consiste en presionar activamente el talon contra el suelo mientras se mantiene la pierna extendida o ligeramente flexionada. Activa los isquiotibiales sin tension del nervio ciatico porque no hay dorsiflexion ni elevacion de la pierna.',
+  posicion: 'Tumbado boca arriba. Piernas extendidas en el suelo. Brazos a los lados. Cabeza apoyada.',
+  pasos: [
+    'Tumbado boca arriba con las piernas extendidas.',
+    'Activa el core para mantener la lumbar neutra.',
+    'Aprieta el talon contra el suelo como si quisieras arrastrar el suelo hacia ti.',
+    'Siente la contraccion en la parte posterior del muslo (isquiotibiales).',
+    'Manten la contraccion 5-10 segundos.',
+    'Relaja completamente entre repeticiones.',
+    'Para la version bilateral: apretar ambos talones a la vez.',
+  ],
+  errores: [
+    'Levantar la pierna del suelo — el talon debe mantenerse en contacto.',
+    'Tensar el gluteo en exceso en lugar de los isquiotibiales — sentir la contraccion en la parte posterior del muslo.',
+    'Aguantar la respiracion durante el isometrico.',
+  ],
+  variantes: [
+    'S1-2: bilateral (ambas piernas a la vez), 5s x 10 repeticiones 3 series.',
+    'S3-4: unilateral (una pierna a la vez) 5s x 10 repeticiones.',
+    'S5-6: unilateral con rodilla ligeramente flexionada (mayor activacion), 8s x 8 repeticiones.',
+    'S7+: unilateral + slight dorsiflexion activa si no hay irradiacion 8s x 8.',
+  ],
+  notas_columna: 'El hamstring squeeze isometrico es el ejercicio de isquiotibiales mas seguro para hernia L5-S1 izquierda porque no requiere elongacion del nervio ciatico (no hay dorsiflexion ni elevacion de pierna). Activa los isquiotibiales en su funcion de extensores de cadera sin poner tension sobre las raices nerviosas S1. Ideal como activacion inicial en sesiones de F2.'
+};
+
+// ── L-Sit ────────────────────────────────────────────────────────────
+EX_DB['l-sit'] = {
+  nombre: 'L-sit progresion',
+  categoria: 'Core / flexores de cadera / traccion',
+  color: '#993C1D',
+  gif: null,
+  descripcion: 'El L-sit es una posicion isometrica donde el cuerpo forma una L: tronco vertical, piernas extendidas horizontales. Requiere fuerza de compresion del core, de los triceps y de los flexores de cadera. En la progresion de rehabilitacion lumbar se trabaja solo el componente de flexores de cadera con las piernas dobladas (tucked L-sit).',
+  posicion: 'Apoyado en paralelas, en el suelo con los puños cerrados o en argollas. Brazos extendidos. La progresion inicial: ambas rodillas elevadas hacia el pecho (tucked). La version completa: piernas extendidas horizontales.',
+  pasos: [
+    'PROGRESION 1 (suelo): sentado en el suelo, apoya los puños (o manos) a los lados de las caderas. Eleva las rodillas del suelo unos centimetros.',
+    'PROGRESION 2: eleva las rodillas hacia el pecho (tucked L-sit) manteniendo los brazos extendidos.',
+    'PROGRESION 3 (avanzado): extiende una pierna mientras la otra queda doblada.',
+    'PROGRESION 4 (L-sit completo): extiende ambas piernas horizontales.',
+    'En todas las versiones: hombros hacia abajo (depresion escapular activa), core tenso.',
+  ],
+  errores: [
+    'Hombros subidos junto a las orejas — siempre deprimir las escapulas activamente.',
+    'Inclinar el tronco hacia atras para conseguir elevar las piernas — la espalda debe permanecer vertical.',
+    'Comenzar con la progresion completa cuando aun no hay fuerza suficiente de flexores de cadera.',
+  ],
+  variantes: [
+    'S1-2: progresion 1 — elevacion de rodillas del suelo 3x10-20s.',
+    'S3-4: progresion 2 — tucked L-sit 3x10-15s.',
+    'S5-6: progresion 3 — una pierna extendida 3x10s cada lado.',
+    'S7+: L-sit completo en paralelas 3x10s.',
+  ],
+  notas_columna: 'El L-sit trabaja los flexores de cadera (psoas + recto femoral) en co-contraccion con el core. En la progresion inicial, la compresion sobre L4-L5/L5-S1 es minima al hacer el tucked. En la version completa (piernas extendidas) la demanda sobre la columna lumbar aumenta — progresar con cuidado y solo cuando la version tucked sea comoda.'
+};
+
+// ── Caminata exterior ────────────────────────────────────────────────
+EX_DB['caminata'] = {
+  nombre: 'Caminata exterior activa',
+  categoria: 'Cardio / recuperacion activa',
+  color: '#0F6E56',
+  gif: null,
+  descripcion: 'Caminata a paso moderado al aire libre como cardio de recuperacion activa. El patron de marcha activa activa la cadena posterior y anterior de forma alternada, promueve la vascularizacion del disco intervertebral y reduce la inflamacion sin impacto articular.',
+  posicion: 'De pie, postura erguida. Paso natural activo. No dejar que el cuerpo se incline hacia adelante.',
+  pasos: [
+    'Camina manteniendo el tronco erguido — no inclinarse hacia adelante.',
+    'Paso largo con activacion del gluteo trasero al extender la cadera.',
+    'Brazos en movimiento alternado para activar la rotacion toracica.',
+    'Si hay irradiacion: reducir la velocidad y hacer descansos cada 10-15 minutos.',
+    'Anotar la distancia y el tiempo para seguir la progresion.',
+  ],
+  errores: [
+    'Caminar encorvado hacia adelante — la postura durante la caminata es tan importante como la distancia.',
+    'Ritmo demasiado intenso (FC > 125) — mantener FC 110-125.',
+    'Ignorar el aumento de irradiacion y continuar.',
+  ],
+  variantes: [
+    'S1-2: 10-15 min ritmo suave FC < 110.',
+    'S3-4: 20-25 min ritmo moderado FC 110-120.',
+    'S5-6: 30-35 min ritmo activo FC 115-125.',
+    'S7+: 40-50 min con tramos de subida suave.',
+  ],
+  notas_columna: 'La caminata es el cardio de referencia en la recuperacion discal lumbar. El patron alternado de marcha activa los multifidos y el transverso abdominal de forma refleja, estabilizando el segmento L4-L5/L5-S1 sin esfuerzo consciente. Ademas, la hidraulica del disco (nutricion por presion osmotic alternada) se maximiza con la carga moderada de la marcha.'
+};
+
+// ── Dead Hang ─────────────────────────────────────────────────────────
+EX_DB['dead-hang'] = {
+  nombre: 'Dead hang en barra',
+  categoria: 'Descompresion / movilidad',
+  color: '#185FA5',
+  gif: null,
+  descripcion: 'Colgado pasivo de la barra de dominadas con los brazos completamente extendidos y el cuerpo relajado. Genera traccion axial sobre la columna vertebral por el peso del cuerpo colgando, descomprimiendo los discos intervertebrales.',
+  posicion: 'Colgado de la barra con agarre prono o neutro. Brazos completamente extendidos. Hombros elevados (no activos). Cuerpo completamente relajado.',
+  pasos: [
+    'Agarra la barra y deja que el peso del cuerpo genere la traccion.',
+    'Relaja completamente los hombros — deja que se eleven hacia las orejas.',
+    'Relaja el torso, las caderas y las piernas.',
+    'Respira con calma — cada exhalacion profunda aumenta ligeramente la traccion.',
+    'Manten el tiempo indicado.',
+    'PARAR si hay reproduccion de irradiacion al colgar.',
+  ],
+  errores: [
+    'Activar los hombros o el core — el dead hang pasivo es de RELAJACION total.',
+    'Colgar demasiado tiempo al inicio — comenzar con 10-15 segundos.',
+    'Ignorar la irradiacion reproducida al colgar (algunos pacientes no toleran el dead hang).',
+  ],
+  variantes: [
+    'S1-2: con banda que reduce el peso corporal (medio pie en la banda), 15s x 3.',
+    'S3-4: dead hang completo 20-30s x 3.',
+    'S5-6: 40-50s x 3.',
+    'S7+: con ligera traccion activa (scapular pull) despues del dead hang pasivo.',
+  ],
+  notas_columna: 'El dead hang es uno de los pocos ejercicios que genera traccion axial real sobre L4-L5/L5-S1 por el peso del cuerpo. Esta traccion puede aliviar la compresion discal acumulada durante el dia. ATENCION: con ciertos patrones de tension del nervio ciatico, la posicion de colgado con cadera en extension puede reproducir la irradiacion. Monitorizar siempre la primera vez.'
 };
 
 // ═══════════════════════════════════════════════════════════════════
