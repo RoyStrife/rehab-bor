@@ -1034,6 +1034,54 @@ EX_DB['plank-anterior'] = {
   notas_columna: 'La plancha anterior en codos es preferible a la plancha en manos en F2 porque el centro de gravedad mas bajo reduce la demanda lumbar. Con extrusion activa, la posicion prona puede generar molestia en algunos casos — evaluar individualmente.'
 };
 
+EX_DB['plank-lateral'] = {
+  nombre: 'Plancha lateral',
+  categoria: 'Core F2',
+  color: '#993C1D',
+  descripcion: 'Ejercicio isometrico de core en posicion lateral sobre el codo. Trabaja la anti-flexion lateral del tronco (oblicuo interno y externo, cuadrado lumbar) y los abductores de cadera (gluteo medio) que deben elevar y mantener la pelvis nivelada.',
+  posicion: 'Tumbado de lado, apoyado sobre el codo (directamente bajo el hombro) y el borde lateral del pie inferior. Cuerpo en linea recta desde la cabeza hasta los pies. Cadera elevada del suelo.',
+  pasos: [
+    'Coloca el codo bajo el hombro y apila los pies uno sobre otro (o separa el superior al frente para mayor base).',
+    'Empuja el codo contra el suelo y eleva la cadera hasta que el cuerpo forme una linea recta.',
+    'Activa el gluteo del lado de apoyo para mantener la cadera elevada.',
+    'Manten la cabeza alineada con la columna — no dejes caer el cuello.',
+    'Respira con ritmo; no aguantes el aliento.',
+    'Baja la cadera con control al terminar el tiempo.',
+  ],
+  errores: [
+    'Cadera que cae hacia el suelo — el error mas frecuente; activa el gluteo medio.',
+    'Rotacion del tronco hacia abajo o hacia arriba.',
+    'Hombro del brazo libre que cae hacia delante — mantenerlo abierto.',
+    'Cuello en hiperflexion o hiperextension.',
+  ],
+  variantes: ['S1-2: rodillas apoyadas en el suelo (palanca corta) 20s. S3-4: plancha lateral completa sobre el pie 25s. S5-6: 35s. S7+: abduccion de pierna superior durante el hold.'],
+  notas_columna: 'La plancha lateral es uno de los ejercicios mas seguros en fase aguda con hernia L4-L5/L5-S1 porque no genera carga compresiva axial sobre los discos. El cuadrado lumbar y el gluteo medio trabajan sinergicamente para estabilizar la columna lumbar en el plano frontal, compensando la debilidad lateral tipica tras hernia discal.'
+};
+
+EX_DB['copenhagen-plank'] = {
+  nombre: 'Copenhagen plank (plancha de aductores)',
+  categoria: 'Core — Cadera F2',
+  color: '#993C1D',
+  descripcion: 'Variante avanzada de la plancha lateral en la que la pierna superior se apoya en un banco o silla, creando una palanca que demanda maxima activacion del aductor de la cadera superior, el oblicuo y el estabilizador lateral de cadera. La pierna inferior queda suspendida, trabajando tambien el aductor inferior isometricamente.',
+  posicion: 'De lado, apoyado sobre el codo (bajo el hombro). La pierna superior (rodilla o pie, segun variante) apoyada en un banco a unos 40-50 cm de altura. La pierna inferior suspendida en el aire, separada del banco.',
+  pasos: [
+    'Coloca el codo en el suelo bajo el hombro y apoya la rodilla o el pie de la pierna superior en el banco.',
+    'Eleva la cadera hasta que el tronco y la pierna superior formen una linea recta.',
+    'Activa el aductor de la pierna superior: empuja el banco hacia abajo con la pierna.',
+    'Manten la pelvis nivelada — no dejes que la cadera inferior caiga ni que la superior suba en exceso.',
+    'La pierna inferior puede elevarse ligeramente para mayor demanda (S7+).',
+    'Mantén la posicion el tiempo indicado, luego baja con control.',
+  ],
+  errores: [
+    'Pelvis que rota o se inclina — indica que la carga es excesiva; reducir palanca usando la rodilla en vez del pie.',
+    'Cadera inferior que cae al suelo a mitad del hold.',
+    'Hombro de apoyo que se hunde bajo el codo — mantener el codo empujando el suelo.',
+    'Apoyo demasiado alto en el banco, lo que obliga a flexion excesiva de cadera.',
+  ],
+  variantes: ['S1-2: rodilla apoyada en banco (palanca corta) 3x15s. S3-4: rodilla apoyada, mas tiempo 3x20s. S5-6: pie en banco (palanca larga) 3x15s. S7+: pie en banco + elevar la pierna inferior durante el hold.'],
+  notas_columna: 'El Copenhagen plank es especialmente valioso en rehabilitacion L4-L5/L5-S1 porque activa intensamente el aductor largo y el gracil sin carga axial sobre los discos. Ademas, el oblicuo y el cuadrado lumbar del lado inferior trabajan en co-contraccion con el gluteo medio, reforzando la estabilidad lateral de la columna lumbar. Progresar muy gradualmente — la variante de rodilla es suficientemente demandante en estadios iniciales.'
+};
+
 EX_DB['plank-hip-extension'] = {
   nombre: 'Plancha con extension de cadera activa',
   categoria: 'Core F2-F3',
