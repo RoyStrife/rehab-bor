@@ -413,6 +413,9 @@ const PUSH = {
     homeAlt:{ n:'Aperturas con banda cruzada', d:'3x12', note:'Banda anclada a ambos lados altura de pecho · Aduccion horizontal controlada', variant:'S1-2: banda ligera · S3-4: banda media · S5-6: banda fuerte exc 3s · S7+: banda fuerte pausa 1s' } },
   'B': { grupo:'push', n:'Fondos en maquina asistida (chest dip)', d:'3x12', note:'Empuje de pecho + triceps SIN carga axial · Maquina asistida (no colgarse del propio peso) · Codos a 90 max · Tronco ligeramente inclinado · Parar si molestia en hombro', wid:'fondos-triceps',
     variant:'S1-2: asistencia alta rango parcial · S3-4: asistencia media rango completo · S5-6: asistencia baja exc 3s · S7+: asistencia minima control · F3: lastre ligero' },
+  'C': { grupo:'push', n:'Press Smith 30°', d:'4x10', note:'Banco inclinado 30° dentro de la maquina · Espalda COMPLETAMENTE apoyada en el banco — no despegar la zona lumbar · Codos a 45° del tronco', wid:'press-smith', gym:true,
+    variant:'S1-2: carga muy ligera rango parcial · S3-4: carga ligera rango completo exc 2s · S5-6: carga media exc 2s · S7+: carga media-alta pausa 1s arriba',
+    homeAlt:{ n:'Press de pecho con banda en banco inclinado', d:'4x12', note:'Banda anclada baja detras del banco · Tronco apoyado a 30° · Empuje diagonal hacia arriba · Sin carga axial', variant:'S1-2: banda ligera ROM parcial · S3-4: banda media ROM completo · S5-6: banda fuerte exc 2s · S7+: banda fuerte pausa 1s arriba' } },
 };
 
 // ─── SHOULDER — hombro (sin overhead axial) ────────────────────────
@@ -553,7 +556,7 @@ const WEEK = {
   4: {
     name: 'Jueves', tag: 'Empuje + Tiro', neural: false,
     dur: '160 min', loc: 'Gym', homeLoc: 'Casa',
-    keyExs: 'Scapular pull (descompresion) · Jalon ancho · Remo maquina · Pec deck · Fondos asistidos',
+    keyExs: 'Scapular pull (descompresion) · Jalon ancho · Remo maquina · Press Smith · Pec deck · Fondos asistidos',
     cardio: 'Ergometro 2000m (apertura) · Eliptica 60 min (cierre)',
     blocks: [
       MOB_BLOCK_A1,
@@ -675,13 +678,13 @@ const SESSIONS = buildSessions(WEEK);
 
 // ─── JUEVES — rotación 3 semanas bloque D ────────────────────────
 // Todos los grupos musculares cada semana; varía el ejercicio concreto.
-// Ciclo A (WEEK_NUM % 3 === 1): jalón + pec deck + laterales
+// Ciclo A (WEEK_NUM % 3 === 1): jalón + press Smith + laterales
 // Ciclo B (WEEK_NUM % 3 === 2): remo + fondos  + rear delt
 // Ciclo C (WEEK_NUM % 3 === 0): jalón + fondos  + laterales
 // app.js inyecta el bloque correcto en getCurSession() para sessId 4.
 const WEEK_D_CYCLE = [
   { id:'D', name:'Empuje + Tiro — Ciclo A', dur:'45 min', color:'#3C3489',
-    exIds:['PULL-A','PULL-B','PUSH-A','SHOULDER-A','ARM-A'] },
+    exIds:['PULL-A','PULL-B','PUSH-C','SHOULDER-A','ARM-A'] },
   { id:'D', name:'Empuje + Tiro — Ciclo B', dur:'45 min', color:'#3C3489',
     exIds:['PULL-A','PULL-C','PUSH-B','SHOULDER-B','ARM-A'] },
   { id:'D', name:'Empuje + Tiro — Ciclo C', dur:'45 min', color:'#3C3489',
