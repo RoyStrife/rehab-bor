@@ -2034,6 +2034,12 @@ const EX_GIF = {
   'rdl-barra':                  'wQ2c4XD',  // barbell romanian deadlift
   'leg-extension':              'my33uHU',  // lever leg extension
   'leg-curl':                   '17lJ1kr',  // lever lying leg curl
+  'elevaciones-lat':            'DsgkuIt',  // dumbbell lateral raise
+  'press-smith-plano':          'trqKQv2',  // smith bench press (plano)
+  'remo-mancuerna':             'BJ0Hz5L',  // dumbbell bent over row
+  'fondos-triceps':             '7aVz15j',  // triceps dips floor
+  'crunches-fitball':           'Gn5FwYT',  // stability ball crunch
+  'l-sit':                      'UpWmA5E',  // l-sit on floor
 };
 
 // ─── DIAGRAMAS ESQUEMÁTICOS (SVG propios, en eximg/<id>.svg) ───────
