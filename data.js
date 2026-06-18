@@ -1940,6 +1940,16 @@ const EX_GIF = {
   'movilidad-abductores-suelo': '2Dk4xQV',  // rocking frog stretch
   'ext-toracica-fitball':       'o1HGDSq',  // exercise ball back extension
   'squat-unilateral-fr':        'C31LMnP',  // one leg squat
+  'pigeon-pose':                'QY39eBr',  // seated piriformis stretch (figura-4)
+};
+
+// ─── DIAGRAMAS ESQUEMÁTICOS (SVG propios, en eximg/<id>.svg) ───────
+// Para ejercicios de rehab/movilidad sin equivalente fiel en ExerciseDB.
+// Son diagramas propios (sin copyright), dibujados a propósito para el
+// plan, con el cue de lumbar neutra. Se muestran solo si la ficha NO
+// tiene GIF en EX_GIF. Valor = nombre del archivo en eximg/ (sin .svg).
+const EX_IMG = {
+  'viparita': 'viparita',  // piernas en la pared (Viparita Karani)
 };
 
 // ═══════════════════════════════════════════════════════════════════

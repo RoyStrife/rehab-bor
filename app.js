@@ -927,17 +927,24 @@ function closeExModal(){const m=document.getElementById('exModal');if(m)m.style.
 // GENÉRICA: el contenido clínico de la ficha (lumbar neutra, parar si
 // irradiación S1) siempre tiene prioridad.
 const EXGIF_DIR = 'exgif/';
+const EXIMG_DIR = 'eximg/';
 
 function renderExGif(key){
   const wrap=document.getElementById('exGifWrap');
   const img=document.getElementById('exGifImg');
   const note=document.getElementById('exGifNote');
+  const cav=document.getElementById('exGifCaveat');
   if(!wrap)return;
-  const id=(typeof EX_GIF!=='undefined')?EX_GIF[key]:null;
-  if(!id){wrap.style.display='none';return;}
+  const gifId=(typeof EX_GIF!=='undefined')?EX_GIF[key]:null;
+  const svgId=(!gifId&&typeof EX_IMG!=='undefined')?EX_IMG[key]:null;
+  if(!gifId&&!svgId){wrap.style.display='none';return;}
   wrap.style.display='block';
   if(note)note.textContent='';
-  if(img){img.style.display='block';img.src=EXGIF_DIR+id+'.gif';}
+  // GIF demostrativo (genérico) vs diagrama esquemático propio
+  if(cav)cav.innerHTML=gifId
+    ? '⚠ Demostración genérica — guíate por <b>esta ficha</b>: lumbar neutra, parar si irradiación S1.'
+    : 'Diagrama esquemático — guíate por <b>esta ficha</b>: lumbar neutra, parar si irradiación S1.';
+  if(img){img.style.display='block';img.src=gifId?(EXGIF_DIR+gifId+'.gif'):(EXIMG_DIR+svgId+'.svg');}
 }
 
 function exGifImgError(){

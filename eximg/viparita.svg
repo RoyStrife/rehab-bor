@@ -1,0 +1,22 @@
+<svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Viparita Karani — piernas en la pared">
+  <rect x="0" y="0" width="320" height="200" rx="10" fill="#EEF2F6"/>
+  <!-- suelo y pared (forma en L) -->
+  <path d="M28 158 H252 V40" fill="none" stroke="#C2CCDA" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- figura reclinada: cabeza + torso en el suelo, piernas hacia la pared -->
+  <g fill="#4E7CA6" stroke="#34506B" stroke-width="2" stroke-linejoin="round">
+    <circle cx="58" cy="143" r="13"/>
+    <!-- torso tumbado en el suelo -->
+    <rect x="70" y="135" width="135" height="22" rx="11"/>
+    <!-- piernas elevadas hacia la pared -->
+    <rect x="206" y="62" width="22" height="86" rx="11"/>
+  </g>
+  <!-- columna lumbar neutra (cue) -->
+  <path d="M96 134 q26 -7 52 0" fill="none" stroke="#1E8A7A" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="150" cy="132" r="3" fill="#1E8A7A"/>
+  <!-- hueco glúteos-pared 5-15 cm -->
+  <line x1="216" y1="150" x2="248" y2="150" stroke="#D4831A" stroke-width="2" stroke-dasharray="3 3"/>
+  <path d="M216 146 v8 M248 146 v8" stroke="#D4831A" stroke-width="2" stroke-linecap="round"/>
+  <text x="232" y="173" font-family="DM Sans, sans-serif" font-size="11" fill="#9A6512" text-anchor="middle">5–15 cm</text>
+  <!-- etiqueta cue -->
+  <text x="122" y="123" font-family="DM Sans, sans-serif" font-size="10" fill="#1E8A7A" text-anchor="middle">lumbar neutra</text>
+</svg>
