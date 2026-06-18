@@ -302,7 +302,7 @@ const CORE = {
     variant:'S1-2: dead hang pasivo 3x20s — solo descompresion · S3-4: rodillas recogidas (tuck) 3x10s · S5-6: tuck + extension parcial 3x12s · S7+: hollow hang piernas extendidas 3x10-15s · F3: con elevacion de rodillas' },
   'G':  { grupo:'core', plano:'anti-rot', equipo:'polea',
     n:'Pallof press en polea', d:'3x10 diagonal cada lado', note:'Anti-rotacion · Resistir el giro sin generarlo — lo mas protector para la extrusion', wid:'pallof-press',
-    variant:'S1-2: isometrico pecho · S3-4: press diagonal · S5-6: press + paso lateral · S7+: de rodillas en superficie inestable' },
+    variant:'S1-2: 8 kg isometrico pecho · S3-4: 8-10 kg press diagonal · S5-6: 10-12 kg press + paso lateral · S7+: 12 kg+ de rodillas en superficie inestable' },
   'G2': { grupo:'core', plano:'anti-rot', equipo:'banda',
     n:'Pallof press con banda', d:'3x10 cada lado', note:'Anti-rotacion version banda (apta para casa) · Banda anclada al costado a altura de pecho · Pelvis y tronco fijos', wid:'pallof-press',
     variant:'S1-2: banda ligera isometrico pecho · S3-4: banda media press diagonal · S5-6: banda fuerte · S7+: + paso lateral' },
