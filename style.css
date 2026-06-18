@@ -240,6 +240,14 @@ html, body { height:100%; background:var(--bg); color:var(--text); font-family:v
 .ex-variants li { font-size:12px; color:var(--text2); padding:4px 0 4px 18px; position:relative }
 .ex-variants li::before { content:'→'; position:absolute; left:0; color:var(--teal); font-size:10px; top:5px }
 .ex-columna-box { background:var(--lteal); border:1px solid var(--teal)44; border-radius:var(--rsm); padding:10px; font-size:12px; color:var(--text2); line-height:1.6; margin-top:2px }
+
+/* ─── GIF DEMOSTRATIVO (ExerciseDB) ───────────────────────────────── */
+.ex-gif-wrap   { margin-bottom:12px }
+.ex-gif-frame  { position:relative; background:#fff; border:1px solid var(--b5); border-radius:var(--rsm); overflow:hidden; display:flex; align-items:center; justify-content:center; min-height:120px }
+.ex-gif-img    { width:100%; max-width:360px; display:block }
+.ex-gif-note   { font-size:12px; color:var(--text3); font-family:var(--mono); padding:24px 12px; text-align:center }
+.ex-gif-caveat { display:flex; gap:8px; align-items:center; font-size:11px; color:var(--amber); background:var(--lamber); border:1px solid var(--b6); border-radius:var(--rsm); padding:7px 9px; margin-top:6px; line-height:1.45 }
+.ex-gif-caveat b { color:var(--amber) }
 .ex-variant-item  { display:flex; align-items:flex-start; gap:10px; padding:10px 0; border-bottom:1px solid var(--b5)44 }
 .ex-variant-item:last-child { border-bottom:none }
 .ex-variant-badge { flex-shrink:0; font-size:10px; font-weight:700; font-family:var(--mono); padding:3px 8px; border-radius:20px; background:var(--bg3); border:1px solid var(--b5); color:var(--text3); white-space:nowrap; margin-top:1px }

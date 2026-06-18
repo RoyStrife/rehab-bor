@@ -314,6 +314,15 @@
       <button class="ex-modal-tab"        onclick="switchExTab('variantes')">Variantes</button>
     </div>
     <div class="ex-modal-panel active" id="exTabInfo">
+      <div id="exGifWrap" class="ex-gif-wrap" style="display:none">
+        <div class="ex-gif-frame">
+          <img id="exGifImg" class="ex-gif-img" alt="Demostración del ejercicio" style="display:none" onerror="exGifImgError()">
+          <span id="exGifNote" class="ex-gif-note"></span>
+        </div>
+        <div class="ex-gif-caveat">
+          <span>⚠ Demostración genérica — guíate por <b>esta ficha</b>: lumbar neutra, parar si irradiación S1.</span>
+        </div>
+      </div>
       <p class="ex-section-title">Categoría</p>
       <p class="ex-desc" id="exCat"></p>
       <p class="ex-section-title">Descripción</p>

@@ -1906,6 +1906,43 @@ EX_DB['rear-delt-fly'] = {
 };
 
 // ═══════════════════════════════════════════════════════════════════
+// ─── GIFS DEMOSTRATIVOS (ExerciseDB · oss.exercisedb.dev) ──────────
+// Mapea claves de EX_DB al id de su GIF demostrativa. Las GIFs están
+// DESCARGADAS en local (carpeta exgif/<id>.gif) — la app NO llama a
+// ninguna API en tiempo de ejecución, así que funciona offline y sin
+// depender del rate-limit del servicio.
+//
+// Solo se mapean ejercicios con un equivalente FIEL en el catálogo libre
+// (verificado uno a uno por nombre, 2026-06-18). Los de rehab/movilidad
+// puros (pelvic clock, neural flossing, Viparita, cat-cow, clamshell,
+// bird-dog, hip-thrust real, bulgarian, etc.) se dejan SIN gif a propósito:
+// el catálogo gratuito no los tiene o mostraría un ejercicio distinto.
+//
+// La GIF es SIEMPRE una demostración genérica — las indicaciones clínicas
+// de la ficha (lumbar neutra, parar si irradiación S1) mandan sobre ella.
+// Para añadir/cambiar una: descargar exgif/<id>.gif y poner aquí el id.
+// ═══════════════════════════════════════════════════════════════════
+const EX_GIF = {
+  'hiperext':                   'zhMwOwE',  // hyperextension
+  'rdl-mancuernas':             'rR0LJzx',  // dumbbell romanian deadlift
+  'dead-bug':                   'iny3m5y',  // dead bug
+  'good-morning':               'XlZ4lAC',  // barbell good morning
+  'glute-bridge':               'u0cNiij',  // low glute bridge on floor
+  'glute-bridge-fr':            'u0cNiij',  // low glute bridge on floor
+  'single-leg-bridge':          'rmEukuS',  // single leg bridge
+  'long-lunge':                 'RRWFUcw',  // dumbbell lunge
+  'split-squat-banco':          '9E25EOx',  // split squats
+  'estocada-lateral-kb':        'py1HSzx',  // barbell lateral lunge
+  'rear-delt-fly':              'EAs3xL9',  // dumbbell reverse fly
+  'hanging-ball-raise':         'I3tsCnC',  // hanging leg raise
+  'plank-anterior':             'VBAWRPG',  // weighted front plank
+  'plank-fr':                   'VBAWRPG',  // weighted front plank
+  'movilidad-abductores-suelo': '2Dk4xQV',  // rocking frog stretch
+  'ext-toracica-fitball':       'o1HGDSq',  // exercise ball back extension
+  'squat-unilateral-fr':        'C31LMnP',  // one leg squat
+};
+
+// ═══════════════════════════════════════════════════════════════════
 // ─── BACKUP DE DATOS — exportado de rehab_bor_v9 (2026-05-11) ─────
 // Mergeado con historial anterior. Fuente autoritativa: JSON export.
 // app.js lo aplica al inicializar solo si no existen datos locales.

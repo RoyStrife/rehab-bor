@@ -688,7 +688,7 @@ function renderBlocks(){
       const info=document.createElement('div');info.className='ex-info';
       const top=document.createElement('div');top.className='ex-top';
       const nm=document.createElement('span');nm.className='ex-name'+(isDone?' done-txt':'');nm.textContent=ex.n;nm.dataset.ek=ek;nm.onclick=function(){toggleEx(this.dataset.ek);};
-      const infoBtn=document.createElement('button');infoBtn.className='info-btn';infoBtn.textContent='i';infoBtn.dataset.nm=ex.n;infoBtn.onclick=function(e){e.stopPropagation();openEx(this.dataset.nm);};
+      const infoBtn=document.createElement('button');infoBtn.className='info-btn';infoBtn.textContent='i';infoBtn.dataset.nm=ex.n;infoBtn.dataset.wid=ex.wid||'';infoBtn.onclick=function(e){e.stopPropagation();openEx(this.dataset.nm,this.dataset.wid);};
       if(ex._isHomeAlt){const hp=document.createElement('span');hp.style.cssText='font-size:9px;font-weight:700;background:var(--lteal);border:1px solid var(--teal);color:var(--teal);padding:1px 5px;border-radius:4px;margin-right:4px;flex-shrink:0';hp.textContent='CASA';top.appendChild(hp);}
       top.appendChild(nm);top.appendChild(infoBtn);
       info.appendChild(top);
@@ -770,7 +770,7 @@ function mobCard(ex,color){
   return '<div class="card" style="margin-bottom:8px;border-left:3px solid '+color+'">'
     +'<div style="display:flex;justify-content:space-between;align-items:flex-start;gap:8px">'
     +'<div style="font-weight:600;font-size:14px;color:var(--text)">'+ex.n+'</div>'
-    +'<button class="info-btn" onclick="openEx(\''+ex.n.replace(/'/g,"\\'")+'\')">i</button></div>'
+    +'<button class="info-btn" onclick="openEx(\''+ex.n.replace(/'/g,"\\'")+'\',\''+(ex.wid||'')+'\')">i</button></div>'
     +'<div style="font-size:12px;color:var(--text2);font-family:var(--mono);margin-top:2px">'+ex.d+'</div>'
     +(ex.note?'<div style="font-size:12px;color:var(--text3);margin-top:4px;line-height:1.4">'+ex.note+'</div>':'')
     +(ex.variant?'<div style="font-size:11px;color:var(--text3);margin-top:6px;font-family:var(--mono);line-height:1.6">'+ex.variant.replace(/ · /g,'<br>')+'</div>':'')
@@ -881,8 +881,10 @@ function renderAll(){
 }
 
 // ─── MODAL EJERCICIO (ficha — 4 pestañas v11) ──────────────────────
-function openEx(nm){
-  const key=typeof findExercise==='function'?findExercise(nm):null;
+function openEx(nm,wid){
+  // Prefiere el wid explícito (es la clave de EX_DB); cae a findExercise por nombre.
+  const key=(wid&&typeof EX_DB!=='undefined'&&EX_DB[wid])?wid
+            :(typeof findExercise==='function'?findExercise(nm):null);
   const ex=(key&&typeof EX_DB!=='undefined')?EX_DB[key]:null;
   const g=id=>document.getElementById(id);
   if(g('exModalTitle'))g('exModalTitle').textContent=ex?ex.nombre:nm;
@@ -895,6 +897,7 @@ function openEx(nm){
   if(g('exVariantesList'))g('exVariantesList').innerHTML=buildVariantes(ex);
   switchExTab('info');
   if(g('exModal'))g('exModal').style.display='flex';
+  renderExGif(key);
 }
 function buildVariantes(ex){
   if(!ex||!ex.variantes||!ex.variantes.length)return '<p class="ex-desc">Sin variantes registradas.</p>';
@@ -917,6 +920,32 @@ function switchExTab(tab){
   document.querySelectorAll('#exModal .ex-modal-tab').forEach((b,i)=>b.classList.toggle('active',order[i]===tab));
 }
 function closeExModal(){const m=document.getElementById('exModal');if(m)m.style.display='none';}
+
+// ─── GIFS DEMOSTRATIVOS (ExerciseDB, descargadas en local) ─────────
+// Las GIFs viven en exgif/<id>.gif (sin llamadas de red, funciona offline).
+// El mapeo clave→id está en EX_GIF (data.js). La GIF es una demostración
+// GENÉRICA: el contenido clínico de la ficha (lumbar neutra, parar si
+// irradiación S1) siempre tiene prioridad.
+const EXGIF_DIR = 'exgif/';
+
+function renderExGif(key){
+  const wrap=document.getElementById('exGifWrap');
+  const img=document.getElementById('exGifImg');
+  const note=document.getElementById('exGifNote');
+  if(!wrap)return;
+  const id=(typeof EX_GIF!=='undefined')?EX_GIF[key]:null;
+  if(!id){wrap.style.display='none';return;}
+  wrap.style.display='block';
+  if(note)note.textContent='';
+  if(img){img.style.display='block';img.src=EXGIF_DIR+id+'.gif';}
+}
+
+function exGifImgError(){
+  const img=document.getElementById('exGifImg');
+  const note=document.getElementById('exGifNote');
+  if(img)img.style.display='none';
+  if(note)note.textContent='Demostración no disponible.';
+}
 
 // ═══════════════════════════════════════════════════════════════════
 // ─── findExercise + EX_DB extendido (portado de rehab_v10) ─────────

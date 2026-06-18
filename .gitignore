@@ -7,6 +7,15 @@ autopull.log
 pull-ahora.ps1
 pull-ahora.bat
 
+# Automatizacion de tareas con Claude Code (local, no se sube)
+auto-rehab.ps1
+auto-rehab.log
+auto-tareas.md
+login-rehab.bat
+procesar-ahora.bat
+.auto-rehab.lock
+AUTO-REVISAR.txt
+
 # Documentación médica personal (datos sensibles, no se sube)
 docs-medicos/
 
