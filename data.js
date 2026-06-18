@@ -1905,6 +1905,78 @@ EX_DB['rear-delt-fly'] = {
   notas_columna: 'Movimiento en plano horizontal sin ninguna carga axial sobre L4-L5/L5-S1. El deltoides posterior y los romboides son estabilizadores escapulares clave: su debilidad contribuye a la postura cifótica que aumenta la presión discal. Realizar sentado evita cualquier carga de pie sobre la hernia.'
 };
 
+// ─── FICHAS NUEVAS (cierre de huecos — 2026-06-18) ────────────────
+
+EX_DB['leg-extension'] = {
+  nombre: 'Leg extension — extensión de cuádriceps en máquina',
+  categoria: 'Cuádriceps / aislamiento',
+  color: '#3C3489',
+  descripcion: 'Extensión de rodilla en máquina sentado. Aísla el cuádriceps sin carga axial sobre la columna. El respaldo fija la pelvis y elimina cualquier compensación lumbar.',
+  posicion: 'Sentado en la máquina, espalda apoyada en el respaldo. Rodillas alineadas con el eje de giro. Rodillo sobre la parte baja de las espinillas, justo encima de los tobillos.',
+  pasos: [
+    'Ajusta el respaldo para que las rodillas queden alineadas con el eje de la máquina.',
+    'Espalda y lumbar pegadas al respaldo durante todo el movimiento.',
+    'Extiende las rodillas hasta casi el bloqueo (sin chasquido), apretando el cuádriceps.',
+    'Pausa breve arriba.',
+    'Baja controlando el excéntrico (2-3 seg).',
+  ],
+  errores: ['Despegar la lumbar o los glúteos del respaldo al empujar.', 'Usar impulso o balanceo del tronco.', 'Bloqueo brusco de la rodilla.'],
+  variantes: ['S1-2: carga ligera, ROM parcial, control. S3-4: ROM completo exc 3s. S5-6: carga media. S7+: carga media + pausa arriba.'],
+  notas_columna: 'Uno de los ejercicios más seguros para la columna con extrusión L4-L5/L5-S1: la posición sentada con respaldo elimina por completo la carga axial y fija la pelvis, de modo que el cuádriceps trabaja aislado sin que la lumbar tenga que estabilizar. Útil para mantener masa de cuádriceps cuando la sentadilla pesada aún no está indicada. Mantener siempre la lumbar en contacto con el respaldo.'
+};
+
+EX_DB['leg-curl'] = {
+  nombre: 'Leg curl — curl femoral en máquina',
+  categoria: 'Isquiotibiales / aislamiento',
+  color: '#3C3489',
+  descripcion: 'Flexión de rodilla en máquina (tumbado o sentado) que aísla los isquiotibiales sin carga axial sobre la columna. Complementa la cadena posterior trabajada en RDL e hiperextensión.',
+  posicion: 'Tumbado boca abajo (o sentado según máquina). Rodillo sobre la parte posterior baja de las piernas, justo encima de los talones. Caderas apoyadas.',
+  pasos: [
+    'Coloca el rodillo justo por encima de los talones.',
+    'Caderas y pelvis pegadas al banco — no despegarlas.',
+    'Flexiona las rodillas llevando los talones hacia los glúteos.',
+    'Pausa breve en la contracción.',
+    'Baja controlando el excéntrico (2-3 seg).',
+  ],
+  errores: ['Levantar las caderas del banco (genera extensión lumbar).', 'Usar impulso.', 'Rango parcial sin contracción completa.'],
+  variantes: ['S1-2: carga ligera, control. S3-4: ROM completo exc 3s. S5-6: carga media. S7+: carga media + pausa arriba.'],
+  notas_columna: 'Aísla los isquiotibiales sin ninguna carga axial sobre L4-L5/L5-S1. CLAVE: en la versión tumbada, mantener las caderas pegadas al banco — si se despegan, se produce extensión lumbar que puede irritar la raíz S1. Si aparece esa tendencia, preferir la máquina sentada, que fija mejor la pelvis. Refuerza la cadena posterior de forma analítica y segura.'
+};
+
+EX_DB['sumo-squat-kb'] = {
+  nombre: 'Sumo squat con kettlebell / mancuerna',
+  categoria: 'Pierna / glúteo',
+  color: '#1A6E3A',
+  descripcion: 'Sentadilla con piernas anchas y puntas abiertas, sujetando una kettlebell o mancuerna entre las piernas (goblet bajo). Énfasis en glúteo y aductores con tronco más vertical que la sentadilla convencional.',
+  posicion: 'Pies más anchos que los hombros, puntas abiertas 30-45°. Kettlebell colgando entre las piernas con los brazos extendidos. Tronco erguido, lumbar neutra.',
+  pasos: [
+    'Activa el core y fija la lumbar neutra antes de bajar.',
+    'Baja flexionando caderas y rodillas, llevando las rodillas hacia las puntas de los pies.',
+    'Mantén el tronco lo más vertical posible y la lumbar neutra (no redondear abajo).',
+    'Sube empujando el suelo y apretando los glúteos arriba.',
+  ],
+  errores: ['Redondear la lumbar en el punto bajo (butt wink) — limitar la profundidad.', 'Rodillas hacia dentro.', 'Inclinar el tronco en exceso hacia adelante.'],
+  variantes: ['S1-2: rango parcial sin carga o muy ligera. S3-4: rango cómodo carga ligera. S5-6: carga media. S7+: rango completo carga media.'],
+  notas_columna: 'La postura sumo con tronco vertical reduce el brazo de palanca sobre L4-L5/L5-S1 respecto a una sentadilla con más inclinación de tronco. El riesgo principal es el "butt wink" (retroversión pélvica con flexión lumbar) en el punto bajo: limitar siempre la profundidad al rango en que la lumbar se mantiene neutra. Parar ante cualquier irradiación S1.'
+};
+
+EX_DB['tfl-stretch'] = {
+  nombre: 'Estiramiento del TFL / tensor de la fascia lata',
+  categoria: 'Movilidad cadera',
+  color: '#0F6E56',
+  descripcion: 'Estiramiento del tensor de la fascia lata y la banda iliotibial. Un TFL tenso aumenta la tracción lateral sobre la pelvis y puede contribuir a desequilibrios que sobrecargan la zona lumbar.',
+  posicion: 'De pie junto a una pared o en el suelo. Pierna a estirar cruzada por detrás de la otra, cadera empujada lateralmente hacia el lado contrario.',
+  pasos: [
+    'De pie: cruza la pierna a estirar por detrás de la otra.',
+    'Empuja la cadera de ese lado hacia afuera (hacia la pared), inclinando ligeramente el tronco al lado contrario.',
+    'Siente el estiramiento en la cara lateral de la cadera/muslo.',
+    'Mantén sin rebotes, respirando, sin forzar.',
+  ],
+  errores: ['Rebotar.', 'Rotar o flexionar la lumbar para "sentir más" — el estiramiento es de cadera.', 'Forzar hasta el dolor.'],
+  variantes: ['De pie contra pared (más suave) · En el suelo tumbado de lado · Con foam roller sobre el TFL (liberación miofascial).'],
+  notas_columna: 'El TFL y la banda iliotibial se insertan en la pelvis y la rodilla; su tensión excesiva altera la mecánica pélvica y puede aumentar la carga compensatoria sobre L4-L5/L5-S1. Estirarlo ayuda a equilibrar las fuerzas laterales sobre la pelvis. Mantener la lumbar neutra durante el estiramiento: el movimiento debe sentirse en la cadera, nunca en la zona lumbar.'
+};
+
 // ═══════════════════════════════════════════════════════════════════
 // ─── GIFS DEMOSTRATIVOS (ExerciseDB · oss.exercisedb.dev) ──────────
 // Mapea claves de EX_DB al id de su GIF demostrativa. Las GIFs están
@@ -1941,6 +2013,27 @@ const EX_GIF = {
   'ext-toracica-fitball':       'o1HGDSq',  // exercise ball back extension
   'squat-unilateral-fr':        'C31LMnP',  // one leg squat
   'pigeon-pose':                'QY39eBr',  // seated piriformis stretch (figura-4)
+  // ── ejercicios de gimnasio (2026-06-18) ──
+  'jalon-ancho':                'LEprlgG',  // cable lat pulldown
+  'jalon-amplio':               'LEprlgG',  // cable lat pulldown
+  'jalon-neutro':               'rkg41Fb',  // parallel/neutral grip lat pulldown
+  'remo-maquina':               '7I6LNUG',  // lever seated row
+  'prensa':                     '10Z2DXU',  // sled 45° leg press
+  'curl-barra':                 '6TG6x2w',  // ez barbell curl
+  'curl-martillo':              '2NpxjC1',  // dumbbell hammer curl
+  'triceps-polea':              '3ZflifB',  // cable pushdown
+  'press-smith':                '5v7KYld',  // smith incline bench press
+  'press-hombro-maq':           '67n3r98',  // lever shoulder press
+  'abduccion-maq':              'CHpahtl',  // lever seated hip abduction
+  'aperturas-cable':            '0CXGHya',  // cable cross-over
+  'hack-squat':                 'Qa55kX1',  // sled hack squat
+  'goblet-squat':               'ZA8b5hc',  // kettlebell goblet squat
+  'step-up':                    'aXtJhlg',  // dumbbell step-up
+  'pull-over':                  '9XjtHvS',  // dumbbell pullover
+  'pajaros':                    'EAs3xL9',  // dumbbell reverse fly (rear delt)
+  'rdl-barra':                  'wQ2c4XD',  // barbell romanian deadlift
+  'leg-extension':              'my33uHU',  // lever leg extension
+  'leg-curl':                   '17lJ1kr',  // lever lying leg curl
 };
 
 // ─── DIAGRAMAS ESQUEMÁTICOS (SVG propios, en eximg/<id>.svg) ───────
