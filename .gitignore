@@ -19,6 +19,12 @@ AUTO-REVISAR.txt
 # Documentación médica personal (datos sensibles, no se sube)
 docs-medicos/
 
+# Datasets locales grandes (NO se suben — solo se extraen imágenes puntuales a eximg/)
+*.zip
+Yoga for all*/
+yoga-dataset/
+.yoga_tmp/
+
 # Sistema
 Thumbs.db
 desktop.ini
