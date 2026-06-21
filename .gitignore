@@ -25,6 +25,11 @@ Yoga for all*/
 yoga-dataset/
 .yoga_tmp/
 
+# Food Safety: material del curso (PDFs pesados ~156MB y posibles datos sensibles).
+# Se versionan SOLO los esquemas HTML; los PDFs y temporales se quedan en local.
+Food Safety/*.pdf
+Food Safety/_txt/
+
 # Sistema
 Thumbs.db
 desktop.ini

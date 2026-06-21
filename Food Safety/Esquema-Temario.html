@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Esquema ADGD50 · Calidad, Seguridad y Sostenibilidad Agroalimentaria</title>
+<style>
+:root{
+  --bg:#0f1419; --panel:#161d26; --panel2:#1d2733; --ink:#e8edf2; --muted:#9fb0c0;
+  --line:#2a3744; --accent:#38bdf8;
+  --m1:#10b981; --m1d:#064e3b;   /* Seguridad y Calidad */
+  --m2:#22c55e; --m2d:#14532d;   /* Medioambiente */
+  --m3:#f59e0b; --m3d:#78350f;   /* Energia */
+  --m4:#a78bfa; --m4d:#3b0764;   /* Social */
+  --law:#60a5fa; --lawd:#172554; /* Legislacion */
+  --std:#fb7185; --stdd:#4c0519; /* Estandares privados */
+  --gold:#fbbf24;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font-family:'Segoe UI',system-ui,-apple-system,sans-serif;line-height:1.5;font-size:15px}
+a{color:var(--accent);text-decoration:none}
+header.hero{padding:34px 22px 26px;background:linear-gradient(135deg,#0b2a2a,#0f1419 60%);border-bottom:1px solid var(--line)}
+.hero h1{margin:0 0 6px;font-size:26px;letter-spacing:.3px}
+.hero .sub{color:var(--muted);font-size:14px;max-width:820px}
+.hero .code{display:inline-block;margin-top:10px;font-family:ui-monospace,monospace;background:#0b1118;border:1px solid var(--line);color:var(--accent);padding:3px 9px;border-radius:6px;font-size:12px}
+nav{position:sticky;top:0;z-index:50;background:rgba(15,20,25,.92);backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--line);padding:8px 14px;display:flex;gap:6px;flex-wrap:wrap;overflow-x:auto}
+nav a{font-size:12.5px;padding:5px 10px;border:1px solid var(--line);border-radius:20px;color:var(--muted);white-space:nowrap}
+nav a:hover{color:var(--ink);border-color:var(--accent)}
+main{max-width:1080px;margin:0 auto;padding:24px 18px 80px}
+section{margin:34px 0;scroll-margin-top:54px}
+h2{font-size:21px;margin:0 0 4px;display:flex;align-items:center;gap:10px}
+h2 .tag{font-size:11px;font-weight:600;padding:2px 8px;border-radius:6px;color:#04121a}
+.lead{color:var(--muted);font-size:14px;margin:2px 0 16px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin:12px 0}
+.card.hl{border-left:4px solid var(--gold)}
+.grid{display:grid;gap:12px}
+.g2{grid-template-columns:repeat(auto-fit,minmax(290px,1fr))}
+.g3{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.ud{background:var(--panel2);border:1px solid var(--line);border-radius:10px;padding:14px}
+.ud h3{margin:0 0 8px;font-size:15.5px;display:flex;gap:8px;align-items:baseline}
+.ud h3 .n{font-family:ui-monospace,monospace;font-size:12px;color:var(--m1);font-weight:700}
+.ud ul{margin:6px 0 0;padding-left:18px}
+.ud li{margin:4px 0;font-size:13.5px}
+.chip{display:inline-block;font-size:11px;font-weight:700;padding:2px 7px;border-radius:5px;margin:2px 3px 2px 0;font-family:ui-monospace,monospace}
+.c-std{background:var(--stdd);color:var(--std);border:1px solid #7f1d3a}
+.c-law{background:var(--lawd);color:var(--law);border:1px solid #1e3a8a}
+.c-iso{background:#0c2f3a;color:var(--accent);border:1px solid #155e75}
+.c-key{background:#3b2f08;color:var(--gold);border:1px solid #92710f}
+small.note{color:var(--muted);font-size:12px}
+b.k{color:var(--gold)}
+/* steps */
+.steps{counter-reset:s;display:grid;gap:8px}
+.step{display:flex;gap:12px;align-items:flex-start;background:var(--panel2);border:1px solid var(--line);border-radius:8px;padding:9px 12px}
+.step .num{counter-increment:s;background:var(--m1);color:#04121a;font-weight:800;border-radius:50%;width:24px;height:24px;display:grid;place-items:center;flex:0 0 24px;font-size:13px}
+.step .num::before{content:counter(s)}
+.step .t{font-size:13.5px}
+.step .t b{color:var(--ink)}
+/* pyramid / relational */
+.layer{border-radius:10px;padding:12px 14px;margin:8px 0;border:1px solid var(--line);position:relative}
+.layer .lh{font-weight:700;font-size:13px;letter-spacing:.4px;text-transform:uppercase;margin-bottom:6px;opacity:.9}
+.layer p{margin:4px 0;font-size:13px}
+.L-codex{background:linear-gradient(90deg,#1a2e2e,#161d26)}
+.L-eu{background:linear-gradient(90deg,#0f2547,#161d26);border-color:#1e3a8a}
+.L-es{background:linear-gradient(90deg,#10233f,#161d26);border-color:#1e3a8a}
+.L-us{background:linear-gradient(90deg,#33121b,#161d26);border-color:#7f1d3a}
+.L-priv{background:linear-gradient(90deg,#2a1622,#161d26);border-color:#7f1d3a}
+.arrow{text-align:center;color:var(--muted);font-size:18px;line-height:1;margin:-2px 0}
+/* iso table */
+table{width:100%;border-collapse:collapse;font-size:13px;margin-top:6px}
+th,td{border:1px solid var(--line);padding:7px 9px;text-align:left;vertical-align:top}
+th{background:var(--panel2);color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.3px}
+td code{color:var(--accent);font-family:ui-monospace,monospace}
+/* glossary */
+.search{width:100%;padding:11px 14px;background:var(--panel2);border:1px solid var(--line);
+  border-radius:10px;color:var(--ink);font-size:14px;margin:4px 0 14px}
+.search:focus{outline:none;border-color:var(--accent)}
+.gloss{display:grid;gap:8px;grid-template-columns:repeat(auto-fit,minmax(330px,1fr))}
+.term{background:var(--panel2);border:1px solid var(--line);border-radius:8px;padding:9px 12px}
+.term .s{font-family:ui-monospace,monospace;font-weight:700;color:var(--gold);font-size:13px}
+.term .d{font-size:12.8px;color:var(--muted);margin-top:2px}
+.term.hide{display:none}
+/* module accordions */
+details.mod{border:1px solid var(--line);border-radius:12px;margin:12px 0;overflow:hidden;background:var(--panel)}
+details.mod>summary{cursor:pointer;padding:14px 18px;font-weight:700;font-size:16px;list-style:none;display:flex;align-items:center;gap:10px}
+details.mod>summary::-webkit-details-marker{display:none}
+details.mod>summary::after{content:'▾';margin-left:auto;color:var(--muted);transition:.2s}
+details.mod[open]>summary::after{transform:rotate(180deg)}
+details.mod .body{padding:0 18px 16px}
+.dot{width:11px;height:11px;border-radius:50%;flex:0 0 11px}
+.legend{display:flex;gap:14px;flex-wrap:wrap;margin-top:14px;font-size:12.5px;color:var(--muted)}
+.legend span{display:flex;align-items:center;gap:6px}
+footer{border-top:1px solid var(--line);padding:20px;text-align:center;color:var(--muted);font-size:12px}
+.callout{border-left:3px solid var(--accent);background:#0c1a22;padding:10px 14px;border-radius:0 8px 8px 0;font-size:13.5px;margin:10px 0}
+.box-out{border-left:3px solid var(--gold);background:#1c1607}
+@media print{nav{display:none}body{background:#fff;color:#000}.card,.ud,.term,.layer,.step{break-inside:avoid}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <h1>🛡️ Calidad, Seguridad y Sostenibilidad en la Empresa Agroalimentaria</h1>
+  <div class="sub">Esquema-mapa de todo el temario, con énfasis en los temas de <b>seguridad alimentaria y control de calidad</b> (Módulo 1). Relaciona siglas, normas técnicas y legislación, con una explicación breve de cada una. Pensado para estudiar y repasar de un vistazo.</div>
+  <div class="code">Certificado ADGD50 · 4 módulos · 20 unidades didácticas</div>
+  <div class="legend">
+    <span><i class="dot" style="background:var(--m1)"></i> M1 · Seguridad y Calidad</span>
+    <span><i class="dot" style="background:var(--m2)"></i> M2 · Medioambiente</span>
+    <span><i class="dot" style="background:var(--m3)"></i> M3 · Energía</span>
+    <span><i class="dot" style="background:var(--m4)"></i> M4 · Social</span>
+    <span><i class="dot" style="background:var(--law)"></i> Legislación</span>
+    <span><i class="dot" style="background:var(--std)"></i> Estándar privado</span>
+  </div>
+</header>
+
+<nav>
+  <a href="#mapa">🗺️ Mapa global</a>
+  <a href="#m1">★ Módulo 1 (núcleo)</a>
+  <a href="#appcc">APPCC / HACCP</a>
+  <a href="#estandares">Estándares (GFSI)</a>
+  <a href="#piramide">⚖️ Pirámide legal</a>
+  <a href="#iso">Familias ISO</a>
+  <a href="#m234">Módulos 2·3·4</a>
+  <a href="#extra">💡 Fuera de la caja</a>
+  <a href="#siglas">🔤 Diccionario de siglas</a>
+</nav>
+
+<main>
+
+<!-- ============ MAPA GLOBAL ============ -->
+<section id="mapa">
+  <h2>🗺️ Mapa global del temario</h2>
+  <p class="lead">El curso se vertebra en 4 pilares de la <b>sostenibilidad empresarial</b>. El Módulo 1 (seguridad e inocuidad) es el más extenso y el que concentra siglas, normas y legislación.</p>
+  <div class="grid g2">
+    <div class="card" style="border-left:4px solid var(--m1)">
+      <h3 style="margin:0 0 6px">★ M1 · Seguridad y Calidad <span class="chip c-key">NÚCLEO</span></h3>
+      <small class="note">6 UD. Qué es calidad → cómo se controla (APPCC) → cómo se certifica (BRC, IFS, ISO 22000) → marco legal (UE, España, EE.UU.).</small>
+    </div>
+    <div class="card" style="border-left:4px solid var(--m2)">
+      <h3 style="margin:0 0 6px">M2 · Gestión Medioambiental</h3>
+      <small class="note">5 UD. Autorizaciones (AAI), residuos/envases, emisiones, vertidos, ISO 14001 y EMAS.</small>
+    </div>
+    <div class="card" style="border-left:4px solid var(--m3)">
+      <h3 style="margin:0 0 6px">M3 · Eficiencia Energética</h3>
+      <small class="note">6 UD. Auditoría energética, monitorización, ISO 50001, autoconsumo y ayudas (PNIEC).</small>
+    </div>
+    <div class="card" style="border-left:4px solid var(--m4)">
+      <h3 style="margin:0 0 6px">M4 · Buenas Prácticas Sociales</h3>
+      <small class="note">3 UD. Auditoría laboral, plan de igualdad, GRASP y memoria de sostenibilidad.</small>
+    </div>
+  </div>
+  <div class="callout">🔑 <b>Idea-fuerza que conecta todo el curso:</b> cada módulo es un <b>sistema de gestión</b> certificable que sigue el ciclo de mejora continua <b class="k">PDCA</b> (Planificar–Hacer–Verificar–Actuar) y comparte la estructura común de las normas ISO (<b class="k">Anexo SL</b>). Por eso ISO 9001 (calidad), 22000 (alimentaria), 14001 (ambiente), 50001 (energía) y 45001 (seguridad laboral) son <i>integrables</i> en un único sistema.</div>
+</section>
+
+<!-- ============ MODULO 1 ============ -->
+<section id="m1">
+  <h2><span class="dot" style="background:var(--m1);width:14px;height:14px"></span> Módulo 1 — Gestión de la Seguridad y Calidad <span class="tag" style="background:var(--gold)">DESTACADO</span></h2>
+  <p class="lead">El corazón del curso. Sigue una progresión lógica: <b>definir</b> calidad → <b>controlar</b> peligros (APPCC) → <b>certificar</b> con estándares → <b>cumplir</b> la ley.</p>
+
+  <div class="grid g2">
+
+    <div class="ud">
+      <h3><span class="n">1.1</span> Conceptos básicos de calidad</h3>
+      <ul>
+        <li><b>Escalera de la calidad:</b> Control de calidad (detectar fallos) → Aseguramiento (prevenir, dar confianza) → Gestión de la calidad (mejora continua de toda la organización).</li>
+        <li><b>Normalización ≠ Certificación ≠ Acreditación:</b> normalizar = <i>redactar</i> la norma (ISO, CEN, UNE); certificar = <i>verificar</i> que se cumple (AENOR, SGS, Bureau Veritas); acreditar = <i>avalar</i> al certificador (<span class="chip c-key">ENAC</span> en España).</li>
+        <li><b>Certificación de 1ª / 2ª / 3ª parte:</b> autodeclaración / auditoría del cliente / organismo independiente acreditado.</li>
+        <li>Familia <span class="chip c-iso">ISO 9000</span> de calidad (ver tabla de familias ISO).</li>
+      </ul>
+    </div>
+
+    <div class="ud">
+      <h3><span class="n">1.2</span> Sistema APPCC <small class="note">(=HACCP)</small></h3>
+      <ul>
+        <li><b>Base de toda la seguridad alimentaria.</b> Identifica y controla peligros <b>físicos, químicos y biológicos</b> «de la granja a la mesa».</li>
+        <li>Se asienta sobre los <b>prerrequisitos</b> (PPR / planes generales de higiene).</li>
+        <li>Estructura Codex = <b>5 etapas previas + 7 principios</b> (12 pasos). <a href="#appcc">Ver detalle ↓</a></li>
+        <li>Conceptos: <span class="chip c-key">PCC</span> (Punto de Control Crítico) y <b>límite crítico</b>.</li>
+      </ul>
+    </div>
+
+    <div class="ud">
+      <h3><span class="n">1.3</span> Estándares de seguridad alimentaria</h3>
+      <ul>
+        <li>Los grandes estándares privados reconocidos por <span class="chip c-std">GFSI</span>:</li>
+        <li><span class="chip c-std">BRCGS</span> (R. Unido) · <span class="chip c-std">IFS</span> (Francia/Alemania) · <span class="chip c-std">FSSC 22000</span> · <span class="chip c-std">SQF</span> · <span class="chip c-std">GLOBALG.A.P.</span> (granja).</li>
+        <li>Todos beben del <b>Codex Alimentarius</b>. <a href="#estandares">Ver comparativa ↓</a></li>
+      </ul>
+    </div>
+
+    <div class="ud">
+      <h3><span class="n">1.4</span> Norma ISO 22000</h3>
+      <ul>
+        <li><span class="chip c-iso">ISO 22000:2018</span> — Sistema de Gestión de la <b>Seguridad Alimentaria (SGSA)</b>, internacional y certificable.</li>
+        <li><b>Ecuación clave:</b> ISO 22000 = <b>HACCP</b> + <b>PRP</b> (prerrequisitos) + <b>Anexo SL/PDCA</b> + pensamiento basado en riesgos.</li>
+        <li>Compatible/integrable con ISO 9001. Familia: <span class="chip c-iso">22004</span> (guía) y <span class="chip c-iso">22005</span> (trazabilidad).</li>
+      </ul>
+    </div>
+
+    <div class="ud">
+      <h3><span class="n">1.5</span> PCQI · marco FSMA (EE.UU.)</h3>
+      <ul>
+        <li><span class="chip c-key">PCQI</span> = <i>Preventive Controls Qualified Individual</i>: persona cualificada que diseña y supervisa el <b>plan de inocuidad</b>.</li>
+        <li>Exigido por la <span class="chip c-law">FSMA</span> (ley de la <span class="chip c-law">FDA</span>) — el giro de <b>reaccionar → prevenir</b>.</li>
+        <li><b>Imprescindible para exportar alimentos a EE.UU.</b> Formación vía <b>FSPCA</b>.</li>
+      </ul>
+    </div>
+
+    <div class="ud">
+      <h3><span class="n">1.6</span> Interpretación y gestión de la normativa</h3>
+      <ul>
+        <li>La <b>pirámide legal</b>: Codex → UE (178/2002, 852/2004, 853/2004) → España (<span class="chip c-law">Ley 17/2011</span>) → requisitos de exportación.</li>
+        <li>Eje transversal: <b>trazabilidad</b> y <b>principio de precaución</b>. <a href="#piramide">Ver pirámide ↓</a></li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ APPCC DETALLE ============ -->
+<section id="appcc">
+  <h2>🧪 APPCC / HACCP — el método paso a paso</h2>
+  <p class="lead"><b>APPCC</b> = Análisis de Peligros y Puntos de Control Crítico = <b>HACCP</b> (inglés). Sistema <b>preventivo, sistemático y documentado</b>. Nacido en los años 60 (Pillsbury–NASA) y adoptado por el <b>Codex Alimentarius en 1997</b>. Es <b>obligatorio</b> en la UE (Reg. 852/2004) y la base de ISO 22000, BRC e IFS.</p>
+
+  <div class="card hl">
+    <h3 style="margin:0 0 10px">🧱 Paso 0 — Los Prerrequisitos (PPR / Planes Generales de Higiene)</h3>
+    <small class="note">Las «buenas prácticas» y condiciones de higiene <b>previas</b>, sin las cuales el APPCC no puede funcionar. Si los prerrequisitos están bien, el APPCC tiene que vigilar muchos menos PCC.</small>
+    <div class="grid g3" style="margin-top:10px">
+      <div><span class="chip c-iso">1</span> Mantenimiento de instalaciones y equipos</div>
+      <div><span class="chip c-iso">2</span> Limpieza y desinfección (L+D)</div>
+      <div><span class="chip c-iso">3</span> Buenas prácticas de manipulación (BPM)</div>
+      <div><span class="chip c-iso">4</span> Control de plagas (DDD)</div>
+      <div><span class="chip c-iso">5</span> Control de proveedores</div>
+      <div><span class="chip c-iso">6</span> Control del agua</div>
+      <div><span class="chip c-iso">7</span> Control de residuos</div>
+      <div><span class="chip c-iso">8</span> Formación del personal</div>
+      <div><span class="chip c-iso">9</span> Trazabilidad</div>
+    </div>
+    <small class="note" style="display:block;margin-top:8px">➕ Opcionales según la empresa: control de <b>alérgenos</b> y de <b>productos químicos</b>.</small>
+  </div>
+
+  <div class="card">
+    <h3 style="margin:0 0 10px">📋 5 etapas previas (preparación del equipo)</h3>
+    <div class="grid g3">
+      <div class="ud" style="padding:9px 12px">1 · Crear el <b>equipo APPCC</b> (multidisciplinar)</div>
+      <div class="ud" style="padding:9px 12px">2 · <b>Describir el producto</b> (composición, conservación)</div>
+      <div class="ud" style="padding:9px 12px">3 · Definir el <b>uso previsto</b> y consumidor</div>
+      <div class="ud" style="padding:9px 12px">4 · Elaborar el <b>diagrama de flujo</b></div>
+      <div class="ud" style="padding:9px 12px">5 · <b>Verificar el diagrama in situ</b></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3 style="margin:0 0 10px">🎯 Los 7 principios del APPCC</h3>
+    <div class="steps">
+      <div class="step"><span class="num"></span><span class="t"><b>Análisis de peligros.</b> Identificar peligros (físicos/químicos/biológicos) en cada etapa y sus medidas preventivas.</span></div>
+      <div class="step"><span class="num"></span><span class="t"><b>Determinar los PCC.</b> Mediante el <b>árbol de decisiones</b>, fijar las etapas donde el control es crítico e imprescindible.</span></div>
+      <div class="step"><span class="num"></span><span class="t"><b>Establecer límites críticos.</b> El valor que separa lo aceptable de lo inaceptable en cada PCC (ej. Tª ≥ 75 °C).</span></div>
+      <div class="step"><span class="num"></span><span class="t"><b>Sistema de vigilancia.</b> Monitorizar cada PCC (qué, cómo, cuándo, quién) para detectar desviaciones.</span></div>
+      <div class="step"><span class="num"></span><span class="t"><b>Medidas correctoras.</b> Qué hacer cuando un PCC se sale del límite (ej. inmovilizar o destruir el lote).</span></div>
+      <div class="step"><span class="num"></span><span class="t"><b>Verificación.</b> Comprobar que el sistema funciona (auditorías, analíticas, calibraciones).</span></div>
+      <div class="step"><span class="num"></span><span class="t"><b>Documentación y registro.</b> Dejar constancia escrita de todo: el plan APPCC y sus registros derivados.</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ESTANDARES ============ -->
+<section id="estandares">
+  <h2>🏷️ Estándares de seguridad alimentaria (paraguas GFSI)</h2>
+  <p class="lead">Son normas <b>privadas y voluntarias</b>, pero <b>exigidas por la gran distribución</b>. La <span class="chip c-std">GFSI</span> (Global Food Safety Initiative) no certifica: <b>reconoce/homologa</b> estos esquemas para que valgan en todo el mundo — «certificado una vez, aceptado en todas partes». Todos parten del <b>Codex</b> y del <b>APPCC</b>.</p>
+  <table>
+    <tr><th>Estándar</th><th>Significado</th><th>Origen / enfoque</th></tr>
+    <tr><td><span class="chip c-std">BRCGS</span></td><td>British Retail Consortium Global Standard</td><td>Reino Unido. Fabricantes y minoristas.</td></tr>
+    <tr><td><span class="chip c-std">IFS</span></td><td>International Featured Standards</td><td>Francia/Alemania. Marca propia y distribución.</td></tr>
+    <tr><td><span class="chip c-std">FSSC 22000</span></td><td>Food Safety System Certification</td><td>Internacional. ISO 22000 + PRP sectoriales (ISO/TS 22002).</td></tr>
+    <tr><td><span class="chip c-std">SQF</span></td><td>Safe Quality Food</td><td>EE.UU. Calidad + seguridad en toda la cadena.</td></tr>
+    <tr><td><span class="chip c-std">GLOBALG.A.P.</span></td><td>Good Agricultural Practice</td><td>Producción primaria (granja): frutas, hortalizas, acuicultura.</td></tr>
+    <tr><td><span class="chip c-iso">ISO 22000</span></td><td>Sistema de Gestión de Seguridad Alimentaria</td><td>Norma ISO internacional (no privada). Base de FSSC 22000.</td></tr>
+  </table>
+  <div class="callout">💡 <b>Cómo distinguirlos en el examen:</b> <b>GLOBALG.A.P.</b> → campo/granja. <b>BRC/IFS</b> → exigidos por supermercados (UK vs Francia-Alemania). <b>ISO 22000</b> → norma internacional neutral. <b>FSSC 22000</b> → ISO 22000 «con extras» y reconocida por GFSI.</div>
+</section>
+
+<!-- ============ PIRAMIDE LEGAL ============ -->
+<section id="piramide">
+  <h2>⚖️ Pirámide legal de la seguridad alimentaria</h2>
+  <p class="lead">De lo internacional (orientativo) a lo nacional (obligatorio), más el marco de EE.UU. para exportar. <b>Lee de arriba abajo:</b> cada capa concreta la anterior.</p>
+
+  <div class="layer L-codex">
+    <div class="lh">🌍 Internacional — referencia (no vinculante)</div>
+    <p><span class="chip c-law">Codex Alimentarius</span> — creado en 1963 por <b>FAO + OMS</b>. Colección de normas, directrices y códigos de higiene. Es la <b>referencia mundial</b> (la usa la OMC en disputas comerciales). En 1997 incorporó el <b>APPCC</b>.</p>
+  </div>
+  <div class="arrow">▼</div>
+
+  <div class="layer L-eu">
+    <div class="lh">🇪🇺 Unión Europea — «Paquete de Higiene» (Reglamentos = aplicación directa y prevalente)</div>
+    <p><span class="chip c-law">Reg. (CE) 178/2002</span> <b>Legislación Alimentaria General.</b> La norma madre: crea la <b>EFSA</b> y la red de alertas <b>RASFF</b>, e impone el <b>análisis del riesgo</b>, la <b>trazabilidad</b> y el <b>principio de precaución</b>.</p>
+    <p><span class="chip c-law">Reg. (CE) 852/2004</span> <b>Higiene de los alimentos.</b> Hace <b>obligatorio el APPCC</b> y los prerrequisitos a todos los operadores.</p>
+    <p><span class="chip c-law">Reg. (CE) 853/2004</span> <b>Higiene específica de productos de origen animal</b> (carne, pescado, lácteos, huevos).</p>
+    <p><small class="note">➕ Complementan: Reg. 1169/2011 (información alimentaria al consumidor / etiquetado).</small></p>
+  </div>
+  <div class="arrow">▼</div>
+
+  <div class="layer L-es">
+    <div class="lh">🇪🇸 España — desarrollo nacional</div>
+    <p><span class="chip c-law">Ley 17/2011</span> de <b>Seguridad Alimentaria y Nutrición</b> (5 jul). Marco común y hábitos saludables, «de la granja a la mesa». Organismo de referencia: <b>AESAN</b>. Marco jurídico descentralizado (CC.AA.).</p>
+  </div>
+  <div class="arrow">▼ &nbsp;(para exportar a EE.UU.)</div>
+
+  <div class="layer L-us">
+    <div class="lh">🇺🇸 EE.UU. — exportación</div>
+    <p><span class="chip c-law">FSMA</span> <i>Food Safety Modernization Act</i>, gestionada por la <b>FDA</b>. Cambia el enfoque de <b>reaccionar a prevenir</b>: exige un <b>plan de inocuidad</b> con controles preventivos basados en riesgo, supervisado por un <span class="chip c-key">PCQI</span> (formado por la <b>FSPCA</b>).</p>
+  </div>
+
+  <div style="margin-top:18px" class="layer L-priv">
+    <div class="lh">🏷️ En paralelo — estándares privados voluntarios (los exige el mercado, no la ley)</div>
+    <p><span class="chip c-std">GFSI</span> → reconoce <span class="chip c-std">BRCGS</span> · <span class="chip c-std">IFS</span> · <span class="chip c-std">FSSC 22000</span> · <span class="chip c-std">SQF</span> · <span class="chip c-std">GLOBALG.A.P.</span> · y la norma <span class="chip c-iso">ISO 22000</span>. Cumplir la <b>ley</b> es el mínimo; <b>certificarse</b> es lo que abre las puertas de la gran distribución.</p>
+  </div>
+</section>
+
+<!-- ============ FAMILIAS ISO ============ -->
+<section id="iso">
+  <h2>📐 Mapa de familias ISO (todas comparten Anexo SL + PDCA)</h2>
+  <p class="lead">Cada módulo del curso tiene «su» norma ISO de sistema de gestión. Todas son integrables entre sí.</p>
+  <table>
+    <tr><th>Norma</th><th>Qué gestiona</th><th>Módulo</th></tr>
+    <tr><td><code>ISO 9000 / 9001 / 9004</code></td><td><b>Calidad.</b> 9000=vocabulario · <b>9001=requisitos (la única certificable)</b> · 9004=éxito sostenido</td><td>M1</td></tr>
+    <tr><td><code>ISO 22000</code> (+22004, 22005)</td><td><b>Seguridad alimentaria (SGSA).</b> HACCP + PRP</td><td>M1</td></tr>
+    <tr><td><code>ISO 19011</code></td><td><b>Auditoría</b> de sistemas de gestión (guía)</td><td>M1</td></tr>
+    <tr><td><code>ISO 31000</code></td><td><b>Gestión del riesgo</b> (marco transversal)</td><td>M1</td></tr>
+    <tr><td><code>ISO 14001</code> (familia 14000)</td><td><b>Medio ambiente (SGMA).</b> Alternativa privada al EMAS</td><td>M2</td></tr>
+    <tr><td><code>ISO 50001</code></td><td><b>Energía (SGE).</b> Eficiencia y ahorro energético</td><td>M3</td></tr>
+    <tr><td><code>ISO 45001</code></td><td><b>Seguridad y salud en el trabajo</b> (SST)</td><td>M4</td></tr>
+  </table>
+</section>
+
+<!-- ============ MODULOS 2-3-4 ============ -->
+<section id="m234">
+  <h2>🌱⚡👥 Módulos 2, 3 y 4 — la otra cara de la sostenibilidad</h2>
+
+  <details class="mod" open>
+    <summary><span class="dot" style="background:var(--m2)"></span> M2 · Gestión Medioambiental <small class="note" style="font-weight:400">(5 UD)</small></summary>
+    <div class="body">
+      <div class="grid g2">
+        <div class="ud"><h3 style="color:var(--m2)">Conceptos y normas técnicas</h3>
+          <ul>
+            <li><span class="chip c-iso">ISO 14001</span> SGMA privado e internacional + <span class="chip c-key">EMAS</span> (Reglamento UE, registro público, más exigente).</li>
+            <li>Autorización Ambiental Integrada <span class="chip c-key">AAI</span> (concepto europeo <b>IPPC</b>).</li>
+          </ul>
+        </div>
+        <div class="ud"><h3 style="color:var(--m2)">Legislación clave</h3>
+          <ul>
+            <li><span class="chip c-law">Ley 21/2013</span> Evaluación Ambiental.</li>
+            <li><span class="chip c-law">Ley 16/2002</span> + <span class="chip c-law">RD 815/2013</span> control integrado de la contaminación (AAI).</li>
+            <li><span class="chip c-law">Ley 7/2022</span> residuos y suelos contaminados (economía circular) · <span class="chip c-law">RD 1055/2022</span> envases.</li>
+            <li><span class="chip c-law">Reg. (CE) 1907/2006 (REACH)</span> productos químicos · <b>Ley de Aguas</b> (vertidos) · <span class="chip c-law">RD 102/2011</span> calidad del aire.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </details>
+
+  <details class="mod">
+    <summary><span class="dot" style="background:var(--m3)"></span> M3 · Eficiencia Energética <small class="note" style="font-weight:400">(6 UD)</small></summary>
+    <div class="body">
+      <div class="grid g2">
+        <div class="ud"><h3 style="color:var(--m3)">Herramientas y normas</h3>
+          <ul>
+            <li><b>Auditoría energética</b> + monitorización de consumos.</li>
+            <li><span class="chip c-iso">ISO 50001</span> Sistema de Gestión de la Energía (SGE) · <span class="chip c-iso">ISO 50002</span> auditorías.</li>
+            <li><span class="chip c-law">UNE-EN 16247</span> metodología de auditorías energéticas.</li>
+            <li>Autoconsumo: solar térmica, fotovoltaica, eólica.</li>
+          </ul>
+        </div>
+        <div class="ud"><h3 style="color:var(--m3)">Marco climático y ayudas</h3>
+          <ul>
+            <li><b>IPCC</b> (ciencia del clima) → <b>Acuerdo de París</b> (2015).</li>
+            <li><span class="chip c-key">PNIEC 2021-2030</span> Plan Nacional Integrado de Energía y Clima.</li>
+            <li><span class="chip c-law">RD 244/2019</span> autoconsumo · <span class="chip c-law">RD 413/2014</span> renovables.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </details>
+
+  <details class="mod">
+    <summary><span class="dot" style="background:var(--m4)"></span> M4 · Buenas Prácticas Sociales <small class="note" style="font-weight:400">(3 UD)</small></summary>
+    <div class="body">
+      <div class="grid g2">
+        <div class="ud"><h3 style="color:var(--m4)">Diagnóstico y herramientas</h3>
+          <ul>
+            <li><b>Auditoría laboral</b> y <b>encuestas de clima</b>.</li>
+            <li><b>Plan de igualdad</b>: igualdad formal → real → efectiva (gestión de la diversidad).</li>
+            <li><span class="chip c-std">GRASP</span> (GLOBALG.A.P. Risk Assessment on Social Practice) — evaluación de prácticas sociales.</li>
+            <li><b>Memoria de sostenibilidad</b> (estándares <b>GRI</b>).</li>
+          </ul>
+        </div>
+        <div class="ud"><h3 style="color:var(--m4)">Legislación clave</h3>
+          <ul>
+            <li><span class="chip c-law">LO 3/2007</span> igualdad efectiva de mujeres y hombres.</li>
+            <li><span class="chip c-law">Ley 15/2022</span> integral para la igualdad de trato y no discriminación.</li>
+            <li><span class="chip c-law">LO 1/2004</span> violencia de género.</li>
+            <li><span class="chip c-law">Ley 31/1995 (LPRL)</span> Prevención de Riesgos Laborales.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </details>
+</section>
+
+<!-- ============ FUERA DE LA CAJA ============ -->
+<section id="extra">
+  <h2>💡 Fuera de la caja — conceptos que conviene dominar</h2>
+  <p class="lead">Cosas que el temario roza pero que <b>suelen caer</b> y refuerzan la comprensión del bloque de seguridad.</p>
+  <div class="grid g2">
+    <div class="card box-out">
+      <h3 style="margin:0 0 6px;color:var(--gold)">🔐 TACCP y VACCP — más allá del APPCC</h3>
+      <small class="note"><b>APPCC</b> cubre peligros <i>accidentales</i>. Los estándares modernos (BRC/IFS) añaden dos análisis:<br>• <b>TACCP</b> (Threat Assessment CCP) = <b>food defense</b>: protección frente a actos <i>intencionados/malintencionados</i> (sabotaje, terrorismo).<br>• <b>VACCP</b> (Vulnerability Assessment CCP) = <b>food fraud</b>: prevención del <i>fraude</i> y adulteración económica.</small>
+    </div>
+    <div class="card box-out">
+      <h3 style="margin:0 0 6px;color:var(--gold)">🧭 Calidad vs Seguridad vs Inocuidad</h3>
+      <small class="note">• <b>Inocuidad (food safety):</b> que el alimento <i>no cause daño</i> a la salud. Es innegociable.<br>• <b>Calidad:</b> que <i>cumpla las expectativas</i> del cliente (sabor, aspecto, precio).<br>Un alimento puede ser inocuo y de baja calidad, pero nunca debe ser de «alta calidad» e inseguro.</small>
+    </div>
+    <div class="card box-out">
+      <h3 style="margin:0 0 6px;color:var(--gold)">🏛️ EFSA · AESAN · RASFF</h3>
+      <small class="note">• <b>EFSA</b> (UE) y <b>AESAN</b> (España): agencias que <i>evalúan</i> el riesgo (ciencia), separadas de quien lo <i>gestiona</i> (políticos).<br>• <b>RASFF</b>: red de alerta rápida que avisa entre países cuando un alimento es peligroso → activa <b>retiradas (recall)</b>.</small>
+    </div>
+    <div class="card box-out">
+      <h3 style="margin:0 0 6px;color:var(--gold)">🔄 PDCA y Anexo SL</h3>
+      <small class="note">El <b>ciclo PDCA</b> (Plan-Do-Check-Act, Deming) es el motor de mejora continua de <i>todas</i> las normas. El <b>Anexo SL</b> es la estructura común que comparten ISO 9001, 14001, 22000, 50001, 45001 → por eso se pueden <b>integrar</b> en un único sistema de gestión.</small>
+    </div>
+    <div class="card box-out">
+      <h3 style="margin:0 0 6px;color:var(--gold)">🔗 Trazabilidad en 3 direcciones</h3>
+      <small class="note">Exigida por el Reg. 178/2002. <b>Hacia atrás</b> (¿de qué proveedor vino?), <b>interna</b> (¿qué pasó dentro de mi planta?) y <b>hacia delante</b> (¿a qué cliente fue?). Es la que permite una retirada quirúrgica de producto.</small>
+    </div>
+    <div class="card box-out">
+      <h3 style="margin:0 0 6px;color:var(--gold)">⚠️ Principio de precaución y análisis del riesgo</h3>
+      <small class="note"><b>Análisis del riesgo</b> = evaluación + gestión + comunicación. <b>Precaución:</b> ante una sospecha fundada de riesgo, se puede actuar <i>aunque no haya certeza científica plena</i>. Pilar del modelo europeo.</small>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DICCIONARIO DE SIGLAS ============ -->
+<section id="siglas">
+  <h2>🔤 Diccionario de siglas, normas y leyes</h2>
+  <p class="lead">Busca cualquier sigla, número de norma o ley. Pulsa <kbd>Ctrl+F</kbd> también funciona, pero esta caja filtra al instante.</p>
+  <input class="search" id="q" placeholder="🔎 Filtrar… (ej: APPCC, 178/2002, GFSI, ISO 22000, EMAS, PCQI)">
+  <div class="gloss" id="gloss">
+    <div class="term"><div class="s">APPCC / HACCP</div><div class="d">Análisis de Peligros y Puntos de Control Crítico. Sistema preventivo base de la seguridad alimentaria (5 etapas + 7 principios).</div></div>
+    <div class="term"><div class="s">PCC</div><div class="d">Punto de Control Crítico: etapa donde un control es imprescindible para eliminar/reducir un peligro.</div></div>
+    <div class="term"><div class="s">PPR / PRP</div><div class="d">Prerrequisitos (planes generales de higiene): las 9 buenas prácticas previas al APPCC.</div></div>
+    <div class="term"><div class="s">BPM / BPH</div><div class="d">Buenas Prácticas de Manipulación / Higiene.</div></div>
+    <div class="term"><div class="s">Codex Alimentarius</div><div class="d">Referencia mundial de normas de higiene (FAO + OMS, 1963). No vinculante; la usa la OMC.</div></div>
+    <div class="term"><div class="s">GFSI</div><div class="d">Global Food Safety Initiative. Reconoce/homologa estándares privados (BRC, IFS, FSSC, SQF, GLOBALG.A.P.).</div></div>
+    <div class="term"><div class="s">BRCGS</div><div class="d">British Retail Consortium Global Standard. Estándar privado británico de seguridad alimentaria.</div></div>
+    <div class="term"><div class="s">IFS</div><div class="d">International Featured Standards. Estándar privado (Francia/Alemania) para distribución y marca propia.</div></div>
+    <div class="term"><div class="s">FSSC 22000</div><div class="d">Food Safety System Certification. ISO 22000 + prerrequisitos sectoriales (ISO/TS 22002). Reconocida por GFSI.</div></div>
+    <div class="term"><div class="s">SQF</div><div class="d">Safe Quality Food. Estándar privado (EE.UU.) de calidad + seguridad.</div></div>
+    <div class="term"><div class="s">GLOBALG.A.P.</div><div class="d">Good Agricultural Practice. Estándar de producción primaria (granja); clave para exportar productos agrícolas.</div></div>
+    <div class="term"><div class="s">GRASP</div><div class="d">GLOBALG.A.P. Risk Assessment on Social Practice. Módulo de evaluación de prácticas sociales/laborales.</div></div>
+    <div class="term"><div class="s">ISO 9001</div><div class="d">Requisitos del sistema de gestión de la calidad. La única certificable de la familia ISO 9000.</div></div>
+    <div class="term"><div class="s">ISO 22000</div><div class="d">Sistema de Gestión de la Seguridad Alimentaria (SGSA): HACCP + PRP + Anexo SL. Internacional y certificable.</div></div>
+    <div class="term"><div class="s">ISO 14001 / EMAS</div><div class="d">Sistemas de gestión ambiental. ISO 14001 = privado internacional; EMAS = reglamento UE, registro público, más exigente.</div></div>
+    <div class="term"><div class="s">ISO 50001</div><div class="d">Sistema de Gestión de la Energía (SGE). Eficiencia y ahorro energético.</div></div>
+    <div class="term"><div class="s">ISO 45001</div><div class="d">Sistema de gestión de Seguridad y Salud en el Trabajo (SST).</div></div>
+    <div class="term"><div class="s">ISO 19011</div><div class="d">Directrices para auditar sistemas de gestión.</div></div>
+    <div class="term"><div class="s">Anexo SL / PDCA</div><div class="d">Estructura común de las normas ISO + ciclo de mejora continua (Plan-Do-Check-Act, Deming).</div></div>
+    <div class="term"><div class="s">ENAC</div><div class="d">Entidad Nacional de Acreditación (España): acredita a los organismos que certifican.</div></div>
+    <div class="term"><div class="s">AENOR / UNE</div><div class="d">AENOR certifica y edita las normas UNE (Una Norma Española).</div></div>
+    <div class="term"><div class="s">FSMA</div><div class="d">Food Safety Modernization Act (EE.UU.). Ley de la FDA centrada en la prevención. Obligatoria para exportar a EE.UU.</div></div>
+    <div class="term"><div class="s">FDA</div><div class="d">Food and Drug Administration. Agencia de alimentos y medicamentos de EE.UU.</div></div>
+    <div class="term"><div class="s">PCQI</div><div class="d">Preventive Controls Qualified Individual. Persona cualificada que diseña y supervisa el plan de inocuidad bajo FSMA.</div></div>
+    <div class="term"><div class="s">FSPCA</div><div class="d">Food Safety Preventive Controls Alliance. Forma y acredita a los PCQI.</div></div>
+    <div class="term"><div class="s">Reg. (CE) 178/2002</div><div class="d">Legislación Alimentaria General de la UE. Crea EFSA y RASFF; impone trazabilidad y principio de precaución.</div></div>
+    <div class="term"><div class="s">Reg. (CE) 852/2004</div><div class="d">Higiene de los alimentos en la UE. Hace obligatorio el APPCC.</div></div>
+    <div class="term"><div class="s">Reg. (CE) 853/2004</div><div class="d">Normas específicas de higiene para productos de origen animal.</div></div>
+    <div class="term"><div class="s">Ley 17/2011</div><div class="d">Ley española de Seguridad Alimentaria y Nutrición.</div></div>
+    <div class="term"><div class="s">EFSA</div><div class="d">European Food Safety Authority. Evalúa científicamente el riesgo alimentario en la UE.</div></div>
+    <div class="term"><div class="s">AESAN</div><div class="d">Agencia Española de Seguridad Alimentaria y Nutrición.</div></div>
+    <div class="term"><div class="s">RASFF</div><div class="d">Rapid Alert System for Food and Feed. Red europea de alerta rápida de alimentos y piensos.</div></div>
+    <div class="term"><div class="s">TACCP</div><div class="d">Threat Assessment CCP. «Food defense»: protección frente a ataques intencionados.</div></div>
+    <div class="term"><div class="s">VACCP</div><div class="d">Vulnerability Assessment CCP. «Food fraud»: prevención del fraude/adulteración alimentaria.</div></div>
+    <div class="term"><div class="s">AAI / IPPC</div><div class="d">Autorización Ambiental Integrada (prevención y control integrados de la contaminación).</div></div>
+    <div class="term"><div class="s">REACH (Reg. 1907/2006)</div><div class="d">Registro, evaluación y autorización de sustancias químicas en la UE.</div></div>
+    <div class="term"><div class="s">Ley 21/2013</div><div class="d">Ley española de Evaluación Ambiental.</div></div>
+    <div class="term"><div class="s">Ley 7/2022</div><div class="d">Residuos y suelos contaminados para una economía circular.</div></div>
+    <div class="term"><div class="s">UNE-EN 16247</div><div class="d">Norma de metodología de auditorías energéticas.</div></div>
+    <div class="term"><div class="s">PNIEC 2021-2030</div><div class="d">Plan Nacional Integrado de Energía y Clima (España).</div></div>
+    <div class="term"><div class="s">IPCC</div><div class="d">Grupo Intergubernamental de Expertos sobre el Cambio Climático (ciencia del clima, base del Acuerdo de París).</div></div>
+    <div class="term"><div class="s">LO 3/2007</div><div class="d">Ley Orgánica para la igualdad efectiva de mujeres y hombres (planes de igualdad).</div></div>
+    <div class="term"><div class="s">Ley 15/2022</div><div class="d">Ley integral para la igualdad de trato y la no discriminación.</div></div>
+    <div class="term"><div class="s">LO 1/2004</div><div class="d">Ley Orgánica de medidas de protección integral contra la violencia de género.</div></div>
+    <div class="term"><div class="s">Ley 31/1995 (LPRL)</div><div class="d">Ley de Prevención de Riesgos Laborales.</div></div>
+    <div class="term"><div class="s">GRI</div><div class="d">Global Reporting Initiative. Estándares para la memoria de sostenibilidad.</div></div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  Esquema de estudio · Certificado ADGD50 · Generado a partir del temario M1–M4.<br>
+  Abre este archivo en el navegador · imprímelo a PDF con <kbd>Ctrl+P</kbd> para llevarlo encima.
+</footer>
+
+<script>
+const q=document.getElementById('q'),terms=[...document.querySelectorAll('#gloss .term')];
+q.addEventListener('input',()=>{const v=q.value.trim().toLowerCase();
+  terms.forEach(t=>t.classList.toggle('hide', v && !t.textContent.toLowerCase().includes(v)));});
+</script>
+</body>
+</html>

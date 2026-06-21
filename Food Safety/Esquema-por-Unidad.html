@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Esquema por Unidad (PDF a PDF) · ADGD50</title>
+<style>
+:root{
+  --bg:#0f1419; --panel:#161d26; --panel2:#1d2733; --ink:#e8edf2; --muted:#9fb0c0;
+  --line:#2a3744; --accent:#38bdf8; --gold:#fbbf24;
+  --m1:#10b981; --m2:#22c55e; --m3:#f59e0b; --m4:#a78bfa;
+  --law:#60a5fa; --lawd:#172554; --std:#fb7185; --stdd:#4c0519;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Segoe UI',system-ui,sans-serif;line-height:1.5;font-size:15px}
+a{color:var(--accent);text-decoration:none}
+header.hero{padding:30px 22px 22px;background:linear-gradient(135deg,#0b2a2a,#0f1419 60%);border-bottom:1px solid var(--line)}
+.hero h1{margin:0 0 6px;font-size:24px}
+.hero .sub{color:var(--muted);font-size:14px;max-width:840px}
+.hero .links{margin-top:12px;font-size:13px}
+nav{position:sticky;top:0;z-index:50;background:rgba(15,20,25,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);padding:8px 14px;display:flex;gap:6px;flex-wrap:wrap}
+nav a{font-size:12.5px;padding:5px 12px;border:1px solid var(--line);border-radius:20px;color:var(--muted)}
+nav a:hover{color:var(--ink);border-color:var(--accent)}
+main{max-width:1080px;margin:0 auto;padding:22px 18px 80px}
+section{margin:30px 0;scroll-margin-top:54px}
+h2{font-size:20px;margin:0 0 12px;display:flex;align-items:center;gap:10px}
+.modbar{font-size:12px;color:var(--muted);font-weight:400}
+.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(320px,1fr))}
+.u{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:15px 16px;border-top:3px solid var(--bd,var(--m1))}
+.u h3{margin:0 0 3px;font-size:15.5px}
+.u .code{font-family:ui-monospace,monospace;font-size:11px;font-weight:700;color:var(--bd,var(--m1));letter-spacing:.5px}
+.u .lbl{font-size:10.5px;text-transform:uppercase;letter-spacing:.6px;color:var(--muted);margin:11px 0 4px;font-weight:700}
+.u ul{margin:0;padding-left:17px}
+.u li{font-size:13px;margin:3px 0}
+.u .ap{color:var(--muted)}
+.chip{display:inline-block;font-size:10.5px;font-weight:700;padding:2px 7px;border-radius:5px;margin:2px 3px 0 0;font-family:ui-monospace,monospace}
+.c-std{background:var(--stdd);color:var(--std);border:1px solid #7f1d3a}
+.c-law{background:var(--lawd);color:var(--law);border:1px solid #1e3a8a}
+.c-iso{background:#0c2f3a;color:var(--accent);border:1px solid #155e75}
+.c-key{background:#3b2f08;color:var(--gold);border:1px solid #92710f}
+.dot{width:13px;height:13px;border-radius:50%;flex:0 0 13px}
+.note{color:var(--muted);font-size:12.5px}
+.warn{border-left:3px solid var(--gold);background:#1c1607;padding:9px 13px;border-radius:0 8px 8px 0;font-size:13px;margin:10px 0}
+footer{border-top:1px solid var(--line);padding:20px;text-align:center;color:var(--muted);font-size:12px}
+@media print{nav{display:none}body{background:#fff;color:#000}.u{break-inside:avoid}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <h1>📑 Esquema por unidad (PDF a PDF) · ADGD50</h1>
+  <div class="sub">Un resumen-mapa de cada uno de los PDFs del temario: sus <b>apartados</b>, las <b>claves</b> de la unidad y las <b>siglas/normas/leyes</b> que introduce. Pensado para repasar PDF por PDF antes de cada bloque.</div>
+  <div class="links">↩ Ver el <a href="Esquema-Temario.html">esquema global y relacional</a> · imprime a PDF con <kbd>Ctrl+P</kbd></div>
+</header>
+
+<nav>
+  <a href="#m1">★ M1 Seguridad y Calidad</a>
+  <a href="#m2">M2 Medioambiente</a>
+  <a href="#m3">M3 Energía</a>
+  <a href="#m4">M4 Social</a>
+</nav>
+
+<main>
+
+<!-- ===================== MODULO 1 ===================== -->
+<section id="m1">
+  <h2><span class="dot" style="background:var(--m1)"></span> Módulo 1 — Seguridad y Calidad <span class="modbar">· 6 unidades · el núcleo del curso</span></h2>
+  <div class="grid">
+
+    <div class="u" style="--bd:var(--m1)">
+      <div class="code">M1 · UD 1.1</div>
+      <h3>Conceptos básicos de la calidad</h3>
+      <div class="lbl">Apartados</div>
+      <ul class="ap"><li>Aplicación a la industria agroalimentaria (I, II, III)</li><li>Normalización y certificación (I, II)</li><li>Regulación y entidades del proceso de certificación (I, II)</li></ul>
+      <div class="lbl">Claves</div>
+      <ul>
+        <li>Escalera: <b>control</b> → <b>aseguramiento</b> → <b>gestión</b> de la calidad.</li>
+        <li>Normalizar (redactar) ≠ certificar (verificar) ≠ acreditar (avalar al certificador).</li>
+        <li>Certificación de 1ª / 2ª / 3ª parte. Filosofías: Seis Sigma, diseño para la calidad.</li>
+      </ul>
+      <div class="lbl">Normas / siglas</div>
+      <span class="chip c-iso">ISO 9000</span><span class="chip c-iso">ISO 9001</span><span class="chip c-iso">ISO 9004</span><span class="chip c-iso">ISO 10012</span><span class="chip c-iso">ISO 19011</span><span class="chip c-key">ENAC</span><span class="chip c-key">UNE/AENOR</span>
+    </div>
+
+    <div class="u" style="--bd:var(--m1)">
+      <div class="code">M1 · UD 1.2</div>
+      <h3>Sistema APPCC (HACCP)</h3>
+      <div class="lbl">Apartados</div>
+      <ul class="ap"><li>El sistema APPCC · Prerrequisitos</li><li>Etapas previas · Diseño e implantación (PCC)</li><li>Límites críticos · Seguimiento de los PCC</li><li>Seguimiento y control del sistema (I, II)</li></ul>
+      <div class="lbl">Claves</div>
+      <ul>
+        <li>Peligros <b>físicos, químicos y biológicos</b> en cada etapa.</li>
+        <li>Base = <b>9 prerrequisitos</b> (planes de higiene).</li>
+        <li>Codex = <b>5 etapas previas + 7 principios</b>. PCC · límite crítico · árbol de decisiones · vigilancia · medidas correctoras · registros.</li>
+      </ul>
+      <div class="lbl">Normas / siglas</div>
+      <span class="chip c-key">APPCC</span><span class="chip c-key">HACCP</span><span class="chip c-key">PCC</span><span class="chip c-key">PPR</span>
+    </div>
+
+    <div class="u" style="--bd:var(--m1)">
+      <div class="code">M1 · UD 1.3</div>
+      <h3>Estándares: BRC, IFS, GLOBALG.A.P.</h3>
+      <div class="lbl">Apartados</div>
+      <ul class="ap"><li>Conceptos de seguridad alimentaria · ¿Qué es un estándar?</li><li>Organismos y estándares · Importancia · Implementación</li><li>Las normas más importantes: IFS, BRC, GLOBALGAP e ISO 22000</li></ul>
+      <div class="lbl">Claves</div>
+      <ul>
+        <li><b>Codex Alimentarius</b> como base de todos los estándares.</li>
+        <li><b>GFSI</b> no certifica: <i>reconoce</i> esquemas → valen en todo el mundo.</li>
+        <li>GLOBALG.A.P.=granja · BRC=UK · IFS=Francia/Alemania · FSSC=ISO22000+ · SQF=EE.UU.</li>
+      </ul>
+      <div class="lbl">Normas / siglas</div>
+      <span class="chip c-std">GFSI</span><span class="chip c-std">BRCGS</span><span class="chip c-std">IFS</span><span class="chip c-std">FSSC 22000</span><span class="chip c-std">SQF</span><span class="chip c-std">GLOBALG.A.P.</span><span class="chip c-law">Codex</span>
+    </div>
+
+    <div class="u" style="--bd:var(--m1)">
+      <div class="code">M1 · UD 1.4</div>
+      <h3>Norma ISO 22000</h3>
+      <div class="lbl">Apartados</div>
+      <ul class="ap"><li>Norma ISO 22000 (Parte I y II)</li></ul>
+      <div class="lbl">Claves</div>
+      <ul>
+        <li>Sistema de Gestión de la <b>Seguridad Alimentaria (SGSA)</b>, internacional y certificable.</li>
+        <li><b>ISO 22000 = HACCP + PRP + Anexo SL/PDCA</b> + pensamiento basado en riesgos.</li>
+        <li>Compatible con ISO 9001. Familia: 22004 (guía), 22005 (trazabilidad).</li>
+      </ul>
+      <div class="lbl">Normas / siglas</div>
+      <span class="chip c-iso">ISO 22000:2018</span><span class="chip c-iso">ISO 9001</span><span class="chip c-iso">ISO 22004</span><span class="chip c-iso">ISO 22005</span><span class="chip c-key">HACCP</span>
+    </div>
+
+    <div class="u" style="--bd:var(--m1)">
+      <div class="code">M1 · UD 1.5</div>
+      <h3>PCQI · marco FSMA (EE.UU.)</h3>
+      <div class="lbl">Apartados</div>
+      <ul class="ap"><li>Acercamiento a PCQI (Individuo Cualificado en Controles Preventivos)</li></ul>
+      <div class="lbl">Claves</div>
+      <ul>
+        <li><b>PCQI</b> = persona que crea y supervisa el <b>plan de inocuidad</b>.</li>
+        <li>Exigido por <b>FSMA</b> (ley de la <b>FDA</b>): de reaccionar → prevenir.</li>
+        <li>Formación vía <b>FSPCA</b>. Clave para <b>exportar a EE.UU.</b></li>
+      </ul>
+      <div class="lbl">Normas / siglas</div>
+      <span class="chip c-law">FSMA</span><span class="chip c-law">FDA</span><span class="chip c-key">PCQI</span><span class="chip c-key">FSPCA</span>
+    </div>
+
+    <div class="u" style="--bd:var(--m1)">
+      <div class="code">M1 · UD 1.6</div>
+      <h3>Interpretación y gestión de la normativa</h3>
+      <div class="lbl">Apartados</div>
+      <ul class="ap"><li>Normativa y protocolos específicos (I, II)</li><li>Otros requisitos de la industria alimentaria</li></ul>
+      <div class="lbl">Claves</div>
+      <ul>
+        <li>Pirámide: <b>Codex → UE → España → exportación</b>.</li>
+        <li>España: <b>Ley 17/2011</b> (Seguridad Alimentaria y Nutrición), «de la granja a la mesa».</li>
+        <li>UE: paquete de higiene + trazabilidad obligatoria.</li>
+      </ul>
+      <div class="lbl">Normas / siglas</div>
+      <span class="chip c-law">Ley 17/2011</span><span class="chip c-law">Reg. 178/2002</span><span class="chip c-law">Reg. 852/2004</span><span class="chip c-law">Reg. 853/2004</span>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===================== MODULO 2 ===================== -->
+<section id="m2">
+  <h2><span class="dot" style="background:var(--m2)"></span> Módulo 2 — Gestión Medioambiental <span class="modbar">· 5 unidades</span></h2>
+  <div class="grid">
+
+    <div class="u" style="--bd:var(--m2)">
+      <div class="code">M2 · UD 2.1</div>
+      <h3>Obligaciones ambientales de la empresa</h3>
+      <div class="lbl">Apartados</div>
+      <ul class="ap"><li>Normativa de Protección Ambiental Integrada (I, II)</li></ul>
+      <div class="lbl">Claves</div>
+      <ul><li>Contexto: emergencia climática y degradación de suelos/aguas.</li><li>Enfoque de <b>protección ambiental integrada</b> (aire+agua+suelo+residuos a la vez).</li></ul>
+      <div class="lbl">Normas / siglas</div>
+      <span class="chip c-law">Ley 16/2002</span><span class="chip c-law">Ley 21/2013</span><span class="chip c-key">IPPC</span>
+    </div>
+
+    <div class="u" style="--bd:var(--m2)">
+      <div class="code">M2 · UD 2.2</div>
+      <h3>Estrategias de cumplimiento legal</h3>
+      <div class="lbl">Apartados</div>
+      <ul class="ap"><li>Autorizaciones ambientales · Residuos y envases</li><li>Emisiones atmosféricas · Vertidos · Información a la administración</li></ul>
+      <div class="lbl">Claves</div>
+      <ul><li><b>AAI</b> = autorización clave para grandes instalaciones (integra todos los permisos).</li><li>Autorizaciones de vertido y de emisiones; gestión de residuos peligrosos.</li></ul>
+      <div class="lbl">Normas / siglas</div>
+      <span class="chip c-key">AAI</span><span class="chip c-law">RD 815/2013</span><span class="chip c-law">Ley 7/2022</span><span class="chip c-law">RD 1055/2022</span><span class="chip c-law">RD 102/2011</span>
+    </div>
+
+    <div class="u" style="--bd:var(--m2)">
+      <div class="code">M2 · UD 2.3</div>
+      <h3>Aspectos ambientales específicos (II)</h3>
+      <div class="lbl">Apartados</div>
+      <ul class="ap"><li>Mantenimiento de la biodiversidad</li><li>Minimización de la erosión en terrenos agrícolas</li></ul>
+      <div class="lbl">Claves</div>
+      <ul><li><b>Recurso natural</b>: biótico/abiótico · renovable/no renovable.</li><li>Recuperación y regeneración de ecosistemas; control de la erosión del suelo.</li></ul>
+      <div class="lbl">Normas / siglas</div>
+      <span class="chip c-key">Biodiversidad</span><span class="chip c-key">Suelos</span>
+    </div>
+
+    <div class="u" style="--bd:var(--m2)">
+      <div class="code">M2 · UD 2.4</div>
+      <h3>Norma ISO 14000</h3>
+      <div class="lbl">Apartados</div>
+      <ul class="ap"><li>Introducción y fundamentos (I, II)</li></ul>
+      <div class="lbl">Claves</div>
+      <ul><li><b>SGMA</b>: sistema de gestión medioambiental certificado.</li><li><b>ISO 14001</b> (privado, internacional) vs <b>EMAS</b> (reglamento UE, registro público, más exigente).</li><li>Prevención de la contaminación en equilibrio con lo económico.</li></ul>
+      <div class="lbl">Normas / siglas</div>
+      <span class="chip c-iso">ISO 14001</span><span class="chip c-key">EMAS</span>
+    </div>
+
+    <div class="u" style="--bd:var(--m2)">
+      <div class="code">M2 · UD 2.5</div>
+      <h3>Interpretación de la legislación ambiental</h3>
+      <div class="lbl">Apartados</div>
+      <ul class="ap"><li>Conocimiento de la legislación medioambiental</li></ul>
+      <div class="lbl">Claves</div>
+      <ul><li>Bloques: calidad del aire y del agua, residuos, suelo, biodiversidad, químicos.</li><li>Niveles nacional y UE.</li></ul>
+      <div class="lbl">Normas / siglas</div>
+      <span class="chip c-law">REACH 1907/2006</span><span class="chip c-law">Dir. 2020/2184 (agua)</span>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===================== MODULO 3 ===================== -->
+<section id="m3">
+  <h2><span class="dot" style="background:var(--m3)"></span> Módulo 3 — Eficiencia Energética <span class="modbar">· 6 unidades</span></h2>
+  <div class="grid">
+
+    <div class="u" style="--bd:var(--m3)">
+      <div class="code">M3 · UD 3.1</div>
+      <h3>Herramientas de diagnóstico energético</h3>
+      <div class="lbl">Apartados</div>
+      <ul class="ap"><li>Auditoría energética</li><li>Sistemas de medición de consumos (I, II)</li></ul>
+      <div class="lbl">Claves</div>
+      <ul><li><b>Auditoría energética</b>: análisis detallado del consumo para hallar oportunidades de ahorro.</li><li>Recolección de datos · <b>línea base</b> · detección de fugas térmicas.</li></ul>
+      <div class="lbl">Normas / siglas</div>
+      <span class="chip c-law">UNE-EN 16247</span><span class="chip c-iso">ISO 50001</span>
+    </div>
+
+    <div class="u" style="--bd:var(--m3)">
+      <div class="code">M3 · UD 3.2</div>
+      <h3>Estrategias de mejora (II)</h3>
+      <div class="lbl">Apartados</div>
+      <ul class="ap"><li>Equipamiento exterior · Costes mantenimiento vs ineficiencia</li><li>Autoconsumo · Solar térmica · Solar fotovoltaica · Eólica</li></ul>
+      <div class="lbl">Claves</div>
+      <ul><li><b>Autoconsumo</b> con renovables (solar/eólica).</li><li>Recuperación de calor, aislamiento, bombas de calor.</li></ul>
+      <div class="lbl">Normas / siglas</div>
+      <span class="chip c-law">RD 244/2019 (autoconsumo)</span><span class="chip c-law">RD 413/2014</span>
+    </div>
+
+    <div class="u" style="--bd:var(--m3)">
+      <div class="code">M3 · UD 3.3</div>
+      <h3>Sistemas de monitorización del consumo</h3>
+      <div class="lbl">Apartados</div>
+      <ul class="ap"><li>La aplicación de sistemas de monitorización</li></ul>
+      <div class="lbl">Claves</div>
+      <ul><li>Datos en tiempo real (hardware + software) para decidir con información.</li><li>Base para sostenibilidad y reducción de CO₂.</li></ul>
+      <div class="lbl">Normas / siglas</div>
+      <span class="chip c-key">Monitorización</span>
+    </div>
+
+    <div class="u" style="--bd:var(--m3)">
+      <div class="code">M3 · UD 3.4</div>
+      <h3>Norma ISO 50001</h3>
+      <div class="lbl">Apartados</div>
+      <ul class="ap"><li>La norma ISO 50001</li></ul>
+      <div class="lbl">Claves</div>
+      <ul><li><b>SGE</b>: Sistema de Gestión de la Energía (no solo medir: políticas + objetivos + plan).</li><li>Mejora continua de la eficiencia y reducción de costes/impacto.</li></ul>
+      <div class="lbl">Normas / siglas</div>
+      <span class="chip c-iso">ISO 50001:2018</span>
+    </div>
+
+    <div class="u" style="--bd:var(--m3)">
+      <div class="code">M3 · UD 3.5</div>
+      <h3>Ayudas (UE, nacionales, autonómicas)</h3>
+      <div class="lbl">Apartados</div>
+      <ul class="ap"><li>Acuerdo de París y PNIEC 2021-2030</li><li>Principales líneas de ayuda</li></ul>
+      <div class="lbl">Claves</div>
+      <ul><li><b>IPCC</b> (ciencia) → <b>CMNUCC</b> → <b>Acuerdo de París</b>.</li><li><b>PNIEC 2021-2030</b>: hoja de ruta de energía y clima en España.</li></ul>
+      <div class="lbl">Normas / siglas</div>
+      <span class="chip c-key">Acuerdo de París</span><span class="chip c-key">PNIEC</span><span class="chip c-key">IPCC</span><span class="chip c-key">CMNUCC</span>
+    </div>
+
+    <div class="u" style="--bd:var(--m3)">
+      <div class="code">M3 · UD 3.6</div>
+      <h3>Diagnóstico energético inicial</h3>
+      <div class="lbl">Apartados</div>
+      <ul class="ap"><li>Factores que influyen en las necesidades energéticas de una instalación</li></ul>
+      <div class="lbl">Claves</div>
+      <ul><li>El consumo depende de: tipo de actividad, maquinaria, superficie, clima, horario…</li></ul>
+      <div class="lbl">Normas / siglas</div>
+      <span class="chip c-key">Diagnóstico inicial</span>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===================== MODULO 4 ===================== -->
+<section id="m4">
+  <h2><span class="dot" style="background:var(--m4)"></span> Módulo 4 — Buenas Prácticas Sociales <span class="modbar">· 3 unidades (con partes)</span></h2>
+  <div class="grid">
+
+    <div class="u" style="--bd:var(--m4)">
+      <div class="code">M4 · UD 4.1</div>
+      <h3>Diagnóstico de buenas prácticas sociales</h3>
+      <div class="lbl">Apartados</div>
+      <ul class="ap"><li>Auditoría laboral (I, II)</li><li>Encuestas de clima laboral</li></ul>
+      <div class="lbl">Claves</div>
+      <ul><li><b>Auditoría</b> (def. de la LAC): revisión y verificación con emisión de informe.</li><li><b>Auditoría laboral</b>: evalúa el cumplimiento de las leyes laborales.</li></ul>
+      <div class="lbl">Normas / siglas</div>
+      <span class="chip c-law">LAC</span><span class="chip c-law">Ley 31/1995 (LPRL)</span>
+    </div>
+
+    <div class="u" style="--bd:var(--m4)">
+      <div class="code">M4 · UD 4.2 (I)</div>
+      <h3>Mejora de prácticas sociales — Parte I</h3>
+      <div class="lbl">Apartados</div>
+      <ul class="ap"><li>Plan de igualdad (I, II)</li><li>Concepto de igualdad · Igualdad formal</li></ul>
+      <div class="lbl">Claves</div>
+      <ul><li><b>Plan de igualdad</b>: medidas para corregir la desigualdad entre hombres y mujeres.</li><li><b>Igualdad formal</b> = igualdad ante la ley.</li></ul>
+      <div class="lbl">Normas / siglas</div>
+      <span class="chip c-law">LO 3/2007</span>
+    </div>
+
+    <div class="u" style="--bd:var(--m4)">
+      <div class="code">M4 · UD 4.2 (II)</div>
+      <h3>Mejora de prácticas sociales — Parte II</h3>
+      <div class="lbl">Apartados</div>
+      <ul class="ap"><li>Igualdad real (eliminación de discriminaciones)</li><li>Igualdad efectiva (gestión de la diversidad)</li><li>Estándar Global G.R.A.S.P.</li></ul>
+      <div class="lbl">Claves</div>
+      <ul><li>Progresión: igualdad <b>formal → real → efectiva</b>.</li><li><b>GRASP</b>: módulo de evaluación de prácticas sociales/laborales.</li></ul>
+      <div class="lbl">Normas / siglas</div>
+      <span class="chip c-law">Ley 15/2022</span><span class="chip c-std">GRASP</span>
+    </div>
+
+    <div class="u" style="--bd:var(--m4)">
+      <div class="code">M4 · UD 4.3</div>
+      <h3>Diagnóstico del estado social</h3>
+      <div class="lbl">Apartados</div>
+      <ul class="ap"><li>Procedimiento de diagnóstico · Herramientas</li><li>La memoria de sostenibilidad</li></ul>
+      <div class="lbl">Claves</div>
+      <ul><li><b>Estado social</b>: clima, cultura, satisfacción de la plantilla.</li><li><b>Memoria de sostenibilidad</b> (estándares <b>GRI</b>) como herramienta de transparencia.</li></ul>
+      <div class="lbl">Normas / siglas</div>
+      <span class="chip c-std">GRI</span><span class="chip c-key">Memoria de sostenibilidad</span>
+    </div>
+
+  </div>
+  <div class="warn">📎 Nota: en la carpeta hay un PDF duplicado — <code>M4_UD02(I)_ADGD50 (1).pdf</code> es idéntico a <code>M4_UD02(I)_ADGD50.pdf</code>. Puedes borrar el del «(1)» sin perder nada.</div>
+</section>
+
+</main>
+
+<footer>
+  Esquema por unidad · Certificado ADGD50 (M1–M4, 21 unidades) · complementa al <a href="Esquema-Temario.html">esquema global</a>.
+</footer>
+</body>
+</html>
