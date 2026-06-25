@@ -342,6 +342,23 @@ const CORE = {
   'Q':  { grupo:'core', plano:'protraccion-serrato', equipo:'pared/banda',
     n:'Serratus wall slide — hold isometrico', d:'3x20-30 seg', note:'Antebrazos en la pared · Deslizar arriba protraendo las escapulas y mantener arriba · Serrato en cadena cerrada de pie · Lumbar neutra, costillas abajo — NO arquear para alcanzar mas alto', wid:'serratus-wall-slide',
     variant:'S1-2: rango bajo 3x15s · S3-4: rango medio 3x20s · S5-6: rango alto + protraccion maxima 3x25s · S7+: con banda alrededor de los antebrazos 3x30s' },
+  'R':  { grupo:'core', plano:'anti-rot+pull', equipo:'mancuerna/banco',
+    n:'Remo unilateral en banco con pierna contraria elevada', d:'3x10 cada lado', note:'Una mano y una rodilla apoyadas en el banco · La pierna contraria se extiende y se eleva a la altura de la cadera (isometrica) · Rema con el brazo libre sin rotar la pelvis ni el tronco — el reto es anti-rotacion · El tiron sale de la escapula y el dorsal, no de la zona baja de la espalda · Lumbar y cuello neutros, mirada al suelo', wid:'remo-unilateral-pierna-elevada', gym:true,
+    variant:'S1-2: sin pierna elevada, remo apoyado clasico carga ligera · S3-4: pierna elevada a media altura, remo controlado · S5-6: pierna a la altura de la cadera + pausa 1s arriba · S7+: pierna elevada + excentrico 3s + carga progresiva',
+    homeAlt:{ n:'Remo unilateral con banda y pierna elevada', d:'3x10 cada lado', note:'Banda anclada baja al frente · Misma posicion en banco o silla con la pierna contraria elevada · Anti-rotacion con resistencia de banda', variant:'S1-2: sin pierna elevada banda ligera · S3-4: pierna elevada banda media · S5-6: + pausa 1s arriba · S7+: banda fuerte + excentrico 3s' } },
+  'S':  { grupo:'core', plano:'anti-lat+abd-cadera', equipo:'banda',
+    n:'Plancha lateral con abduccion de cadera resistida con banda', d:'3x10-12 cada lado', note:'Plancha lateral sobre el antebrazo · Banda elastica anclada rodeando la pierna superior · Elevar la pierna (abduccion de cadera) contra la banda manteniendo la pelvis nivelada y el tronco estable · Anti-flexion lateral + gluteo medio · Cuello en linea con la columna (no dejar caer la cabeza ni girarla hacia el techo); puedes apoyar la cabeza sobre el brazo de abajo', wid:'plank-lateral-abduccion-banda',
+    variant:'S1-2: plancha lateral con rodilla inferior apoyada, abduccion sin banda · S3-4: plancha completa, abduccion sin banda o banda ligera · S5-6: plancha completa banda media + pausa 1s arriba · S7+: banda fuerte + excentrico 3s' },
+  'T':  { grupo:'core', plano:'anti-ext (marcha overhead)', equipo:'kettlebell/banda',
+    n:'Marcha con carga overhead (KB) y banda en el pie', d:'3x8-10 cada lado', note:'De pie, KB sostenida overhead con el brazo extendido y bloqueado · Banda anclada baja rodeando el pie que marcha · Elevar la rodilla (marcha) controlada contra la banda sin perder la verticalidad de la KB · Doble reto: estabilidad overhead del hombro + anti-extension del core · Costillas abajo, NO arquear la lumbar para sostener el peso arriba · Cuello neutro y hombro activo, no encogerlo hacia la oreja', wid:'marcha-overhead-banda', gym:true,
+    variant:'S1-2: sin KB, solo marcha con banda (patron y equilibrio) · S3-4: KB ligera 4-6 kg overhead estatica + marcha sin banda · S5-6: KB media + banda ligera + pausa 1s con la rodilla arriba · S7+: KB mas pesada + banda media controlada',
+    homeAlt:{ n:'Marcha overhead con mancuerna y banda', d:'3x8-10 cada lado', note:'Sustituye la KB por una mancuerna ligera overhead · Misma marcha resistida con banda · Costillas abajo, lumbar neutra', variant:'S1-2: sin peso solo marcha con banda · S3-4: mancuerna ligera estatica + marcha · S5-6: mancuerna media + banda ligera · S7+: mancuerna media + banda media' } },
+  'U':  { grupo:'core', plano:'anti-rot', equipo:'polea/banda',
+    n:'Bird-dog resistido con polea o banda', d:'3x8-10 cada lado', note:'Cuadrupedia con una mano sujetando una banda/polea anclada al frente · Extender la pierna contraria hacia atras mientras se tracciona con el brazo, coordinando ambos · La resistencia frontal intenta rotar y flexionar el tronco: el trabajo es resistirla (anti-rotacion) · Pelvis nivelada, lumbar neutra, sin arquear al extender la pierna · Cuello largo, mirada al suelo', wid:'bird-dog-resistido',
+    variant:'S1-2: bird-dog clasico sin resistencia (dominar el patron) · S3-4: solo traccion de brazo con banda ligera, pierna estatica · S5-6: brazo + pierna coordinados banda media + pausa 2s · S7+: banda/polea fuerte + excentrico lento' },
+  'V':  { grupo:'core', plano:'rotacion-toracica+anti-rot', equipo:'banda',
+    n:'Rotacion toracica controlada con banda (media sentadilla)', d:'3x10 cada lado', note:'De pie en media sentadilla, pies anchos, sujetando una banda anclada en alto al costado · Rotar de forma controlada hacia el lado de la banda llevando el giro al segmento TORACICO, no a la lumbar · La pelvis y la lumbar permanecen fijas y neutras — el movimiento es de la columna dorsal · Foco en control, sin tirones · Cuello acompana el giro de la columna alta, hombros lejos de las orejas', wid:'rotacion-toracica-banda',
+    variant:'S1-2: anti-rotacion pura (Pallof) — resistir sin girar · S3-4: rotacion toracica de rango corto banda ligera · S5-6: rango medio banda media + pausa 1s · S7+: rango completo controlado banda media excentrico 3s' },
 };
 
 // ─── HIP — Movilidad de cadera (grupo "pull de cadera") ────────────
@@ -1066,6 +1083,104 @@ EX_DB['bird-dog'] = {
   errores: ['Pelvis que rota al elevar la pierna.', 'Hiperextension lumbar al elevar la pierna.', 'Levantar la barbilla para mirar al frente — extiende la cervical y la carga; el cuello sigue a la columna, con la mirada al suelo.', 'Dejar caer la cabeza entre los hombros — encoge los trapecios.', 'Velocidad excesiva — la pausa es parte del ejercicio.'],
   variantes: ['S1-2: brazo o pierna por separado. S3-4: contralateral con pausa 3s. S5-6: banda en el tobillo. S7+: sobre superficie inestable.', 'Cervical: si el cuello se cansa de sostener la cabeza, acorta la palanca (mueve solo brazo o solo pierna) y comprueba en un espejo lateral que oreja, hombro y cadera quedan en linea. La coronilla "empuja" hacia delante, no la barbilla.'],
   notas_columna: 'El bird dog es el ejercicio de activacion de multifidos mas validado para dolor lumbar inespecifico y hernia discal en Fase 1 y 2. La co-contraccion de multifidos y transverso abdominal que produce es el mecanismo protector del segmento discal afectado. Cervical: en cuadrupedia la cabeza pesa en voladizo; mantener el cuello neutro (mirada al suelo) evita que los extensores cervicales y los trapecios se sobrecarguen al sostenerla.'
+};
+
+EX_DB['remo-unilateral-pierna-elevada'] = {
+  nombre: 'Remo unilateral en banco con pierna contraria elevada',
+  categoria: 'Core F2 / Tiro',
+  color: '#993C1D',
+  descripcion: 'Remo unilateral con mancuerna apoyado en un banco, con la pierna contraria extendida y elevada. Combina el patron de tiro horizontal (dorsal, romboides, biceps) con una fuerte demanda anti-rotacion del core y activacion de la cadena posterior por la pierna en suspension. La carga axial sobre la columna es minima porque el tronco esta horizontal y apoyado.',
+  posicion: 'Una mano y la rodilla del mismo lado apoyadas en el banco; el tronco queda horizontal. La otra pierna se extiende hacia atras y se eleva hasta la altura de la cadera. Columna y cuello neutros, mirada al suelo.',
+  pasos: [
+    'Coloca una mano y una rodilla en el banco; el tronco queda horizontal y paralelo al suelo.',
+    'Extiende la pierna contraria hacia atras y elevala hasta la altura de la cadera — mantenla isometrica todo el ejercicio (activa gluteo e isquios).',
+    'Activa el core: lumbar neutra, pelvis sin rotar.',
+    'Rema con el brazo libre llevando el codo hacia la cadera; la escapula retrae primero.',
+    'El reto es NO permitir que la pelvis ni el tronco roten hacia el lado que rema — es un ejercicio anti-rotacion.',
+    'Baja la mancuerna controlando el excentrico sin perder la posicion de la pierna.',
+    'Cuello largo y mirada al suelo durante toda la serie.',
+  ],
+  errores: ['Rotar la pelvis o el tronco al tirar — pierde el componente anti-rotacion y carga la lumbar de forma asimetrica.', 'Dejar caer la pierna elevada o llevarla por encima de la cadera (hiperextension lumbar).', 'Tirar con la zona baja de la espalda en lugar de la escapula y el dorsal.', 'Levantar la cabeza para mirar al frente — el cuello sigue a la columna, mirada al suelo.'],
+  variantes: ['S1-2: sin pierna elevada, remo apoyado clasico con carga ligera. S3-4: pierna elevada a media altura, remo controlado. S5-6: pierna a la altura de la cadera + pausa 1s arriba. S7+: pierna elevada + excentrico 3s + carga progresiva.', 'Casa: remo con banda anclada baja al frente en la misma posicion (sustituye la mancuerna).'],
+  notas_columna: 'Para una extrusion bilateral L4-L5 y L5-S1, los ejercicios anti-rotacion son de los mas protectores: entrenan el core a RESISTIR el giro en lugar de generarlo, evitando el cizallamiento rotacional sobre el disco. El apoyo en banco mantiene el tronco horizontal y elimina la carga compresiva axial, mientras la pierna elevada activa el gluteo y los multifidos de forma isometrica. El criterio de seguridad es mantener la pelvis estable: si no puedes controlar la rotacion, baja la carga o regresa a la version sin pierna elevada.'
+};
+
+EX_DB['plank-lateral-abduccion-banda'] = {
+  nombre: 'Plancha lateral con abduccion de cadera resistida con banda',
+  categoria: 'Core F2',
+  color: '#993C1D',
+  descripcion: 'Plancha lateral sobre el antebrazo a la que se anade una abduccion de cadera de la pierna superior contra una banda elastica. Combina el trabajo anti-flexion lateral del core (cuadrado lumbar, oblicuos) con la activacion del gluteo medio, clave para la estabilidad pelvica. Sin carga axial sobre la columna.',
+  posicion: 'Plancha lateral apoyado sobre el antebrazo, cuerpo en linea, cadera elevada. Banda elastica anclada rodeando la pierna superior (tobillo o muslo). Cuello en linea con la columna.',
+  pasos: [
+    'Adopta la plancha lateral: codo bajo el hombro, cadera elevada, cuerpo en linea recta.',
+    'Activa el core para no dejar caer la cadera — anti-flexion lateral.',
+    'Con la banda rodeando la pierna superior, eleva esa pierna en abduccion contra la resistencia.',
+    'Manten la pelvis nivelada y el tronco estable — no rotar la cadera hacia atras.',
+    'Pausa 1 segundo en la abduccion maxima.',
+    'Baja la pierna controlando el excentrico sin perder la altura de la cadera.',
+    'Cuello en linea con la columna; si se carga, apoya la cabeza sobre el brazo de abajo.',
+  ],
+  errores: ['Dejar caer la cadera inferior — se pierde la plancha.', 'Rotar la pelvis hacia atras al abrir la pierna (compensacion del TFL).', 'Llevar la pierna a la abduccion con la lumbar en vez del gluteo.', 'Dejar caer la cabeza hacia el suelo o girarla para mirar al techo.'],
+  variantes: ['S1-2: plancha lateral con rodilla inferior apoyada, abduccion sin banda. S3-4: plancha completa, abduccion sin banda o banda ligera. S5-6: plancha completa con banda media + pausa 1s arriba. S7+: banda fuerte + excentrico 3s.'],
+  notas_columna: 'La plancha lateral es uno de los "Big 3" de McGill para la estabilizacion lumbar: entrena el cuadrado lumbar y los oblicuos sin generar compresion ni flexion del disco. Anadir la abduccion resistida activa el gluteo medio, cuya debilidad (frecuente en el lado afecto en presentaciones antalgicas L5-S1) provoca caida pelvica y sobrecarga compensatoria de la columna lumbar. El criterio de seguridad es mantener la pelvis nivelada: si se rota o cae, reducir la banda o regresar a la version con rodilla apoyada.'
+};
+
+EX_DB['marcha-overhead-banda'] = {
+  nombre: 'Marcha con carga overhead (KB) y banda en el pie',
+  categoria: 'Core F2',
+  color: '#993C1D',
+  descripcion: 'Ejercicio de estabilidad global: se sostiene una kettlebell overhead con un brazo bloqueado mientras se realiza una marcha (elevacion de rodilla) controlada contra una banda anclada al pie. Exige estabilidad escapulo-humeral overhead y un fuerte control anti-extension y anti-rotacion del core para no arquear la lumbar bajo la carga elevada.',
+  posicion: 'De pie, KB sostenida sobre la cabeza con el brazo extendido y el codo bloqueado. Banda elastica anclada baja rodeando el pie que va a marchar. Costillas abajo, lumbar neutra.',
+  pasos: [
+    'Lleva la KB a posicion overhead con el brazo totalmente extendido y el hombro activo (empaquetado, lejos de la oreja).',
+    'Fija las costillas abajo y activa el core — la clave es NO arquear la lumbar para sostener el peso arriba.',
+    'Con la banda rodeando el pie, eleva la rodilla (marcha) de forma lenta y controlada contra la resistencia.',
+    'Manten la KB perfectamente vertical y estable durante toda la marcha.',
+    'Baja el pie con control y repite; cambia de lado segun el protocolo.',
+    'Cuello neutro y hombro estable — no encogerlo hacia la oreja.',
+  ],
+  errores: ['Arquear la lumbar (hiperextension) para sostener la KB — el fallo mas peligroso.', 'Dejar que la KB se desplace hacia delante o lateralmente.', 'Encoger el trapecio del lado de la carga.', 'Marcha con impulso en vez de control.'],
+  variantes: ['S1-2: sin KB, solo marcha con banda para el patron y el equilibrio. S3-4: KB ligera 4-6 kg overhead estatica + marcha sin banda. S5-6: KB media + banda ligera + pausa 1s con la rodilla arriba. S7+: KB mas pesada + banda media controlada.', 'Casa: misma marcha resistida sosteniendo una mancuerna ligera overhead en lugar de la KB.'],
+  notas_columna: 'La carga overhead obliga al core a trabajar en anti-extension: el peso por encima de la cabeza tiende a arquear la lumbar, y resistir ese arqueo es exactamente lo que protege el segmento L4-L5/L5-S1 al ensenar a mantener la pelvis neutra bajo carga. La marcha resistida anade un componente anti-rotacion y de control de cadera. Criterio de seguridad absoluto: si la lumbar se arquea o aparece irradiacion S1, bajar el peso o quitar la KB. Introducir solo desde S3-4 en adelante, nunca en fase inicial.'
+};
+
+EX_DB['bird-dog-resistido'] = {
+  nombre: 'Bird-dog resistido con polea o banda',
+  categoria: 'Core F2',
+  color: '#993C1D',
+  descripcion: 'Progresion del bird-dog clasico en la que la mano que se extiende tracciona contra una banda o polea anclada al frente, mientras la pierna contraria se extiende hacia atras. La resistencia frontal aumenta la demanda anti-rotacion y de co-contraccion de multifidos y transverso, sin anadir carga compresiva axial.',
+  posicion: 'Cuadrupedia: rodillas bajo las caderas, manos bajo los hombros, columna neutra. Una mano sujeta la banda/polea anclada al frente. Cuello largo, mirada al suelo.',
+  pasos: [
+    'Adopta la cuadrupedia con la columna neutra y el core activo.',
+    'Sujeta la banda o el asa de la polea anclada al frente con una mano.',
+    'Extiende la pierna contraria hacia atras hasta la altura de la cadera mientras traccionas con el brazo, coordinando ambos movimientos.',
+    'La resistencia frontal intenta rotar y flexionar tu tronco: tu trabajo es resistirla manteniendo la pelvis nivelada.',
+    'No arquees la lumbar al extender la pierna — costillas abajo.',
+    'Pausa, vuelve con control y repite; alterna lados.',
+    'Cuello largo y mirada al suelo durante toda la serie.',
+  ],
+  errores: ['Permitir que el tronco rote hacia el lado de la traccion.', 'Hiperextender la lumbar al extender la pierna.', 'Elevar la pierna por encima de la cadera.', 'Levantar la barbilla para mirar al frente.'],
+  variantes: ['S1-2: bird-dog clasico sin resistencia para dominar el patron. S3-4: solo traccion de brazo con banda ligera, pierna estatica. S5-6: brazo + pierna coordinados con banda media + pausa 2s. S7+: banda o polea fuerte + excentrico lento.'],
+  notas_columna: 'El bird-dog es el ejercicio de activacion de multifidos mas validado para hernia discal lumbar; anadir resistencia frontal convierte la fase de extension en un reto anti-rotacion que refuerza la co-contraccion protectora del segmento L4-L5/L5-S1 sin carga axial. La resistencia debe ser moderada: si provoca rotacion de la pelvis o arqueo lumbar, reducir la banda o volver al bird-dog clasico. Progresar solo cuando el patron base se ejecuta con la pelvis perfectamente estable.'
+};
+
+EX_DB['rotacion-toracica-banda'] = {
+  nombre: 'Rotacion toracica controlada con banda',
+  categoria: 'Core F2',
+  color: '#993C1D',
+  descripcion: 'Movimiento de rotacion controlada de la columna toracica con una banda anclada en alto, en posicion de media sentadilla con base ancha. Entrena la movilidad rotacional del segmento dorsal y el control del core, disociando la rotacion toracica de la lumbar, que debe permanecer fija.',
+  posicion: 'De pie en media sentadilla, pies mas anchos que los hombros, sujetando con ambas manos una banda anclada en alto a un costado. Pelvis y lumbar neutras y fijas.',
+  pasos: [
+    'Adopta la media sentadilla con base ancha y pelvis estable.',
+    'Sujeta la banda anclada en alto a un costado con los brazos semiextendidos.',
+    'Rota de forma controlada hacia el lado de la banda llevando el giro a la columna TORACICA (caja toracica), no a la lumbar.',
+    'La pelvis y la zona lumbar permanecen fijas y mirando al frente — el movimiento es dorsal.',
+    'Acompana el giro con la mirada y el cuello; hombros lejos de las orejas.',
+    'Vuelve con control resistiendo la banda; completa las repeticiones y cambia de lado.',
+  ],
+  errores: ['Rotar desde la lumbar en vez de la columna toracica — es el error a evitar con hernia.', 'Mover la pelvis o los pies con el giro.', 'Tirones bruscos o usar impulso en lugar de control.', 'Perder la posicion neutra de la lumbar al rotar.'],
+  variantes: ['S1-2: anti-rotacion pura tipo Pallof — resistir la banda sin girar. S3-4: rotacion toracica de rango corto con banda ligera. S5-6: rango medio con banda media + pausa 1s. S7+: rango completo controlado con banda media y excentrico 3s.'],
+  notas_columna: 'La rotacion bajo carga es uno de los movimientos mas sensibles para una hernia L4-L5/L5-S1 si se ejecuta desde la lumbar. La clave terapeutica de este ejercicio es disociar: la movilidad rotacional debe salir de la columna toracica (que esta hecha para rotar) mientras la lumbar permanece neutra y estable (anti-rotacion). Por eso la progresion empieza en anti-rotacion pura (Pallof) y solo anade rango toracico cuando hay control. Si se siente que el giro "baja" a la lumbar o aparece irradiacion, reducir el rango o volver a la version isometrica.'
 };
 
 EX_DB['hip-thrust'] = {
