@@ -779,6 +779,7 @@ function mobCard(ex,color){
 function renderMob(){
   const render=(blk,elId)=>{const el=document.getElementById(elId);if(!el||!blk)return;el.innerHTML=blk.exs.map(ex=>mobCard(ex,blk.color)).join('');};
   render(typeof MOB_BLOCK_HIP!=='undefined'?MOB_BLOCK_HIP:null,'mobHipContainer');
+  render(typeof MOB_BLOCK_NECK!=='undefined'?MOB_BLOCK_NECK:null,'mobNeckContainer');
   render(typeof MOB_BLOCK_MOVILIDAD_CADERA!=='undefined'?MOB_BLOCK_MOVILIDAD_CADERA:null,'mobCaderaContainer');
   render(typeof MOB_BLOCK_MOVILIDAD_ESPALDA!=='undefined'?MOB_BLOCK_MOVILIDAD_ESPALDA:null,'mobEspaldaContainer');
   render(typeof MOB_BLOCK_ESTABILIDAD_FOAM!=='undefined'?MOB_BLOCK_ESTABILIDAD_FOAM:null,'mobFoamContainer');

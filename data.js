@@ -62,6 +62,8 @@ const MOB_BLOCK_A1 = {
     { n: 'Activacion de core isometrica en colchon', d: '5x5 seg — boca arriba', note: 'Antes de moverse · Rodillas dobladas · Pies en colchon · Brace suave 20% · Exhalacion controlada · Sin retroversion', wid: 'pelvic-clock' },
     { n: 'Pelvic tilt milimetrico en colchon', d: '10 rep muy lentas', note: 'Usar activacion anterior · Aplanar lumbar contra colchon milimetricamente · Sin retroversion activa · Solo contacto lumbar con sabana', wid: 'pelvic-clock' },
     { n: 'Balanceo lateral de rodillas en colchon', d: '10 rep — 2 cm cada lado', note: 'Pies apoyados en cama · Dejar caer rodillas 2 cm a cada lado · Movimiento casi imperceptible · Lubrica facetas · No forzar el rango', wid: 'pelvic-clock' },
+    { n: 'Chin tuck supino (activacion cervical)', d: '2x8 — hold 5 seg', note: 'En la cama, boca arriba · Doble menton alargando la nuca SIN levantar la cabeza · Despierta los flexores profundos del cuello · Base postural del dia y prevencion cervical · Mismo control que evita el chin-poke en el core', wid: 'chin-tuck', variant: 'S1-2: retraccion suave sin elevar 2x8 · S3-4: + hold 5 seg · S5-6: cabeza despegada 2 cm · S7+: sostener despegada 10 seg' },
+    { n: 'Neck CARs — movilidad cervical', d: '1x3 cada direccion', note: 'Circulos cervicales lentos en rango sin dolor · Hombros quietos · No forzar la extension-rotacion final (cierra el foramen) · Salud articular del cuello', wid: 'neck-cars' },
     { n: 'Pies en silla 90/90 o Viparita Karani', d: '5 min', note: 'Alternar dias · Respiracion diafragmatica · Gluteos separados de la pared — lumbar neutra', wid: 'pies-silla' },
     { n: 'Hip flexor stretch', d: '2x40 seg cada lado', note: 'Psoas diario · Sin retroversion pelvica · Gluteo trasero activo', wid: 'hip-flexor' },
     { n: 'Neural flossing nervio ciatico', d: '2x8 cada lado', note: 'Solo sin irradiacion activa · Deslizamiento puro — cabeza atras al extender la pierna · Cero tension · Parar si calambre o irradiacion', wid: 'neural-flossing', variant: 'S1-2: angulo 30-40° muy suave · S3-4: angulo 60° ritmo lento · S5-6: angulo 80° ritmo moderado · S7+: angulo completo + dorsiflexion activa' },
@@ -76,6 +78,7 @@ const MOB_BLOCK_A1_NEURAL = {
     { n: 'Activacion de core isometrica en colchon', d: '5x5 seg — boca arriba', note: 'Antes de moverse · Brace suave 20% · Exhalacion controlada', wid: 'pelvic-clock' },
     { n: 'Pelvic tilt milimetrico en colchon', d: '10 rep muy lentas', note: 'Aplanar lumbar contra colchon milimetricamente · Sin retroversion activa', wid: 'pelvic-clock' },
     { n: 'Balanceo lateral de rodillas en colchon', d: '10 rep — 2 cm cada lado', note: 'Movimiento casi imperceptible · Lubrica facetas', wid: 'pelvic-clock' },
+    { n: 'Chin tuck supino (activacion cervical)', d: '2x8 — hold 5 seg', note: 'Boca arriba · Doble menton alargando la nuca SIN levantar la cabeza · Activa los flexores profundos del cuello · Prevencion cervical diaria', wid: 'chin-tuck' },
     { n: 'Viparita Karani', d: '8 min', note: 'Dia neural · Version prolongada · Respiracion diafragmatica lenta · Gluteos separados de la pared', wid: 'viparita' },
     { n: 'Hip flexor stretch', d: '2x40 seg cada lado', note: 'Pasivo · Sin forzar · Gluteo trasero activo', wid: 'hip-flexor' },
     { n: 'Neural flossing nervio ciatico', d: '2x6 cada lado', note: 'Solo sin irradiacion activa · Deslizamiento puro · Muy suave', wid: 'neural-flossing', variant: 'S1-2: angulo 30-40° muy suave · S3-4: angulo 60° · S5-6: angulo 80° · S7+: angulo completo + dorsiflexion' },
@@ -86,7 +89,7 @@ const MOB_BLOCK_A1_NEURAL = {
 // ─── B — CALENTAMIENTOS PRE-GYM (por día) ─────────────────────────
 
 const MOB_BLOCK_B_LUN = {
-  id: 'B', name: 'Calentamiento — Cadena posterior', dur: '15 min', color: '#1A6E3A',
+  id: 'B', name: 'Calentamiento — Cadena posterior', dur: '18 min', color: '#1A6E3A',
   exs: [
     { n: 'Heel sit', d: '2x45 seg', note: 'Primero · Tronco erguido estricto · Sin retroversion lumbar · Cuadriceps activos frenando · Despues de al menos 30 min en bipedestacion', wid: 'heel-sit-ex' },
     { n: 'Couch stretch', d: '2x40 seg cada lado', note: 'Psoas pre-RDL · Rodilla trasera en suelo junto a pared', variant: 'S1-2: tronco erguido manos en rodilla delantera · S3-4: manos en cadera · S5-6: tronco ligeramente atras · S7+: pie en pared' },
@@ -94,6 +97,8 @@ const MOB_BLOCK_B_LUN = {
     { n: 'Deadbug activacion — un miembro', d: '2x6 cada lado', note: 'Core pre-cadena posterior · Lumbar pegada al suelo', wid: 'dead-bug' },
     { n: 'Cat-cow toracico', d: '2x8 lentos', note: 'Solo movimiento toracico · Lumbar estable', wid: 'cat-cow' },
     { n: 'Rotacion toracica en suelo', d: '2x6 cada lado', note: 'Hombros en suelo · Amplitud sin dolor', wid: 'rotacion-toracica' },
+    { n: 'Apertura toracica con disco (thoracic plate opener)', d: '2x6-8 — calentamiento', note: 'Arrodillado frente a un foam roller · Disco ligero (o mancuerna) overhead abriendo el pecho · Extension TORACICA pre-RDL e hiperext — mejora la postura de bisagra y libera el cuello · Lumbar neutra', wid: 'apertura-toracica-disco', variant: 'S1-2: sin peso, rango corto · S3-4: disco ligero + pausa 2s · S5-6: disco 5-10kg apertura completa · S7+: en banco con omoplatos al borde' },
+    { n: 'Inclinacion lateral con pica (side bend)', d: '2x6 cada lado', note: 'Pica overhead · Inclinacion lateral con espalda recta · Elonga dorsal, intercostales y oblicuos · Libera los costados · Movimiento toracico/costal, no lumbar', wid: 'side-bend-pica', variant: 'S1-2: sin pica, manos en la cabeza · S3-4: pica rango medio · S5-6: rango completo excentrico · S7+: barra ligera sobre los hombros' },
     { n: 'Elephant walk estatico', d: '3x20 seg hold', note: 'Pre-RDL · Manos en superficie elevada · Piernas extendidas · PARAR si irradiacion', wid: 'elephant-walk', variant: 'S1-2: manos banco alto 60-70cm 3x15s · S3-4: banco bajo 40-45cm 3x20s · S5-6: cajon bajo 20-25cm 3x25s · S7+: manos suelo 3x30s' },
   ]
 };
@@ -122,12 +127,13 @@ const MOB_BLOCK_B_MIE = {
 };
 
 const MOB_BLOCK_B_JUE = {
-  id: 'B', name: 'Calentamiento — Empuje/Tiro + Manguito', dur: '18 min', color: '#1A6E3A',
+  id: 'B', name: 'Calentamiento — Empuje/Tiro + Manguito', dur: '20 min', color: '#1A6E3A',
   exs: [
     { n: 'Heel sit', d: '2x45 seg', note: 'Primero · Tronco erguido estricto · Sin retroversion lumbar · Cuadriceps activos frenando', wid: 'heel-sit-ex' },
     { n: 'Cat-cow toracico', d: '2x8 lentos', note: 'Solo movimiento toracico · Lumbar estable', wid: 'cat-cow' },
     { n: 'Rotacion toracica en suelo', d: '2x6 cada lado', note: 'Hombros en suelo · Amplitud sin dolor', wid: 'rotacion-toracica' },
     { n: 'Extension toracica en foam roller', d: '2 min T4-T10', wid: 'ext-toracica-foam', note: 'Solo toracico — nunca lumbar · Prepara el arco de press' },
+    { n: 'Apertura toracica con disco (thoracic plate opener)', d: '2x6-8 — calentamiento', note: 'Disco overhead sobre el foam roller abriendo el pecho · Version activa cargada que complementa la extension en foam · Prepara el arco de press y descarga el cuello · Lumbar neutra', wid: 'apertura-toracica-disco', variant: 'S1-2: sin peso, rango corto · S3-4: disco ligero + pausa 2s · S5-6: disco 5-10kg apertura completa · S7+: en banco con omoplatos al borde' },
     { n: 'Dislocaciones con banda elastica', d: '2x10 amplitud comoda', wid: 'dislocaciones', note: 'Movilidad de hombro · Prepara overhead, press y jalon · Solo rango sin dolor' },
     { n: 'Apertura de pecho con banda', d: '2x10', note: 'Apertura pectoral + retraccion escapular · Patron especifico pre-press y pre-tiro', wid: 'retraccion-escapular' },
     { n: 'Retraccion escapular activa', d: '2x10 — pausa 2 seg', wid: 'retraccion-escapular', note: 'Prepara escapula para remo y press · Codos a 90' },
@@ -283,53 +289,59 @@ const BLOCK_CORE_PISCINA = {
 // ═══════════════════════════════════════════════════════════════════
 const CORE = {
   'A':  { grupo:'core', plano:'anti-ext', equipo:'bw',
-    n:'Dead bug con extension completa', d:'3x10 cada lado', note:'Lumbar pegada al suelo siempre', wid:'dead-bug',
+    n:'Dead bug con extension completa', d:'3x10 cada lado', note:'Lumbar pegada al suelo siempre · Nuca apoyada y cuello sin tension (no levantar la cabeza)', wid:'dead-bug',
     variant:'S1-2: un miembro solo · S3-4: contralateral completo · S5-6: press palma rodilla · S7+: con peso en pie' },
   'B':  { grupo:'core', plano:'anti-rot', equipo:'bw',
-    n:'Bird dog con pausa', d:'3x10 cada lado — pausa 3 seg', note:'Control pelvico', wid:'bird-dog',
+    n:'Bird dog con pausa', d:'3x10 cada lado — pausa 3 seg', note:'Control pelvico · Cuello neutro, mirada al suelo (no levantar la barbilla)', wid:'bird-dog',
     variant:'S1-2: brazo o pierna separado · S3-4: contralateral pausa 3s · S5-6: banda tobillo · S7+: superficie inestable' },
   'C':  { grupo:'core', plano:'anti-ext', equipo:'bw',
-    n:'Plank anterior', d:'3x30-45 seg', note:'Empujar suelo con codos · Gluteo y core activos · Lumbar neutra', wid:'plank-anterior',
+    n:'Plank anterior', d:'3x30-45 seg', note:'Empujar suelo con codos · Gluteo y core activos · Lumbar neutra · Cuello largo, mirada al suelo y hombros lejos de las orejas (no mirar al frente)', wid:'plank-anterior',
     variant:'S1-2: 20s rodillas · S3-4: 30s completo · S5-6: 45s · S7+: elevacion alterna de brazo/pierna' },
   'D':  { grupo:'core', plano:'anti-lat', equipo:'bw',
-    n:'Plank lateral', d:'3x25-35 seg cada lado', note:'Cadera elevada · Cuerpo en linea · Anti-flexion lateral', wid:'plank-lateral',
+    n:'Plank lateral', d:'3x25-35 seg cada lado', note:'Cadera elevada · Cuerpo en linea · Anti-flexion lateral · Cuello en linea con la columna: no dejar caer la cabeza hacia el suelo ni girarla para mirar al techo. Si tensa el cuello, apoyar la cabeza sobre el brazo de abajo', wid:'plank-lateral',
     variant:'S1-2: rodillas 20s · S3-4: completo 25s · S5-6: 35s · S7+: abduccion de pierna superior' },
   'E':  { grupo:'core', plano:'anti-ext', equipo:'bw',
-    n:'Hollow body hold', d:'3x20 seg', note:'Lumbar neutra obligatorio · Solo sin irradiacion', wid:'hollow-body',
+    n:'Hollow body hold', d:'3x20 seg', note:'Lumbar neutra obligatorio · Solo sin irradiacion · Barbilla al pecho y mirada a los muslos — no echar la cabeza atras ni craneo el cuello (regresion: cabeza apoyada en el suelo o sobre un bloque/toalla bajos)', wid:'hollow-body',
     variant:'S1-2: rodillas 15s · S3-4: piernas 45° 20s · S5-6: piernas 30° 25s · S7+: piernas 15° 30s · F3: en barra 3x10-15s' },
   'F':  { grupo:'core', plano:'anti-ext+descomp', equipo:'barra',
-    n:'Hollow body hang colgado en barra', d:'3x10-15 seg', note:'Colgado de la barra en hollow (lumbar neutra, pelvis en retroversion suave) · Core anti-extension + traccion descompresiva · Solo sin irradiacion · Soltar si falla agarre o irradiacion S1', wid:'hollow-body',
+    n:'Hollow body hang colgado en barra', d:'3x10-15 seg', note:'Colgado de la barra en hollow (lumbar neutra, pelvis en retroversion suave) · Core anti-extension + traccion descompresiva · Solo sin irradiacion · Soltar si falla agarre o irradiacion S1 · Activa los hombros tirando de las escapulas hacia abajo (cuello largo): colgar con hombros encogidos hasta las orejas tensa el cuello', wid:'hollow-body',
     variant:'S1-2: dead hang pasivo 3x20s — solo descompresion · S3-4: rodillas recogidas (tuck) 3x10s · S5-6: tuck + extension parcial 3x12s · S7+: hollow hang piernas extendidas 3x10-15s · F3: con elevacion de rodillas' },
   'G':  { grupo:'core', plano:'anti-rot', equipo:'polea',
-    n:'Pallof press en polea', d:'3x10 diagonal cada lado', note:'Anti-rotacion · Resistir el giro sin generarlo — lo mas protector para la extrusion', wid:'pallof-press',
+    n:'Pallof press en polea', d:'3x10 diagonal cada lado', note:'Anti-rotacion · Resistir el giro sin generarlo — lo mas protector para la extrusion · Hombros bajos y relajados lejos de las orejas, cuello neutro: el esfuerzo de resistir el giro no debe trasladarse a encoger los trapecios', wid:'pallof-press',
     variant:'S1-2: isometrico pecho · S3-4: press diagonal · S5-6: press + paso lateral · S7+: de rodillas en superficie inestable' },
   'G2': { grupo:'core', plano:'anti-rot', equipo:'banda',
-    n:'Pallof press con banda', d:'3x10 cada lado', note:'Anti-rotacion version banda (apta para casa) · Banda anclada al costado a altura de pecho · Pelvis y tronco fijos', wid:'pallof-press',
+    n:'Pallof press con banda', d:'3x10 cada lado', note:'Anti-rotacion version banda (apta para casa) · Banda anclada al costado a altura de pecho · Pelvis y tronco fijos · Hombros y cuello relajados, sin encoger los trapecios al resistir la banda', wid:'pallof-press',
     variant:'S1-2: banda ligera isometrico pecho · S3-4: banda media press diagonal · S5-6: banda fuerte · S7+: + paso lateral' },
   'H':  { grupo:'core', plano:'anti-lat', equipo:'bw/banco',
-    n:'Copenhagen plank (plancha de aductores)', d:'3x15-25 seg cada lado', note:'Variada · Pie/rodilla superior en banco · Aductor + oblicuo + estabilizador de cadera · Pelvis nivelada', wid:'copenhagen-plank',
+    n:'Copenhagen plank (plancha de aductores)', d:'3x15-25 seg cada lado', note:'Variada · Pie/rodilla superior en banco · Aductor + oblicuo + estabilizador de cadera · Pelvis nivelada · Cuello largo y en linea (no dejar caer la cabeza); puedes apoyar la cabeza sobre el brazo de abajo para descargar el cuello', wid:'copenhagen-plank',
     variant:'S1-2: rodilla apoyada (palanca corta) 3x15s · S3-4: rodilla mas tiempo 3x20s · S5-6: pie en banco palanca larga 3x15s · S7+: pie en banco + elevacion de pierna libre' },
   'I':  { grupo:'core', plano:'transfer-agua', equipo:'piscina',
-    n:'Streamline + plancha flotante con pull buoy', d:'4x15-20 m / 30 seg', note:'Lleva el brace de la plancha al agua · Pull buoy entre los muslos · Cuerpo rigido en hollow/streamline (lumbar neutra) · Deslizar manteniendo el mismo brace que en tierra · Sin arquear', wid:'hollow-body',
+    n:'Streamline + plancha flotante con pull buoy', d:'4x15-20 m / 30 seg', note:'Lleva el brace de la plancha al agua · Pull buoy entre los muslos · Cuerpo rigido en hollow/streamline (lumbar neutra) · Deslizar manteniendo el mismo brace que en tierra · Sin arquear · Cabeza entre los brazos con cuello en linea (mirada al fondo), sin hiperextender el cuello para sacar la cara', wid:'hollow-body',
     variant:'S1-2: hold streamline estatico agarrado al borde 4x20s · S3-4: deslizamiento tras impulso 4x15m · S5-6: deslizamiento + patada suave manteniendo linea · S7+: deslizamiento largo + rotacion controlada' },
   'J':  { grupo:'core', plano:'anti-ext-inf', equipo:'polea',
-    n:'Leg raise en polea baja', d:'3x10', note:'Decubito supino · Cable en tobillos · Lumbar pegada al suelo — PARAR si se despega', wid:'leg-raise-polea',
+    n:'Leg raise en polea baja', d:'3x10', note:'Decubito supino · Cable en tobillos · Lumbar pegada al suelo — PARAR si se despega · Nuca apoyada en el suelo y cuello relajado: no levantar la cabeza para mirar las piernas (carga los flexores cervicales)', wid:'leg-raise-polea',
     variant:'S1-4: no introducir · S5-6: rodillas semiflexionadas peso minimo 3x8 · S7+: piernas mas extendidas 3x10 · F3: piernas rectas rango completo' },
   'K':  { grupo:'core', plano:'anti-lat', equipo:'mancuerna/banda',
-    n:'Suitcase carry / hold', d:'3x30-40 seg o 3x20m por lado', note:'Peso en UNA mano (mancuerna, KB o banda) · Anti-flexion lateral · Tronco vertical sin inclinarse hacia el peso · Hombros y caderas nivelados', wid:'flexion-lateral-mancuerna',
+    n:'Suitcase carry / hold', d:'3x30-40 seg o 3x20m por lado', note:'Peso en UNA mano (mancuerna, KB o banda) · Anti-flexion lateral · Tronco vertical sin inclinarse hacia el peso · Hombros y caderas nivelados · Cuello neutro y mirada al frente: no encojas el trapecio del lado del peso ni inclines la cabeza para compensar', wid:'flexion-lateral-mancuerna',
     variant:'S1-2: hold ligero 30s · S3-4: hold medio 40s · S5-6: caminata (carry) 20m · S7+: carry pesado 20m + cambios de direccion' },
   'L':  { grupo:'core', plano:'compuesto', equipo:'bw',
-    n:'L-sit progresion', d:'3x10-15 seg', note:'Flexores de cadera + core · Solo sin irradiacion', wid:'l-sit',
+    n:'L-sit progresion', d:'3x10-15 seg', note:'Flexores de cadera + core · Solo sin irradiacion · Hombros deprimidos lejos de las orejas y cuello largo: al empujar el suelo con las manos no encojas los trapecios — es el fallo cervical tipico en apoyos sobre las manos', wid:'l-sit',
     variant:'S1-2: pies 5cm 8s · S3-4: tucked 10s · S5-6: tucked 15s · S7+: piernas extendidas' },
   'M':  { grupo:'core', plano:'anti-ext+flexor-cadera', equipo:'bw',
-    n:'Plancha con extension de cadera activa', d:'3x8-10 rep cada lado', note:'Desde plancha anterior — elevar una pierna extendida hacia atras hasta altura de cadera · Gluteo activo en la pierna elevada · Flexores de cadera opuestos trabajando isometricamente · Lumbar neutra obligatorio — no arquear al subir la pierna · Pelvis no rotar · Pausa 1-2 seg arriba', wid:'plank-hip-extension',
+    n:'Plancha con extension de cadera activa', d:'3x8-10 rep cada lado', note:'Desde plancha anterior — elevar una pierna extendida hacia atras hasta altura de cadera · Gluteo activo en la pierna elevada · Flexores de cadera opuestos trabajando isometricamente · Lumbar neutra obligatorio — no arquear al subir la pierna · Pelvis no rotar · Pausa 1-2 seg arriba · Cuello neutro y mirada al suelo: el impulso de subir la pierna no debe arrastrar la cabeza hacia arriba', wid:'plank-hip-extension',
     variant:'S1-2: desde rodillas, elevar pierna 10 cm 3x6 · S3-4: plancha completa, elevacion parcial (45°) 3x8 · S5-6: plancha completa, elevacion hasta horizontal 3x10 · S7+: elevacion con tobillera ligera o banda en tobillos 3x10' },
   'N':  { grupo:'core', plano:'flexor-cadera+anti-ext', equipo:'banco',
-    n:'Hip flexor plank (plancha flexor cadera en banco)', d:'3x10-12 rep cada lado', note:'Plancha con una rodilla apoyada en el banco y la otra pierna suspendida · Flexionar y extender la pierna suspendida de forma controlada · La rodilla en el banco estabiliza la pelvis · Core activo durante todo el movimiento', wid:'hip-flexor-plank',
+    n:'Hip flexor plank (plancha flexor cadera en banco)', d:'3x10-12 rep cada lado', note:'Plancha con una rodilla apoyada en el banco y la otra pierna suspendida · Flexionar y extender la pierna suspendida de forma controlada · La rodilla en el banco estabiliza la pelvis · Core activo durante todo el movimiento · Cuello largo y mirada al suelo, hombros lejos de las orejas', wid:'hip-flexor-plank',
     variant:'S1-2: rodilla apoyada — solo mantener posicion 3x20s · S3-4: pierna suspendida, recorrido corto (30°) 3x10 · S5-6: recorrido completo rodilla al pecho 3x12 · S7+: tobillera ligera + pausa 1s en flexion maxima' },
   'O':  { grupo:'core', plano:'flexor-cadera+anti-ext', equipo:'banco',
-    n:'Hip flexor pike (pike flexor cadera en banco)', d:'3x8-10 rep cada lado', note:'Plancha con una rodilla apoyada en el banco · Elevar la cadera al mismo tiempo que se extiende la pierna libre hacia arriba (movimiento pike) · Combina flexor de cadera con control lumbar · No hiperlordosis al bajar', wid:'hip-flexor-pike',
+    n:'Hip flexor pike (pike flexor cadera en banco)', d:'3x8-10 rep cada lado', note:'Plancha con una rodilla apoyada en el banco · Elevar la cadera al mismo tiempo que se extiende la pierna libre hacia arriba (movimiento pike) · Combina flexor de cadera con control lumbar · No hiperlordosis al bajar · Cuello neutro y hombros activos lejos de las orejas (no forzar la cabeza hacia el pecho)', wid:'hip-flexor-pike',
     variant:'S1-2: solo elevacion de cadera (sin pierna extendida) 3x8 · S3-4: pike parcial pierna extendida 45° 3x8 · S5-6: pike completo pierna vertical 3x10 · S7+: pike completo + pausa 2s arriba 3x10' },
+  'P':  { grupo:'core', plano:'protraccion-serrato+anti-ext', equipo:'bw',
+    n:'Protraccion escapular en plancha (serrato) — hold', d:'3x20-30 seg', note:'Desde plancha (rodillas o pies) · Empujar el suelo separando las escapulas (protraccion maxima) y mantener · Serrato anterior isometrico · Lumbar NEUTRA — la protraccion es escapular, no lumbar · Costillas abajo, sin arquear', wid:'protraccion-serrato-plancha',
+    variant:'S1-2: desde rodillas 3x15s · S3-4: plancha completa 3x20s · S5-6: plancha completa 3x30s · S7+: una mano sobre foam/balon (inestable) 3x20s' },
+  'Q':  { grupo:'core', plano:'protraccion-serrato', equipo:'pared/banda',
+    n:'Serratus wall slide — hold isometrico', d:'3x20-30 seg', note:'Antebrazos en la pared · Deslizar arriba protraendo las escapulas y mantener arriba · Serrato en cadena cerrada de pie · Lumbar neutra, costillas abajo — NO arquear para alcanzar mas alto', wid:'serratus-wall-slide',
+    variant:'S1-2: rango bajo 3x15s · S3-4: rango medio 3x20s · S5-6: rango alto + protraccion maxima 3x25s · S7+: con banda alrededor de los antebrazos 3x30s' },
 };
 
 // ─── HIP — Movilidad de cadera (grupo "pull de cadera") ────────────
@@ -377,7 +389,7 @@ const HINGE = {
     variant:'S1-2: banda ligera 3x12 · S3-4: banda media 3x10 · S5-6: banda fuerte 3x10 · S7+: barra vacia 3x10 · F3: seated GM barra' },
   'B': { grupo:'hinge', n:'Hiperextension banco 45 grados', d:'4x10', note:'Motor principal bilateral — progresion por estadios · Variacion: unilateral (S5+, 3x8 c/lado)', wid:'hiperext', gym:true,
     variant:'S1-2: iso hold neutro 4x25s — rango parcial 4x20s · S3-4: rango completo sin peso exc 3s · S5-6: +20kg 4x8 exc 3s · S7+: +40kg 4x6-8 · F3: criterio 40kg 4x6 tecnica impecable',
-    homeAlt:{ n:'Superman con cinta yoga', d:'4x12 — pausa 2 seg arriba', note:'Cinta yoga bajo el abdomen como fulcro · Extension cadera pura · Cabeza neutra · Sin hiperlordosis', variant:'S1-2: iso hold 4x20s sin elevacion de piernas · S3-4: extension completa sin peso exc 3s · S5-6: tobillera ligera 1kg · S7+: tobillera 2kg + pausa 3s' } },
+    homeAlt:{ n:'Superman con cinta yoga', d:'4x12 — pausa 2 seg arriba', note:'Cinta yoga bajo el abdomen como fulcro · Extension cadera pura · Cabeza neutra · Sin hiperlordosis · Brazos: cuanto mas estirados al frente (protraccion) mas palanca y mas carga lumbar — progresa la posicion de brazos por estadio, no solo el peso', variant:'S1-2: brazos pegados al cuerpo, iso hold 4x20s sin elevacion de piernas · S3-4: manos en la nuca, extension completa sin peso exc 3s · S5-6: brazos extendidos al frente + tobillera ligera 1kg · S7+: brazos extendidos al frente + tobillera 2kg + pausa 3s' } },
   'C': { grupo:'hinge', n:'RDL con mancuernas', d:'3x8 — espalda neutra REQUISITO', note:'Columna neutra en todo el rango · Parar si irradiacion S1 · Variacion: RDL unilateral en banco (S3+, 3x8 c/lado exc 3s)', wid:'rdl-mancuernas', gym:true,
     variant:'S1-2: 8-10 kg — patron y activacion glutea · S3-4: 12-14 kg rango parcial hasta rodillas · S5-6: 16-18 kg rango completo · S7+: 20 kg+ tecnica impecable (criterio F3)',
     homeAlt:{ n:'RDL postural con banda yoga', d:'3x10 — foco en patron', note:'Cinta yoga anclada bajo los pies · Resistencia posterior leve · Espalda neutra requisito absoluto', variant:'S1-2: sin banda — patron puro bisagra · S3-4: banda yoga tension baja · S5-6: banda yoga tension media · S7+: banda yoga tension alta exc 3s' } },
@@ -398,7 +410,7 @@ const HINGE = {
 const PULL = {
   'A': { grupo:'pull', n:'Scapular pull en barra', d:'3x8-10', note:'Descompresion + activacion · Colgado · Solo depresion y retraccion escapular · Sin flexion de codo · Traccion descompresiva L4-S1 · PARAR si irradiacion S1 al colgar', wid:'scapular-pull',
     variant:'S1-2: banda de suspension — pie en banda carga parcial · S3-4: barra agarre ancho ROM completo sin flexion codo · S5-6: pausa 2s en retraccion maxima · S7+: lastre ligero tobillera 1-2 kg' },
-  'B': { grupo:'pull', n:'Jalon al pecho agarre ancho', d:'4x10 — excentrico 3 seg', note:'Escapulas activas · Sin carga axial', wid:'jalon-ancho', gym:true,
+  'B': { grupo:'pull', n:'Jalon al pecho agarre ancho', d:'4x10 — excentrico 3 seg', note:'Escapulas activas · Sin carga axial · No arquear la lumbar arriba del recorrido (brazos overhead) — costillas abajo', wid:'jalon-ancho', gym:true,
     variant:'S1-2: 50% exc 4s · S3-4: 60% exc 3s · S5-6: 70% pausa abajo · S7+: dominada asistida',
     homeAlt:{ n:'Remo invertido en mesa (Australian row)', d:'4x10 — excentrico 3 seg', note:'Tumbado bajo mesa · Agarre ancho · Escapulas activas · Sustituto directo del jalon', variant:'S1-2: rodillas muy flexionadas carga parcial · S3-4: rodillas a 90° exc 3s · S5-6: piernas extendidas · S7+: pies elevados en silla' } },
   'C': { grupo:'pull', n:'Remo en maquina sentado', d:'4x10 codos pegados', note:'No flexionar columna al tirar · Respaldo de pecho si la maquina lo tiene', wid:'remo-maquina', gym:true,
@@ -493,9 +505,50 @@ const CARD = {
     homeAlt:{ n:'Caminata exterior larga', d:'55-60 min — ritmo moderado', note:'Alternativa en casa · Paso largo activo · FC max 125' } },
 };
 
+// ─── NECK — Cuello / cervical (prevencion hernia cervical + base para core) ──
+// Misma filosofia que el resto del plan: control NEUTRO y anti-movimiento
+// isometrico ANTES de cargar. La debilidad de los flexores profundos del cuello
+// (longus colli/capitis) provoca el chin-poke (cabeza adelantada) que cizalla
+// C5-C6/C6-C7 — el mismo fallo que aparece en plancha, hollow y L-sit cuando
+// se intensifica el core. Entrenarlos es el requisito para subir intensidad.
+const NECK = {
+  'A': { grupo:'cuello', plano:'flexor-profundo', equipo:'bw',
+    n:'Chin tuck supino (flexion craneocervical)', d:'3x10 — hold 5 seg', wid:'chin-tuck',
+    note:'Boca arriba, rodillas dobladas · Desliza el menton hacia el cuello (doble menton) alargando la nuca SIN levantar la cabeza · Activa los flexores profundos (longus colli), no el esternocleidomastoideo · Es el cimiento: el mismo control que evita el chin-poke en plancha y hollow',
+    variant:'S1-2: retraccion suave sin elevar 3x8 · S3-4: retraccion + hold 5 seg 3x10 · S5-6: retraccion + cabeza despegada 2 cm 3x10 · S7+: retraccion + sostener cabeza despegada 10 seg 3x8' },
+  'B': { grupo:'cuello', plano:'flexor-profundo-postural', equipo:'pared',
+    n:'Chin tuck de pie contra pared (postural)', d:'3x8 — hold 5 seg', wid:'chin-tuck-pared',
+    note:'De pie, occipucio y espalda alta contra la pared · Haz doble menton llevando la nuca hacia la pared sin extender · Reentrena la cabeza adelantada del trabajo de escritorio · Hombros bajos y relajados',
+    variant:'S1-2: contra pared con feedback 3x6 · S3-4: contra pared hold 5 seg 3x8 · S5-6: de pie sin pared 3x8 · S7+: sentado en silla cada hora (micro-pausas antisedentarismo)' },
+  'C': { grupo:'cuello', plano:'flexor-profundo-endurance', equipo:'bw',
+    n:'Elevacion de cabeza con doble menton (endurance flexor profundo)', d:'3x8-10', wid:'head-lift',
+    note:'Supino · Primero haz el chin tuck y MANTENLO, luego despega la cabeza 2-3 cm · El menton no debe adelantarse (si se adelanta manda el ECM, no los flexores profundos) · Baja lento · Endurance del estabilizador craneocervical que sostiene la cabeza en el core',
+    variant:'S1-2: no introducir — dominar el chin tuck antes · S3-4: despegue minimo 3x6 · S5-6: despegue 3 cm + 2 seg 3x8 · S7+: despegue + sostener 10 seg 3x8' },
+  'D': { grupo:'cuello', plano:'anti-movimiento', equipo:'bw',
+    n:'Isometricos cervicales multidireccionales (auto-resistidos)', d:'3x6 seg cada direccion', wid:'iso-cervical',
+    note:'Cabeza neutra con doble menton suave · Aplica resistencia con tu propia mano contra frente, nuca y cada lateral · EMPUJA sin que la cabeza se mueva (isometrico puro, anti-movimiento) · 6 seg por direccion al 30-50% · Es el equivalente cervical del Pallof anti-rotacion del core',
+    variant:'S1-2: 20% intensidad solo frontal y laterales 3x5s · S3-4: 30% las 4 direcciones 3x6s · S5-6: 50% las 4 direcciones 3x6s · S7+: 50% + diagonales 3x6s' },
+  'E': { grupo:'cuello', plano:'movilidad', equipo:'bw',
+    n:'Neck CARs — movilidad cervical controlada', d:'2x3 cada direccion', wid:'neck-cars',
+    note:'Circulos cervicales LENTOS y controlados en rango sin dolor · Tronco y hombros quietos · NUNCA forzar el final ni dejar caer la cabeza atras en extension-rotacion (cierra el foramen cervical) · Movilidad articular activa — los Hip CARs del cuello',
+    variant:'S1-2: flexion/extension y rotaciones por separado, rango corto · S3-4: medio circulo inferior (sin extension) 2x3 · S5-6: circulo completo lento controlado 2x3 · S7+: circulo completo + pausa en cada punto' },
+  'F': { grupo:'cuello', plano:'extensor-profundo', equipo:'bw/banco',
+    n:'Extension cervical prona con retraccion escapular', d:'3x8 — hold 3 seg', wid:'prone-neck-ext',
+    note:'Boca abajo (cabeza fuera del borde del banco o frente al suelo) · Doble menton y eleva la cabeza solo hasta la linea del cuerpo — NO hiperextender — mientras juntas las escapulas · Fortalece extensores profundos y trapecio inferior · Equilibra el ratio flexor/extensor cervical',
+    variant:'S1-2: solo retraccion escapular sin elevar la cabeza 3x10 · S3-4: elevar la cabeza hasta neutro 3x8 · S5-6: neutro + 3 seg hold 3x8 · S7+: + ligera resistencia (toalla en la nuca) 3x8' },
+  'G': { grupo:'cuello', plano:'flexibilidad-postural', equipo:'bw',
+    n:'Estiramiento trapecio superior y elevador de la escapula', d:'2x30 seg cada lado', wid:'upper-trap-stretch',
+    note:'Sentado, una mano sujeta el asiento (hombro abajo) · Con la otra mano lleva suavemente la cabeza hacia el lado opuesto (trapecio) y luego mirando a la axila (elevador) · Estiramiento suave sin tiron · Libera la tension postural de las pantallas',
+    variant:'S1-2: solo trapecio superior 2x20s · S3-4: trapecio + elevador 2x30s · S5-6: + ligera presion de la mano · S7+: + respiracion prolongada 40s en cada posicion' },
+  'H': { grupo:'cuello', plano:'anti-movimiento-resistido', equipo:'banda',
+    n:'Isometrico cervical con banda elastica', d:'3x10 seg cada direccion', wid:'iso-cervical-banda',
+    note:'Banda anclada a la altura de la cabeza (o pasada por frente/nuca) · Resiste la traccion manteniendo la cabeza inmovil con doble menton · Progresion del isometrico auto-resistido con carga graduable y constante · Cuello neutro, sin dejar que la banda te lleve al end-range',
+    variant:'S1-2: no introducir — usar el auto-resistido antes · S3-4: banda ligera frontal y posterior 3x8s · S5-6: banda ligera 4 direcciones 3x10s · S7+: banda media 4 direcciones 3x10s' },
+};
+
 // Lookup combinado con IDs GLOBALES prefijados por grupo (CORE-A, HIP-B, QUAD-C, ...)
 const CAT = {};
-for (const [pfx, grp] of [['CORE',CORE],['HIP',HIP],['HINGE',HINGE],['PULL',PULL],['PUSH',PUSH],['SHOULDER',SHOULDER],['ARM',ARM],['QUAD',QUAD],['GLUTE',GLUTE],['CARD',CARD]])
+for (const [pfx, grp] of [['CORE',CORE],['HIP',HIP],['HINGE',HINGE],['PULL',PULL],['PUSH',PUSH],['SHOULDER',SHOULDER],['ARM',ARM],['QUAD',QUAD],['GLUTE',GLUTE],['CARD',CARD],['NECK',NECK]])
   for (const k in grp) CAT[pfx + '-' + k] = grp[k];
 
 // (CAT ya construido arriba con los 10 grupos)
@@ -516,6 +569,10 @@ function buildSessions(week){
 const MOB_BLOCK_HIP = expandBlock({ id:'MOB-H', name:'Movilidad de cadera — grupo HIP', dur:'15-20 min', color:'#7A3DAA',
   exIds:['HIP-A','HIP-B','HIP-C','HIP-D','HIP-E','HIP-F','HIP-G','HIP-H','HIP-I','HIP-J','HIP-K','HIP-L2'] });
 
+// Rutina de cuello para la pestana Movilidad (prevencion cervical, diaria)
+const MOB_BLOCK_NECK = expandBlock({ id:'MOB-N', name:'Cuello — prevencion cervical', dur:'8-10 min', color:'#1B8A9C',
+  exIds:['NECK-A','NECK-B','NECK-C','NECK-D','NECK-E','NECK-F','NECK-G','NECK-H'] });
+
 const WEEK = {
 
   // ─── 1 — LUNES: Cadena posterior + Core + Biceps ──────────────
@@ -529,7 +586,7 @@ const WEEK = {
       MOB_BLOCK_B_LUN,
       { id: 'C', name: 'Cardio apertura — Ergometro 2000m', dur: '15-20 min', color: '#185FA5', exIds: ['CARD-A'] },
       { id: 'D', name: 'Lumbar — Cadena posterior', dur: '45 min', color: '#3C3489', exIds: ['HINGE-A','HINGE-B','HINGE-C','HINGE-D'] },
-      { id: 'E', name: 'Core (anti-extension) + Biceps', dur: '35 min', color: '#993C1D', exIds: ['CORE-A','CORE-B','CORE-C','CORE-E','CORE-M','CORE-N','ARM-B','ARM-C'] },
+      { id: 'E', name: 'Cuello (prep cervical) + Core REPETICIONES (control dinamico) + Biceps', dur: '38 min', color: '#993C1D', exIds: ['NECK-A','NECK-D','CORE-A','CORE-B','CORE-M','CORE-N','GLUTE-F','CORE-G2','ARM-B','ARM-C'] },
       { id: 'F', name: 'Cardio cierre — Eliptica 60 min', dur: '60 min', color: '#185FA5', exIds: ['CARD-D'] },
     ]
   },
@@ -544,7 +601,7 @@ const WEEK = {
     blocks: [
       MOB_BLOCK_A1,
       { id: 'D', name: 'Estabilidad + pierna ligera', dur: '25-30 min', color: '#0F6E56', exIds: ['HIP-A','HIP-G','HIP-I','HIP-K','GLUTE-B','GLUTE-A','GLUTE-C','GLUTE-D','QUAD-H','QUAD-G'] },
-      { id: 'E', name: 'Core — general 3 planos (pre-piscina)', dur: '15-20 min', color: '#993C1D', exIds: ['CORE-F','CORE-G2','CORE-D','CORE-I'] },
+      { id: 'E', name: 'Cuello (prep cervical) + Core ISOMETRICO (anti-movimiento + bracing pre-piscina)', dur: '18-22 min', color: '#993C1D', exIds: ['NECK-A','NECK-D','CORE-E','CORE-D','CORE-P','CORE-F','CORE-I'] },
       POOL_UNIFICADA,
     ]
   },
@@ -561,8 +618,8 @@ const WEEK = {
       { id: 'C', name: 'Cardio apertura — Ergometro 2000m', dur: '15-20 min', color: '#185FA5', exIds: ['CARD-A'] },
       { id: 'D', name: 'Empuje + Tiro (sin carga axial)', dur: '50 min', color: '#3C3489', exIds: ['PULL-A','PULL-B','PULL-C','PUSH-A','PUSH-B','SHOULDER-A','ARM-A'] },
       {
-        id: 'E', name: 'Core (anti-rotacion + anti-lateral) + Neural', dur: '25 min', color: '#993C1D',
-        exIds: ['CORE-G','CORE-D','CORE-J','CORE-E','CORE-O'],
+        id: 'E', name: 'Cuello (prep cervical) + Core REPETICIONES (anti-rotacion dinamica + flexor cadera) + Neural', dur: '28 min', color: '#993C1D',
+        exIds: ['NECK-A','NECK-D','CORE-G','CORE-J','CORE-O','GLUTE-F','CORE-A'],
         exs: [
           { n: 'Neural flossing nervio ciatico', d: '2x10 cada lado', note: 'Sin dolor · Deslizamiento puro', wid: 'neural-flossing', variant: 'S1-2: angulo 30-40° muy suave · S3-4: angulo 60° ritmo lento · S5-6: angulo 80° · S7+: angulo completo + dorsiflexion' },
         ]
@@ -581,7 +638,7 @@ const WEEK = {
     blocks: [
       MOB_BLOCK_A1,
       { id: 'D', name: 'Estabilidad + pierna ligera', dur: '25-30 min', color: '#0F6E56', exIds: ['HIP-A','HIP-G','HIP-I','HIP-K','GLUTE-B','GLUTE-A','GLUTE-C','GLUTE-D','QUAD-H','QUAD-G'] },
-      { id: 'E', name: 'Core — general 3 planos (pre-piscina)', dur: '15-20 min', color: '#993C1D', exIds: ['CORE-F','CORE-G2','CORE-H','CORE-I'] },
+      { id: 'E', name: 'Cuello (prep cervical) + Core ISOMETRICO (anti-movimiento + bracing pre-piscina)', dur: '18-22 min', color: '#993C1D', exIds: ['NECK-A','NECK-D','CORE-C','CORE-H','CORE-Q','CORE-K','CORE-I'] },
       POOL_UNIFICADA,
     ]
   },
@@ -629,7 +686,7 @@ const WEEK = {
           { n: 'Dead bug con extension completa', d: '2x8 cada lado', note: 'Version suave · Lumbar pegada al suelo', wid: 'dead-bug', variant: 'S1-2: un miembro solo · S3-4: contralateral completo · S5-6: press palma rodilla' },
           { n: 'Bird dog con pausa', d: '2x8 cada lado — pausa 3 seg', note: 'Control pelvico · Version corta', wid: 'bird-dog' },
           { n: 'Glute bridge unilateral', d: '2x10 cada lado — pausa 2 seg', note: 'Sin carga axial · Pelvis nivelada', wid: 'glute-bridge-uni', variant: 'S1-2: bilateral como base · S3-4: unilateral pierna libre flexionada · S5-6: unilateral pierna libre extendida · S7+: mancuerna en cadera' },
-          { n: 'Superman hold en suelo', d: '2x8 — pausa 2 seg', note: 'Erectores en elongacion · Version suave', wid: 'superman' },
+          { n: 'Superman hold en suelo', d: '2x8 — pausa 2 seg', note: 'Erectores en elongacion · Version suave · Brazos pegados al cuerpo o manos en la nuca (NO extendidos al frente) para no sumar palanca lumbar · Cabeza neutra · No arquear de mas', wid: 'superman' },
           { n: 'Single leg reverse hyper', d: '3x12 cada lado', note: 'Tumbado boca abajo en banco · Extension cadera pura sin carga axial · Parar si irradiacion S1', wid: 'single-leg-hyper', variant: 'S1-2: sin peso — ROM parcial 3x8 · S3-4: sin peso ROM completo 3x10 · S5-6: tobillera ligera 1-2 kg 3x12 · S7+: tobillera 3-4 kg 3x12 exc 2s' },
           { n: 'Iso hold cinta yoga puerta', d: '3x20 seg', note: 'Cinta colgada del marco · Tension isometrica posterior · Sin carga axial', wid: 'iso-hold-cinta', variant: 'S1-2: tension minima 10 seg · S3-4: 15 seg moderado · S5-6: 20 seg · S7+: 25 seg una mano' },
           { n: 'Hamstring squeeze', d: '2x8 cada lado', note: 'Isometrico suave · Angulo bajo', wid: 'hamstring-squeeze' },
@@ -664,7 +721,7 @@ const WEEK = {
       { id: 'C', name: 'Cardio sala — Eliptica', dur: '15-20 min', color: '#185FA5', exIds: ['CARD-C'] },
       { id: 'D', name: 'Pierna — Squat + Bisagra', dur: '55 min', color: '#3C3489', exIds: ['QUAD-A','QUAD-B','QUAD-C','QUAD-D','QUAD-E','QUAD-F','HINGE-E','HINGE-F','HINGE-G'] },
       { id: 'E', name: 'Hip, TFL y abductores', dur: '35 min', color: '#993C1D', exIds: ['HIP-G','GLUTE-C','GLUTE-E','GLUTE-D','HIP-H','GLUTE-B','HIP-J','HIP-L2'] },
-      { id: 'CR', name: 'Core — anti-rotacion + anti-extension (casa-posible)', dur: '15 min', color: '#993C1D', exIds: ['CORE-G2','CORE-C','CORE-A','CORE-K'] },
+      { id: 'CR', name: 'Cuello (prep cervical) + Core REPETICIONES (control dinamico, casa-posible)', dur: '18 min', color: '#993C1D', exIds: ['NECK-A','NECK-D','CORE-G2','CORE-A','CORE-M','GLUTE-F','CORE-B'] },
     ]
   },
 
@@ -728,6 +785,13 @@ const MOB_BLOCK_MOVILIDAD_CADERA = {
       wid: 'estocada-lateral-kb',
       variant: 'S1-2: sin carga — lateral bodyweight ROM parcial · S3-4: sin carga ROM completo · S5-6: KB 8-12kg goblet · S7+: KB 16-20kg goblet + pausa 2s abajo · F3: KB en rack (uno o dos)'
     },
+    {
+      n: 'Pancake (estiramiento en straddle)',
+      d: '2x60-90 seg — flexibilidad activa',
+      note: 'Sentado con las piernas muy abiertas en V · Banda elastica anclada al frente (en casa: a un mueble bajo o al pie de la cama; en gym: polea ligera) para traccionar el torso manteniendo la espalda RECTA · Inclina desde la cadera, sin redondear la lumbar · Abre caderas y estira aductores e isquiotibiales · La rigidez de cadera se compensa con mala postura dorsal y cervical',
+      wid: 'pancake-straddle',
+      variant: 'S1-2: V estrecha, manos en el suelo, espalda erguida sin inclinar · S3-4: banda ligera, inclinacion suave desde la cadera · S5-6: V amplia, banda media, pecho hacia el suelo con espalda recta · S7+: polea/cable con carga ligera para traccion constante (flexibilidad activa) · F3: pancake completo pecho al suelo'
+    },
   ]
 };
 
@@ -764,6 +828,27 @@ const MOB_BLOCK_MOVILIDAD_ESPALDA = {
       note: 'Cat-cow enfocado exclusivamente en la zona toracica · Lumbar y pelvis lo mas estaticas posible · Al flexionar: cifosis toracica exagerada, escapulas abriendose · Al extender: apertura toracica, escapulas acercandose · Cabeza sigue la columna sin tension cervical',
       wid: 'flexion-extension-cuadrupedia',
       variant: 'S1-2: movimiento minimo — solo observar donde hay rigidez · S3-4: rango completo ritmo lento 3s por fase · S5-6: rango completo + pausa 2s en cada extremo · S7+: anadir rotacion alternada de cadera en el extremo de extension'
+    },
+    {
+      n: 'Apertura toracica con disco (thoracic plate opener)',
+      d: '2x8-10 — lento con pausa',
+      note: 'Arrodillado frente a un foam roller horizontal · Disco sujeto con ambas manos (en casa: mancuerna o mochila con peso) · Al sentarte hacia los talones, lleva los brazos por encima de la cabeza dejando los codos sobre el rodillo y abre el pecho · Extension TORACICA, nunca lumbar · Descarga el cuello mejorando la extension dorsal',
+      wid: 'apertura-toracica-disco',
+      variant: 'S1-2: sin peso, brazos sobre el rodillo, rango corto · S3-4: disco ligero 2-5kg + pausa 2s · S5-6: disco 5-10kg apertura completa · S7+: tumbado en banco con los omoplatos en el borde, disco con brazos extendidos dejando caer el peso por gravedad (arco toracico)'
+    },
+    {
+      n: 'Inclinacion lateral con pica (side bend)',
+      d: '2x8 cada lado — controlado',
+      note: 'Arrodillado en banco o de pie · Pica/palo (en casa: palo de escoba) sujeto con ambas manos por encima de la cabeza, brazos estirados · Inclina el tronco lateralmente con la espalda recta, sin rotar · Estira intercostales, dorsal y oblicuos del lado opuesto · El movimiento es toracico/costal — lumbar neutra',
+      wid: 'side-bend-pica',
+      variant: 'S1-2: sin pica, manos en la cabeza, rango corto · S3-4: pica overhead rango medio + pausa 2s · S5-6: pica rango completo con control excentrico · S7+: de pie con barra ligera sobre los hombros (mas estabilidad central) — nunca llevar la inclinacion a flexion lumbar'
+    },
+    {
+      n: 'Extension toracica en banco con pica (overhead)',
+      d: '2x60-90 seg — pasivo progresivo',
+      note: 'Arrodillado frente a un banco (en casa: silla, cama o sofa firme) · Codos apoyados en el banco, pica sujeta por encima de la cabeza · Deja caer el pecho hacia el suelo entre los brazos: extension toracica + estiramiento de dorsales · Cadera sobre las rodillas y lumbar neutra — no arquear la lumbar para bajar mas',
+      wid: 'ext-toracica-banco-pica',
+      variant: 'S1-2: codos en banco, caida minima · S3-4: con pica, pausa 3s en el fondo · S5-6: sin pica, solo codos, dejando caer cabeza y pecho mas profundo · S7+: profundidad maxima + respiraciones largas exhalando en el fondo'
     },
   ]
 };
@@ -952,14 +1037,15 @@ EX_DB['dead-bug'] = {
   posicion: 'Tumbado boca arriba. Brazos extendidos hacia el techo. Caderas y rodillas a 90 grados.',
   pasos: [
     'Presiona activamente la zona lumbar contra el suelo. Este contacto debe mantenerse DURANTE TODO EL EJERCICIO.',
+    'Manten la nuca apoyada en el suelo con la barbilla en ligera retraccion (doble menton suave): el cuello NO se levanta ni se tensa en ningun momento. Mandibula y lengua relajadas.',
     'Exhala y extiende simultaneamente el brazo derecho (hacia atras) y la pierna izquierda (hacia adelante).',
     'La zona lumbar NO debe despegarse del suelo — si lo hace, el rango es excesivo.',
     'Vuelve lentamente a la posicion inicial.',
     'Repite con brazo izquierdo y pierna derecha.',
   ],
-  errores: ['La zona lumbar se despega del suelo — DETENER EL MOVIMIENTO.', 'Contener la respiracion.', 'Velocidad excesiva — el beneficio es el control.', 'Extensiones asimetricas.'],
-  variantes: ['S1-2: solo extension de un miembro a la vez. S3-4: extension contralateral completa. S5-6: anadir press de palma contra rodilla. S7+: dead bug con fitball.'],
-  notas_columna: 'El dead bug activa los multifidos ipsilaterales al segmento afectado L5-S1 izq mediante el patron cruzado. La lumbar despegada convierte el ejercicio en extension lumbar bajo carga: contraproducente con extrusion bilateral activa.'
+  errores: ['La zona lumbar se despega del suelo — DETENER EL MOVIMIENTO.', 'Levantar la cabeza o tirar de la barbilla hacia el pecho para mirarse el abdomen — carga los flexores cervicales y el esternocleidomastoideo. La nuca permanece en el suelo.', 'Contener la respiracion — la apnea dispara la tension del cuello y los trapecios.', 'Velocidad excesiva — el beneficio es el control.', 'Extensiones asimetricas.'],
+  variantes: ['S1-2: solo extension de un miembro a la vez. S3-4: extension contralateral completa. S5-6: anadir press de palma contra rodilla. S7+: dead bug con fitball.', 'Cervical: si aparece tension en el cuello, coloca una toalla fina doblada bajo la cabeza para que la nuca descanse del todo y manten la mirada al techo. Antes de sacrificar la posicion del cuello, reduce los miembros que mueves (solo pierna, o solo brazo).'],
+  notas_columna: 'El dead bug activa los multifidos ipsilaterales al segmento afectado L5-S1 izq mediante el patron cruzado. La lumbar despegada convierte el ejercicio en extension lumbar bajo carga: contraproducente con extrusion bilateral activa. Cervical: al ser un ejercicio en supino, el error de cuello mas comun es elevar la cabeza para controlar el abdomen; la nuca debe descansar en el suelo (o sobre una toalla) con la mandibula relajada para no cargar los flexores cervicales.'
 };
 
 EX_DB['bird-dog'] = {
@@ -970,15 +1056,16 @@ EX_DB['bird-dog'] = {
   posicion: 'A cuatro patas: rodillas bajo las caderas, manos bajo los hombros. Columna en posicion neutra.',
   pasos: [
     'Activa el core — columna neutra, pelvis sin inclinacion.',
+    'Manten el cuello largo y alineado con el resto de la columna: la mirada va al suelo (un punto entre las manos), sin levantar la barbilla para mirar al frente ni dejar caer la cabeza.',
     'Extiende el brazo derecho hacia adelante y la pierna izquierda hacia atras SIMULTANEAMENTE.',
     'La pelvis NO debe rotar ni inclinarse.',
     'Pausa 3 segundos en la posicion extendida.',
     'Vuelve lentamente sin dejar caer el brazo o la pierna.',
     'Repite con el lado contrario.',
   ],
-  errores: ['Pelvis que rota al elevar la pierna.', 'Hiperextension lumbar al elevar la pierna.', 'Cabeza que cae o se eleva.', 'Velocidad excesiva — la pausa es parte del ejercicio.'],
-  variantes: ['S1-2: brazo o pierna por separado. S3-4: contralateral con pausa 3s. S5-6: banda en el tobillo. S7+: sobre superficie inestable.'],
-  notas_columna: 'El bird dog es el ejercicio de activacion de multifidos mas validado para dolor lumbar inespecifico y hernia discal en Fase 1 y 2. La co-contraccion de multifidos y transverso abdominal que produce es el mecanismo protector del segmento discal afectado.'
+  errores: ['Pelvis que rota al elevar la pierna.', 'Hiperextension lumbar al elevar la pierna.', 'Levantar la barbilla para mirar al frente — extiende la cervical y la carga; el cuello sigue a la columna, con la mirada al suelo.', 'Dejar caer la cabeza entre los hombros — encoge los trapecios.', 'Velocidad excesiva — la pausa es parte del ejercicio.'],
+  variantes: ['S1-2: brazo o pierna por separado. S3-4: contralateral con pausa 3s. S5-6: banda en el tobillo. S7+: sobre superficie inestable.', 'Cervical: si el cuello se cansa de sostener la cabeza, acorta la palanca (mueve solo brazo o solo pierna) y comprueba en un espejo lateral que oreja, hombro y cadera quedan en linea. La coronilla "empuja" hacia delante, no la barbilla.'],
+  notas_columna: 'El bird dog es el ejercicio de activacion de multifidos mas validado para dolor lumbar inespecifico y hernia discal en Fase 1 y 2. La co-contraccion de multifidos y transverso abdominal que produce es el mecanismo protector del segmento discal afectado. Cervical: en cuadrupedia la cabeza pesa en voladizo; mantener el cuello neutro (mirada al suelo) evita que los extensores cervicales y los trapecios se sobrecarguen al sostenerla.'
 };
 
 EX_DB['hip-thrust'] = {
@@ -1027,12 +1114,13 @@ EX_DB['hollow-body'] = {
   pasos: [
     'Aplana la zona lumbar contra el suelo activamente.',
     'Eleva ligeramente los hombros y las piernas del suelo.',
+    'Al elevar los hombros, lleva la barbilla suavemente hacia el pecho (doble menton) y dirige la mirada a los muslos: el cuello queda largo y la cabeza no cae hacia atras ni tira hacia el techo.',
     'Mantén la posicion con respiracion controlada.',
     'La lumbar NO debe despegarse del suelo en ningun momento.',
   ],
-  errores: ['Lumbar separada del suelo — DETENER y reducir el rango.', 'Contener la respiracion.', 'Cuello en tension.'],
-  variantes: ['S1-2: rodillas flexionadas 15s. S3-4: piernas a 45° 20s. S5-6: piernas a 30° 25s. S7+: piernas a 15° 30s. F3: hollow body hang en barra.'],
-  notas_columna: 'La posicion hollow activa el transverso abdominal, el recto anterior y los oblicuos en sinergia. Con extrusion bilateral L4-L5 y L5-S1, la lumbar pegada al suelo es el criterio absoluto — una lumbar despegada genera presion discal posterior.'
+  errores: ['Lumbar separada del suelo — DETENER y reducir el rango.', 'Contener la respiracion.', 'Echar la cabeza hacia atras o tirar de la barbilla hacia el techo al elevar los hombros — sobrecarga los flexores cervicales (es la causa nº1 de tension de cuello en este ejercicio).', 'Sostener la cabeza solo con el cuello en lugar de elevarla desde el abdomen.'],
+  variantes: ['S1-2: rodillas flexionadas 15s. S3-4: piernas a 45° 20s. S5-6: piernas a 30° 25s. S7+: piernas a 15° 30s. F3: hollow body hang en barra.', 'Cervical (regresion): manten cabeza y hombros APOYADOS en el suelo y trabaja solo el tren inferior (piernas elevadas / rodillas a 90°, estilo dead bug hold) hasta que el cuello tolere la elevacion. Alternativa: cruza las manos sobre el pecho o llevalas tras la nuca para sostener el peso de la cabeza y descargar el cuello.', 'Cervical (bloque de apoyo): coloca un bloque de yoga en su altura mas baja (o una toalla doblada encima para amortiguar) bajo la nuca, de modo que la cabeza descanse en neutro — oreja en linea con el hombro, sin que la barbilla se proyecte hacia arriba. Eleva los hombros solo lo justo para no perder el contacto con el apoyo; mirada a los muslos y lumbar pegada al suelo. Si el bloque queda alto y te empuja la barbilla hacia arriba (extension cervical), baja la altura o usa solo la toalla. Quita el apoyo cuando el cuello tolere la elevacion.'],
+  notas_columna: 'La posicion hollow activa el transverso abdominal, el recto anterior y los oblicuos en sinergia. Con extrusion bilateral L4-L5 y L5-S1, la lumbar pegada al suelo es el criterio absoluto — una lumbar despegada genera presion discal posterior. Cervical: es el ejercicio de core con mas tension de cuello porque la cabeza se eleva sin apoyo; la elevacion debe partir del abdomen con barbilla hacia el pecho y mirada a los muslos. Si el cuello se carga, usar la regresion con cabeza apoyada antes que aguantar con tension.'
 };
 
 EX_DB['plank-anterior'] = {
@@ -1044,12 +1132,13 @@ EX_DB['plank-anterior'] = {
   pasos: [
     'Empuja los codos activamente contra el suelo.',
     'Activa el core: lumbar neutra — ni hundida ni elevada.',
+    'Cuello largo y en linea con la columna: mira al suelo a unos 20-30 cm por delante de las manos, con la barbilla ligeramente metida. La cabeza no se hunde entre los hombros ni se eleva para mirar al frente.',
     'Aprieta los gluteos para estabilizar la pelvis.',
     'Respira con ritmo constante.',
   ],
-  errores: ['Cadera que cae (lumbar hiperextendida) — el error mas comun.', 'Cadera demasiado elevada.', 'Codos muy adelantados respecto a los hombros.'],
-  variantes: ['S1-2: 20s sobre rodillas. S3-4: 30s completo. S5-6: 45s. S7+: elevacion alterna de pie.'],
-  notas_columna: 'La plancha anterior en codos es preferible a la plancha en manos en F2 porque el centro de gravedad mas bajo reduce la demanda lumbar. Con extrusion activa, la posicion prona puede generar molestia en algunos casos — evaluar individualmente.'
+  errores: ['Cadera que cae (lumbar hiperextendida) — el error mas comun.', 'Cadera demasiado elevada.', 'Levantar la cabeza para mirar al frente — hiperextiende la cervical y carga la nuca; la mirada va al suelo.', 'Dejar caer la cabeza entre los hombros y encoger los trapecios hacia las orejas — "empuja" el suelo alejando los hombros de las orejas.', 'Codos muy adelantados respecto a los hombros.'],
+  variantes: ['S1-2: 20s sobre rodillas. S3-4: 30s completo. S5-6: 45s. S7+: elevacion alterna de pie.', 'Cervical: si el cuello se carga, acorta primero el tiempo y la palanca (variante sobre rodillas) manteniendo el cuello neutro, y baja activamente los hombros alejandolos de las orejas. Mejor 20s con cuello largo que 45s craneando la cabeza.'],
+  notas_columna: 'La plancha anterior en codos es preferible a la plancha en manos en F2 porque el centro de gravedad mas bajo reduce la demanda lumbar. Con extrusion activa, la posicion prona puede generar molestia en algunos casos — evaluar individualmente. Cervical: en prono la tendencia es levantar la cabeza para mirar al frente (extension cervical sostenida) y encoger los trapecios; mantener la mirada al suelo y los hombros lejos de las orejas evita la tension de cuello.'
 };
 
 EX_DB['plank-hip-extension'] = {
@@ -1060,6 +1149,7 @@ EX_DB['plank-hip-extension'] = {
   posicion: 'Plancha anterior sobre codos. Lumbar neutra. Pelvis nivelada.',
   pasos: [
     'Adopta la posicion de plancha anterior: codos bajo los hombros, cuerpo en linea.',
+    'Cuello largo y neutro: mirada al suelo por delante de las manos, barbilla ligeramente metida, hombros lejos de las orejas. No mires al frente.',
     'Activa el core y los gluteos antes de mover la pierna.',
     'Eleva una pierna extendida hacia atras hasta la altura de la cadera — no mas.',
     'Manten la pelvis horizontal: no dejes que rote ni se incline hacia el lado de la pierna elevada.',
@@ -1071,9 +1161,10 @@ EX_DB['plank-hip-extension'] = {
     'Pelvis que rota hacia la pierna elevada — limitar la altura de elevacion.',
     'Perder la tension del core durante el movimiento.',
     'Elevar la pierna por encima de la cadera — genera hiperextension lumbar.',
+    'Levantar la cabeza para mirar al frente al subir la pierna — extiende la cervical; manten la mirada al suelo y el cuello neutro.',
   ],
-  variantes: ['S1-2: desde rodillas, elevar pierna 10 cm 3x6 cada lado. S3-4: plancha completa, elevacion hasta 45° 3x8. S5-6: plancha completa, elevacion hasta horizontal 3x10. S7+: tobillera ligera o banda en tobillos 3x10.'],
-  notas_columna: 'La extension de cadera activa en plancha es exigente para la lumbar si se supera la horizontal — la pierna NO debe subir mas alla de la cadera con extrusion activa. La pierna de apoyo trabaja los flexores de cadera isometricamente, lo cual es el estimulo terapeutico principal para el psoas iliaco sin carga axial.'
+  variantes: ['S1-2: desde rodillas, elevar pierna 10 cm 3x6 cada lado. S3-4: plancha completa, elevacion hasta 45° 3x8. S5-6: plancha completa, elevacion hasta horizontal 3x10. S7+: tobillera ligera o banda en tobillos 3x10.', 'Cervical: el esfuerzo de elevar la pierna tiende a "tirar" la cabeza hacia arriba; manten la barbilla metida y la nuca larga durante toda la serie. Si no puedes sostener el cuello neutro, vuelve a la variante sobre rodillas.'],
+  notas_columna: 'La extension de cadera activa en plancha es exigente para la lumbar si se supera la horizontal — la pierna NO debe subir mas alla de la cadera con extrusion activa. La pierna de apoyo trabaja los flexores de cadera isometricamente, lo cual es el estimulo terapeutico principal para el psoas iliaco sin carga axial. Cervical: como en toda plancha, mantener la mirada al suelo y los hombros lejos de las orejas; el impulso de elevar la pierna no debe arrastrar la cabeza hacia la extension.'
 };
 
 EX_DB['hf-fall-back'] = {
@@ -1179,6 +1270,7 @@ EX_DB['hip-flexor-plank'] = {
     'Pelvis que rota o se inclina al mover la pierna — reducir el rango de movimiento.',
     'Lumbar que se arquea al extender la pierna — es el error critico con extrusion discal.',
     'Manos demasiado adelantadas respecto a los hombros — sobrecarga la zona lumbar.',
+    'Levantar la cabeza para mirar al frente — manten el cuello neutro, mirada al suelo y hombros lejos de las orejas.',
     'Rodilla del banco que se desplaza — asegurar que el banco es estable.',
   ],
   variantes: [
@@ -1187,7 +1279,7 @@ EX_DB['hip-flexor-plank'] = {
     'S5-6: flexion completa (rodilla al pecho) + extension hasta horizontal 3x12.',
     'S7+: extension completa mas alla de la horizontal + tobillera ligera 3x10.',
   ],
-  notas_columna: 'Este ejercicio es una progresion del bird dog en banco, con mayor demanda sobre los flexores de cadera de la pierna libre y mayor reto de estabilizacion. La inclinacion del cuerpo (manos en suelo, rodilla en banco) reduce la carga lumbar respecto a una plancha horizontal convencional. Contraindicado si la extension de la pierna genera irradiacion S1.'
+  notas_columna: 'Este ejercicio es una progresion del bird dog en banco, con mayor demanda sobre los flexores de cadera de la pierna libre y mayor reto de estabilizacion. La inclinacion del cuerpo (manos en suelo, rodilla en banco) reduce la carga lumbar respecto a una plancha horizontal convencional. Contraindicado si la extension de la pierna genera irradiacion S1. Cervical: al estar en plancha alta con las manos en el suelo, vigila no dejar caer la cabeza ni encoger los trapecios — cuello largo y mirada al suelo.'
 };
 
 EX_DB['hanging-ball-raise'] = {
@@ -1302,6 +1394,7 @@ EX_DB['hip-flexor-pike'] = {
     'Arquear la lumbar en la posicion baja — es el error critico, genera presion discal posterior.',
     'Rotar la pelvis al elevar la pierna libre — mantener las caderas alineadas.',
     'Elevar la pierna libre demasiado rapido usando inercia — el movimiento debe ser controlado.',
+    'Forzar el cuello mirando entre las manos en el pike — deja que la cabeza siga a la columna sin tensar la nuca.',
     'Rodilla del banco que se desplaza durante el pike — asegurar la posicion inicial.',
     'No llegar a la posicion pike completa en fases tempranas — progresar gradualmente.',
   ],
@@ -1311,7 +1404,7 @@ EX_DB['hip-flexor-pike'] = {
     'S5-6: pike completo, pierna libre vertical, pausa 1s arriba 3x10.',
     'S7+: pike completo + pausa 2s + descenso excentrico 3s 3x10.',
   ],
-  notas_columna: 'El hip flexor pike es una de las progresiones mas funcionales del trabajo de flexores de cadera en cadena cerrada parcial. La posicion invertida (cadera sobre hombros en el punto alto) descomprime brevemente la columna lumbar durante el movimiento, lo que puede generar alivio si el dolor es de componente compresivo. La dificultad principal es mantener la lumbar neutra en el descenso — si esto falla, volver a la variante anterior.'
+  notas_columna: 'El hip flexor pike es una de las progresiones mas funcionales del trabajo de flexores de cadera en cadena cerrada parcial. La posicion invertida (cadera sobre hombros en el punto alto) descomprime brevemente la columna lumbar durante el movimiento, lo que puede generar alivio si el dolor es de componente compresivo. La dificultad principal es mantener la lumbar neutra en el descenso — si esto falla, volver a la variante anterior. Cervical: en el punto alto, el peso se reparte hacia los hombros; no fuerces el cuello hacia el pecho ni cargues la cabeza — manten el cuello neutro y los hombros activos lejos de las orejas.'
 };
 
 // ─── NUEVOS EJERCICIOS — MOVILIDAD CADERA ─────────────────────────
@@ -1483,6 +1576,7 @@ EX_DB['ext-toracica-fitball'] = {
     'Fitball bajo la zona lumbar — riesgo de hiperextension lumbar.',
     'Forzar el rango — la extension debe ser pasiva y progresiva.',
     'Cabeza colgando sin soporte — si hay molestia cervical, apoyar la cabeza.',
+    'Variante de brazos extendidos (protraccion overhead, S5+): el brazo de palanca largo puede arrastrar la extension a la lumbar — mantener el fitball en T4-T8, nunca dejarlo bajar de T8.',
   ],
   variantes: [
     'S1-2: brazos cruzados en pecho — extension minima.',
@@ -1798,6 +1892,88 @@ EX_DB['hiperext'] = {
   notas_columna: 'La hiperextension en banco 45° es el ejercicio central del programa de cadena posterior porque permite cuantificar la progresion de carga con precision. Con extrusion L5-S1 activa, comenzar siempre por el isometrico en posicion neutra antes de introducir rango de movimiento.'
 };
 
+EX_DB['superman'] = {
+  nombre: 'Superman (extension en prono)',
+  categoria: 'Cadena posterior',
+  color: '#3C3489',
+  descripcion: 'Extension de cadera y columna en prono elevando brazos y/o piernas. Combina extension espinal con alcance de brazos al frente (protraccion). Los brazos estirados al frente actuan como palanca larga que multiplica el momento extensor sobre la lumbar — por eso la posicion de los brazos es la variable que mas modula la carga, mas que el peso anadido.',
+  posicion: 'Tumbado boca abajo. Cinta yoga o foam bajo el abdomen como fulcro. Cabeza neutra (mirada al suelo).',
+  pasos: [
+    'Activa el gluteo y lleva la pelvis a retroversion suave antes de elevar.',
+    'Eleva hasta la horizontal — NO mas alto (el punto alto no es la hiperextension).',
+    'Manten la cabeza neutra, en linea con la columna.',
+    'Pausa 2 seg arriba y baja controlando el excentrico.',
+    'Progresa primero la posicion de los brazos (pegados al cuerpo -> nuca -> extendidos al frente) y solo despues anade carga.',
+  ],
+  errores: [
+    'Hiperextension lumbar al subir — el techo es la horizontal, no mas.',
+    'Brazos extendidos al frente antes de tiempo — la palanca larga lleva la extension a la lumbar.',
+    'Cabeza en hiperextension cervical (mirar al frente) — arrastra toda la cadena a extension.',
+    'Elevar a la vez brazos y piernas con palanca completa en estadios bajos.',
+  ],
+  variantes: [
+    'S1-2: brazos pegados al cuerpo, iso hold sin elevar piernas.',
+    'S3-4: manos en la nuca, extension completa sin peso.',
+    'S5-6: brazos extendidos al frente + tobillera ligera 1kg.',
+    'S7+: brazos extendidos al frente + tobillera 2kg + pausa 3s.',
+  ],
+  notas_columna: 'El Superman es el ejemplo de libro de extension de espalda en protraccion: el alcance de brazos al frente alarga la palanca y, via dorsal ancho y fascia toracolumbar, puede arrastrar la extension hacia L4-L5/L5-S1, cerrando el foramen donde sale la raiz S1. Por eso en F2 se progresa por posicion de brazos (palanca) antes que por carga, y nunca se pasa de la horizontal. Si aparece irradiacion S1, reducir la palanca (brazos al cuerpo) o sustituir por single leg reverse hyper.'
+};
+
+EX_DB['protraccion-serrato-plancha'] = {
+  nombre: 'Protraccion escapular en plancha (serrato) — hold',
+  categoria: 'Espalda / escapular',
+  color: '#1A6E8A',
+  descripcion: 'Hold isometrico en plancha empujando el suelo para separar al maximo las escapulas (protraccion). Aisla el serrato anterior y entrena la protraccion escapular con la columna NEUTRA — la version segura de la protraccion, sin extension lumbar asociada.',
+  posicion: 'Plancha sobre manos (o rodillas en estadios bajos). Manos bajo los hombros. Lumbar neutra, costillas abajo, gluteo activo.',
+  pasos: [
+    'Adopta la plancha con el cuerpo en linea y la lumbar neutra.',
+    'Empuja el suelo alejandolo: las escapulas se separan y la parte alta de la espalda se redondea ligeramente (protraccion).',
+    'El movimiento ocurre SOLO en las escapulas — la lumbar no se mueve.',
+    'Manten la protraccion maxima 20-30 seg respirando.',
+    'No dejes caer el pecho entre las escapulas (eso seria retraccion pasiva).',
+  ],
+  errores: [
+    'Arquear o hundir la lumbar para "ayudar" — la protraccion es escapular, no lumbar.',
+    'Subir las caderas o sacar el gluteo.',
+    'Encoger los hombros hacia las orejas en vez de separar las escapulas.',
+  ],
+  variantes: [
+    'S1-2: desde rodillas 3x15s.',
+    'S3-4: plancha completa 3x20s.',
+    'S5-6: plancha completa 3x30s.',
+    'S7+: una mano sobre foam/balon (inestable) 3x20s.',
+  ],
+  notas_columna: 'Entrenar la protraccion escapular aislada y con lumbar neutra ensena a disociar el movimiento del hombro del de la columna. Es justo lo que protege en tareas de alcance overhead (jalon, nado, alcanzar un estante): si el serrato controla la protraccion, el hombro llega solo y no roba extension a L4-S1. Es el complemento defensivo de la regla de no extender la lumbar al protraer.'
+};
+
+EX_DB['serratus-wall-slide'] = {
+  nombre: 'Serratus wall slide — hold isometrico',
+  categoria: 'Espalda / escapular',
+  color: '#1A6E8A',
+  descripcion: 'De pie frente a la pared, antebrazos apoyados, se deslizan hacia arriba protraendo las escapulas y se mantiene la posicion alta. Serrato anterior y trapecio inferior en cadena cerrada, de pie y con lumbar neutra.',
+  posicion: 'De pie frente a la pared, antebrazos y cantos de las manos en contacto, codos a la altura de los hombros. Costillas abajo, lumbar neutra, ligera retroversion.',
+  pasos: [
+    'Apoya los antebrazos en la pared y activa el abdomen (costillas abajo).',
+    'Desliza los antebrazos hacia arriba manteniendo el contacto.',
+    'Al llegar arriba, empuja la pared para protraer las escapulas y manten.',
+    'Sostén 20-30 seg sin perder la posicion de costillas abajo.',
+    'NO arquees la lumbar ni saques las costillas para alcanzar mas alto.',
+  ],
+  errores: [
+    'Arquear la lumbar / sacar costillas para ganar altura — el limite es donde la lumbar deja de estar neutra.',
+    'Despegar los antebrazos de la pared.',
+    'Encoger los hombros hacia las orejas.',
+  ],
+  variantes: [
+    'S1-2: rango bajo 3x15s.',
+    'S3-4: rango medio 3x20s.',
+    'S5-6: rango alto + protraccion maxima 3x25s.',
+    'S7+: con banda alrededor de los antebrazos 3x30s.',
+  ],
+  notas_columna: 'El wall slide entrena el alcance overhead de forma segura: ensena a elevar los brazos protraendo la escapula SIN compensar con extension lumbar. Para L4-L5/L5-S1 es clave porque el fallo tipico al levantar los brazos es sacar las costillas y arquear la lumbar (cierre foraminal). La pared y el cue de costillas abajo hacen de biofeedback.'
+};
+
 EX_DB['glute-bridge'] = {
   nombre: 'Puente de gluteo dinamico',
   categoria: 'Gluteo / activacion',
@@ -1978,6 +2154,338 @@ EX_DB['tfl-stretch'] = {
 };
 
 // ═══════════════════════════════════════════════════════════════════
+// ─── FICHAS DE CUELLO / CERVICAL ───────────────────────────────────
+// ═══════════════════════════════════════════════════════════════════
+
+EX_DB['chin-tuck'] = {
+  nombre: 'Chin tuck supino (flexión craneocervical)',
+  categoria: 'Cuello / cervical',
+  color: '#1B8A9C',
+  descripcion: 'Activación de los flexores profundos del cuello (longus colli y longus capitis) mediante una retracción suave del mentón ("doble mentón") que alarga la nuca, sin levantar la cabeza. Es el ejercicio fundacional del cuello: el equivalente cervical de la activación isométrica del core.',
+  posicion: 'Tumbado boca arriba, rodillas dobladas, pies en el suelo. Cabeza apoyada, mirada al techo. Hombros relajados lejos de las orejas.',
+  pasos: [
+    'Sin levantar la cabeza, desliza el mentón hacia el cuello como haciendo "doble mentón".',
+    'Siente cómo la nuca se alarga y se acerca ligeramente al suelo.',
+    'El esfuerzo está en los músculos profundos del frente del cuello, no en tensar la garganta.',
+    'Mantén 5 segundos respirando con normalidad y suelta despacio.',
+  ],
+  errores: [
+    'Levantar la cabeza del suelo (eso ya es elevación, no chin tuck) — domina primero la retracción pura.',
+    'Adelantar el mentón o apretar la mandíbula: eso recluta el esternocleidomastoideo en vez de los flexores profundos.',
+    'Tensar los hombros hacia las orejas.',
+  ],
+  variantes: [
+    'S1-2: retracción muy suave sin elevar 3x8.',
+    'S3-4: retracción + hold 5 seg 3x10.',
+    'S5-6: retracción manteniendo la cabeza despegada 2 cm 3x10.',
+    'S7+: retracción + sostener la cabeza despegada 10 seg 3x8.',
+  ],
+  notas_columna: 'Los flexores profundos del cuello son a la columna cervical (C5-C6/C6-C7, los niveles donde más se hernia) lo que el transverso del abdomen es a la lumbar: estabilizadores locales que mantienen los segmentos neutros. Si están débiles aparece la cabeza adelantada (chin-poke), que aumenta varias veces la carga sobre los discos cervicales. Reentrenarlos es el requisito previo para subir la intensidad del core: en plancha, hollow body y L-sit la cabeza debe sostenerse sin craquear el cuello — justo lo que entrena este ejercicio. Hacerlo a diario, también como reseteo postural durante el trabajo de pantalla.'
+};
+
+EX_DB['chin-tuck-pared'] = {
+  nombre: 'Chin tuck de pie contra pared (postural)',
+  categoria: 'Cuello / cervical',
+  color: '#1B8A9C',
+  descripcion: 'Versión de pie del chin tuck usando la pared como biofeedback. Reentrena la postura de cabeza adelantada que genera el trabajo sentado, integrando la flexión craneocervical en bipedestación.',
+  posicion: 'De pie con los talones, glúteos, espalda alta y occipucio en contacto con la pared. Brazos relajados, hombros bajos.',
+  pasos: [
+    'Con el occipucio apoyado, haz "doble mentón" llevando la nuca hacia la pared.',
+    'No mires hacia arriba ni extiendas el cuello: el movimiento es de retracción, no de extensión.',
+    'Mantén 5 segundos sintiendo cómo crece la distancia entre orejas y hombros.',
+    'Suelta sin perder la postura erguida.',
+  ],
+  errores: [
+    'Extender el cuello (sacar la barbilla hacia arriba) en lugar de retraerla.',
+    'Despegar la espalda alta de la pared arqueando para "llegar".',
+    'Encoger los hombros.',
+  ],
+  variantes: [
+    'S1-2: contra pared con feedback 3x6.',
+    'S3-4: contra pared hold 5 seg 3x8.',
+    'S5-6: de pie sin pared 3x8.',
+    'S7+: sentado en la silla de trabajo cada hora (micro-pausas antisedentarismo).',
+  ],
+  notas_columna: 'La postura de cabeza adelantada sostenida durante horas frente a la pantalla es el principal factor mecánico de sobrecarga discal cervical en C5-C6/C6-C7. Esta variante traslada la activación de los flexores profundos a la posición funcional (de pie/sentado) en la que pasas el día, y la pared te enseña dónde está el neutro. Es prevención pura: realizada en micro-dosis frecuentes evita la fatiga postural que precede al dolor cervical.'
+};
+
+EX_DB['head-lift'] = {
+  nombre: 'Elevación de cabeza con doble mentón (endurance flexor profundo)',
+  categoria: 'Cuello / cervical',
+  color: '#1B8A9C',
+  descripcion: 'Progresión de fuerza-resistencia de los flexores profundos del cuello. Sobre el chin tuck mantenido, se despega ligeramente la cabeza para añadir carga, entrenando la capacidad de sostener la cabeza durante esfuerzos prolongados (como el core intenso).',
+  posicion: 'Tumbado boca arriba, rodillas dobladas. Cabeza apoyada en el suelo.',
+  pasos: [
+    'Haz primero el chin tuck (doble mentón) y MANTENLO durante todo el ejercicio.',
+    'Sin perder la retracción, despega la cabeza 2-3 cm del suelo.',
+    'Comprueba que el mentón no se adelanta: si la barbilla se proyecta hacia arriba, manda el esternocleidomastoideo y debes bajar la dificultad.',
+    'Baja la cabeza despacio manteniendo el doble mentón hasta apoyar.',
+  ],
+  errores: [
+    'Soltar el chin tuck al elevar — la cabeza "cae hacia atrás" sobre el cuello.',
+    'Proyectar la barbilla hacia el techo (compensación con músculos superficiales).',
+    'Subir demasiado: el rango útil es pequeño, no se trata de hacer "abdominales de cuello".',
+  ],
+  variantes: [
+    'S1-2: no introducir todavía — dominar el chin tuck primero.',
+    'S3-4: despegue mínimo 3x6.',
+    'S5-6: despegue 3 cm + 2 seg 3x8.',
+    'S7+: despegue + sostener 10 seg 3x8.',
+  ],
+  notas_columna: 'La debilidad en resistencia (no en fuerza máxima) de los flexores profundos es lo que se asocia al dolor cervical crónico y a la cabeza adelantada. Este ejercicio entrena precisamente esa resistencia, que es la cualidad necesaria para que el cuello aguante una plancha larga o una serie de hollow holds sin claudicar en chin-poke. Introducir solo cuando el chin tuck puro sea impecable; la señal de progresión correcta es poder elevar SIN que la barbilla se adelante. Parar ante cualquier mareo, hormigueo en brazos o dolor cervical.'
+};
+
+EX_DB['iso-cervical'] = {
+  nombre: 'Isométricos cervicales multidireccionales (auto-resistidos)',
+  categoria: 'Cuello / cervical',
+  color: '#1B8A9C',
+  descripcion: 'Contracciones isométricas del cuello en las cuatro direcciones contra la resistencia de la propia mano, sin que la cabeza se mueva. Entrena la estabilidad anti-movimiento de la columna cervical en posición neutra: el equivalente cervical del Pallof press anti-rotación.',
+  posicion: 'Sentado o de pie, cabeza neutra con un doble mentón suave. La mano se coloca sucesivamente en la frente, en la nuca y en cada sien.',
+  pasos: [
+    'Coloca la palma en la frente y empuja la cabeza contra la mano SIN que la cabeza se mueva (anti-flexión). 6 seg al 30-50%.',
+    'Mano en la nuca, empuja hacia atrás sin moverte (anti-extensión).',
+    'Mano en una sien, empuja lateralmente sin moverte (anti-inclinación). Repite al otro lado.',
+    'Respira durante cada contracción; la cabeza permanece perfectamente quieta en neutro.',
+  ],
+  errores: [
+    'Dejar que la cabeza ceda o avance: debe ser isométrico puro, sin movimiento.',
+    'Aplicar el 100% de fuerza de golpe — sube progresivo y quédate en el 30-50% al inicio.',
+    'Perder el doble mentón y caer en cabeza adelantada durante el empuje.',
+  ],
+  variantes: [
+    'S1-2: 20% de intensidad, solo frontal y laterales 3x5s.',
+    'S3-4: 30% en las 4 direcciones 3x6s.',
+    'S5-6: 50% en las 4 direcciones 3x6s.',
+    'S7+: 50% + diagonales (flexo-rotación resistida) 3x6s.',
+  ],
+  notas_columna: 'La función protectora número uno de la musculatura cervical no es mover la cabeza, sino impedir que se mueva cuando algo la empuja: resistir, no generar. Por eso el trabajo isométrico anti-movimiento es el más seguro y transferible para prevenir la hernia cervical, igual que el Pallof y la plancha lo son para la lumbar. Mantener el cuello neutro bajo carga es exactamente lo que se necesita durante el core intenso, donde el tronco genera tensiones que llegan al cuello. Nunca llevar a rango final bajo fuerza; el ejercicio se hace SIEMPRE en neutro.'
+};
+
+EX_DB['neck-cars'] = {
+  nombre: 'Neck CARs — movilidad cervical controlada',
+  categoria: 'Cuello / cervical',
+  color: '#1B8A9C',
+  descripcion: 'Rotaciones articulares controladas (Controlled Articular Rotations) de la columna cervical: círculos lentos y activos en todo el rango libre de dolor, manteniendo el tronco quieto. Mantiene la movilidad y la salud articular del cuello sin cargas ni rangos forzados.',
+  posicion: 'Sentado o de pie, tronco erguido, hombros estables y quietos. Doble mentón suave de partida.',
+  pasos: [
+    'Lleva el mentón al pecho (flexión) y desde ahí dibuja un círculo muy lento: oreja al hombro, mirada que rota, nuca, y de vuelta.',
+    'El movimiento es activo y controlado en cada grado, no un balanceo por inercia.',
+    'Quédate dentro del rango sin dolor y sin sensación de "craqueo" forzado.',
+    'No dejes caer la cabeza hacia atrás combinando extensión y rotación: esa posición cierra el foramen cervical.',
+  ],
+  errores: [
+    'Forzar el final del rango o buscar que "suene" el cuello.',
+    'Mover los hombros o el tronco para ganar amplitud.',
+    'Pasar rápido por la zona de extensión + rotación (la más sensible para el disco y la raíz nerviosa).',
+  ],
+  variantes: [
+    'S1-2: flexión/extensión y rotaciones por separado, rango corto.',
+    'S3-4: medio círculo inferior (sin la fase de extensión) 2x3.',
+    'S5-6: círculo completo lento y controlado 2x3.',
+    'S7+: círculo completo + pausa activa en cada punto cardinal.',
+  ],
+  notas_columna: 'Son los "Hip CARs" del cuello: trabajan el rango articular activo sin carga axial, que es lo primero que se introduce de forma segura para mantener la salud del segmento. La clave de seguridad cervical es idéntica a la regla lumbar de no combinar extensión con rotación bajo carga: en el cuello esa combinación cierra el foramen y puede comprimir la raíz nerviosa, por eso las fases bajas se introducen sin extensión. El círculo completo debe ser indoloro en todo el arco; cualquier punto que provoque mareo, hormigueo en el brazo o dolor marca el límite a respetar.'
+};
+
+EX_DB['prone-neck-ext'] = {
+  nombre: 'Extensión cervical prona con retracción escapular',
+  categoria: 'Cuello / cervical',
+  color: '#1B8A9C',
+  descripcion: 'Fortalecimiento de los extensores profundos del cuello y del trapecio inferior en posición prona, elevando la cabeza solo hasta la línea del cuerpo mientras se juntan las escápulas. Equilibra el ratio flexor/extensor cervical y combate la cabeza adelantada desde la cadena posterior.',
+  posicion: 'Boca abajo, con la cabeza fuera del borde del banco (o tumbado en el suelo mirando abajo). Frente hacia el suelo, brazos a los lados o en posición de "W".',
+  pasos: [
+    'Parte de un doble mentón suave.',
+    'Eleva la cabeza solo hasta alinearla con el tronco — NO más arriba (nada de hiperextensión).',
+    'Al mismo tiempo, junta y baja las escápulas (retracción + depresión escapular).',
+    'Mantén 3 segundos en la línea neutra y baja con control.',
+  ],
+  errores: [
+    'Hiperextender el cuello mirando al frente o hacia arriba: cierra el foramen cervical.',
+    'Tirar con los trapecios superiores encogiendo los hombros hacia las orejas.',
+    'Perder el doble mentón y proyectar la barbilla al elevar.',
+  ],
+  variantes: [
+    'S1-2: solo retracción escapular sin elevar la cabeza 3x10.',
+    'S3-4: elevar la cabeza hasta neutro 3x8.',
+    'S5-6: neutro + 3 seg hold 3x8.',
+    'S7+: + ligera resistencia (toalla/mano en la nuca) 3x8.',
+  ],
+  notas_columna: 'Un cuello sano necesita equilibrio entre flexores y extensores profundos: trabajar solo el chin tuck dejaría la cadena posterior débil. El trapecio inferior, además, estabiliza la escápula y reduce la tendencia a la cabeza adelantada y a la hipercifosis dorsal, el mismo patrón postural que sobrecarga tanto la cervical como, por compensación, la lumbar. El límite es neutro: elevar hasta la línea del cuerpo, nunca por encima, para no comprimir los discos cervicales en extensión. Parar ante mareo u hormigueo.'
+};
+
+EX_DB['upper-trap-stretch'] = {
+  nombre: 'Estiramiento del trapecio superior y elevador de la escápula',
+  categoria: 'Cuello / cervical',
+  color: '#1B8A9C',
+  descripcion: 'Estiramiento suave de los músculos que más acumulan tensión postural por el trabajo de pantalla: el trapecio superior y el elevador de la escápula. Libera la rigidez que mantiene la cabeza tensa y eleva los hombros.',
+  posicion: 'Sentado en una silla. Una mano sujeta el borde del asiento para fijar el hombro abajo. La otra mano se apoya suavemente sobre la cabeza.',
+  pasos: [
+    'Con el hombro de un lado fijado hacia abajo (sujetando el asiento), lleva la cabeza hacia el lado contrario (oreja al hombro): estira el trapecio superior.',
+    'Para el elevador, gira ligeramente la cara hacia la axila del lado contrario y deja caer la cabeza hacia delante.',
+    'La mano de arriba solo acompaña el peso de la cabeza, sin tirar con fuerza.',
+    'Mantén 30 segundos respirando, sin rebotes, y cambia de lado.',
+  ],
+  errores: [
+    'Tirar fuerte de la cabeza con la mano (debe ser un estiramiento suave).',
+    'Subir el hombro del lado que se estira: hay que mantenerlo deprimido.',
+    'Rotar o forzar la columna cervical buscando "más estiramiento".',
+  ],
+  variantes: [
+    'S1-2: solo trapecio superior 2x20s.',
+    'S3-4: trapecio + elevador 2x30s.',
+    'S5-6: + ligera presión de la mano.',
+    'S7+: + respiración prolongada 40s en cada posición.',
+  ],
+  notas_columna: 'El trapecio superior y el elevador de la escápula se sobreactivan para sostener la cabeza adelantada y los hombros encogidos del trabajo sentado; esa tensión crónica comprime el segmento cervical alto y mantiene el patrón postural que predispone a la hernia. Liberar estos músculos complementa el fortalecimiento de los flexores y extensores profundos: relajar lo sobreactivo y reforzar lo débil es la fórmula para reequilibrar el cuello. Hacerlo al final de la rutina cervical o en pausas del trabajo de pantalla.'
+};
+
+EX_DB['iso-cervical-banda'] = {
+  nombre: 'Isométrico cervical con banda elástica',
+  categoria: 'Cuello / cervical',
+  color: '#1B8A9C',
+  descripcion: 'Progresión del isométrico auto-resistido usando una banda elástica como resistencia graduable y constante. Permite cargar la estabilidad anti-movimiento del cuello de forma medible una vez dominado el trabajo con la propia mano.',
+  posicion: 'De pie o sentado con la cabeza neutra y doble mentón. La banda se ancla a la altura de la cabeza (o se pasa por la frente/nuca con un agarre cómodo), generando una tracción que el cuello debe resistir sin moverse.',
+  pasos: [
+    'Coloca la banda de modo que tire de la cabeza en una dirección (frontal, posterior o lateral).',
+    'Resiste la tracción manteniendo la cabeza perfectamente inmóvil en neutro con el doble mentón.',
+    'Aguanta 10 segundos respirando, sin dejar que la banda te lleve al rango final.',
+    'Cambia el anclaje para trabajar cada dirección por separado.',
+  ],
+  errores: [
+    'Permitir que la banda mueva la cabeza hacia el end-range (debe ser isométrico, sin movimiento).',
+    'Usar una banda demasiado fuerte que rompa el neutro.',
+    'Aguantar la respiración o apretar la mandíbula.',
+  ],
+  variantes: [
+    'S1-2: no introducir — consolidar antes el auto-resistido.',
+    'S3-4: banda ligera frontal y posterior 3x8s.',
+    'S5-6: banda ligera en las 4 direcciones 3x10s.',
+    'S7+: banda media en las 4 direcciones 3x10s.',
+  ],
+  notas_columna: 'Es la versión cargada del trabajo isométrico anti-movimiento, equivalente a pasar del Pallof con banda ligera a banda fuerte en el core. La banda da una resistencia constante y medible que permite progresar de forma objetiva la estabilidad cervical, manteniendo la regla de oro: el cuello trabaja en neutro y nunca se deja arrastrar al rango final bajo carga. Introducir solo cuando el isométrico con la propia mano sea sólido y sin síntomas. Parar ante cualquier mareo, hormigueo en los brazos o dolor irradiado.'
+};
+
+// ═══════════════════════════════════════════════════════════════════
+// ─── FICHAS DE MOVILIDAD TORACICA Y CADERA (descarga del cuello) ───
+// El dolor cervical suele venir de una columna toracica rigida: si la
+// espalda media no extiende ni rota bien, el cuello compensa. Estos
+// ejercicios devuelven movilidad dorsal y de cadera para que el cuello
+// trabaje menos. Complementan la rutina del grupo NECK.
+// ═══════════════════════════════════════════════════════════════════
+
+EX_DB['apertura-toracica-disco'] = {
+  nombre: 'Apertura torácica con disco (thoracic plate opener)',
+  categoria: 'Movilidad torácica',
+  color: '#1A6E8A',
+  descripcion: 'Apertura del pecho y extensión de la columna torácica media usando el peso de un disco como ayuda. La carga ligera por encima de la cabeza, combinada con el apoyo en el foam roller, lleva los hombros a flexión y el tórax a extensión, justo lo contrario de la postura encorvada de pantalla.',
+  posicion: 'De rodillas frente a un foam roller colocado en horizontal. Disco (o mancuerna/mochila con peso en casa) sujeto con ambas manos. Glúteos bajando hacia los talones.',
+  pasos: [
+    'Apoya los codos/antebrazos sobre el foam roller con el disco sujeto entre las manos.',
+    'Baja los glúteos hacia los talones mientras llevas los brazos por encima de la cabeza.',
+    'Deja que el pecho "caiga" entre los brazos: el movimiento abre el tórax y extiende la zona dorsal.',
+    'La extensión ocurre en la columna TORÁCICA, no en la lumbar (no arquees la zona baja para bajar más).',
+    'Sostén la posición de apertura unos segundos y vuelve con control.',
+  ],
+  errores: [
+    'Arquear la zona lumbar para ganar rango — el objetivo es la columna torácica.',
+    'Encoger los hombros hacia las orejas en lugar de dejar caer el pecho.',
+    'Usar demasiado peso: es movilidad, no fuerza; el disco solo guía la apertura.',
+  ],
+  variantes: [
+    'S1-2: sin peso, brazos sobre el rodillo, rango corto.',
+    'S3-4: disco ligero 2-5 kg + pausa 2 seg.',
+    'S5-6: disco 5-10 kg, apertura completa.',
+    'S7+: tumbado en banco con los omóplatos en el borde, disco con brazos extendidos dejando caer el peso por gravedad (arco torácico).',
+    'Casa: foam roller o borde del sofá + mancuerna/mochila con peso.',
+  ],
+  notas_columna: 'La extensión torácica es la movilidad que más se pierde con el trabajo sentado y la que más necesita el cuello: cuando la espalda media no extiende, las cervicales bajas (C5-C6/C6-C7) compensan hiperextendiéndose, que es el mecanismo que predispone a la hernia cervical. Recuperar la extensión dorsal descarga directamente ese trabajo del cuello. Importante para L4-S1: la extensión debe ocurrir en el tórax y nunca en la lumbar — el foam roller y el cue de glúteos a talones ayudan a aislar el segmento correcto. Complementa la rutina cervical del grupo NECK.'
+};
+
+EX_DB['side-bend-pica'] = {
+  nombre: 'Inclinación lateral con pica (side bend)',
+  categoria: 'Movilidad torácica',
+  color: '#1A6E8A',
+  descripcion: 'Inclinación lateral del tronco con los brazos extendidos por encima de la cabeza para estirar los músculos intercostales, el dorsal ancho y los oblicuos. Libera la tensión que se acumula en los costados del torso al mantener la misma postura durante horas.',
+  posicion: 'De rodillas sobre un banco (o de pie). Pica/palo sujeto con ambas manos por encima de la cabeza, brazos estirados. Espalda recta, pelvis estable.',
+  pasos: [
+    'Lleva la pica por encima de la cabeza con los brazos estirados y el tronco erguido.',
+    'Inclina el tronco lateralmente hacia un lado de forma controlada, manteniendo la espalda recta.',
+    'No rotes ni te vayas hacia delante: el movimiento es puramente lateral.',
+    'Siente el estiramiento en el costado opuesto (costillas, dorsal, oblicuo).',
+    'Vuelve al centro con control y cambia de lado.',
+  ],
+  errores: [
+    'Llevar la inclinación a la zona lumbar en vez de a las costillas/tórax.',
+    'Rotar el tronco o proyectar la cadera hacia un lado.',
+    'Curvar la espalda hacia delante perdiendo la verticalidad.',
+  ],
+  variantes: [
+    'S1-2: sin pica, manos en la cabeza, rango corto.',
+    'S3-4: pica overhead, rango medio + pausa 2 seg.',
+    'S5-6: pica, rango completo con control excéntrico.',
+    'S7+: de pie con una barra ligera sobre los hombros (más estabilidad central).',
+    'Casa: palo de escoba en lugar de pica.',
+  ],
+  notas_columna: 'La movilidad lateral del tórax y la elasticidad del dorsal ancho influyen directamente en el cuello: el dorsal conecta el brazo con la columna y, si está acortado, tira de los hombros hacia dentro y favorece la cabeza adelantada. Liberar los costados e intercostales mejora también la mecánica respiratoria y la posición de las costillas. Clave de seguridad para L4-S1: la inclinación es torácica/costal — mantener la lumbar neutra y no cargar el lateral en flexión lumbar, especialmente en la variante con barra.'
+};
+
+EX_DB['ext-toracica-banco-pica'] = {
+  nombre: 'Extensión torácica en banco con pica (overhead)',
+  categoria: 'Movilidad torácica',
+  color: '#1A6E8A',
+  descripcion: 'Estiramiento clásico de extensión torácica con apoyo de los codos en un banco y los brazos por encima de la cabeza. Combate la postura encorvada y de hombros caídos, abriendo el tórax y estirando los dorsales. Versión overhead de la movilidad torácica en banco.',
+  posicion: 'De rodillas frente a un banco (en casa: silla, cama o sofá firme). Codos apoyados en el banco, pica sujeta con las manos por encima de la cabeza. Cadera sobre las rodillas.',
+  pasos: [
+    'Apoya los codos en el banco con la pica sujeta por encima de la cabeza.',
+    'Mantén la cadera sobre las rodillas (no la lleves hacia atrás).',
+    'Deja caer el pecho hacia el suelo entre los brazos, sintiendo cómo se extiende la columna torácica y se estiran los dorsales.',
+    'No arquees la zona lumbar para bajar más: el rango lo da el tórax.',
+    'Respira largo, exhalando en el punto de máxima apertura.',
+  ],
+  errores: [
+    'Arquear la lumbar para ganar profundidad (debe extenderse el tórax, no la zona baja).',
+    'Llevar la cadera hacia los talones, lo que reduce la extensión torácica.',
+    'Tensar el cuello empujando la barbilla hacia delante: la cabeza acompaña a la columna.',
+  ],
+  variantes: [
+    'S1-2: codos en banco, caída mínima.',
+    'S3-4: con pica, pausa 3 seg en el fondo.',
+    'S5-6: sin pica, solo codos, dejando caer cabeza y pecho más profundo.',
+    'S7+: profundidad máxima + respiraciones largas exhalando en el fondo.',
+    'Casa: usar una silla, la cama o un sofá firme en lugar del banco.',
+  ],
+  notas_columna: 'Es uno de los estiramientos más eficaces para revertir la postura cifótica (hombros caídos, espalda alta redondeada) que obliga al cuello a hiperextenderse para mantener la mirada al frente — el patrón que sobrecarga C5-C6/C6-C7. Complementa la extensión torácica en cuádrupeda y sobre fitball del mismo bloque, añadiendo el componente de estiramiento del dorsal por la posición overhead. Regla para L4-S1: el rango debe salir del tórax; mantener la lumbar neutra y no compensar arqueando la zona baja.'
+};
+
+EX_DB['pancake-straddle'] = {
+  nombre: 'Pancake (estiramiento en straddle)',
+  categoria: 'Movilidad cadera',
+  color: '#7A3DAA',
+  descripcion: 'Estiramiento en posición de piernas muy abiertas (straddle) inclinando el torso hacia delante con la espalda recta. Abre las caderas y estira la cadena posterior (aductores e isquiotibiales). La rigidez de cadera suele compensarse con mala postura en la columna lumbar y cervical.',
+  posicion: 'Sentado en el suelo con las piernas muy abiertas en forma de "V". Banda elástica anclada al frente (en casa: a un mueble bajo o al pie de la cama; en gym: polea ligera) para ayudar a mantener la espalda erguida.',
+  pasos: [
+    'Siéntate en straddle con las piernas extendidas y las puntas de los pies hacia el techo.',
+    'Sujeta la banda anclada al frente para ayudarte a mantener la espalda recta.',
+    'Inclina el torso hacia delante desde la CADERA (báscula pélvica anterior), no redondeando la lumbar.',
+    'Tira suavemente con la banda para profundizar manteniendo la columna larga.',
+    'Mantén respirando, sin rebotes, y sal con control.',
+  ],
+  errores: [
+    'Redondear la espalda baja para "llegar" más adelante — la inclinación es desde la cadera.',
+    'Forzar la apertura hasta el dolor en la cara interna del muslo.',
+    'Bloquear la respiración.',
+  ],
+  variantes: [
+    'S1-2: V estrecha, manos en el suelo, espalda erguida sin inclinar.',
+    'S3-4: banda ligera, inclinación suave desde la cadera.',
+    'S5-6: V amplia, banda media, pecho hacia el suelo manteniendo la espalda recta.',
+    'S7+: polea/cable con carga ligera para tracción constante (flexibilidad activa).',
+    'F3: pancake completo, pecho al suelo.',
+  ],
+  notas_columna: 'La movilidad de cadera es la base de la que depende toda la postura: cuando las caderas y la cadena posterior están rígidas, la pelvis no bascula bien y la columna compensa, tanto en la zona lumbar (donde está tu extrusión L4-S1) como, en cadena ascendente, en la cervical. Hacer el pancake con la espalda recta es esencial — la banda o polea sirve precisamente para inclinarte desde la cadera sin redondear la lumbar, lo que protege L4-S1 mientras ganas flexibilidad. Una cadera móvil reduce la compensación postural que tensa el cuello.'
+};
+
+// ═══════════════════════════════════════════════════════════════════
 // ─── GIFS DEMOSTRATIVOS (ExerciseDB · oss.exercisedb.dev) ──────────
 // Mapea claves de EX_DB al id de su GIF demostrativa. Las GIFs están
 // DESCARGADAS en local (carpeta exgif/<id>.gif) — la app NO llama a
@@ -2049,6 +2557,20 @@ const EX_GIF = {
 // tiene GIF en EX_GIF. Valor = nombre del archivo en eximg/ (sin .svg).
 const EX_IMG = {
   'viparita': 'viparita',  // piernas en la pared (Viparita Karani)
+  // ── cuello / cervical (2026-06-25) ──
+  'chin-tuck':         'chin-tuck',          // flexion craneocervical supino
+  'chin-tuck-pared':   'chin-tuck',          // reutiliza el diagrama de chin tuck
+  'head-lift':         'head-lift',          // elevacion de cabeza con doble menton
+  'iso-cervical':      'iso-cervical',       // isometrico auto-resistido
+  'iso-cervical-banda':'iso-cervical',       // reutiliza el diagrama de isometrico
+  'neck-cars':         'neck-cars',          // movilidad cervical controlada
+  'prone-neck-ext':    'prone-neck-ext',     // extension cervical prona
+  'upper-trap-stretch':'upper-trap-stretch', // estiramiento trapecio superior
+  // ── movilidad toracica y cadera, descarga cervical (2026-06-25) ──
+  'apertura-toracica-disco':'apertura-toracica-disco', // thoracic plate opener
+  'side-bend-pica':         'side-bend-pica',          // inclinacion lateral
+  'ext-toracica-banco-pica':'ext-toracica-banco-pica', // extension toracica overhead
+  'pancake-straddle':       'pancake-straddle',        // pancake / straddle
 };
 
 // ═══════════════════════════════════════════════════════════════════

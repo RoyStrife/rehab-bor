@@ -1,0 +1,26 @@
+<svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Extensión cervical prona con retracción escapular">
+  <rect x="0" y="0" width="320" height="200" rx="10" fill="#EEF2F6"/>
+  <!-- banco -->
+  <rect x="92" y="120" width="180" height="14" rx="4" fill="#C2CCDA"/>
+  <rect x="104" y="134" width="10" height="34" rx="3" fill="#C2CCDA"/>
+  <rect x="250" y="134" width="10" height="34" rx="3" fill="#C2CCDA"/>
+  <!-- cuerpo prono -->
+  <g fill="#4E7CA6" stroke="#34506B" stroke-width="2" stroke-linejoin="round">
+    <rect x="118" y="104" width="138" height="16" rx="8"/>
+    <!-- cabeza fuera del borde, a la altura del cuerpo (neutro) -->
+    <circle cx="100" cy="111" r="17"/>
+    <path d="M84 116 l-12 5 l13 4 z"/>
+  </g>
+  <!-- línea de neutro (cabeza alineada con el tronco) -->
+  <line x1="60" y1="111" x2="262" y2="111" stroke="#1E8A7A" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="186" y="100" font-family="DM Sans, sans-serif" font-size="11" fill="#1E8A7A" text-anchor="middle">hasta la línea del cuerpo</text>
+  <!-- zona prohibida: hiperextensión -->
+  <path d="M100 92 q2 -16 18 -20" fill="none" stroke="#D4831A" stroke-width="2.5" stroke-dasharray="3 3" stroke-linecap="round"/>
+  <text x="92" y="80" font-family="DM Sans, sans-serif" font-size="9" fill="#9A6512" text-anchor="middle">no hiperextender</text>
+  <!-- retracción escapular -->
+  <path d="M150 122 h26" stroke="#1E8A7A" stroke-width="3" stroke-linecap="round"/>
+  <path d="M176 122 l-10 -5 v10 z" fill="#1E8A7A"/>
+  <path d="M224 122 h-26" stroke="#1E8A7A" stroke-width="3" stroke-linecap="round"/>
+  <path d="M198 122 l10 -5 v10 z" fill="#1E8A7A"/>
+  <text x="186" y="160" font-family="DM Sans, sans-serif" font-size="10" fill="#9A6512" text-anchor="middle">junta las escápulas</text>
+</svg>

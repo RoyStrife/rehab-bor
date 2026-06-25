@@ -1,0 +1,24 @@
+<svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Isométricos cervicales auto-resistidos">
+  <rect x="0" y="0" width="320" height="200" rx="10" fill="#EEF2F6"/>
+  <!-- hombros -->
+  <path d="M118 182 q42 -30 84 0" fill="none" stroke="#C2CCDA" stroke-width="16" stroke-linecap="round"/>
+  <!-- cabeza neutra -->
+  <circle cx="160" cy="94" r="30" fill="#4E7CA6" stroke="#34506B" stroke-width="2"/>
+  <!-- candado: la cabeza no se mueve -->
+  <circle cx="160" cy="94" r="44" fill="none" stroke="#34506B" stroke-width="1.5" stroke-dasharray="2 6"/>
+  <!-- 4 empujes (flechas que apuntan a la cabeza, resistidas) -->
+  <!-- frontal -->
+  <path d="M96 94 h28" stroke="#1E8A7A" stroke-width="3" stroke-linecap="round"/>
+  <path d="M124 94 l-10 -5 v10 z" fill="#1E8A7A"/>
+  <!-- posterior -->
+  <path d="M224 94 h-28" stroke="#1E8A7A" stroke-width="3" stroke-linecap="round"/>
+  <path d="M196 94 l10 -5 v10 z" fill="#1E8A7A"/>
+  <!-- lateral superior -->
+  <path d="M160 38 v22" stroke="#1E8A7A" stroke-width="3" stroke-linecap="round"/>
+  <path d="M160 60 l-5 -10 h10 z" fill="#1E8A7A"/>
+  <!-- manos -->
+  <rect x="80" y="86" width="16" height="16" rx="5" fill="#C98A3A" stroke="#9A6512" stroke-width="2"/>
+  <rect x="224" y="86" width="16" height="16" rx="5" fill="#C98A3A" stroke="#9A6512" stroke-width="2"/>
+  <rect x="152" y="24" width="16" height="16" rx="5" fill="#C98A3A" stroke="#9A6512" stroke-width="2"/>
+  <text x="160" y="186" font-family="DM Sans, sans-serif" font-size="11" fill="#9A6512" text-anchor="middle">isométrico · la cabeza NO se mueve</text>
+</svg>

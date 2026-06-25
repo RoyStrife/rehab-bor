@@ -1,0 +1,25 @@
+<svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Chin tuck — flexión craneocervical">
+  <rect x="0" y="0" width="320" height="200" rx="10" fill="#EEF2F6"/>
+  <!-- hombro / torso de referencia -->
+  <path d="M176 178 q4 -46 44 -56" fill="none" stroke="#C2CCDA" stroke-width="16" stroke-linecap="round"/>
+  <!-- cabeza adelantada (ANTES) — fantasma -->
+  <g opacity="0.4" fill="#9FB3C6" stroke="#7E97AC" stroke-width="2" stroke-linejoin="round">
+    <circle cx="116" cy="98" r="24"/>
+    <path d="M93 100 l-13 4 l13 7 z"/>
+  </g>
+  <text x="92" y="148" font-family="DM Sans, sans-serif" font-size="10" fill="#7E97AC" text-anchor="middle">antes</text>
+  <!-- cabeza corregida (CHIN TUCK) — sólida, atrás y arriba -->
+  <g fill="#4E7CA6" stroke="#34506B" stroke-width="2" stroke-linejoin="round">
+    <circle cx="162" cy="76" r="24"/>
+    <path d="M139 80 l-13 4 l13 7 z"/>
+  </g>
+  <!-- nuca corregida hacia el hombro -->
+  <path d="M178 92 q8 30 30 44" fill="none" stroke="#34506B" stroke-width="3" stroke-linecap="round"/>
+  <!-- flecha de retracción (de adelante hacia atrás-arriba) -->
+  <path d="M132 66 q24 -16 40 -4" fill="none" stroke="#1E8A7A" stroke-width="3" stroke-linecap="round"/>
+  <path d="M172 60 l4 10 l-10 -1 z" fill="#1E8A7A"/>
+  <!-- cues -->
+  <text x="128" y="118" font-family="DM Sans, sans-serif" font-size="11" fill="#1E8A7A" text-anchor="middle">doble mentón</text>
+  <text x="226" y="92" font-family="DM Sans, sans-serif" font-size="11" fill="#1E8A7A" text-anchor="middle">nuca larga</text>
+  <text x="160" y="192" font-family="DM Sans, sans-serif" font-size="10" fill="#9A6512" text-anchor="middle">retracción suave · sin levantar la cabeza</text>
+</svg>

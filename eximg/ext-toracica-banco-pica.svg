@@ -1,0 +1,30 @@
+<svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Extensión torácica en banco con pica">
+  <rect x="0" y="0" width="320" height="200" rx="10" fill="#EEF2F6"/>
+  <!-- suelo -->
+  <line x1="20" y1="172" x2="300" y2="172" stroke="#C2CCDA" stroke-width="3" stroke-linecap="round"/>
+  <!-- banco -->
+  <rect x="40" y="92" width="96" height="12" rx="3" fill="#C2CCDA"/>
+  <rect x="50" y="104" width="9" height="40" rx="3" fill="#C2CCDA"/>
+  <rect x="118" y="104" width="9" height="40" rx="3" fill="#C2CCDA"/>
+  <text x="88" y="190" font-family="DM Sans, sans-serif" font-size="9" fill="#7E8AA0" text-anchor="middle">banco / silla</text>
+  <!-- figura de rodillas, pecho cayendo hacia el suelo entre los brazos -->
+  <g fill="#4E7CA6" stroke="#34506B" stroke-width="2" stroke-linejoin="round">
+    <!-- cadera sobre las rodillas -->
+    <circle cx="216" cy="146" r="15"/>
+    <!-- muslo vertical -->
+    <path d="M216 158 L214 172" stroke="#34506B" stroke-width="9" stroke-linecap="round"/>
+    <!-- torso cayendo hacia el banco -->
+    <path d="M208 138 L128 110" stroke="#4E7CA6" stroke-width="20" stroke-linecap="round"/>
+    <!-- cabeza entre los brazos -->
+    <circle cx="120" cy="106" r="12"/>
+    <!-- brazos al banco (codos apoyados) -->
+    <path d="M132 112 L96 100" stroke="#34506B" stroke-width="7" stroke-linecap="round"/>
+  </g>
+  <!-- pica overhead -->
+  <line x1="62" y1="86" x2="106" y2="92" stroke="#6B5640" stroke-width="5" stroke-linecap="round"/>
+  <!-- flecha: pecho cae / extensión torácica -->
+  <path d="M150 96 q12 18 0 30" fill="none" stroke="#1E8A7A" stroke-width="3" stroke-linecap="round"/>
+  <path d="M150 126 l-6 -8 l10 1 z" fill="#1E8A7A"/>
+  <text x="176" y="92" font-family="DM Sans, sans-serif" font-size="11" fill="#1E8A7A" text-anchor="middle">deja caer el pecho</text>
+  <text x="160" y="190" font-family="DM Sans, sans-serif" font-size="10" fill="#9A6512" text-anchor="middle">cadera sobre las rodillas · no arquear la lumbar</text>
+</svg>
