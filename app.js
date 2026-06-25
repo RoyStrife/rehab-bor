@@ -930,22 +930,49 @@ function closeExModal(){const m=document.getElementById('exModal');if(m)m.style.
 const EXGIF_DIR = 'exgif/';
 const EXIMG_DIR = 'eximg/';
 
+function fmtSecs(s){const m=Math.floor(s/60),x=s%60;return m+':'+String(x).padStart(2,'0');}
 function renderExGif(key){
   const wrap=document.getElementById('exGifWrap');
   const img=document.getElementById('exGifImg');
+  const frame=document.querySelector('#exGifWrap .ex-gif-frame');
   const note=document.getElementById('exGifNote');
   const cav=document.getElementById('exGifCaveat');
+  const cavBox=document.querySelector('#exGifWrap .ex-gif-caveat');
+  const yt=document.getElementById('exGifYt');
   if(!wrap)return;
   const gifId=(typeof EX_GIF!=='undefined')?EX_GIF[key]:null;
   const svgId=(!gifId&&typeof EX_IMG!=='undefined')?EX_IMG[key]:null;
-  if(!gifId&&!svgId){wrap.style.display='none';return;}
+  const ytData=(typeof EX_YT!=='undefined')?EX_YT[key]:null;
+  if(!gifId&&!svgId&&!ytData){wrap.style.display='none';return;}
   wrap.style.display='block';
   if(note)note.textContent='';
-  // GIF demostrativo (genérico) vs diagrama esquemático propio
-  if(cav)cav.innerHTML=gifId
-    ? '⚠ Demostración genérica — guíate por <b>esta ficha</b>: lumbar neutra, parar si irradiación S1.'
-    : 'Diagrama esquemático — guíate por <b>esta ficha</b>: lumbar neutra, parar si irradiación S1.';
-  if(img){img.style.display='block';img.src=gifId?(EXGIF_DIR+gifId+'.gif'):(EXIMG_DIR+svgId+'.svg');}
+  const hasImg=!!(gifId||svgId);
+  // imagen / diagrama (oculta el marco blanco si solo hay vídeo)
+  if(frame)frame.style.display=hasImg?'':'none';
+  if(img){
+    if(hasImg){img.style.display='block';img.src=gifId?(EXGIF_DIR+gifId+'.gif'):(EXIMG_DIR+svgId+'.svg');}
+    else{img.style.display='none';img.removeAttribute('src');}
+  }
+  // botón de YouTube (demostración real en el minuto exacto)
+  if(yt){
+    if(ytData){
+      const t=ytData.t||0;
+      const url='https://www.youtube.com/watch?v='+ytData.id+(t?('&t='+t+'s'):'');
+      yt.innerHTML='<a class="ex-yt-btn" href="'+url+'" target="_blank" rel="noopener noreferrer">'
+        +'<span class="yt-play">▶</span>Ver demostración en YouTube'+(t?(' · '+fmtSecs(t)):'')+'</a>'
+        +(ytData.autor?'<span class="ex-yt-src">Canal: '+ytData.autor+'</span>':'');
+      yt.style.display='block';
+    }else{yt.style.display='none';yt.innerHTML='';}
+  }
+  // aviso de seguridad (según el tipo de medio)
+  if(cav&&cavBox){
+    let txt='';
+    if(gifId)txt='⚠ Demostración genérica — guíate por <b>esta ficha</b>: lumbar neutra, parar si irradiación S1.';
+    else if(svgId)txt='Diagrama esquemático — guíate por <b>esta ficha</b>: lumbar neutra, parar si irradiación S1.';
+    else if(ytData)txt='⚠ Vídeo externo (demostración general) — guíate por <b>esta ficha</b>: lumbar neutra, parar si irradiación S1.';
+    cav.innerHTML=txt;
+    cavBox.style.display=txt?'':'none';
+  }
 }
 
 function exGifImgError(){

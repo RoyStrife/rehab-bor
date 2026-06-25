@@ -2573,6 +2573,23 @@ const EX_IMG = {
   'pancake-straddle':       'pancake-straddle',        // pancake / straddle
 };
 
+// ─── ENLACES A YOUTUBE (demostración real, en el minuto exacto) ────
+// Mapea wid -> { id: id del vídeo de YouTube, autor: canal, t: segundo
+// opcional de inicio }. La app abre el vídeo en una pestaña nueva. Si el
+// vídeo es de un solo ejercicio, no hace falta `t` (abre al principio);
+// `t` solo se usa cuando un vídeo cubre varios ejercicios.
+// IMPORTANTE: los ids son REALES y verificados (oembed). No inventar ids.
+// El vídeo es una demostración externa GENÉRICA: la ficha (lumbar neutra,
+// parar si irradiación S1) manda sobre lo que se vea en el vídeo.
+const EX_YT = {
+  'hip-cars':                 { id:'hRMrq6G81p8', autor:'Cleveland Clinic' },        // Hip CARs
+  'cossack-shifts':           { id:'tpczTeSkHz0', autor:'FitnessFAQs' },             // Cossack / zancada lateral
+  '90-90':                    { id:'VYvMMw8z3rE', autor:'Jack Hanrahan Fitness' },   // 90/90 hip stretch
+  'neck-cars':                { id:'BsZmSx34hvQ', autor:'Precision Movement' },       // Neck CARs
+  'ext-toracica-cuadrupedia': { id:'AzCghjjWt5k', autor:'Vive Health' },             // Rotación torácica en cuadrupedia
+  'cat-cow':                  { id:'dRXO0agekxA', autor:'Momenta Chiropractic' },     // Cat-cow torácico
+};
+
 // ═══════════════════════════════════════════════════════════════════
 // ─── BACKUP DE DATOS — exportado de rehab_bor_v9 (2026-05-11) ─────
 // Mergeado con historial anterior. Fuente autoritativa: JSON export.
