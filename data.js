@@ -359,6 +359,25 @@ const CORE = {
   'V':  { grupo:'core', plano:'rotacion-toracica+anti-rot', equipo:'banda',
     n:'Rotacion toracica controlada con banda (media sentadilla)', d:'3x10 cada lado', note:'De pie en media sentadilla, pies anchos, sujetando una banda anclada en alto al costado · Rotar de forma controlada hacia el lado de la banda llevando el giro al segmento TORACICO, no a la lumbar · La pelvis y la lumbar permanecen fijas y neutras — el movimiento es de la columna dorsal · Foco en control, sin tirones · Cuello acompana el giro de la columna alta, hombros lejos de las orejas', wid:'rotacion-toracica-banda',
     variant:'S1-2: anti-rotacion pura (Pallof) — resistir sin girar · S3-4: rotacion toracica de rango corto banda ligera · S5-6: rango medio banda media + pausa 1s · S7+: rango completo controlado banda media excentrico 3s' },
+  'W':  { grupo:'core', plano:'anti-lat (dinamico)', equipo:'bw/banco',
+    n:'Plancha lateral en banco con elevacion de cadera (hip dips)', d:'3x10-12 cada lado', note:'Plancha lateral con el antebrazo apoyado en un banco · Bajar y subir la cadera de forma controlada (hip dips) — version dinamica de la plancha lateral · Trabaja oblicuos y cuadrado lumbar (complejo lumbopelvico) · Recorrido comodo, sin dejar caer la cadera de golpe · Cuello en linea con la columna, sin dejar caer la cabeza ni girarla al techo', wid:'plank-lateral-banco-hip-dips',
+    variant:'S1-2: plancha lateral isometrica en banco (sin dips) · S3-4: hip dips recorrido corto controlado · S5-6: recorrido completo + pausa 1s arriba · S7+: recorrido completo excentrico 3s o pies en el suelo (palanca larga)' },
+  'X':  { grupo:'core', plano:'anti-rot', equipo:'banda/polea',
+    n:'Pallof press en media rodilla', d:'3x10 cada lado', note:'Posicion de media rodilla (una rodilla en el suelo) · Banda/polea anclada lateralmente a la altura del pecho · Extender los brazos al frente (press) resistiendo el giro que impone la banda — anti-rotacion · La media rodilla anade reto de estabilidad de cadera y anti-extension · Pelvis neutra y gluteo de la pierna atrasada activo (sin arquear la lumbar) · Hombros y cuello relajados, sin encoger los trapecios', wid:'pallof-press-media-rodilla',
+    variant:'S1-2: isometrico en el pecho banda ligera · S3-4: press completo banda media · S5-6: press + pausa 2s con los brazos extendidos · S7+: banda fuerte o rodilla sobre superficie inestable' },
+  'Y':  { grupo:'core', plano:'anti-lat+escapular', equipo:'banda',
+    n:'Remo en plancha lateral con banda', d:'3x10 cada lado', note:'Plancha lateral sobre el antebrazo · Con el brazo superior libre remar contra una banda anclada baja al frente · Combina estabilidad lateral del core (anti-flexion lateral) con control escapular del lado que rema · No dejar caer la cadera ni rotar el tronco al tirar · Cuello en linea con la columna', wid:'remo-plancha-lateral',
+    variant:'S1-2: plancha lateral con rodilla apoyada + remo banda ligera · S3-4: plancha completa remo banda ligera · S5-6: plancha completa banda media + pausa 1s · S7+: banda fuerte + excentrico 3s' },
+  'Z':  { grupo:'core', plano:'anti-rot', equipo:'mancuerna',
+    n:'Renegade row en posicion de oso (bear)', d:'3x8 cada lado', note:'Posicion de oso: cuadrupedia con las rodillas despegadas 2-3 cm del suelo, espalda plana · Remar una mancuerna con un brazo mientras el otro sostiene el cuerpo · El reto es NO permitir que la pelvis ni el tronco roten — anti-rotacion intensa · Caderas niveladas, lumbar neutra · Cuello largo, mirada al suelo', wid:'renegade-row-oso', gym:true,
+    variant:'S1-2: en cuadrupedia con rodillas apoyadas, remo ligero sin rotar · S3-4: posicion de oso (rodillas elevadas) remo ligero · S5-6: posicion de oso remo medio + pausa 1s · S7+: posicion de oso carga progresiva excentrico 3s',
+    homeAlt:{ n:'Renegade row en oso con banda o botella', d:'3x8 cada lado', note:'Misma posicion de oso · Remo con banda anclada baja o peso casero · Anti-rotacion', variant:'S1-2: rodillas apoyadas banda ligera · S3-4: posicion de oso banda ligera · S5-6: banda media + pausa · S7+: banda fuerte' } },
+  'A2': { grupo:'core', plano:'rotacion-diagonal+anti-rot', equipo:'banda/polea',
+    n:'Woodchop con banda (anclaje alto)', d:'3x10 cada lado', note:'Pies anchos, banda/polea anclada en alto a un costado · Traccionar en diagonal de arriba hacia la cadera opuesta (chop descendente) · El movimiento de rotacion sale del TORACICO y de las caderas (pivote de pies), NO de la lumbar · Lumbar neutra y estable todo el recorrido · Control en el retorno, sin tirones · Hombros y cuello relajados acompanando el giro', wid:'woodchop-banda',
+    variant:'S1-2: anti-rotacion pura (Pallof diagonal) sin girar · S3-4: chop de rango corto banda ligera, pivotando los pies · S5-6: rango completo banda media + control excentrico · S7+: banda fuerte rango completo con pivote de cadera coordinado' },
+  'B2': { grupo:'core', plano:'anti-rot+ext-cadera', equipo:'banda',
+    n:'Bird-dog con banda en el pie (cuadrupedia)', d:'3x8-10 cada lado', note:'Cuadrupedia con una banda elastica rodeando un pie y sujeta por la mano contraria (o anclada) · Extender simultaneamente el brazo y la pierna contrarios contra la resistencia de la banda · A diferencia del bird-dog resistido por el brazo, aqui la banda resiste la EXTENSION de la pierna (mas gluteo y cadena posterior) manteniendo la columna estable · Lumbar neutra, sin arquear · Pelvis nivelada · Cuello largo, mirada al suelo', wid:'bird-dog-banda-pie',
+    variant:'S1-2: bird-dog sin banda dominando el patron · S3-4: banda ligera, recorrido parcial · S5-6: banda media recorrido completo + pausa 2s · S7+: banda fuerte + excentrico lento' },
 };
 
 // ─── HIP — Movilidad de cadera (grupo "pull de cadera") ────────────
@@ -489,6 +508,9 @@ const QUAD = {
     variant:'S1-2: 100-110° 20s · S3-4: 90° 30s · S5-6: 90° 45s · S7+: unilateral 20s' },
   'H': { grupo:'quad', n:'Sentadilla goblet ligera con pausa', d:'3x10 — pausa 2 seg abajo', note:'Patron de sentadilla SIN fatiga · KB/mancuerna ligera entre las piernas · Tronco vertical · Espalda neutra · Movilidad y control', wid:'goblet-squat',
     variant:'S1-2: peso corporal · S3-4: KB 8kg · S5-6: KB 12kg · S7+: KB 16kg pausa 3s' },
+  'I': { grupo:'quad', n:'Sentadilla goblet con cunas en los talones', d:'3x10 — pausa 2 seg abajo', note:'Goblet (KB/mancuerna frente al pecho) con cunas o discos bajo los talones · La elevacion del talon permite mas profundidad y mantiene el tronco mas vertical (menos inclinacion = menos palanca lumbar) · Espalda neutra · Limitar la profundidad al rango sin buttwink (sin retroversion pelvica)', wid:'goblet-squat-cunas', gym:true,
+    variant:'S1-2: peso corporal con cunas ROM parcial · S3-4: KB 8-10 kg · S5-6: KB 12-16 kg pausa 2s · S7+: KB 20 kg+ pausa 3s',
+    homeAlt:{ n:'Sentadilla goblet con talones en cuna (mancuerna o sin peso)', d:'3x12 — pausa 2 seg abajo', note:'Cunas improvisadas (libro fino o tablon) bajo los talones · Mancuerna ligera o peso corporal · Tronco vertical', variant:'S1-2: peso corporal · S3-4: mancuerna ligera · S5-6: mancuerna media pausa 2s · S7+: mancuerna media pausa 3s' } },
 };
 
 // ─── GLUTE — gluteo / hip (cadena posterior sin carga axial) ───────
@@ -1181,6 +1203,139 @@ EX_DB['rotacion-toracica-banda'] = {
   errores: ['Rotar desde la lumbar en vez de la columna toracica — es el error a evitar con hernia.', 'Mover la pelvis o los pies con el giro.', 'Tirones bruscos o usar impulso en lugar de control.', 'Perder la posicion neutra de la lumbar al rotar.'],
   variantes: ['S1-2: anti-rotacion pura tipo Pallof — resistir la banda sin girar. S3-4: rotacion toracica de rango corto con banda ligera. S5-6: rango medio con banda media + pausa 1s. S7+: rango completo controlado con banda media y excentrico 3s.'],
   notas_columna: 'La rotacion bajo carga es uno de los movimientos mas sensibles para una hernia L4-L5/L5-S1 si se ejecuta desde la lumbar. La clave terapeutica de este ejercicio es disociar: la movilidad rotacional debe salir de la columna toracica (que esta hecha para rotar) mientras la lumbar permanece neutra y estable (anti-rotacion). Por eso la progresion empieza en anti-rotacion pura (Pallof) y solo anade rango toracico cuando hay control. Si se siente que el giro "baja" a la lumbar o aparece irradiacion, reducir el rango o volver a la version isometrica.'
+};
+
+EX_DB['goblet-squat-cunas'] = {
+  nombre: 'Sentadilla goblet con cunas en los talones',
+  categoria: 'Cuadriceps / Pierna',
+  color: '#993C1D',
+  descripcion: 'Sentadilla goblet (kettlebell o mancuerna sostenida frente al pecho) realizada con cunas o discos bajo los talones. La elevacion del talon aumenta el rango de dorsiflexion disponible, lo que permite descender mas y mantener el tronco mas vertical, reduciendo la inclinacion hacia delante y la palanca sobre la columna lumbar.',
+  posicion: 'De pie con los talones sobre cunas, discos o un tablon (2-4 cm). Pies a la anchura de los hombros. KB/mancuerna sostenida con ambas manos frente al pecho (goblet). Columna neutra, mirada al frente.',
+  pasos: [
+    'Coloca los talones sobre las cunas; pies a la anchura de los hombros.',
+    'Sujeta la KB frente al pecho con los codos bajo el peso.',
+    'Activa el core y desciende manteniendo el tronco lo mas vertical posible.',
+    'Baja hasta la profundidad en la que la lumbar se mantenga neutra (sin buttwink).',
+    'Empuja con todo el pie para subir, sin perder la verticalidad del torso.',
+    'Pausa 2 segundos abajo si el estadio lo indica.',
+  ],
+  errores: ['Buttwink: retroversion pelvica y flexion lumbar en el punto bajo — limitar la profundidad.', 'Inclinar el tronco hacia delante (la cuna existe precisamente para evitarlo).', 'Separar la KB del cuerpo.', 'Rodillas que colapsan hacia dentro.'],
+  variantes: ['S1-2: peso corporal con cunas, ROM parcial. S3-4: KB 8-10 kg. S5-6: KB 12-16 kg + pausa 2s. S7+: KB 20 kg+ + pausa 3s.', 'Casa: cunas improvisadas (libro fino o tablon) y mancuerna ligera o peso corporal.'],
+  notas_columna: 'La cuna bajo el talon compensa una dorsiflexion de tobillo limitada, que es una causa frecuente de inclinacion excesiva del tronco en la sentadilla. Al permitir un torso mas vertical, se reduce el brazo de palanca sobre L4-L5/L5-S1 y la carga compresiva/cizallante sobre el disco. El criterio de seguridad sigue siendo la lumbar neutra: limitar la profundidad al punto previo al buttwink y parar ante cualquier irradiacion S1.'
+};
+
+EX_DB['plank-lateral-banco-hip-dips'] = {
+  nombre: 'Plancha lateral en banco con elevacion de cadera (hip dips)',
+  categoria: 'Core F2',
+  color: '#993C1D',
+  descripcion: 'Version dinamica de la plancha lateral con el antebrazo apoyado en un banco. Se baja y sube la cadera de forma controlada (hip dips), lo que entrena los oblicuos y el cuadrado lumbar de forma concentrica y excentrica, reforzando el complejo lumbopelvico lateral sin carga axial.',
+  posicion: 'Plancha lateral con el antebrazo apoyado en un banco, cuerpo en linea, pies apilados o escalonados. Cuello en linea con la columna.',
+  pasos: [
+    'Apoya el antebrazo en el banco y adopta la plancha lateral con el cuerpo en linea.',
+    'Activa el core para sostener la cadera elevada.',
+    'Baja la cadera de forma controlada hacia el banco sin dejarla caer de golpe.',
+    'Sube de nuevo apretando el oblicuo del lado de abajo hasta recuperar la linea.',
+    'Manten el recorrido comodo y el tronco sin rotar.',
+    'Cuello en linea con la columna; no dejar caer la cabeza hacia el banco.',
+  ],
+  errores: ['Dejar caer la cadera de golpe en lugar de controlar el excentrico.', 'Rotar el tronco adelante o atras durante el movimiento.', 'Recorrido excesivo que rompe la alineacion.', 'Dejar caer la cabeza hacia el banco.'],
+  variantes: ['S1-2: plancha lateral isometrica en banco (sin dips). S3-4: hip dips de recorrido corto controlado. S5-6: recorrido completo + pausa 1s arriba. S7+: recorrido completo con excentrico 3s o con los pies en el suelo (palanca larga).'],
+  notas_columna: 'La plancha lateral (uno de los "Big 3" de McGill) entrena el cuadrado lumbar y los oblicuos sin flexion ni compresion del disco. Al hacerla dinamica con hip dips se anade trabajo excentrico del complejo lumbopelvico lateral, util para la estabilidad frontal que protege L4-L5/L5-S1, manteniendo el banco como apoyo elevado para reducir la exigencia respecto al suelo. Controlar siempre el descenso: la cadera no debe caer pasivamente.'
+};
+
+EX_DB['pallof-press-media-rodilla'] = {
+  nombre: 'Pallof press en media rodilla',
+  categoria: 'Core F2',
+  color: '#993C1D',
+  descripcion: 'Variante del Pallof press en posicion de media rodilla. Con una banda o polea anclada lateralmente a la altura del pecho, se extienden los brazos al frente resistiendo el giro. La posicion de media rodilla elimina la ayuda de las piernas y anade un componente anti-extension y de estabilidad de cadera.',
+  posicion: 'Media rodilla: una rodilla en el suelo, la otra pierna flexionada al frente con el pie apoyado. Banda/polea anclada lateralmente a la altura del pecho, sujeta con ambas manos en el centro del pecho. Pelvis neutra.',
+  pasos: [
+    'Adopta la media rodilla con la cadera de la pierna atrasada extendida y el gluteo activo.',
+    'Sujeta la banda con ambas manos en el centro del pecho; la banda tira hacia su anclaje lateral.',
+    'Activa el core: pelvis neutra, sin arquear la lumbar ni inclinarte hacia el anclaje.',
+    'Extiende los brazos al frente (press) resistiendo el giro que impone la banda.',
+    'Manten 1-2 segundos con los brazos extendidos y vuelve al pecho con control.',
+    'Hombros y cuello relajados, sin encoger los trapecios.',
+  ],
+  errores: ['Arquear la lumbar al extender los brazos (perder la anti-extension).', 'Inclinarse o rotar hacia el anclaje de la banda.', 'Dejar caer la cadera de la pierna atrasada (gluteo inactivo).', 'Encoger los hombros hacia las orejas al presionar.'],
+  variantes: ['S1-2: isometrico en el pecho con banda ligera. S3-4: press completo con banda media. S5-6: press + pausa 2s con los brazos extendidos. S7+: banda fuerte o rodilla sobre superficie inestable.'],
+  notas_columna: 'El Pallof press es el ejercicio anti-rotacion de referencia y de los mas protectores para una extrusion L4-L5/L5-S1: entrena el core a RESISTIR la rotacion sin generarla, evitando el cizallamiento rotacional del disco. La posicion de media rodilla anade anti-extension (hay que evitar arquear la lumbar) y activacion del gluteo de la pierna atrasada, reproduciendo el control pelvico necesario en el dia a dia. Mantener la pelvis neutra es el criterio: si se arquea o se inclina, reducir la banda.'
+};
+
+EX_DB['remo-plancha-lateral'] = {
+  nombre: 'Remo en plancha lateral con banda',
+  categoria: 'Core F2',
+  color: '#993C1D',
+  descripcion: 'Plancha lateral sobre el antebrazo en la que el brazo superior, libre, rema contra una banda anclada baja al frente. Combina la estabilidad lateral del core (anti-flexion lateral) con el control escapular y del dorsal del lado que rema, todo sin carga axial sobre la columna.',
+  posicion: 'Plancha lateral sobre el antebrazo, cuerpo en linea, cadera elevada. El brazo superior sujeta una banda anclada baja y al frente. Cuello en linea con la columna.',
+  pasos: [
+    'Adopta la plancha lateral con el codo bajo el hombro y la cadera elevada.',
+    'Con el brazo superior sujeta la banda anclada baja y al frente.',
+    'Activa el core para no dejar caer la cadera (anti-flexion lateral).',
+    'Rema llevando el codo hacia la cadera, retrayendo primero la escapula.',
+    'No permitas que el tronco rote ni que la cadera baje mientras remas.',
+    'Vuelve con control y repite; cuello en linea con la columna.',
+  ],
+  errores: ['Dejar caer la cadera inferior al concentrarte en el remo.', 'Rotar el tronco hacia atras al tirar.', 'Tirar con el brazo sin retraer la escapula.', 'Dejar caer la cabeza o girarla hacia el techo.'],
+  variantes: ['S1-2: plancha lateral con rodilla apoyada + remo con banda ligera. S3-4: plancha completa con remo banda ligera. S5-6: plancha completa banda media + pausa 1s. S7+: banda fuerte + excentrico 3s.'],
+  notas_columna: 'Combina dos patrones seguros para L4-L5/L5-S1: la plancha lateral (estabilizacion del cuadrado lumbar y oblicuos sin compresion discal) y el remo con banda (tiro sin carga axial). El reto anadido es mantener la pelvis y el tronco estables mientras una fuerza asimetrica (el remo) intenta rotarlos, lo que refuerza el control anti-rotacion protector. Si la cadera cae o el tronco rota, reducir la banda o pasar a la version con rodilla apoyada.'
+};
+
+EX_DB['renegade-row-oso'] = {
+  nombre: 'Renegade row en posicion de oso (bear)',
+  categoria: 'Core F2',
+  color: '#993C1D',
+  descripcion: 'Remo unilateral con mancuerna desde la posicion de oso (cuadrupedia con las rodillas despegadas del suelo). Es un ejercicio anti-rotacion muy exigente: mientras una mano rema, el resto del cuerpo debe impedir que la pelvis y la columna roten, con el apoyo estable de la otra mano y las puntas de los pies.',
+  posicion: 'Posicion de oso: manos bajo los hombros, rodillas flexionadas y despegadas 2-3 cm del suelo, espalda plana y paralela al suelo. Una mancuerna bajo una mano. Cuello largo, mirada al suelo.',
+  pasos: [
+    'Adopta la posicion de oso con la espalda plana y las rodillas justo despegadas del suelo.',
+    'Reparte el peso entre las dos manos y las puntas de los pies; pelvis nivelada.',
+    'Rema una mancuerna con un brazo llevando el codo hacia la cadera.',
+    'El objetivo es que la pelvis y el tronco NO roten ni se inclinen mientras remas (anti-rotacion).',
+    'Baja la mancuerna con control y completa las repeticiones antes de cambiar de lado.',
+    'Cuello largo y mirada al suelo durante toda la serie.',
+  ],
+  errores: ['Rotar o inclinar la pelvis hacia el lado que rema — el fallo principal.', 'Elevar demasiado las caderas o redondear la espalda.', 'Apoyar las rodillas (pierde la posicion de oso) salvo en la regresion.', 'Tirar con impulso en lugar de control.'],
+  variantes: ['S1-2: en cuadrupedia con rodillas apoyadas, remo ligero sin rotar. S3-4: posicion de oso (rodillas elevadas) con remo ligero. S5-6: posicion de oso con remo medio + pausa 1s. S7+: posicion de oso con carga progresiva y excentrico 3s.', 'Casa: remo con banda anclada baja o peso casero en la misma posicion.'],
+  notas_columna: 'La posicion de oso con remo unilateral es de las formas mas intensas de entrenar la anti-rotacion sin carga axial sobre la columna: la fuerza asimetrica del remo intenta rotar la pelvis y el raquis, y resistir ese giro es exactamente el control que protege el segmento L4-L5/L5-S1. Empezar siempre desde la regresion con rodillas apoyadas y progresar a la posicion de oso solo cuando se mantiene la pelvis perfectamente estable. Parar ante cualquier irradiacion S1.'
+};
+
+EX_DB['woodchop-banda'] = {
+  nombre: 'Woodchop con banda (anclaje alto)',
+  categoria: 'Core F2',
+  color: '#993C1D',
+  descripcion: 'Movimiento de "corte de lena" diagonal: desde un anclaje alto se tracciona la banda en diagonal hacia la cadera opuesta. Activa la musculatura rotadora del tronco (oblicuos), pero la rotacion debe generarse en la columna toracica y las caderas, no en la lumbar, que permanece estable.',
+  posicion: 'De pie con los pies anchos, banda o polea anclada en alto a un costado. Se sujeta el asa con ambas manos por encima del hombro del lado del anclaje. Lumbar neutra.',
+  pasos: [
+    'Sujeta el asa con ambas manos arriba, del lado del anclaje alto.',
+    'Activa el core con la lumbar neutra y los pies firmes.',
+    'Tracciona en diagonal de arriba hacia la cadera opuesta (chop descendente).',
+    'Genera el giro pivotando los pies y rotando desde el TORACICO y las caderas, no desde la lumbar.',
+    'Controla el retorno resistiendo la banda, sin tirones.',
+    'Hombros y cuello relajados acompanando el giro de la columna alta.',
+  ],
+  errores: ['Rotar desde la lumbar en vez de la columna toracica y las caderas — el error a evitar con hernia.', 'Mantener los pies clavados sin pivotar (fuerza el giro a la zona lumbar).', 'Usar impulso brusco en lugar de control.', 'Perder la posicion neutra de la lumbar al cortar.'],
+  variantes: ['S1-2: anti-rotacion pura (Pallof diagonal) sin girar. S3-4: chop de rango corto con banda ligera, pivotando los pies. S5-6: rango completo con banda media y control excentrico. S7+: banda fuerte, rango completo con pivote de cadera coordinado.'],
+  notas_columna: 'El woodchop entrena el patron rotacional funcional, pero en una hernia L4-L5/L5-S1 la rotacion es segura solo si se disocia correctamente: el giro sale de la columna toracica (disenada para rotar) y de las caderas (pivote de pies), mientras la lumbar permanece neutra y estable. Por eso la progresion arranca en anti-rotacion (Pallof diagonal) y solo anade rango cuando el control es bueno. Pivotar los pies es clave: clavarlos obliga a la lumbar a absorber el giro. Reducir rango o volver a la version isometrica si el giro "baja" a la lumbar.'
+};
+
+EX_DB['bird-dog-banda-pie'] = {
+  nombre: 'Bird-dog con banda en el pie (cuadrupedia)',
+  categoria: 'Core F2',
+  color: '#993C1D',
+  descripcion: 'Variante del bird-dog en la que una banda elastica rodea un pie y se sujeta con la mano contraria (o se ancla), de modo que la resistencia se opone a la extension de la pierna. Se extienden simultaneamente el brazo y la pierna contrarios contra la banda, sumando trabajo de gluteo y cadena posterior al control de estabilidad del bird-dog.',
+  posicion: 'Cuadrupedia: rodillas bajo las caderas, manos bajo los hombros, columna neutra. Banda rodeando un pie y sujeta por la mano contraria o anclada. Cuello largo, mirada al suelo.',
+  pasos: [
+    'Adopta la cuadrupedia con la columna neutra y el core activo.',
+    'Coloca la banda rodeando un pie, sujeta por la mano contraria o anclada.',
+    'Extiende simultaneamente el brazo y la pierna contrarios contra la resistencia de la banda.',
+    'La banda resiste la extension de la pierna: controla el movimiento sin arquear la lumbar.',
+    'Manten la pelvis nivelada y vuelve con control; alterna lados.',
+    'Cuello largo y mirada al suelo durante toda la serie.',
+  ],
+  errores: ['Arquear la lumbar al extender la pierna contra la banda.', 'Elevar la pierna por encima de la cadera.', 'Rotar la pelvis al vencer la resistencia.', 'Levantar la barbilla para mirar al frente.'],
+  variantes: ['S1-2: bird-dog sin banda dominando el patron. S3-4: banda ligera con recorrido parcial. S5-6: banda media con recorrido completo + pausa 2s. S7+: banda fuerte con excentrico lento.'],
+  notas_columna: 'A diferencia del bird-dog resistido por el brazo (que enfatiza la anti-rotacion frente a una traccion frontal), aqui la banda resiste la extension de la pierna, lo que aumenta la activacion del gluteo y la cadena posterior mientras la columna debe permanecer neutra y estable. Sigue siendo un ejercicio sin carga axial, idoneo para L4-L5/L5-S1, con el mismo criterio: si aparece arqueo lumbar o irradiacion, reducir la banda o volver al bird-dog clasico.'
 };
 
 EX_DB['hip-thrust'] = {
