@@ -166,6 +166,21 @@ const MOB_BLOCK_B_SAB = {
   ]
 };
 
+// ─── CALENTAMIENTO DINAMICO SUAVE DE ESPALDA (diario) ─────────────
+// Bloque de movilidad articular suave para la columna, antes de entrenar.
+// Se inserta en todos los dias del WEEK tras el protocolo matutino.
+const MOB_BLOCK_ESPALDA_DINAMICA = {
+  id: 'BD', name: 'Calentamiento dinamico suave — Espalda', dur: '10-12 min', color: '#1A6E3A',
+  exs: [
+    { n: 'Tilt pelvico dinamico en cuadrupedia', d: '2x10 lentos', note: 'Cuadrupedia · Bascula pelvica suave (anteversion-retroversion) sin forzar los extremos · Despierta el control lumbopelvico · Movimiento pequeno y controlado', wid: 'pelvic-clock' },
+    { n: 'Cat-cow completo lento', d: '2x8 — 3s por fase', note: 'Flexion-extension global de columna, fluida y lenta · Coordinar con la respiracion · Rango comodo sin llegar a los topes', wid: 'cat-cow' },
+    { n: 'Mecedora a talones (quadruped rockback)', d: '2x10', note: 'Desde cuadrupedia llevar las caderas hacia los talones y volver · Descompresion suave + control de flexion segmentaria · Lumbar neutra, sin redondear de golpe', wid: 'quadruped-rockback', variant: 'S1-2: recorrido corto sin sentarte del todo · S3-4: recorrido medio pausa 2s atras · S5-6: recorrido completo lento · S7+: rockback + respiracion larga exhalando atras' },
+    { n: 'Enhebrar la aguja (thread the needle)', d: '2x6 cada lado', note: 'Cuadrupedia · Pasar un brazo por debajo del cuerpo rotando la columna toracica y volver abriendo el brazo al techo · Rotacion TORACICA, lumbar y pelvis estables', wid: 'thread-the-needle', variant: 'S1-2: rango corto · S3-4: rango medio · S5-6: rango completo pausa 2s arriba · S7+: + extension y mirada a la mano' },
+    { n: 'Libro abierto tumbado de lado (open book)', d: '2x6 cada lado', note: 'Tumbado de lado, rodillas flexionadas y apiladas · Abrir el brazo de arriba hacia el otro lado rotando solo la columna toracica · Seguir la mano con la mirada · Pelvis y lumbar fijas', wid: 'open-book-lateral', variant: 'S1-2: rango corto sin forzar · S3-4: rango medio · S5-6: rango completo + pausa 2s · S7+: + respiracion larga en apertura' },
+    { n: 'Hip CARs', d: '1x5 cada lado', note: 'Circulos de cadera controlados en rango sin dolor · Cierra el calentamiento articulando la cadera · Tronco estable', wid: 'hip-cars' },
+  ]
+};
+
 // ═══════════════════════════════════════════════════════════════════
 // ─── BLOQUES PISCINA ───────────────────────────────────────────────
 // ═══════════════════════════════════════════════════════════════════
@@ -456,7 +471,7 @@ const PULL = {
 
 // ─── PUSH — empuje sin carga axial ─────────────────────────────────
 const PUSH = {
-  'A': { grupo:'push', n:'Aperturas en maquina pec deck', d:'3x12', note:'Empuje sin carga axial · Espalda fija en respaldo — sin separar de la maquina', wid:'pec-deck', gym:true,
+  'A': { grupo:'push', n:'Aperturas en maquina pec deck', d:'2x12', note:'Empuje sin carga axial · Espalda fija en respaldo — sin separar de la maquina', wid:'pec-deck', gym:true,
     variant:'S1-2: carga ligera rango parcial · S3-4: carga media rango completo · S5-6: carga alta exc 3s · S7+: carga alta pausa 1s en contraccion',
     homeAlt:{ n:'Aperturas con banda cruzada', d:'3x12', note:'Banda anclada a ambos lados altura de pecho · Aduccion horizontal controlada', variant:'S1-2: banda ligera · S3-4: banda media · S5-6: banda fuerte exc 3s · S7+: banda fuerte pausa 1s' } },
   'B': { grupo:'push', n:'Fondos en maquina asistida (chest dip)', d:'3x12', note:'Empuje de pecho + triceps SIN carga axial · Maquina asistida (no colgarse del propio peso) · Codos a 90 max · Tronco ligeramente inclinado · Parar si molestia en hombro', wid:'fondos-triceps',
@@ -465,7 +480,7 @@ const PUSH = {
 
 // ─── SHOULDER — hombro (sin overhead axial) ────────────────────────
 const SHOULDER = {
-  'A': { grupo:'shoulder', n:'Elevaciones laterales con mancuernas', d:'3x15 peso ligero', note:'Deltoides medio — sentado · Sin overhead (evita carga axial)', wid:'elevaciones-lat', gym:true,
+  'A': { grupo:'shoulder', n:'Elevaciones laterales con mancuernas', d:'2x15 peso ligero', note:'Deltoides medio — sentado · Sin overhead (evita carga axial)', wid:'elevaciones-lat', gym:true,
     variant:'S1-2: sentado carga muy ligera · S3-4: sentado carga ligera exc 3s · S5-6: sentado carga media · S7+: de pie carga media + pausa 1s arriba',
     homeAlt:{ n:'Elevaciones laterales con banda', d:'3x15 — sentado', note:'Banda bajo los pies · Agarre neutro · Deltoides medio', variant:'S1-2: banda muy ligera · S3-4: banda ligera exc 3s · S5-6: banda media · S7+: banda media + pausa 1s' } },
   'B': { grupo:'shoulder', n:'Rear delt fly en maquina (pajaros inverso)', d:'3x15 lento', note:'Deltoides posterior · Codos ligeramente flexionados · Pausa 1s en apertura maxima · Sin balancear torso', wid:'rear-delt-fly', gym:true,
@@ -475,13 +490,13 @@ const SHOULDER = {
 
 // ─── ARM — brazos ──────────────────────────────────────────────────
 const ARM = {
-  'A': { grupo:'arm', n:'Extension de triceps en polea alta', d:'4x15 codos fijos', note:'Cuerda — separar al final', wid:'triceps-polea', gym:true,
+  'A': { grupo:'arm', n:'Extension de triceps en polea alta', d:'2x15 codos fijos', note:'Cuerda — separar al final', wid:'triceps-polea', gym:true,
     variant:'S1-2: carga minima codos bien fijados · S3-4: carga media + separacion al final · S5-6: carga alta exc 3s · S7+: unilateral alternando',
     homeAlt:{ n:'Extension de triceps con banda sobre cabeza', d:'4x15 codos fijos', note:'Banda anclada alta o sostenida · Codos pegados', variant:'S1-2: banda ligera · S3-4: banda media exc 3s · S5-6: banda fuerte + separacion · S7+: unilateral banda fuerte' } },
-  'B': { grupo:'arm', n:'Curl de biceps en barra Z', d:'3x12', note:'Codos fijos al torso', wid:'curl-barra', gym:true,
+  'B': { grupo:'arm', n:'Curl de biceps en barra Z', d:'2x12', note:'Codos fijos al torso', wid:'curl-barra', gym:true,
     variant:'S1-2: carga ligera rango completo · S3-4: carga media exc 3s · S5-6: carga alta pausa 1s arriba · S7+: carga alta exc 4s + pausa',
     homeAlt:{ n:'Curl de biceps con banda', d:'3x12 — codos fijos', note:'Banda bajo los pies · Codos pegados al torso', variant:'S1-2: banda ligera · S3-4: banda media exc 3s · S5-6: banda fuerte pausa 1s · S7+: unilateral banda fuerte exc 4s' } },
-  'C': { grupo:'arm', n:'Curl martillo con mancuernas', d:'3x12', note:'Braquial + biceps', wid:'curl-martillo', gym:true,
+  'C': { grupo:'arm', n:'Curl martillo con mancuernas', d:'2x12', note:'Braquial + biceps', wid:'curl-martillo', gym:true,
     variant:'S1-2: carga ligera alternado · S3-4: carga media bilateral · S5-6: carga media exc 3s · S7+: carga alta unilateral con apoyo',
     homeAlt:{ n:'Curl martillo con banda (agarre neutro)', d:'3x12 — alternado', note:'Banda bajo los pies · Agarre neutro (pulgares arriba)', variant:'S1-2: banda ligera alternado · S3-4: banda media bilateral · S5-6: banda fuerte exc 3s · S7+: unilateral banda fuerte' } },
 };
@@ -622,6 +637,7 @@ const WEEK = {
     cardio: 'Ergometro 2000m (apertura) · Eliptica 60 min (cierre)',
     blocks: [
       MOB_BLOCK_A1,
+      MOB_BLOCK_ESPALDA_DINAMICA,
       MOB_BLOCK_B_LUN,
       { id: 'C', name: 'Cardio apertura — Ergometro 2000m', dur: '15-20 min', color: '#185FA5', exIds: ['CARD-A'] },
       { id: 'D', name: 'Lumbar — Cadena posterior', dur: '45 min', color: '#3C3489', exIds: ['HINGE-A','HINGE-B','HINGE-C','HINGE-D'] },
@@ -639,6 +655,7 @@ const WEEK = {
     pool: 'Estabilidad + gluteo + sentadilla ligera (tierra) · Nado suave adaptable (espalda+crol+braza)',
     blocks: [
       MOB_BLOCK_A1,
+      MOB_BLOCK_ESPALDA_DINAMICA,
       { id: 'D', name: 'Estabilidad + pierna ligera', dur: '25-30 min', color: '#0F6E56', exIds: ['HIP-A','HIP-G','HIP-I','HIP-K','GLUTE-B','GLUTE-A','GLUTE-C','GLUTE-D','QUAD-H','QUAD-G'] },
       { id: 'E', name: 'Cuello (prep cervical) + Core ISOMETRICO (anti-movimiento + bracing pre-piscina)', dur: '18-22 min', color: '#993C1D', exIds: ['NECK-A','NECK-D','CORE-E','CORE-D','CORE-P','CORE-F','CORE-I'] },
       POOL_UNIFICADA,
@@ -653,6 +670,7 @@ const WEEK = {
     cardio: 'Ergometro 2000m (apertura) · Eliptica 60 min (cierre)',
     blocks: [
       MOB_BLOCK_A1,
+      MOB_BLOCK_ESPALDA_DINAMICA,
       MOB_BLOCK_B_JUE,
       { id: 'C', name: 'Cardio apertura — Ergometro 2000m', dur: '15-20 min', color: '#185FA5', exIds: ['CARD-A'] },
       { id: 'D', name: 'Empuje + Tiro (sin carga axial)', dur: '50 min', color: '#3C3489', exIds: ['PULL-A','PULL-B','PULL-C','PUSH-A','PUSH-B','SHOULDER-A','ARM-A'] },
@@ -676,6 +694,7 @@ const WEEK = {
     pool: 'Estabilidad + gluteo + sentadilla ligera (tierra) · Nado suave adaptable (espalda+crol+braza)',
     blocks: [
       MOB_BLOCK_A1,
+      MOB_BLOCK_ESPALDA_DINAMICA,
       { id: 'D', name: 'Estabilidad + pierna ligera', dur: '25-30 min', color: '#0F6E56', exIds: ['HIP-A','HIP-G','HIP-I','HIP-K','GLUTE-B','GLUTE-A','GLUTE-C','GLUTE-D','QUAD-H','QUAD-G'] },
       { id: 'E', name: 'Cuello (prep cervical) + Core ISOMETRICO (anti-movimiento + bracing pre-piscina)', dur: '18-22 min', color: '#993C1D', exIds: ['NECK-A','NECK-D','CORE-C','CORE-H','CORE-Q','CORE-K','CORE-I'] },
       POOL_UNIFICADA,
@@ -688,12 +707,13 @@ const WEEK = {
     dur: '90 min', loc: 'Casa / Exterior',
     blocks: [
       MOB_BLOCK_A1,
+      MOB_BLOCK_ESPALDA_DINAMICA,
       {
         id: 'D', name: 'Recuperacion activa', dur: '45 min', color: '#444441',
         exs: [
           { n: 'Caminata exterior', d: '30-40 min — ritmo suave', note: 'Terreno llano · Paso largo · Brazos activos · FC max 110 · Si llueve: marcha activa en casa', wid: 'caminata' },
           { n: 'Dead hang en barra', d: '4x35 seg', note: 'Traccion descompresiva + fuerza de agarre', wid: 'dead-hang', variant: 'S1-2: 4x20s · S3-4: 4x25s · S5-6: 4x35s · S7+: 4x45s · F3: hollow body hang 3x10-15s' },
-          { n: 'Fondos de triceps en banco', d: '3x12', note: 'Version progresiva con piernas avanzadas (Domingo) · Solo sin irradiacion', wid: 'fondos-triceps', variant: 'S1-2: rodillas muy flexionadas · S3-4: piernas a 90° · S5-6: piernas extendidas · S7+: piernas elevadas en banco · F3: entre paralelas' },
+          { n: 'Fondos de triceps en banco', d: '2x12', note: 'Version progresiva con piernas avanzadas (Domingo) · Solo sin irradiacion', wid: 'fondos-triceps', variant: 'S1-2: rodillas muy flexionadas · S3-4: piernas a 90° · S5-6: piernas extendidas · S7+: piernas elevadas en banco · F3: entre paralelas' },
           { n: 'Goblet squat — movilidad', d: '3x10 con pausa 3s abajo', note: 'Solo con mancuerna ligera · Movilidad + patron squat', wid: 'goblet-squat', variant: 'S1-2: peso corporal · S3-4: KB 8kg · S5-6: KB 12kg · S7+: KB 16kg' },
           { n: 'Plancha con extension de cadera activa', d: '2x8 cada lado', note: 'Desde plancha sobre codos · Elevar pierna extendida hasta la cadera · Gluteo activo · Lumbar neutra — no arquear al subir · Version suave de recuperacion', wid: 'plank-hip-extension', variant: 'S1-2: desde rodillas 2x6 · S3-4: plancha completa elevacion parcial · S5-6: elevacion hasta horizontal · S7+: tobillera ligera' },
         ]
@@ -718,6 +738,7 @@ const WEEK = {
     dur: '90 min', loc: 'Casa / Exterior',
     blocks: [
       MOB_BLOCK_A1_NEURAL,
+      MOB_BLOCK_ESPALDA_DINAMICA,
       MOB_BLOCK_B_MIE,
       {
         id: 'D', name: 'Funcional bodyweight + banda elastica', dur: '30 min', color: '#3C3489',
@@ -756,6 +777,7 @@ const WEEK = {
     cardio: 'Eliptica — 15-20 min FC 110-125',
     blocks: [
       MOB_BLOCK_A1,
+      MOB_BLOCK_ESPALDA_DINAMICA,
       MOB_BLOCK_B_VIE,
       { id: 'C', name: 'Cardio sala — Eliptica', dur: '15-20 min', color: '#185FA5', exIds: ['CARD-C'] },
       { id: 'D', name: 'Pierna — Squat + Bisagra', dur: '55 min', color: '#3C3489', exIds: ['QUAD-A','QUAD-B','QUAD-C','QUAD-D','QUAD-E','QUAD-F','HINGE-E','HINGE-F','HINGE-G'] },
@@ -1336,6 +1358,61 @@ EX_DB['bird-dog-banda-pie'] = {
   errores: ['Arquear la lumbar al extender la pierna contra la banda.', 'Elevar la pierna por encima de la cadera.', 'Rotar la pelvis al vencer la resistencia.', 'Levantar la barbilla para mirar al frente.'],
   variantes: ['S1-2: bird-dog sin banda dominando el patron. S3-4: banda ligera con recorrido parcial. S5-6: banda media con recorrido completo + pausa 2s. S7+: banda fuerte con excentrico lento.'],
   notas_columna: 'A diferencia del bird-dog resistido por el brazo (que enfatiza la anti-rotacion frente a una traccion frontal), aqui la banda resiste la extension de la pierna, lo que aumenta la activacion del gluteo y la cadena posterior mientras la columna debe permanecer neutra y estable. Sigue siendo un ejercicio sin carga axial, idoneo para L4-L5/L5-S1, con el mismo criterio: si aparece arqueo lumbar o irradiacion, reducir la banda o volver al bird-dog clasico.'
+};
+
+EX_DB['quadruped-rockback'] = {
+  nombre: 'Mecedora a talones (quadruped rockback)',
+  categoria: 'Movilidad / Calentamiento',
+  color: '#1A6E3A',
+  descripcion: 'Movimiento dinamico suave en cuadrupedia: se llevan las caderas hacia atras (hacia los talones) y se vuelve, controlando la flexion segmentaria de la columna y descomprimiendo suavemente la zona lumbar. Calentamiento articular sin carga.',
+  posicion: 'A cuatro patas: manos bajo los hombros, rodillas bajo las caderas, columna neutra. Cuello largo, mirada al suelo.',
+  pasos: [
+    'Parte de la cuadrupedia con la columna en posicion neutra.',
+    'Lleva las caderas hacia atras, acercandolas a los talones, de forma lenta y controlada.',
+    'Permite que la zona lumbar se descomprima sin redondear de golpe.',
+    'Detente en el punto comodo (no es necesario sentarte del todo sobre los talones).',
+    'Vuelve al inicio recuperando la columna neutra.',
+    'Acompana con la respiracion: exhala al ir hacia atras.',
+  ],
+  errores: ['Redondear la lumbar de golpe en lugar de un control progresivo.', 'Forzar el rango hasta sentir tiron.', 'Dejar caer la cabeza o craneo el cuello.', 'Ir demasiado rapido — es un movimiento de calentamiento lento.'],
+  variantes: ['S1-2: recorrido corto, sin sentarte del todo. S3-4: recorrido medio con pausa 2s atras. S5-6: recorrido completo lento. S7+: rockback + respiracion larga exhalando atras.'],
+  notas_columna: 'El rockback es un calentamiento descompresivo ideal para L4-L5/L5-S1: el desplazamiento de las caderas hacia los talones genera una traccion suave y una flexion controlada y distribuida de la columna, sin carga axial. Util para "despertar" el control del movimiento antes de entrenar. Mantener siempre el control del descenso lumbar y parar ante cualquier irradiacion S1.'
+};
+
+EX_DB['thread-the-needle'] = {
+  nombre: 'Enhebrar la aguja (thread the needle)',
+  categoria: 'Movilidad / Calentamiento',
+  color: '#1A6E3A',
+  descripcion: 'Rotacion dinamica de la columna toracica desde cuadrupedia: se pasa un brazo por debajo del cuerpo (rotando el torax) y se vuelve abriendo el brazo hacia el techo. Moviliza la columna dorsal manteniendo la lumbar y la pelvis estables.',
+  posicion: 'A cuatro patas: manos bajo los hombros, rodillas bajo las caderas. Columna neutra. Cuello largo.',
+  pasos: [
+    'Desde la cuadrupedia, desliza un brazo por debajo del cuerpo hacia el lado contrario, rotando la columna toracica.',
+    'Deja que el hombro y la sien se acerquen al suelo sin forzar.',
+    'Vuelve abriendo ese mismo brazo hacia el techo, siguiendo la mano con la mirada.',
+    'La rotacion sale del torax: la pelvis y la lumbar permanecen estables.',
+    'Repite de forma fluida y lenta antes de cambiar de lado.',
+  ],
+  errores: ['Rotar desde la lumbar o la pelvis en vez del torax.', 'Forzar la apertura hasta el tope.', 'Mover las caderas con la rotacion.', 'Hacerlo con tirones rapidos.'],
+  variantes: ['S1-2: rango corto. S3-4: rango medio. S5-6: rango completo + pausa 2s arriba. S7+: apertura completa + extension y mirada a la mano.'],
+  notas_columna: 'La movilidad rotacional debe salir de la columna toracica (disenada para rotar) y no de la lumbar, lo cual es especialmente importante con una extrusion L4-L5/L5-S1. Este movimiento entrena justamente esa disociacion en un contexto suave de calentamiento, mejorando la rotacion dorsal que descarga la zona lumbar. Mantener pelvis y lumbar estables; si el giro "baja" a la lumbar, reducir el rango.'
+};
+
+EX_DB['open-book-lateral'] = {
+  nombre: 'Libro abierto tumbado de lado (open book)',
+  categoria: 'Movilidad / Calentamiento',
+  color: '#1A6E3A',
+  descripcion: 'Rotacion toracica suave tumbado de lado: con las rodillas flexionadas y apiladas, se abre el brazo de arriba hacia el lado contrario rotando solo la columna dorsal. Calentamiento de movilidad para la espalda alta sin carga ni estres lumbar.',
+  posicion: 'Tumbado de lado, caderas y rodillas flexionadas a 90 grados y apiladas, brazos extendidos al frente juntos. Cabeza apoyada. Pelvis y lumbar fijas.',
+  pasos: [
+    'Tumbado de lado con las rodillas juntas y flexionadas, los brazos extendidos al frente.',
+    'Abre el brazo de arriba hacia el lado contrario, rotando la columna toracica.',
+    'Sigue la mano con la mirada y deja que el omoplato se acerque al suelo.',
+    'Manten las rodillas juntas y la pelvis fija — el giro es solo del torax.',
+    'Vuelve con control y repite antes de cambiar de lado.',
+  ],
+  errores: ['Despegar las rodillas o mover la pelvis al abrir.', 'Forzar la apertura del hombro mas alla de lo comodo.', 'Rotar desde la lumbar.', 'Contener la respiracion — exhalar al abrir.'],
+  variantes: ['S1-2: rango corto sin forzar. S3-4: rango medio. S5-6: rango completo + pausa 2s. S7+: apertura completa + respiracion larga en la apertura.'],
+  notas_columna: 'El "libro abierto" es uno de los movimientos de rotacion toracica mas seguros porque la posicion tumbada de lado con las rodillas fijas bloquea la pelvis y la lumbar, garantizando que el giro provenga de la columna dorsal. Para L4-L5/L5-S1 esto entrena la rotacion donde debe ocurrir (torax) y descarga la lumbar. Ideal como calentamiento suave o vuelta a la calma.'
 };
 
 EX_DB['hip-thrust'] = {
