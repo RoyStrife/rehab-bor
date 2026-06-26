@@ -980,6 +980,23 @@ const MOB_BLOCK_ESTABILIDAD_FOAM = {
 };
 
 // ═══════════════════════════════════════════════════════════════════
+// ─── MOB_GROUPS — MOVILIDAD COMO ACTIVIDAD PROPIA (rastreable) ─────
+// Agrupa toda la movilidad en 4 focos para la pestana Movilidad, que
+// deja de ser un catalogo pasivo y pasa a ser una rutina con progreso.
+// "columna" es la prioridad. Reutiliza los bloques ya definidos arriba.
+// ═══════════════════════════════════════════════════════════════════
+const MOB_GROUPS = [
+  { id:'columna', name:'Columna / Espalda', sub:'tu prioridad', dur:'15-20 min', color:'#1A6E3A',
+    exs:[ ...MOB_BLOCK_ESPALDA_DINAMICA.exs.slice(0,5), ...MOB_BLOCK_MOVILIDAD_ESPALDA.exs ] },
+  { id:'cadera', name:'Cadera', sub:'movilidad y control', dur:'20-25 min', color:'#7A3DAA',
+    exs:[ ...MOB_BLOCK_HIP.exs, ...MOB_BLOCK_MOVILIDAD_CADERA.exs ] },
+  { id:'cuello', name:'Cuello', sub:'prevencion cervical', dur:'8-10 min', color:'#1B8A9C',
+    exs:[ ...MOB_BLOCK_NECK.exs ] },
+  { id:'foam', name:'Estabilidad y Foam Roller', sub:'control motor + foam', dur:'30-35 min', color:'#993C1D',
+    exs:[ ...MOB_BLOCK_ESTABILIDAD_FOAM.exs ] },
+];
+
+// ═══════════════════════════════════════════════════════════════════
 // ─── EX_DB — BASE DE DATOS DE EJERCICIOS ──────────────────────────
 // Contiene la info detallada que aparece al pulsar "i" en cada ej.
 // ═══════════════════════════════════════════════════════════════════
