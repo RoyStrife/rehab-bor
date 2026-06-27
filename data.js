@@ -410,9 +410,9 @@ const HIP = {
     n:'Elevaciones de pierna sentado sobre foam roller', d:'2x10 cada lado', note:'Sentado en el suelo, una pierna extendida sobre un foam roller · Elevar la pierna por encima del rodillo · Fuerza de flexores de cadera + flexibilidad activa · Tronco erguido', wid:'elevaciones-pierna-sentado',
     variant:'S1-2: elevacion minima sobre el rodillo · S3-4: elevacion completa controlada · S5-6: + pausa 2s arriba · S7+: + tobillera ligera' },
   'E': { grupo:'hip', plano:'fuerza-flexor', equipo:'silla',
-    n:'Movilidad de cadera sentado en silla', d:'2x10 cada lado', note:'Sentado en una silla con una pierna extendida · Elevarla y bajarla controlado · Mejora el rango activo y la fuerza de cadera · Util en oficina/descansos (anti-sedestacion)' },
+    n:'Movilidad de cadera sentado en silla', d:'2x10 cada lado', note:'Sentado en una silla con una pierna extendida · Elevarla y bajarla controlado · Mejora el rango activo y la fuerza de cadera · Util en oficina/descansos (anti-sedestacion)', wid:'movilidad-cadera-silla' },
   'F': { grupo:'hip', plano:'flexibilidad-aductor', equipo:'bw',
-    n:'Estiramiento de cadera en suelo (straddle / split modificado)', d:'2x40 seg', note:'Sentado en el suelo en straddle o split modificado · Elonga los aductores · Aumenta la flexibilidad progresivamente · No forzar, respiracion lenta',
+    n:'Estiramiento de cadera en suelo (straddle / split modificado)', d:'2x40 seg', note:'Sentado en el suelo en straddle o split modificado · Elonga los aductores · Aumenta la flexibilidad progresivamente · No forzar, respiracion lenta', wid:'estiramiento-cadera-suelo',
     variant:'S1-2: straddle estrecho manos en suelo · S3-4: straddle medio inclinacion suave · S5-6: straddle amplio inclinacion adelante · S7+: split modificado progresivo' },
   'G': { grupo:'hip', plano:'movilidad-rotacion', equipo:'bw',
     n:'90/90 stretch activo', d:'2x40 seg cada lado', note:'Rotacion interna/externa de cadera · Pelvis neutra', wid:'90-90',
@@ -1430,6 +1430,42 @@ EX_DB['open-book-lateral'] = {
   errores: ['Despegar las rodillas o mover la pelvis al abrir.', 'Forzar la apertura del hombro mas alla de lo comodo.', 'Rotar desde la lumbar.', 'Contener la respiracion — exhalar al abrir.'],
   variantes: ['S1-2: rango corto sin forzar. S3-4: rango medio. S5-6: rango completo + pausa 2s. S7+: apertura completa + respiracion larga en la apertura.'],
   notas_columna: 'El "libro abierto" es uno de los movimientos de rotacion toracica mas seguros porque la posicion tumbada de lado con las rodillas fijas bloquea la pelvis y la lumbar, garantizando que el giro provenga de la columna dorsal. Para L4-L5/L5-S1 esto entrena la rotacion donde debe ocurrir (torax) y descarga la lumbar. Ideal como calentamiento suave o vuelta a la calma.'
+};
+
+EX_DB['movilidad-cadera-silla'] = {
+  nombre: 'Movilidad de cadera sentado en silla',
+  categoria: 'Movilidad / Cadera',
+  color: '#7A3DAA',
+  descripcion: 'Movilizacion activa de la flexion de cadera desde sedestacion en una silla. Util como pausa anti-sedestacion en oficina o descansos: mantiene el rango activo y la fuerza del flexor de cadera sin carga axial sobre la columna.',
+  posicion: 'Sentado erguido en una silla, sin apoyar la espalda en el respaldo. Lumbar neutra, pies apoyados en el suelo.',
+  pasos: [
+    'Sientate erguido con la lumbar neutra, sin recostarte en el respaldo.',
+    'Activa el core de forma suave para fijar la pelvis.',
+    'Eleva una rodilla hacia el pecho de forma controlada, sin retroversion de la pelvis.',
+    'Baja la pierna controlando el movimiento y alterna lados.',
+    'No compenses inclinando el tronco hacia atras.',
+  ],
+  errores: ['Recostarse en el respaldo y retrovertir la pelvis al elevar la pierna.', 'Inclinar el tronco hacia atras para subir mas la rodilla.', 'Hacerlo con impulso en vez de control.'],
+  variantes: ['S1-2: rango parcial controlado. S3-4: rango completo rodilla al pecho. S5-6: + pausa 2s arriba. S7+: + tobillera ligera.'],
+  notas_columna: 'Para L4-L5/L5-S1 la sedestacion prolongada aumenta la presion discal; esta movilizacion activa rompe el sedentarismo y mantiene el flexor de cadera sin carga axial. La clave es mantener la lumbar neutra y no retrovertir la pelvis al elevar la rodilla, lo que protege el segmento afectado.'
+};
+
+EX_DB['estiramiento-cadera-suelo'] = {
+  nombre: 'Estiramiento de cadera en suelo (straddle / split modificado)',
+  categoria: 'Movilidad / Cadera',
+  color: '#7A3DAA',
+  descripcion: 'Estiramiento de aductores e isquiotibiales sentado en el suelo en posicion de straddle (piernas abiertas en V) o split modificado. Mejora progresivamente la flexibilidad de cadera, una rigidez que suele compensarse con mala postura lumbar.',
+  posicion: 'Sentado en el suelo con las piernas abiertas en V (straddle) o en split modificado. Espalda recta, manos apoyadas delante. Inclinacion desde la cadera, no desde la lumbar.',
+  pasos: [
+    'Sientate con las piernas abiertas en V comoda, espalda recta.',
+    'Activa el core y crece desde la coronilla manteniendo la lumbar neutra.',
+    'Inclinate hacia delante desde la cadera (no redondeando la lumbar) hasta notar tension suave.',
+    'Respira lento y manten la posicion sin forzar.',
+    'Sal del estiramiento de forma controlada.',
+  ],
+  errores: ['Redondear la lumbar para llegar mas lejos (carga el disco).', 'Forzar el rango con rebotes.', 'Contener la respiracion.'],
+  variantes: ['S1-2: straddle estrecho, manos en el suelo, sin inclinar. S3-4: straddle medio, inclinacion suave desde la cadera. S5-6: straddle amplio, pecho hacia el suelo con espalda recta. S7+: split modificado progresivo.'],
+  notas_columna: 'La rigidez de cadera y aductores se compensa habitualmente con flexion lumbar, que es justo lo que hay que evitar con una extrusion L4-L5/L5-S1. Por eso el criterio aqui es inclinar desde la cadera con la espalda RECTA: si la lumbar se redondea, reducir el rango. Mejora la flexibilidad que descarga la columna a medio plazo.'
 };
 
 EX_DB['hip-thrust'] = {
@@ -2872,18 +2908,9 @@ const EX_GIF = {
   'dead-bug':                   'iny3m5y',  // dead bug
   'good-morning':               'XlZ4lAC',  // barbell good morning
   'glute-bridge':               'u0cNiij',  // low glute bridge on floor
-  'glute-bridge-fr':            'u0cNiij',  // low glute bridge on floor
-  'single-leg-bridge':          'rmEukuS',  // single leg bridge
   'long-lunge':                 'RRWFUcw',  // dumbbell lunge
-  'split-squat-banco':          '9E25EOx',  // split squats
-  'estocada-lateral-kb':        'py1HSzx',  // barbell lateral lunge
   'rear-delt-fly':              'EAs3xL9',  // dumbbell reverse fly
-  'hanging-ball-raise':         'I3tsCnC',  // hanging leg raise
   'plank-anterior':             'VBAWRPG',  // weighted front plank
-  'plank-fr':                   'VBAWRPG',  // weighted front plank
-  'movilidad-abductores-suelo': '2Dk4xQV',  // rocking frog stretch
-  'ext-toracica-fitball':       'o1HGDSq',  // exercise ball back extension
-  'squat-unilateral-fr':        'C31LMnP',  // one leg squat
   'pigeon-pose':                'QY39eBr',  // seated piriformis stretch (figura-4)
   // ── ejercicios de gimnasio (2026-06-18) ──
   'jalon-ancho':                'LEprlgG',  // cable lat pulldown
@@ -2921,20 +2948,8 @@ const EX_GIF = {
 // tiene GIF en EX_GIF. Valor = nombre del archivo en eximg/ (sin .svg).
 const EX_IMG = {
   'viparita': 'viparita',  // piernas en la pared (Viparita Karani)
-  // ── cuello / cervical (2026-06-25) ──
-  'chin-tuck':         'chin-tuck',          // flexion craneocervical supino
-  'chin-tuck-pared':   'chin-tuck',          // reutiliza el diagrama de chin tuck
-  'head-lift':         'head-lift',          // elevacion de cabeza con doble menton
-  'iso-cervical':      'iso-cervical',       // isometrico auto-resistido
-  'iso-cervical-banda':'iso-cervical',       // reutiliza el diagrama de isometrico
-  'neck-cars':         'neck-cars',          // movilidad cervical controlada
-  'prone-neck-ext':    'prone-neck-ext',     // extension cervical prona
-  'upper-trap-stretch':'upper-trap-stretch', // estiramiento trapecio superior
-  // ── movilidad toracica y cadera, descarga cervical (2026-06-25) ──
-  'apertura-toracica-disco':'apertura-toracica-disco', // thoracic plate opener
-  'side-bend-pica':         'side-bend-pica',          // inclinacion lateral
-  'ext-toracica-banco-pica':'ext-toracica-banco-pica', // extension toracica overhead
-  'pancake-straddle':       'pancake-straddle',        // pancake / straddle
+  // Los diagramas de movilidad (cuello, toracica, cadera) se retiraron
+  // el 2026-06-27: en su lugar la pestana Movilidad usa Shorts (EX_SHORT).
 };
 
 // ─── ENLACES A YOUTUBE (demostración real, en el minuto exacto) ────
@@ -2946,12 +2961,49 @@ const EX_IMG = {
 // El vídeo es una demostración externa GENÉRICA: la ficha (lumbar neutra,
 // parar si irradiación S1) manda sobre lo que se vea en el vídeo.
 const EX_YT = {
-  'hip-cars':                 { id:'hRMrq6G81p8', autor:'Cleveland Clinic' },        // Hip CARs
-  'cossack-shifts':           { id:'tpczTeSkHz0', autor:'FitnessFAQs' },             // Cossack / zancada lateral
-  '90-90':                    { id:'VYvMMw8z3rE', autor:'Jack Hanrahan Fitness' },   // 90/90 hip stretch
-  'neck-cars':                { id:'BsZmSx34hvQ', autor:'Precision Movement' },       // Neck CARs
-  'ext-toracica-cuadrupedia': { id:'AzCghjjWt5k', autor:'Vive Health' },             // Rotación torácica en cuadrupedia
-  'cat-cow':                  { id:'dRXO0agekxA', autor:'Momenta Chiropractic' },     // Cat-cow torácico
+  // (vacio) — los enlaces de movilidad pasaron a Shorts en EX_SHORT (2026-06-27).
+  // 'ext-toracica-cuadrupedia' se quedo sin video: no existe Short concreto.
+};
+
+// ─── ENLACES A YOUTUBE SHORTS (pestaña Movilidad) ──────────────────
+// Mapea wid -> { id } del Short de YouTube. La app abre el Short en una
+// pestaña nueva: youtube.com/shorts/<id>. IDs REALES obtenidos por
+// busqueda web (2026-06-27) desde URLs /shorts/ — no inventados. Solo los
+// ejercicios de Movilidad con un Short que encaja con el titulo; el resto
+// se queda sin video (la ficha de texto manda). El Short es demostracion
+// externa GENERICA: lumbar neutra y parar si irradiacion S1 mandan sobre el.
+const EX_SHORT = {
+  // ── Columna ──
+  'cat-cow':                      { id:'naUH8ciT0lg' },
+  'quadruped-rockback':           { id:'w8eO7BepUGc' },
+  'movilidad-toracica-banco':     { id:'VwAm5ECIHBk' },
+  'side-bend-pica':               { id:'9BMtKg4mzJw' },
+  'flexion-extension-cuadrupedia':{ id:'os2P4a1uQQw' },
+  // ── Cadera ──
+  'hf-fall-back':                 { id:'JJYtGq7g9bY' },
+  'hip-cars':                     { id:'iGazDisbKms' },
+  'banded-hip-rotation':          { id:'Iccobzgpzaw' },
+  'cossack-shifts':               { id:'3yWaLQResd4' },
+  '90-90':                        { id:'6dfkYZm9tpE' },
+  'tfl-stretch':                  { id:'tTdVOSVqpxw' },
+  'elevaciones-pierna-sentado':   { id:'LtCwUrP6iC0' },
+  'kb-hf-raise':                  { id:'RO57Szu8hx4' },
+  'banded-hf-raise':              { id:'WZyroBVYHgM' },
+  'split-squat-banco':            { id:'FUvLMZJMGak' },
+  'movilidad-abductores-suelo':   { id:'3nJDO2gRcg4' },
+  'estocada-lateral-kb':          { id:'Yq7f62cEZD0' },
+  'estiramiento-cadera-suelo':    { id:'4g7shRvODtg' },
+  // ── Cuello ──
+  'chin-tuck':                    { id:'ojeZxd2gwsI' },
+  'iso-cervical':                 { id:'g-xefX0gOTo' },
+  'neck-cars':                    { id:'dA6RKcIL74w' },
+  'upper-trap-stretch':           { id:'f8B4nWZr-5Y' },
+  // ── Foam / estabilidad ──
+  'squat-unilateral-fr':          { id:'TgH_V4Ysyi0' },
+  'hip-mob-cuadrupedia-fr':       { id:'s5fr4OgDyHg' },
+  'plank-fr':                     { id:'pUh39MqgeNw' },
+  'motor-control-fr':             { id:'vubdw0k5xyw' },
+  'single-leg-bridge':            { id:'2sg3vqnE8qE' },
 };
 
 // ═══════════════════════════════════════════════════════════════════

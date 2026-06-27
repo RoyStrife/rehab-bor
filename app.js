@@ -999,8 +999,9 @@ function renderExGif(key){
   if(!wrap)return;
   const gifId=(typeof EX_GIF!=='undefined')?EX_GIF[key]:null;
   const svgId=(!gifId&&typeof EX_IMG!=='undefined')?EX_IMG[key]:null;
+  const shortData=(typeof EX_SHORT!=='undefined')?EX_SHORT[key]:null;
   const ytData=(typeof EX_YT!=='undefined')?EX_YT[key]:null;
-  if(!gifId&&!svgId&&!ytData){wrap.style.display='none';return;}
+  if(!gifId&&!svgId&&!ytData&&!shortData){wrap.style.display='none';return;}
   wrap.style.display='block';
   if(note)note.textContent='';
   const hasImg=!!(gifId||svgId);
@@ -1010,9 +1011,15 @@ function renderExGif(key){
     if(hasImg){img.style.display='block';img.src=gifId?(EXGIF_DIR+gifId+'.gif'):(EXIMG_DIR+svgId+'.svg');}
     else{img.style.display='none';img.removeAttribute('src');}
   }
-  // botón de YouTube (demostración real en el minuto exacto)
+  // botón de YouTube — Short de movilidad (prioritario) o vídeo normal
   if(yt){
-    if(ytData){
+    if(shortData){
+      const url='https://www.youtube.com/shorts/'+shortData.id;
+      yt.innerHTML='<a class="ex-yt-btn" href="'+url+'" target="_blank" rel="noopener noreferrer">'
+        +'<span class="yt-play">▶</span>Ver Short en YouTube</a>'
+        +(shortData.autor?'<span class="ex-yt-src">Canal: '+shortData.autor+'</span>':'');
+      yt.style.display='block';
+    }else if(ytData){
       const t=ytData.t||0;
       const url='https://www.youtube.com/watch?v='+ytData.id+(t?('&t='+t+'s'):'');
       yt.innerHTML='<a class="ex-yt-btn" href="'+url+'" target="_blank" rel="noopener noreferrer">'
@@ -1024,7 +1031,8 @@ function renderExGif(key){
   // aviso de seguridad (según el tipo de medio)
   if(cav&&cavBox){
     let txt='';
-    if(gifId)txt='⚠ Demostración genérica — guíate por <b>esta ficha</b>: lumbar neutra, parar si irradiación S1.';
+    if(shortData)txt='⚠ Short externo (demostración general) — guíate por <b>esta ficha</b>: lumbar neutra, parar si irradiación S1.';
+    else if(gifId)txt='⚠ Demostración genérica — guíate por <b>esta ficha</b>: lumbar neutra, parar si irradiación S1.';
     else if(svgId)txt='Diagrama esquemático — guíate por <b>esta ficha</b>: lumbar neutra, parar si irradiación S1.';
     else if(ytData)txt='⚠ Vídeo externo (demostración general) — guíate por <b>esta ficha</b>: lumbar neutra, parar si irradiación S1.';
     cav.innerHTML=txt;
