@@ -96,7 +96,6 @@ const MOB_BLOCK_B_LUN = {
     { n: 'Puente gluteo dinamico', d: '2x10 — 2 seg arriba', note: 'Activacion gluteo pre-hiperextension', wid: 'glute-bridge' },
     { n: 'Deadbug activacion — un miembro', d: '2x6 cada lado', note: 'Core pre-cadena posterior · Lumbar pegada al suelo', wid: 'dead-bug' },
     { n: 'Cat-cow toracico', d: '2x8 lentos', note: 'Solo movimiento toracico · Lumbar estable', wid: 'cat-cow' },
-    { n: 'Rotacion toracica en suelo', d: '2x6 cada lado', note: 'Hombros en suelo · Amplitud sin dolor', wid: 'rotacion-toracica' },
     { n: 'Apertura toracica con disco (thoracic plate opener)', d: '2x6-8 — calentamiento', note: 'Arrodillado frente a un foam roller · Disco ligero (o mancuerna) overhead abriendo el pecho · Extension TORACICA pre-RDL e hiperext — mejora la postura de bisagra y libera el cuello · Lumbar neutra', wid: 'apertura-toracica-disco', variant: 'S1-2: sin peso, rango corto · S3-4: disco ligero + pausa 2s · S5-6: disco 5-10kg apertura completa · S7+: en banco con omoplatos al borde' },
     { n: 'Inclinacion lateral con pica (side bend)', d: '2x6 cada lado', note: 'Pica overhead · Inclinacion lateral con espalda recta · Elonga dorsal, intercostales y oblicuos · Libera los costados · Movimiento toracico/costal, no lumbar', wid: 'side-bend-pica', variant: 'S1-2: sin pica, manos en la cabeza · S3-4: pica rango medio · S5-6: rango completo excentrico · S7+: barra ligera sobre los hombros' },
     { n: 'Elephant walk estatico', d: '3x20 seg hold', note: 'Pre-RDL · Manos en superficie elevada · Piernas extendidas · PARAR si irradiacion', wid: 'elephant-walk', variant: 'S1-2: manos banco alto 60-70cm 3x15s · S3-4: banco bajo 40-45cm 3x20s · S5-6: cajon bajo 20-25cm 3x25s · S7+: manos suelo 3x30s' },
@@ -109,7 +108,6 @@ const MOB_BLOCK_B_MAR = {
     { n: 'Heel sit', d: '2x45 seg', note: 'Primero · Tronco erguido estricto · Sin retroversion lumbar · Cuadriceps activos frenando', wid: 'heel-sit-ex' },
     { n: 'Hip CARs', d: '2x5 cada lado', note: 'Rango sin dolor · Tronco estatico', wid: 'hip-cars' },
     { n: 'Outer hip dropset', d: '2x(pie+rodilla) cada lado', note: 'Pre-activacion rotadores externos · Solo niveles 1-2', wid: 'outer-hip' },
-    { n: 'Rotacion toracica en suelo', d: '2x8 cada lado', note: 'Hombros en suelo · Movilidad pre-jalon', wid: 'rotacion-toracica' },
     { n: 'Apertura de pecho con banda', d: '2x10', note: 'Retraccion escapular · Prepara jalon y tiro vertical', wid: 'retraccion-escapular' },
     { n: 'Dislocaciones con banda elastica', d: '2x10 amplitud comoda', wid: 'dislocaciones', note: 'Movilidad de hombro · Solo rango sin dolor' },
   ]
@@ -131,7 +129,6 @@ const MOB_BLOCK_B_JUE = {
   exs: [
     { n: 'Heel sit', d: '2x45 seg', note: 'Primero · Tronco erguido estricto · Sin retroversion lumbar · Cuadriceps activos frenando', wid: 'heel-sit-ex' },
     { n: 'Cat-cow toracico', d: '2x8 lentos', note: 'Solo movimiento toracico · Lumbar estable', wid: 'cat-cow' },
-    { n: 'Rotacion toracica en suelo', d: '2x6 cada lado', note: 'Hombros en suelo · Amplitud sin dolor', wid: 'rotacion-toracica' },
     { n: 'Extension toracica en foam roller', d: '2 min T4-T10', wid: 'ext-toracica-foam', note: 'Solo toracico — nunca lumbar · Prepara el arco de press' },
     { n: 'Apertura toracica con disco (thoracic plate opener)', d: '2x6-8 — calentamiento', note: 'Disco overhead sobre el foam roller abriendo el pecho · Version activa cargada que complementa la extension en foam · Prepara el arco de press y descarga el cuello · Lumbar neutra', wid: 'apertura-toracica-disco', variant: 'S1-2: sin peso, rango corto · S3-4: disco ligero + pausa 2s · S5-6: disco 5-10kg apertura completa · S7+: en banco con omoplatos al borde' },
     { n: 'Dislocaciones con banda elastica', d: '2x10 amplitud comoda', wid: 'dislocaciones', note: 'Movilidad de hombro · Prepara overhead, press y jalon · Solo rango sin dolor' },
@@ -152,7 +149,6 @@ const MOB_BLOCK_B_VIE = {
     { n: 'Hip CARs', d: '2x5 cada lado', note: 'Movilidad de cadera en todo el rango · Tronco estatico · Patron especifico pre-sentadilla', wid: 'hip-cars' },
     { n: 'Sentadilla bodyweight con pausa', d: '2x8 — pausa 2 seg abajo', note: 'Patron squat sin carga · Activa cadena anterior', wid: 'sentadilla-bw' },
     { n: 'Leg swing frontal y lateral', d: '2x8 cada direccion cada lado', wid: 'leg-swing', note: 'Movilidad flexores cadera + abductores · Apoyo en pared' },
-    { n: 'Rotacion toracica en suelo', d: '2x6 cada lado', note: 'Movilidad general de columna alta · Lumbar estable', wid: 'rotacion-toracica' },
   ]
 };
 

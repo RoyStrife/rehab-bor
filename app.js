@@ -1152,7 +1152,7 @@ function findExercise(name) {
     'retraccion escapular': 'retraccion-escapular', 'apertura de pecho': 'retraccion-escapular', 'retraccion': 'retraccion-escapular',
     'rotacion hombro': 'rot-hombro-banda', 'rotacion interna': 'rot-hombro-banda', 'rotacion externa': 'rot-hombro-banda', 'rotacion interna y externa': 'rot-hombro-banda',
     'cat cow': 'cat-cow', 'cat-cow': 'cat-cow', 'cat cow toracico': 'cat-cow',
-    'rotacion toracica': 'rotacion-toracica', 'rotacion toracica suelo': 'rotacion-toracica', 'rotacion toracica agua': 'rotacion-agua',
+    'rotacion toracica': 'open-book-lateral', 'rotacion toracica suelo': 'open-book-lateral', 'libro abierto': 'open-book-lateral', 'rotacion toracica agua': 'rotacion-agua',
     'foam roller': 'ext-toracica-foam', 'extension toracica': 'ext-toracica-foam', 'extension toracica foam': 'ext-toracica-foam',
     'child pose': 'child-pose', 'balasana': 'child-pose', 'child pose soporte': 'child-pose',
     'pelvic clock': 'pelvic-clock', 'reloj pelvico': 'pelvic-clock',
@@ -2718,33 +2718,6 @@ const _PORT = {
       "F3: cat-cow completo (lumbar incluida) cuando los discos esten estables."
     ],
     notas_columna: "Con extrusion lumbar activa, el cat-cow convencional (que incluye la flexion y extension lumbar) esta contraindicado temporalmente porque carga los discos L4-L5 y L5-S1 en ambos extremos del rango. La version toracica exclusiva permite mejorar la movilidad de la columna superior sin ninguna carga lumbar. La hipercifosis toracica aumenta la compensacion lumbar — mejorarla reduce indirectamente la carga en L4-S1."
-  },
-
-  "rotacion-toracica": {
-    nombre: "Rotacion toracica en suelo",
-    categoria: "Movilidad toracica",
-    color: "#3C3489",
-    descripcion: "Estiramiento de rotacion de la columna toracica en decubito lateral. Mejora la movilidad de rotacion toracica que frecuentemente se pierde con el dolor lumbar.",
-    posicion: "Tumbado de lado con caderas y rodillas en angulo de 90 grados (piernas apiladas). Ambos brazos extendidos hacia adelante, palmas juntas.",
-    pasos: [
-      "Posicion lateral: caderas y rodillas en 90 grados, piernas apiladas. Las rodillas no deben moverse.",
-      "Brazos extendidos al frente, palmas juntas.",
-      "Lleva el brazo superior en un arco hacia el lado contrario, siguiendo el movimiento con la mirada.",
-      "El hombro debe tocar el suelo (o intentarlo). Las rodillas NO se mueven.",
-      "Mantén 2-3 segundos respirando. En la exhalacion el pecho se abre un poco mas.",
-      "Vuelve lentamente al punto de partida.",
-      "Repite del otro lado."
-    ],
-    errores: [
-      "Las rodillas se mueven o se separan: la columna lumbar esta rotando en lugar de la toracica.",
-      "El brazo va demasiado rapido: pierde el control de la rotacion segmentaria.",
-      "No mirar el brazo con la mirada: la rotacion cervical acompaña a la toracica."
-    ],
-    variantes: [
-      "F2: rango segun tolerancia, 2x8 cada lado.",
-      "F3: con mayor velocidad, integrando el patron en movimiento complejo."
-    ],
-    notas_columna: "La restriccion de rotacion toracica es uno de los hallazgos mas constantes en pacientes con dolor lumbar cronico. Cuando la toracica no rota, la lumbar compensa la rotacion — especialmente perjudicial con discos comprometidos. Este ejercicio debe hacerse siempre despues del calentamiento y nunca con frio."
   },
 
   "extension-toracica-foam": {
@@ -4602,18 +4575,6 @@ _PORT['cat-cow'] = {
   errores:['Mover la zona lumbar en lugar de la toracica — el error mas comun. La lumbar debe estar fija.','Movimiento demasiado rapido — lento y controlado para sentir el movimiento toracico.','Cuello que se mueve en exceso — el cuello puede acompañar suavemente pero no liderar.','Rango insuficiente — la toracica debe moverse visiblemente.'],
   variantes:['Solo extension toracica (solo cow): si la flexion toracica genera molestia.','Con foam roller bajo la zona toracica: para movilizar segmentos especificos.','Sentado en silla: version mas facil para personas con dificultad en cuadrupedia.'],
   notas_columna:'La rigidez toracica es extremadamente comun en personas con dolor lumbar cronico — la postura antalgica inmoviliza la columna toracica y las fuerzas de movimiento se transfieren a la lumbar. Mejorar la movilidad toracica reduce directamente la carga sobre L4-L5 y L5-S1. En tu caso, la rectificacion de la lordosis documentada en la RMN puede beneficiarse de la extension toracica activa.',
-};
-
-_PORT['rotacion-toracica'] = {
-  nombre:'Rotacion toracica en suelo',
-  categoria:'Movilidad toracica / Rotacion',
-  color:'#1E8A7A',
-  descripcion:'Rotacion de la columna toracica en decubito lateral. Moviliza la toracica en rotacion manteniendo la pelvis completamente fija. Es el ejercicio de rotacion toracica mas seguro porque el decubito lateral estabiliza la pelvis y la gravedad no interfiere.',
-  posicion:'Tumbado de lado. Rodillas y caderas flexionadas a 90 grados (posicion fetal). Brazos extendidos al frente, palmas juntas.',
-  pasos:['Tumbado de lado en posicion fetal — caderas y rodillas a 90 grados.','Brazos extendidos al frente, palmas juntas.','Mantén las rodillas y la pelvis completamente fijas durante todo el ejercicio.','Lleva el brazo superior describiendo un arco hacia el otro lado del cuerpo — abriendo el pecho.','El brazo superior llega hasta el suelo del lado contrario si el rango lo permite.','La cabeza sigue al brazo — gira suavemente.','Vuelve de forma controlada. Cambiar de lado.'],
-  errores:['Pelvis que rota — las rodillas deben permanecer en el suelo durante todo el movimiento.','Brazo que no llega al suelo por falta de rango — ir hasta donde el rango permita, no forzar.','Movimiento demasiado rapido.','Rodillas que se separan — mantenerlas juntas y en el suelo.'],
-  variantes:['Con la mano superior apoyada en el suelo del lado contrario: facilita el control de la pelvis.','Con foam roller entre las rodillas: garantiza que las rodillas no se separen.','En agua (piscina): la flotacion facilita el rango.'],
-  notas_columna:'La rotacion toracica en decubito lateral es el ejercicio mas seguro para mejorar la movilidad rotatoria de la columna. La toracica necesita 35-40 grados de rotacion por lado para la marcha normal — su rigidez transfiere las fuerzas rotatorias a la lumbar, que solo tolera 5-7 grados. Mejorar la rotacion toracica reduce directamente las fuerzas de torsion sobre los discos extruidos.',
 };
 
 _PORT['90-90'] = {
