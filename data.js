@@ -451,6 +451,9 @@ const HINGE = {
   'G': { grupo:'hinge', n:'Long lunge (estocada profunda con carga)', d:'3x10 cada lado — posicion sostenida', note:'Estocada profunda con carga en las manos (mancuernas o barra con discos) · Mantener la posicion baja · Estira el flexor de cadera trasero · Activa el cuadriceps y gluteo delantero · Tronco erguido', wid:'long-lunge', gym:true,
     variant:'S1-2: bw sin carga posicion sostenida 3x20s · S3-4: mancuernas 4-6 kg 3x10 · S5-6: mancuernas 8-10 kg + pausa 3s abajo · S7+: mancuernas 12-14 kg o barra con discos 3x10',
     homeAlt:{ n:'Estocada estatica sostenida bw', d:'3x20 seg cada lado', note:'Misma posicion de estocada profunda · Sin carga · Foco en la tension del flexor de cadera trasero', variant:'S1-2: posicion semiflexionada 3x15s · S3-4: posicion completa 3x20s · S5-6: posicion profunda + respuracion lenta · S7+: + ligera carga goblet' } },
+  'H': { grupo:'hinge', n:'Single leg reverse hyper', d:'3x12 cada lado', note:'Extension de cadera lumbar — tumbado boca abajo en banco · Extension cadera pura sin carga axial · Espalda neutra · Parar si irradiacion S1', wid:'single-leg-hyper',
+    variant:'S1-2: sin peso ROM parcial 3x8 · S3-4: sin peso ROM completo 3x10 · S5-6: tobillera ligera 1-2 kg · S7+: tobillera 3-4 kg exc 2s',
+    homeAlt:{ n:'Single leg reverse hyper en cama/sofa', d:'3x12 cada lado', note:'Cadera en el borde de la cama o sofa firme · Extension de una pierna sin carga axial · Espalda neutra · Parar si irradiacion S1', variant:'S1-2: ROM parcial 3x8 · S3-4: ROM completo 3x10 · S5-6: tobillera ligera 1-2 kg · S7+: tobillera 3-4 kg exc 2s' } },
 };
 
 // ─── PULL — tiro (dorsal/espalda) sin carga axial ──────────────────
@@ -636,7 +639,7 @@ const WEEK = {
       MOB_BLOCK_ESPALDA_DINAMICA,
       MOB_BLOCK_B_LUN,
       { id: 'C', name: 'Cardio apertura — Ergometro 2000m', dur: '15-20 min', color: '#185FA5', exIds: ['CARD-A'] },
-      { id: 'D', name: 'Lumbar — Cadena posterior', dur: '45 min', color: '#3C3489', exIds: ['HINGE-A','HINGE-B','HINGE-C','HINGE-D'] },
+      { id: 'D', name: 'Lumbar — Cadena posterior', dur: '45 min', color: '#3C3489', exIds: ['HINGE-A','HINGE-B','HINGE-C','HINGE-D','HINGE-H'] },
       { id: 'E', name: 'Cuello (prep cervical) + Core REPETICIONES (control dinamico) + Biceps', dur: '38 min', color: '#993C1D', exIds: ['NECK-A','NECK-D','CORE-A','CORE-B','CORE-M','CORE-N','GLUTE-F','CORE-G2','ARM-B','ARM-C'] },
       { id: 'F', name: 'Cardio cierre — Eliptica 60 min', dur: '60 min', color: '#185FA5', exIds: ['CARD-D'] },
     ]
