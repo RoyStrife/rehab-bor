@@ -1,0 +1,212 @@
+{
+  "titulo": "Normas de calidad: ISO 9001, EFQM, Seis Sigma y cartas de servicio",
+  "descripcion": "Requisitos e implantación de la ISO 9001, agentes del modelo EFQM y conceptos clave de Seis Sigma y cartas de servicio",
+  "preguntas": [
+    {
+      "enunciado": "Según la ISO 9000 (3.6.4), ¿cómo se define «requisito»?",
+      "opciones": ["Característica inherente de un objeto que lo hace apto para el uso", "Necesidad o expectativa establecida, generalmente implícita u obligatoria", "Especificación recogida siempre en información documentada", "Resultado concreto y medible que se quiere lograr en relación con la calidad"],
+      "correcta": 1,
+      "explicacion": "Es la definición literal del 3.6.4. «Característica inherente…» mezcla la definición de calidad (3.6.2) con la idea de adecuación al uso de Juran; «siempre en información documentada» olvida que hay requisitos implícitos; «resultado concreto y medible» es la definición de objetivo de la calidad.",
+      "pista": "Fíjate en que incluye lo que no se dice."
+    },
+    {
+      "enunciado": "Un fabricante de conservas de atún debe respetar un límite máximo de histamina fijado por reglamento. (La histamina es un compuesto que se forma en algunos pescados, como el atún o la caballa, cuando se conservan mal, y en exceso provoca intoxicación). ¿Qué tipo de calidad es cumplir ese límite?",
+      "opciones": ["Implícita, porque el cliente da por supuesto que el alimento es seguro", "Explícita, porque es un requisito impuesto por la ley", "Inherente asignada desde fuera", "Comercial, porque la decide la empresa"],
+      "correcta": 1,
+      "explicacion": "La calidad explícita es la de los requisitos especificados: los establecidos en información documentada (pedido, contrato, ficha técnica) o impuestos por la ley. Que el alimento sea seguro en general es implícito, pero un límite legal concreto ya está especificado.",
+      "pista": "¿Está escrito en algún sitio?"
+    },
+    {
+      "enunciado": "¿Cuál de estos es un ejemplo de calidad implícita?",
+      "opciones": ["El calibre pactado en el pedido", "El etiquetado obligatorio de alérgenos", "Que el envase cierre bien", "Los parámetros de la ficha técnica"],
+      "correcta": 2,
+      "explicacion": "La calidad implícita es lo que se da por supuesto aunque nadie lo diga, como que el alimento sea seguro o que el envase cierre bien. Las demás opciones están en el pedido, la ley o la ficha técnica: son explícitas."
+    },
+    {
+      "enunciado": "¿En qué cláusulas de la ISO 9001:2026 se encuentran los requisitos?",
+      "opciones": ["De la 0 a la 10", "De la 1 a la 8", "De la 4 a la 10", "De la 3 a la 9"],
+      "correcta": 2,
+      "explicacion": "Las cláusulas 0 a 3 son introductorias (introducción, objeto y campo de aplicación, referencias normativas, términos y definiciones). Los requisitos van de la 4 a la 10 y siguen el ciclo PDCA."
+    },
+    {
+      "enunciado": "¿Qué cláusulas de la ISO 9001 corresponden a la fase «Planificar» del PDCA?",
+      "opciones": ["4, 5 y 6", "4 y 6", "5, 6 y 7", "Solo la 6"],
+      "correcta": 0,
+      "explicacion": "4 Contexto, 5 Liderazgo y 6 Planificación → Planificar; 7 Apoyo y 8 Operación → Hacer; 9 Evaluación del desempeño → Verificar; 10 Mejora → Actuar. La trampa es pensar que solo la 6 planifica porque se llama así.",
+      "pista": "No te fíes solo del nombre de la cláusula."
+    },
+    {
+      "enunciado": "Conocer la organización y su contexto, las necesidades de las partes interesadas y el alcance del SGC son requisitos de la cláusula:",
+      "opciones": ["4 Contexto de la organización", "5 Liderazgo", "6 Planificación", "8 Operación"],
+      "correcta": 0,
+      "explicacion": "La cláusula 4 recoge conocer la organización y su contexto, las necesidades de las partes interesadas, el alcance del SGC y los procesos. Es la base sobre la que se construye todo lo demás (Planificar)."
+    },
+    {
+      "enunciado": "La política de la calidad y la asignación de roles, responsabilidades y autoridades se recogen en:",
+      "opciones": ["Cláusula 4 Contexto", "Cláusula 5 Liderazgo", "Cláusula 6 Planificación", "Cláusula 7 Apoyo"],
+      "correcta": 1,
+      "explicacion": "La cláusula 5 incluye liderazgo y compromiso, política de la calidad y roles, responsabilidades y autoridades. La política de la calidad es coherente con la política global de la empresa y sirve de marco para fijar los objetivos de la calidad (que están en la 6)."
+    },
+    {
+      "enunciado": "«Acciones ante riesgos y oportunidades», «objetivos de la calidad» y «planificación de los cambios» forman parte de:",
+      "opciones": ["Cláusula 4 Contexto", "Cláusula 5 Liderazgo", "Cláusula 6 Planificación", "Cláusula 10 Mejora"],
+      "correcta": 2,
+      "explicacion": "Son los tres requisitos principales de la cláusula 6 (Planificar). La política de la calidad, en cambio, está en la 5 (Liderazgo), y las partes interesadas y el alcance en la 4."
+    },
+    {
+      "enunciado": "La calibración de los equipos de medida, ¿en qué cláusula y fase PDCA se encuadra?",
+      "opciones": ["Cláusula 7 Apoyo – Hacer", "Cláusula 8 Operación – Hacer", "Cláusula 9 Evaluación del desempeño – Verificar", "Cláusula 6 Planificación – Planificar"],
+      "correcta": 0,
+      "explicacion": "La calibración forma parte de «Recursos» en la cláusula 7 (Apoyo), junto a competencia, toma de conciencia, comunicación e información documentada. Corresponde a «Hacer». Es fácil confundirla con la medición de la cláusula 9, pero la medición del desempeño es otra cosa.",
+      "pista": "Es un recurso."
+    },
+    {
+      "enunciado": "Una empresa forma a un operario nuevo para que sepa manejar la envasadora y entienda cómo afecta su trabajo a la calidad. ¿Qué cláusula cubre esto?",
+      "opciones": ["Cláusula 5 Liderazgo", "Cláusula 7 Apoyo (competencia y toma de conciencia)", "Cláusula 8 Operación (producción)", "Cláusula 10 Mejora"],
+      "correcta": 1,
+      "explicacion": "Competencia (saber hacer el trabajo) y toma de conciencia (entender su papel en la calidad) son requisitos de la cláusula 7 Apoyo, fase Hacer, junto a recursos, comunicación e información documentada."
+    },
+    {
+      "enunciado": "¿Dónde encaja el control de proveedores externos y de las salidas no conformes?",
+      "opciones": ["Cláusula 8 Operación", "Cláusula 10 Mejora", "Cláusula 7 Apoyo", "Cláusula 4 Contexto"],
+      "correcta": 0,
+      "explicacion": "La cláusula 8 incluye planificación y control, requisitos del producto, diseño, control de proveedores externos, producción, liberación y salidas no conformes. Ojo: la «no conformidad y acción correctiva» está en la 10, pero el control de la salida no conforme está en la 8."
+    },
+    {
+      "enunciado": "La auditoría interna y la revisión por la dirección pertenecen a:",
+      "opciones": ["Cláusula 5 Liderazgo – Planificar", "Cláusula 9 Evaluación del desempeño – Verificar", "Cláusula 10 Mejora – Actuar", "Cláusula 7 Apoyo – Hacer"],
+      "correcta": 1,
+      "explicacion": "La cláusula 9 recoge seguimiento, medición y análisis, auditoría interna y revisión por la dirección; es la fase de Verificar. Aunque la dirección participe, no es la cláusula 5."
+    },
+    {
+      "enunciado": "Tras detectar una no conformidad, la empresa analiza la causa y aplica una acción correctiva. ¿Qué cláusula y fase PDCA es?",
+      "opciones": ["Cláusula 8 Operación – Hacer", "Cláusula 9 Evaluación del desempeño – Verificar", "Cláusula 10 Mejora – Actuar", "Cláusula 6 Planificación – Planificar"],
+      "correcta": 2,
+      "explicacion": "La cláusula 10 Mejora recoge no conformidad y acción correctiva y mejora continua; corresponde a Actuar, que cierra el ciclo PDCA para volver a empezar desde un nivel más alto."
+    },
+    {
+      "enunciado": "Sobre la ISO 9001:2026, ¿qué afirmación es correcta?",
+      "opciones": ["Obliga a disponer de un manual de calidad con un número mínimo de procedimientos", "Se basa en el enfoque de procesos y en el pensamiento basado en riesgos y oportunidades, y deja que cada empresa decida cuánta documentación necesita", "Tiene una estructura propia que dificulta su integración con otras normas", "Solo es aplicable a empresas industriales"],
+      "correcta": 1,
+      "explicacion": "La ISO 9001:2026 se basa en el enfoque de procesos y en riesgos y oportunidades, comparte la estructura armonizada de las normas ISO de sistemas de gestión (lo que facilita integrar calidad, medio ambiente e inocuidad), exige promover cultura de calidad y comportamiento ético, y deja la cantidad de documentación a criterio de la empresa. Además, la familia ISO 9000 vale para cualquier sector."
+    },
+    {
+      "enunciado": "Dentro de la familia ISO 9000, ¿cuál es la única norma certificable?",
+      "opciones": ["ISO 9000", "ISO 9001", "ISO 9004", "ISO 19011"],
+      "correcta": 1,
+      "explicacion": "ISO 9000 = fundamentos y vocabulario; ISO 9001 = requisitos, la única certificable; ISO 9004 = mejora; ISO 19011 = auditoría."
+    },
+    {
+      "enunciado": "Antes de implantar el SGC hay que tener claros los requisitos del cliente. ¿Qué tipos hay que considerar?",
+      "opciones": ["Solo los que el cliente pide en el pedido", "Los que pide, los que no dice pero espera, los legales y los que añade la empresa", "Solo los legales y los contractuales", "Los que fija la entidad certificadora"],
+      "correcta": 1,
+      "explicacion": "Son cuatro: los que el cliente pide, los que no dice pero espera, los legales y los que añade la empresa. Además hay que tener claro el nivel mínimo de calidad, unos procesos de control eficaces y documentados y un sistema de prevención de errores."
+    },
+    {
+      "enunciado": "¿Cuál es el orden correcto de las fases de implantación de un SGC?",
+      "opciones": ["Plan → Diagnóstico → Documentación → Implantación → Certificación → Auditoría", "Diagnóstico → Documentación → Plan → Implantación → Revisión y auditoría → Certificación", "Diagnóstico → Plan → Documentación → Implantación → Revisión y auditoría → Certificación", "Diagnóstico → Plan → Implantación → Documentación → Revisión y auditoría → Certificación"],
+      "correcta": 2,
+      "explicacion": "1 Diagnóstico (¿dónde estamos?) → 2 Plan (¿quién hace qué y cuándo?) → 3 Documentación (escribir cómo funciona la empresa) → 4 Implantación (hacer lo escrito) → 5 Revisión y auditoría (¿se cumple de verdad?) → 6 Certificación.",
+      "pista": "Primero se escribe, luego se hace."
+    },
+    {
+      "enunciado": "¿Qué resultado produce la fase de diagnóstico inicial?",
+      "opciones": ["Un cronograma ratificado con responsables", "Un informe de diagnóstico", "El mapa de procesos y el manual", "El certificado ISO 9001"],
+      "correcta": 1,
+      "explicacion": "En el diagnóstico se identifican procesos, políticas existentes, necesidades de formación, recursos, indicadores y grado de cumplimiento de la ISO 9001; el resultado es el informe de diagnóstico. El cronograma corresponde al plan y el mapa de procesos, a la documentación."
+    },
+    {
+      "enunciado": "En la fase de plan de desarrollo del SGC, ¿qué función tiene el comité de calidad?",
+      "opciones": ["Realizar la auditoría de certificación", "Hacer el seguimiento de hitos, quejas y reclamaciones", "Redactar todas las instrucciones de trabajo", "Emitir el informe de diagnóstico"],
+      "correcta": 1,
+      "explicacion": "En el plan se definen el responsable de calidad, el comité de calidad (seguimiento de hitos, quejas y reclamaciones) y los grupos de calidad, con un cronograma de responsables y plazos. El resultado es la planificación ratificada y el calendario."
+    },
+    {
+      "enunciado": "¿Qué resultado se espera de la fase de implantación propiamente dicha?",
+      "opciones": ["La base documental completa", "El sistema en marcha, con registros y participación del personal", "La garantía de que se cumplen los requisitos del SGC", "El certificado ISO 9001"],
+      "correcta": 1,
+      "explicacion": "Implantar es hacer lo que se ha escrito: aplicar procedimientos, medir, controlar no conformidades, aplicar acciones correctoras y seguir indicadores. Resultado: sistema en marcha con registros y participación del personal. La base documental es el resultado de la documentación y la garantía de cumplimiento, el de la revisión y auditoría."
+    },
+    {
+      "enunciado": "¿Qué incluye la fase de revisión y auditoría?",
+      "opciones": ["Auditorías internas por personal formado e independiente del área auditada, ajuste de la documentación y revisión por la dirección", "La auditoría inicial de la entidad certificadora", "Auditorías internas hechas por el responsable de cada área sobre su propio trabajo", "La redacción del manual de calidad"],
+      "correcta": 0,
+      "explicacion": "Esta fase responde a «¿se cumple de verdad?»: auditorías internas por personal formado e independiente del área auditada, ajuste de la documentación y revisión por la dirección. La auditoría inicial externa pertenece a la certificación."
+    },
+    {
+      "enunciado": "¿Cuál es la secuencia del proceso de certificación?",
+      "opciones": ["Solicitud → auditoría inicial → estudio de la documentación → visita previa → emisión del certificado", "Solicitud → estudio de la documentación → visita previa → auditoría inicial → plan de acciones correctoras → emisión del certificado", "Visita previa → solicitud → auditoría inicial → emisión del certificado → plan de acciones correctoras", "Solicitud → visita previa → emisión del certificado → auditoría inicial"],
+      "correcta": 1,
+      "explicacion": "El orden es: solicitud, estudio de la documentación, visita previa, auditoría inicial, plan de acciones correctoras y emisión del certificado. Las acciones correctoras se resuelven antes de emitirlo.",
+      "pista": "Primero se revisa el papel, luego la planta."
+    },
+    {
+      "enunciado": "Sobre la certificación ISO 9001, ¿qué es cierto?",
+      "opciones": ["Es obligatoria para las empresas alimentarias", "El certificado dura 3 años, con auditorías de seguimiento anuales y renovación por recertificación", "El certificado es indefinido una vez superada la auditoría inicial", "Solo puede emitirlo AENOR en España"],
+      "correcta": 1,
+      "explicacion": "La certificación es voluntaria; el certificado dura 3 años, con seguimiento anual y recertificación. En España hay varias entidades certificadoras: AENOR, Bureau Veritas, DNV, ECA, LGAI, Lloyd’s Register, SGS y TÜV."
+    },
+    {
+      "enunciado": "Un documento describe paso a paso cómo desmontar y limpiar la llenadora de la línea 2. ¿Qué nivel de la pirámide documental es?",
+      "opciones": ["Nivel 1: Manual de calidad", "Nivel 2: Procedimiento", "Nivel 3: Instrucción de trabajo", "Nivel 4: Registro"],
+      "correcta": 2,
+      "explicacion": "Las instrucciones de trabajo (nivel 3) detallan cada tarea concreta del nivel 2. El procedimiento responde a «¿cómo lo hago?» para un proceso clave (p. ej., limpieza y desinfección en general); la hoja donde se firma que se limpió sería el registro (nivel 4).",
+      "pista": "Muy concreto, de una sola tarea."
+    },
+    {
+      "enunciado": "¿Qué contiene el manual de calidad (nivel 1)?",
+      "opciones": ["Cómo funciona la empresa y por qué, alineado con su estrategia", "El detalle de cada tarea de producción", "Las evidencias de cumplimiento", "Solo el listado de equipos calibrados"],
+      "correcta": 0,
+      "explicacion": "El nivel 1 recoge cómo funciona la empresa y por qué, alineado con su estrategia, e incluye la política y los objetivos de la calidad. En lo alto de la pirámide hay pocos documentos y muy generales."
+    },
+    {
+      "enunciado": "En la pirámide documental, ¿qué nivel recoge las evidencias de que se cumple lo establecido en procedimientos e instrucciones?",
+      "opciones": ["Nivel 1: Manual de calidad", "Nivel 2: Procedimientos", "Nivel 3: Instrucciones de trabajo", "Nivel 4: Registros"],
+      "correcta": 3,
+      "explicacion": "Los registros (nivel 4) son las evidencias de cumplimiento de los niveles 2 y 3. Arriba hay pocos documentos y generales; abajo, mucho volumen y muy concreto."
+    },
+    {
+      "enunciado": "En el modelo EFQM, ¿qué representan los agentes facilitadores y cuántos puntos suman?",
+      "opciones": ["Lo que la empresa consigue; 500 puntos", "Lo que la empresa hace; 500 puntos", "Lo que la empresa hace; 400 puntos", "Los recursos externos de la empresa; 600 puntos"],
+      "correcta": 1,
+      "explicacion": "El EFQM reparte 1000 puntos: 500 para agentes facilitadores (lo que la empresa hace) y 500 para resultados (lo que consigue). Funciona por autoevaluación con cuestionarios."
+    },
+    {
+      "enunciado": "¿Cuál es el agente facilitador con más peso en el EFQM?",
+      "opciones": ["Liderazgo (10 %)", "Personas (9 %)", "Procesos (14 %)", "Alianzas y recursos (9 %)"],
+      "correcta": 2,
+      "explicacion": "Procesos pesa un 14 %: identificarlos, gestionarlos, revisarlos y mejorarlos, con un responsable para cada proceso clave. Liderazgo es el punto de partida pero pesa un 10 %. El criterio de más peso de todo el modelo es Resultados en los clientes (20 %).",
+      "pista": "No confundas «punto de partida» con «más peso»."
+    },
+    {
+      "enunciado": "El criterio «Alianzas y recursos» del EFQM evalúa:",
+      "opciones": ["La gestión eficaz y eficiente de recursos humanos, materiales y tecnológicos, reduciendo costes", "El rendimiento económico global y la cuota de mercado", "La selección, formación y retribución del personal", "El impacto en la comunidad y el medio ambiente"],
+      "correcta": 0,
+      "explicacion": "Alianzas y recursos (9 %) = gestión eficaz y eficiente de recursos humanos, materiales y tecnológicos reduciendo costes. El rendimiento económico son Resultados clave, la selección y formación es el criterio Personas y el impacto en la comunidad, Resultados en la sociedad."
+    },
+    {
+      "enunciado": "¿Qué caracteriza al criterio Liderazgo del EFQM?",
+      "opciones": ["La dirección delega la calidad total en el responsable de calidad", "Es el punto de partida: la dirección impulsa la calidad total, no la delega y predica con el ejemplo", "Mide la satisfacción del personal directivo", "Es el criterio con más peso del modelo"],
+      "correcta": 1,
+      "explicacion": "Todo arranca del liderazgo de la dirección: impulsa la calidad total, no la delega y predica con el ejemplo incluso con prisas. Pesa un 10 %, no es el de más peso."
+    },
+    {
+      "enunciado": "En el criterio «Política y estrategia», ¿cuál es la relación entre ambas?",
+      "opciones": ["La política es el camino y la estrategia la meta", "La política es la meta y la estrategia el camino, apoyada en datos de clientes, empleados, competidores y benchmarking", "Son sinónimos en el modelo EFQM", "La estrategia la fija cada departamento sin necesidad de comunicarla"],
+      "correcta": 1,
+      "explicacion": "La política es la meta y la estrategia el camino; se apoya en datos de clientes, empleados, competidores y benchmarking, y se comunica a todos. Pesa un 8 %."
+    },
+    {
+      "enunciado": "Seis Sigma: ¿qué representa σ y cuál es su objetivo?",
+      "opciones": ["La media del proceso; aumentar la productividad", "La desviación típica; llegar a cero defectos reduciendo la variabilidad", "El límite de control superior; eliminar inspecciones", "El coeficiente de correlación; relacionar variables"],
+      "correcta": 1,
+      "explicacion": "Sigma es la desviación típica; Seis Sigma busca cero defectos reduciendo la variabilidad de los procesos. Es a la vez sistema estadístico y filosofía de gestión."
+    },
+    {
+      "enunciado": "Sobre las cartas de servicio, ¿qué afirmación es correcta?",
+      "opciones": ["Las usan sobre todo empresas privadas para certificarse", "Recogen compromisos con el ciudadano limitados a lo exigido por las normas", "Las usa sobre todo la Administración pública; incluyen indicadores evaluados al menos una vez al año, canales de sugerencias y reclamaciones y derechos del usuario", "Sus indicadores se revisan cada tres años"],
+      "correcta": 2,
+      "explicacion": "Las cartas de servicio las usa sobre todo la Administración pública; sus compromisos van más allá de lo exigido por las normas, e incluyen indicadores evaluados al menos anualmente, canales de comunicación y derechos del usuario."
+    }
+  ]
+}

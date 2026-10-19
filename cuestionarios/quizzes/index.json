@@ -1,0 +1,10 @@
+[
+  {
+    "id": "normas-calidad",
+    "titulo": "Normas de calidad: ISO 9001, EFQM, Seis Sigma y cartas de servicio",
+    "descripcion": "Requisitos e implantación de la ISO 9001, agentes del EFQM y conceptos clave de Seis Sigma y cartas de servicio",
+    "asignatura": "Gestión de calidad",
+    "preguntas": 33,
+    "archivo": "normas-calidad.json"
+  }
+]

@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Cuestionarios</title>
+<meta name="theme-color" content="#1F5F8B">
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icon.svg">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Cuestionarios">
+<style>
+:root{
+  --bg:#F5F6F8; --card:#FFFFFF; --text:#1B1F24; --muted:#5E6873; --line:#DDE1E6;
+  --accent:#1F5F8B; --accent-soft:#E3EEF6;
+  --ok:#1E7A46; --ok-soft:#E2F3E9; --ko:#B3261E; --ko-soft:#FBE7E5; --hint:#8A6100; --hint-soft:#FFF4D6;
+  --radius:14px;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#121417; --card:#1C1F24; --text:#E8EAED; --muted:#9AA3AD; --line:#2E333A;
+    --accent:#6FB1E0; --accent-soft:#1D2E3B;
+    --ok:#5BC98A; --ok-soft:#16301F; --ko:#F2877E; --ko-soft:#3A1C1A; --hint:#E8C35A; --hint-soft:#33290F;
+  }
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{
+  background:var(--bg); color:var(--text);
+  font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  padding:env(safe-area-inset-top) 0 env(safe-area-inset-bottom);
+  -webkit-tap-highlight-color:transparent;
+}
+.wrap{max-width:680px; margin:0 auto; padding:16px 16px 40px}
+header.top{display:flex; align-items:center; gap:10px; min-height:44px; margin-bottom:12px}
+header.top h1{font-size:1.25rem; margin:0; flex:1; line-height:1.25}
+#quiz header.top h1, #result header.top h1{font-size:1rem; font-weight:600; color:var(--muted)}
+.iconbtn{
+  border:0; background:transparent; color:var(--accent); font-size:1rem; font-weight:600;
+  padding:10px 4px; cursor:pointer; min-height:44px;
+}
+.card{background:var(--card); border:1px solid var(--line); border-radius:var(--radius); padding:16px}
+.list{display:grid; gap:12px}
+.quiz-item{display:block; width:100%; text-align:left; cursor:pointer; color:inherit; font:inherit}
+.quiz-item:active{transform:scale(.99)}
+.quiz-item h2{font-size:1.05rem; margin:0 0 4px}
+.quiz-item p{margin:0; color:var(--muted); font-size:.92rem}
+.meta{display:flex; flex-wrap:wrap; gap:8px; margin-top:10px; font-size:.82rem; color:var(--muted)}
+.pill{background:var(--accent-soft); color:var(--accent); border-radius:99px; padding:2px 10px; font-weight:600}
+.pill.best{background:var(--ok-soft); color:var(--ok)}
+.empty{color:var(--muted); text-align:center; padding:32px 8px}
+
+.progress{height:6px; background:var(--line); border-radius:99px; overflow:hidden; margin-bottom:6px}
+.progress > div{height:100%; background:var(--accent); width:0; transition:width .25s}
+.counter{display:flex; justify-content:space-between; font-size:.85rem; color:var(--muted); margin-bottom:14px}
+.prompt{font-size:1.08rem; font-weight:600; margin:0 0 14px}
+.options{display:grid; gap:10px}
+.opt{
+  display:flex; gap:12px; align-items:flex-start; width:100%; text-align:left;
+  background:var(--card); color:var(--text); border:1.5px solid var(--line); border-radius:12px;
+  padding:13px 14px; font:inherit; cursor:pointer; min-height:52px;
+}
+.opt .l{flex:none; width:26px; height:26px; border-radius:50%; display:grid; place-items:center;
+  font-size:.8rem; font-weight:700; background:var(--accent-soft); color:var(--accent)}
+.opt:disabled{cursor:default}
+.opt.correct{border-color:var(--ok); background:var(--ok-soft)}
+.opt.correct .l{background:var(--ok); color:#fff}
+.opt.wrong{border-color:var(--ko); background:var(--ko-soft)}
+.opt.wrong .l{background:var(--ko); color:#fff}
+.opt.dim{opacity:.55}
+.hint{margin-top:12px; padding:10px 12px; border-radius:10px; background:var(--hint-soft); color:var(--hint); font-size:.92rem}
+.feedback{margin-top:14px; padding:12px 14px; border-radius:12px; border-left:4px solid; font-size:.95rem}
+.feedback.ok{border-color:var(--ok); background:var(--ok-soft)}
+.feedback.ko{border-color:var(--ko); background:var(--ko-soft)}
+.feedback strong{display:block; margin-bottom:4px}
+.actions{display:flex; gap:10px; margin-top:16px; flex-wrap:wrap}
+.btn{
+  flex:1; min-height:48px; border-radius:12px; border:1.5px solid var(--accent);
+  background:var(--accent); color:#fff; font:inherit; font-weight:600; cursor:pointer; padding:0 16px;
+}
+.btn.ghost{background:transparent; color:var(--accent)}
+.btn:disabled{opacity:.4; cursor:default}
+.score{font-size:3rem; font-weight:800; text-align:center; margin:8px 0 0; line-height:1.1}
+.score-sub{text-align:center; color:var(--muted); margin:4px 0 16px}
+.review h3{font-size:1rem; margin:20px 0 10px}
+.review .item{padding:12px 0; border-top:1px solid var(--line)}
+.review .item p{margin:4px 0}
+.review .q{font-weight:600}
+.review .yours{color:var(--ko)}
+.review .right{color:var(--ok)}
+.review .why{color:var(--muted); font-size:.92rem}
+.settings{display:flex; align-items:center; gap:8px; margin:14px 0 4px; font-size:.92rem; color:var(--muted)}
+.settings input{width:20px; height:20px; accent-color:var(--accent)}
+.hidden{display:none !important}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- Inicio -->
+  <section id="home">
+    <header class="top"><h1>Cuestionarios de clase</h1></header>
+    <div id="quizList" class="list"></div>
+    <label class="settings"><input type="checkbox" id="shuffle" checked> Barajar preguntas y respuestas</label>
+  </section>
+
+  <!-- Pregunta -->
+  <section id="quiz" class="hidden">
+    <header class="top">
+      <button class="iconbtn" id="exitBtn" aria-label="Salir">‹ Salir</button>
+      <h1 id="quizTitle"></h1>
+    </header>
+    <div class="progress"><div id="bar"></div></div>
+    <div class="counter"><span id="counter"></span><span id="liveScore"></span></div>
+    <div class="card">
+      <p class="prompt" id="prompt"></p>
+      <div class="options" id="options"></div>
+      <div id="hintBox" class="hint hidden"></div>
+      <div id="feedback" class="feedback hidden"></div>
+    </div>
+    <div class="actions">
+      <button class="btn ghost" id="hintBtn">Pista</button>
+      <button class="btn" id="nextBtn" disabled>Siguiente</button>
+    </div>
+  </section>
+
+  <!-- Resultado -->
+  <section id="result" class="hidden">
+    <header class="top">
+      <button class="iconbtn" id="homeBtn">‹ Inicio</button>
+      <h1 id="resultTitle"></h1>
+    </header>
+    <div class="card">
+      <p class="score" id="score"></p>
+      <p class="score-sub" id="scoreSub"></p>
+      <div class="actions">
+        <button class="btn ghost" id="retryWrongBtn">Repetir falladas</button>
+        <button class="btn" id="retryAllBtn">Repetir todo</button>
+      </div>
+      <div class="review" id="review"></div>
+    </div>
+  </section>
+
+</div>
+
+<script>
+(function(){
+  'use strict';
+  var $ = function(id){ return document.getElementById(id); };
+  var LETTERS = 'ABCDEFGH';
+  var STORE = 'cuestionarios_v1';
+
+  function load(){ try { return JSON.parse(localStorage.getItem(STORE)) || {}; } catch(e){ return {}; } }
+  function save(d){ try { localStorage.setItem(STORE, JSON.stringify(d)); } catch(e){} }
+  var store = load();
+
+  var catalog = [], current = null, order = [], idx = 0, answers = [], answered = false;
+
+  function shuffle(a){ a = a.slice(); for (var i=a.length-1;i>0;i--){ var j=Math.floor(Math.random()*(i+1)); var t=a[i]; a[i]=a[j]; a[j]=t; } return a; }
+  function esc(s){ return String(s == null ? '' : s).replace(/[&<>"]/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; }); }
+  function show(id){ ['home','quiz','result'].forEach(function(s){ $(s).classList.toggle('hidden', s !== id); }); window.scrollTo(0,0); }
+
+  // ---------- Inicio ----------
+  function renderHome(){
+    var html = catalog.map(function(q){
+      var best = store.best && store.best[q.id];
+      return '<button class="card quiz-item" data-id="'+esc(q.id)+'">' +
+        '<h2>'+esc(q.titulo)+'</h2>' +
+        (q.descripcion ? '<p>'+esc(q.descripcion)+'</p>' : '') +
+        '<div class="meta">' +
+          (q.asignatura ? '<span class="pill">'+esc(q.asignatura)+'</span>' : '') +
+          (q.preguntas ? '<span>'+q.preguntas+' preguntas</span>' : '') +
+          (best != null ? '<span class="pill best">Mejor: '+best+'%</span>' : '') +
+        '</div></button>';
+    }).join('');
+    $('quizList').innerHTML = html || '<p class="empty">Aún no hay cuestionarios.</p>';
+    show('home');
+  }
+
+  $('quizList').addEventListener('click', function(e){
+    var el = e.target.closest('.quiz-item'); if (!el) return;
+    openQuiz(el.getAttribute('data-id'));
+  });
+  $('shuffle').checked = store.shuffle !== false;
+  $('shuffle').addEventListener('change', function(){ store.shuffle = this.checked; save(store); });
+
+  function openQuiz(id){
+    var entry = catalog.find(function(q){ return q.id === id; });
+    if (!entry) return;
+    fetch('quizzes/' + entry.archivo).then(function(r){ return r.json(); }).then(function(data){
+      current = data; current.id = id;
+      history.replaceState(null, '', '?q=' + encodeURIComponent(id));
+      start(data.preguntas.map(function(_,i){ return i; }));
+    }).catch(function(){ alert('No se pudo cargar el cuestionario.'); });
+  }
+
+  // ---------- Pregunta ----------
+  function start(indices){
+    order = $('shuffle').checked ? shuffle(indices) : indices;
+    idx = 0; answers = [];
+    $('quizTitle').textContent = current.titulo;
+    show('quiz'); renderQuestion();
+  }
+
+  function renderQuestion(){
+    var q = current.preguntas[order[idx]];
+    answered = false;
+    var opts = q.opciones.map(function(o,i){ return {texto:o, i:i}; });
+    if ($('shuffle').checked) opts = shuffle(opts);
+    q._shown = opts;
+    $('bar').style.width = (idx / order.length * 100) + '%';
+    $('counter').textContent = 'Pregunta ' + (idx+1) + ' de ' + order.length;
+    var ok = answers.filter(function(a){ return a.ok; }).length;
+    $('liveScore').textContent = idx ? ok + ' / ' + idx + ' bien' : '';
+    $('prompt').textContent = q.enunciado;
+    $('options').innerHTML = opts.map(function(o,k){
+      return '<button class="opt" data-k="'+k+'"><span class="l">'+LETTERS[k]+'</span><span>'+esc(o.texto)+'</span></button>';
+    }).join('');
+    $('hintBox').classList.add('hidden');
+    $('hintBox').textContent = q.pista || '';
+    $('hintBtn').classList.toggle('hidden', !q.pista);
+    $('hintBtn').disabled = false;
+    $('feedback').className = 'feedback hidden';
+    $('nextBtn').disabled = true;
+    $('nextBtn').textContent = idx === order.length - 1 ? 'Ver resultado' : 'Siguiente';
+  }
+
+  $('options').addEventListener('click', function(e){
+    var el = e.target.closest('.opt'); if (!el || answered) return;
+    answered = true;
+    var q = current.preguntas[order[idx]];
+    var chosen = q._shown[+el.getAttribute('data-k')];
+    var ok = chosen.i === q.correcta;
+    answers.push({ q: order[idx], elegida: chosen.i, ok: ok });
+    Array.prototype.forEach.call($('options').children, function(b, k){
+      var o = q._shown[k];
+      b.disabled = true;
+      if (o.i === q.correcta) b.classList.add('correct');
+      else if (b === el) b.classList.add('wrong');
+      else b.classList.add('dim');
+    });
+    var fb = $('feedback');
+    fb.className = 'feedback ' + (ok ? 'ok' : 'ko');
+    fb.innerHTML = '<strong>' + (ok ? '¡Correcto!' : 'No es correcta') + '</strong>' + esc(q.explicacion || '');
+    $('hintBtn').disabled = true;
+    $('nextBtn').disabled = false;
+    fb.scrollIntoView({behavior:'smooth', block:'nearest'});
+  });
+
+  $('hintBtn').addEventListener('click', function(){ $('hintBox').classList.remove('hidden'); this.disabled = true; });
+  $('nextBtn').addEventListener('click', function(){
+    if (idx < order.length - 1){ idx++; renderQuestion(); window.scrollTo(0,0); } else finish();
+  });
+  $('exitBtn').addEventListener('click', function(){
+    if (answers.length && !confirm('¿Salir del cuestionario? Se perderá el progreso.')) return;
+    goHome();
+  });
+
+  // ---------- Resultado ----------
+  function finish(){
+    var ok = answers.filter(function(a){ return a.ok; }).length;
+    var pct = Math.round(ok / answers.length * 100);
+    if (answers.length === current.preguntas.length){
+      store.best = store.best || {};
+      if (store.best[current.id] == null || pct > store.best[current.id]) store.best[current.id] = pct;
+      save(store);
+    }
+    $('resultTitle').textContent = current.titulo;
+    $('score').textContent = pct + '%';
+    $('scoreSub').textContent = ok + ' de ' + answers.length + ' correctas';
+    var wrong = answers.filter(function(a){ return !a.ok; });
+    $('retryWrongBtn').classList.toggle('hidden', !wrong.length);
+    $('review').innerHTML = wrong.length ? '<h3>Repasa las falladas</h3>' + wrong.map(function(a){
+      var q = current.preguntas[a.q];
+      return '<div class="item"><p class="q">'+esc(q.enunciado)+'</p>' +
+        '<p class="yours">✗ '+esc(q.opciones[a.elegida])+'</p>' +
+        '<p class="right">✓ '+esc(q.opciones[q.correcta])+'</p>' +
+        (q.explicacion ? '<p class="why">'+esc(q.explicacion)+'</p>' : '') + '</div>';
+    }).join('') : '<h3>¡Pleno! Ninguna fallada.</h3>';
+    show('result');
+  }
+
+  $('retryWrongBtn').addEventListener('click', function(){
+    start(answers.filter(function(a){ return !a.ok; }).map(function(a){ return a.q; }));
+  });
+  $('retryAllBtn').addEventListener('click', function(){
+    start(current.preguntas.map(function(_,i){ return i; }));
+  });
+  $('homeBtn').addEventListener('click', goHome);
+
+  function goHome(){ history.replaceState(null, '', location.pathname); renderHome(); }
+
+  // ---------- Arranque ----------
+  fetch('quizzes/index.json').then(function(r){ return r.json(); }).then(function(list){
+    catalog = list;
+    var q = new URLSearchParams(location.search).get('q');
+    if (q && catalog.some(function(c){ return c.id === q; })) { renderHome(); openQuiz(q); }
+    else renderHome();
+  }).catch(function(){
+    $('quizList').innerHTML = '<p class="empty">No se pudo cargar la lista de cuestionarios.</p>';
+  });
+})();
+</script>
+</body>
+</html>
