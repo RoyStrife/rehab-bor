@@ -1,0 +1,341 @@
+{
+  "titulo": "Evaluación final · Gestión de calidad",
+  "descripcion": "30 preguntas difíciles y con trampa que mezclan todos los temas",
+  "preguntas": [
+    {
+      "enunciado": "La gestión de la calidad total (TQM) se sitúa como etapa «desde 1980», pero el control de la calidad total tiene un origen anterior. ¿Qué afirmación es correcta?",
+      "opciones": [
+        "Crosby crea el control de la calidad total en 1945",
+        "Feigenbaum crea el ciclo PDCA en 1945",
+        "La TQM nace en 1980 con Feigenbaum",
+        "El control de la calidad total nace con Feigenbaum en 1945, aunque la TQM se generaliza como etapa desde 1980"
+      ],
+      "correcta": 3,
+      "explicacion": "Feigenbaum plantea el control de la calidad total en 1945. La TQM como etapa de la evolución de la calidad se sitúa desde 1980, y es entonces cuando aparece Crosby con los cero defectos. El PDCA es de Deming.",
+      "pista": "Una cosa es el origen de la idea y otra cuándo se generaliza."
+    },
+    {
+      "enunciado": "¿Qué emparejamiento autor–etapa de la evolución de la calidad es correcto?",
+      "opciones": [
+        "Deming: aseguramiento · Juran: gestión de la calidad total · Crosby: control del proceso",
+        "Deming: control del proceso · Juran: aseguramiento de la calidad · Crosby: gestión de la calidad total",
+        "Deming: gestión de la calidad total · Juran: control del proceso · Crosby: aseguramiento",
+        "Deming: control del producto · Juran: inspección · Crosby: aseguramiento"
+      ],
+      "correcta": 1,
+      "explicacion": "Deming aparece con el control del proceso (calidad preventiva, PDCA), Juran con el aseguramiento de la calidad (adecuación al uso, trilogía) y Crosby con la TQM (cero defectos)."
+    },
+    {
+      "enunciado": "Un producto cumple todas las especificaciones firmadas en el contrato, pero no le sirve al cliente para el uso que tenía pensado. ¿Tiene calidad?",
+      "opciones": [
+        "Para ambos no, porque hay una reclamación",
+        "Para ambos sí, porque está en contrato",
+        "Para Crosby sí, porque cumple los requisitos; para Juran no, porque no es adecuado al uso",
+        "Para Juran sí y para Crosby no"
+      ],
+      "correcta": 2,
+      "explicacion": "Crosby define calidad como cumplir los requisitos, y aquí se cumplen. Juran la define como adecuación al uso, y el producto no sirve para lo que el cliente quería. Es un buen ejemplo de por qué la ISO 9000 incluye también los requisitos implícitos."
+    },
+    {
+      "enunciado": "Una empresa elimina su inspección final porque ha organizado el trabajo para hacerlo bien a la primera y aspira a cero defectos. ¿Qué enfoque aplica?",
+      "opciones": [
+        "El de la etapa de inspección",
+        "El de Crosby, propio de la gestión de la calidad total",
+        "La trilogía de Juran",
+        "El del control del producto por muestreo"
+      ],
+      "correcta": 1,
+      "explicacion": "Suprimir inspecciones haciendo las cosas bien a la primera, con meta de cero defectos, es la propuesta de Crosby en la etapa de TQM. Es justo lo contrario de la etapa de inspección."
+    },
+    {
+      "enunciado": "Un cliente no dice nada sobre las tapas de los botes, pero da por hecho que no tendrán rebabas cortantes. ¿Es eso un requisito según la ISO 9000?",
+      "opciones": [
+        "Sí: un requisito es una necesidad o expectativa establecida, generalmente implícita u obligatoria, y esto es calidad implícita",
+        "No: solo son requisitos los que figuran por escrito",
+        "Solo si se añade al contrato",
+        "Solo si lo exige una ley"
+      ],
+      "correcta": 0,
+      "explicacion": "La ISO 9000 (3.6.4) incluye en «requisito» lo generalmente implícito. Lo que se da por supuesto aunque nadie lo diga es calidad implícita y cuenta como requisito."
+    },
+    {
+      "enunciado": "Un contrato con un supermercado fija una humedad máxima del 12 % para el arroz. El comprador, además, espera que los sacos lleguen sin roturas, aunque no lo pone en ningún sitio. ¿Cómo se clasifica cada cosa?",
+      "opciones": [
+        "Las dos son implícitas porque las espera el cliente",
+        "La humedad es implícita; los sacos sin roturas, explícita",
+        "La humedad es calidad explícita; los sacos sin roturas, calidad implícita",
+        "Las dos son explícitas porque hay contrato"
+      ],
+      "correcta": 2,
+      "explicacion": "Lo que está en información documentada (el contrato) es explícito. Lo que se da por supuesto sin decirlo es implícito, aunque exista un contrato para otras cosas."
+    },
+    {
+      "enunciado": "Según la definición de la ISO 9000, ¿forma parte de la calidad el precio de un aceite?",
+      "opciones": [
+        "No: el precio es una característica asignada, y la definición de la ISO 9000 se refiere solo a las características inherentes",
+        "Solo en la calidad comercial",
+        "Sí, porque la calidad incluye el valor percibido",
+        "Sí: el precio es una característica inherente"
+      ],
+      "correcta": 0,
+      "explicacion": "La definición de la ISO 9000 habla de características inherentes, y el precio es asignado desde fuera, como la marca o el plazo de entrega. La trampa está en el valor percibido: influye en cómo se juzga la calidad, pero el precio no es una característica inherente.",
+      "pista": "Fíjate en la palabra «inherentes» de la definición."
+    },
+    {
+      "enunciado": "Una empresa analiza cada mes los indicadores de rendimiento de su línea y, además, calibra cada año las balanzas. ¿En qué cláusulas de la ISO 9001 encaja cada actividad?",
+      "opciones": [
+        "Analizar indicadores, en la 8; calibrar, en la 9",
+        "Las dos, en la 7",
+        "Analizar indicadores, en la 9 (Evaluación del desempeño); calibrar balanzas, en la 7 (Apoyo, recursos)",
+        "Las dos, en la 9"
+      ],
+      "correcta": 2,
+      "explicacion": "Seguimiento, medición y análisis del desempeño son de la cláusula 9 (Verificar). La calibración de equipos forma parte de los recursos de la cláusula 7 (Hacer). Que en ambas se «mida» no las pone en la misma cláusula."
+    },
+    {
+      "enunciado": "Sale un lote con el etiquetado erróneo. Se bloquea y se reetiqueta. Después se investiga la causa y se cambia el sistema de verificación de etiquetas. ¿Qué cláusulas intervienen?",
+      "opciones": [
+        "Bloquear y reetiquetar: 8 (salidas no conformes). Investigar la causa y cambiar el sistema: 10 (no conformidad y acción correctiva)",
+        "Todo, en la 10",
+        "Todo, en la 8",
+        "Bloquear: 9. Cambiar el sistema: 10"
+      ],
+      "correcta": 0,
+      "explicacion": "Controlar la salida no conforme (bloquear y corregir el lote) es de la cláusula 8 Operación. Eliminar la causa para que no se repita es una acción correctiva de la cláusula 10 Mejora."
+    },
+    {
+      "enunciado": "La dirección declara su compromiso con la satisfacción del cliente y, dentro de ese marco, fija «reducir las reclamaciones un 15 % este año». ¿En qué cláusulas está cada cosa?",
+      "opciones": [
+        "El compromiso (política de la calidad), en la 5; la meta medible (objetivo de la calidad), en la 6",
+        "La política, en la 4; el objetivo, en la 9",
+        "Los dos, en la 5",
+        "Los dos, en la 6"
+      ],
+      "correcta": 0,
+      "explicacion": "La política de la calidad es de la cláusula 5 Liderazgo y sirve de marco para fijar los objetivos. Los objetivos de la calidad, resultados concretos y medibles, están en la cláusula 6 Planificación."
+    },
+    {
+      "enunciado": "¿Cuál de estos emparejamientos cláusula–fase PDCA es INCORRECTO?",
+      "opciones": [
+        "5 Liderazgo – Planificar",
+        "10 Mejora – Actuar",
+        "9 Evaluación del desempeño – Actuar",
+        "7 Apoyo – Hacer"
+      ],
+      "correcta": 2,
+      "explicacion": "La cláusula 9 es Verificar, no Actuar. Las demás son correctas: 4, 5 y 6 son Planificar; 7 y 8, Hacer; 9, Verificar; y 10, Actuar."
+    },
+    {
+      "enunciado": "Durante la implantación, una auditoría interna detecta que un procedimiento no refleja lo que de verdad se hace y se reescribe. ¿En qué fase de la implantación se encuadra ese ajuste de la documentación?",
+      "opciones": [
+        "Revisión y auditoría",
+        "Certificación",
+        "Elaboración de la documentación",
+        "Diagnóstico inicial"
+      ],
+      "correcta": 0,
+      "explicacion": "Aunque sea un cambio de documentos, el ajuste derivado de una auditoría interna pertenece a la fase de revisión y auditoría, que incluye auditorías internas, ajuste de la documentación y revisión por la dirección.",
+      "pista": "¿Qué lo ha provocado?"
+    },
+    {
+      "enunciado": "Para ganar tiempo, el jefe de producción propone auditar él mismo su área en la auditoría interna, porque es quien mejor la conoce. ¿Es correcto?",
+      "opciones": [
+        "Sí, porque conoce mejor el proceso",
+        "Solo si después lo revisa la entidad certificadora",
+        "No: las auditorías internas deben hacerlas personas formadas e independientes del área auditada",
+        "Sí, siempre que firme el informe"
+      ],
+      "correcta": 2,
+      "explicacion": "La auditoría es un examen hecho por personas independientes. En la fase de revisión y auditoría se exige personal formado e independiente del área auditada. Conocer bien el área no compensa la falta de independencia."
+    },
+    {
+      "enunciado": "En una planta, una hoja firmada recoge cada hora la temperatura del pasteurizador. ¿Qué nivel de la pirámide documental es?",
+      "opciones": [
+        "Nivel 4: registro",
+        "Nivel 2: procedimiento",
+        "Nivel 1: manual de calidad",
+        "Nivel 3: instrucción de trabajo"
+      ],
+      "correcta": 0,
+      "explicacion": "Aunque se refiera a una tarea concreta, esa hoja no dice cómo hacerla: deja evidencia de que se ha hecho. Eso es un registro (nivel 4). La instrucción explicaría cómo controlar el pasteurizador."
+    },
+    {
+      "enunciado": "Una empresa obtiene la certificación ISO 9001. ¿Qué le toca en los años siguientes?",
+      "opciones": [
+        "Nada más: el certificado es indefinido",
+        "Una nueva auditoría inicial cada año",
+        "Auditorías de seguimiento anuales y, al cumplirse los 3 años, una auditoría de recertificación",
+        "Solo autoevaluaciones internas"
+      ],
+      "correcta": 2,
+      "explicacion": "El certificado dura 3 años. Entre medias hay auditorías de seguimiento anuales y, para renovarlo, una auditoría de recertificación."
+    },
+    {
+      "enunciado": "De las seis fases para implantar un SGC según la ISO 9001, ¿cuál se considera voluntaria?",
+      "opciones": [
+        "La elaboración de la documentación",
+        "La certificación",
+        "La revisión y auditoría",
+        "El diagnóstico inicial"
+      ],
+      "correcta": 1,
+      "explicacion": "Se puede implantar un SGC y funcionar con él sin certificarse. La certificación es el paso final y es voluntario; las otras cinco fases son las que construyen y comprueban el sistema."
+    },
+    {
+      "enunciado": "Tras aprobar su primera auditoría interna, el gerente anuncia que la empresa «ya está certificada en ISO 9001». ¿Tiene razón?",
+      "opciones": [
+        "Sí, si la auditoría la hizo personal independiente del área",
+        "No: la certificación es la declaración de una entidad independiente tras su propio proceso (solicitud, estudio de documentación, visita previa, auditoría inicial…)",
+        "Solo si la revisión por la dirección lo aprueba",
+        "Sí, porque la auditoría interna equivale a la certificación"
+      ],
+      "correcta": 1,
+      "explicacion": "La auditoría interna forma parte de la fase de revisión. La certificación exige una entidad certificadora externa e independiente que siga su propio proceso y emita el certificado."
+    },
+    {
+      "enunciado": "En una autoevaluación EFQM, una empresa obtiene 450 puntos. ¿Qué le corresponde?",
+      "opciones": [
+        "El sello del tramo de 401 a 500 puntos",
+        "El sello del tramo de 200 a 400 puntos",
+        "Ningún sello: el mínimo son 500 puntos",
+        "El sello de más de 500 puntos"
+      ],
+      "correcta": 0,
+      "explicacion": "Los sellos de excelencia se conceden por tramos: 200-400, 401-500 y más de 500 puntos. 450 cae en el segundo."
+    },
+    {
+      "enunciado": "Sobre el modelo EFQM, ¿qué afirmación es correcta?",
+      "opciones": [
+        "Resultados clave es el criterio de más peso de todo el modelo",
+        "Procesos es el criterio de más peso de todo el modelo",
+        "El liderazgo es el punto de partida, pero el agente de más peso es Procesos (14 %) y el criterio de más peso del modelo es Resultados en los clientes (20 %)",
+        "El liderazgo es el punto de partida y también el criterio de más peso"
+      ],
+      "correcta": 2,
+      "explicacion": "Todo arranca del liderazgo (10 %), pero no es lo que más pesa. Entre los agentes, Procesos (14 %); en todo el modelo, Resultados en los clientes (20 %), por delante de Resultados clave (15 %)."
+    },
+    {
+      "enunciado": "Una empresa pone en marcha un plan de formación y una retribución por objetivos, y meses después hace una encuesta de clima laboral. ¿Qué criterios EFQM evalúan cada cosa?",
+      "opciones": [
+        "Formación: Liderazgo. Encuesta: Resultados en la sociedad",
+        "Formación y retribución: agente Personas. Encuesta de clima: Resultados en las personas",
+        "Formación y retribución: Resultados en las personas. Encuesta: agente Personas",
+        "Las dos cosas: Alianzas y recursos"
+      ],
+      "correcta": 1,
+      "explicacion": "Lo que la empresa hace (seleccionar, formar, retribuir) es el agente facilitador Personas. Lo que consigue (un personal satisfecho e implicado) es Resultados en las personas."
+    },
+    {
+      "enunciado": "¿Qué diferencia de enfoque hay entre el modelo EFQM y la ISO 9001?",
+      "opciones": [
+        "El EFQM se basa en la autoevaluación y puntúa sobre 1000; la ISO 9001 fija requisitos y es certificable por una entidad externa",
+        "El EFQM fija requisitos certificables y la ISO 9001 es una autoevaluación por puntos",
+        "Los dos son obligatorios en el sector alimentario",
+        "Los dos reparten 1000 puntos entre agentes y resultados"
+      ],
+      "correcta": 0,
+      "explicacion": "El EFQM es un modelo de excelencia por autoevaluación con 1000 puntos y sellos por tramos. La ISO 9001 es una norma de requisitos certificable por entidades independientes. Ninguno de los dos es obligatorio."
+    },
+    {
+      "enunciado": "En Seis Sigma, ¿qué ocurre si se consigue reducir la σ de un proceso?",
+      "opciones": [
+        "Aumenta la variabilidad del proceso",
+        "Disminuye la variabilidad y el proceso se acerca al objetivo de cero defectos",
+        "Se amplían los límites de control",
+        "Sube la media del proceso"
+      ],
+      "correcta": 1,
+      "explicacion": "σ es la desviación típica, que mide la variabilidad. Reducirla significa un proceso más uniforme y con menos defectos, que es justo lo que busca Seis Sigma.",
+      "pista": "σ mide la dispersión."
+    },
+    {
+      "enunciado": "Entre la temperatura de fermentación y la acidez final de un yogur se obtiene r = 0,02. Sin embargo, el diagrama muestra una U: la acidez es mínima a una temperatura intermedia. ¿Qué se concluye?",
+      "opciones": [
+        "Hay una correlación negativa perfecta",
+        "Las variables no están relacionadas",
+        "Hay una relación curva con un óptimo intermedio; r no la detecta porque solo mide la relación lineal",
+        "Hay una correlación positiva fuerte"
+      ],
+      "correcta": 2,
+      "explicacion": "En una U, el tramo que baja y el que sube se compensan y r sale cercano a 0 aunque la relación existe. Por eso hay que mirar siempre el gráfico y no fiarse solo de r."
+    },
+    {
+      "enunciado": "Al aumentar el tiempo de escaldado disminuye la carga microbiana del producto, con r = −0,95. ¿Cómo se interpreta?",
+      "opciones": [
+        "Una relación muy débil",
+        "Una relación lineal inversa fuerte: a más tiempo de escaldado, menos carga microbiana",
+        "Una relación lineal directa fuerte",
+        "No hay relación, porque r es negativo"
+      ],
+      "correcta": 1,
+      "explicacion": "El signo negativo indica relación inversa (si sube una, baja la otra) y el valor, tan cerca de −1, indica que es fuerte. Un r negativo no significa que no haya relación."
+    },
+    {
+      "enunciado": "Quieres saber si el peso de las latas se mantiene estable a lo largo de un turno. ¿Qué herramienta es la adecuada?",
+      "opciones": [
+        "El diagrama de Pareto",
+        "El diagrama de Ishikawa",
+        "El histograma",
+        "El gráfico de control"
+      ],
+      "correcta": 3,
+      "explicacion": "El gráfico de control sigue el proceso en el tiempo frente a su LCS y LCI. El histograma muestra la distribución y si se cumplen los límites, pero no cómo evoluciona el proceso a lo largo del turno: ahí está la trampa."
+    },
+    {
+      "enunciado": "El Pareto global de reclamaciones no muestra ninguna causa dominante. Al separar los datos por proveedor, uno concentra el 70 % de las reclamaciones. ¿Qué herramienta lo ha revelado?",
+      "opciones": [
+        "La estratificación",
+        "El gráfico de control",
+        "El histograma",
+        "El brainstorming"
+      ],
+      "correcta": 0,
+      "explicacion": "La estratificación separa los datos en grupos (aquí por proveedor) y saca a la luz anomalías que quedan ocultas con los datos juntos. Por eso es una gran ayuda para el Pareto."
+    },
+    {
+      "enunciado": "Un auditor comprueba que la empresa dice controlar la temperatura de las cámaras, pero no hay ningún registro. Según la cadena de la mejora, ¿qué problema hay?",
+      "opciones": [
+        "Solo falta el certificado",
+        "Basta con definir mejor qué es la temperatura correcta",
+        "Ninguno, si el personal confirma que se controla",
+        "Sin registros no hay evidencia de medición: se rompe la cadena y no se puede demostrar el control ni la mejora"
+      ],
+      "correcta": 3,
+      "explicacion": "No se puede controlar lo que no se ha medido, y los registros son la prueba de esa medición. Si falla un eslabón, se rompe toda la cadena; por eso los registros son imprescindibles."
+    },
+    {
+      "enunciado": "Inspeccionar cada lote antes de expedirlo para encontrar defectos, ¿es control de calidad o aseguramiento de la calidad?",
+      "opciones": [
+        "Benchmarking",
+        "Control de calidad: son acciones para detectar errores en el producto",
+        "Gestión de la calidad total",
+        "Aseguramiento de la calidad: son actividades planificadas y sistemáticas del sistema"
+      ],
+      "correcta": 1,
+      "explicacion": "El control de calidad agrupa mecanismos y herramientas para detectar errores. El aseguramiento actúa sobre el sistema, con actividades planificadas y sistemáticas para garantizar que se cumplen los requisitos. Que la inspección sea rutinaria no la convierte en aseguramiento."
+    },
+    {
+      "enunciado": "Una empresa alimentaria tiene un APPCC impecable, pero no tiene la ISO 9001. ¿Qué afirmación es correcta?",
+      "opciones": [
+        "Cumple su obligación higiénico-sanitaria; la ISO 9001 es voluntaria y se vincula a la calidad comercial",
+        "Incumple la ley por no tener la ISO 9001",
+        "No puede vender en España",
+        "Está en falta porque el APPCC solo es válido junto a la ISO 9001"
+      ],
+      "correcta": 0,
+      "explicacion": "La calidad higiénico-sanitaria es obligatoria y se gestiona con el autocontrol basado en el APPCC. La ISO 9001 es voluntaria y sirve para la calidad comercial."
+    },
+    {
+      "enunciado": "¿Cuál de estos conjuntos contiene SOLO herramientas básicas de la calidad?",
+      "opciones": [
+        "Ishikawa, diagrama de flujo, gráfico de control y diagrama de dispersión",
+        "Diagrama de afinidades, de relaciones, de matriz y PDPC",
+        "Pareto, histograma, estratificación y hoja de recogida de datos",
+        "Pareto, diagrama de árbol, histograma y hoja de recogida de datos"
+      ],
+      "correcta": 2,
+      "explicacion": "Las 7 básicas son Pareto, Ishikawa, histograma, gráfico de control, dispersión, hoja de recogida y estratificación. El diagrama de árbol y el de flujo son herramientas de gestión, igual que afinidades, relaciones, matriz y PDPC. El brainstorming es solo un apoyo.",
+      "pista": "El diagrama de flujo parece básico, pero no lo es."
+    }
+  ]
+}

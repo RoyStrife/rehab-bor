@@ -62,5 +62,13 @@
     "asignatura": "Gestión de calidad",
     "preguntas": 33,
     "archivo": "normas-calidad.json"
+  },
+  {
+    "id": "calidad-evaluacion-final",
+    "titulo": "Evaluación final · Gestión de calidad",
+    "descripcion": "30 preguntas difíciles y con trampa que mezclan todos los temas",
+    "asignatura": "Evaluación final",
+    "preguntas": 30,
+    "archivo": "calidad-evaluacion-final.json"
   }
 ]
