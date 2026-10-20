@@ -1,7 +1,15 @@
 [
   {
+    "id": "calidad-concepto-evolucion",
+    "titulo": "Tema 1 · Concepto y evolución de la calidad",
+    "descripcion": "Definición ISO 9000, las cinco etapas, Deming, Juran, Crosby, Feigenbaum y calidad total",
+    "asignatura": "Gestión de calidad",
+    "preguntas": 20,
+    "archivo": "calidad-concepto-evolucion.json"
+  },
+  {
     "id": "normas-calidad",
-    "titulo": "Normas de calidad: ISO 9001, EFQM, Seis Sigma y cartas de servicio",
+    "titulo": "Repaso · ISO 9001, EFQM, Seis Sigma y cartas de servicio",
     "descripcion": "Requisitos e implantación de la ISO 9001, agentes del EFQM y conceptos clave de Seis Sigma y cartas de servicio",
     "asignatura": "Gestión de calidad",
     "preguntas": 33,

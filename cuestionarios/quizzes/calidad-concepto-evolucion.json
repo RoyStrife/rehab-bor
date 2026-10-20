@@ -1,0 +1,230 @@
+{
+  "titulo": "Tema 1 · Concepto y evolución de la calidad",
+  "descripcion": "Definición ISO 9000, las cinco etapas, Deming, Juran, Crosby, Feigenbaum y calidad total",
+  "preguntas": [
+    {
+      "enunciado": "Según la UNE-EN ISO 9000:2026 (3.6.2), ¿qué es la calidad?",
+      "opciones": [
+        "Un grado previsible de uniformidad y fiabilidad a bajo coste",
+        "La adecuación del producto al uso que el cliente le quiere dar",
+        "El grado en el que un conjunto de características inherentes de un objeto cumple con los requisitos",
+        "Cumplir los requisitos con la meta de cero defectos"
+      ],
+      "correcta": 2,
+      "explicacion": "Es la definición normativa de la ISO 9000 (3.6.2). Las otras tres son definiciones de autores clásicos: adecuación al uso es de Juran, cero defectos es de Crosby y uniformidad y fiabilidad es de Deming.",
+      "pista": "Busca la que habla de características y requisitos."
+    },
+    {
+      "enunciado": "Según la ISO 9000, ¿qué determina la calidad de los productos y servicios de una organización?",
+      "opciones": [
+        "Su capacidad para satisfacer a los clientes y el impacto previsto y no previsto sobre las partes interesadas pertinentes",
+        "Que la empresa tenga un certificado de calidad",
+        "El número de inspecciones que superan antes de salir de fábrica",
+        "El precio de venta y la marca"
+      ],
+      "correcta": 0,
+      "explicacion": "La calidad está determinada por la capacidad para satisfacer a los clientes y por el impacto, tanto previsto como no previsto, sobre las partes interesadas pertinentes. Ni las inspecciones, ni el precio, ni un certificado la definen por sí mismos."
+    },
+    {
+      "enunciado": "Además de su función y desempeño previstos, ¿qué incluye la calidad de un producto según la ISO 9000?",
+      "opciones": [
+        "Únicamente el cumplimiento de la legislación",
+        "El número de certificados que tiene la empresa",
+        "Solo su coste de fabricación",
+        "Su valor percibido y el beneficio para el cliente"
+      ],
+      "correcta": 3,
+      "explicacion": "La calidad de un producto no se limita a que funcione como está previsto: incluye también el valor que percibe el cliente y el beneficio que le aporta."
+    },
+    {
+      "enunciado": "¿Qué es una organización orientada a la calidad?",
+      "opciones": [
+        "La que promueve una cultura que genera comportamientos, actitudes, actividades y procesos que aportan valor cumpliendo las necesidades y expectativas de clientes y partes interesadas",
+        "La que delega toda la calidad en su departamento de calidad",
+        "La que dedica más personal a la inspección final",
+        "La que tiene los procedimientos más extensos y detallados"
+      ],
+      "correcta": 0,
+      "explicacion": "La orientación a la calidad es una cuestión de cultura: se traduce en comportamientos, actitudes, actividades y procesos que aportan valor porque cumplen lo que necesitan y esperan los clientes y las demás partes interesadas pertinentes."
+    },
+    {
+      "enunciado": "¿Cuál es el cambio de fondo en la evolución histórica del concepto de calidad?",
+      "opciones": [
+        "Pasar de prevenir defectos a inspeccionar todo el producto terminado",
+        "Sustituir la gestión por la inspección final",
+        "Reducir la calidad al cumplimiento de la ley",
+        "Pasar de detectar los defectos al final a prevenirlos y gestionar la calidad en toda la empresa"
+      ],
+      "correcta": 3,
+      "explicacion": "Las cinco etapas recorren un mismo camino: de revisar el producto terminado y rechazar lo que falla, a prevenir los defectos y gestionar la calidad en toda la organización."
+    },
+    {
+      "enunciado": "¿Cuál es el orden correcto de las cinco etapas de la evolución de la calidad?",
+      "opciones": [
+        "Inspección → Aseguramiento de la calidad → Control del producto → Control del proceso → Gestión de la calidad total",
+        "Inspección → Control del producto → Control del proceso → Aseguramiento de la calidad → Gestión de la calidad total",
+        "Control del producto → Inspección → Aseguramiento de la calidad → Control del proceso → Gestión de la calidad total",
+        "Inspección → Control del proceso → Control del producto → Gestión de la calidad total → Aseguramiento de la calidad"
+      ],
+      "correcta": 1,
+      "explicacion": "Inspección (1800-1900), control del producto (1930-1940), control del proceso (posguerra, Japón), aseguramiento de la calidad (1950-1960) y gestión de la calidad total (desde 1980).",
+      "pista": "Del producto terminado al proceso, y del proceso a toda la empresa."
+    },
+    {
+      "enunciado": "¿Qué caracteriza la etapa de inspección (1800-1900)?",
+      "opciones": [
+        "Se inspecciona solo una muestra mediante estadística",
+        "Se revisa todo el producto terminado, se rechaza al final lo que no cumple y aparece la figura del inspector",
+        "El proceso se controla a lo largo de la producción",
+        "La calidad se convierte en una estrategia de toda la empresa"
+      ],
+      "correcta": 1,
+      "explicacion": "En la inspección se revisa todo el producto ya terminado y se rechaza lo que no cumple; nace la figura del inspector. El muestreo es propio del control del producto y el control durante la producción, del control del proceso."
+    },
+    {
+      "enunciado": "¿Cuál es la principal limitación de la etapa de control del producto (1930-1940)?",
+      "opciones": [
+        "Implica a todos los departamentos y retrasa las decisiones",
+        "Gracias a la estadística y el muestreo se inspecciona menos, pero no se previene: los defectos siguen existiendo y solo se detectan antes de llegar al cliente",
+        "Elimina los defectos en origen pero encarece mucho el producto",
+        "Obliga a revisar el 100 % del producto terminado"
+      ],
+      "correcta": 1,
+      "explicacion": "El muestreo estadístico reduce la inspección, pero el enfoque sigue siendo detectar, no prevenir: los defectos se siguen produciendo."
+    },
+    {
+      "enunciado": "¿Qué aporta la etapa de control del proceso (posguerra, Japón)?",
+      "opciones": [
+        "La extensión de la calidad a toda la empresa como estrategia",
+        "La revisión del 100 % del producto terminado",
+        "La primera norma certificable de calidad",
+        "Una calidad preventiva: el proceso se controla a lo largo de la producción y la calidad pasa a ser una característica del producto"
+      ],
+      "correcta": 3,
+      "explicacion": "Con el control del proceso la calidad deja de ser una criba final: se controla el proceso mientras se produce, de forma preventiva. Extender la calidad a toda la empresa como estrategia corresponde a la gestión de la calidad total."
+    },
+    {
+      "enunciado": "¿Cómo define Deming la calidad?",
+      "opciones": [
+        "El grado en que las características inherentes cumplen los requisitos",
+        "Un grado previsible de uniformidad y fiabilidad, a bajo coste y adecuado al mercado",
+        "La adecuación al uso",
+        "Cumplir los requisitos, con la meta de cero defectos"
+      ],
+      "correcta": 1,
+      "explicacion": "Para Deming la calidad es uniformidad (todas las unidades iguales) y fiabilidad (cumple siempre lo que promete), a bajo coste y adecuada al mercado. Adecuación al uso es de Juran y cero defectos, de Crosby.",
+      "pista": "Este autor se asocia al control de la variabilidad."
+    },
+    {
+      "enunciado": "En la definición de Deming, ¿qué significan «uniformidad» y «fiabilidad»?",
+      "opciones": [
+        "Uniformidad: mismo proveedor. Fiabilidad: sin reclamaciones",
+        "Uniformidad: mismo precio en todos los mercados. Fiabilidad: misma marca",
+        "Uniformidad: todas las unidades iguales. Fiabilidad: cumple siempre lo que promete",
+        "Uniformidad: producto inspeccionado. Fiabilidad: producto certificado"
+      ],
+      "correcta": 2,
+      "explicacion": "Uniformidad es que todas las unidades salgan iguales; fiabilidad, que el producto cumpla siempre lo que promete. Ambas se consiguen controlando la variabilidad."
+    },
+    {
+      "enunciado": "¿Con qué herramienta consigue Deming controlar la variabilidad?",
+      "opciones": [
+        "El benchmarking",
+        "La trilogía planificar, controlar y mejorar",
+        "El programa cero defectos",
+        "El ciclo PDCA"
+      ],
+      "correcta": 3,
+      "explicacion": "Deming controla la variabilidad con el ciclo PDCA (planificar, hacer, verificar, actuar), que por eso se conoce también como ciclo de Deming. La trilogía es de Juran y cero defectos, de Crosby."
+    },
+    {
+      "enunciado": "¿Qué es el aseguramiento de la calidad (1950-1960)?",
+      "opciones": [
+        "La inspección final del 100 % de la producción",
+        "Un conjunto de acciones planificadas y sistemáticas aplicadas al sistema de calidad para garantizar que se cumplen los requisitos, con implicación de todos los departamentos",
+        "El muestreo estadístico en la recepción de materias primas",
+        "La autoevaluación con un modelo de excelencia"
+      ],
+      "correcta": 1,
+      "explicacion": "El aseguramiento de la calidad pasa del producto al sistema: acciones planificadas y sistemáticas para garantizar que se cumplen los requisitos, en las que participan todos los departamentos."
+    },
+    {
+      "enunciado": "¿Cómo define Juran la calidad?",
+      "opciones": [
+        "El grado de cumplimiento de una norma certificable",
+        "Cumplir los requisitos con cero defectos",
+        "Adecuación al uso: que el producto sirva para lo que el cliente lo quiere",
+        "Uniformidad y fiabilidad a bajo coste"
+      ],
+      "correcta": 2,
+      "explicacion": "Juran pone el foco en el uso: hay calidad cuando el producto sirve para lo que el cliente lo quiere."
+    },
+    {
+      "enunciado": "¿Cuál es la trilogía de Juran?",
+      "opciones": [
+        "Inspeccionar, muestrear y rechazar",
+        "Identificar, definir y medir",
+        "Planificar, hacer, verificar y actuar",
+        "Planificar, controlar y mejorar la calidad"
+      ],
+      "correcta": 3,
+      "explicacion": "La trilogía de Juran es planificar, controlar y mejorar la calidad. Planificar-hacer-verificar-actuar es el PDCA de Deming, e identificar-definir-medir forma parte de la cadena de la mejora."
+    },
+    {
+      "enunciado": "¿Qué propone Crosby?",
+      "opciones": [
+        "Calidad es adecuación al uso",
+        "Calidad es uniformidad y fiabilidad a bajo coste",
+        "Calidad es cumplir los requisitos, con la meta de cero defectos y hacerlo bien a la primera, suprimiendo inspecciones",
+        "Calidad es inspeccionar todo el producto terminado"
+      ],
+      "correcta": 2,
+      "explicacion": "Crosby, asociado a la gestión de la calidad total, define calidad como cumplir los requisitos y persigue los cero defectos haciendo las cosas bien a la primera, de modo que las inspecciones sobran."
+    },
+    {
+      "enunciado": "¿Quién origina el control de la calidad total y cuándo?",
+      "opciones": [
+        "Juran, en 1950",
+        "Deming, en la posguerra japonesa",
+        "Crosby, en 1980",
+        "Feigenbaum, en 1945"
+      ],
+      "correcta": 3,
+      "explicacion": "La calidad total nace en 1945 con el control de la calidad total de Feigenbaum. La TQM como etapa se generaliza más tarde, desde 1980.",
+      "pista": "Es anterior a que la TQM se generalice como etapa."
+    },
+    {
+      "enunciado": "En la calidad total, ¿a quién incluye el «cliente» en sentido amplio?",
+      "opciones": [
+        "Solo la Administración y los inspectores",
+        "Solo los consumidores finales",
+        "Consumidores, empleados, directivos, proveedores y accionistas",
+        "Solo los distribuidores y supermercados"
+      ],
+      "correcta": 2,
+      "explicacion": "La calidad total busca la satisfacción plena del cliente en sentido amplio: consumidores, empleados, directivos, proveedores y accionistas."
+    },
+    {
+      "enunciado": "¿Qué técnicas integra la calidad total?",
+      "opciones": [
+        "Solo las auditorías externas de certificación",
+        "Control estadístico de procesos, diseño de experimentos, AMFE y despliegue funcional de la calidad",
+        "Solo la inspección final del 100 %",
+        "Publicidad, marketing y promociones"
+      ],
+      "correcta": 1,
+      "explicacion": "La calidad total integra técnicas como el control estadístico de procesos (CEP), el diseño de experimentos, el AMFE (análisis modal de fallos y sus efectos) y el despliegue funcional de la calidad."
+    },
+    {
+      "enunciado": "¿Cuál es el principio central de la calidad total y cómo se traduce en la práctica?",
+      "opciones": [
+        "Pensar todo el día en el cliente; se traduce en mejora continua, trabajo en equipo, automantenimiento, círculos de calidad y flexibilidad",
+        "Reducir costes; se traduce en recortar plantilla y proveedores",
+        "Inspeccionar todo; se traduce en más inspectores y controles finales",
+        "Obtener certificados; se traduce en redactar más procedimientos"
+      ],
+      "correcta": 0,
+      "explicacion": "Su principio central es pensar todo el día en el cliente, junto a confianza mutua, añadir valor, hacerlo bien a la primera, todo es mejorable, visión del proceso y asumir la responsabilidad. En la práctica: mejora continua, trabajo en equipo, automantenimiento, círculos de calidad y flexibilidad."
+    }
+  ]
+}
