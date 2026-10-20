@@ -1,0 +1,139 @@
+{
+  "titulo": "Tema 7 · Glosario y siglas",
+  "descripcion": "Términos clave y equivalencias de siglas en español e inglés",
+  "preguntas": [
+    {
+      "enunciado": "¿Qué es la calidad inherente?",
+      "opciones": [
+        "La que exige la ley para todos los productos",
+        "La que depende de características que existen en el propio producto, como composición, sabor, textura o peso",
+        "La que depende de características asignadas desde fuera, como el precio o la marca",
+        "La que el cliente da por supuesta aunque no la diga"
+      ],
+      "correcta": 1,
+      "explicacion": "Lo inherente está en el propio producto (composición, sabor, textura, peso); lo asignado le viene de fuera (precio, marca, plazo de entrega). La definición de calidad de la ISO 9000 se refiere solo a las características inherentes."
+    },
+    {
+      "enunciado": "¿Cuál de estas es una característica asignada y no inherente de un producto?",
+      "opciones": [
+        "La textura",
+        "El peso",
+        "El plazo de entrega",
+        "La composición"
+      ],
+      "correcta": 2,
+      "explicacion": "El plazo de entrega, como el precio o la marca, se asigna desde fuera del producto. Textura, peso y composición son inherentes.",
+      "pista": "¿Cuál no puedes medir en el propio producto?"
+    },
+    {
+      "enunciado": "¿Qué es una auditoría?",
+      "opciones": [
+        "Un examen crítico y sistemático, hecho por personas independientes, de una organización, sistema, proceso, proyecto o producto",
+        "La revisión que hace cada jefe de su propia área",
+        "La declaración de una entidad independiente de que se cumple una norma",
+        "El examen que hace un inspector dejando constancia en acta"
+      ],
+      "correcta": 0,
+      "explicacion": "La auditoría es un examen crítico y sistemático hecho por personas independientes. La declaración de cumplimiento de una norma es la certificación, y el examen con acta es la inspección."
+    },
+    {
+      "enunciado": "¿Qué es la certificación?",
+      "opciones": [
+        "La declaración de una entidad independiente de que una organización, producto, proceso o servicio cumple una norma",
+        "La autoevaluación que hace la propia empresa",
+        "Un examen interno del sistema hecho por la dirección",
+        "El conjunto de actividades planificadas para que se cumplan los requisitos"
+      ],
+      "correcta": 0,
+      "explicacion": "La certificación la otorga una entidad independiente, que declara que se cumple una norma. Una autoevaluación o una revisión interna no son una certificación."
+    },
+    {
+      "enunciado": "¿Qué es el benchmarking?",
+      "opciones": [
+        "Tomar como referencia el estilo y los procedimientos de gestión de empresas modélicas para mejorar la propia",
+        "Medir la satisfacción de los clientes con encuestas",
+        "Copiar los productos de la competencia para venderlos más baratos",
+        "Comparar los resultados de un mes con los del mes anterior"
+      ],
+      "correcta": 0,
+      "explicacion": "El benchmarking consiste en fijarse en las empresas modélicas y en su forma de gestionar para mejorar la propia. En el EFQM es una de las fuentes de la política y la estrategia."
+    },
+    {
+      "enunciado": "¿Qué diferencia hay entre control de calidad y aseguramiento de la calidad?",
+      "opciones": [
+        "Son sinónimos",
+        "El aseguramiento detecta errores y el control los previene",
+        "El control de calidad son mecanismos y herramientas para detectar errores; el aseguramiento son actividades planificadas y sistemáticas para que se cumplan los requisitos",
+        "El control de calidad es voluntario y el aseguramiento, obligatorio"
+      ],
+      "correcta": 2,
+      "explicacion": "El control de calidad está orientado a detectar errores en el producto o servicio. El aseguramiento son actividades planificadas y sistemáticas aplicadas al sistema para garantizar que se cumplen los requisitos."
+    },
+    {
+      "enunciado": "¿Qué es la normalización?",
+      "opciones": [
+        "Ajustar cosas semejantes a una norma común",
+        "Eliminar las causas de una no conformidad",
+        "Obtener un certificado de calidad",
+        "Revisar todo el producto terminado"
+      ],
+      "correcta": 0,
+      "explicacion": "Normalizar es ajustar cosas semejantes a una norma común. De ahí las normas ISO o UNE."
+    },
+    {
+      "enunciado": "¿Cómo se define un proceso?",
+      "opciones": [
+        "Conjunto de actividades relacionadas que transforman elementos de entrada en resultados",
+        "Evidencia de que se ha cumplido un procedimiento",
+        "Documento que describe cómo se hace una tarea concreta",
+        "Conjunto de máquinas de una línea de producción"
+      ],
+      "correcta": 0,
+      "explicacion": "Un proceso es un conjunto de actividades relacionadas que transforman entradas en resultados. Un documento que explica una tarea concreta es una instrucción de trabajo, y la evidencia de que se ha hecho es un registro."
+    },
+    {
+      "enunciado": "¿Qué es la política de empresa y cómo se relaciona con la estrategia?",
+      "opciones": [
+        "Un plan de acciones concretas con plazos; la estrategia es su objetivo",
+        "Un documento legal obligatorio; la estrategia es opcional",
+        "Las intenciones y la dirección de la organización expresadas formalmente por la alta dirección; marca la meta, y la estrategia es el camino para alcanzarla",
+        "Lo mismo que la estrategia"
+      ],
+      "correcta": 2,
+      "explicacion": "Según la ISO 9000, la política de empresa son las intenciones y la dirección de la organización, expresadas formalmente por su alta dirección. La política marca la meta y la estrategia es el camino. La política de la calidad debe ser coherente con ella."
+    },
+    {
+      "enunciado": "¿Qué significan las siglas AMFE?",
+      "opciones": [
+        "Auditoría de Materiales, Fabricación y Envasado",
+        "Análisis de Mejora de Fabricación y Eficiencia",
+        "Análisis Modal de Fallos y sus Efectos (FMEA en inglés)",
+        "Aseguramiento y Mejora de la Fiabilidad del Equipo"
+      ],
+      "correcta": 2,
+      "explicacion": "AMFE es el Análisis Modal de Fallos y sus Efectos (Failure Mode and Effects Analysis, FMEA), una de las técnicas que integra la calidad total."
+    },
+    {
+      "enunciado": "¿A qué siglas en inglés equivalen POE / PNT (procedimiento operativo estandarizado / normalizado de trabajo)?",
+      "opciones": [
+        "QMS (Quality Management System)",
+        "GMP (Good Manufacturing Practices)",
+        "SPC (Statistical Process Control)",
+        "SOP (Standard Operating Procedure)"
+      ],
+      "correcta": 3,
+      "explicacion": "POE / PNT equivalen a SOP. SPC es el CEP, GMP equivale a BPM / BPF y QMS es el SGC."
+    },
+    {
+      "enunciado": "¿Qué pareja de equivalencias español–inglés es correcta?",
+      "opciones": [
+        "CEP = SPC y LCS / LCI = UCL / LCL",
+        "SGC = SPC y TQM = QMS",
+        "CEP = QMS y LCS / LCI = SOP",
+        "APPCC = GMP y BPM = HACCP"
+      ],
+      "correcta": 0,
+      "explicacion": "CEP (control estadístico de procesos) = SPC; LCS / LCI (límite de control superior / inferior) = UCL / LCL. Además, APPCC = HACCP, BPM / BPF = GMP, SGC = QMS y TQM es la gestión de la calidad total."
+    }
+  ]
+}

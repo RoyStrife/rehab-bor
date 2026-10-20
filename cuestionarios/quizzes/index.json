@@ -48,6 +48,14 @@
     "archivo": "calidad-empresa-alimentaria.json"
   },
   {
+    "id": "calidad-glosario-siglas",
+    "titulo": "Tema 7 · Glosario y siglas",
+    "descripcion": "Términos clave y equivalencias de siglas en español e inglés",
+    "asignatura": "Gestión de calidad",
+    "preguntas": 12,
+    "archivo": "calidad-glosario-siglas.json"
+  },
+  {
     "id": "normas-calidad",
     "titulo": "Repaso · ISO 9001, EFQM, Seis Sigma y cartas de servicio",
     "descripcion": "Requisitos e implantación de la ISO 9001, agentes del EFQM y conceptos clave de Seis Sigma y cartas de servicio",
