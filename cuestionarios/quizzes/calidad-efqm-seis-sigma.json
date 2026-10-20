@@ -1,0 +1,138 @@
+{
+  "titulo": "Tema 4 · EFQM, Seis Sigma y cartas de servicio",
+  "descripcion": "Criterios y pesos del EFQM, sellos de excelencia, Seis Sigma y cartas de servicio",
+  "preguntas": [
+    {
+      "enunciado": "¿Cuándo y quién creó el modelo EFQM?",
+      "opciones": [
+        "En 1987, la Organización Internacional de Normalización (ISO)",
+        "En 1980, Crosby",
+        "En 1988, 14 empresas europeas",
+        "En 1945, Feigenbaum"
+      ],
+      "correcta": 2,
+      "explicacion": "El modelo EFQM (Fundación Europea para la Gestión de la Calidad) lo crearon 14 empresas europeas en 1988."
+    },
+    {
+      "enunciado": "¿Cómo funciona el modelo EFQM?",
+      "opciones": [
+        "Por muestreo estadístico en la recepción",
+        "Por una auditoría de certificación obligatoria cada año",
+        "Por inspección final del producto",
+        "Por autoevaluación mediante cuestionarios"
+      ],
+      "correcta": 3,
+      "explicacion": "El EFQM se basa en la autoevaluación: la organización responde cuestionarios y se puntúa sobre 1000 puntos."
+    },
+    {
+      "enunciado": "¿Cuál es el criterio con más peso de todo el modelo EFQM?",
+      "opciones": [
+        "Procesos (14 %)",
+        "Liderazgo (10 %)",
+        "Resultados en los clientes (20 %)",
+        "Resultados clave (15 %)"
+      ],
+      "correcta": 2,
+      "explicacion": "Resultados en los clientes pesa un 20 %: la satisfacción de los clientes externos es el objetivo fundamental. Procesos (14 %) es el agente con más peso, pero no el criterio de más peso del modelo."
+    },
+    {
+      "enunciado": "Ordena los criterios de resultados del EFQM de mayor a menor peso.",
+      "opciones": [
+        "Clientes (20 %) > Resultados clave (15 %) > Personas (9 %) > Sociedad (6 %)",
+        "Sociedad (20 %) > Clientes (15 %) > Personas (9 %) > Resultados clave (6 %)",
+        "Resultados clave (15 %) > Clientes (20 %) > Sociedad (9 %) > Personas (6 %)",
+        "Clientes (20 %) > Personas (15 %) > Resultados clave (9 %) > Sociedad (6 %)"
+      ],
+      "correcta": 0,
+      "explicacion": "Clientes 20 %, resultados clave 15 %, personas 9 % y sociedad 6 %. Juntos suman el 50 % (500 puntos)."
+    },
+    {
+      "enunciado": "¿Qué evalúa el criterio «Resultados clave» del EFQM?",
+      "opciones": [
+        "El impacto en la comunidad y el medio ambiente",
+        "La gestión de recursos materiales y tecnológicos",
+        "La satisfacción de los clientes externos",
+        "El rendimiento global de la organización, sobre todo el económico, junto a otros como la cuota de mercado"
+      ],
+      "correcta": 3,
+      "explicacion": "Resultados clave (15 %) mide el rendimiento global, sobre todo el económico, y otros indicadores como la cuota de mercado."
+    },
+    {
+      "enunciado": "¿Qué evalúa el criterio «Resultados en la sociedad» del EFQM?",
+      "opciones": [
+        "El rendimiento económico",
+        "Las alianzas con proveedores",
+        "El impacto en la comunidad y el medio ambiente y la relación con las autoridades",
+        "La satisfacción de los accionistas"
+      ],
+      "correcta": 2,
+      "explicacion": "Resultados en la sociedad (6 %, el de menos peso) mide el impacto en la comunidad y el medio ambiente y la relación con las autoridades."
+    },
+    {
+      "enunciado": "¿Qué evalúa el agente facilitador «Personas» del EFQM?",
+      "opciones": [
+        "El impacto social de la empresa",
+        "La satisfacción del personal, medida con encuestas",
+        "La gestión de recursos materiales y tecnológicos",
+        "Que el personal esté motivado e integrado, con comunicación en ambos sentidos, y cómo se le selecciona, forma y retribuye"
+      ],
+      "correcta": 3,
+      "explicacion": "El agente Personas (9 %) mide lo que la empresa hace con su gente: motivación, integración, comunicación en ambos sentidos, selección, formación y retribución. La satisfacción del personal es un resultado, no un agente."
+    },
+    {
+      "enunciado": "¿Qué evalúa el criterio «Resultados en las personas» del EFQM?",
+      "opciones": [
+        "La selección y formación del personal",
+        "La comunicación de la estrategia a todos",
+        "El número de empleados contratados",
+        "La satisfacción del personal, para que siga implicado"
+      ],
+      "correcta": 3,
+      "explicacion": "Resultados en las personas (9 %) mide lo que se consigue: un personal satisfecho que siga implicado. La selección y la formación pertenecen al agente Personas."
+    },
+    {
+      "enunciado": "¿Qué puntuaciones dan acceso a los sellos de excelencia del EFQM?",
+      "opciones": [
+        "100-200, 201-300 y más de 300 puntos",
+        "500, 750 y 1000 puntos",
+        "200-400, 401-500 y más de 500 puntos",
+        "Solo se concede un sello, a partir de 1000 puntos"
+      ],
+      "correcta": 2,
+      "explicacion": "Los sellos de excelencia se conceden por tramos de puntuación: de 200 a 400, de 401 a 500 y más de 500 puntos, sobre un máximo de 1000."
+    },
+    {
+      "enunciado": "¿Cuál es el agente facilitador con menos peso en el EFQM?",
+      "opciones": [
+        "Política y estrategia (8 %)",
+        "Personas (9 %)",
+        "Alianzas y recursos (9 %)",
+        "Liderazgo (10 %)"
+      ],
+      "correcta": 0,
+      "explicacion": "Política y estrategia pesa un 8 %. Le siguen Personas y Alianzas y recursos (9 % cada uno), Liderazgo (10 %) y Procesos (14 %). En total, los agentes suman el 50 %."
+    },
+    {
+      "enunciado": "¿Qué es Seis Sigma?",
+      "opciones": [
+        "Un modelo de autoevaluación que reparte 1000 puntos",
+        "Una norma certificable de la familia ISO 9000",
+        "A la vez un sistema estadístico y una filosofía de gestión",
+        "Una herramienta de inspección del producto final"
+      ],
+      "correcta": 2,
+      "explicacion": "Seis Sigma es a la vez un sistema estadístico y una filosofía de gestión. Su objetivo es llegar a cero defectos reduciendo la variabilidad de los procesos."
+    },
+    {
+      "enunciado": "Un ayuntamiento publica que responderá a cualquier reclamación en 10 días, habilita un buzón de sugerencias y revisa cada año si cumple ese plazo. ¿Qué herramienta está usando?",
+      "opciones": [
+        "Una carta de servicio",
+        "Un certificado ISO 9001",
+        "Un sello de excelencia EFQM",
+        "Un proyecto Seis Sigma"
+      ],
+      "correcta": 0,
+      "explicacion": "Las cartas de servicio, propias sobre todo de la Administración pública, recogen compromisos con el ciudadano más allá de lo exigido. Incluyen indicadores evaluados al menos una vez al año, canales de sugerencias y reclamaciones y los derechos del usuario."
+    }
+  ]
+}

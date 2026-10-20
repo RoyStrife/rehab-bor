@@ -24,6 +24,14 @@
     "archivo": "calidad-herramientas.json"
   },
   {
+    "id": "calidad-efqm-seis-sigma",
+    "titulo": "Tema 4 · EFQM, Seis Sigma y cartas de servicio",
+    "descripcion": "Criterios y pesos del EFQM, sellos de excelencia, Seis Sigma y cartas de servicio",
+    "asignatura": "Gestión de calidad",
+    "preguntas": 12,
+    "archivo": "calidad-efqm-seis-sigma.json"
+  },
+  {
     "id": "normas-calidad",
     "titulo": "Repaso · ISO 9001, EFQM, Seis Sigma y cartas de servicio",
     "descripcion": "Requisitos e implantación de la ISO 9001, agentes del EFQM y conceptos clave de Seis Sigma y cartas de servicio",
