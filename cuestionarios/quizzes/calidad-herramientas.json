@@ -1,0 +1,249 @@
+{
+  "titulo": "Tema 3 · Herramientas de la calidad",
+  "descripcion": "Las 7 herramientas básicas, las de gestión y el brainstorming",
+  "preguntas": [
+    {
+      "enunciado": "¿Qué principio resume el diagrama de Pareto?",
+      "opciones": [
+        "El 80 % de los problemas se debe al 20 % de las causas",
+        "El 20 % de los problemas se debe al 80 % de las causas",
+        "Todas las causas tienen el mismo peso",
+        "La mitad de los problemas se debe a la mitad de las causas"
+      ],
+      "correcta": 0,
+      "explicacion": "El principio de Pareto dice que unas pocas causas (el 20 %) explican la mayoría de los problemas (el 80 %). Por eso conviene atacarlas primero.",
+      "pista": "Pocas causas, muchos problemas."
+    },
+    {
+      "enunciado": "¿Para qué sirve principalmente el diagrama de Pareto?",
+      "opciones": [
+        "Para relacionar dos variables",
+        "Para recoger datos de forma homogénea",
+        "Para establecer prioridades",
+        "Para vigilar la estabilidad del proceso en el tiempo"
+      ],
+      "correcta": 2,
+      "explicacion": "El Pareto sirve para priorizar. La estabilidad en el tiempo la vigila el gráfico de control, la relación entre dos variables la muestra el diagrama de dispersión y la hoja de recogida sirve para registrar los datos."
+    },
+    {
+      "enunciado": "¿Cómo se construye un diagrama de Pareto?",
+      "opciones": [
+        "Con barras ordenadas de mayor a menor",
+        "Con barras en orden cronológico",
+        "Con puntos y unos límites de control superior e inferior",
+        "Con una nube de puntos entre dos variables"
+      ],
+      "correcta": 0,
+      "explicacion": "Es un diagrama de barras ordenadas de mayor a menor, para que las causas más importantes queden a la izquierda y salten a la vista."
+    },
+    {
+      "enunciado": "¿Cuál es el lema del diagrama causa-efecto (Ishikawa o espina de pez)?",
+      "opciones": [
+        "«Mide y controla»",
+        "«Planifica y actúa»",
+        "«Pocas causas, muchos efectos»",
+        "«Ordena y profundiza»"
+      ],
+      "correcta": 3,
+      "explicacion": "El Ishikawa agrupa las causas de un efecto (ordena) y baja de nivel hasta encontrar la causa raíz (profundiza)."
+    },
+    {
+      "enunciado": "¿Cuáles son las 6M que se usan como causas primarias en el diagrama de Ishikawa?",
+      "opciones": [
+        "Maquinaria, moldes, materias primas, mermas, márgenes y mantenimiento",
+        "Mano de obra, materiales, métodos, medio ambiente, mantenimiento y maquinaria",
+        "Mano de obra, mercados, métodos, medio ambiente, márgenes y maquinaria",
+        "Mano de obra, materiales, métodos, marketing, márgenes y mercados"
+      ],
+      "correcta": 1,
+      "explicacion": "Las 6M son mano de obra, materiales, métodos, medio ambiente, mantenimiento y maquinaria. Marketing, márgenes o mercados no son causas primarias en este modelo."
+    },
+    {
+      "enunciado": "Al hacer un Ishikawa sobre yogures con textura irregular, el equipo anota: «la leche de un proveedor llega con menos proteína». ¿En qué M va esta causa?",
+      "opciones": [
+        "Métodos",
+        "Mano de obra",
+        "Medio ambiente",
+        "Materiales"
+      ],
+      "correcta": 3,
+      "explicacion": "La leche es materia prima, así que es una causa de Materiales. Sería de Métodos si fallara el procedimiento de trabajo y de Mano de obra si dependiera de la persona."
+    },
+    {
+      "enunciado": "¿Cómo funciona mejor el diagrama de Ishikawa?",
+      "opciones": [
+        "En grupo",
+        "Con un programa estadístico y sin participación del personal",
+        "Con los datos de una sola muestra",
+        "Individualmente, hecho por el responsable de calidad"
+      ],
+      "correcta": 0,
+      "explicacion": "El Ishikawa funciona mejor en grupo: varias personas que conocen el proceso aportan más causas y llegan antes a la raíz. Suele apoyarse en un brainstorming."
+    },
+    {
+      "enunciado": "¿Qué muestra un histograma?",
+      "opciones": [
+        "La relación entre dos variables",
+        "El orden de prioridad de las causas de un problema",
+        "La evolución de un valor a lo largo del tiempo",
+        "La frecuencia con que aparece cada valor de una característica, es decir, su distribución y variabilidad"
+      ],
+      "correcta": 3,
+      "explicacion": "El histograma muestra cuántas veces aparece cada valor y deja ver la distribución y la variabilidad. También permite comprobar si los datos quedan dentro de los límites."
+    },
+    {
+      "enunciado": "En un histograma, ¿qué representa cada eje?",
+      "opciones": [
+        "Eje X: las causas. Eje Y: el porcentaje acumulado",
+        "Eje X: el tiempo. Eje Y: el valor medido",
+        "Eje X: los intervalos en que se divide el rango de valores. Eje Y: cuántos datos caen en cada intervalo",
+        "Eje X: una variable. Eje Y: otra variable"
+      ],
+      "correcta": 2,
+      "explicacion": "El eje X divide el rango de valores en intervalos y el eje Y indica la frecuencia, es decir, cuántos datos caen en cada uno. Tiempo frente a valor sería un gráfico de control; una variable frente a otra, un diagrama de dispersión."
+    },
+    {
+      "enunciado": "¿Qué vigila un gráfico de control?",
+      "opciones": [
+        "La distribución de frecuencias de una característica",
+        "La relación entre dos variables",
+        "Las prioridades entre causas",
+        "La estabilidad del proceso en el tiempo"
+      ],
+      "correcta": 3,
+      "explicacion": "El gráfico de control sigue el proceso a lo largo del tiempo para ver si se mantiene estable. Es la base del control estadístico de procesos (CEP)."
+    },
+    {
+      "enunciado": "¿Cómo se obtienen las líneas de un gráfico de control?",
+      "opciones": [
+        "Las fija la ley para cada producto",
+        "Se dibujan a ojo según la experiencia del operario",
+        "Las fija el cliente en su especificación",
+        "A partir de los propios datos se calculan un valor central y dos límites: el de control superior (LCS) y el inferior (LCI)"
+      ],
+      "correcta": 3,
+      "explicacion": "El valor central, el LCS y el LCI se calculan con los datos del propio proceso. No hay que confundirlos con los límites de especificación que fija el cliente."
+    },
+    {
+      "enunciado": "En un gráfico de control aparece un único punto por encima del LCS y los siguientes vuelven a la normalidad. ¿Cómo se interpreta?",
+      "opciones": [
+        "Es algo puntual; si se repitiera, el proceso estaría desajustado y habría que actuar",
+        "El proceso está desajustado y hay que parar la línea de inmediato",
+        "Nada: los límites de control son solo orientativos",
+        "Hay que recalcular los límites para que el punto quede dentro"
+      ],
+      "correcta": 0,
+      "explicacion": "Un punto aislado fuera de los límites se considera algo puntual. Si los puntos fuera se repiten, el proceso está desajustado y hay que actuar."
+    },
+    {
+      "enunciado": "¿De qué sistema es base el gráfico de control?",
+      "opciones": [
+        "Del modelo EFQM",
+        "Del APPCC",
+        "Del AMFE",
+        "Del control estadístico de procesos (CEP)"
+      ],
+      "correcta": 3,
+      "explicacion": "El gráfico de control es la base del CEP (control estadístico de procesos, SPC en inglés)."
+    },
+    {
+      "enunciado": "En un diagrama de dispersión, ¿entre qué valores se mueve el coeficiente de correlación r?",
+      "opciones": [
+        "Entre 0 y 1",
+        "Entre −1 y +1",
+        "Entre −100 y +100",
+        "Entre 0 y 100"
+      ],
+      "correcta": 1,
+      "explicacion": "r va de −1 a +1: +1 es correlación positiva perfecta, −1 correlación negativa perfecta y un valor cercano a 0 indica que no hay relación lineal."
+    },
+    {
+      "enunciado": "¿Qué significa un coeficiente de correlación r = −1?",
+      "opciones": [
+        "Que los datos son erróneos, porque r no puede ser negativo",
+        "Correlación negativa perfecta: relación lineal inversa, si sube una variable baja la otra",
+        "Correlación positiva perfecta: si sube una, sube la otra",
+        "Que no hay ninguna relación entre las variables"
+      ],
+      "correcta": 1,
+      "explicacion": "r = −1 es una relación lineal inversa perfecta: cuando una variable sube, la otra baja. El signo indica la dirección y el valor absoluto, la fuerza."
+    },
+    {
+      "enunciado": "Si r sale cercano a 0, ¿qué se puede concluir?",
+      "opciones": [
+        "Que no hay relación lineal, aunque puede haber otra relación, por ejemplo en forma de U; hay que mirar siempre el gráfico",
+        "Que la relación es perfecta",
+        "Que hay un error en el cálculo",
+        "Que las dos variables no están relacionadas de ninguna forma"
+      ],
+      "correcta": 0,
+      "explicacion": "r cercano a 0 solo descarta una relación lineal. En una relación en U el tramo que baja y el que sube se compensan en el cálculo y r sale cercano a 0, aunque la relación existe y tiene un óptimo. Por eso hay que mirar el gráfico."
+    },
+    {
+      "enunciado": "¿Qué es una hoja de recogida de datos?",
+      "opciones": [
+        "Un gráfico de barras ordenado de mayor a menor",
+        "Un formulario genérico que sirve igual para todos los procesos",
+        "Una lista de ideas generada en grupo sin críticas",
+        "Una plantilla predefinida, propia de cada proceso, que evita la ambigüedad y hace que los datos se registren igual sea quien sea quien los anote"
+      ],
+      "correcta": 3,
+      "explicacion": "La hoja de recogida es una plantilla predefinida y propia de cada proceso. Huye de la ambigüedad para que los datos sean homogéneos con independencia de quién registre, y eso facilita después el análisis y el control."
+    },
+    {
+      "enunciado": "¿Qué información básica debe incluir una hoja de recogida de datos?",
+      "opciones": [
+        "La firma del director general",
+        "Solo el resultado final aceptado o rechazado",
+        "Proceso, lote, operario, hora, fecha y número de muestras",
+        "Nombre del cliente, precio y forma de pago"
+      ],
+      "correcta": 2,
+      "explicacion": "La hoja recoge la información básica que permite situar cada dato: proceso, lote, operario, hora, fecha y número de muestras."
+    },
+    {
+      "enunciado": "¿Qué hace la estratificación?",
+      "opciones": [
+        "Mejora el proceso por sí sola",
+        "Ordena las causas de mayor a menor",
+        "Calcula los límites de control del proceso",
+        "Separa los datos en grupos o estratos (turno, máquina, proveedor, lote…) para sacar a la luz anomalías o tendencias que con los datos juntos quedan ocultas"
+      ],
+      "correcta": 3,
+      "explicacion": "La estratificación divide los datos en estratos. No mejora nada por sí sola, pero revela situaciones anómalas o tendencias que no se ven con todos los datos juntos."
+    },
+    {
+      "enunciado": "¿A qué otras herramientas básicas ayuda especialmente la estratificación?",
+      "opciones": [
+        "Al diagrama de Pareto y al diagrama de dispersión",
+        "A la hoja de recogida y al brainstorming",
+        "Al diagrama de flujo y al diagrama de árbol",
+        "Al AMFE y al APPCC"
+      ],
+      "correcta": 0,
+      "explicacion": "La estratificación apoya sobre todo al Pareto y a la dispersión: separar los datos por turno, máquina o proveedor puede cambiar por completo las prioridades o las relaciones que se ven."
+    },
+    {
+      "enunciado": "¿Cómo se hace un brainstorming de apoyo a las herramientas de calidad?",
+      "opciones": [
+        "Un experto decide solo cuáles son las causas",
+        "Un grupo de 6 a 8 personas aporta ideas sin críticas y después se depuran las más viables",
+        "Toda la plantilla vota por escrito una lista cerrada de opciones",
+        "Dos personas proponen ideas y las critican en el momento"
+      ],
+      "correcta": 1,
+      "explicacion": "El brainstorming reúne a un grupo de 6 a 8 personas que aportan ideas sin criticarlas; la selección de las más viables se hace después, para no frenar la creatividad."
+    },
+    {
+      "enunciado": "¿Cuál de estas es una de las 7 herramientas de gestión, y no de las básicas?",
+      "opciones": [
+        "Estratificación",
+        "Diagrama PDPC (proceso de decisión)",
+        "Histograma",
+        "Hoja de recogida de datos"
+      ],
+      "correcta": 1,
+      "explicacion": "Las 7 herramientas de gestión son el diagrama de afinidades, el de relaciones, el de árbol, el de matriz, el análisis de matriz de datos, el diagrama PDPC y el diagrama de flujo. Histograma, hoja de recogida y estratificación son básicas."
+    }
+  ]
+}

@@ -16,6 +16,14 @@
     "archivo": "calidad-mejora-continua.json"
   },
   {
+    "id": "calidad-herramientas",
+    "titulo": "Tema 3 · Herramientas de la calidad",
+    "descripcion": "Las 7 herramientas básicas, las de gestión y el brainstorming",
+    "asignatura": "Gestión de calidad",
+    "preguntas": 22,
+    "archivo": "calidad-herramientas.json"
+  },
+  {
     "id": "normas-calidad",
     "titulo": "Repaso · ISO 9001, EFQM, Seis Sigma y cartas de servicio",
     "descripcion": "Requisitos e implantación de la ISO 9001, agentes del EFQM y conceptos clave de Seis Sigma y cartas de servicio",
