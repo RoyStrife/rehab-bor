@@ -1,0 +1,117 @@
+{
+  "titulo": "Tema 2 · Mejora continua y ciclo PDCA",
+  "descripcion": "Fases del PDCA, cadena de la mejora y papel del aseguramiento",
+  "preguntas": [
+    {
+      "enunciado": "¿Qué se hace en cada fase del ciclo PDCA?",
+      "opciones": [
+        "Planificar, hacer, inspeccionar el producto final y rechazar lo defectuoso",
+        "Identificar, definir, medir y controlar",
+        "Planificar objetivos y métodos, hacer lo planificado, verificar comparando resultados con objetivos y actuar con acciones correctoras y preventivas",
+        "Planificar, controlar y mejorar"
+      ],
+      "correcta": 2,
+      "explicacion": "PDCA: Plan (planificar objetivos y métodos), Do (hacer lo planificado), Check (verificar comparando resultados con objetivos) y Act (actuar con acciones correctoras y preventivas). Planificar-controlar-mejorar es la trilogía de Juran."
+    },
+    {
+      "enunciado": "¿Qué ocurre cuando termina la fase «Actuar» del PDCA?",
+      "opciones": [
+        "Se solicita la certificación ISO 9001",
+        "El proceso de mejora se da por terminado",
+        "El ciclo vuelve a empezar desde un nivel más alto",
+        "Se vuelve exactamente al punto de partida"
+      ],
+      "correcta": 2,
+      "explicacion": "El PDCA es un ciclo de mejora continua: tras actuar, se vuelve a planificar partiendo de un nivel superior. Por eso suele dibujarse como una rueda que sube por una pendiente."
+    },
+    {
+      "enunciado": "¿En qué fase del PDCA se comparan los resultados obtenidos con los objetivos?",
+      "opciones": [
+        "Planificar",
+        "Verificar",
+        "Actuar",
+        "Hacer"
+      ],
+      "correcta": 1,
+      "explicacion": "En Verificar (Check) se comparan los resultados con los objetivos fijados al planificar. Con lo que se ve ahí se actúa después."
+    },
+    {
+      "enunciado": "¿Cuál es el orden correcto de la cadena de la mejora?",
+      "opciones": [
+        "Identificar → definir → medir → controlar → mejorar",
+        "Definir → identificar → controlar → medir → mejorar",
+        "Medir → identificar → definir → controlar → mejorar",
+        "Identificar → medir → definir → mejorar → controlar"
+      ],
+      "correcta": 0,
+      "explicacion": "No se puede mejorar lo que no se ha controlado, controlar lo que no se ha medido, medir lo que no se ha definido ni definir lo que no se ha identificado. Por eso el orden es identificar, definir, medir, controlar y mejorar.",
+      "pista": "Empieza por saber qué es."
+    },
+    {
+      "enunciado": "Completa la cadena de la mejora: «No se puede controlar nada que no se haya…»",
+      "opciones": [
+        "definido",
+        "medido",
+        "mejorado",
+        "identificado"
+      ],
+      "correcta": 1,
+      "explicacion": "Cada eslabón depende del anterior: no se puede controlar lo que no se ha medido. La medición, a su vez, exige haber definido antes qué se mide."
+    },
+    {
+      "enunciado": "¿Qué consecuencia práctica tiene la cadena de la mejora?",
+      "opciones": [
+        "Con experiencia suficiente se puede saltar la medición",
+        "Si falla un eslabón se rompe toda la cadena, y por eso los registros son imprescindibles",
+        "Solo importa el último eslabón, mejorar",
+        "La mejora no depende del control"
+      ],
+      "correcta": 1,
+      "explicacion": "Todos los eslabones dependen unos de otros: si falla uno, la cadena se rompe. Los registros son la prueba de que se ha medido y controlado, y por eso son imprescindibles."
+    },
+    {
+      "enunciado": "¿Qué papel tiene el aseguramiento de la calidad en el ciclo de mejora?",
+      "opciones": [
+        "Es el motor que hace girar el ciclo",
+        "Elimina la necesidad de registros",
+        "Sustituye la fase de verificar",
+        "Actúa como una cuña que impide que la mejora retroceda"
+      ],
+      "correcta": 3,
+      "explicacion": "El aseguramiento de la calidad actúa como una cuña bajo la rueda del PDCA: consolida lo conseguido para que no se pierda."
+    },
+    {
+      "enunciado": "¿Cuántas herramientas hay para recorrer el ciclo de mejora y cómo se agrupan?",
+      "opciones": [
+        "10 herramientas estadísticas",
+        "14 herramientas: 7 básicas y 7 de gestión",
+        "7 herramientas básicas",
+        "6 herramientas: las 6M"
+      ],
+      "correcta": 1,
+      "explicacion": "Para recorrer el ciclo hay 14 herramientas: 7 básicas (Pareto, Ishikawa, histograma, gráfico de control, dispersión, hoja de recogida de datos y estratificación) y 7 de gestión."
+    },
+    {
+      "enunciado": "¿Cómo se define la mejora continua?",
+      "opciones": [
+        "La renovación del certificado cada tres años",
+        "Un proceso sistemático y permanente de mejora, que sigue el ciclo PDCA",
+        "Una mejora puntual que se hace tras recibir una reclamación",
+        "La inspección periódica del producto terminado"
+      ],
+      "correcta": 1,
+      "explicacion": "La mejora continua es un proceso sistemático y permanente, no una reacción puntual. Se apoya en el ciclo PDCA."
+    },
+    {
+      "enunciado": "Una planta ya ha identificado y definido qué considera «merma», pero no registra cuánta produce cada línea. Quiere reducirla. Según la cadena de la mejora, ¿qué le falta primero?",
+      "opciones": [
+        "Certificarse en ISO 9001",
+        "Volver a definir qué es merma",
+        "Medir: no puede controlar ni mejorar lo que no ha medido",
+        "Actuar ya con acciones correctoras en todas las líneas"
+      ],
+      "correcta": 2,
+      "explicacion": "Identificar y definir ya están hechos; el siguiente eslabón es medir. Sin datos no puede controlar, y sin control no puede mejorar."
+    }
+  ]
+}
