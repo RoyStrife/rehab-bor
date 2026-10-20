@@ -32,6 +32,14 @@
     "archivo": "calidad-efqm-seis-sigma.json"
   },
   {
+    "id": "calidad-iso9001-ampliacion",
+    "titulo": "Tema 5 · ISO 9001: norma, documentación e implantación",
+    "descripcion": "Familia ISO 9000, cláusulas, pirámide documental, fases y entidades certificadoras",
+    "asignatura": "Gestión de calidad",
+    "preguntas": 16,
+    "archivo": "calidad-iso9001-ampliacion.json"
+  },
+  {
     "id": "normas-calidad",
     "titulo": "Repaso · ISO 9001, EFQM, Seis Sigma y cartas de servicio",
     "descripcion": "Requisitos e implantación de la ISO 9001, agentes del EFQM y conceptos clave de Seis Sigma y cartas de servicio",

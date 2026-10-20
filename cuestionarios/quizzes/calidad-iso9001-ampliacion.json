@@ -1,0 +1,182 @@
+{
+  "titulo": "Tema 5 · ISO 9001: norma, documentación e implantación",
+  "descripcion": "Familia ISO 9000, cláusulas, pirámide documental, fases y entidades certificadoras",
+  "preguntas": [
+    {
+      "enunciado": "¿Cuándo se publicó la ISO 9001:2026, la edición vigente?",
+      "opciones": [
+        "En diciembre de 2025",
+        "En septiembre de 2026",
+        "En septiembre de 2015",
+        "En enero de 2026"
+      ],
+      "correcta": 1,
+      "explicacion": "La ISO 9001:2026 es la edición vigente y se publicó en septiembre de 2026."
+    },
+    {
+      "enunciado": "¿Qué ventaja tiene que la ISO 9001:2026 comparta la estructura armonizada de las normas ISO de sistemas de gestión?",
+      "opciones": [
+        "Permite certificarse sin documentación",
+        "Facilita integrar calidad, medio ambiente e inocuidad en un mismo sistema",
+        "Elimina la necesidad de auditorías internas",
+        "Hace la norma obligatoria en todos los sectores"
+      ],
+      "correcta": 1,
+      "explicacion": "Al compartir la misma estructura que otras normas ISO de gestión, es más fácil integrar en un solo sistema la calidad, el medio ambiente y la inocuidad alimentaria."
+    },
+    {
+      "enunciado": "Además del enfoque de procesos y del pensamiento basado en riesgos, ¿qué exige la ISO 9001:2026 a la dirección?",
+      "opciones": [
+        "Redactar personalmente todos los procedimientos",
+        "Renovar la certificación cada año",
+        "Promover una cultura de la calidad y un comportamiento ético",
+        "Contratar un auditor externo permanente"
+      ],
+      "correcta": 2,
+      "explicacion": "La edición de 2026 exige a la dirección promover una cultura de la calidad y un comportamiento ético, y deja que cada empresa decida cuánta documentación necesita."
+    },
+    {
+      "enunciado": "¿Qué tienen en común las normas de la familia ISO 9000?",
+      "opciones": [
+        "Son obligatorias para las empresas alimentarias",
+        "Son voluntarias, valen para cualquier sector y se basan en el enfoque de procesos y la mejora continua",
+        "Solo se aplican a la industria manufacturera",
+        "Todas son certificables"
+      ],
+      "correcta": 1,
+      "explicacion": "Las normas de la familia ISO 9000 son voluntarias, aplicables a cualquier sector y se basan en el enfoque de procesos y la mejora continua. De ellas, solo la ISO 9001 es certificable."
+    },
+    {
+      "enunciado": "Una persona que va a hacer su primera auditoría interna busca la norma de referencia para auditar sistemas de gestión. ¿Cuál es?",
+      "opciones": [
+        "ISO 19011",
+        "ISO 9000",
+        "ISO 9004",
+        "ISO 9001"
+      ],
+      "correcta": 0,
+      "explicacion": "La ISO 19011 es la norma sobre auditoría. La ISO 9001 fija los requisitos, la ISO 9004 trata la mejora y la ISO 9000 recoge los fundamentos y el vocabulario."
+    },
+    {
+      "enunciado": "Una empresa ya certificada quiere orientación para ir más allá de los requisitos mínimos y mejorar su desempeño. ¿Qué norma de la familia le sirve?",
+      "opciones": [
+        "ISO 9000",
+        "ISO 9004",
+        "ISO 9001",
+        "ISO 19011"
+      ],
+      "correcta": 1,
+      "explicacion": "La ISO 9004 trata la mejora: orienta para ir más allá de los requisitos de la ISO 9001."
+    },
+    {
+      "enunciado": "¿Qué recoge la cláusula 3 de la ISO 9001?",
+      "opciones": [
+        "Términos y definiciones",
+        "Contexto de la organización",
+        "Objeto y campo de aplicación",
+        "Referencias normativas"
+      ],
+      "correcta": 0,
+      "explicacion": "Las cláusulas introductorias son 0 Introducción, 1 Objeto y campo de aplicación, 2 Referencias normativas y 3 Términos y definiciones. El contexto de la organización es la 4, la primera de requisitos."
+    },
+    {
+      "enunciado": "Antes de expedir un lote, se comprueba que cumple todo lo establecido y se autoriza su salida. ¿En qué cláusula de la ISO 9001 encaja esta liberación?",
+      "opciones": [
+        "8 Operación",
+        "9 Evaluación del desempeño",
+        "7 Apoyo",
+        "10 Mejora"
+      ],
+      "correcta": 0,
+      "explicacion": "La cláusula 8 Operación incluye la planificación y el control, los requisitos del producto, el diseño, el control de proveedores externos, la producción, la liberación y las salidas no conformes."
+    },
+    {
+      "enunciado": "¿En qué cláusula de la ISO 9001 se encuadra el diseño de productos y servicios?",
+      "opciones": [
+        "6 Planificación",
+        "5 Liderazgo",
+        "8 Operación",
+        "4 Contexto de la organización"
+      ],
+      "correcta": 2,
+      "explicacion": "El diseño forma parte de la cláusula 8 Operación, fase Hacer, junto con la producción, el control de proveedores y la liberación."
+    },
+    {
+      "enunciado": "Antes de implantar un SGC, la empresa debe tener un sistema de prevención de errores. ¿Qué incluye?",
+      "opciones": [
+        "No conformidades, reclamaciones, indicadores y acciones correctivas y preventivas",
+        "Solo la inspección final del producto",
+        "Únicamente el plan de auditorías externas",
+        "El listado de clientes y proveedores"
+      ],
+      "correcta": 0,
+      "explicacion": "Junto con conocer al cliente y sus requisitos, fijar un nivel mínimo de calidad y tener procesos de control eficaces y documentados, hace falta un sistema de prevención de errores: no conformidades, reclamaciones, indicadores y acciones correctivas y preventivas."
+    },
+    {
+      "enunciado": "¿Cómo deben ser los documentos de un SGC?",
+      "opciones": [
+        "Que aporten valor, homogéneos y sencillos",
+        "Redactados siempre por una consultora externa",
+        "Con un formato distinto en cada departamento",
+        "Cuantos más, mejor"
+      ],
+      "correcta": 0,
+      "explicacion": "La documentación consiste en poner por escrito cómo funciona la empresa, con documentos que aporten valor, homogéneos y sencillos, organizados en la pirámide documental."
+    },
+    {
+      "enunciado": "¿Qué forma parte de la base documental que resulta de la fase de documentación?",
+      "opciones": [
+        "Solo el certificado y el informe de auditoría",
+        "Manual con política y objetivos, mapa de procesos, procedimientos, instrucciones, registros y otra documentación",
+        "El informe de diagnóstico y el cronograma",
+        "Las facturas y los contratos con clientes"
+      ],
+      "correcta": 1,
+      "explicacion": "El resultado de la fase de documentación es la base documental: manual con la política y los objetivos, mapa de procesos, procedimientos, instrucciones, registros y otra documentación."
+    },
+    {
+      "enunciado": "¿A qué pregunta responden los procedimientos (nivel 2 de la pirámide documental)?",
+      "opciones": [
+        "«¿Por qué funciona así la empresa?»",
+        "«¿Se ha hecho?», como evidencia de cumplimiento",
+        "«¿Cuánto cuesta?», para cada proceso",
+        "«¿Cómo lo hago?», para los procesos clave que afectan a la calidad"
+      ],
+      "correcta": 3,
+      "explicacion": "Los procedimientos describen los procesos clave que afectan a la calidad y responden a «¿cómo lo hago?». El porqué es del manual (nivel 1) y la evidencia, de los registros (nivel 4)."
+    },
+    {
+      "enunciado": "¿Cómo se reparte el volumen de documentos en la pirámide documental?",
+      "opciones": [
+        "Arriba, mucho volumen y muy concreto; abajo, pocos documentos y generales",
+        "Todos los niveles tienen el mismo número de documentos",
+        "Arriba, pocos documentos y muy generales; abajo, mucho volumen y muy concreto",
+        "Solo existe documentación en los niveles 1 y 2"
+      ],
+      "correcta": 2,
+      "explicacion": "En la cúspide está el manual (pocos documentos, muy generales) y en la base los registros (mucho volumen, muy concreto)."
+    },
+    {
+      "enunciado": "¿A qué pregunta responde la fase de plan de desarrollo del SGC?",
+      "opciones": [
+        "¿Dónde estamos?",
+        "¿Se cumple de verdad?",
+        "¿Quién hace qué y cuándo?",
+        "¿Cómo funciona la empresa?"
+      ],
+      "correcta": 2,
+      "explicacion": "El plan define quién hace qué y cuándo: un cronograma con responsables y plazos, el responsable de calidad, el comité y los grupos de calidad. «¿Dónde estamos?» es el diagnóstico y «¿se cumple de verdad?», la revisión y auditoría."
+    },
+    {
+      "enunciado": "¿Cuál de estos grupos está formado solo por entidades certificadoras que operan en España?",
+      "opciones": [
+        "AENOR, Bureau Veritas, SGS y TÜV",
+        "EFQM, Bureau Veritas, ISO y DNV",
+        "EFQM, ISO, AENOR y SGS",
+        "ISO, IFS, BRCGS y TÜV"
+      ],
+      "correcta": 0,
+      "explicacion": "Entre las entidades certificadoras en España están AENOR, Bureau Veritas, DNV, ECA, LGAI, Lloyd's Register, SGS y TÜV. ISO elabora las normas pero no certifica, EFQM es una fundación con su modelo, e IFS y BRCGS son normas, no entidades certificadoras."
+    }
+  ]
+}
