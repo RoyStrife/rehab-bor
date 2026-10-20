@@ -40,6 +40,14 @@
     "archivo": "calidad-iso9001-ampliacion.json"
   },
   {
+    "id": "calidad-empresa-alimentaria",
+    "titulo": "Tema 6 · La calidad en la empresa alimentaria",
+    "descripcion": "Calidad higiénico-sanitaria y comercial, APPCC y normas específicas del sector",
+    "asignatura": "Gestión de calidad",
+    "preguntas": 8,
+    "archivo": "calidad-empresa-alimentaria.json"
+  },
+  {
     "id": "normas-calidad",
     "titulo": "Repaso · ISO 9001, EFQM, Seis Sigma y cartas de servicio",
     "descripcion": "Requisitos e implantación de la ISO 9001, agentes del EFQM y conceptos clave de Seis Sigma y cartas de servicio",

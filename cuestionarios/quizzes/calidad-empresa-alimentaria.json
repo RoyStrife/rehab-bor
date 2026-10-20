@@ -1,0 +1,94 @@
+{
+  "titulo": "Tema 6 · La calidad en la empresa alimentaria",
+  "descripcion": "Calidad higiénico-sanitaria y comercial, APPCC y normas específicas del sector",
+  "preguntas": [
+    {
+      "enunciado": "¿Qué dos componentes tiene la calidad de un alimento?",
+      "opciones": [
+        "Explícita y certificable",
+        "Legal y estadística",
+        "Higiénico-sanitaria y comercial",
+        "Interna y de marca"
+      ],
+      "correcta": 2,
+      "explicacion": "La calidad de un alimento tiene un componente higiénico-sanitario (que sea seguro) y otro comercial (que se ajuste a la política y al público de la empresa)."
+    },
+    {
+      "enunciado": "¿Qué carácter tiene la calidad higiénico-sanitaria de un alimento?",
+      "opciones": [
+        "Obligatorio: es un requisito legal para todo el sector",
+        "Solo obligatorio para empresas certificadas",
+        "Solo obligatorio para exportar",
+        "Voluntario: lo decide cada empresa"
+      ],
+      "correcta": 0,
+      "explicacion": "La calidad higiénico-sanitaria es obligatoria para todo el sector alimentario porque persigue productos seguros, sin riesgo para el consumidor."
+    },
+    {
+      "enunciado": "¿Con qué herramienta se gestiona la calidad higiénico-sanitaria?",
+      "opciones": [
+        "Con cartas de servicio",
+        "Con el autocontrol basado en el APPCC",
+        "Con el modelo EFQM",
+        "Con un SGC según la ISO 9001"
+      ],
+      "correcta": 1,
+      "explicacion": "La calidad higiénico-sanitaria se garantiza con el autocontrol basado en el APPCC (análisis de peligros y puntos de control crítico). La ISO 9001 se asocia a la calidad comercial."
+    },
+    {
+      "enunciado": "¿Qué caracteriza la calidad comercial de un alimento?",
+      "opciones": [
+        "Es obligatoria y se gestiona con el APPCC",
+        "Es voluntaria, la decide cada empresa según su política, posicionamiento y público, y se gestiona con un SGC como la ISO 9001",
+        "Solo afecta al precio de venta",
+        "La fija la Administración para cada producto"
+      ],
+      "correcta": 1,
+      "explicacion": "La calidad comercial es voluntaria: cada empresa la ajusta a su política, su posicionamiento y su público, y la gestiona con un SGC (por ejemplo, ISO 9001) para adaptar el producto al cliente."
+    },
+    {
+      "enunciado": "Una conservera lanza una línea gourmet con piezas de mayor calibre y un envase premium para un público exigente. ¿Qué componente de la calidad está trabajando?",
+      "opciones": [
+        "La calidad implícita exigida por ley",
+        "La calidad comercial, que es voluntaria",
+        "Ninguna: el calibre no tiene que ver con la calidad",
+        "La calidad higiénico-sanitaria, que es obligatoria"
+      ],
+      "correcta": 1,
+      "explicacion": "Elegir calibre, envase y público es una decisión de posicionamiento de la empresa, así que es calidad comercial. La higiénico-sanitaria se refiere a la seguridad del alimento."
+    },
+    {
+      "enunciado": "Una empresa de quesos frescos refuerza sus controles para evitar Listeria (una bacteria que puede contaminar alimentos listos para consumir y causar una infección grave). ¿Qué componente de la calidad es?",
+      "opciones": [
+        "Comercial, voluntaria y gestionada con la ISO 9001",
+        "Comercial, porque mejora la imagen de marca",
+        "Ninguna, porque es un tema de producción",
+        "Higiénico-sanitaria, obligatoria y gestionada con el autocontrol basado en el APPCC"
+      ],
+      "correcta": 3,
+      "explicacion": "Evitar un patógeno es una cuestión de seguridad del consumidor: calidad higiénico-sanitaria, obligatoria para todo el sector y basada en el APPCC."
+    },
+    {
+      "enunciado": "¿Qué normas específicas del sector alimentario han ido ganando terreno frente a normas genéricas como la ISO 9001?",
+      "opciones": [
+        "EFQM, Seis Sigma y cartas de servicio",
+        "ISO 22000, BRC (BRCGS) e IFS",
+        "AMFE, CEP y DAFO",
+        "ISO 9000, ISO 9004 e ISO 19011"
+      ],
+      "correcta": 1,
+      "explicacion": "En los últimos años las normas genéricas como la ISO 9001 han dado paso a normas específicas del sector alimentario: ISO 22000, BRC (BRCGS) e IFS."
+    },
+    {
+      "enunciado": "¿En qué se centran las normas específicas del sector alimentario como ISO 22000, BRCGS o IFS?",
+      "opciones": [
+        "En la puntuación de la excelencia por autoevaluación",
+        "En la seguridad alimentaria y en la confianza entre proveedor y cliente",
+        "En reducir la variabilidad estadística de los procesos",
+        "En los compromisos de la Administración con el ciudadano"
+      ],
+      "correcta": 1,
+      "explicacion": "Estas normas se centran en la seguridad alimentaria y en generar confianza entre proveedor y cliente. La autoevaluación es propia del EFQM, los compromisos con el ciudadano de las cartas de servicio y la reducción de la variabilidad, de Seis Sigma."
+    }
+  ]
+}
