@@ -50,6 +50,9 @@ header.top h1{font-size:1.25rem; margin:0; flex:1; line-height:1.25}
 .pill{background:var(--accent-soft); color:var(--accent); border-radius:99px; padding:2px 10px; font-weight:600}
 .pill.best{background:var(--ok-soft); color:var(--ok)}
 .empty{color:var(--muted); text-align:center; padding:32px 8px}
+#quizList{display:grid; gap:28px}
+.mod-title{font-size:1.1rem; margin:0 0 4px; padding-bottom:6px; border-bottom:2px solid var(--accent); color:var(--accent)}
+.ud-title{font-size:.82rem; text-transform:uppercase; letter-spacing:.06em; color:var(--muted); margin:14px 0 8px}
 
 .progress{height:6px; background:var(--line); border-radius:99px; overflow:hidden; margin-bottom:6px}
 .progress > div{height:100%; background:var(--accent); width:0; transition:width .25s}
@@ -162,17 +165,35 @@ header.top h1{font-size:1.25rem; margin:0; flex:1; line-height:1.25}
   function show(id){ ['home','quiz','result'].forEach(function(s){ $(s).classList.toggle('hidden', s !== id); }); window.scrollTo(0,0); }
 
   // ---------- Inicio ----------
+  function quizCard(q){
+    var best = store.best && store.best[q.id];
+    return '<button class="card quiz-item" data-id="'+esc(q.id)+'">' +
+      '<h2>'+esc(q.titulo)+'</h2>' +
+      (q.descripcion ? '<p>'+esc(q.descripcion)+'</p>' : '') +
+      '<div class="meta">' +
+        (q.asignatura ? '<span class="pill">'+esc(q.asignatura)+'</span>' : '') +
+        (q.preguntas ? '<span>'+q.preguntas+' preguntas</span>' : '') +
+        (best != null ? '<span class="pill best">Mejor: '+best+'%</span>' : '') +
+      '</div></button>';
+  }
+
+  // Agrupa por módulo y, dentro, por unidad, respetando el orden de index.json
   function renderHome(){
-    var html = catalog.map(function(q){
-      var best = store.best && store.best[q.id];
-      return '<button class="card quiz-item" data-id="'+esc(q.id)+'">' +
-        '<h2>'+esc(q.titulo)+'</h2>' +
-        (q.descripcion ? '<p>'+esc(q.descripcion)+'</p>' : '') +
-        '<div class="meta">' +
-          (q.asignatura ? '<span class="pill">'+esc(q.asignatura)+'</span>' : '') +
-          (q.preguntas ? '<span>'+q.preguntas+' preguntas</span>' : '') +
-          (best != null ? '<span class="pill best">Mejor: '+best+'%</span>' : '') +
-        '</div></button>';
+    var modulos = [], byMod = {};
+    catalog.forEach(function(q){
+      var m = q.modulo || 'Otros', u = q.unidad || '';
+      if (!byMod[m]){ byMod[m] = {unidades:[], byUd:{}}; modulos.push(m); }
+      var g = byMod[m];
+      if (!g.byUd[u]){ g.byUd[u] = []; g.unidades.push(u); }
+      g.byUd[u].push(q);
+    });
+    var html = modulos.map(function(m){
+      var g = byMod[m];
+      return '<section class="modulo"><h2 class="mod-title">'+esc(m)+'</h2>' +
+        g.unidades.map(function(u){
+          return (u ? '<h3 class="ud-title">'+esc(u.replace(/_/g,' '))+'</h3>' : '') +
+            '<div class="list">' + g.byUd[u].map(quizCard).join('') + '</div>';
+        }).join('') + '</section>';
     }).join('');
     $('quizList').innerHTML = html || '<p class="empty">Aún no hay cuestionarios.</p>';
     show('home');

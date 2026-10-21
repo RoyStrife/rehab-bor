@@ -1,0 +1,90 @@
+{
+  "titulo": "La célula · procariota, animal y vegetal",
+  "descripcion": "Puntos 2.2–2.5 del resumen de la UD1 y esquemas 16 y 17",
+  "preguntas": [
+    {
+      "enunciado": "¿Cuál es la diferencia PRINCIPAL entre una célula procariota y una eucariota?",
+      "opciones": [
+        "La procariota no tiene membrana plasmática",
+        "La procariota no tiene núcleo diferenciado; su ADN está en el nucleoide",
+        "La eucariota no tiene ribosomas",
+        "La procariota es siempre más grande"
+      ],
+      "correcta": 1,
+      "explicacion": "La diferencia principal es el núcleo: en la eucariota el ADN está dentro de un núcleo con doble membrana; en la procariota está libre en el nucleoide.",
+      "pista": "La tabla del 2.3 la pone como diferencia nº 1."
+    },
+    {
+      "enunciado": "En el esquema de la célula procariota, ¿qué son los pequeños círculos de ADN separados del nucleoide?",
+      "opciones": ["Ribosomas", "Mitocondrias", "Plásmidos", "Lisosomas"],
+      "correcta": 2,
+      "explicacion": "Los plásmidos son fragmentos pequeños de ADN circular adicionales; pueden llevar genes de resistencia a antibióticos y se transfieren entre bacterias."
+    },
+    {
+      "enunciado": "¿Cuál de estas estructuras es OPCIONAL en una bacteria?",
+      "opciones": ["Membrana plasmática", "Ribosomas", "Cápsula", "Citoplasma"],
+      "correcta": 2,
+      "explicacion": "Cápsula, flagelos y fimbrias/pili son opcionales. Membrana, citoplasma, ribosomas y ADN están siempre.",
+      "pista": "En el esquema 16 aparecen marcadas como (opc.)."
+    },
+    {
+      "enunciado": "¿Para qué sirven las fimbrias o pili?",
+      "opciones": [
+        "Para moverse nadando",
+        "Para adherirse a superficies o intercambiar material genético",
+        "Para fabricar proteínas",
+        "Para hacer la fotosíntesis"
+      ],
+      "correcta": 1,
+      "explicacion": "Los pili son prolongaciones cortas para adherirse o intercambiar ADN. El movimiento es cosa del flagelo."
+    },
+    {
+      "enunciado": "¿Qué estructura tiene la célula vegetal y NO la animal?",
+      "opciones": ["Mitocondrias", "Aparato de Golgi", "Pared celular de celulosa", "Lisosomas"],
+      "correcta": 2,
+      "explicacion": "Exclusivas vegetales: pared celular (celulosa), cloroplastos y una vacuola grande central. Los lisosomas son propios de la animal.",
+      "pista": "Tabla ⭐ de la pág. 120."
+    },
+    {
+      "enunciado": "Según la tabla comparativa, ¿qué orgánulo tiene la célula animal y NO la vegetal?",
+      "opciones": ["Lisosomas", "Ribosomas", "Retículo endoplasmático liso", "Núcleo"],
+      "correcta": 0,
+      "explicacion": "Los lisosomas degradan residuos en la célula animal; en la vegetal esa función la cumple la vacuola lítica. Los centriolos también son habituales en la animal y no en la vegetal."
+    },
+    {
+      "enunciado": "¿Qué orgánulo fabrica lípidos?",
+      "opciones": ["Retículo endoplasmático rugoso", "Retículo endoplasmático liso", "Nucléolo", "Aparato de Golgi"],
+      "correcta": 1,
+      "explicacion": "El REL fabrica lípidos. El RER fabrica y procesa proteínas gracias a los ribosomas adheridos a sus paredes.",
+      "pista": "Liso = sin ribosomas."
+    },
+    {
+      "enunciado": "Si observas una célula con mitocondrias, ¿qué puedes deducir?",
+      "opciones": ["Que es una bacteria", "Que es vegetal", "Que es eucariota", "Que es procariota con cápsula"],
+      "correcta": 2,
+      "explicacion": "Las procariotas no tienen mitocondrias. Animales y vegetales sí, así que solo puedes asegurar que es eucariota."
+    },
+    {
+      "enunciado": "Un organismo con pared celular pero sin cloroplastos podría ser…",
+      "opciones": [
+        "Solo una célula animal",
+        "Una bacteria o un hongo/levadura",
+        "Solo una planta",
+        "Imposible: toda pared celular implica cloroplastos"
+      ],
+      "correcta": 1,
+      "explicacion": "Pregunta 7 de la pág. 126: pared sin cloroplastos encaja con una bacteria (procariota) o con un hongo o levadura (eucariota no vegetal)."
+    },
+    {
+      "enunciado": "¿Qué estructuras comparten procariotas y eucariotas?",
+      "opciones": [
+        "Núcleo, mitocondrias y ribosomas",
+        "Membrana plasmática, citoplasma, ribosomas y ADN",
+        "Pared celular, cloroplastos y ADN",
+        "Aparato de Golgi y lisosomas"
+      ],
+      "correcta": 1,
+      "explicacion": "Las cuatro estructuras comunes a todas las células son membrana plasmática, citoplasma, ribosomas y ADN (pregunta 10 de la pág. 126)."
+    }
+  ]
+}

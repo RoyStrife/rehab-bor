@@ -8,7 +8,10 @@ Interfaz sencilla para practicar cuestionarios tipo test desde el móvil.
 
 ## Añadir un cuestionario
 
-1. Crea un archivo en `quizzes/`, por ejemplo `quizzes/appcc.json`:
+Los cuestionarios se guardan por módulo y unidad: `quizzes/<Modulo>/<UD_n>/archivo.json`
+(p. ej. `quizzes/Gestion_de_Calidad/UD_1/`, `quizzes/Biotecnologia/UD_1/`). En la pantalla de inicio salen agrupados igual.
+
+1. Crea un archivo en la carpeta de su módulo y unidad, por ejemplo `quizzes/Gestion_de_Calidad/UD_1/appcc.json`:
 
 ```json
 {
@@ -29,16 +32,17 @@ Interfaz sencilla para practicar cuestionarios tipo test desde el móvil.
 `correcta` es la posición de la respuesta buena empezando por 0 (0 = primera opción).
 Como las opciones se pueden barajar, en la explicación no uses «la a», «la b»…: nombra la respuesta por su contenido.
 
-2. Añádelo a `quizzes/index.json`:
+2. Añádelo a `quizzes/index.json` (`modulo` y `unidad` deciden el grupo; `asignatura` es opcional y sale como etiqueta):
 
 ```json
 {
   "id": "appcc",
   "titulo": "APPCC: principios básicos",
   "descripcion": "Texto corto opcional",
-  "asignatura": "Seguridad alimentaria",
+  "modulo": "Gestión de Calidad",
+  "unidad": "UD_1",
   "preguntas": 10,
-  "archivo": "appcc.json"
+  "archivo": "Gestion_de_Calidad/UD_1/appcc.json"
 }
 ```
 
