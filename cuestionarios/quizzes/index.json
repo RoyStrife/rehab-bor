@@ -82,6 +82,78 @@
     "archivo": "Gestion_de_Calidad/UD_1/calidad-evaluacion-final.json"
   },
   {
+    "id": "biotec-ud1-bioquimica-grupos",
+    "titulo": "1.1–1.2 · Bioquímica y grupos funcionales",
+    "descripcion": "Bioquímica, metabolismo, biomoléculas en los alimentos y la hoja de grupos funcionales",
+    "modulo": "Biotecnología",
+    "unidad": "UD_1",
+    "preguntas": 18,
+    "archivo": "Biotecnologia/UD_1/biotec-ud1-bioquimica-grupos.json"
+  },
+  {
+    "id": "biotec-ud1-biomoleculas-agua",
+    "titulo": "1.3–1.4 · Tipos de biomoléculas y el agua",
+    "descripcion": "Esquemas 1 y 2: biomoléculas inorgánicas y orgánicas, y la molécula de agua",
+    "modulo": "Biotecnología",
+    "unidad": "UD_1",
+    "preguntas": 13,
+    "archivo": "Biotecnologia/UD_1/biotec-ud1-biomoleculas-agua.json"
+  },
+  {
+    "id": "biotec-ud1-carbohidratos",
+    "titulo": "1.5 · Carbohidratos",
+    "descripcion": "Monosacáridos, oligosacáridos, polisacáridos y funciones de los carbohidratos",
+    "modulo": "Biotecnología",
+    "unidad": "UD_1",
+    "preguntas": 21,
+    "archivo": "Biotecnologia/UD_1/biotec-ud1-carbohidratos.json"
+  },
+  {
+    "id": "biotec-ud1-lipidos",
+    "titulo": "1.6 · Lípidos",
+    "descripcion": "Clasificación, ácidos grasos, nomenclatura Δ y ω, glicéridos y funciones",
+    "modulo": "Biotecnología",
+    "unidad": "UD_1",
+    "preguntas": 24,
+    "archivo": "Biotecnologia/UD_1/biotec-ud1-lipidos.json"
+  },
+  {
+    "id": "biotec-ud1-proteinas",
+    "titulo": "1.7 · Proteínas",
+    "descripcion": "Aminoácidos, enlace peptídico, los cuatro niveles estructurales, desnaturalización y funciones",
+    "modulo": "Biotecnología",
+    "unidad": "UD_1",
+    "preguntas": 24,
+    "archivo": "Biotecnologia/UD_1/biotec-ud1-proteinas.json"
+  },
+  {
+    "id": "biotec-ud1-enzimas",
+    "titulo": "1.8 · Enzimas",
+    "descripcion": "Energía de activación, catalizadores, las 4 características de las enzimas y la lactasa",
+    "modulo": "Biotecnología",
+    "unidad": "UD_1",
+    "preguntas": 16,
+    "archivo": "Biotecnologia/UD_1/biotec-ud1-enzimas.json"
+  },
+  {
+    "id": "biotec-ud1-acidos-nucleicos",
+    "titulo": "1.9 · Ácidos nucleicos",
+    "descripcion": "Nucleótidos, ADN frente a ARN, replicación, transcripción y traducción",
+    "modulo": "Biotecnología",
+    "unidad": "UD_1",
+    "preguntas": 19,
+    "archivo": "Biotecnologia/UD_1/biotec-ud1-acidos-nucleicos.json"
+  },
+  {
+    "id": "biotec-ud1-celula-completo",
+    "titulo": "2 · La célula (repaso completo)",
+    "descripcion": "2.1–2.5: teoría celular, procariota y eucariota, orgánulos y cómo identificar una célula",
+    "modulo": "Biotecnología",
+    "unidad": "UD_1",
+    "preguntas": 15,
+    "archivo": "Biotecnologia/UD_1/biotec-ud1-celula-completo.json"
+  },
+  {
     "id": "biotec-ud1-celula",
     "titulo": "La célula · procariota, animal y vegetal",
     "descripcion": "Puntos 2.2–2.5 del resumen de la UD1 y esquemas 16 y 17",

@@ -1,0 +1,272 @@
+{
+  "titulo": "1.6 · Lípidos",
+  "descripcion": "Clasificación, ácidos grasos, nomenclatura Δ y ω, glicéridos y funciones",
+  "preguntas": [
+    {
+      "enunciado": "¿Qué elementos forman los lípidos casi exclusivamente?",
+      "opciones": [
+        "C e H",
+        "C, H, O y N a partes iguales",
+        "N y P",
+        "O y S"
+      ],
+      "correcta": 0,
+      "explicacion": "Los lípidos están formados por C e H casi exclusivamente y, en menor proporción, O; algunos tienen S, P o N."
+    },
+    {
+      "enunciado": "¿Cómo se comportan la mayoría de los lípidos con el agua?",
+      "opciones": [
+        "Se disuelven perfectamente en agua",
+        "Reaccionan con el agua formando proteínas",
+        "Son siempre gases",
+        "Son hidrofóbicos, pero se disuelven en disolventes orgánicos no polares"
+      ],
+      "correcta": 3,
+      "explicacion": "Son hidrofóbicos o poco solubles en agua, pero solubles en cloroformo, alcohol, benceno…"
+    },
+    {
+      "enunciado": "¿Qué define a un lípido saponificable?",
+      "opciones": [
+        "No contiene ácidos grasos",
+        "Contiene glucosa",
+        "Contiene ácidos grasos y puede realizar la reacción de saponificación",
+        "Es siempre un esteroide"
+      ],
+      "correcta": 2,
+      "explicacion": "Saponificables = con ácidos grasos. Los insaponificables carecen de ellos y no pueden saponificar."
+    },
+    {
+      "enunciado": "¿Cuál de estos lípidos es insaponificable?",
+      "opciones": [
+        "Las ceras",
+        "Los esteroides",
+        "Los glicéridos",
+        "Los fosfolípidos"
+      ],
+      "correcta": 1,
+      "explicacion": "Insaponificables (sin ácidos grasos): prostaglandinas, terpenos y esteroides.",
+      "pista": "Mira el esquema 6."
+    },
+    {
+      "enunciado": "En el esquema de clasificación, ¿qué lípidos son saponificables simples?",
+      "opciones": [
+        "Glicéridos (grasas) y ceras",
+        "Fosfolípidos y esfingolípidos",
+        "Terpenos y esteroides",
+        "Prostaglandinas y ceras"
+      ],
+      "correcta": 0,
+      "explicacion": "Simples: glicéridos y ceras. Complejos: fosfolípidos (fosfoglicéridos y esfingolípidos)."
+    },
+    {
+      "enunciado": "¿Cómo es un ácido graso?",
+      "opciones": [
+        "Un anillo de 6 carbonos con un aldehído",
+        "Una doble hélice de nucleótidos",
+        "Una cadena de aminoácidos unidos por enlaces peptídicos",
+        "Una cadena larga y lineal con un grupo carboxilo en un extremo y un metilo en el otro"
+      ],
+      "correcta": 3,
+      "explicacion": "Fórmula CH₃–(CHₓ)ₙ–COOH. Por eso, en el ejercicio del ácido palmítico, sus dos grupos funcionales son carboxilo y metilo."
+    },
+    {
+      "enunciado": "¿Cómo son los ácidos grasos saturados?",
+      "opciones": [
+        "Al menos un doble enlace; líquidos a temperatura ambiente",
+        "Tienen nitrógeno en la cadena",
+        "Solo enlaces simples entre carbonos; sólidos a temperatura ambiente",
+        "Son siempre de origen vegetal"
+      ],
+      "correcta": 2,
+      "explicacion": "Saturados: solo enlaces simples, grasa sólida (mantequilla, ternera, tocino, coco)."
+    },
+    {
+      "enunciado": "¿Cómo son los ácidos grasos insaturados?",
+      "opciones": [
+        "Solo tienen enlaces simples y son sólidos",
+        "Tienen al menos un doble enlace C=C y son líquidos a temperatura ambiente",
+        "No tienen grupo carboxilo",
+        "Están solo en la grasa animal"
+      ],
+      "correcta": 1,
+      "explicacion": "Insaturados: al menos un C=C; líquidos (aceites de oliva y girasol, lino, nueces, pescados)."
+    },
+    {
+      "enunciado": "El ácido oleico, abundante en el aceite de oliva, es…",
+      "opciones": [
+        "Monoinsaturado",
+        "Saturado",
+        "Poliinsaturado",
+        "Insaponificable"
+      ],
+      "correcta": 0,
+      "explicacion": "Monoinsaturado = un doble enlace. Ejemplo: ácido oleico (C18:1)."
+    },
+    {
+      "enunciado": "Los omega-3 de los pescados grasos y los omega-6 de muchos aceites vegetales son…",
+      "opciones": [
+        "Monoinsaturados",
+        "Saturados",
+        "Esteroides",
+        "Poliinsaturados"
+      ],
+      "correcta": 3,
+      "explicacion": "Poliinsaturados = dos o más dobles enlaces."
+    },
+    {
+      "enunciado": "¿Qué produce un doble enlace en la cadena de un ácido graso?",
+      "opciones": [
+        "Que la cadena se cierre en anillo",
+        "Que desaparezca el grupo carboxilo",
+        "Un codo (la cadena deja de ser recta)",
+        "Que la cadena se vuelva más larga"
+      ],
+      "correcta": 2,
+      "explicacion": "El doble enlace produce un codo; el esteárico (saturado) es recto."
+    },
+    {
+      "enunciado": "En la notación C:n Δx, ¿qué indica n?",
+      "opciones": [
+        "El número de carbonos",
+        "El número de dobles enlaces",
+        "La posición del primer doble enlace",
+        "El número de grupos carboxilo"
+      ],
+      "correcta": 1,
+      "explicacion": "C = carbonos · n = número de dobles enlaces · Δ = posición de los dobles enlaces."
+    },
+    {
+      "enunciado": "En la notación Δ, ¿desde dónde se cuenta la posición de los dobles enlaces?",
+      "opciones": [
+        "Desde el carbono del –COOH (carbono 1)",
+        "Desde el extremo –CH₃",
+        "Desde el centro de la cadena",
+        "Desde el doble enlace más cercano"
+      ],
+      "correcta": 0,
+      "explicacion": "Δ cuenta desde el –COOH. La notación ω cuenta desde el –CH₃.",
+      "pista": "Δ y ω cuentan desde extremos opuestos."
+    },
+    {
+      "enunciado": "¿Cuál es la notación abreviada del ácido oleico?",
+      "opciones": [
+        "C18:0",
+        "C18:2 Δ9,12",
+        "C16:1 Δ12",
+        "C18:1 Δ9"
+      ],
+      "correcta": 3,
+      "explicacion": "Oleico: 18 C, 1 doble enlace entre los carbonos 9 y 10 contando desde el COOH → C18:1 Δ9."
+    },
+    {
+      "enunciado": "¿Qué ácido graso es C18:2 Δ9,12?",
+      "opciones": [
+        "El ácido oleico",
+        "El ácido esteárico",
+        "El ácido linoleico",
+        "El ácido palmítico"
+      ],
+      "correcta": 2,
+      "explicacion": "Linoleico: 18 C y 2 dobles enlaces en las posiciones 9 y 12."
+    },
+    {
+      "enunciado": "¿Qué indica la notación C18:0?",
+      "opciones": [
+        "Un ácido graso con 18 dobles enlaces",
+        "Un ácido graso saturado de 18 carbonos (ácido esteárico)",
+        "Un ácido graso sin carbonos",
+        "Un ácido graso omega-0"
+      ],
+      "correcta": 1,
+      "explicacion": ":0 = ningún doble enlace = saturado. Es el ácido esteárico."
+    },
+    {
+      "enunciado": "En la notación ω (omega), ¿desde dónde se cuenta?",
+      "opciones": [
+        "Desde el extremo –CH₃ (metilo)",
+        "Desde el –COOH",
+        "Desde el doble enlace central",
+        "Desde el glicerol"
+      ],
+      "correcta": 0,
+      "explicacion": "El número tras la ω es la posición del primer doble enlace contando desde el metilo."
+    },
+    {
+      "enunciado": "¿Qué tipo de omega es el ácido linoleico (C18:2 Δ9,12)?",
+      "opciones": [
+        "ω-3",
+        "ω-9",
+        "ω-12",
+        "ω-6"
+      ],
+      "correcta": 3,
+      "explicacion": "Desde el metilo, su primer doble enlace está en el carbono 6 → ω-6."
+    },
+    {
+      "enunciado": "En un informe de laboratorio aparece «22:6ω3». ¿Qué tipo de ácido graso es?",
+      "opciones": [
+        "Saturado",
+        "Insaponificable",
+        "Insaturado",
+        "No es un ácido graso"
+      ],
+      "correcta": 2,
+      "explicacion": "En la notación, :0 = saturado y :1 o más = insaturado. 22:6 tiene 6 dobles enlaces."
+    },
+    {
+      "enunciado": "¿Cómo está formado un glicérido?",
+      "opciones": [
+        "Tres moléculas de glucosa",
+        "Una molécula de glicerol unida a hasta tres ácidos grasos",
+        "Un aminoácido y un ácido graso",
+        "Una pentosa, un fosfato y una base"
+      ],
+      "correcta": 1,
+      "explicacion": "Glicérido = glicerol + hasta 3 ácidos grasos; según cuántos, mono-, di- o triglicérido."
+    },
+    {
+      "enunciado": "¿Qué porcentaje de los lípidos de los alimentos son triglicéridos?",
+      "opciones": [
+        "Aproximadamente el 95–98 %",
+        "Alrededor del 50 %",
+        "Menos del 10 %",
+        "El 2–5 %"
+      ],
+      "correcta": 0,
+      "explicacion": "Los triglicéridos son el 95–98 %; el 2–5 % restante son fosfolípidos, colesterol, ceras, vitaminas liposolubles, etc."
+    },
+    {
+      "enunciado": "¿Cuánta energía aportan aproximadamente los lípidos frente a glúcidos y proteínas?",
+      "opciones": [
+        "Unas 4 kcal/g frente a unas 9 kcal/g",
+        "Lo mismo, unas 4 kcal/g",
+        "No aportan energía",
+        "Unas 9 kcal/g frente a unas 4 kcal/g"
+      ],
+      "correcta": 3,
+      "explicacion": "Los lípidos son la principal reserva energética: ≈ 9 kcal/g frente a ≈ 4 kcal/g."
+    },
+    {
+      "enunciado": "¿Qué vitaminas son liposolubles según los apuntes?",
+      "opciones": [
+        "B y C",
+        "Solo la C",
+        "A, D, E y K",
+        "B1, B2 y B12"
+      ],
+      "correcta": 2,
+      "explicacion": "Función reguladora: hormonas esteroideas, eicosanoides y vitaminas liposolubles A, D, E y K."
+    },
+    {
+      "enunciado": "¿Qué ácidos grasos son esenciales (hay que tomarlos en la dieta)?",
+      "opciones": [
+        "Ácido esteárico y palmítico",
+        "Ácido linoleico (omega-6) y α-linolénico (omega-3)",
+        "Ácido oleico y esteárico",
+        "Ninguno, el cuerpo los fabrica todos"
+      ],
+      "correcta": 1,
+      "explicacion": "Linoleico (girasol, nueces, maíz, soja) y α-linolénico (nueces, lino, soja, colza)."
+    }
+  ]
+}

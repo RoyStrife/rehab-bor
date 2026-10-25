@@ -1,0 +1,206 @@
+{
+  "titulo": "1.1–1.2 · Bioquímica y grupos funcionales",
+  "descripcion": "Bioquímica, metabolismo, biomoléculas en los alimentos y la hoja de grupos funcionales",
+  "preguntas": [
+    {
+      "enunciado": "¿Qué estudia la bioquímica?",
+      "opciones": [
+        "Solo la forma de las células al microscopio",
+        "La naturaleza química de los seres vivos: sus moléculas y las reacciones entre ellas",
+        "La clasificación de las especies",
+        "La composición de las rocas y minerales"
+      ],
+      "correcta": 1,
+      "explicacion": "La bioquímica estudia las moléculas que componen la materia viva y las reacciones bioquímicas que hacen posibles los procesos vitales; busca explicar la vida en términos químicos y moleculares."
+    },
+    {
+      "enunciado": "¿Qué es el metabolismo?",
+      "opciones": [
+        "Todas las reacciones químicas de una célula u organismo",
+        "Solo la digestión de los alimentos",
+        "El conjunto de células de un tejido",
+        "La división de una célula en dos"
+      ],
+      "correcta": 0,
+      "explicacion": "El metabolismo son todas las reacciones químicas de una célula u organismo: le permiten obtener energía, fabricar sus componentes y mantener sus funciones."
+    },
+    {
+      "enunciado": "¿Cuándo nació la bioquímica como disciplina científica?",
+      "opciones": [
+        "Hace más de 5.000 años, con la fabricación de pan y vino",
+        "En el siglo XVI, con la alquimia",
+        "A mediados del siglo XX, con el descubrimiento del ADN",
+        "En el siglo XIX, con la química fisiológica"
+      ],
+      "correcta": 3,
+      "explicacion": "Como disciplina nació en el siglo XIX con la química fisiológica. Hace más de 5.000 años ya se aplicaban procesos bioquímicos, pero sin saberlo.",
+      "pista": "Cuidado: aplicar procesos bioquímicos no es lo mismo que nacer como ciencia."
+    },
+    {
+      "enunciado": "¿Qué proceso bioquímico se aplicaba ya hace más de 5.000 años sin saberlo?",
+      "opciones": [
+        "La replicación del ADN en laboratorio",
+        "La síntesis artificial de proteínas",
+        "La fermentación con levaduras y bacterias (pan, queso, yogur, vino)",
+        "La hidrogenación de aceites"
+      ],
+      "correcta": 2,
+      "explicacion": "Pan, queso, yogur y vino se obtenían mediante fermentación con levaduras y bacterias mucho antes de que existiera la bioquímica como ciencia."
+    },
+    {
+      "enunciado": "¿Cuáles son, principalmente, las biomoléculas o principios inmediatos?",
+      "opciones": [
+        "Solo las proteínas y el ADN",
+        "Carbohidratos, proteínas, lípidos, ácidos nucleicos y agua",
+        "Vitaminas, minerales y fibra",
+        "Glucosa, oxígeno y dióxido de carbono"
+      ],
+      "correcta": 1,
+      "explicacion": "Las moléculas que componen los seres vivos son las biomoléculas o principios inmediatos: carbohidratos, proteínas, lípidos, ácidos nucleicos y agua, principalmente."
+    },
+    {
+      "enunciado": "¿Qué determina las características de las materias primas que se obtienen de los organismos (carne, leche, cereales…)?",
+      "opciones": [
+        "La proporción de biomoléculas y las reacciones entre ellas",
+        "Solo el peso del animal o la planta",
+        "El color del envase",
+        "La temperatura de almacenamiento únicamente"
+      ],
+      "correcta": 0,
+      "explicacion": "La proporción de las biomoléculas y las reacciones entre ellas determinan las características de las materias primas."
+    },
+    {
+      "enunciado": "Según los apuntes, ¿qué aumenta el valor de la leche?",
+      "opciones": [
+        "Más agua",
+        "Menos lactosa",
+        "Más sales minerales",
+        "Más proteína y más grasa"
+      ],
+      "correcta": 3,
+      "explicacion": "En la leche, cuanta más proteína y grasa, mayor es su valor."
+    },
+    {
+      "enunciado": "¿Qué determina en gran medida la calidad y el valor del jamón?",
+      "opciones": [
+        "Su contenido en carbohidratos",
+        "Su contenido en agua",
+        "Su composición lipídica",
+        "El número de ácidos nucleicos"
+      ],
+      "correcta": 2,
+      "explicacion": "La composición lipídica del jamón determina en gran medida su calidad: la grasa de un ibérico no es igual que la de un serrano."
+    },
+    {
+      "enunciado": "¿Cuál es un ejemplo de reacción bioquímica que afecta a la calidad de un alimento?",
+      "opciones": [
+        "El tamaño de la botella de vino",
+        "La cantidad de azúcar de la uva, que determina el alcohol del vino",
+        "El tipo de corcho",
+        "La forma de la uva"
+      ],
+      "correcta": 1,
+      "explicacion": "Los apuntes citan la cantidad de azúcar de la uva (y por tanto el alcohol del vino), el color de la carne y el sabor del tomate."
+    },
+    {
+      "enunciado": "Las biomoléculas están formadas en un 99 % por…",
+      "opciones": [
+        "C, H, O y N",
+        "C, Fe, Ca y Na",
+        "H, O, P y S",
+        "C, H, Cl y K"
+      ],
+      "correcta": 0,
+      "explicacion": "Las biomoléculas están hechas en un 99 % de carbono, hidrógeno, oxígeno y nitrógeno, y suelen contener también P o S."
+    },
+    {
+      "enunciado": "¿Qué papel tiene el carbono en las biomoléculas?",
+      "opciones": [
+        "Solo aporta color a la molécula",
+        "Es un grupo funcional terminal",
+        "Se encarga únicamente de disolver la molécula en agua",
+        "Es el «esqueleto»: forma cadenas o anillos a los que se enganchan otros grupos"
+      ],
+      "correcta": 3,
+      "explicacion": "El carbono forma cadenas o anillos y sobre ese esqueleto se unen los grupos funcionales."
+    },
+    {
+      "enunciado": "¿Qué son los grupos funcionales?",
+      "opciones": [
+        "Cadenas largas de glucosa",
+        "Los orgánulos de la célula",
+        "Pequeños conjuntos de átomos unidos a la cadena de carbono que le dan propiedades específicas",
+        "Las proteínas que aceleran reacciones"
+      ],
+      "correcta": 2,
+      "explicacion": "Los grupos funcionales hacen que la molécula sea más ácida, más básica, más soluble en agua o más reactiva."
+    },
+    {
+      "enunciado": "¿Cuál es la fórmula del grupo hidroxilo?",
+      "opciones": [
+        "–CHO",
+        "–OH",
+        "–SH",
+        "–NH₂"
+      ],
+      "correcta": 1,
+      "explicacion": "Hidroxilo = –OH (terminal)."
+    },
+    {
+      "enunciado": "¿Qué grupo funcional tiene la fórmula –COOH?",
+      "opciones": [
+        "Carboxilo",
+        "Aldehído",
+        "Éster",
+        "Cetona"
+      ],
+      "correcta": 0,
+      "explicacion": "Carboxilo = –COOH (terminal). Es el que tienen los ácidos grasos y los aminoácidos."
+    },
+    {
+      "enunciado": "¿Cuál es la fórmula del grupo amino?",
+      "opciones": [
+        "–OH",
+        "–CH₃",
+        "–H₂PO₄",
+        "–NH₂"
+      ],
+      "correcta": 3,
+      "explicacion": "Amino = –NH₂ (terminal)."
+    },
+    {
+      "enunciado": "¿Qué fórmula corresponde al grupo fosfato en la hoja de grupos funcionales?",
+      "opciones": [
+        "–SH",
+        "–COO–",
+        "–H₂PO₄",
+        "–CHO"
+      ],
+      "correcta": 2,
+      "explicacion": "Fosfato = –H₂PO₄ (terminal)."
+    },
+    {
+      "enunciado": "¿Cuál de estos grupos funcionales es NO terminal (tiene carbono a ambos lados)?",
+      "opciones": [
+        "Hidroxilo (–OH)",
+        "Cetona (–CO–)",
+        "Aldehído (–CHO)",
+        "Sulfhidrilo (–SH)"
+      ],
+      "correcta": 1,
+      "explicacion": "Los dos no terminales de la hoja son la cetona (–CO–) y el éster (–COO–); los otros siete son terminales.",
+      "pista": "Busca el grupo que aparece en mitad de la cadena."
+    },
+    {
+      "enunciado": "¿En qué se diferencian el aldehído y la cetona?",
+      "opciones": [
+        "El aldehído (–CHO) está en un extremo de la cadena y la cetona (C=O) en el interior",
+        "El aldehído tiene nitrógeno y la cetona no",
+        "La cetona tiene azufre y el aldehído no",
+        "No hay diferencia: son el mismo grupo"
+      ],
+      "correcta": 0,
+      "explicacion": "Ambos tienen C=O, pero el aldehído es terminal (–CHO) y la cetona es no terminal (–CO–)."
+    }
+  ]
+}

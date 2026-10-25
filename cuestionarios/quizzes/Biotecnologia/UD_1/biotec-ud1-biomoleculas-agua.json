@@ -1,0 +1,150 @@
+{
+  "titulo": "1.3–1.4 · Tipos de biomoléculas y el agua",
+  "descripcion": "Esquemas 1 y 2: biomoléculas inorgánicas y orgánicas, y la molécula de agua",
+  "preguntas": [
+    {
+      "enunciado": "¿Qué caracteriza a las biomoléculas inorgánicas?",
+      "opciones": [
+        "Tienen cadenas largas de carbono",
+        "Solo existen en los animales",
+        "No contienen carbono",
+        "Son todas proteínas"
+      ],
+      "correcta": 2,
+      "explicacion": "Inorgánicas: no contienen carbono (agua, gases, sales minerales). Orgánicas: contienen carbono formando cadenas."
+    },
+    {
+      "enunciado": "¿Cuál de estas biomoléculas es inorgánica?",
+      "opciones": [
+        "Lípidos",
+        "Sales minerales",
+        "Proteínas",
+        "Carbohidratos"
+      ],
+      "correcta": 1,
+      "explicacion": "Las inorgánicas son el agua, los gases y las sales minerales."
+    },
+    {
+      "enunciado": "¿Cuál de estas NO es una biomolécula orgánica?",
+      "opciones": [
+        "El agua",
+        "Los ácidos nucleicos",
+        "Los lípidos",
+        "Los carbohidratos"
+      ],
+      "correcta": 0,
+      "explicacion": "El agua es inorgánica. Las orgánicas son carbohidratos, lípidos, proteínas y ácidos nucleicos."
+    },
+    {
+      "enunciado": "¿Qué caracteriza a las biomoléculas orgánicas?",
+      "opciones": [
+        "No contienen carbono",
+        "Son siempre gases",
+        "Solo contienen hidrógeno y oxígeno",
+        "Contienen carbono formando cadenas"
+      ],
+      "correcta": 3,
+      "explicacion": "Las orgánicas contienen carbono formando cadenas: carbohidratos, lípidos, proteínas y ácidos nucleicos."
+    },
+    {
+      "enunciado": "¿Cuál es la molécula más abundante en los seres vivos?",
+      "opciones": [
+        "La glucosa",
+        "Las proteínas",
+        "El agua",
+        "El ADN"
+      ],
+      "correcta": 2,
+      "explicacion": "El agua es la molécula más abundante en los seres vivos."
+    },
+    {
+      "enunciado": "¿Qué porcentaje de la masa de los seres vivos es agua?",
+      "opciones": [
+        "Entre el 5 y el 10 %",
+        "Entre el 50 y el 90 %",
+        "Exactamente el 75 %",
+        "Menos del 1 %"
+      ],
+      "correcta": 1,
+      "explicacion": "El agua supone entre el 50 y el 90 % de la masa de los seres vivos. El 75 % es la superficie del planeta que cubre.",
+      "pista": "No confundas la masa de los seres vivos con la superficie del planeta."
+    },
+    {
+      "enunciado": "¿Qué parte de la superficie del planeta cubre el agua, aproximadamente?",
+      "opciones": [
+        "Cerca del 75 %",
+        "Cerca del 25 %",
+        "Cerca del 50 %",
+        "Cerca del 99 %"
+      ],
+      "correcta": 0,
+      "explicacion": "El agua cubre cerca del 75 % de la superficie del planeta."
+    },
+    {
+      "enunciado": "¿Cuántos átomos forman la molécula de agua?",
+      "opciones": [
+        "1 de hidrógeno y 2 de oxígeno",
+        "2 de hidrógeno y 2 de oxígeno",
+        "1 de hidrógeno y 1 de oxígeno",
+        "2 de hidrógeno y 1 de oxígeno"
+      ],
+      "correcta": 3,
+      "explicacion": "Fórmula H₂O: 2 átomos de hidrógeno y 1 de oxígeno."
+    },
+    {
+      "enunciado": "¿Cómo se une cada hidrógeno al oxígeno en la molécula de agua?",
+      "opciones": [
+        "Por enlace peptídico",
+        "Por un puente disulfuro",
+        "Por enlace covalente: comparten un par de electrones y cada átomo pone uno",
+        "Por enlace iónico: el oxígeno cede electrones al hidrógeno"
+      ],
+      "correcta": 2,
+      "explicacion": "Enlace covalente: cada H se une al O compartiendo un par de electrones (cada átomo pone un electrón)."
+    },
+    {
+      "enunciado": "¿Qué forma tiene la molécula de agua?",
+      "opciones": [
+        "Lineal",
+        "Triangular (no lineal)",
+        "Circular",
+        "De doble hélice"
+      ],
+      "correcta": 1,
+      "explicacion": "Es triangular por la repulsión entre los electrones del enlace y los cuatro electrones libres del oxígeno."
+    },
+    {
+      "enunciado": "¿Qué provoca la forma triangular de la molécula de agua?",
+      "opciones": [
+        "La repulsión entre los electrones del enlace y los cuatro electrones libres del oxígeno",
+        "Que el hidrógeno tiene más electrones que el oxígeno",
+        "Que los dos hidrógenos se repelen por tener carbono",
+        "Que el agua forma cadenas largas"
+      ],
+      "correcta": 0,
+      "explicacion": "La repulsión entre los electrones del enlace y los cuatro electrones libres del oxígeno hace que adopte forma triangular; eso le da su característica más importante: la polaridad."
+    },
+    {
+      "enunciado": "En la molécula de agua, ¿cómo quedan repartidas las cargas?",
+      "opciones": [
+        "Hidrógenos con carga negativa y oxígeno con carga positiva",
+        "Toda la molécula sin carga en ningún punto",
+        "Solo el oxígeno tiene carga, positiva",
+        "Hidrógenos con carga positiva y oxígeno con carga negativa"
+      ],
+      "correcta": 3,
+      "explicacion": "Polaridad: distribución desigual de los electrones; los hidrógenos quedan cargados positivamente (δ⁺) y el oxígeno negativamente (δ⁻)."
+    },
+    {
+      "enunciado": "¿Por qué el agua es el disolvente ideal?",
+      "opciones": [
+        "Porque no tiene polaridad",
+        "Porque es una molécula lineal",
+        "Porque sus oxígenos (−) son atraídos por los átomos cargados positivamente y los rodean",
+        "Porque contiene carbono"
+      ],
+      "correcta": 2,
+      "explicacion": "La polaridad hace del agua el disolvente ideal: sus oxígenos (−) son atraídos por los átomos cargados positivamente y los rodean."
+    }
+  ]
+}

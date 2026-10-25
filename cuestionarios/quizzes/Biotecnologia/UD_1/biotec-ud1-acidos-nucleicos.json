@@ -1,0 +1,216 @@
+{
+  "titulo": "1.9 · Ácidos nucleicos",
+  "descripcion": "Nucleótidos, ADN frente a ARN, replicación, transcripción y traducción",
+  "preguntas": [
+    {
+      "enunciado": "¿Por qué elementos están formados los ácidos nucleicos?",
+      "opciones": [
+        "Solo C, H y O",
+        "C e H casi exclusivamente",
+        "Fe, Cu y Mg",
+        "C, H, O, N, P y S"
+      ],
+      "correcta": 3,
+      "explicacion": "Los ácidos nucleicos están formados por C, H, O, N, P y S."
+    },
+    {
+      "enunciado": "¿Qué hacen el ADN y el ARN?",
+      "opciones": [
+        "El ADN fabrica proteínas y el ARN almacena la información",
+        "Los dos son reserva de energía",
+        "El ADN almacena la información genética y el ARN la usa para fabricar proteínas",
+        "Los dos forman la pared celular"
+      ],
+      "correcta": 2,
+      "explicacion": "ADN = almacenar; ARN = utilizar la información para fabricar proteínas."
+    },
+    {
+      "enunciado": "¿De qué está formado un nucleótido?",
+      "opciones": [
+        "Pentosa + base nitrogenada",
+        "Pentosa + grupo fosfato + base nitrogenada",
+        "Glicerol + tres ácidos grasos",
+        "Aminoácido + grupo fosfato"
+      ],
+      "correcta": 1,
+      "explicacion": "Nucleótido = pentosa + fosfato + base. Sin el fosfato sería un nucleósido."
+    },
+    {
+      "enunciado": "¿Qué es un nucleósido?",
+      "opciones": [
+        "Pentosa + base nitrogenada",
+        "Pentosa + fosfato + base",
+        "Dos nucleótidos unidos",
+        "Una base nitrogenada sola"
+      ],
+      "correcta": 0,
+      "explicacion": "Pentosa + base = nucleósido; nucleósido + ácido fosfórico = nucleótido."
+    },
+    {
+      "enunciado": "¿Qué es una pentosa?",
+      "opciones": [
+        "Un azúcar de 6 carbonos",
+        "Un aminoácido",
+        "Un ácido graso de 5 carbonos",
+        "Un azúcar de 5 carbonos"
+      ],
+      "correcta": 3,
+      "explicacion": "La pentosa es el azúcar de 5 C del nucleótido."
+    },
+    {
+      "enunciado": "¿Qué azúcar tiene el ADN?",
+      "opciones": [
+        "Ribosa",
+        "Glucosa",
+        "Desoxirribosa",
+        "Fructosa"
+      ],
+      "correcta": 2,
+      "explicacion": "ADN → desoxirribosa; ARN → ribosa."
+    },
+    {
+      "enunciado": "¿Qué base nitrogenada está solo en el ARN?",
+      "opciones": [
+        "Timina (T)",
+        "Uracilo (U)",
+        "Adenina (A)",
+        "Guanina (G)"
+      ],
+      "correcta": 1,
+      "explicacion": "Uracilo solo en ARN; timina solo en ADN. A, G y C están en los dos."
+    },
+    {
+      "enunciado": "¿Qué estructura tienen el ADN y el ARN?",
+      "opciones": [
+        "ADN: doble hélice · ARN: cadena sencilla",
+        "ADN: cadena sencilla · ARN: doble hélice",
+        "Los dos: doble hélice",
+        "Los dos: cadena sencilla"
+      ],
+      "correcta": 0,
+      "explicacion": "El ADN se dispone en doble hélice y el ARN en cadena sencilla."
+    },
+    {
+      "enunciado": "En la doble hélice del ADN, ¿cómo se emparejan las bases?",
+      "opciones": [
+        "A con G y C con T",
+        "A con U y C con G",
+        "A con C y G con T",
+        "A con T y C con G"
+      ],
+      "correcta": 3,
+      "explicacion": "Bases complementarias: A–T y C–G."
+    },
+    {
+      "enunciado": "¿Dónde se encuentra principalmente el ADN?",
+      "opciones": [
+        "En el citoplasma y los ribosomas",
+        "En la pared celular",
+        "En el núcleo y las mitocondrias",
+        "En los lisosomas"
+      ],
+      "correcta": 2,
+      "explicacion": "ADN: principalmente núcleo y mitocondrias. ARN: núcleo, citoplasma y ribosomas."
+    },
+    {
+      "enunciado": "¿Qué molécula almacena la información genética en la mayoría de los virus?",
+      "opciones": [
+        "El ADN",
+        "El ARN",
+        "Las proteínas",
+        "Los lípidos"
+      ],
+      "correcta": 1,
+      "explicacion": "El ADN la almacena en la mayoría de organismos y el ARN en la mayoría de los virus."
+    },
+    {
+      "enunciado": "¿Cuáles son las tres fases de la fabricación de proteínas?",
+      "opciones": [
+        "Replicación, transcripción y traducción",
+        "Transcripción, replicación y digestión",
+        "Traducción, saponificación y replicación",
+        "Glucólisis, transcripción y traducción"
+      ],
+      "correcta": 0,
+      "explicacion": "Replicación (copia el ADN), transcripción (ARNm a partir del ADN) y traducción (cadena de aminoácidos a partir del ARNm)."
+    },
+    {
+      "enunciado": "En la replicación, ¿qué enzima separa las dos cadenas «como una cremallera»?",
+      "opciones": [
+        "La ADN polimerasa",
+        "La ARN polimerasa",
+        "La lactasa",
+        "La helicasa"
+      ],
+      "correcta": 3,
+      "explicacion": "La helicasa separa las cadenas; la ADN polimerasa añade los nucleótidos complementarios."
+    },
+    {
+      "enunciado": "¿Por qué se dice que la replicación es semiconservativa?",
+      "opciones": [
+        "Porque solo se copia la mitad del ADN",
+        "Porque se pierde la mitad del ADN",
+        "Porque cada ADN nuevo conserva una cadena original y lleva otra recién fabricada",
+        "Porque solo ocurre en la mitad de las células"
+      ],
+      "correcta": 2,
+      "explicacion": "Cada molécula nueva conserva la mitad de la original."
+    },
+    {
+      "enunciado": "¿Qué enzima fabrica el ARN mensajero en la transcripción?",
+      "opciones": [
+        "La helicasa",
+        "La ARN polimerasa",
+        "La ADN polimerasa",
+        "La lactasa"
+      ],
+      "correcta": 1,
+      "explicacion": "La ARN polimerasa usa una cadena del ADN como molde y construye el ARNm."
+    },
+    {
+      "enunciado": "En la transcripción, ¿qué ARNm se obtiene del ADN molde TAC?",
+      "opciones": [
+        "AUG",
+        "ATG",
+        "UAC",
+        "TAC"
+      ],
+      "correcta": 0,
+      "explicacion": "Emparejamiento ADN molde → ARN: A→U, T→A, C→G, G→C. TAC → AUG.",
+      "pista": "Recuerda que en el ARN no hay timina."
+    },
+    {
+      "enunciado": "¿Qué es un codón?",
+      "opciones": [
+        "Un aminoácido",
+        "Un grupo de 2 nucleótidos del ADN",
+        "Una enzima del ribosoma",
+        "Un grupo de 3 bases del ARNm"
+      ],
+      "correcta": 3,
+      "explicacion": "Los ribosomas leen el ARNm de tres en tres bases: cada triplete es un codón."
+    },
+    {
+      "enunciado": "¿Qué codón suele marcar el inicio de la traducción?",
+      "opciones": [
+        "UAA",
+        "UGA",
+        "AUG (metionina)",
+        "GGC"
+      ],
+      "correcta": 2,
+      "explicacion": "AUG = inicio (metionina). UAA, UAG y UGA son de parada."
+    },
+    {
+      "enunciado": "El ARNm AUG UUU GGC UAA se traduce como…",
+      "opciones": [
+        "Metionina – Glicina – Fenilalanina – Metionina",
+        "Metionina – Fenilalanina – Glicina (y UAA = parada)",
+        "Glicina – Fenilalanina – Metionina",
+        "Fenilalanina – Fenilalanina – Glicina – Parada"
+      ],
+      "correcta": 1,
+      "explicacion": "Ejemplo de los apuntes: TAC AAA CCG ATT → AUG UUU GGC UAA → Met – Phe – Gly; UAA termina la traducción."
+    }
+  ]
+}

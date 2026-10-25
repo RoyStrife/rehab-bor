@@ -1,0 +1,239 @@
+{
+  "titulo": "1.5 · Carbohidratos",
+  "descripcion": "Monosacáridos, oligosacáridos, polisacáridos y funciones de los carbohidratos",
+  "preguntas": [
+    {
+      "enunciado": "¿Cuál es la principal fuente de energía de los seres vivos?",
+      "opciones": [
+        "Los ácidos nucleicos",
+        "Las sales minerales",
+        "El agua",
+        "Los carbohidratos"
+      ],
+      "correcta": 3,
+      "explicacion": "Los carbohidratos son la principal fuente de energía; también tienen función estructural o de reserva."
+    },
+    {
+      "enunciado": "¿Cuál de estos NO es otro nombre de los carbohidratos?",
+      "opciones": [
+        "Glúcidos",
+        "Sacáridos",
+        "Lípidos",
+        "Polialcoholes"
+      ],
+      "correcta": 2,
+      "explicacion": "Otros nombres de los carbohidratos: polialcoholes, glúcidos, sacáridos, hidratos de carbono o azúcares."
+    },
+    {
+      "enunciado": "¿Según qué criterio se clasifican los carbohidratos?",
+      "opciones": [
+        "Según su color",
+        "Según el número de unidades",
+        "Según si tienen nitrógeno",
+        "Según la temperatura a la que funden"
+      ],
+      "correcta": 1,
+      "explicacion": "Según el número de unidades: monosacáridos, oligosacáridos y polisacáridos."
+    },
+    {
+      "enunciado": "¿En qué proporción tienen C, H y O los monosacáridos?",
+      "opciones": [
+        "1:2:1",
+        "2:1:2",
+        "1:1:1",
+        "3:6:1"
+      ],
+      "correcta": 0,
+      "explicacion": "C, H y O en proporción 1:2:1; fórmula general (CH₂O)ₙ."
+    },
+    {
+      "enunciado": "En la fórmula general de los monosacáridos (CH₂O)ₙ, ¿entre qué valores está n?",
+      "opciones": [
+        "De 10 a 100",
+        "De 1 a 2",
+        "Más de 51",
+        "De 2 a 8"
+      ],
+      "correcta": 3,
+      "explicacion": "n es el número de carbonos y va de 2 a 8. Los más conocidos tienen 6."
+    },
+    {
+      "enunciado": "En un monosacárido, todos los carbonos llevan un –OH y un –H excepto uno. ¿Qué lleva ese carbono?",
+      "opciones": [
+        "Un grupo amino",
+        "Un grupo fosfato",
+        "Un grupo aldehído o un grupo cetona",
+        "Un grupo sulfhidrilo"
+      ],
+      "correcta": 2,
+      "explicacion": "Ese carbono lleva un aldehído (como la glucosa) o una cetona (como la fructosa)."
+    },
+    {
+      "enunciado": "¿Cuántos carbonos tienen la glucosa, la fructosa y la galactosa?",
+      "opciones": [
+        "5",
+        "6",
+        "3",
+        "12"
+      ],
+      "correcta": 1,
+      "explicacion": "Los monosacáridos más conocidos tienen 6 carbonos: glucosa, fructosa y galactosa.",
+      "pista": "Las pentosas de los ácidos nucleicos tienen 5; estos no."
+    },
+    {
+      "enunciado": "¿Qué grupo funcional tiene la glucosa?",
+      "opciones": [
+        "Aldehído",
+        "Cetona",
+        "Carboxilo",
+        "Amino"
+      ],
+      "correcta": 0,
+      "explicacion": "Glucosa → aldehído; fructosa → cetona."
+    },
+    {
+      "enunciado": "¿Qué grupo funcional tiene la fructosa?",
+      "opciones": [
+        "Aldehído",
+        "Hidroxilo únicamente",
+        "Fosfato",
+        "Cetona"
+      ],
+      "correcta": 3,
+      "explicacion": "La fructosa (levulosa) tiene un grupo cetona; la glucosa, un aldehído."
+    },
+    {
+      "enunciado": "¿Cuál es el carbohidrato más dulce?",
+      "opciones": [
+        "La glucosa",
+        "El almidón",
+        "La fructosa",
+        "La celulosa"
+      ],
+      "correcta": 2,
+      "explicacion": "La fructosa o levulosa es el más dulce de los carbohidratos; está en frutos, vegetales y miel."
+    },
+    {
+      "enunciado": "¿Qué monosacárido es la única forma de azúcar que el cuerpo usa como fuente de energía?",
+      "opciones": [
+        "La fructosa",
+        "La glucosa",
+        "La galactosa",
+        "La ribosa"
+      ],
+      "correcta": 1,
+      "explicacion": "La glucosa es la principal fuente de energía y el carbohidrato de mayor importancia biológica."
+    },
+    {
+      "enunciado": "¿En qué forma se encuentran los carbohidratos en la naturaleza?",
+      "opciones": [
+        "Cíclica (la cadena se cierra en anillo)",
+        "Siempre en cadena abierta",
+        "En doble hélice",
+        "En lámina β"
+      ],
+      "correcta": 0,
+      "explicacion": "En la naturaleza están en forma cíclica: p. ej., la D-glucosa se cierra como α-D-glucopiranosa."
+    },
+    {
+      "enunciado": "¿Cuántos monosacáridos forman un oligosacárido?",
+      "opciones": [
+        "Solo 1",
+        "Más de 10",
+        "Más de 120.000",
+        "De 2 a 10"
+      ],
+      "correcta": 3,
+      "explicacion": "Oligosacáridos: cadenas cortas de 2 a 10 monosacáridos."
+    },
+    {
+      "enunciado": "¿Qué monosacáridos forman la sacarosa (el azúcar común)?",
+      "opciones": [
+        "Glucosa + galactosa",
+        "Glucosa + glucosa",
+        "Glucosa + fructosa",
+        "Fructosa + galactosa"
+      ],
+      "correcta": 2,
+      "explicacion": "Sacarosa = glucosa + fructosa.",
+      "pista": "La lactosa es la de la galactosa."
+    },
+    {
+      "enunciado": "¿Qué monosacáridos forman la lactosa?",
+      "opciones": [
+        "Glucosa + fructosa",
+        "Glucosa + galactosa",
+        "Fructosa + fructosa",
+        "Galactosa + fructosa"
+      ],
+      "correcta": 1,
+      "explicacion": "Lactosa = glucosa + galactosa; es el azúcar de la leche."
+    },
+    {
+      "enunciado": "¿Qué se libera cuando se unen dos monosacáridos?",
+      "opciones": [
+        "Una molécula de agua",
+        "Una molécula de glucosa",
+        "Un aminoácido",
+        "Un grupo fosfato"
+      ],
+      "correcta": 0,
+      "explicacion": "Al unirse los dos monosacáridos se libera una molécula de agua."
+    },
+    {
+      "enunciado": "¿Cuántos monosacáridos tiene un polisacárido?",
+      "opciones": [
+        "Entre 2 y 10",
+        "Exactamente 2",
+        "Solo 1",
+        "Más de 10 (hasta cientos o miles)"
+      ],
+      "correcta": 3,
+      "explicacion": "Polisacáridos: más de 10 monosacáridos, de 11 a varios cientos o miles."
+    },
+    {
+      "enunciado": "¿Qué polisacárido es la reserva de glucosa de los vegetales?",
+      "opciones": [
+        "El glucógeno",
+        "La celulosa",
+        "El almidón",
+        "La lactosa"
+      ],
+      "correcta": 2,
+      "explicacion": "Almidón: reserva vegetal. Glucógeno: reserva animal. Celulosa: estructural vegetal."
+    },
+    {
+      "enunciado": "¿Dónde se sintetiza y dónde se almacena el glucógeno?",
+      "opciones": [
+        "Se sintetiza en los músculos y se almacena en el hígado",
+        "Se sintetiza en el hígado y se almacena en los músculos",
+        "Se sintetiza y se almacena en las hojas",
+        "Se sintetiza en el intestino y se almacena en la sangre"
+      ],
+      "correcta": 1,
+      "explicacion": "El glucógeno es la reserva de los animales: se sintetiza en el hígado y se almacena en los músculos. Una molécula puede tener más de 120.000 glucosas."
+    },
+    {
+      "enunciado": "¿Cuál es la función de la celulosa?",
+      "opciones": [
+        "Estructural en los vegetales (paredes celulares de los tejidos de sostén)",
+        "Reserva de energía en los animales",
+        "Transportar oxígeno",
+        "Acelerar reacciones"
+      ],
+      "correcta": 0,
+      "explicacion": "La celulosa es la molécula estructural de los vegetales: soporte de tallos, troncos, hojas, flores y semillas."
+    },
+    {
+      "enunciado": "En la dieta humana, ¿qué alimentos aportan sobre todo hidratos complejos (almidón)?",
+      "opciones": [
+        "Frutas y verduras",
+        "Carne y pescado",
+        "Aceite de oliva",
+        "Cereales integrales, patatas o pasta"
+      ],
+      "correcta": 3,
+      "explicacion": "Hidratos complejos: cereales integrales, patatas, pasta. Simples: frutas y verduras."
+    }
+  ]
+}

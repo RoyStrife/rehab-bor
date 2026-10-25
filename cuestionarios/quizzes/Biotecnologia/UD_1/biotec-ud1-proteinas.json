@@ -1,0 +1,272 @@
+{
+  "titulo": "1.7 · Proteínas",
+  "descripcion": "Aminoácidos, enlace peptídico, los cuatro niveles estructurales, desnaturalización y funciones",
+  "preguntas": [
+    {
+      "enunciado": "¿Qué significa la palabra griega protos, de la que viene «proteína»?",
+      "opciones": [
+        "Lo pequeño",
+        "Lo primero, lo principal, lo más importante",
+        "Lo que da energía",
+        "Lo que se disuelve"
+      ],
+      "correcta": 1,
+      "explicacion": "Proteína viene del griego protos: lo primero, lo principal, lo más importante."
+    },
+    {
+      "enunciado": "¿Qué dos grupos funcionales tiene todo aminoácido?",
+      "opciones": [
+        "Carboxilo (–COOH) y amino (–NH₂)",
+        "Aldehído y cetona",
+        "Hidroxilo y fosfato",
+        "Metilo y sulfhidrilo"
+      ],
+      "correcta": 0,
+      "explicacion": "Los aminoácidos son compuestos orgánicos con un grupo carboxilo y un grupo amino."
+    },
+    {
+      "enunciado": "¿Cuál es la fórmula genérica de un aminoácido?",
+      "opciones": [
+        "CH₃–(CHₓ)ₙ–COOH",
+        "(CH₂O)ₙ",
+        "H₂O",
+        "H₂N–CH(R)–COOH"
+      ],
+      "correcta": 3,
+      "explicacion": "H₂N–CH(R)–COOH. CH₃–(CHₓ)ₙ–COOH es la del ácido graso y (CH₂O)ₙ la de los monosacáridos."
+    },
+    {
+      "enunciado": "¿Qué es el radical R de un aminoácido?",
+      "opciones": [
+        "Siempre un átomo de hidrógeno",
+        "El grupo carboxilo",
+        "Una cadena de estructura variable que determina la identidad y las propiedades de cada aminoácido",
+        "Un monosacárido"
+      ],
+      "correcta": 2,
+      "explicacion": "R es el radical; hay cientos de radicales y, por tanto, cientos de aminoácidos."
+    },
+    {
+      "enunciado": "¿Cuántos aminoácidos forman parte de las proteínas?",
+      "opciones": [
+        "Cientos",
+        "20",
+        "4",
+        "51"
+      ],
+      "correcta": 1,
+      "explicacion": "Hay cientos de aminoácidos, pero solo 20 forman parte de las proteínas.",
+      "pista": "Ojo: «más de 51» es otra cifra del tema."
+    },
+    {
+      "enunciado": "¿Cuál de estos NO está entre los 20 aminoácidos de las proteínas según los apuntes?",
+      "opciones": [
+        "Glucosamina",
+        "Triptófano",
+        "Histidina",
+        "Cisteína"
+      ],
+      "correcta": 0,
+      "explicacion": "La lista de los apuntes incluye glicina, alanina, valina, leucina, isoleucina, serina, treonina, cisteína, metionina, ácido aspártico y glutámico, lisina, arginina, asparagina, glutamina, fenilalanina, tirosina, prolina, triptófano e histidina."
+    },
+    {
+      "enunciado": "¿Cómo se unen los aminoácidos entre sí?",
+      "opciones": [
+        "Mediante un puente de hidrógeno que consume agua",
+        "Mediante enlaces disulfuro siempre",
+        "Mediante el grupo fosfato",
+        "Mediante un enlace peptídico, en una reacción que libera agua"
+      ],
+      "correcta": 3,
+      "explicacion": "Los aminoácidos se unen por enlace peptídico liberando agua."
+    },
+    {
+      "enunciado": "¿Cuántos aminoácidos tiene un oligopéptido?",
+      "opciones": [
+        "10 o más",
+        "Más de 51",
+        "Hasta 9",
+        "Exactamente 20"
+      ],
+      "correcta": 2,
+      "explicacion": "Oligopéptido: hasta 9 (dipéptido = 2, tripéptido = 3…). Polipéptido: 10 o más."
+    },
+    {
+      "enunciado": "¿A partir de cuántos aminoácidos se habla de proteína?",
+      "opciones": [
+        "Más de 9",
+        "Más de 51",
+        "Más de 10",
+        "Más de 1.000"
+      ],
+      "correcta": 1,
+      "explicacion": "Los polipéptidos de más de 51 aminoácidos se denominan proteínas."
+    },
+    {
+      "enunciado": "¿Qué es la titina?",
+      "opciones": [
+        "La proteína más grande conocida en humanos, con unos 34.000 aminoácidos",
+        "Un aminoácido esencial",
+        "El azúcar de la leche",
+        "Una enzima que separa el ADN"
+      ],
+      "correcta": 0,
+      "explicacion": "La titina (músculo) tiene unos 34.000 aminoácidos."
+    },
+    {
+      "enunciado": "¿Dónde ocurre la unión de aminoácidos?",
+      "opciones": [
+        "En los lisosomas",
+        "En la pared celular",
+        "En el aparato de Golgi",
+        "En los ribosomas"
+      ],
+      "correcta": 3,
+      "explicacion": "La unión de aminoácidos ocurre en los ribosomas."
+    },
+    {
+      "enunciado": "¿Qué es la estructura primaria de una proteína?",
+      "opciones": [
+        "Su forma 3D",
+        "La unión de varias cadenas",
+        "La secuencia de aminoácidos: cuáles forman la cadena y en qué orden",
+        "El enrollamiento en hélice"
+      ],
+      "correcta": 2,
+      "explicacion": "Primaria = secuencia, como las letras de una palabra; unida por enlaces peptídicos (fuertes)."
+    },
+    {
+      "enunciado": "¿Qué mantiene la α-hélice?",
+      "opciones": [
+        "Enlaces peptídicos entre cadenas distintas",
+        "Puentes de hidrógeno entre el –C=O de un aminoácido y el –NH– del cuarto que le sigue",
+        "Enlaces disulfuro entre glucosas",
+        "Fuerzas iónicas con el agua exclusivamente"
+      ],
+      "correcta": 1,
+      "explicacion": "En la α-hélice la estructura primaria se enrolla sobre sí misma por puentes de H entre el C=O y el NH del cuarto aminoácido."
+    },
+    {
+      "enunciado": "¿Cómo es la lámina β?",
+      "opciones": [
+        "Un plegamiento en zigzag (acordeón) con varias cadenas dispuestas en paralelo",
+        "Una hélice enrollada sobre sí misma",
+        "Un anillo cerrado",
+        "La unión de cuatro protómeros"
+      ],
+      "correcta": 0,
+      "explicacion": "Lámina β: plegamiento en zigzag; los aminoácidos quedan escalonados en pliegues paralelos."
+    },
+    {
+      "enunciado": "¿De qué nivel estructural depende la función o actividad biológica de la proteína?",
+      "opciones": [
+        "De la estructura primaria",
+        "De la estructura secundaria",
+        "De ninguna estructura",
+        "De la estructura terciaria"
+      ],
+      "correcta": 3,
+      "explicacion": "De la estabilidad de la terciaria (forma 3D) depende la función.",
+      "pista": "Es la que da la forma 3D."
+    },
+    {
+      "enunciado": "¿Qué son los enlaces disulfuro que estabilizan la estructura terciaria?",
+      "opciones": [
+        "Enlaces débiles entre moléculas de agua",
+        "Enlaces entre glucosas",
+        "Enlaces fuertes entre los átomos de azufre de la cisteína",
+        "Enlaces entre bases nitrogenadas"
+      ],
+      "correcta": 2,
+      "explicacion": "La terciaria se estabiliza con puentes de H, interacciones iónicas y enlaces disulfuro (entre los azufres de la cisteína)."
+    },
+    {
+      "enunciado": "¿Cómo son las proteínas fibrosas?",
+      "opciones": [
+        "Esféricas y muy solubles (p. ej., enzimas)",
+        "Alargadas, poco solubles en agua y con función estructural (p. ej., colágeno)",
+        "Formadas por glucosa",
+        "Siempre de cadena única con 9 aminoácidos"
+      ],
+      "correcta": 1,
+      "explicacion": "Fibrosas: alargadas, poco solubles, estructurales. Globulares: compactas, muy solubles, funciones diversas (enzimas)."
+    },
+    {
+      "enunciado": "¿Qué es la estructura cuaternaria?",
+      "opciones": [
+        "La unión de varias cadenas con estructura terciaria mediante enlaces débiles",
+        "La secuencia de aminoácidos",
+        "El plegamiento en zigzag",
+        "La pérdida de todas las estructuras"
+      ],
+      "correcta": 0,
+      "explicacion": "Cuaternaria: varias cadenas (protómeros) unidas por enlaces no covalentes forman un complejo proteico."
+    },
+    {
+      "enunciado": "¿Cuántas cadenas tiene la hemoglobina?",
+      "opciones": [
+        "2: una α y una β",
+        "60",
+        "1",
+        "4: dos α y dos β"
+      ],
+      "correcta": 3,
+      "explicacion": "La hemoglobina tiene 4 protómeros (dos α y dos β), necesarios para transportar oxígeno."
+    },
+    {
+      "enunciado": "¿Qué le ocurre a una proteína al desnaturalizarse (p. ej., al cocer un huevo)?",
+      "opciones": [
+        "Pierde la estructura primaria y mantiene las demás",
+        "Gana una estructura quinaria",
+        "Pierde sus estructuras y solo mantiene la primaria",
+        "Se convierte en glucosa"
+      ],
+      "correcta": 2,
+      "explicacion": "Desnaturalización: se pierde todo menos la estructura primaria."
+    },
+    {
+      "enunciado": "¿Qué función tienen la hemoglobina y el colesterol-LDL/HDL?",
+      "opciones": [
+        "Contráctil",
+        "Transporte",
+        "Reserva",
+        "Hormonal"
+      ],
+      "correcta": 1,
+      "explicacion": "Transporte: llevan sustancias por el organismo o a través de membranas."
+    },
+    {
+      "enunciado": "La actina y la miosina tienen función…",
+      "opciones": [
+        "Contráctil",
+        "Defensiva",
+        "Homeostática",
+        "Enzimática"
+      ],
+      "correcta": 0,
+      "explicacion": "Contráctil: permiten el movimiento, sobre todo la contracción muscular."
+    },
+    {
+      "enunciado": "¿Qué función tienen la caseína de la leche y la ovoalbúmina de la clara?",
+      "opciones": [
+        "Estructural",
+        "Transporte",
+        "Defensiva",
+        "Reserva"
+      ],
+      "correcta": 3,
+      "explicacion": "Reserva: almacenan aminoácidos para el recién nacido (caseína) o para el desarrollo del embrión (ovoalbúmina)."
+    },
+    {
+      "enunciado": "¿Qué ejemplo corresponde a la función homeostática?",
+      "opciones": [
+        "Los anticuerpos",
+        "La queratina",
+        "La albúmina, que retiene el agua en los vasos",
+        "La lactasa"
+      ],
+      "correcta": 2,
+      "explicacion": "Homeostática: mantienen estables pH y equilibrio de líquidos; ej. proteínas de la sangre y albúmina."
+    }
+  ]
+}

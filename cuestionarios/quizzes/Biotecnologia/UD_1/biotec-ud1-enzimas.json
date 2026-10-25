@@ -1,0 +1,182 @@
+{
+  "titulo": "1.8 · Enzimas",
+  "descripcion": "Energía de activación, catalizadores, las 4 características de las enzimas y la lactasa",
+  "preguntas": [
+    {
+      "enunciado": "¿Qué son las enzimas?",
+      "opciones": [
+        "Lípidos de reserva",
+        "Azúcares simples",
+        "Proteínas que actúan como catalizadores en los seres vivos",
+        "Bases nitrogenadas"
+      ],
+      "correcta": 2,
+      "explicacion": "Las enzimas son proteínas que actúan como catalizadores y hacen posible el metabolismo."
+    },
+    {
+      "enunciado": "¿Qué es la energía de activación?",
+      "opciones": [
+        "La energía que aportan los lípidos por gramo",
+        "La energía que deben recibir las sustancias para que la reacción se lleve a cabo",
+        "La energía que libera la glucosa al quemarse",
+        "La energía que gasta la enzima al consumirse"
+      ],
+      "correcta": 1,
+      "explicacion": "Para que una reacción ocurra, las sustancias necesitan recibir una cantidad de energía: la energía de activación."
+    },
+    {
+      "enunciado": "¿Cómo aceleran las reacciones los catalizadores?",
+      "opciones": [
+        "Disminuyendo la energía de activación necesaria",
+        "Aumentando la energía de activación",
+        "Consumiéndose en la reacción",
+        "Subiendo la temperatura del cuerpo"
+      ],
+      "correcta": 0,
+      "explicacion": "Los catalizadores disminuyen la energía de activación."
+    },
+    {
+      "enunciado": "¿Cuánto aumentan las enzimas la velocidad de las reacciones?",
+      "opciones": [
+        "Unas 2 veces",
+        "Unas 10 veces",
+        "No la aumentan",
+        "Típicamente entre 10⁸ y 10¹³ veces"
+      ],
+      "correcta": 3,
+      "explicacion": "Entre 10⁸ y 10¹³ veces: sin ellas las reacciones serían lentísimas o no ocurrirían."
+    },
+    {
+      "enunciado": "¿Qué le pasa a la enzima al terminar la reacción?",
+      "opciones": [
+        "Se destruye",
+        "Se convierte en producto",
+        "Queda libre y puede volver a actuar: no se gasta ni se modifica",
+        "Se transforma en sustrato"
+      ],
+      "correcta": 2,
+      "explicacion": "Característica 2: no se ven afectadas por la reacción; actúan por su presencia."
+    },
+    {
+      "enunciado": "¿Qué significa que las enzimas son específicas?",
+      "opciones": [
+        "Cada enzima actúa sobre cualquier molécula",
+        "Cada enzima actúa sobre una única molécula, su sustrato",
+        "Solo actúan en el estómago",
+        "Solo actúan a una hora concreta"
+      ],
+      "correcta": 1,
+      "explicacion": "Especificidad: cada enzima, su sustrato."
+    },
+    {
+      "enunciado": "¿Qué es el sitio activo?",
+      "opciones": [
+        "El lugar donde la enzima se une al sustrato",
+        "El núcleo de la célula",
+        "La molécula que inhibe a la enzima",
+        "El producto de la reacción"
+      ],
+      "correcta": 0,
+      "explicacion": "Sitio activo = lugar de unión enzima–sustrato."
+    },
+    {
+      "enunciado": "¿Qué es el sustrato?",
+      "opciones": [
+        "La sustancia que inhibe a la enzima",
+        "El producto final",
+        "La energía de activación",
+        "La molécula sobre la que actúa la enzima"
+      ],
+      "correcta": 3,
+      "explicacion": "Sustrato: la molécula sobre la que actúa la enzima."
+    },
+    {
+      "enunciado": "¿Qué ocurre si falta el activador de una enzima?",
+      "opciones": [
+        "La enzima actúa más rápido",
+        "La enzima se convierte en inhibidor",
+        "La enzima no actúa",
+        "No cambia nada"
+      ],
+      "correcta": 2,
+      "explicacion": "Activadores: sin ellos la enzima no actúa."
+    },
+    {
+      "enunciado": "¿Qué ocurre si hay un inhibidor?",
+      "opciones": [
+        "La enzima actúa el doble",
+        "La enzima no actúa",
+        "Se forma más producto",
+        "La enzima se gasta"
+      ],
+      "correcta": 1,
+      "explicacion": "Inhibidores: si hay inhibidor, la enzima no actúa."
+    },
+    {
+      "enunciado": "¿Cuál NO es una de las cuatro características de las enzimas?",
+      "opciones": [
+        "Se consumen en la reacción",
+        "Aumentan la velocidad de las reacciones",
+        "Son específicas",
+        "Pueden ser reguladas"
+      ],
+      "correcta": 0,
+      "explicacion": "Las cuatro: aumentan la velocidad, no se ven afectadas (no se gastan), son específicas y pueden ser reguladas."
+    },
+    {
+      "enunciado": "En la gráfica de producto frente a tiempo, ¿qué muestra la curva con enzima?",
+      "opciones": [
+        "Que se forma menos producto",
+        "Que no se forma producto",
+        "Que la enzima desaparece",
+        "Que se forma mucho más producto en el mismo tiempo"
+      ],
+      "correcta": 3,
+      "explicacion": "Con enzima se forma mucho más producto en el mismo tiempo."
+    },
+    {
+      "enunciado": "¿En qué descompone la lactasa a la lactosa?",
+      "opciones": [
+        "Glucosa y fructosa",
+        "Dos glucosas",
+        "Glucosa y galactosa",
+        "Aminoácidos"
+      ],
+      "correcta": 2,
+      "explicacion": "La lactasa descompone la lactosa en glucosa y galactosa, que sí se absorben."
+    },
+    {
+      "enunciado": "¿Dónde se produce la lactasa?",
+      "opciones": [
+        "En el colon",
+        "En el intestino delgado",
+        "En el hígado",
+        "En la leche"
+      ],
+      "correcta": 1,
+      "explicacion": "La lactasa se produce en el intestino delgado."
+    },
+    {
+      "enunciado": "¿Qué ocurre en una persona con intolerancia a la lactosa?",
+      "opciones": [
+        "No produce suficiente lactasa y parte de la lactosa llega sin digerir al colon",
+        "Produce demasiada lactasa",
+        "No puede absorber la glucosa",
+        "Su cuerpo fabrica lactosa en exceso"
+      ],
+      "correcta": 0,
+      "explicacion": "Sin suficiente lactasa la lactosa llega al colon sin digerir y causa gases, hinchazón o diarrea."
+    },
+    {
+      "enunciado": "¿Cómo se obtiene la leche sin lactosa?",
+      "opciones": [
+        "Quitando las proteínas de la leche",
+        "Hirviendo la leche",
+        "Añadiendo glucosa",
+        "Añadiendo lactasa a la leche para descomponer la lactosa antes de consumirla"
+      ],
+      "correcta": 3,
+      "explicacion": "Conocer la enzima permitió usarla en la industria: lactasa añadida → leche sin lactosa."
+    }
+  ]
+}

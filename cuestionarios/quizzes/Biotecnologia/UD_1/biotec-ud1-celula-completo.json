@@ -1,0 +1,172 @@
+{
+  "titulo": "2 · La célula (repaso completo)",
+  "descripcion": "2.1–2.5: teoría celular, procariota y eucariota, orgánulos y cómo identificar una célula",
+  "preguntas": [
+    {
+      "enunciado": "¿Qué funciones vitales realiza la célula, esa «minifábrica»?",
+      "opciones": [
+        "Nutrirse, crecer, reproducirse y relacionarse",
+        "Solo reproducirse",
+        "Solo fabricar energía",
+        "Fotosíntesis y respiración únicamente"
+      ],
+      "correcta": 0,
+      "explicacion": "La célula es la unidad más pequeña «viva» y realiza todas las funciones vitales."
+    },
+    {
+      "enunciado": "¿Qué dice la teoría celular?",
+      "opciones": [
+        "Solo los animales tienen células",
+        "Las células proceden de los ácidos grasos",
+        "Los virus son la unidad básica de la vida",
+        "Todos los seres vivos están formados por células; la célula es la unidad estructural y funcional"
+      ],
+      "correcta": 3,
+      "explicacion": "Teoría celular: todos los seres vivos están formados por células, unidad estructural y funcional."
+    },
+    {
+      "enunciado": "¿Cuáles son ejemplos de seres unicelulares?",
+      "opciones": [
+        "Plantas y animales",
+        "Hongos y algas pluricelulares",
+        "Bacterias y levaduras",
+        "Solo los humanos"
+      ],
+      "correcta": 2,
+      "explicacion": "Unicelulares: una sola célula (bacterias, levaduras). Pluricelulares: millones de células (plantas, animales)."
+    },
+    {
+      "enunciado": "¿Cuáles son las partes principales de una célula?",
+      "opciones": [
+        "Pared, cloroplasto y vacuola",
+        "Membrana, citoplasma y núcleo",
+        "Flagelo, pili y cápsula",
+        "Ribosoma, plásmido y lisosoma"
+      ],
+      "correcta": 1,
+      "explicacion": "Partes principales: membrana, citoplasma y núcleo."
+    },
+    {
+      "enunciado": "¿Qué tienen en común procariotas y eucariotas?",
+      "opciones": [
+        "Membrana plasmática, citoplasma, ribosomas y ADN",
+        "Núcleo con doble membrana",
+        "Mitocondrias y cloroplastos",
+        "Lisosomas y centriolos"
+      ],
+      "correcta": 0,
+      "explicacion": "Comunes a ambas: membrana plasmática, citoplasma, ribosomas y ADN."
+    },
+    {
+      "enunciado": "¿Cuál de estos seres es eucariota?",
+      "opciones": [
+        "Una bacteria",
+        "Una cianobacteria",
+        "Ninguno, todos son procariotas",
+        "Una levadura"
+      ],
+      "correcta": 3,
+      "explicacion": "Eucariotas: animales, plantas, mohos, algas, hongos, levaduras y protozoos. Procariotas: bacterias."
+    },
+    {
+      "enunciado": "¿Qué función tiene la cápsula de una bacteria?",
+      "opciones": [
+        "Fabrica proteínas",
+        "Sirve para moverse",
+        "Es una capa protectora externa que dificulta, p. ej., el ataque del sistema inmunitario",
+        "Hace la fotosíntesis"
+      ],
+      "correcta": 2,
+      "explicacion": "La cápsula (opcional) es la capa más externa y protege a la bacteria."
+    },
+    {
+      "enunciado": "¿Qué orgánulo participa en la formación de los ribosomas?",
+      "opciones": [
+        "El lisosoma",
+        "El nucléolo",
+        "La vacuola",
+        "El centriolo"
+      ],
+      "correcta": 1,
+      "explicacion": "El nucléolo, dentro del núcleo, participa en la formación de los ribosomas."
+    },
+    {
+      "enunciado": "¿Qué hace el retículo endoplasmático liso (REL)?",
+      "opciones": [
+        "Fabrica lípidos",
+        "Fabrica proteínas gracias a sus ribosomas",
+        "Degrada residuos",
+        "Hace la fotosíntesis"
+      ],
+      "correcta": 0,
+      "explicacion": "REL → lípidos. RER → proteínas (tiene ribosomas)."
+    },
+    {
+      "enunciado": "¿Qué hace el aparato de Golgi?",
+      "opciones": [
+        "Produce energía (ATP)",
+        "Contiene el ADN",
+        "Divide la célula",
+        "Modifica y distribuye proteínas y otras moléculas"
+      ],
+      "correcta": 3,
+      "explicacion": "Golgi: modifica y distribuye."
+    },
+    {
+      "enunciado": "¿Qué función tienen los centriolos y en qué célula son habituales?",
+      "opciones": [
+        "Fotosíntesis; solo en la vegetal",
+        "Degradar residuos; solo en la vegetal",
+        "División celular; habituales en la animal y generalmente no en la vegetal",
+        "Fabricar lípidos; en las dos por igual"
+      ],
+      "correcta": 2,
+      "explicacion": "Centriolos: división celular; habitualmente sí en la animal, generalmente no en la vegetal."
+    },
+    {
+      "enunciado": "Si una eucariota perdiera el núcleo, ¿qué perdería?",
+      "opciones": [
+        "Solo la pared celular",
+        "La mayor parte de su ADN y, con él, la información para fabricar proteínas",
+        "Solo las mitocondrias",
+        "Nada importante"
+      ],
+      "correcta": 1,
+      "explicacion": "El núcleo contiene la mayor parte del ADN; sin él se pierde la información para fabricar proteínas."
+    },
+    {
+      "enunciado": "¿Por qué se dice que la célula eucariota está «más organizada»?",
+      "opciones": [
+        "Porque tiene orgánulos (compartimentos) y cada función se hace en su sitio",
+        "Porque es más pequeña",
+        "Porque no tiene ADN",
+        "Porque solo tiene una función"
+      ],
+      "correcta": 0,
+      "explicacion": "Ventaja de los orgánulos: núcleo → ADN, mitocondrias → ATP, RER → proteínas, REL → lípidos, Golgi → distribuye, lisosomas → residuos."
+    },
+    {
+      "enunciado": "Si ves una célula con pared celular pero sin cloroplastos, ¿qué es?",
+      "opciones": [
+        "Una célula vegetal",
+        "Una célula animal",
+        "Una levadura con núcleo vegetal",
+        "Una bacteria"
+      ],
+      "correcta": 3,
+      "explicacion": "Tabla «Cómo identificar una célula»: pared sin cloroplastos → bacteria.",
+      "pista": "La vegetal tiene pared y además cloroplastos."
+    },
+    {
+      "enunciado": "En los dibujos de la pág. 124, uno tiene núcleo, mitocondrias y retículo, y el otro no tiene núcleo pero sí flagelo. ¿Qué son?",
+      "opciones": [
+        "El primero procariota y el segundo eucariota",
+        "Los dos eucariotas",
+        "El primero eucariota y el segundo procariota",
+        "Los dos procariotas"
+      ],
+      "correcta": 2,
+      "explicacion": "Núcleo, mitocondrias y retículo → eucariota. Sin núcleo y con flagelo → procariota."
+    }
+  ]
+}
