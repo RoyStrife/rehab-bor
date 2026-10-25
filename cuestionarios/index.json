@@ -6,7 +6,7 @@
     "modulo": "Gestión de Calidad",
     "unidad": "UD_1",
     "preguntas": 20,
-    "archivo": "Gestion_de_Calidad/UD_1/calidad-concepto-evolucion.json"
+    "archivo": "Gestion_de_Calidad/cuestionarios/UD_1/calidad-concepto-evolucion.json"
   },
   {
     "id": "calidad-mejora-continua",
@@ -15,7 +15,7 @@
     "modulo": "Gestión de Calidad",
     "unidad": "UD_1",
     "preguntas": 10,
-    "archivo": "Gestion_de_Calidad/UD_1/calidad-mejora-continua.json"
+    "archivo": "Gestion_de_Calidad/cuestionarios/UD_1/calidad-mejora-continua.json"
   },
   {
     "id": "calidad-herramientas",
@@ -24,7 +24,7 @@
     "modulo": "Gestión de Calidad",
     "unidad": "UD_1",
     "preguntas": 22,
-    "archivo": "Gestion_de_Calidad/UD_1/calidad-herramientas.json"
+    "archivo": "Gestion_de_Calidad/cuestionarios/UD_1/calidad-herramientas.json"
   },
   {
     "id": "calidad-efqm-seis-sigma",
@@ -33,7 +33,7 @@
     "modulo": "Gestión de Calidad",
     "unidad": "UD_1",
     "preguntas": 12,
-    "archivo": "Gestion_de_Calidad/UD_1/calidad-efqm-seis-sigma.json"
+    "archivo": "Gestion_de_Calidad/cuestionarios/UD_1/calidad-efqm-seis-sigma.json"
   },
   {
     "id": "calidad-iso9001-ampliacion",
@@ -42,7 +42,7 @@
     "modulo": "Gestión de Calidad",
     "unidad": "UD_1",
     "preguntas": 16,
-    "archivo": "Gestion_de_Calidad/UD_1/calidad-iso9001-ampliacion.json"
+    "archivo": "Gestion_de_Calidad/cuestionarios/UD_1/calidad-iso9001-ampliacion.json"
   },
   {
     "id": "calidad-empresa-alimentaria",
@@ -51,7 +51,7 @@
     "modulo": "Gestión de Calidad",
     "unidad": "UD_1",
     "preguntas": 8,
-    "archivo": "Gestion_de_Calidad/UD_1/calidad-empresa-alimentaria.json"
+    "archivo": "Gestion_de_Calidad/cuestionarios/UD_1/calidad-empresa-alimentaria.json"
   },
   {
     "id": "calidad-glosario-siglas",
@@ -60,7 +60,7 @@
     "modulo": "Gestión de Calidad",
     "unidad": "UD_1",
     "preguntas": 12,
-    "archivo": "Gestion_de_Calidad/UD_1/calidad-glosario-siglas.json"
+    "archivo": "Gestion_de_Calidad/cuestionarios/UD_1/calidad-glosario-siglas.json"
   },
   {
     "id": "normas-calidad",
@@ -69,7 +69,7 @@
     "modulo": "Gestión de Calidad",
     "unidad": "UD_1",
     "preguntas": 33,
-    "archivo": "Gestion_de_Calidad/UD_1/normas-calidad.json"
+    "archivo": "Gestion_de_Calidad/cuestionarios/UD_1/normas-calidad.json"
   },
   {
     "id": "calidad-evaluacion-final",
@@ -79,7 +79,7 @@
     "unidad": "UD_1",
     "asignatura": "Evaluación final",
     "preguntas": 30,
-    "archivo": "Gestion_de_Calidad/UD_1/calidad-evaluacion-final.json"
+    "archivo": "Gestion_de_Calidad/cuestionarios/UD_1/calidad-evaluacion-final.json"
   },
   {
     "id": "biotec-ud1-bioquimica-grupos",
@@ -88,7 +88,7 @@
     "modulo": "Biotecnología",
     "unidad": "UD_1",
     "preguntas": 18,
-    "archivo": "Biotecnologia/UD_1/biotec-ud1-bioquimica-grupos.json"
+    "archivo": "Biotecnologia/cuestionarios/UD_1/biotec-ud1-bioquimica-grupos.json"
   },
   {
     "id": "biotec-ud1-biomoleculas-agua",
@@ -97,7 +97,7 @@
     "modulo": "Biotecnología",
     "unidad": "UD_1",
     "preguntas": 13,
-    "archivo": "Biotecnologia/UD_1/biotec-ud1-biomoleculas-agua.json"
+    "archivo": "Biotecnologia/cuestionarios/UD_1/biotec-ud1-biomoleculas-agua.json"
   },
   {
     "id": "biotec-ud1-carbohidratos",
@@ -106,7 +106,7 @@
     "modulo": "Biotecnología",
     "unidad": "UD_1",
     "preguntas": 21,
-    "archivo": "Biotecnologia/UD_1/biotec-ud1-carbohidratos.json"
+    "archivo": "Biotecnologia/cuestionarios/UD_1/biotec-ud1-carbohidratos.json"
   },
   {
     "id": "biotec-ud1-lipidos",
@@ -115,7 +115,7 @@
     "modulo": "Biotecnología",
     "unidad": "UD_1",
     "preguntas": 24,
-    "archivo": "Biotecnologia/UD_1/biotec-ud1-lipidos.json"
+    "archivo": "Biotecnologia/cuestionarios/UD_1/biotec-ud1-lipidos.json"
   },
   {
     "id": "biotec-ud1-proteinas",
@@ -124,7 +124,7 @@
     "modulo": "Biotecnología",
     "unidad": "UD_1",
     "preguntas": 24,
-    "archivo": "Biotecnologia/UD_1/biotec-ud1-proteinas.json"
+    "archivo": "Biotecnologia/cuestionarios/UD_1/biotec-ud1-proteinas.json"
   },
   {
     "id": "biotec-ud1-enzimas",
@@ -133,7 +133,7 @@
     "modulo": "Biotecnología",
     "unidad": "UD_1",
     "preguntas": 16,
-    "archivo": "Biotecnologia/UD_1/biotec-ud1-enzimas.json"
+    "archivo": "Biotecnologia/cuestionarios/UD_1/biotec-ud1-enzimas.json"
   },
   {
     "id": "biotec-ud1-acidos-nucleicos",
@@ -142,7 +142,7 @@
     "modulo": "Biotecnología",
     "unidad": "UD_1",
     "preguntas": 19,
-    "archivo": "Biotecnologia/UD_1/biotec-ud1-acidos-nucleicos.json"
+    "archivo": "Biotecnologia/cuestionarios/UD_1/biotec-ud1-acidos-nucleicos.json"
   },
   {
     "id": "biotec-ud1-celula-completo",
@@ -151,7 +151,7 @@
     "modulo": "Biotecnología",
     "unidad": "UD_1",
     "preguntas": 15,
-    "archivo": "Biotecnologia/UD_1/biotec-ud1-celula-completo.json"
+    "archivo": "Biotecnologia/cuestionarios/UD_1/biotec-ud1-celula-completo.json"
   },
   {
     "id": "biotec-ud1-celula",
@@ -160,6 +160,6 @@
     "modulo": "Biotecnología",
     "unidad": "UD_1",
     "preguntas": 10,
-    "archivo": "Biotecnologia/UD_1/biotec-ud1-celula.json"
+    "archivo": "Biotecnologia/cuestionarios/UD_1/biotec-ud1-celula.json"
   }
 ]

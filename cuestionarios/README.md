@@ -8,10 +8,11 @@ Interfaz sencilla para practicar cuestionarios tipo test desde el móvil.
 
 ## Añadir un cuestionario
 
-Los cuestionarios se guardan por módulo y unidad: `quizzes/<Modulo>/<UD_n>/archivo.json`
-(p. ej. `quizzes/Gestion_de_Calidad/UD_1/`, `quizzes/Biotecnologia/UD_1/`). En la pantalla de inicio salen agrupados igual.
+Cada asignatura tiene su carpeta en la raíz del repo y, dentro, sus cuestionarios por unidad:
+`<Asignatura>/cuestionarios/<UD_n>/archivo.json` (p. ej. `Gestion_de_Calidad/cuestionarios/UD_1/`,
+`Biotecnologia/cuestionarios/UD_1/`). En la pantalla de inicio salen agrupados igual.
 
-1. Crea un archivo en la carpeta de su módulo y unidad, por ejemplo `quizzes/Gestion_de_Calidad/UD_1/appcc.json`:
+1. Crea un archivo en la carpeta de su módulo y unidad, por ejemplo `Gestion_de_Calidad/cuestionarios/UD_1/appcc.json`:
 
 ```json
 {
@@ -32,7 +33,7 @@ Los cuestionarios se guardan por módulo y unidad: `quizzes/<Modulo>/<UD_n>/arch
 `correcta` es la posición de la respuesta buena empezando por 0 (0 = primera opción).
 Como las opciones se pueden barajar, en la explicación no uses «la a», «la b»…: nombra la respuesta por su contenido.
 
-2. Añádelo a `quizzes/index.json` (`modulo` y `unidad` deciden el grupo; `asignatura` es opcional y sale como etiqueta):
+2. Añádelo a `cuestionarios/index.json` (`modulo` y `unidad` deciden el grupo; `asignatura` es opcional y sale como etiqueta):
 
 ```json
 {
@@ -42,7 +43,7 @@ Como las opciones se pueden barajar, en la explicación no uses «la a», «la b
   "modulo": "Gestión de Calidad",
   "unidad": "UD_1",
   "preguntas": 10,
-  "archivo": "Gestion_de_Calidad/UD_1/appcc.json"
+  "archivo": "Gestion_de_Calidad/cuestionarios/UD_1/appcc.json"
 }
 ```
 

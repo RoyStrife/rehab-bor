@@ -209,7 +209,7 @@ header.top h1{font-size:1.25rem; margin:0; flex:1; line-height:1.25}
   function openQuiz(id){
     var entry = catalog.find(function(q){ return q.id === id; });
     if (!entry) return;
-    fetch('quizzes/' + entry.archivo).then(function(r){ return r.json(); }).then(function(data){
+    fetch('../' + entry.archivo, {cache:'no-cache'}).then(function(r){ return r.json(); }).then(function(data){
       current = data; current.id = id;
       history.replaceState(null, '', '?q=' + encodeURIComponent(id));
       start(data.preguntas.map(function(_,i){ return i; }));
@@ -313,7 +313,7 @@ header.top h1{font-size:1.25rem; margin:0; flex:1; line-height:1.25}
   function goHome(){ history.replaceState(null, '', location.pathname); renderHome(); }
 
   // ---------- Arranque ----------
-  fetch('quizzes/index.json').then(function(r){ return r.json(); }).then(function(list){
+  fetch('index.json', {cache:'no-cache'}).then(function(r){ return r.json(); }).then(function(list){
     catalog = list;
     var q = new URLSearchParams(location.search).get('q');
     if (q && catalog.some(function(c){ return c.id === q; })) { renderHome(); openQuiz(q); }
