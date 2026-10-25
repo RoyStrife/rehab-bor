@@ -50,8 +50,16 @@ header.top h1{font-size:1.25rem; margin:0; flex:1; line-height:1.25}
 .pill{background:var(--accent-soft); color:var(--accent); border-radius:99px; padding:2px 10px; font-weight:600}
 .pill.best{background:var(--ok-soft); color:var(--ok)}
 .empty{color:var(--muted); text-align:center; padding:32px 8px}
-#quizList{display:grid; gap:28px}
-.mod-title{font-size:1.1rem; margin:0 0 4px; padding-bottom:6px; border-bottom:2px solid var(--accent); color:var(--accent)}
+#quizList{display:grid; gap:14px}
+.modulo{border:1px solid var(--line); border-radius:14px; background:var(--card, #fff); overflow:hidden}
+.modulo > summary{list-style:none; cursor:pointer; display:flex; align-items:center; gap:10px; padding:14px 16px; -webkit-tap-highlight-color:transparent}
+.modulo > summary::-webkit-details-marker{display:none}
+.modulo > summary::after{content:''; margin-left:auto; width:9px; height:9px; border-right:2px solid var(--accent); border-bottom:2px solid var(--accent); transform:rotate(45deg); transition:transform .2s; flex:none}
+.modulo[open] > summary::after{transform:rotate(-135deg)}
+.modulo[open] > summary{border-bottom:2px solid var(--accent)}
+.mod-title{font-size:1.1rem; margin:0; color:var(--accent)}
+.mod-count{font-size:.8rem; color:var(--muted); font-weight:600}
+.mod-body{padding:2px 14px 16px}
 .ud-title{font-size:.82rem; text-transform:uppercase; letter-spacing:.06em; color:var(--muted); margin:14px 0 8px}
 
 .progress{height:6px; background:var(--line); border-radius:99px; overflow:hidden; margin-bottom:6px}
@@ -189,13 +197,23 @@ header.top h1{font-size:1.25rem; margin:0; flex:1; line-height:1.25}
     });
     var html = modulos.map(function(m){
       var g = byMod[m];
-      return '<section class="modulo"><h2 class="mod-title">'+esc(m)+'</h2>' +
+      var n = g.unidades.reduce(function(a,u){ return a + g.byUd[u].length; }, 0);
+      var open = (store.abiertos || {})[m] ? ' open' : '';
+      return '<details class="modulo" data-mod="'+esc(m)+'"'+open+'><summary><h2 class="mod-title">'+esc(m)+'</h2>' +
+        '<span class="mod-count">'+n+' cuestionario'+(n===1?'':'s')+'</span></summary><div class="mod-body">' +
         g.unidades.map(function(u){
           return (u ? '<h3 class="ud-title">'+esc(u.replace(/_/g,' '))+'</h3>' : '') +
             '<div class="list">' + g.byUd[u].map(quizCard).join('') + '</div>';
-        }).join('') + '</section>';
+        }).join('') + '</div></details>';
     }).join('');
     $('quizList').innerHTML = html || '<p class="empty">Aún no hay cuestionarios.</p>';
+    Array.prototype.forEach.call($('quizList').querySelectorAll('details.modulo'), function(d){
+      d.addEventListener('toggle', function(){
+        store.abiertos = store.abiertos || {};
+        if (d.open) store.abiertos[d.getAttribute('data-mod')] = 1; else delete store.abiertos[d.getAttribute('data-mod')];
+        save(store);
+      });
+    });
     show('home');
   }
 
