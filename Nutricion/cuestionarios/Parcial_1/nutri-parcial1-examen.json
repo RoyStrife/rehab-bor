@@ -1,7 +1,105 @@
 {
-  "titulo": "1º Parcial · Examen transcrito (P9–P40)",
-  "descripcion": "Transcripción del primer parcial. Faltan las preguntas 1–8 (hoja 1).",
+  "titulo": "1º Parcial · Cuestionario T1. Seguridad alimentaria (examen completo)",
+  "descripcion": "Las 40 preguntas del primer parcial transcritas",
   "preguntas": [
+    {
+      "n": 1,
+      "enunciado": "Una población sufre desnutrición persistente por falta prolongada de ingresos para comprar alimentos frescos en los mercados locales, aunque los comercios están abastecidos. Según la FAO, ¿qué dimensión de la Seguridad Alimentaria falla prioritariamente?",
+      "opciones": [
+        "La utilización biológica de los nutrientes a nivel orgánico.",
+        "La accesibilidad económica para adquirir los alimentos necesarios.",
+        "La estabilidad de la inocuidad durante el almacenamiento prolongado.",
+        "La disponibilidad física de suministros en los canales comerciales."
+      ],
+      "correcta": 1,
+      "explicacion": "Hay alimentos en las tiendas (la disponibilidad se cumple), pero no dinero para comprarlos: falla el acceso económico. Las cuatro dimensiones de la FAO son disponibilidad, acceso, utilización y estabilidad.",
+      "pista": "Los comercios están abastecidos: ¿qué falta entonces?"
+    },
+    {
+      "n": 2,
+      "enunciado": "Durante una alerta por contaminación microbiológica en ensaladas envasadas, se comprueba que el proveedor agrícola no registró el origen de las semillas ni los fitosanitarios usados. ¿Qué consecuencia directa produce esta omisión?",
+      "opciones": [
+        "Exime a la industria procesadora de aplicar su plan de desinfección.",
+        "Anula el cálculo obligatorio del porcentaje QUID en el etiquetado final.",
+        "Modifica la tolerancia legal de azúcares en la declaración de nutrientes.",
+        "Impide la trazabilidad hacia atrás, imposibilitando hallar la causa raíz."
+      ],
+      "correcta": 3,
+      "explicacion": "Sin registros del eslabón primario no se puede seguir el producto hacia su origen (trazabilidad hacia atrás) ni localizar la causa del brote."
+    },
+    {
+      "n": 3,
+      "enunciado": "La Comisión del Codex Alimentarius exige que toda norma técnica sobre higiene y aditivos se fundamente en la evaluación científica del riesgo. ¿Qué práctica busca evitar esta exigencia en el comercio global?",
+      "opciones": [
+        "La aplicación de los factores energéticos en la tabla nutricional.",
+        "La exigencia del marcado de identificación en alimentos sin transformar.",
+        "La imposición de barreras comerciales injustificadas sin base técnica.",
+        "El empleo de atmósferas protectoras en sustitución del tratamiento térmico."
+      ],
+      "correcta": 2,
+      "explicacion": "El Codex tiene un doble objetivo: proteger la salud y asegurar prácticas leales en el comercio. Exigir base científica impide que un país use normas sanitarias como barrera comercial encubierta (Acuerdo MSF de la OMC)."
+    },
+    {
+      "n": 4,
+      "enunciado": "Un análisis de control detecta que un lote de conservas supera el Límite Máximo de Residuos de plaguicidas. Aunque el producto mantenga su aspecto y sabor correctos, la empresa debe aplicar inmediatamente:",
+      "opciones": [
+        "La inmovilización del lote, retirada del mercado y aviso a sanidad.",
+        "La mezcla con un lote limpio para reducir la concentración promedio.",
+        "El reetiquetado indicando que requiere un cocinado muy prolongado.",
+        "Un tratamiento térmico adicional para eliminar los residuos químicos."
+      ],
+      "correcta": 0,
+      "explicacion": "Un alimento que supera el LMR no es seguro: se inmoviliza, se retira y se informa a la autoridad (art. 19 del Reg. 178/2002). Diluir con otro lote está prohibido y el calor no elimina los residuos químicos."
+    },
+    {
+      "n": 5,
+      "enunciado": "En una red marina, el fitoplancton sintetiza materia orgánica, el zooplancton se alimenta de él y peces pequeños consumen zooplancton. Cuando la pesca extrae estos peces para la alimentación humana, ¿cómo actúa el ser humano?",
+      "opciones": [
+        "Como un organismo heterótrofo que aprovecha la materia y energía de la red.",
+        "Como un descomponedor primario que acelera la mineralización del medio.",
+        "Como un productor secundario que incrementa el nivel energético global.",
+        "Como un organismo autótrofo que fija el carbono en la industria alimentaria."
+      ],
+      "correcta": 0,
+      "explicacion": "El ser humano es heterótrofo: obtiene materia y energía de materia orgánica ya formada, aquí como consumidor de un nivel trófico superior."
+    },
+    {
+      "n": 6,
+      "enunciado": "Las bacterias nitrificantes del suelo oxidan amoniaco a nitritos y nitratos para obtener energía celular y elaborar su propia materia orgánica a partir de dióxido de carbono. ¿Cómo se clasifican nutricionalmente?",
+      "opciones": [
+        "Como organismos heterótrofos que consumen materia orgánica del suelo.",
+        "Como consumidores primarios que obtienen carbono de otros seres vivos.",
+        "Como descomponedores obligados que dependen de materia vegetal muerta.",
+        "Como organismos autótrofos que sintetizan sus propios compuestos orgánicos."
+      ],
+      "correcta": 3,
+      "explicacion": "Fabrican materia orgánica a partir de CO₂: son autótrofos. Como la energía la sacan de oxidar compuestos inorgánicos (no de la luz), son quimioautótrofos o quimiosintéticos.",
+      "pista": "Fíjate en de dónde sacan el carbono."
+    },
+    {
+      "n": 7,
+      "enunciado": "Un hongo saprófito absorbe carbohidratos simples presentes en la madera en descomposición para obtener energía y mantener sus estructuras celulares. ¿A qué categoría nutricional pertenece?",
+      "opciones": [
+        "A la categoría de heterótrofos, al nutrirse de materia orgánica ya formada.",
+        "A la categoría de fotosintetizadores, al fijar carbono por estimulación térmica.",
+        "A la categoría de productores, al sintetizar carbono mediante enlaces inorgánicos.",
+        "A la categoría de autótrofos, al elaborar sus propios compuestos desde minerales."
+      ],
+      "correcta": 0,
+      "explicacion": "Los hongos son heterótrofos; los saprófitos se alimentan de materia orgánica muerta y actúan como descomponedores."
+    },
+    {
+      "n": 8,
+      "enunciado": "En una explotación ganadera, un conejo de cebo se alimenta exclusivamente de pienso elaborado con grano de trigo. ¿Qué función nutricional desempeñan respectivamente el trigo y el conejo en esta cadena?",
+      "opciones": [
+        "El trigo actúa como consumidor primario y el conejo como descomponedor final.",
+        "El trigo actúa como vegetal autótrofo y el conejo como consumidor heterótrofo.",
+        "El trigo actúa como organismo heterótrofo y el conejo como productor autótrofo.",
+        "El trigo actúa como nutriente inerte y el conejo como sintetizador autótrofo."
+      ],
+      "correcta": 1,
+      "explicacion": "El trigo es productor (autótrofo, fotosíntesis) y el conejo, consumidor primario herbívoro (heterótrofo)."
+    },
     {
       "n": 9,
       "enunciado": "Un agricultor recolecta hortalizas 7 días antes de finalizar el plazo de seguridad fitosanitario fijado para el plaguicida aplicado. ¿Qué riesgo sanitario directo se deriva de esta actuación?",

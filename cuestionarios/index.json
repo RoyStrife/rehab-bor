@@ -174,12 +174,12 @@
   },
   {
     "id": "nutri-parcial1-examen",
-    "titulo": "1º Parcial · Examen transcrito (P9–P40)",
-    "descripcion": "Casos prácticos de toda la cadena alimentaria: producción primaria, industria, consumidor, etiquetado, higiene y trazabilidad",
+    "titulo": "1º Parcial · Cuestionario T1. Seguridad alimentaria (examen completo)",
+    "descripcion": "Las 40 preguntas del examen: FAO, Codex, niveles tróficos, producción primaria, industria, consumidor, etiquetado, higiene y trazabilidad",
     "modulo": "Nutrición y Seguridad Alimentaria",
     "unidad": "Parcial_1",
     "asignatura": "Examen real",
-    "preguntas": 32,
+    "preguntas": 40,
     "archivo": "Nutricion/cuestionarios/Parcial_1/nutri-parcial1-examen.json"
   }
 ]
