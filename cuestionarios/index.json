@@ -173,6 +173,15 @@
     "archivo": "Biotecnologia/cuestionarios/UD_1/biotec-ud1-evaluacion-final.json"
   },
   {
+    "id": "nutri-ud1-ovalo-sanitario",
+    "titulo": "Óvalo sanitario",
+    "descripcion": "Qué es, partes del sello, qué productos lo llevan y trampas típicas",
+    "modulo": "Nutrición y Seguridad Alimentaria",
+    "unidad": "UD_1",
+    "preguntas": 15,
+    "archivo": "Nutricion/cuestionarios/UD_1/nutri-ud1-ovalo-sanitario.json"
+  },
+  {
     "id": "nutri-parcial1-examen",
     "titulo": "1º Parcial · Cuestionario T1. Seguridad alimentaria (examen completo)",
     "descripcion": "Las 40 preguntas del examen: FAO, Codex, niveles tróficos, producción primaria, industria, consumidor, etiquetado, higiene y trazabilidad",
