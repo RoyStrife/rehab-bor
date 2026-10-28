@@ -1,6 +1,6 @@
 {
   "titulo": "Evaluación final · Biotecnología UD1",
-  "descripcion": "30 preguntas difíciles y con trampa que mezclan todos los temas",
+  "descripcion": "51 preguntas difíciles y con trampa que mezclan todos los temas, con refuerzo de proteínas y lípidos",
   "preguntas": [
     {
       "enunciado": "De estos cinco grupos funcionales, ¿cuántos son TERMINALES?: aldehído, cetona, fosfato, éster, metilo.",
@@ -344,6 +344,245 @@
       "correcta": 1,
       "explicacion": "Las enzimas son específicas: cada una actúa sobre una única molécula, su sustrato, que encaja en su sitio activo.",
       "pista": "Piensa en la tercera característica de las enzimas."
+    },
+    {
+      "enunciado": "¿Qué nivel estructural es «único para cada proteína» y resulta de la interacción entre las regiones de la cadena y sus grupos R?",
+      "opciones": [
+        "La primaria",
+        "La terciaria",
+        "La secundaria",
+        "La cuaternaria"
+      ],
+      "correcta": 1,
+      "explicacion": "Según el vídeo, la terciaria resulta de la interacción entre las distintas regiones de la cadena y sus grupos R, y es única para cada proteína.",
+      "pista": "La que da la forma 3D."
+    },
+    {
+      "enunciado": "Los enlaces disulfuro que estabilizan la terciaria se forman entre átomos de azufre de…",
+      "opciones": [
+        "La metionina",
+        "La glicina",
+        "La cisteína",
+        "La histidina"
+      ],
+      "correcta": 2,
+      "explicacion": "Enlaces disulfuro: enlaces fuertes entre los átomos de azufre de la cisteína.",
+      "pista": "Cuidado: la metionina es la del codón AUG."
+    },
+    {
+      "enunciado": "¿Cuántas moléculas de agua se liberan al formar un tripéptido?",
+      "opciones": [
+        "3",
+        "1",
+        "Ninguna",
+        "2"
+      ],
+      "correcta": 3,
+      "explicacion": "Cada enlace peptídico se forma en una reacción que libera agua. Un tripéptido tiene 3 aminoácidos unidos por 2 enlaces → 2 moléculas de agua.",
+      "pista": "Cuenta enlaces, no aminoácidos."
+    },
+    {
+      "enunciado": "¿Cuántos protómeros tiene la hexoquinasa según los apuntes?",
+      "opciones": [
+        "2",
+        "4",
+        "60",
+        "1"
+      ],
+      "correcta": 0,
+      "explicacion": "Ejemplos de cuaternaria: hexoquinasa (2), hemoglobina (4) y cápsida del virus de la poliomielitis (60)."
+    },
+    {
+      "enunciado": "Las proteínas de la sangre que mantienen el pH y la presión osmótica tienen función…",
+      "opciones": [
+        "De transporte",
+        "Homeostática",
+        "Defensiva",
+        "Reguladora"
+      ],
+      "correcta": 1,
+      "explicacion": "Homeostática: mantienen estables las condiciones internas (pH, equilibrio de líquidos); ej. proteínas de la sangre y albúmina."
+    },
+    {
+      "enunciado": "Las proteínas que activan o desactivan genes, reacciones o funciones celulares tienen función…",
+      "opciones": [
+        "Hormonal",
+        "Enzimática",
+        "Reguladora",
+        "Homeostática"
+      ],
+      "correcta": 2,
+      "explicacion": "Reguladora: controlan procesos celulares activando o desactivando genes, reacciones o funciones. La hormonal es la de los mensajeros químicos (insulina).",
+      "pista": "No confundas «regular» con «mensajero químico»."
+    },
+    {
+      "enunciado": "¿En qué función de las proteínas incluyen los apuntes la coagulación?",
+      "opciones": [
+        "Homeostática",
+        "Contráctil",
+        "Transporte",
+        "Defensiva"
+      ],
+      "correcta": 3,
+      "explicacion": "Defensiva: defienden frente a microorganismos o sustancias extrañas e intervienen en la coagulación (ej. anticuerpos)."
+    },
+    {
+      "enunciado": "En la tabla de funciones de las proteínas, el colesterol-LDL y el colesterol-HDL aparecen como ejemplo de…",
+      "opciones": [
+        "Transporte",
+        "Reserva",
+        "Estructural",
+        "Hormonal"
+      ],
+      "correcta": 0,
+      "explicacion": "Hemoglobina, colesterol-LDL y colesterol-HDL son ejemplos de proteínas de transporte.",
+      "pista": "Aunque lleven «colesterol», aquí están en la tabla de proteínas."
+    },
+    {
+      "enunciado": "¿En qué se diferencian los puentes de hidrógeno de la secundaria y de la terciaria?",
+      "opciones": [
+        "En la secundaria intervienen los grupos R; en la terciaria, la cadena principal",
+        "En la secundaria se forman entre átomos de la cadena principal; en la terciaria intervienen los grupos R",
+        "Solo la secundaria tiene puentes de hidrógeno",
+        "Solo la terciaria tiene puentes de hidrógeno"
+      ],
+      "correcta": 1,
+      "explicacion": "Secundaria: puentes de H entre átomos de la cadena principal. Terciaria: interacción de los grupos R, estabilizada con puentes de H, interacciones iónicas y enlaces disulfuro."
+    },
+    {
+      "enunciado": "Si se desnaturaliza una enzima, ¿seguirá funcionando?",
+      "opciones": [
+        "Sí: mantiene la estructura primaria, que es la que decide la función",
+        "Sí: las enzimas no se ven afectadas por nada",
+        "No: pierde la estructura terciaria, y de ella depende la función",
+        "Solo si se le añade un inhibidor"
+      ],
+      "correcta": 2,
+      "explicacion": "Al desnaturalizarse solo se conserva la primaria. La función o actividad biológica depende de la estabilidad de la terciaria.",
+      "pista": "Une dos ideas: qué se pierde y de qué depende la función."
+    },
+    {
+      "enunciado": "Si solo 20 aminoácidos forman las proteínas, ¿por qué los apuntes dicen que hay cientos de aminoácidos?",
+      "opciones": [
+        "Porque cada aminoácido tiene cientos de grupos amino",
+        "Porque cada proteína tiene cientos de aminoácidos",
+        "Porque los aminoácidos se dividen en cientos de nucleótidos",
+        "Porque hay cientos de radicales R distintos"
+      ],
+      "correcta": 3,
+      "explicacion": "R determina la identidad del aminoácido: hay cientos de radicales y, por tanto, cientos de aminoácidos, aunque solo 20 formen parte de las proteínas."
+    },
+    {
+      "enunciado": "Los fosfoglicéridos y los esfingolípidos son…",
+      "opciones": [
+        "Fosfolípidos: lípidos saponificables complejos",
+        "Lípidos saponificables simples",
+        "Lípidos insaponificables",
+        "Glicéridos"
+      ],
+      "correcta": 0,
+      "explicacion": "Esquema 6: saponificables simples (glicéridos y ceras) y complejos (fosfolípidos: fosfoglicéridos y esfingolípidos)."
+    },
+    {
+      "enunciado": "¿Qué lípido aparece como insaponificable en la clasificación y como regulador (eicosanoide) en las funciones?",
+      "opciones": [
+        "Las ceras",
+        "Las prostaglandinas",
+        "Los triglicéridos",
+        "Los fosfolípidos"
+      ],
+      "correcta": 1,
+      "explicacion": "Las prostaglandinas son insaponificables y, como eicosanoides, tienen función reguladora."
+    },
+    {
+      "enunciado": "¿Qué dicen los apuntes del colesterol?",
+      "opciones": [
+        "Es un triglicérido",
+        "Es la principal reserva energética",
+        "Forma parte de las membranas celulares junto con los fosfolípidos",
+        "Es un ácido graso esencial omega-3"
+      ],
+      "correcta": 2,
+      "explicacion": "Función estructural: fosfolípidos y colesterol forman parte de las membranas celulares. También aparece en la función nutricional."
+    },
+    {
+      "enunciado": "¿Cómo está formado un diglicérido?",
+      "opciones": [
+        "Glicerol + 3 ácidos grasos",
+        "2 glicéridos unidos",
+        "2 moléculas de glicerol + 1 ácido graso",
+        "Glicerol + 2 ácidos grasos"
+      ],
+      "correcta": 3,
+      "explicacion": "Glicérido = glicerol + hasta tres ácidos grasos: mono- (1), di- (2) o triglicérido (3)."
+    },
+    {
+      "enunciado": "¿En cuál de estos disolventes NO se disuelven bien la mayoría de los lípidos?",
+      "opciones": [
+        "Agua",
+        "Cloroformo",
+        "Benceno",
+        "Alcohol"
+      ],
+      "correcta": 0,
+      "explicacion": "Son hidrofóbicos o poco solubles en agua y disolventes polares, pero solubles en disolventes orgánicos no polares (cloroformo, alcohol, benceno…)."
+    },
+    {
+      "enunciado": "Un ácido graso hipotético de 16 carbonos tiene un único doble enlace en Δ9. ¿Qué omega es?",
+      "opciones": [
+        "ω-9",
+        "ω-7",
+        "ω-16",
+        "ω-6"
+      ],
+      "correcta": 1,
+      "explicacion": "La ω cuenta desde el –CH₃: 16 − 9 = 7 → ω-7. En el oleico coincide (18 − 9 = 9) porque tiene 18 carbonos.",
+      "pista": "Que en el oleico coincidan Δ y ω no significa que siempre coincidan."
+    },
+    {
+      "enunciado": "¿Qué NO forma parte del 2–5 % de lípidos de los alimentos que no son triglicéridos?",
+      "opciones": [
+        "Los fosfolípidos",
+        "Las ceras",
+        "Los triglicéridos",
+        "Las vitaminas liposolubles"
+      ],
+      "correcta": 2,
+      "explicacion": "El 2–5 % restante son fosfolípidos, colesterol y otros esteroles, ácidos grasos libres, ceras y vitaminas liposolubles. Los triglicéridos son el 95–98 %."
+    },
+    {
+      "enunciado": "¿En qué alimentos está el ácido α-linolénico (omega-3), según los apuntes?",
+      "opciones": [
+        "Girasol, nueces, maíz y soja",
+        "Mantequilla y tocino",
+        "Solo en el aceite de oliva",
+        "Nueces, lino, soja y colza"
+      ],
+      "correcta": 3,
+      "explicacion": "α-linolénico (omega-3): nueces, lino, soja y colza. Linoleico (omega-6): girasol, nueces, maíz y soja.",
+      "pista": "Nueces y soja están en las dos listas; fíjate en lo que cambia."
+    },
+    {
+      "enunciado": "Sobre el ácido oleico, ¿qué afirmación es FALSA?",
+      "opciones": [
+        "Es poliinsaturado",
+        "Su notación es C18:1 Δ9",
+        "Es un ω-9",
+        "Abunda en el aceite de oliva"
+      ],
+      "correcta": 0,
+      "explicacion": "El oleico tiene un solo doble enlace: es monoinsaturado. Poliinsaturados son los que tienen dos o más (omega-3 y omega-6)."
+    },
+    {
+      "enunciado": "¿Qué función tienen los triglicéridos del tejido adiposo, además de reserva?",
+      "opciones": [
+        "Formar las membranas celulares",
+        "Protección mecánica y aislamiento térmico",
+        "Impermeabilizar hojas y frutos",
+        "Actuar como hormonas"
+      ],
+      "correcta": 1,
+      "explicacion": "Función estructural: los triglicéridos del tejido adiposo dan protección mecánica y aislamiento térmico. Las membranas son cosa de fosfolípidos y colesterol; impermeabilizar, de las ceras."
     }
   ]
 }

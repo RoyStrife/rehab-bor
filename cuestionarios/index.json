@@ -165,11 +165,11 @@
   {
     "id": "biotec-ud1-evaluacion-final",
     "titulo": "Evaluación final · Biotecnología UD1",
-    "descripcion": "30 preguntas difíciles y con trampa que mezclan todos los temas",
+    "descripcion": "51 preguntas difíciles y con trampa que mezclan todos los temas, con refuerzo de proteínas y lípidos",
     "modulo": "Biotecnología",
     "unidad": "UD_1",
     "asignatura": "Evaluación final",
-    "preguntas": 30,
+    "preguntas": 51,
     "archivo": "Biotecnologia/cuestionarios/UD_1/biotec-ud1-evaluacion-final.json"
   }
 ]
