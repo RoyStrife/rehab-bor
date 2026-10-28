@@ -103,6 +103,30 @@ header.top h1{font-size:1.25rem; margin:0; flex:1; line-height:1.25}
 .review .why{color:var(--muted); font-size:.92rem}
 .settings{display:flex; align-items:center; gap:8px; margin:14px 0 4px; font-size:.92rem; color:var(--muted)}
 .settings input{width:20px; height:20px; accent-color:var(--accent)}
+.qnum{display:inline-block; font-size:.78rem; font-weight:700; color:var(--accent); background:var(--accent-soft); border-radius:6px; padding:1px 7px; margin-right:6px; vertical-align:2px}
+.markrow{display:flex; justify-content:flex-end; margin-top:12px}
+.markbtn{border:1.5px dashed var(--line); background:transparent; color:var(--muted); border-radius:99px; padding:6px 14px; font:inherit; font-size:.88rem; font-weight:600; cursor:pointer; min-height:40px}
+.markbtn.on{border-style:solid; border-color:var(--hint); background:var(--hint-soft); color:var(--hint)}
+.marked{margin-top:20px}
+.marked h3{font-size:1rem; margin:0 0 6px}
+.marked .sub{color:var(--muted); font-size:.88rem; margin:0 0 10px}
+.mlist{list-style:none; margin:0; padding:0}
+.mlist li{display:flex; gap:8px; align-items:flex-start; padding:8px 0; border-top:1px solid var(--line); font-size:.92rem}
+.mlist li span{flex:1}
+.mlist .x{border:0; background:transparent; color:var(--muted); font-size:1.1rem; cursor:pointer; min-width:36px; min-height:36px}
+.marked textarea{width:100%; min-height:64px; margin-top:10px; border:1.5px solid var(--line); border-radius:10px; background:var(--bg); color:var(--text); font:inherit; font-size:.92rem; padding:8px 10px; resize:vertical}
+.homemarks{margin-bottom:14px; border-color:var(--hint)}
+.homemarks h2{font-size:1rem; margin:0 0 8px; color:var(--hint)}
+.homemarks button.row{display:flex; justify-content:space-between; gap:10px; width:100%; text-align:left; border:0; border-top:1px solid var(--line); background:transparent; color:var(--text); font:inherit; padding:10px 0; cursor:pointer}
+.homemarks button.row b{color:var(--hint); flex:none}
+.sq{padding:14px 0; border-top:1px solid var(--line)}
+.sq:first-child{border-top:0; padding-top:0}
+.sq .q{font-weight:600; margin:0 0 8px}
+.sq ol{margin:0; padding-left:22px; font-size:.94rem}
+.sq li.ok{color:var(--ok); font-weight:600}
+.sq .why{color:var(--muted); font-size:.9rem; margin:8px 0 0}
+.note{background:var(--hint-soft); color:var(--hint); border-radius:10px; padding:10px 12px; margin-bottom:14px; font-size:.94rem; white-space:pre-wrap}
+.toast{position:fixed; left:50%; bottom:calc(24px + env(safe-area-inset-bottom)); transform:translateX(-50%); background:var(--text); color:var(--bg); padding:10px 16px; border-radius:99px; font-size:.9rem; z-index:9; max-width:90vw; text-align:center}
 .hidden{display:none !important}
 </style>
 </head>
@@ -112,6 +136,7 @@ header.top h1{font-size:1.25rem; margin:0; flex:1; line-height:1.25}
   <!-- Inicio -->
   <section id="home">
     <header class="top"><h1>Cuestionarios de clase</h1></header>
+    <div id="homeMarks"></div>
     <div id="quizList" class="list"></div>
     <label class="settings"><input type="checkbox" id="shuffle" checked> Barajar preguntas y respuestas</label>
   </section>
@@ -129,6 +154,7 @@ header.top h1{font-size:1.25rem; margin:0; flex:1; line-height:1.25}
       <div class="options" id="options"></div>
       <div id="hintBox" class="hint hidden"></div>
       <div id="feedback" class="feedback hidden"></div>
+      <div class="markrow"><button class="markbtn" id="markBtn" aria-pressed="false">☆ Llevar a clase</button></div>
     </div>
     <div class="actions">
       <button class="btn ghost" id="hintBtn">Pista</button>
@@ -150,10 +176,29 @@ header.top h1{font-size:1.25rem; margin:0; flex:1; line-height:1.25}
         <button class="btn" id="retryAllBtn">Repetir todo</button>
       </div>
       <div class="review" id="review"></div>
+      <div id="resultMarks"></div>
+    </div>
+  </section>
+
+  <!-- Lista de preguntas (compartida o propia) -->
+  <section id="shared" class="hidden">
+    <header class="top">
+      <button class="iconbtn" id="sharedHomeBtn">‹ Inicio</button>
+      <h1 id="sharedTitle"></h1>
+    </header>
+    <div class="card">
+      <div id="sharedNote" class="note hidden"></div>
+      <div id="sharedList"></div>
+      <div class="actions">
+        <button class="btn ghost" id="sharedSaveBtn">☆ Guardar en mis marcadas</button>
+        <button class="btn" id="sharedPracticeBtn">Practicar estas</button>
+      </div>
+      <div id="sharedOwn"></div>
     </div>
   </section>
 
 </div>
+<div id="toast" class="toast hidden"></div>
 
 <script>
 (function(){
@@ -170,7 +215,102 @@ header.top h1{font-size:1.25rem; margin:0; flex:1; line-height:1.25}
 
   function shuffle(a){ a = a.slice(); for (var i=a.length-1;i>0;i--){ var j=Math.floor(Math.random()*(i+1)); var t=a[i]; a[i]=a[j]; a[j]=t; } return a; }
   function esc(s){ return String(s == null ? '' : s).replace(/[&<>"]/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; }); }
-  function show(id){ ['home','quiz','result'].forEach(function(s){ $(s).classList.toggle('hidden', s !== id); }); window.scrollTo(0,0); }
+  function show(id){ ['home','quiz','result','shared'].forEach(function(s){ $(s).classList.toggle('hidden', s !== id); }); window.scrollTo(0,0); }
+
+  // ---------- Carga de cuestionarios (con caché) ----------
+  var cache = {};
+  function entryOf(id){ return catalog.find(function(q){ return q.id === id; }); }
+  function loadQuiz(id){
+    if (cache[id]) return Promise.resolve(cache[id]);
+    var entry = entryOf(id);
+    if (!entry) return Promise.reject(new Error('no existe'));
+    return fetch('../' + entry.archivo, {cache:'no-cache'}).then(function(r){ return r.json(); }).then(function(d){
+      d.id = id; cache[id] = d; return d;
+    });
+  }
+
+  // ---------- Preguntas marcadas «para clase» ----------
+  // Se guardan por cuestionario como posiciones originales (0, 1, 2…) en el JSON.
+  function getMarks(id){ return ((store.marcadas || {})[id] || []).slice(); }
+  function setMarks(id, list){
+    store.marcadas = store.marcadas || {};
+    list = list.filter(function(v,i,a){ return a.indexOf(v) === i; }).sort(function(a,b){ return a-b; });
+    if (list.length) store.marcadas[id] = list; else delete store.marcadas[id];
+    save(store);
+  }
+  function isMarked(id, i){ return getMarks(id).indexOf(i) !== -1; }
+  function toggleMark(id, i){
+    var m = getMarks(id), k = m.indexOf(i);
+    if (k === -1) m.push(i); else m.splice(k, 1);
+    setMarks(id, m);
+  }
+  // Número visible de la pregunta: el del examen original (campo "n") o su posición.
+  function numOf(data, i){ var q = data.preguntas[i]; return q && q.n != null ? q.n : i + 1; }
+  function indexOfNum(data, n){
+    for (var i = 0; i < data.preguntas.length; i++) if (String(numOf(data, i)) === String(n)) return i;
+    return -1;
+  }
+  function shareUrl(data, list, note){
+    var url = location.origin + location.pathname + '?q=' + encodeURIComponent(data.id) +
+      '&p=' + list.map(function(i){ return numOf(data, i); }).join(',');
+    if (note) url += '&m=' + encodeURIComponent(note);
+    return url;
+  }
+  function shareText(data, list, note){
+    var lines = ['Preguntas que quiero ver en clase · ' + data.titulo];
+    if (note) lines.push('', note);
+    lines.push('');
+    list.forEach(function(i){
+      var t = data.preguntas[i].enunciado;
+      lines.push('• P' + numOf(data, i) + ': ' + (t.length > 110 ? t.slice(0, 107) + '…' : t));
+    });
+    return lines.join('\n');
+  }
+  var toastT;
+  function toast(msg){
+    var t = $('toast'); t.textContent = msg; t.classList.remove('hidden');
+    clearTimeout(toastT); toastT = setTimeout(function(){ t.classList.add('hidden'); }, 2600);
+  }
+  function copy(text){
+    if (navigator.clipboard && navigator.clipboard.writeText) return navigator.clipboard.writeText(text);
+    var ta = document.createElement('textarea'); ta.value = text; document.body.appendChild(ta); ta.select();
+    try { document.execCommand('copy'); } catch(e){}
+    document.body.removeChild(ta); return Promise.resolve();
+  }
+  function doShare(data, list, note){
+    var url = shareUrl(data, list, note), text = shareText(data, list, note);
+    if (navigator.share){
+      navigator.share({ title: 'Preguntas para clase', text: text, url: url }).catch(function(){});
+    } else {
+      copy(text + '\n\n' + url).then(function(){ toast('Copiado: pégalo en WhatsApp, Classroom o un correo'); });
+    }
+  }
+
+  // Panel con la lista marcada de un cuestionario: quitar, añadir comentario, compartir.
+  function marksPanel(data){
+    var list = getMarks(data.id);
+    if (!list.length) return '';
+    return '<div class="marked" data-id="'+esc(data.id)+'"><h3>☆ Para llevar a clase ('+list.length+')</h3>' +
+      '<p class="sub">Comparte la lista con el profe o con la clase. El enlace abre exactamente estas preguntas.</p>' +
+      '<ul class="mlist">' + list.map(function(i){
+        return '<li><span><b>P'+esc(numOf(data, i))+'</b> · '+esc(data.preguntas[i].enunciado)+'</span>' +
+          '<button class="x" data-i="'+i+'" aria-label="Quitar">×</button></li>';
+      }).join('') + '</ul>' +
+      '<textarea placeholder="Comentario opcional: qué no entiendes o qué concepto quieres que se explique"></textarea>' +
+      '<div class="actions"><button class="btn ghost" data-act="view">Ver lista</button>' +
+      '<button class="btn" data-act="share">Compartir</button></div></div>';
+  }
+  function bindPanel(box, data, rerender){
+    box.onclick = function(e){
+      var x = e.target.closest('.x');
+      var note = (box.querySelector('textarea') || {}).value || '';
+      if (x){ toggleMark(data.id, +x.getAttribute('data-i')); rerender(); return; }
+      var b = e.target.closest('[data-act]'); if (!b) return;
+      var list = getMarks(data.id);
+      if (b.getAttribute('data-act') === 'share') doShare(data, list, note.trim());
+      else openShared(data.id, list, note.trim(), true);
+    };
+  }
 
   // ---------- Inicio ----------
   function quizCard(q){
@@ -207,6 +347,12 @@ header.top h1{font-size:1.25rem; margin:0; flex:1; line-height:1.25}
         }).join('') + '</div></details>';
     }).join('');
     $('quizList').innerHTML = html || '<p class="empty">Aún no hay cuestionarios.</p>';
+    var mk = Object.keys(store.marcadas || {}).filter(function(id){ return entryOf(id); });
+    $('homeMarks').innerHTML = mk.length ? '<div class="card homemarks"><h2>☆ Mis preguntas para clase</h2>' +
+      mk.map(function(id){
+        var n = store.marcadas[id].length;
+        return '<button class="row" data-id="'+esc(id)+'"><span>'+esc(entryOf(id).titulo)+'</span><b>'+n+'</b></button>';
+      }).join('') + '</div>' : '';
     Array.prototype.forEach.call($('quizList').querySelectorAll('details.modulo'), function(d){
       d.addEventListener('toggle', function(){
         store.abiertos = store.abiertos || {};
@@ -224,15 +370,59 @@ header.top h1{font-size:1.25rem; margin:0; flex:1; line-height:1.25}
   $('shuffle').checked = store.shuffle !== false;
   $('shuffle').addEventListener('change', function(){ store.shuffle = this.checked; save(store); });
 
+  $('homeMarks').addEventListener('click', function(e){
+    var el = e.target.closest('.row'); if (!el) return;
+    var id = el.getAttribute('data-id');
+    openShared(id, getMarks(id), '', true);
+  });
+
   function openQuiz(id){
-    var entry = catalog.find(function(q){ return q.id === id; });
-    if (!entry) return;
-    fetch('../' + entry.archivo, {cache:'no-cache'}).then(function(r){ return r.json(); }).then(function(data){
-      current = data; current.id = id;
+    loadQuiz(id).then(function(data){
+      current = data;
       history.replaceState(null, '', '?q=' + encodeURIComponent(id));
       start(data.preguntas.map(function(_,i){ return i; }));
     }).catch(function(){ alert('No se pudo cargar el cuestionario.'); });
   }
+
+  // ---------- Lista de preguntas (enlace compartido o lista propia) ----------
+  var sharedCtx = null;
+  function openShared(id, list, note, own){
+    loadQuiz(id).then(function(data){
+      list = list.filter(function(i){ return i >= 0 && i < data.preguntas.length; });
+      sharedCtx = { data: data, list: list, own: own };
+      $('sharedTitle').textContent = (own ? 'Mis preguntas · ' : 'Preguntas compartidas · ') + data.titulo;
+      $('sharedNote').classList.toggle('hidden', !note);
+      $('sharedNote').textContent = note || '';
+      $('sharedList').innerHTML = list.length ? list.map(function(i){
+        var q = data.preguntas[i];
+        return '<div class="sq"><p class="q"><span class="qnum">P'+esc(numOf(data, i))+'</span>'+esc(q.enunciado)+'</p><ol type="A">' +
+          q.opciones.map(function(o, k){ return '<li'+(k === q.correcta ? ' class="ok"' : '')+'>'+esc(o)+(k === q.correcta ? ' ✓' : '')+'</li>'; }).join('') +
+          '</ol>' + (q.explicacion ? '<p class="why">'+esc(q.explicacion)+'</p>' : '') + '</div>';
+      }).join('') : '<p class="empty">No hay preguntas en esta lista.</p>';
+      $('sharedSaveBtn').classList.toggle('hidden', own || !list.length);
+      $('sharedPracticeBtn').disabled = !list.length;
+      var box = $('sharedOwn');
+      if (own){
+        var rer = function(){ openShared(id, getMarks(id), '', true); };
+        box.innerHTML = marksPanel(data);
+        var ta = box.querySelector('textarea'); if (ta && note) ta.value = note;
+        var v = box.querySelector('[data-act="view"]'); if (v) v.classList.add('hidden');
+        bindPanel(box, data, rer);
+      } else box.innerHTML = '';
+      history.replaceState(null, '', shareUrl(data, list, note).replace(location.origin + location.pathname, ''));
+      show('shared');
+    }).catch(function(){ alert('No se pudo cargar el cuestionario.'); });
+  }
+  $('sharedHomeBtn').addEventListener('click', goHome);
+  $('sharedPracticeBtn').addEventListener('click', function(){
+    if (!sharedCtx) return; current = sharedCtx.data; start(sharedCtx.list.slice());
+  });
+  $('sharedSaveBtn').addEventListener('click', function(){
+    if (!sharedCtx) return;
+    setMarks(sharedCtx.data.id, getMarks(sharedCtx.data.id).concat(sharedCtx.list));
+    toast('Guardadas en «Mis preguntas para clase»');
+    this.classList.add('hidden');
+  });
 
   // ---------- Pregunta ----------
   function start(indices){
@@ -252,7 +442,8 @@ header.top h1{font-size:1.25rem; margin:0; flex:1; line-height:1.25}
     $('counter').textContent = 'Pregunta ' + (idx+1) + ' de ' + order.length;
     var ok = answers.filter(function(a){ return a.ok; }).length;
     $('liveScore').textContent = idx ? ok + ' / ' + idx + ' bien' : '';
-    $('prompt').textContent = q.enunciado;
+    $('prompt').innerHTML = (q.n != null ? '<span class="qnum">P'+esc(q.n)+'</span>' : '') + esc(q.enunciado);
+    paintMark();
     $('options').innerHTML = opts.map(function(o,k){
       return '<button class="opt" data-k="'+k+'"><span class="l">'+LETTERS[k]+'</span><span>'+esc(o.texto)+'</span></button>';
     }).join('');
@@ -287,6 +478,17 @@ header.top h1{font-size:1.25rem; margin:0; flex:1; line-height:1.25}
     fb.scrollIntoView({behavior:'smooth', block:'nearest'});
   });
 
+  function paintMark(){
+    var on = isMarked(current.id, order[idx]);
+    $('markBtn').classList.toggle('on', on);
+    $('markBtn').setAttribute('aria-pressed', on ? 'true' : 'false');
+    $('markBtn').textContent = on ? '★ Para clase' : '☆ Llevar a clase';
+  }
+  $('markBtn').addEventListener('click', function(){
+    toggleMark(current.id, order[idx]); paintMark();
+    toast(isMarked(current.id, order[idx]) ? 'Marcada para preguntar en clase' : 'Quitada de la lista');
+  });
+
   $('hintBtn').addEventListener('click', function(){ $('hintBox').classList.remove('hidden'); this.disabled = true; });
   $('nextBtn').addEventListener('click', function(){
     if (idx < order.length - 1){ idx++; renderQuestion(); window.scrollTo(0,0); } else finish();
@@ -317,7 +519,13 @@ header.top h1{font-size:1.25rem; margin:0; flex:1; line-height:1.25}
         '<p class="right">✓ '+esc(q.opciones[q.correcta])+'</p>' +
         (q.explicacion ? '<p class="why">'+esc(q.explicacion)+'</p>' : '') + '</div>';
     }).join('') : '<h3>¡Pleno! Ninguna fallada.</h3>';
+    renderResultMarks();
     show('result');
+  }
+  function renderResultMarks(){
+    var box = $('resultMarks');
+    box.innerHTML = marksPanel(current);
+    bindPanel(box, current, renderResultMarks);
   }
 
   $('retryWrongBtn').addEventListener('click', function(){
@@ -333,8 +541,16 @@ header.top h1{font-size:1.25rem; margin:0; flex:1; line-height:1.25}
   // ---------- Arranque ----------
   fetch('index.json', {cache:'no-cache'}).then(function(r){ return r.json(); }).then(function(list){
     catalog = list;
-    var q = new URLSearchParams(location.search).get('q');
-    if (q && catalog.some(function(c){ return c.id === q; })) { renderHome(); openQuiz(q); }
+    var sp = new URLSearchParams(location.search);
+    var q = sp.get('q'), p = sp.get('p');
+    if (q && entryOf(q)) {
+      renderHome();
+      if (p) loadQuiz(q).then(function(data){
+        var list = p.split(',').map(function(n){ return indexOfNum(data, n.trim()); }).filter(function(i){ return i !== -1; });
+        openShared(q, list, sp.get('m') || '', false);
+      });
+      else openQuiz(q);
+    }
     else renderHome();
   }).catch(function(){
     $('quizList').innerHTML = '<p class="empty">No se pudo cargar la lista de cuestionarios.</p>';

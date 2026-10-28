@@ -1,0 +1,394 @@
+{
+  "titulo": "1º Parcial · Examen transcrito (P9–P40)",
+  "descripcion": "Transcripción del primer parcial. Faltan las preguntas 1–8 (hoja 1).",
+  "preguntas": [
+    {
+      "n": 9,
+      "enunciado": "Un agricultor recolecta hortalizas 7 días antes de finalizar el plazo de seguridad fitosanitario fijado para el plaguicida aplicado. ¿Qué riesgo sanitario directo se deriva de esta actuación?",
+      "opciones": [
+        "Presencia de residuos químicos por encima de los límites máximos permitidos.",
+        "Modificación de los parámetros de fibra alimentaria indicados en la etiqueta.",
+        "Destrucción enzimática de los conservantes naturales presentes en el vegetal.",
+        "Proliferación acelerada de bacterias esporuladas en la superficie de la planta."
+      ],
+      "correcta": 0,
+      "explicacion": "El plazo de seguridad es el tiempo mínimo entre el último tratamiento y la cosecha para que el residuo baje del LMR. Cosechar antes deja residuos químicos por encima del límite (peligro químico).",
+      "pista": "Plazo de seguridad = tiempo para que baje el residuo."
+    },
+    {
+      "n": 10,
+      "enunciado": "En los controles oficiales de una granja avícola se confirma la presencia de Salmonella enteritidis en las aves de puesta. ¿Qué medida sanitaria es obligatoria para la comercialización de los huevos de dicho lote?",
+      "opciones": [
+        "Modificar el código de la explotación impreso en la cáscara del huevo.",
+        "Destinarlos obligatoriamente a transformación industrial con tratamiento térmico.",
+        "Comercializarlos con normalidad añadiendo una nota de cocinado en el envase.",
+        "Someterlos a un lavado exterior con biocidas y venderlos como categoría A."
+      ],
+      "correcta": 1,
+      "explicacion": "Los huevos de manadas con Salmonella Enteritidis o Typhimurium no pueden venderse como categoría A: solo pueden ir a industria con un tratamiento que garantice la eliminación de la salmonela.",
+      "pista": "Piensa en qué proceso mata la salmonela."
+    },
+    {
+      "n": 11,
+      "enunciado": "Un buque pesquero captura bacalao con presencia de parásitos Anisakis en la cavidad visceral. Para evitar que la larva migre hacia el músculo del pescado durante la travesía, se debe realizar inmediatamente:",
+      "opciones": [
+        "El envasado de las piezas en bolsas herméticas de plástico flexible.",
+        "El mantenimiento del pescado a temperatura ambiente durante la travesía.",
+        "El eviscerado precoz a bordo y la aplicación de frío en la bodega.",
+        "El lavado de las piezas con agua dulce a temperatura ambiente."
+      ],
+      "correcta": 2,
+      "explicacion": "Tras la muerte del pez, la larva pasa de las vísceras al músculo. Eviscerar cuanto antes y mantener en frío lo evita."
+    },
+    {
+      "n": 12,
+      "enunciado": "Las explotaciones ganaderas registran sus animales en el sistema de trazabilidad individual (SITRAN). Ante un brote de enfermedad epizootiológica en una granja, ¿qué función clave cumple este registro?",
+      "opciones": [
+        "Modificar el diseño del marcado de identificación de la carne fresca.",
+        "Sustituir la inspección veterinaria obligatoria en los mataderos.",
+        "Eximir al ganadero de llevar controles de higiene en la alimentación.",
+        "Localizar los animales expuestos y sus movimientos para aislar el foco."
+      ],
+      "correcta": 3,
+      "explicacion": "SITRAN registra explotaciones, animales y movimientos; ante un brote permite saber dónde están los animales expuestos y cortar la difusión."
+    },
+    {
+      "n": 13,
+      "enunciado": "Durante el mantenimiento de una picadora de carne, un operario aplica un lubricante industrial no apto para contacto alimentario en las zonas de corte. ¿En qué categoría de peligro sanitario se encuadra?",
+      "opciones": [
+        "Peligro nutricional, por degradación de la estructura de las proteínas.",
+        "Peligro biológico, por favorecer la multiplicación de hongos ambientales.",
+        "Peligro químico, por posible contaminación con compuestos tóxicos.",
+        "Peligro físico, por desprendimiento de virutas en la masa de carne."
+      ],
+      "correcta": 2,
+      "explicacion": "Un lubricante no apto (no grado alimentario) aporta sustancias tóxicas: peligro químico."
+    },
+    {
+      "n": 14,
+      "enunciado": "En el envasado de carne fresca en atmósfera protectora se sustituye parte del aire por dióxido de carbono y nitrógeno. ¿Cuál es la finalidad tecnológica principal de esta medida?",
+      "opciones": [
+        "Inactivar las bacterias mediante la destrucción del envase secundario.",
+        "Eliminar la necesidad de incluir la fecha de caducidad en el producto.",
+        "Inhibir el desarrollo de microorganismos alterantes para ampliar la vida útil.",
+        "Aumentar artificialmente el contenido proteico declarado en el etiquetado."
+      ],
+      "correcta": 2,
+      "explicacion": "El CO₂ es bacteriostático y fungistático y el N₂ desplaza el oxígeno: se frena a los alterantes y se alarga la vida útil. No esteriliza ni exime de la fecha."
+    },
+    {
+      "n": 15,
+      "enunciado": "Se analiza un contenedor plástico destinado a contener aceites vegetales. Durante los ensayos se observa la cesión de aditivos plásticos desde el envase hacia la fase grasa del alimento. Este fenómeno se denomina:",
+      "opciones": [
+        "Migración o lixiviación de componentes del envase al alimento.",
+        "Fermentación química de los ácidos grasos por presión gaseosa.",
+        "Contaminación cruzada por inadecuado tratamiento térmico.",
+        "Oxidación lipídica provocada por la luz ultravioleta exterior."
+      ],
+      "correcta": 0,
+      "explicacion": "El paso de sustancias del material en contacto al alimento es la migración (Reg. 1935/2004 y Reg. 10/2011 para plásticos). Los alimentos grasos favorecen la migración."
+    },
+    {
+      "n": 16,
+      "enunciado": "En una planta láctea se fija un Punto de Control Crítico en el pasteurizador a 72 °C durante 15 segundos. Si la sonda detecta una caída de temperatura a 66 °C durante el proceso, la medida correctora es:",
+      "opciones": [
+        "Continuar el proceso reduciendo dos días la fecha de caducidad fijada.",
+        "Añadir conservantes químicos autorizados al tanque de almacenamiento.",
+        "Desviar la leche mediante la válvula de reenvío para pasteurizarla de nuevo.",
+        "Modificar los datos nutricionales sobre el contenido en calcio del producto."
+      ],
+      "correcta": 2,
+      "explicacion": "Si se supera el límite crítico, el producto no está pasteurizado: la válvula de desvío lo devuelve para repetir el tratamiento. Acortar la fecha o añadir conservantes no corrige el peligro."
+    },
+    {
+      "n": 17,
+      "enunciado": "Un camión transporta pescado fresco y su equipo frigorífico sufre una avería, manteniéndose la carga a 10 °C durante todo el trayecto. Al recibir la mercancía, la empresa de destino debe ordenar:",
+      "opciones": [
+        "La aceptación de la carga solicitando un margen comercial de caducidad.",
+        "El rechazo del lote por rotura grave de la cadena de frío y riesgo sanitario.",
+        "La congelación inmediata del pescado a −18 °C para corregir el deterioro.",
+        "El procesamiento del pescado en la línea de elaboración de conservas."
+      ],
+      "correcta": 1,
+      "explicacion": "El pescado fresco debe mantenerse próximo a 0 °C (hielo fundente). A 10 °C hay rotura de la cadena de frío: se rechaza. Congelar o procesar no elimina lo que ya se ha multiplicado."
+    },
+    {
+      "n": 18,
+      "enunciado": "Un comercio expone tarrinas de queso fresco cuya etiqueta marca una fecha de caducidad vencida hace tres días. Desde el punto de vista de la legislación alimentaria, este producto se considera:",
+      "opciones": [
+        "Un alimento apto para la venta pero con pérdida de cualidades organolépticas.",
+        "Un alimento no seguro por existir riesgo para la salud del consumidor.",
+        "Un producto comercializable si se le aplica un descuento en el precio.",
+        "Un alimento exento de regulación sanitaria al estar cerrado en origen."
+      ],
+      "correcta": 1,
+      "explicacion": "Pasada la fecha de caducidad el alimento se considera no seguro (Reg. 1169/2011, art. 24, en relación con el art. 14 del Reg. 178/2002) y no puede venderse.",
+      "pista": "Caducidad ≠ consumo preferente."
+    },
+    {
+      "n": 19,
+      "enunciado": "En un almacén de distribución, los sacos de harina de trigo se apilan directamente contra paredes húmedas sin separación ni ventilación. ¿Qué problema sanitario se favorece en estas condiciones?",
+      "opciones": [
+        "Crecimiento de mohos productores de micotoxinas en el grano seco.",
+        "Inactivación de los procesos de fermentación de los azúcares solubles.",
+        "Destrucción de los componentes minerales presentes en el grano seco.",
+        "Migración de monómeros plásticos desde la fibra vegetal del saco."
+      ],
+      "correcta": 0,
+      "explicacion": "La humedad en productos secos permite el crecimiento de mohos (Aspergillus, Penicillium, Fusarium) que producen micotoxinas."
+    },
+    {
+      "n": 20,
+      "enunciado": "Tras una avería eléctrica en una cámara de congelación, el pescado alcanza una temperatura de 8 °C. El encargado vuelve a encender el equipo para recongelarlo. ¿Por qué es incorrecta esta actuación?",
+      "opciones": [
+        "Porque el frío excesivo modifica la declaración nutricional del producto.",
+        "Porque la recongelación no destruye los gérmenes ni las toxinas formadas.",
+        "Porque el pescado congelado no puede someterse a tratamientos térmicos.",
+        "Porque la congelación posterior destruye el valor proteico del pescado."
+      ],
+      "correcta": 1,
+      "explicacion": "La congelación solo detiene la multiplicación; los microorganismos y toxinas formados durante el calentamiento siguen ahí."
+    },
+    {
+      "n": 21,
+      "enunciado": "Un comprador adquiere carne picada refrigerada y la deja dentro del maletero del coche expuesto al sol a 30 °C durante varias horas antes de meterla en la nevera. ¿En qué eslabón se ha producido el fallo de seguridad?",
+      "opciones": [
+        "En la industria transformadora, por no añadir conservantes en el picado.",
+        "En el establecimiento comercial, por no congelar la carne previamente.",
+        "En la fase de producción primaria, por falta de vacunación ganadera.",
+        "En la etapa final del consumidor, por incumplir la cadena de frío."
+      ],
+      "correcta": 3,
+      "explicacion": "El consumidor es el último eslabón de la cadena alimentaria y también es responsable de mantener la cadena de frío hasta su casa."
+    },
+    {
+      "n": 22,
+      "enunciado": "El etiquetado de un envase de leche UHT indica: «Una vez abierto, conservar en frigorífico y consumir en 3 días». ¿Cuál es la razón técnica de esta indicación?",
+      "opciones": [
+        "La pérdida de la esterilidad comercial al entrar en contacto con el aire.",
+        "La degradación inmediata de los azúcares en productos pasteurizados.",
+        "El riesgo de cesión de componentes del envase tras el contacto con el frío.",
+        "La obligación de modificar la categoría comercial del producto lácteo."
+      ],
+      "correcta": 0,
+      "explicacion": "El UHT es comercialmente estéril mientras el envase está cerrado; al abrirlo entran microorganismos del ambiente y pasa a ser perecedero."
+    },
+    {
+      "n": 23,
+      "enunciado": "Un envase de galletas secas sobrepasa la fecha de consumo preferente manteniéndose en condiciones secas. ¿Cuál es el estado del producto desde el punto de vista de la inocuidad?",
+      "opciones": [
+        "Es un producto no apto que debe retirarse inmediatamente por sanidad.",
+        "Es peligroso consumirlo por generación espontánea de toxinas bacterianas.",
+        "Es seguro consumirlo, aunque pueda perder cualidades de textura o aroma.",
+        "Es obligatorio someterlo a un horneado térmico antes de su consumo."
+      ],
+      "correcta": 2,
+      "explicacion": "La fecha de consumo preferente es de calidad, no de seguridad: bien conservado, el producto sigue siendo seguro aunque pierda propiedades organolépticas."
+    },
+    {
+      "n": 24,
+      "enunciado": "En la cocina de un comedor se elaboran platos preparados y se dejan expuestos a temperatura ambiente (22 °C) durante más de 5 horas antes del servicio. ¿Qué fallo higiénico se comete?",
+      "opciones": [
+        "Omitir la colocación del marcado de identificación en la bandeja de servicio.",
+        "Provocar la destrucción de la fibra alimentaria presente en la preparación.",
+        "Mantener el alimento en el rango térmico de rápida multiplicación microbiana.",
+        "Alterar la composición de los ácidos grasos por exposición al aire libre."
+      ],
+      "correcta": 2,
+      "explicacion": "Entre unos 5 y 65 °C está la zona de peligro. Las comidas preparadas deben mantenerse en frío (≤ 4–8 °C) o en caliente (≥ 65 °C)."
+    },
+    {
+      "n": 25,
+      "enunciado": "Un inspector comprueba que una lata de conserva vegetal no lleva marcado de identificación (óvalo sanitario), mientras que una conserva de pescado sí lo incluye. ¿A qué se debe esta diferencia?",
+      "opciones": [
+        "Las conservas de pescado están exentas de indicar la razón social de la empresa.",
+        "Los vegetales transformados no requieren ninguna norma de etiquetado oficial.",
+        "El marcado de identificación solo se aplica si el alimento contiene aditivos.",
+        "El marcado de identificación es exclusivo para productos de origen animal."
+      ],
+      "correcta": 3,
+      "explicacion": "El óvalo (Reg. 853/2004) identifica al establecimiento autorizado que manipula productos de origen animal. Los vegetales no lo llevan."
+    },
+    {
+      "n": 26,
+      "enunciado": "Una empresa elabora pizzas congeladas utilizando harina, salsa de tomate, queso y jamón cocido. ¿Debe llevar el envase final el sello de marcado de identificación (óvalo sanitario)?",
+      "opciones": [
+        "Sí, siempre que el contenido de vegetal sea inferior al cincuenta por ciento.",
+        "Sí, obligatoriamente por contener ingredientes de origen animal en la masa.",
+        "No, por ser un alimento compuesto con ingredientes animales transformados.",
+        "No, salvo que la pizza carezca de la lista de ingredientes en el reverso."
+      ],
+      "correcta": 2,
+      "explicacion": "Los alimentos compuestos que combinan vegetales con productos de origen animal ya transformados se rigen por el Reg. 852/2004 y no llevan óvalo."
+    },
+    {
+      "n": 27,
+      "enunciado": "Un zumo comercial indica en su envase «Con zumo de naranja natural» y en los ingredientes figura «Zumo de naranja (50 %), agua, azúcar». ¿Qué norma del etiquetado obliga a incluir el «(50 %)»?",
+      "opciones": [
+        "El reglamento sobre la declaración nutricional obligatoria de la UE.",
+        "La declaración cuantitativa de ingredientes (QUID) del etiquetado.",
+        "La normativa de control de residuos de plaguicidas en cítricos frescos.",
+        "La tolerancia legal aplicada al cálculo de los azúcares añadidos."
+      ],
+      "correcta": 1,
+      "explicacion": "El QUID (art. 22 del Reg. 1169/2011) obliga a indicar el % del ingrediente que aparece en la denominación o se destaca en el envase."
+    },
+    {
+      "n": 28,
+      "enunciado": "Un alimento preparado incluye en su composición un ingrediente derivado de maíz transgénico que representa el 1,5 % del peso total. ¿Cómo debe declararse en el etiquetado?",
+      "opciones": [
+        "Indicando expresamente en los ingredientes que procede de maíz modificado genéticamente.",
+        "Omitiendo la mención al tratarse de una cantidad inferior al cinco por ciento del total.",
+        "Mediante la inclusión opcional de una nota informativa en la página web del fabricante.",
+        "Colocando un logotipo de color verde en la parte frontal del envase del alimento."
+      ],
+      "correcta": 0,
+      "explicacion": "Por encima del 0,9 % (y siempre que el uso sea intencionado) hay que indicar «modificado genéticamente» o «producido a partir de maíz modificado genéticamente» (Reg. 1830/2003).",
+      "pista": "El umbral es menor del 1 %."
+    },
+    {
+      "n": 29,
+      "enunciado": "En el análisis nutricional de una bebida se detectan 0,07 g de grasas saturadas por cada 100 ml. Siguiendo las directrices europeas de redondeo (cantidades ≤ 0,1 g), ¿cómo se refleja este valor?",
+      "opciones": [
+        "Se debe indicar exactamente con tres cifras decimales.",
+        "Exige eliminar la fila correspondiente a las grasas en la tabla de nutrientes.",
+        "Se puede expresar como cero gramos o con la indicación «menor a 0,1 g».",
+        "Se debe redondear obligatoriamente al entero superior declarando un gramo."
+      ],
+      "correcta": 2,
+      "explicacion": "Según la tabla de redondeo, saturadas ≤ 0,1 g se declaran «0 g» o «<0,1 g»."
+    },
+    {
+      "n": 30,
+      "enunciado": "Un alimento nutricional aporta 14,7 g de proteínas por cada 100 g de producto. Siguiendo las reglas oficiales de redondeo para valores iguales o superiores a 10 g, ¿qué cifra debe figurar?",
+      "opciones": [
+        "Sin aplicar ningún tipo de redondeo, manteniendo la cifra de 14,7 gramos.",
+        "Ajustada al número entero más cercano, declarando 15 gramos de proteína.",
+        "Utilizando un intervalo aproximado, indicando menos de 20 gramos de proteína.",
+        "Expresada con dos decimales exactos, indicando 14,70 gramos en la tabla."
+      ],
+      "correcta": 1,
+      "explicacion": "Macronutrientes ≥ 10 g: entero más cercano → 15 g."
+    },
+    {
+      "n": 31,
+      "enunciado": "En el plan de limpieza y desinfección de una industria alimentaria, un operario aplica un desinfectante sobre las mesas de trabajo sin realizar el aclarado posterior indicado por el fabricante. ¿Qué peligro genera?",
+      "opciones": [
+        "Pérdida de las propiedades de elasticidad de la superficie metálica.",
+        "Desarrollo inmediato de esporas bacterianas resistentes en el acero.",
+        "Incompatibilidad con el marcado de identificación del establecimiento.",
+        "Contaminación química del alimento por restos de detergente o biocida."
+      ],
+      "correcta": 3,
+      "explicacion": "Si el fabricante indica aclarado, los restos de desinfectante pasan al alimento: peligro químico."
+    },
+    {
+      "n": 32,
+      "enunciado": "Una fábrica de conservas vegetales utiliza agua de un pozo propio en las etapas de lavado e ingrediente. ¿Qué requisito legal e higiénico es indispensable para el uso de esta agua?",
+      "opciones": [
+        "Mezclar el agua de pozo con salmuera concentrada para inactivar bacterias.",
+        "Garantizar que sea agua potable mediante controles analíticos periódicos.",
+        "Filtrar el agua exclusivamente a través de mallas textiles antes del uso.",
+        "Añadir conservantes químicos al agua antes de cada ciclo de lavado."
+      ],
+      "correcta": 1,
+      "explicacion": "El agua en contacto con alimentos debe ser apta para consumo humano (RD 3/2023), con controles analíticos periódicos."
+    },
+    {
+      "n": 33,
+      "enunciado": "Durante la recepción de materias primas en una industria procesadora de alimentos, un operario descarga sacos de ingredientes secos utilizando las mismas carretillas empleadas para la retirada de desperdicios orgánicos sin previa desinfección. ¿Qué fallo de la cadena alimentaria representa esta práctica?",
+      "opciones": [
+        "Una infracción de la normativa sobre los factores de conversión calórica.",
+        "Un incumplimiento exclusivo de la declaración del marcado de identificación.",
+        "Una alteración legal de la fecha de consumo preferente de los insumos.",
+        "Una alteración operacional que provoca contaminación cruzada biológica."
+      ],
+      "correcta": 3,
+      "explicacion": "Usar el mismo equipo para residuos y materia prima sin desinfectar transfiere microorganismos de lo sucio a lo limpio: contaminación cruzada."
+    },
+    {
+      "n": 34,
+      "enunciado": "Dentro del Plan de Control de Plagas de un almacén alimentario se instalan cebos insecticidas y raticidas en polvo dentro de la sala de manipulado. ¿Por qué es incorrecta esta ubicación?",
+      "opciones": [
+        "Porque los biocidas pierden su efectividad en presencia de luz artificial.",
+        "Porque los productos químicos pueden contaminar los alimentos expuestos.",
+        "Porque las plagas desarrollan inmunidad inmediata a los raticidas en polvo.",
+        "Porque la normativa exige utilizar únicamente trampas de calor seco."
+      ],
+      "correcta": 1,
+      "explicacion": "Los biocidas en polvo pueden dispersarse y contaminar los alimentos. Dentro de salas de manipulado se usan medidas físicas; los cebos van en estaciones cerradas y en el perímetro."
+    },
+    {
+      "n": 35,
+      "enunciado": "Un manipulador de alimentos presenta una herida infectada en la mano. Para poder reincorporarse a su puesto en la línea de envasado directo sin riesgo sanitario debe:",
+      "opciones": [
+        "Evitar tocar alimentos que tengan una fecha de caducidad superior a un mes.",
+        "Aplicar una crema desinfectante sobre la piel y trabajar sin protección.",
+        "Lavar la herida con agua caliente antes de comenzar la jornada laboral.",
+        "Cubrir la herida con una protección impermeable y utilizar un guante apto."
+      ],
+      "correcta": 3,
+      "explicacion": "Las heridas son foco de Staphylococcus aureus: deben cubrirse con un apósito impermeable y guante."
+    },
+    {
+      "n": 36,
+      "enunciado": "Un agricultor que suministra tomates a una industria conservera no mantiene el cuaderno de explotación con la relación de tratamientos fitosanitarios aplicados. ¿Qué principio fundamental de la Seguridad Alimentaria está vulnerando?",
+      "opciones": [
+        "El principio de cálculo del valor energético obligatorio en la tabla nutricional.",
+        "El principio de declaración del marcado de identificación en vegetales no transformados.",
+        "El principio de trazabilidad en la producción primaria para garantizar la inocuidad.",
+        "El principio de exención de controles sanitarios para la materia prima fresca."
+      ],
+      "correcta": 2,
+      "explicacion": "El cuaderno de explotación (RD 1311/2012) registra los tratamientos: es la trazabilidad del eslabón primario."
+    },
+    {
+      "n": 37,
+      "enunciado": "En una planta de envasado, la asignación de un código numérico único a todas las unidades producidas en un mismo turno y con la misma materia prima permite:",
+      "opciones": [
+        "Garantizar la trazabilidad y la acotación del producto ante una retirada.",
+        "Eximir al establecimiento del registro sanitario general obligatorio.",
+        "Modificar el cálculo de proteínas expresado en la tabla nutricional.",
+        "Sustituir la obligación de indicar la fecha de caducidad en el envase."
+      ],
+      "correcta": 0,
+      "explicacion": "El lote agrupa unidades producidas en condiciones prácticamente idénticas; ante un problema permite retirar solo lo afectado."
+    },
+    {
+      "n": 38,
+      "enunciado": "Cuando una autoridad sanitaria detecta la presencia de una bacteria patógena en un lote de carne importado de un país vecino, notifica el hallazgo de inmediato a la Red de Alerta Alimentaria para:",
+      "opciones": [
+        "Modificar los criterios de redondeo nutricional del producto afectado.",
+        "Eximir de responsabilidad legal a la empresa importadora del producto.",
+        "Actualizar el catálogo de sustancias fitosanitarias de uso agrícola.",
+        "Bloquear la distribución y coordinar la retirada internacional del lote."
+      ],
+      "correcta": 3,
+      "explicacion": "La Red de Alerta (RASFF en la UE, SCIRI en España) comunica rápidamente el riesgo para inmovilizar y retirar el producto en todos los países afectados."
+    },
+    {
+      "n": 39,
+      "enunciado": "Al definir las condiciones de comercialización de un alimento en la cadena de distribución, ¿cuál es la diferencia conceptual obligatoria entre «inocuidad alimentaria» y «calidad comercial»?",
+      "opciones": [
+        "La inocuidad es la garantía de que el alimento no causará daño a la salud, mientras que la calidad abarca atributos de sabor, apariencia o categoría comercial.",
+        "La inocuidad es un atributo optativo para la empresa, mientras que la calidad comercial viene fijada por las normas de la FAO.",
+        "La inocuidad se refiere únicamente al contenido en azúcares y grasas, mientras que la calidad determina la validez del número de registro sanitario.",
+        "La inocuidad aplica a productos de origen vegetal, mientras que la calidad comercial rige de forma exclusiva en carnes y pescados."
+      ],
+      "correcta": 0,
+      "explicacion": "Inocuidad = no hace daño (obligatoria, no negociable). Calidad comercial = atributos de valor (sabor, aspecto, categoría)."
+    },
+    {
+      "n": 40,
+      "enunciado": "Una industria alimentaria opera en España elaborando platos preparados envasados para su distribución nacional. ¿Qué requisito administrativo de autorización es obligatorio para su funcionamiento?",
+      "opciones": [
+        "Obtención de una certificación privada de calidad comercial voluntaria.",
+        "Exención de controles sanitarios si los productos se congelan previamente.",
+        "Envío mensual de muestras analíticas a la Comisión del Codex Alimentarius.",
+        "Inscripción en el Registro General Sanitario de Empresas Alimentarias (RGSEAA)."
+      ],
+      "correcta": 3,
+      "explicacion": "La inscripción en el RGSEAA (RD 191/2011) es obligatoria para las empresas alimentarias. Las certificaciones privadas (IFS, BRC) son voluntarias."
+    }
+  ]
+}

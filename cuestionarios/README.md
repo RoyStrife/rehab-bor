@@ -55,3 +55,7 @@ Como las opciones se pueden barajar, en la explicación no uses «la a», «la b
 - Barajar preguntas y respuestas (se puede desactivar en la pantalla de inicio).
 - Resultado final, repaso de las falladas y «Repetir falladas».
 - Guarda la mejor puntuación de cada cuestionario en el propio navegador.
+- **Preguntas para clase:** en cada pregunta, «☆ Llevar a clase» la marca. Las marcadas salen al final del cuestionario y en «Mis preguntas para clase» de la pantalla de inicio, con un comentario opcional y el botón «Compartir» (WhatsApp, Classroom, correo… o copia al portapapeles).
+- **Enlace de lista:** `.../cuestionarios/?q=<id>&p=9,26,28&m=comentario` abre solo esas preguntas con la respuesta y la explicación, y permite practicarlas o guardarlas en tus marcadas. Los números son los de la pregunta en el examen (campo `n`) o su posición.
+
+Campo opcional `"n"` en cada pregunta: número original del examen (sale como etiqueta «P27» y es el que usa el enlace).
