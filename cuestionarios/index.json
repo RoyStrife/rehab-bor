@@ -161,5 +161,15 @@
     "unidad": "UD_1",
     "preguntas": 10,
     "archivo": "Biotecnologia/cuestionarios/UD_1/biotec-ud1-celula.json"
+  },
+  {
+    "id": "biotec-ud1-evaluacion-final",
+    "titulo": "Evaluación final · Biotecnología UD1",
+    "descripcion": "30 preguntas difíciles y con trampa que mezclan todos los temas",
+    "modulo": "Biotecnología",
+    "unidad": "UD_1",
+    "asignatura": "Evaluación final",
+    "preguntas": 30,
+    "archivo": "Biotecnologia/cuestionarios/UD_1/biotec-ud1-evaluacion-final.json"
   }
 ]

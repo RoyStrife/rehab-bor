@@ -1,0 +1,349 @@
+{
+  "titulo": "Evaluación final · Biotecnología UD1",
+  "descripcion": "30 preguntas difíciles y con trampa que mezclan todos los temas",
+  "preguntas": [
+    {
+      "enunciado": "De estos cinco grupos funcionales, ¿cuántos son TERMINALES?: aldehído, cetona, fosfato, éster, metilo.",
+      "opciones": [
+        "2",
+        "4",
+        "3",
+        "5"
+      ],
+      "correcta": 2,
+      "explicacion": "Terminales: aldehído, fosfato y metilo. Cetona (–CO–) y éster (–COO–) son los dos no terminales de la hoja.",
+      "pista": "Solo hay dos no terminales en toda la hoja."
+    },
+    {
+      "enunciado": "Un ácido graso hipotético es C18:3 Δ9,12,15. Aplicando el método de los apuntes, ¿qué omega es?",
+      "opciones": [
+        "ω-9",
+        "ω-3",
+        "ω-15",
+        "ω-6"
+      ],
+      "correcta": 1,
+      "explicacion": "La ω cuenta desde el –CH₃. Con 18 carbonos, el doble enlace más cercano al metilo (Δ15) queda en el carbono 18 − 15 = 3. Igual que el linoleico: Δ12 → 18 − 12 = 6 → ω-6.",
+      "pista": "Haz lo mismo que con el linoleico, pero con el último Δ."
+    },
+    {
+      "enunciado": "Sobre el ácido linoleico (C18:2 Δ9,12), ¿qué afirmación es FALSA?",
+      "opciones": [
+        "Su primer doble enlace contando desde el –COOH está en el carbono 6",
+        "Es poliinsaturado",
+        "Es un ω-6",
+        "Es esencial: hay que tomarlo en la dieta"
+      ],
+      "correcta": 0,
+      "explicacion": "Desde el –COOH (notación Δ) el primer doble enlace está en el carbono 9. El 6 es contando desde el –CH₃ (ω-6).",
+      "pista": "Δ y ω cuentan desde extremos opuestos."
+    },
+    {
+      "enunciado": "¿Qué le falta a un nucleósido para ser un nucleótido?",
+      "opciones": [
+        "Una base nitrogenada",
+        "Una pentosa",
+        "Un uracilo",
+        "Un grupo fosfato (ácido fosfórico)"
+      ],
+      "correcta": 3,
+      "explicacion": "Nucleósido = pentosa + base. Nucleósido + ácido fosfórico = nucleótido."
+    },
+    {
+      "enunciado": "En la transcripción, ¿qué ARNm se obtiene de la cadena molde de ADN GCA TTA?",
+      "opciones": [
+        "CGT AAT",
+        "GCA UUA",
+        "CGU AAU",
+        "UGC AAU"
+      ],
+      "correcta": 2,
+      "explicacion": "Emparejamiento ADN molde → ARN: G→C, C→G, A→U, T→A. En el ARN no hay timina: CGT AAT sería ADN.",
+      "pista": "Cuidado con la T."
+    },
+    {
+      "enunciado": "Un ARNm dice AUG UAA UUU. ¿Qué cadena de aminoácidos se obtiene?",
+      "opciones": [
+        "Metionina – Fenilalanina",
+        "Solo metionina",
+        "Metionina – Fenilalanina – parada",
+        "Ninguna, porque falta el codón de inicio"
+      ],
+      "correcta": 1,
+      "explicacion": "AUG inicia (metionina) y UAA es de parada: la traducción termina ahí y se libera la cadena. El UUU (fenilalanina) ya no se lee.",
+      "pista": "Mira en qué posición está el codón de parada."
+    },
+    {
+      "enunciado": "Tras una replicación, ¿qué lleva cada una de las dos moléculas de ADN?",
+      "opciones": [
+        "Una cadena original y otra recién fabricada",
+        "Una molécula es toda original y la otra toda nueva",
+        "Las dos son completamente nuevas",
+        "Trozos mezclados de ADN viejo y nuevo en cada cadena"
+      ],
+      "correcta": 0,
+      "explicacion": "Es semiconservativa: cada ADN nuevo conserva una cadena original (que sirvió de molde) y lleva otra recién fabricada."
+    },
+    {
+      "enunciado": "Una enzima acaba de catalizar una reacción. ¿Qué afirmación es FALSA?",
+      "opciones": [
+        "Queda libre y puede volver a actuar",
+        "No se ha gastado",
+        "No se ha modificado",
+        "Se ha transformado en parte del producto"
+      ],
+      "correcta": 3,
+      "explicacion": "Característica 2: las enzimas no se ven afectadas por la reacción; actúan por su presencia y quedan libres."
+    },
+    {
+      "enunciado": "¿Qué afirmación sobre la energía de activación es correcta?",
+      "opciones": [
+        "La aporta la enzima consumiéndose en la reacción",
+        "La enzima la aumenta para que la reacción vaya más rápido",
+        "Es la energía que deben recibir las sustancias para reaccionar, y la enzima la disminuye",
+        "Es la energía que aportan los lípidos, unas 9 kcal/g"
+      ],
+      "correcta": 2,
+      "explicacion": "Los catalizadores (y las enzimas lo son) aceleran las reacciones disminuyendo la energía de activación necesaria."
+    },
+    {
+      "enunciado": "En una persona con intolerancia a la lactosa, ¿qué llega sin digerir al colon?",
+      "opciones": [
+        "Glucosa y galactosa",
+        "Lactosa",
+        "Lactasa",
+        "Solo galactosa"
+      ],
+      "correcta": 1,
+      "explicacion": "Sin suficiente lactasa, la lactosa no se descompone en glucosa y galactosa (que sí se absorberían) y llega al colon sin digerir.",
+      "pista": "La glucosa y la galactosa sí se absorben."
+    },
+    {
+      "enunciado": "¿Qué monosacárido está a la vez en la sacarosa y en la lactosa?",
+      "opciones": [
+        "La glucosa",
+        "La fructosa",
+        "La galactosa",
+        "Ninguno"
+      ],
+      "correcta": 0,
+      "explicacion": "Sacarosa = glucosa + fructosa · Lactosa = glucosa + galactosa."
+    },
+    {
+      "enunciado": "¿Cuál de estos azúcares NO forma parte de la sacarosa ni de la lactosa?",
+      "opciones": [
+        "Glucosa",
+        "Fructosa",
+        "Galactosa",
+        "Ribosa"
+      ],
+      "correcta": 3,
+      "explicacion": "La ribosa es la pentosa del ARN. La sacarosa y la lactosa están hechas de glucosa, fructosa y galactosa."
+    },
+    {
+      "enunciado": "¿Qué combinación de polisacáridos es correcta?",
+      "opciones": [
+        "Almidón: reserva animal · Glucógeno: reserva vegetal · Celulosa: estructural",
+        "Almidón: reserva vegetal · Glucógeno: se sintetiza en los músculos y se almacena en el hígado · Celulosa: reserva",
+        "Almidón: reserva vegetal · Glucógeno: reserva animal, se sintetiza en el hígado y se almacena en los músculos · Celulosa: estructural",
+        "Almidón: estructural · Glucógeno: reserva animal · Celulosa: reserva vegetal"
+      ],
+      "correcta": 2,
+      "explicacion": "Almidón = reserva vegetal; glucógeno = reserva animal (síntesis en el hígado, almacén en los músculos); celulosa = estructural de los vegetales."
+    },
+    {
+      "enunciado": "Un polipéptido de 50 aminoácidos, según los apuntes, ¿es una proteína?",
+      "opciones": [
+        "Sí: todo polipéptido de 10 o más es una proteína",
+        "No: es un polipéptido; se llaman proteínas los de más de 51",
+        "No: es un oligopéptido",
+        "Sí: basta con más de 20 aminoácidos"
+      ],
+      "correcta": 1,
+      "explicacion": "Oligopéptido: hasta 9 · Polipéptido: 10 o más · Proteína: más de 51.",
+      "pista": "Mira el límite exacto."
+    },
+    {
+      "enunciado": "Al freír un huevo sus proteínas se desnaturalizan. ¿Qué se conserva?",
+      "opciones": [
+        "La secuencia de aminoácidos unida por enlaces peptídicos (estructura primaria)",
+        "Los enlaces disulfuro de la terciaria",
+        "Los puentes de hidrógeno de la α-hélice",
+        "La unión entre protómeros de la cuaternaria"
+      ],
+      "correcta": 0,
+      "explicacion": "Desnaturalización: la proteína pierde sus estructuras y solo mantiene la primaria."
+    },
+    {
+      "enunciado": "¿Qué une entre sí a los protómeros en la estructura cuaternaria?",
+      "opciones": [
+        "Enlaces peptídicos",
+        "Enlaces disulfuro",
+        "Enlaces covalentes como los del agua",
+        "Enlaces débiles (no covalentes)"
+      ],
+      "correcta": 3,
+      "explicacion": "Cuaternaria: unión mediante enlaces débiles (no covalentes) de varias cadenas con estructura terciaria.",
+      "pista": "Los peptídicos están dentro de cada cadena."
+    },
+    {
+      "enunciado": "En la α-hélice, el puente de hidrógeno se forma entre el –C=O de un aminoácido y el –NH– de…",
+      "opciones": [
+        "El aminoácido inmediatamente siguiente",
+        "El segundo que le sigue",
+        "El cuarto aminoácido que le sigue",
+        "La cisteína más cercana"
+      ],
+      "correcta": 2,
+      "explicacion": "Puentes de H entre el –C=O de un aminoácido y el –NH– del cuarto que le sigue."
+    },
+    {
+      "enunciado": "Sobre la hemoglobina, ¿qué afirmación es FALSA?",
+      "opciones": [
+        "Tiene estructura cuaternaria",
+        "Es un ejemplo de proteína de reserva",
+        "Tiene dos cadenas α y dos β",
+        "Es un ejemplo de proteína de transporte"
+      ],
+      "correcta": 1,
+      "explicacion": "La hemoglobina es de transporte. Ejemplos de reserva son la caseína y la ovoalbúmina."
+    },
+    {
+      "enunciado": "Según su forma, ¿qué tipo de proteínas son las enzimas?",
+      "opciones": [
+        "Globulares: compactas, esféricas y muy solubles en agua",
+        "Fibrosas: alargadas y poco solubles",
+        "Fibrosas, como el colágeno",
+        "Ni fibrosas ni globulares, porque no tienen estructura terciaria"
+      ],
+      "correcta": 0,
+      "explicacion": "Globulares: compactas y muy solubles, con funciones diversas (ej. enzimas). Fibrosas: alargadas, poco solubles, estructurales (ej. colágeno)."
+    },
+    {
+      "enunciado": "¿Cuál de estos lípidos SÍ puede realizar la reacción de saponificación?",
+      "opciones": [
+        "Los terpenos",
+        "Los esteroides",
+        "Las prostaglandinas",
+        "Las ceras"
+      ],
+      "correcta": 3,
+      "explicacion": "Las ceras son saponificables simples (tienen ácidos grasos). Terpenos, esteroides y prostaglandinas son insaponificables.",
+      "pista": "Saponificar exige tener ácidos grasos."
+    },
+    {
+      "enunciado": "Con los valores de los apuntes, ¿cuánta energía aportan aproximadamente 100 g de grasa frente a 100 g de azúcar?",
+      "opciones": [
+        "Unas 400 kcal frente a unas 900 kcal",
+        "Unas 900 kcal frente a unas 900 kcal",
+        "Unas 900 kcal frente a unas 400 kcal",
+        "Unas 9 kcal frente a unas 4 kcal"
+      ],
+      "correcta": 2,
+      "explicacion": "Lípidos ≈ 9 kcal/g y glúcidos ≈ 4 kcal/g: 100 g × 9 = 900 kcal y 100 g × 4 = 400 kcal.",
+      "pista": "Cuidado con las unidades: son kcal por gramo."
+    },
+    {
+      "enunciado": "¿Qué afirmación sobre las grasas de los alimentos es correcta?",
+      "opciones": [
+        "Todos los aceites vegetales son mayoritariamente insaturados, sin excepción",
+        "El coco es vegetal pero rico en saturados (solo ≈ 8 % de insaturados)",
+        "La mantequilla es rica en insaturados",
+        "Los pescados son ricos en saturados"
+      ],
+      "correcta": 1,
+      "explicacion": "Casi todos los aceites vegetales tienen un 80–94 % de insaturados; el coco es la gran excepción. Mantequilla: saturados. Pescados: insaturados (omega-3)."
+    },
+    {
+      "enunciado": "Un informe de laboratorio da: 16:0, 18:0, 18:1ω9 y 22:6ω3. ¿Cuántos son insaturados?",
+      "opciones": [
+        "2",
+        "1",
+        "3",
+        "4"
+      ],
+      "correcta": 0,
+      "explicacion": ":0 = saturado (16:0 y 18:0). :1 o más = insaturado (18:1ω9 y 22:6ω3)."
+    },
+    {
+      "enunciado": "¿Qué cadena causa → efecto del agua es la correcta?",
+      "opciones": [
+        "Polaridad → forma lineal → enlace covalente → disolvente ideal",
+        "Forma lineal → polaridad → repulsión de electrones → disolvente ideal",
+        "Disolvente ideal → polaridad → forma triangular → enlace covalente",
+        "Repulsión de los electrones del O → forma triangular → polaridad → disolvente ideal"
+      ],
+      "correcta": 3,
+      "explicacion": "La repulsión entre los electrones del enlace y los cuatro libres del oxígeno da la forma triangular; eso le da la polaridad, y la polaridad la hace disolvente ideal."
+    },
+    {
+      "enunciado": "Además de en el núcleo, ¿dónde se encuentra principalmente el ADN?",
+      "opciones": [
+        "En los ribosomas",
+        "En el citoplasma, libre",
+        "En las mitocondrias",
+        "En los lisosomas"
+      ],
+      "correcta": 2,
+      "explicacion": "ADN: principalmente núcleo y mitocondrias. Ribosomas y citoplasma son ubicaciones del ARN (en eucariotas).",
+      "pista": "No confundas la fila del ADN con la del ARN en la tabla."
+    },
+    {
+      "enunciado": "Observas una célula con pared celular, ribosomas y ADN libre en el citoplasma, sin núcleo. ¿Qué es?",
+      "opciones": [
+        "Una célula vegetal, porque tiene pared",
+        "Una bacteria (procariota)",
+        "Una célula animal",
+        "Una levadura"
+      ],
+      "correcta": 1,
+      "explicacion": "Pared sin cloroplastos y ADN libre (nucleoide) sin núcleo → bacteria. Tener pared no la convierte en vegetal.",
+      "pista": "La pared no es exclusiva de las plantas."
+    },
+    {
+      "enunciado": "La célula vegetal no tiene lisosomas. ¿Qué estructura degrada residuos en ella según la tabla?",
+      "opciones": [
+        "La vacuola (lítica)",
+        "El cloroplasto",
+        "La pared celular",
+        "El centriolo"
+      ],
+      "correcta": 0,
+      "explicacion": "En la tabla: las vacuolas almacenan sustancias y la vacuola lítica de los vegetales degrada residuos."
+    },
+    {
+      "enunciado": "Glucosa y fructosa tienen 6 carbonos y la misma fórmula general. ¿Qué las distingue?",
+      "opciones": [
+        "La glucosa lleva una cetona y la fructosa un aldehído",
+        "La fructosa tiene nitrógeno",
+        "La glucosa tiene 5 carbonos",
+        "La glucosa lleva un aldehído y la fructosa una cetona"
+      ],
+      "correcta": 3,
+      "explicacion": "Glucosa → aldehído (terminal); fructosa → cetona (no terminal)."
+    },
+    {
+      "enunciado": "¿Qué grupo funcional tienen en común un aminoácido y un ácido graso?",
+      "opciones": [
+        "El amino (–NH₂)",
+        "El metilo (–CH₃) en ambos extremos",
+        "El carboxilo (–COOH)",
+        "El aldehído"
+      ],
+      "correcta": 2,
+      "explicacion": "Aminoácido: amino + carboxilo. Ácido graso: carboxilo + metilo. El que comparten es el carboxilo."
+    },
+    {
+      "enunciado": "¿Podría la lactasa descomponer la sacarosa?",
+      "opciones": [
+        "Sí: las dos tienen glucosa",
+        "No: cada enzima actúa sobre un único sustrato, y el de la lactasa es la lactosa",
+        "Sí: las enzimas actúan sobre cualquier azúcar",
+        "Solo si se añade un inhibidor"
+      ],
+      "correcta": 1,
+      "explicacion": "Las enzimas son específicas: cada una actúa sobre una única molécula, su sustrato, que encaja en su sitio activo.",
+      "pista": "Piensa en la tercera característica de las enzimas."
+    }
+  ]
+}
