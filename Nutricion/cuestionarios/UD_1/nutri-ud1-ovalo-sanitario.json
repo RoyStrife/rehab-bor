@@ -104,15 +104,15 @@
       "explicacion": "La empanada es un alimento compuesto (masa, sofrito y atún). Yogur, salmón ahumado y salchichas son productos de origen animal."
     },
     {
-      "enunciado": "Los apuntes dicen que la mantequilla, la leche en polvo y el huevo pasteurizado no llevan óvalo por ser «compuestos». ¿Es correcto?",
+      "enunciado": "Los apuntes citan la leche en polvo, el huevo pasteurizado y la mantequilla como ingredientes de origen animal ya transformados dentro de un alimento compuesto. Si se venden por sí solos, ¿llevan óvalo?",
       "opciones": [
-        "Sí, porque están transformados",
-        "No: son productos de origen animal transformados y sí llevan óvalo",
-        "Solo la mantequilla lo lleva",
+        "No, porque están transformados",
+        "Sí: siguen siendo productos de origen animal de un establecimiento autorizado",
+        "Solo la mantequilla",
         "Solo si se venden a granel"
       ],
       "correcta": 1,
-      "explicacion": "Un producto animal transformado (mantequilla, leche en polvo, ovoproductos) sigue siendo producto de origen animal y lleva óvalo. «Compuesto» es la mezcla con ingredientes vegetales."
+      "explicacion": "Un producto animal transformado (mantequilla, leche en polvo, ovoproductos) vendido como tal lleva óvalo. Lo que no lo lleva es el alimento compuesto que los usa como ingrediente junto a ingredientes vegetales, como una pizza o unas galletas."
     },
     {
       "enunciado": "¿Qué diferencia hay entre el óvalo sanitario y el marcado «CE» de un juguete o un aparato?",
