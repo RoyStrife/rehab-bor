@@ -1,0 +1,336 @@
+{
+ "titulo": "1º Parcial · Repaso general",
+ "descripcion": "Conceptos, organismos, trazabilidad, peligros, alérgenos, higiene y etiquetado",
+ "preguntas": [
+  {
+   "enunciado": "Según la FAO, si las tiendas están llenas pero la población no tiene ingresos para comprar, falla la dimensión de…",
+   "opciones": [
+    "Acceso",
+    "Utilización",
+    "Estabilidad",
+    "Disponibilidad"
+   ],
+   "correcta": 0,
+   "explicacion": "Hay alimentos (disponibilidad), pero la gente no puede conseguirlos."
+  },
+  {
+   "enunciado": "¿Qué diferencia hay entre inocuidad y calidad comercial?",
+   "opciones": [
+    "La inocuidad solo afecta al etiquetado",
+    "La calidad comercial es obligatoria y la inocuidad voluntaria",
+    "Son sinónimos",
+    "La inocuidad es obligatoria (que no haga daño); la calidad comercial son atributos de valor que decide la empresa"
+   ],
+   "correcta": 3,
+   "explicacion": "La inocuidad no se negocia."
+  },
+  {
+   "enunciado": "¿Qué organismo evalúa científicamente los riesgos alimentarios en la UE?",
+   "opciones": [
+    "La FAO",
+    "El RASFF",
+    "La EFSA",
+    "El Codex Alimentarius"
+   ],
+   "correcta": 2,
+   "explicacion": "La EFSA evalúa; la Comisión y los Estados gestionan."
+  },
+  {
+   "enunciado": "El Codex Alimentarius nace de la colaboración entre…",
+   "opciones": [
+    "La UE y la OMC",
+    "La ONU y la OCDE",
+    "La FAO y la OMS",
+    "La EFSA y la AESAN"
+   ],
+   "correcta": 2,
+   "explicacion": "Comisión mixta FAO/OMS que elabora normas alimentarias internacionales."
+  },
+  {
+   "enunciado": "¿Qué comité FAO/OMS evalúa los aditivos alimentarios?",
+   "opciones": [
+    "El SCIRI",
+    "El JECFA",
+    "El PNCOCA",
+    "El RASFF"
+   ],
+   "correcta": 1,
+   "explicacion": "Comité Mixto FAO/OMS de Expertos en Aditivos Alimentarios."
+  },
+  {
+   "enunciado": "¿Qué principio resume el Libro Blanco de Seguridad Alimentaria?",
+   "opciones": [
+    "Libre comercio sin controles",
+    "Autocontrol solo en la industria",
+    "Control únicamente en frontera",
+    "Trazabilidad «del campo a la mesa»"
+   ],
+   "correcta": 3,
+   "explicacion": "Puso el foco en controlar toda la cadena y creó la EFSA."
+  },
+  {
+   "enunciado": "La red europea de alerta rápida para alimentos y piensos es…",
+   "opciones": [
+    "El RGSEAA",
+    "El RASFF",
+    "El SITRAN",
+    "El JECFA"
+   ],
+   "correcta": 1,
+   "explicacion": "En España se conecta con el SCIRI."
+  },
+  {
+   "enunciado": "El registro general sanitario de empresas alimentarias en España es el…",
+   "opciones": [
+    "RGSEAA",
+    "SIRENTRA",
+    "RASFF",
+    "PNCOCA"
+   ],
+   "correcta": 0,
+   "explicacion": "Real Decreto 191/2011."
+  },
+  {
+   "enunciado": "¿Qué es la trazabilidad?",
+   "opciones": [
+    "El control de la temperatura",
+    "La analítica del producto final",
+    "El etiquetado nutricional",
+    "La capacidad de seguir un alimento a lo largo de todas las etapas de producción, transformación y distribución"
+   ],
+   "correcta": 3,
+   "explicacion": "Permite localizar y retirar un lote ante una alerta."
+  },
+  {
+   "enunciado": "La regla básica de trazabilidad exige a cada operador conocer…",
+   "opciones": [
+    "Solo a sus proveedores",
+    "Un paso atrás y un paso adelante",
+    "Solo a sus clientes",
+    "Toda la cadena hasta el consumidor"
+   ],
+   "correcta": 1,
+   "explicacion": "Proveedor inmediato y cliente inmediato."
+  },
+  {
+   "enunciado": "La histamina en el atún mal refrigerado es un peligro…",
+   "opciones": [
+    "Alergénico, por ser proteína",
+    "Biológico: un virus",
+    "Físico",
+    "Químico, formado por bacterias a partir de la histidina"
+   ],
+   "correcta": 3,
+   "explicacion": "Amina biógena que no se destruye cocinando ni enlatando."
+  },
+  {
+   "enunciado": "¿Por qué no sirve cocinar un pescado con mucha histamina?",
+   "opciones": [
+    "Porque la histamina es termoestable",
+    "Porque el calor la aumenta",
+    "Porque se evapora con el vapor",
+    "Sí sirve: la destruye"
+   ],
+   "correcta": 0,
+   "explicacion": "La medida eficaz es la cadena de frío."
+  },
+  {
+   "enunciado": "La parvalbúmina es…",
+   "opciones": [
+    "El alérgeno principal del pescado",
+    "Un aditivo conservante",
+    "Una enzima del marisco",
+    "La toxina de la escombroidosis"
+   ],
+   "correcta": 0,
+   "explicacion": "Proteína muy conservada entre especies; resiste el calor."
+  },
+  {
+   "enunciado": "Entre los 14 alérgenos, el único que no es una proteína es…",
+   "opciones": [
+    "El sésamo",
+    "Los sulfitos",
+    "El altramuz",
+    "La leche"
+   ],
+   "correcta": 1,
+   "explicacion": "Se declaran a partir de 10 mg/kg o 10 mg/l expresados como SO₂."
+  },
+  {
+   "enunciado": "La celiaquía es…",
+   "opciones": [
+    "Una intolerancia enzimática",
+    "Una enfermedad autoinmune frente al gluten",
+    "Una intoxicación",
+    "Una alergia IgE al trigo"
+   ],
+   "correcta": 1,
+   "explicacion": "Distinta de la alergia al trigo, que es IgE."
+  },
+  {
+   "enunciado": "La intolerancia a la lactosa se debe a…",
+   "opciones": [
+    "Exceso de histamina",
+    "Déficit de lactasa",
+    "Autoinmunidad",
+    "Anticuerpos IgE contra la caseína"
+   ],
+   "correcta": 1,
+   "explicacion": "Es enzimática y depende de la dosis; no hay riesgo de anafilaxia."
+  },
+  {
+   "enunciado": "¿Qué proteína explica la reactividad cruzada entre ácaros y marisco?",
+   "opciones": [
+    "La ovoalbúmina",
+    "La tropomiosina",
+    "La caseína",
+    "La parvalbúmina"
+   ],
+   "correcta": 1,
+   "explicacion": "Panalérgeno de invertebrados."
+  },
+  {
+   "enunciado": "Un manipulador con una herida en la mano debe…",
+   "opciones": [
+    "Lavarse solo con agua",
+    "Cubrirla con un apósito impermeable y guante",
+    "Seguir trabajando sin más",
+    "Ir a casa siempre"
+   ],
+   "correcta": 1,
+   "explicacion": "Evita la contaminación por S. aureus."
+  },
+  {
+   "enunciado": "La contaminación cruzada es…",
+   "opciones": [
+    "La contaminación del agua de riego",
+    "La caducidad del producto",
+    "El paso de un peligro de un alimento o superficie a otro alimento",
+    "El crecimiento en la nevera"
+   ],
+   "correcta": 2,
+   "explicacion": "Ejemplo típico: tabla de carne cruda usada después para la ensalada."
+  },
+  {
+   "enunciado": "La zona de peligro de temperatura para la multiplicación bacteriana está aproximadamente entre…",
+   "opciones": [
+    "70 y 100 °C",
+    "–18 y 0 °C",
+    "0 y 2 °C",
+    "5 y 65 °C"
+   ],
+   "correcta": 3,
+   "explicacion": "Por eso se refrigera por debajo y se mantiene en caliente por encima."
+  },
+  {
+   "enunciado": "En la cadena trófica, la bioacumulación de mercurio afecta más a…",
+   "opciones": [
+    "Grandes depredadores como el pez espada o el atún",
+    "Peces herbívoros",
+    "Moluscos filtradores pequeños",
+    "Algas"
+   ],
+   "correcta": 0,
+   "explicacion": "La concentración aumenta en cada nivel trófico (biomagnificación)."
+  },
+  {
+   "enunciado": "¿Qué documento registra los tratamientos fitosanitarios en una explotación agrícola?",
+   "opciones": [
+    "El cuaderno de explotación",
+    "La guía APPCC",
+    "El RASFF",
+    "El certificado sanitario"
+   ],
+   "correcta": 0,
+   "explicacion": "Obligatorio en producción primaria agrícola."
+  },
+  {
+   "enunciado": "¿Qué plan nacional coordina el control oficial de la cadena alimentaria en España?",
+   "opciones": [
+    "El SITRAN",
+    "El PNCOCA",
+    "El SCIRI",
+    "El RGSEAA"
+   ],
+   "correcta": 1,
+   "explicacion": "Plan Nacional de Control Oficial de la Cadena Alimentaria."
+  },
+  {
+   "enunciado": "El registro de explotaciones ganaderas y movimientos de animales en España es…",
+   "opciones": [
+    "RASFF",
+    "PNCOCA",
+    "JECFA",
+    "SITRAN"
+   ],
+   "correcta": 3,
+   "explicacion": "Sistema integral de trazabilidad animal."
+  },
+  {
+   "enunciado": "Fecha de caducidad frente a consumo preferente:",
+   "opciones": [
+    "Son lo mismo",
+    "Caducidad en alimentos microbiológicamente muy perecederos; consumo preferente en el resto",
+    "Caducidad solo en conservas",
+    "Consumo preferente en carne fresca"
+   ],
+   "correcta": 1,
+   "explicacion": "Pasada la caducidad el alimento no se puede vender; pasado el consumo preferente pierde calidad, no seguridad."
+  },
+  {
+   "enunciado": "Las bebidas con más de 1,2 % vol de alcohol…",
+   "opciones": [
+    "Deben llevar todas las menciones",
+    "Solo llevan el lote",
+    "Están exentas de lista de ingredientes y tabla nutricional, pero declaran alérgenos y % vol",
+    "No llevan etiqueta"
+   ],
+   "correcta": 2,
+   "explicacion": "Excepción del Reg. 1169/2011."
+  },
+  {
+   "enunciado": "El lote puede omitirse cuando…",
+   "opciones": [
+    "Lleva óvalo",
+    "El producto es nacional",
+    "Es un producto fresco envasado",
+    "La fecha indica al menos el día y el mes"
+   ],
+   "correcta": 3,
+   "explicacion": "La fecha ya permite identificar la partida."
+  },
+  {
+   "enunciado": "La tabla nutricional se expresa…",
+   "opciones": [
+    "Por ración únicamente",
+    "Por 100 g o 100 ml",
+    "Por envase siempre",
+    "Por kilo"
+   ],
+   "correcta": 1,
+   "explicacion": "Por porción es opcional y adicional."
+  },
+  {
+   "enunciado": "El APPCC se basa en…",
+   "opciones": [
+    "Analizar solo el producto final",
+    "Inspecciones sorpresa de la administración",
+    "Certificar la calidad comercial",
+    "Identificar peligros y controlar los puntos críticos del proceso"
+   ],
+   "correcta": 3,
+   "explicacion": "Sistema preventivo de autocontrol obligatorio para las empresas alimentarias."
+  },
+  {
+   "enunciado": "Un ejemplo de peligro físico es…",
+   "opciones": [
+    "La histamina",
+    "Un fragmento de vidrio en un tarro",
+    "La Salmonella",
+    "Un residuo de pesticida"
+   ],
+   "correcta": 1,
+   "explicacion": "Los físicos son cuerpos extraños: vidrio, metal, piedras, plásticos."
+  }
+ ]
+}

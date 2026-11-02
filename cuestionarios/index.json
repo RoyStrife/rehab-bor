@@ -182,6 +182,15 @@
     "archivo": "Nutricion/cuestionarios/UD_1/nutri-ud1-ovalo-sanitario.json"
   },
   {
+    "id": "nutri-ud1-particularidades-etiquetado",
+    "titulo": "Particularidades de etiquetado: óvalo, origen y casos límite",
+    "descripcion": "Transformado o compuesto, latas, ahumados, carne picada, CSM, aceite de oliva, peso escurrido y QUID",
+    "modulo": "Nutrición y Seguridad Alimentaria",
+    "unidad": "UD_1",
+    "preguntas": 30,
+    "archivo": "Nutricion/cuestionarios/UD_1/nutri-ud1-particularidades-etiquetado.json"
+  },
+  {
     "id": "nutri-parcial1-examen",
     "titulo": "1º Parcial · Cuestionario T1. Seguridad alimentaria (examen completo)",
     "descripcion": "Las 40 preguntas del examen: FAO, Codex, niveles tróficos, producción primaria, industria, consumidor, etiquetado, higiene y trazabilidad",
@@ -190,5 +199,15 @@
     "asignatura": "Examen real",
     "preguntas": 40,
     "archivo": "Nutricion/cuestionarios/Parcial_1/nutri-parcial1-examen.json"
+  },
+  {
+    "id": "nutri-parcial1-repaso",
+    "titulo": "1º Parcial · Repaso general",
+    "descripcion": "30 preguntas nuevas: conceptos, organismos, trazabilidad, peligros, alérgenos, higiene y etiquetado",
+    "modulo": "Nutrición y Seguridad Alimentaria",
+    "unidad": "Parcial_1",
+    "asignatura": "Repaso",
+    "preguntas": 30,
+    "archivo": "Nutricion/cuestionarios/Parcial_1/nutri-parcial1-repaso.json"
   }
 ]

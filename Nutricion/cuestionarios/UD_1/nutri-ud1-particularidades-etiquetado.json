@@ -1,0 +1,336 @@
+{
+ "titulo": "Particularidades de etiquetado: óvalo, origen y casos límite",
+ "descripcion": "Transformado o compuesto, latas, ahumados, carne picada, CSM, aceite de oliva, peso escurrido y QUID",
+ "preguntas": [
+  {
+   "enunciado": "¿Por qué el yogur con fresa lleva óvalo aunque tenga fruta?",
+   "opciones": [
+    "Porque la fresa solo le da carácter: sigue siendo un producto lácteo elaborado a partir de leche",
+    "Porque la fresa es de origen animal",
+    "No lo lleva: es un alimento compuesto",
+    "Solo lo lleva si la fresa supera el 50 %"
+   ],
+   "correcta": 0,
+   "explicacion": "La definición de producto transformado admite ingredientes que dan características específicas. La quesería trabaja leche cruda y necesita autorización del 853."
+  },
+  {
+   "enunciado": "Un yogur «sabor fresa» elaborado solo con aroma, ¿cambia algo respecto al óvalo frente al yogur con fresa?",
+   "opciones": [
+    "Sí: con aroma no lleva óvalo",
+    "No: ambos llevan óvalo; cambian la denominación, el QUID y los ingredientes",
+    "Sí: con fresa no lleva óvalo",
+    "Ninguno de los dos lleva óvalo"
+   ],
+   "correcta": 1,
+   "explicacion": "Fresa o aroma no decide el óvalo. Con aroma no hay QUID de fresa y se denomina «sabor fresa»."
+  },
+  {
+   "enunciado": "El salmón ahumado, a efectos de higiene (Reg. 852/2004), es…",
+   "opciones": [
+    "Un producto de la pesca transformado, con óvalo",
+    "Un producto exento de cualquier marca",
+    "Un alimento compuesto sin óvalo",
+    "Un producto fresco sin transformar"
+   ],
+   "correcta": 0,
+   "explicacion": "El ahumado figura expresamente en la definición de transformación."
+  },
+  {
+   "enunciado": "¿Por qué el salmón ahumado debe indicar zona de captura y método de producción y la lata de atún no?",
+   "opciones": [
+    "Porque la lata de atún es un compuesto",
+    "Porque el atún siempre se pesca en aguas de la UE",
+    "Porque el Reg. 1379/2013 se aplica por código aduanero: el ahumado está en el capítulo 03 y las conservas en el 16",
+    "Porque el salmón ahumado no es transformado según el 852"
+   ],
+   "correcta": 2,
+   "explicacion": "Para el etiquetado pesquero, el ahumado se trata como el fresco aunque para la higiene sea transformado."
+  },
+  {
+   "enunciado": "Una lata de atún en aceite de oliva, ¿qué lleva?",
+   "opciones": [
+    "Ni óvalo ni origen, por ser compuesto",
+    "Óvalo y origen",
+    "Óvalo sí, origen obligatorio no",
+    "Óvalo no, origen sí"
+   ],
+   "correcta": 2,
+   "explicacion": "El aceite es parte de la elaboración y conservación: sigue siendo pescado transformado. Al estar en el capítulo 16, no tiene origen obligatorio."
+  },
+  {
+   "enunciado": "Una lata de ensalada de atún con maíz y verduras es…",
+   "opciones": [
+    "Un preparado de pescado con origen obligatorio",
+    "Un transformado de pescado con óvalo",
+    "Un producto fresco",
+    "Un compuesto: no lleva óvalo obligatorio"
+   ],
+   "correcta": 3,
+   "explicacion": "El atún ya transformado se mezcla con vegetales y forma otro alimento."
+  },
+  {
+   "enunciado": "¿Por qué la merluza empanada lleva óvalo si tiene pan rallado?",
+   "opciones": [
+    "Porque el pan rallado lleva huevo",
+    "Porque la merluza entra cruda en la fábrica: no cumple la definición de compuesto",
+    "No lo lleva: es un compuesto",
+    "Porque todo lo congelado lleva óvalo"
+   ],
+   "correcta": 1,
+   "explicacion": "Compuesto exige producto animal ya transformado. La planta manipula pescado crudo y necesita autorización del 853."
+  },
+  {
+   "enunciado": "¿Qué pregunta decide mejor si un producto con vegetales lleva óvalo?",
+   "opciones": [
+    "¿Supera el 50 % de ingrediente animal?",
+    "¿Lleva aditivos?",
+    "¿Se vende refrigerado?",
+    "¿La fábrica recibe y trabaja carne, pescado o leche crudos?"
+   ],
+   "correcta": 3,
+   "explicacion": "Si trabaja materia prima animal cruda necesita autorización del 853 y pone óvalo; si solo usa ingredientes animales ya elaborados es un compuesto."
+  },
+  {
+   "enunciado": "Una cárnica compra carne cruda, la cocina y elabora con ella lasañas. ¿La lasaña puede llevar óvalo?",
+   "opciones": [
+    "No, nunca: es un compuesto",
+    "Solo si la vende a granel",
+    "Solo si es congelada",
+    "Sí: la planta trabaja carne cruda y está autorizada por el 853"
+   ],
+   "correcta": 3,
+   "explicacion": "El criterio de clase dice «compuesto sin óvalo», pero si la fábrica transforma materia prima animal cruda, en la práctica el producto sale con óvalo."
+  },
+  {
+   "enunciado": "Una pizzería industrial que usa mozzarella comprada y jamón cocido comprado…",
+   "opciones": [
+    "Necesita autorización del 853",
+    "Elabora un compuesto: no necesita óvalo, basta el registro según el 852",
+    "Debe poner el óvalo del jamón",
+    "Debe poner el óvalo de la quesería"
+   ],
+   "correcta": 1,
+   "explicacion": "Solo usa productos animales ya transformados con su propio óvalo."
+  },
+  {
+   "enunciado": "Carne picada de vacuno: ¿qué le corresponde?",
+   "opciones": [
+    "Óvalo y origen obligatorio",
+    "Origen sí, óvalo no",
+    "Óvalo sí, origen no",
+    "Ni óvalo ni origen"
+   ],
+   "correcta": 0,
+   "explicacion": "Es carne fresca picada: autorización del 853 y origen según el Reg. 1760/2000 (vacuno)."
+  },
+  {
+   "enunciado": "Una hamburguesa (preparado de carne con sal y especias)…",
+   "opciones": [
+    "No lleva ni óvalo ni origen",
+    "Lleva óvalo, pero el origen no es obligatorio",
+    "No lleva óvalo por tener especias",
+    "Lleva óvalo y origen obligatorio"
+   ],
+   "correcta": 1,
+   "explicacion": "Al añadir ingredientes sale de los códigos de carne fresca del reglamento de origen, pero la planta trabaja carne cruda."
+  },
+  {
+   "enunciado": "¿Qué menciones extra exige la carne picada?",
+   "opciones": [
+    "Contenido mínimo de sal",
+    "Porcentaje de grasa inferior a… y relación colágeno/proteína inferior a…",
+    "Fecha de sacrificio y nombre del ganadero",
+    "Zona FAO y arte de pesca"
+   ],
+   "correcta": 1,
+   "explicacion": "Lo pide el anexo VI, parte B, del Reg. 1169/2011."
+  },
+  {
+   "enunciado": "¿Qué es la CSM?",
+   "opciones": [
+    "Carne sin marca sanitaria",
+    "Certificado sanitario de mataderos",
+    "Carne seleccionada de máxima calidad",
+    "Carne separada mecánicamente de los huesos tras el deshuesado"
+   ],
+   "correcta": 3,
+   "explicacion": "Se obtiene a máquina de los restos adheridos al hueso; pierde total o parcialmente la estructura muscular."
+  },
+  {
+   "enunciado": "¿Cómo afecta la CSM al porcentaje de carne declarado?",
+   "opciones": [
+    "Cuenta igual que la carne magra",
+    "No cuenta como «carne»: se declara aparte como «carne separada mecánicamente de [especie]»",
+    "Cuenta al 50 %",
+    "No hace falta declararla"
+   ],
+   "correcta": 1,
+   "explicacion": "El Reg. 1169/2011 (anexo VII, parte B) la excluye de la definición de carne."
+  },
+  {
+   "enunciado": "¿De qué animales está prohibido obtener CSM?",
+   "opciones": [
+    "De cualquier animal joven",
+    "De huesos de rumiantes, por el riesgo de encefalopatías espongiformes",
+    "De aves",
+    "De cerdo"
+   ],
+   "correcta": 1,
+   "explicacion": "Prohibición ligada a las EET («vacas locas»)."
+  },
+  {
+   "enunciado": "Una empresa de Vigo envasa galletas fabricadas en Portugal y pone su dirección. ¿Debe indicar el origen?",
+   "opciones": [
+    "Sí, siempre que la empresa sea de otro país",
+    "Solo si las vende fuera de España",
+    "No: la dirección del operador no cuenta como origen y las galletas no tienen origen obligatorio",
+    "Sí, porque la dirección no coincide"
+   ],
+   "correcta": 2,
+   "explicacion": "El origen solo es obligatorio por tipo de producto, por riesgo de engaño o por origen voluntario distinto del ingrediente principal."
+  },
+  {
+   "enunciado": "Un aceite de oliva virgen extra marroquí envasado en Jaén debe…",
+   "opciones": [
+    "Indicar «Origen: España» por envasarse aquí",
+    "Indicar solo «aceite de oliva»",
+    "No indicar nada: basta la dirección de Jaén",
+    "Indicar el origen («Marruecos» o «no originario de la UE»)"
+   ],
+   "correcta": 3,
+   "explicacion": "El virgen extra tiene origen obligatorio (Reg. 29/2012) y la envasadora no sustituye al origen."
+  },
+  {
+   "enunciado": "En el «aceite de oliva» (mezcla de refinado y virgen) y el aceite de orujo, la indicación de origen…",
+   "opciones": [
+    "Es obligatoria solo en garrafas",
+    "No se permite",
+    "Es obligatoria",
+    "Es obligatoria solo si es importado"
+   ],
+   "correcta": 1,
+   "explicacion": "El Reg. 29/2012 solo prevé origen en virgen y virgen extra."
+  },
+  {
+   "enunciado": "¿Qué se considera «origen» del aceite de oliva virgen extra?",
+   "opciones": [
+    "Dónde se embotelló",
+    "El puerto de entrada en la UE",
+    "El domicilio social de la marca",
+    "Dónde se recogió la aceituna y dónde se extrajo el aceite"
+   ],
+   "correcta": 3,
+   "explicacion": "Si difieren, hay que indicar ambos lugares."
+  },
+  {
+   "enunciado": "Un producto pone «Hecho en España» pero su ingrediente principal es atún del Índico. ¿Qué exige el Reg. 2018/775?",
+   "opciones": [
+    "Añadir el óvalo",
+    "Retirar «Hecho en España»",
+    "Indicar también el origen del ingrediente principal",
+    "Nada más: basta «Hecho en España»"
+   ],
+   "correcta": 2,
+   "explicacion": "Si se indica voluntariamente un origen y el ingrediente principal viene de otro sitio, hay que decirlo."
+  },
+  {
+   "enunciado": "En una lata de mejillones en escabeche, ¿qué cantidad hay que indicar?",
+   "opciones": [
+    "Peso neto y peso neto escurrido",
+    "Solo peso escurrido",
+    "Solo peso neto",
+    "Volumen en ml"
+   ],
+   "correcta": 0,
+   "explicacion": "El escabeche (disolución con vinagre) es un líquido de cobertura del anexo IX del Reg. 1169/2011."
+  },
+  {
+   "enunciado": "Según la lista cerrada del Reg. 1169/2011, ¿cuál NO figura como líquido de cobertura?",
+   "opciones": [
+    "El agua o la salmuera",
+    "El vinagre",
+    "El aceite",
+    "El almíbar"
+   ],
+   "correcta": 2,
+   "explicacion": "El aceite no está en la lista; aun así las latas en aceite suelen indicar el escurrido por normas del sector y el Codex."
+  },
+  {
+   "enunciado": "La fecha de congelación es obligatoria en…",
+   "opciones": [
+    "Salmón ahumado congelado",
+    "Carne, preparados de carne y pescado no transformado congelados",
+    "Todos los congelados",
+    "Solo helados"
+   ],
+   "correcta": 1,
+   "explicacion": "El salmón ahumado es transformado para la higiene, así que no la necesita."
+  },
+  {
+   "enunciado": "Huevos frescos en caja: ¿llevan óvalo?",
+   "opciones": [
+    "No llevan ninguna identificación",
+    "No: llevan el código impreso en la cáscara y el centro de embalaje en la caja",
+    "Sí, en cada huevo",
+    "Sí, en la caja"
+   ],
+   "correcta": 1,
+   "explicacion": "El sistema de los huevos es el código de productor (p. ej. 3ES…)."
+  },
+  {
+   "enunciado": "Leche en polvo vendida sola en el súper…",
+   "opciones": [
+    "No lleva óvalo nunca",
+    "Solo si es infantil",
+    "Lleva óvalo",
+    "Solo si se importa"
+   ],
+   "correcta": 2,
+   "explicacion": "Sola es un transformado lácteo. Solo deja de llevarlo cuando va como ingrediente dentro de un compuesto."
+  },
+  {
+   "enunciado": "¿Dónde se coloca el QUID en la tabla del ejercicio de etiquetado?",
+   "opciones": [
+    "En la fecha de consumo",
+    "En la lista de ingredientes, junto al ingrediente",
+    "Junto al lote",
+    "En la tabla nutricional"
+   ],
+   "correcta": 1,
+   "explicacion": "También puede ir junto a la denominación, pero nunca en la tabla nutricional."
+  },
+  {
+   "enunciado": "Una marca llamada «ChocoMax» con dibujos de cacao en el envase…",
+   "opciones": [
+    "Obliga a indicar el origen del cacao",
+    "No obliga a nada: es una marca",
+    "Obliga a poner óvalo",
+    "Obliga al QUID del chocolate o cacao, por estar destacado"
+   ],
+   "correcta": 3,
+   "explicacion": "Destacar un ingrediente con palabras o imágenes activa el QUID (art. 22)."
+  },
+  {
+   "enunciado": "El QUID indica…",
+   "opciones": [
+    "Un contenido mínimo legal",
+    "La cantidad de proteína",
+    "El porcentaje real del ingrediente en el momento de fabricar",
+    "El % de grasa total"
+   ],
+   "correcta": 2,
+   "explicacion": "No fija mínimos: obliga a declarar cuánto lleva."
+  },
+  {
+   "enunciado": "La empresa (nombre y dirección del operador) en la etiqueta…",
+   "opciones": [
+    "Solo si hay óvalo",
+    "Es obligatoria siempre",
+    "Solo en productos importados",
+    "Es voluntaria si aparece el RGSEAA"
+   ],
+   "correcta": 1,
+   "explicacion": "Art. 9.1.h del Reg. 1169/2011: mención obligatoria en todos los alimentos envasados."
+  }
+ ]
+}
