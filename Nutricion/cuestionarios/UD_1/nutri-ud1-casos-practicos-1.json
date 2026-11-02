@@ -1,0 +1,446 @@
+{
+ "titulo": "Casos prácticos de etiquetado I",
+ "descripcion": "Platos refrigerados, yogur, conservas, cremas, bebidas alcohólicas, merluza, café y cárnicos",
+ "preguntas": [
+  {
+   "enunciado": "Una pizza barbacoa refrigerada con carne de vacuno, ¿qué tipo de fecha lleva?",
+   "opciones": [
+    "Consumo preferente",
+    "Fecha de congelación",
+    "Fecha de caducidad",
+    "Ninguna fecha"
+   ],
+   "correcta": 2,
+   "explicacion": "Es un plato refrigerado listo, microbiológicamente perecedero."
+  },
+  {
+   "enunciado": "Pizza con mozzarella y jamón cocido comprados a proveedores. ¿Óvalo?",
+   "opciones": [
+    "No aplica: alimento compuesto",
+    "Sí, el de la pizzería",
+    "Sí, el de la quesería",
+    "Sí, el del jamón"
+   ],
+   "correcta": 0,
+   "explicacion": "Mezcla productos animales ya transformados con vegetales."
+  },
+  {
+   "enunciado": "Pizza de 400 g con 46 g de salsa barbacoa en la denominación. ¿QUID de la salsa?",
+   "opciones": [
+    "46 %",
+    "8,7 %",
+    "11,5 %",
+    "4,6 %"
+   ],
+   "correcta": 2,
+   "explicacion": "46 ÷ 400 × 100 = 11,5 %."
+  },
+  {
+   "enunciado": "En la pizza, la salsa barbacoa (tomate, azúcar, vinagre, aroma de humo) se declara…",
+   "opciones": [
+    "Fuera de la lista de ingredientes",
+    "Como ingrediente compuesto con su sublista entre paréntesis",
+    "Solo como «salsa»",
+    "Al final de la lista siempre"
+   ],
+   "correcta": 1,
+   "explicacion": "Los ingredientes compuestos detallan sus componentes entre paréntesis."
+  },
+  {
+   "enunciado": "¿Qué alérgenos se destacan en una pizza con harina de trigo y mozzarella?",
+   "opciones": [
+    "TRIGO y LECHE",
+    "Ninguno, porque está cocinada",
+    "Solo leche",
+    "Solo gluten"
+   ],
+   "correcta": 0,
+   "explicacion": "El cereal se nombra («trigo») y la leche por la mozzarella."
+  },
+  {
+   "enunciado": "Una lasaña refrigerada con carne cocinada comprada. ¿Origen obligatorio?",
+   "opciones": [
+    "Sí, el de la carne",
+    "Sí, el de la pasta",
+    "Sí, siempre en platos preparados",
+    "No: es un compuesto"
+   ],
+   "correcta": 3,
+   "explicacion": "El origen obligatorio de la carne se aplica a carne fresca, congelada o picada."
+  },
+  {
+   "enunciado": "Empanada de atún refrigerada. ¿Qué QUID se indica?",
+   "opciones": [
+    "El del aceite",
+    "El del atún",
+    "El de la harina",
+    "Ninguno"
+   ],
+   "correcta": 1,
+   "explicacion": "El atún aparece en la denominación."
+  },
+  {
+   "enunciado": "Empanada de atún: ¿alérgenos típicos?",
+   "opciones": [
+    "Solo trigo",
+    "TRIGO y PESCADO (y HUEVO si se pinta con huevo)",
+    "Solo pescado",
+    "Moluscos"
+   ],
+   "correcta": 1,
+   "explicacion": "Harina de trigo, atún y, a menudo, huevo para dorar."
+  },
+  {
+   "enunciado": "Un plato refrigerado envasado con gases para alargar su vida útil debe indicar…",
+   "opciones": [
+    "«Con conservantes»",
+    "Nada adicional",
+    "«Envasado en atmósfera protectora»",
+    "«Envasado al vacío»"
+   ],
+   "correcta": 2,
+   "explicacion": "Mención obligatoria si se envasa con gases."
+  },
+  {
+   "enunciado": "Instrucciones típicas de conservación de una pizza refrigerada:",
+   "opciones": [
+    "No necesita instrucciones",
+    "Conservar entre 0 y 4 °C; una vez abierto, consumir en el día",
+    "Conservar a −18 °C",
+    "Conservar a temperatura ambiente"
+   ],
+   "correcta": 1,
+   "explicacion": "Producto refrigerado perecedero."
+  },
+  {
+   "enunciado": "Yogur con trozos de fresa. ¿Denominación correcta?",
+   "opciones": [
+    "«Yogur con fresa»",
+    "«Yogur aromatizado»",
+    "«Yogur sabor fresa»",
+    "«Postre lácteo de fresa»"
+   ],
+   "correcta": 0,
+   "explicacion": "Lleva fruta, así que no es aromatizado."
+  },
+  {
+   "enunciado": "Yogur con fresa: ¿qué menciones son de las que más puntúan?",
+   "opciones": [
+    "Óvalo (lácteo) y QUID de la fresa",
+    "Origen y fecha de congelación",
+    "Advertencia de cafeína",
+    "Peso escurrido"
+   ],
+   "correcta": 0,
+   "explicacion": "Es lácteo transformado y la fresa está en el nombre."
+  },
+  {
+   "enunciado": "Yogur elaborado solo con aroma de fresa se denomina…",
+   "opciones": [
+    "«Yogur de fresa natural»",
+    "«Fresa con yogur»",
+    "«Yogur con fresa»",
+    "«Yogur sabor fresa» o «yogur aromatizado»"
+   ],
+   "correcta": 3,
+   "explicacion": "Sin fruta no puede decir «con fresa»."
+  },
+  {
+   "enunciado": "Conservación típica del yogur:",
+   "opciones": [
+    "Entre 1 y 8 °C",
+    "A temperatura ambiente",
+    "A −18 °C",
+    "Por encima de 65 °C"
+   ],
+   "correcta": 0,
+   "explicacion": "Producto refrigerado."
+  },
+  {
+   "enunciado": "Atún claro en aceite de girasol, lata de 80 g. ¿Qué cantidad se indica?",
+   "opciones": [
+    "Solo peso escurrido",
+    "Solo volumen en ml",
+    "Peso neto y peso neto escurrido",
+    "Solo peso neto"
+   ],
+   "correcta": 2,
+   "explicacion": "Es la práctica del sector para conservas en aceite."
+  },
+  {
+   "enunciado": "En la lata de atún con peso escurrido declarado, el atún…",
+   "opciones": [
+    "Necesita QUID siempre",
+    "No necesita QUID",
+    "Se declara en ml",
+    "Debe ir en mayúsculas"
+   ],
+   "correcta": 1,
+   "explicacion": "El peso escurrido ya informa de la cantidad del ingrediente principal."
+  },
+  {
+   "enunciado": "Lata de atún: ¿qué debe concretarse en la denominación o ingredientes?",
+   "opciones": [
+    "El nombre del barco",
+    "La fecha de pesca",
+    "El puerto de descarga",
+    "La especie y el tipo de aceite"
+   ],
+   "correcta": 3,
+   "explicacion": "Por ejemplo «atún claro (Thunnus albacares) en aceite de girasol»."
+  },
+  {
+   "enunciado": "Lata de atún: ¿tipo de fecha?",
+   "opciones": [
+    "Fecha de congelación",
+    "Caducidad",
+    "Consumo preferente («fin de mm/aaaa»)",
+    "Ninguna"
+   ],
+   "correcta": 2,
+   "explicacion": "Conserva estable a temperatura ambiente."
+  },
+  {
+   "enunciado": "Pepinillos en vinagre en tarro. ¿Óvalo?",
+   "opciones": [
+    "No: es vegetal",
+    "Sí, por el vinagre",
+    "Solo si se exportan",
+    "Sí, por ser conserva"
+   ],
+   "correcta": 0,
+   "explicacion": "Los vegetales no llevan óvalo."
+  },
+  {
+   "enunciado": "Pepinillos en vinagre: ¿cuándo se declaran los sulfitos?",
+   "opciones": [
+    "Solo si son ecológicos",
+    "Nunca",
+    "Siempre",
+    "Si el producto supera 10 mg/kg expresado como SO₂"
+   ],
+   "correcta": 3,
+   "explicacion": "Es el umbral de declaración de los sulfitos."
+  },
+  {
+   "enunciado": "Crema de verduras con queso refrigerada. ¿Óvalo?",
+   "opciones": [
+    "Solo si lleva nata",
+    "No: es compuesto",
+    "Sí, por el queso",
+    "Sí, por ser refrigerada"
+   ],
+   "correcta": 1,
+   "explicacion": "El queso ya transformado va dentro de un alimento vegetal."
+  },
+  {
+   "enunciado": "Crema de verduras en brik esterilizado. ¿Qué fecha?",
+   "opciones": [
+    "Caducidad",
+    "Fecha de congelación",
+    "Consumo preferente",
+    "Ninguna"
+   ],
+   "correcta": 2,
+   "explicacion": "Esterilizada y estable a temperatura ambiente."
+  },
+  {
+   "enunciado": "Crema de verduras con queso: ¿denominación correcta?",
+   "opciones": [
+    "«Puré de queso»",
+    "Solo «crema»",
+    "«Sopa»",
+    "Incluir el queso: «crema de verduras con queso»"
+   ],
+   "correcta": 3,
+   "explicacion": "La denominación debe describir el producto sin engañar."
+  },
+  {
+   "enunciado": "Cerveza de 5,5 % vol. ¿Lista de ingredientes?",
+   "opciones": [
+    "Solo si es artesana",
+    "No es obligatoria (más de 1,2 % vol)",
+    "Solo si lleva gluten",
+    "Obligatoria siempre"
+   ],
+   "correcta": 1,
+   "explicacion": "Exención de las bebidas alcohólicas."
+  },
+  {
+   "enunciado": "Cerveza de 5,5 % vol sin lista de ingredientes: ¿cómo se informa del alérgeno?",
+   "opciones": [
+    "Con un icono obligatorio",
+    "Solo en la web del fabricante",
+    "No se informa",
+    "«Contiene: CEBADA»"
+   ],
+   "correcta": 3,
+   "explicacion": "Sin lista, los alérgenos van con «Contiene»."
+  },
+  {
+   "enunciado": "Cerveza de 5,5 % vol: ¿tabla nutricional?",
+   "opciones": [
+    "Obligatoria por 100 ml",
+    "Obligatoria por botella",
+    "Exenta",
+    "Solo si es sin alcohol"
+   ],
+   "correcta": 2,
+   "explicacion": "Las bebidas con más de 1,2 % vol están exentas."
+  },
+  {
+   "enunciado": "Licor de crema de 17 % vol. ¿Fecha de consumo preferente?",
+   "opciones": [
+    "Caducidad obligatoria",
+    "No es obligatoria (10 % vol o más)",
+    "Obligatoria",
+    "Fecha de congelación"
+   ],
+   "correcta": 1,
+   "explicacion": "Las bebidas de 10 % vol o más no necesitan fecha."
+  },
+  {
+   "enunciado": "Licor con leche en su elaboración. ¿Qué alérgeno se declara?",
+   "opciones": [
+    "Gluten",
+    "Sulfitos siempre",
+    "«Contiene: LECHE»",
+    "Ninguno, al ser alcohólico"
+   ],
+   "correcta": 2,
+   "explicacion": "Los alérgenos se declaran aunque no haya lista de ingredientes."
+  },
+  {
+   "enunciado": "Un licor se puede llamar «licor de crema» si…",
+   "opciones": [
+    "Lleva huevo",
+    "Tiene al menos 15 % vol y 100 g de azúcar por litro (aprox.)",
+    "Supera 40 % vol",
+    "Tiene nata"
+   ],
+   "correcta": 1,
+   "explicacion": "Requisitos de la normativa de bebidas espirituosas."
+  },
+  {
+   "enunciado": "Merluza empanada ultracongelada: ¿qué término va en la denominación?",
+   "opciones": [
+    "«Fresco»",
+    "«Ultracongelado»",
+    "«Refrigerado»",
+    "«Ahumado»"
+   ],
+   "correcta": 1,
+   "explicacion": "La denominación incluye el estado o tratamiento."
+  },
+  {
+   "enunciado": "Merluza empanada ultracongelada: instrucción de conservación clave.",
+   "opciones": [
+    "Sin instrucciones",
+    "Entre 0 y 4 °C",
+    "A −18 °C; una vez descongelado, no volver a congelar",
+    "A temperatura ambiente"
+   ],
+   "correcta": 2,
+   "explicacion": "Producto congelado."
+  },
+  {
+   "enunciado": "Merluza empanada: ¿lleva óvalo?",
+   "opciones": [
+    "No, es compuesto",
+    "Solo si es de Galicia",
+    "Sí",
+    "Solo si es fresca"
+   ],
+   "correcta": 2,
+   "explicacion": "La merluza entra cruda en la planta: no es compuesto."
+  },
+  {
+   "enunciado": "Café soluble 100 %. ¿Lista de ingredientes?",
+   "opciones": [
+    "Solo en envases grandes",
+    "Solo si es descafeinado",
+    "Sí, obligatoria",
+    "No: es de un solo ingrediente"
+   ],
+   "correcta": 3,
+   "explicacion": "Un ingrediente con el mismo nombre que el producto."
+  },
+  {
+   "enunciado": "Café soluble: ¿tabla nutricional?",
+   "opciones": [
+    "Exenta",
+    "Solo por taza",
+    "Solo si lleva azúcar",
+    "Obligatoria"
+   ],
+   "correcta": 0,
+   "explicacion": "Café, té y sus extractos están exentos."
+  },
+  {
+   "enunciado": "Café soluble: ¿advertencia de cafeína elevada?",
+   "opciones": [
+    "Solo en cápsulas",
+    "Solo si es torrefacto",
+    "No: el café y el té están exentos",
+    "Sí, siempre"
+   ],
+   "correcta": 2,
+   "explicacion": "La advertencia es para otras bebidas con mucha cafeína."
+  },
+  {
+   "enunciado": "Jamón cocido «extra»: ¿qué norma define esa categoría?",
+   "opciones": [
+    "No hay norma",
+    "La norma de calidad de productos cárnicos (RD 474/2014)",
+    "El Codex",
+    "El Reg. 853/2004"
+   ],
+   "correcta": 1,
+   "explicacion": "Las categorías comerciales vienen de la norma de calidad."
+  },
+  {
+   "enunciado": "En un jamón cocido, el nitrito sódico se declara como…",
+   "opciones": [
+    "No se declara",
+    "«E-250» sin categoría",
+    "«Conservante: E-250» (o su nombre)",
+    "«Sal»"
+   ],
+   "correcta": 2,
+   "explicacion": "Aditivos: categoría + nombre o número E."
+  },
+  {
+   "enunciado": "Salchichas tipo Frankfurt con CSM de pollo. ¿Cómo se declara?",
+   "opciones": [
+    "«Proteína animal»",
+    "No se declara",
+    "«Carne de pollo separada mecánicamente», fuera del % de carne",
+    "«Carne de pollo»"
+   ],
+   "correcta": 2,
+   "explicacion": "La CSM no cuenta como carne."
+  },
+  {
+   "enunciado": "Salchichas con proteína de soja. ¿Alérgeno a destacar?",
+   "opciones": [
+    "SOJA",
+    "Ninguno",
+    "Mostaza siempre",
+    "Gluten"
+   ],
+   "correcta": 0,
+   "explicacion": "La soja es uno de los 14."
+  },
+  {
+   "enunciado": "Salchichas cocidas refrigeradas: ¿fecha?",
+   "opciones": [
+    "Caducidad",
+    "Congelación",
+    "Ninguna",
+    "Consumo preferente"
+   ],
+   "correcta": 0,
+   "explicacion": "Cárnico cocido refrigerado, perecedero."
+  }
+ ]
+}

@@ -1,0 +1,446 @@
+{
+ "titulo": "Casos prácticos de etiquetado II",
+ "descripcion": "Salmón ahumado, carne picada, bebida energética, galletas, OMG, origen, escabeche, huevos, leche y vino",
+ "preguntas": [
+  {
+   "enunciado": "Jamón cocido: ¿lleva óvalo?",
+   "opciones": [
+    "No, por tener aditivos",
+    "Solo si es loncheado",
+    "Solo si es extra",
+    "Sí"
+   ],
+   "correcta": 3,
+   "explicacion": "Producto cárnico transformado."
+  },
+  {
+   "enunciado": "Salmón ahumado: ¿qué reglamento obliga a nombre comercial, nombre científico, método y zona?",
+   "opciones": [
+    "Reg. 1379/2013 (productos de la pesca)",
+    "Reg. 29/2012",
+    "Reg. 852/2004",
+    "Reg. 2073/2005"
+   ],
+   "correcta": 0,
+   "explicacion": "Organización común de mercados de la pesca."
+  },
+  {
+   "enunciado": "Salmón ahumado de acuicultura noruega: ¿qué origen se indica?",
+   "opciones": [
+    "La zona FAO de captura",
+    "El país de cría (Noruega) y «criado»",
+    "Ninguno",
+    "Solo la dirección de la empresa"
+   ],
+   "correcta": 1,
+   "explicacion": "En acuicultura se indica el país y el método."
+  },
+  {
+   "enunciado": "Salmón ahumado: ¿el humo se declara como ingrediente?",
+   "opciones": [
+    "Sí, como aditivo",
+    "Sí, con QUID",
+    "No: es un proceso",
+    "Sí, como aroma"
+   ],
+   "correcta": 2,
+   "explicacion": "El ahumado es un tratamiento."
+  },
+  {
+   "enunciado": "Salmón ahumado en frío: ¿qué exige el 853 contra el anisakis?",
+   "opciones": [
+    "Congelación previa (−20 °C 24 h o −35 °C 15 h)",
+    "Nada",
+    "Salazón a 50 %",
+    "Cocción a 100 °C"
+   ],
+   "correcta": 0,
+   "explicacion": "El ahumado en frío no supera 60 °C en el interior."
+  },
+  {
+   "enunciado": "Salmón ahumado: ¿fecha?",
+   "opciones": [
+    "Congelación",
+    "Ninguna",
+    "Caducidad",
+    "Consumo preferente"
+   ],
+   "correcta": 2,
+   "explicacion": "Listo para comer, refrigerado y con riesgo de Listeria."
+  },
+  {
+   "enunciado": "Carne picada de cerdo congelada: ¿qué fechas lleva?",
+   "opciones": [
+    "Solo caducidad",
+    "Fecha de congelación y consumo preferente",
+    "Solo fecha de elaboración",
+    "Ninguna"
+   ],
+   "correcta": 1,
+   "explicacion": "Carne congelada: fecha de congelación obligatoria."
+  },
+  {
+   "enunciado": "Una «carne picada» con un 1,5 % de sal pasa a ser…",
+   "opciones": [
+    "Preparado de carne",
+    "Alimento compuesto",
+    "Carne fresca",
+    "Producto cárnico cocido"
+   ],
+   "correcta": 0,
+   "explicacion": "Con 1 % o más de sal deja de ser carne picada."
+  },
+  {
+   "enunciado": "Carne picada: ¿qué menciones de composición se añaden?",
+   "opciones": [
+    "% de grasa y relación colágeno/proteína",
+    "% de agua y de sal",
+    "Zona FAO",
+    "% vol"
+   ],
+   "correcta": 0,
+   "explicacion": "Anexo VI del Reg. 1169/2011."
+  },
+  {
+   "enunciado": "Carne picada de vacuno de un ternero nacido en Francia y criado y sacrificado en España…",
+   "opciones": [
+    "Solo indica «UE»",
+    "No necesita origen",
+    "Basta la dirección española",
+    "Debe indicar el origen (sistema del Reg. 1760/2000)"
+   ],
+   "correcta": 3,
+   "explicacion": "El origen es obligatorio en carne picada de vacuno."
+  },
+  {
+   "enunciado": "Bebida energética con 320 mg/l de cafeína. ¿Qué se indica?",
+   "opciones": [
+    "Solo el % de cafeína",
+    "Nada",
+    "«Puede contener trazas»",
+    "«Contenido elevado de cafeína: no recomendado para niños ni mujeres embarazadas o en periodo de lactancia» + mg/100 ml"
+   ],
+   "correcta": 3,
+   "explicacion": "Supera 150 mg/l."
+  },
+  {
+   "enunciado": "Bebida energética con sucralosa. ¿Mención obligatoria?",
+   "opciones": [
+    "Ninguna",
+    "«Con edulcorante(s)» junto a la denominación",
+    "«Light»",
+    "«Sin azúcar»"
+   ],
+   "correcta": 1,
+   "explicacion": "Mención obligatoria si lleva edulcorantes."
+  },
+  {
+   "enunciado": "Bebida con 0,03 % de cafeína equivale a…",
+   "opciones": [
+    "300 mg/l",
+    "3000 mg/l",
+    "3 mg/l",
+    "30 mg/l"
+   ],
+   "correcta": 0,
+   "explicacion": "0,03 g/100 ml = 0,3 g/l = 300 mg/l."
+  },
+  {
+   "enunciado": "Bebida energética sin azúcar ni grasa: la tabla nutricional…",
+   "opciones": [
+    "Debe ir por lata",
+    "No es obligatoria por ser bebida",
+    "Puede mostrar casi todo «0 g» o sustituirse por la frase de cantidades insignificantes",
+    "Solo indica energía en kJ"
+   ],
+   "correcta": 2,
+   "explicacion": "Opción prevista cuando casi todo es insignificante."
+  },
+  {
+   "enunciado": "Galletas con relleno de crema de cacao: ¿denominación correcta?",
+   "opciones": [
+    "«Bombón»",
+    "«Galletas rellenas de crema de cacao»",
+    "«Galletas de cacao»",
+    "«Cacao en galleta»"
+   ],
+   "correcta": 1,
+   "explicacion": "El nombre no puede sugerir que la galleta es de cacao."
+  },
+  {
+   "enunciado": "Galletas con avellana, harina de trigo y leche en polvo: alérgenos a destacar…",
+   "opciones": [
+    "Ninguno, por estar horneadas",
+    "TRIGO, LECHE y AVELLANA",
+    "Solo gluten",
+    "Solo leche"
+   ],
+   "correcta": 1,
+   "explicacion": "Los tres están entre los 14."
+  },
+  {
+   "enunciado": "En unas galletas, E-500ii y E-503ii se declaran como…",
+   "opciones": [
+    "«Colorantes»",
+    "No se declaran",
+    "«Gasificantes: E-500ii, E-503ii»",
+    "«Conservantes»"
+   ],
+   "correcta": 2,
+   "explicacion": "Bicarbonatos sódico y amónico como gasificantes."
+  },
+  {
+   "enunciado": "Galletas: ¿fecha?",
+   "opciones": [
+    "Ninguna",
+    "Caducidad",
+    "Consumo preferente",
+    "Congelación"
+   ],
+   "correcta": 2,
+   "explicacion": "Producto estable."
+  },
+  {
+   "enunciado": "Unas galletas fabricadas con leche en polvo y mantequilla: ¿óvalo?",
+   "opciones": [
+    "No: son un compuesto",
+    "Sí, el de la leche en polvo",
+    "Sí, el de la mantequilla",
+    "Solo si superan un 10 % de mantequilla"
+   ],
+   "correcta": 0,
+   "explicacion": "Los ingredientes animales ya transformados van dentro de un producto vegetal."
+  },
+  {
+   "enunciado": "Un enunciado da los ingredientes desordenados. ¿Qué hay que hacer?",
+   "opciones": [
+    "Reordenarlos de mayor a menor peso",
+    "Ordenarlos alfabéticamente",
+    "Dejarlos como vienen",
+    "Poner primero los alérgenos"
+   ],
+   "correcta": 0,
+   "explicacion": "Es una de las trampas típicas del boletín."
+  },
+  {
+   "enunciado": "Un enunciado indica «puede contener trazas de frutos de cáscara». ¿Cuándo se pone?",
+   "opciones": [
+    "Solo en productos importados",
+    "Solo si hay riesgo real de contaminación cruzada",
+    "Siempre, por precaución",
+    "Nunca, está prohibido"
+   ],
+   "correcta": 1,
+   "explicacion": "No debe usarse como comodín."
+  },
+  {
+   "enunciado": "Un producto lleva un 1,2 % de maíz modificado genéticamente. ¿Qué se indica?",
+   "opciones": [
+    "Solo un icono",
+    "Nada, está por debajo del límite",
+    "«Modificado genéticamente» junto al ingrediente",
+    "Un óvalo especial"
+   ],
+   "correcta": 2,
+   "explicacion": "Supera el 0,9 %."
+  },
+  {
+   "enunciado": "Un zumo que dice «con zumo de naranja natural»…",
+   "opciones": [
+    "Debe indicar el % de zumo (QUID)",
+    "No necesita nada",
+    "Debe llevar óvalo",
+    "Debe indicar la zona FAO"
+   ],
+   "correcta": 0,
+   "explicacion": "El ingrediente está destacado en el envase."
+  },
+  {
+   "enunciado": "Un producto vendido en un envase de 20 cm² de superficie mayor…",
+   "opciones": [
+    "Debe llevar tabla completa",
+    "Está exento de tabla nutricional",
+    "No lleva lote",
+    "Debe llevar óvalo"
+   ],
+   "correcta": 1,
+   "explicacion": "Exención de envases muy pequeños (< 25 cm²)."
+  },
+  {
+   "enunciado": "Una sal de mesa envasada: ¿fecha?",
+   "opciones": [
+    "Consumo preferente obligatorio",
+    "Caducidad",
+    "No necesita fecha",
+    "Congelación"
+   ],
+   "correcta": 2,
+   "explicacion": "La sal, el azúcar y el vinagre están exentos de fecha."
+  },
+  {
+   "enunciado": "Miel de un apicultor gallego vendida en tarro: ¿origen?",
+   "opciones": [
+    "Obligatorio («Origen: España»)",
+    "Prohibido",
+    "Solo si es de mezcla",
+    "No, basta la dirección"
+   ],
+   "correcta": 0,
+   "explicacion": "La miel tiene origen obligatorio."
+  },
+  {
+   "enunciado": "Aceite de oliva virgen extra de aceitunas de Jaén molturadas en Jaén: ¿origen?",
+   "opciones": [
+    "Solo si se exporta",
+    "No obligatorio",
+    "Prohibido",
+    "Obligatorio: España (o UE)"
+   ],
+   "correcta": 3,
+   "explicacion": "El virgen extra tiene origen obligatorio."
+  },
+  {
+   "enunciado": "Aceite de orujo de oliva: ¿se puede poner «Origen: España»?",
+   "opciones": [
+    "Solo con óvalo",
+    "Sí, si la almazara es española",
+    "Sí, es obligatorio",
+    "No: no se permite indicar origen"
+   ],
+   "correcta": 3,
+   "explicacion": "Solo virgen y virgen extra llevan origen."
+  },
+  {
+   "enunciado": "Mejillones en escabeche, lata de 111 g. ¿Qué cantidad?",
+   "opciones": [
+    "Solo volumen",
+    "Solo peso neto",
+    "Solo número de piezas",
+    "Peso neto y peso neto escurrido"
+   ],
+   "correcta": 3,
+   "explicacion": "El escabeche (vinagre) es líquido de cobertura."
+  },
+  {
+   "enunciado": "Mejillones en escabeche: ¿alérgenos?",
+   "opciones": [
+    "Pescado",
+    "Crustáceos",
+    "Ninguno",
+    "MOLUSCOS (y sulfitos si superan 10 mg/kg)"
+   ],
+   "correcta": 3,
+   "explicacion": "El mejillón es un molusco."
+  },
+  {
+   "enunciado": "Sándwich de salmón ahumado envasado: ¿óvalo?",
+   "opciones": [
+    "Sí, por ser refrigerado",
+    "Solo si es ahumado en frío",
+    "Sí, el del salmón",
+    "No: es compuesto"
+   ],
+   "correcta": 3,
+   "explicacion": "Pan + producto de la pesca ya transformado."
+  },
+  {
+   "enunciado": "Huevos frescos categoría A en caja: ¿qué lleva cada huevo?",
+   "opciones": [
+    "Nada",
+    "El óvalo sanitario",
+    "Un código impreso (método de cría, país y granja)",
+    "Un código de barras"
+   ],
+   "correcta": 2,
+   "explicacion": "Por ejemplo 3ES… Las cajas indican el centro de embalaje."
+  },
+  {
+   "enunciado": "Huevos de una granja con Salmonella detectada…",
+   "opciones": [
+    "Se venden más baratos",
+    "No se venden como frescos; van a la industria para tratamiento térmico",
+    "Se destruyen siempre",
+    "Se venden con advertencia"
+   ],
+   "correcta": 1,
+   "explicacion": "Ovoproductos pasteurizados."
+  },
+  {
+   "enunciado": "Leche UHT entera en brik: ¿fecha?",
+   "opciones": [
+    "Consumo preferente",
+    "Congelación",
+    "Ninguna",
+    "Caducidad"
+   ],
+   "correcta": 0,
+   "explicacion": "Esterilizada y estable mientras está cerrada."
+  },
+  {
+   "enunciado": "Leche UHT, instrucción tras abrir:",
+   "opciones": [
+    "No necesita",
+    "Conservar en frigorífico y consumir en pocos días",
+    "Conservar a temperatura ambiente un mes",
+    "Congelar"
+   ],
+   "correcta": 1,
+   "explicacion": "Al abrirla entran microorganismos."
+  },
+  {
+   "enunciado": "Una bebida de 0,5 % vol (cerveza sin alcohol): ¿lista de ingredientes?",
+   "opciones": [
+    "No lleva etiqueta",
+    "Solo «Contiene»",
+    "Sí, obligatoria (no supera 1,2 % vol)",
+    "No, por ser cerveza"
+   ],
+   "correcta": 2,
+   "explicacion": "La exención es solo por encima de 1,2 % vol."
+  },
+  {
+   "enunciado": "Un vino de 13 % vol con sulfitos: ¿cómo se declaran?",
+   "opciones": [
+    "Con QUID",
+    "En la tabla nutricional",
+    "«Contiene: sulfitos»",
+    "No se declaran"
+   ],
+   "correcta": 2,
+   "explicacion": "Sin lista obligatoria, el alérgeno va con «Contiene»."
+  },
+  {
+   "enunciado": "Sal de 0,46 g por 100 g se declara como…",
+   "opciones": [
+    "0,46 g (dos decimales por debajo de 1 g)",
+    "0,4 g",
+    "0 g",
+    "0,5 g"
+   ],
+   "correcta": 0,
+   "explicacion": "La sal lleva dos decimales por debajo de 1 g."
+  },
+  {
+   "enunciado": "Energía calculada: 10 g de grasa, 20 g de hidratos y 5 g de proteína. ¿kcal?",
+   "opciones": [
+    "190 kcal",
+    "175 kcal",
+    "210 kcal",
+    "135 kcal"
+   ],
+   "correcta": 0,
+   "explicacion": "10×9 + 20×4 + 5×4 = 90 + 80 + 20 = 190."
+  },
+  {
+   "enunciado": "La empresa del ejercicio está en O Porriño y fabrica allí. ¿«Origen» en una pizza?",
+   "opciones": [
+    "Obligatorio",
+    "Obligatorio por estar en Galicia",
+    "Prohibido",
+    "No aplica: es un compuesto y no engaña"
+   ],
+   "correcta": 3,
+   "explicacion": "El origen no es obligatorio fuera de la lista y la dirección no cuenta como origen."
+  }
+ ]
+}

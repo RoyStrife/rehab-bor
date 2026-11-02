@@ -1,0 +1,556 @@
+{
+ "titulo": "1º Parcial · Teoría II",
+ "descripcion": "Información nutricional, alérgenos, agentes físicos, químicos y biológicos, y factores de crecimiento",
+ "preguntas": [
+  {
+   "enunciado": "¿Por qué dar la información por ración puede confundir?",
+   "opciones": [
+    "Porque fabricante y consumidor no entienden lo mismo por «ración»",
+    "Porque siempre es mayor",
+    "Porque está prohibido",
+    "Porque no se redondea"
+   ],
+   "correcta": 0,
+   "explicacion": "Por eso es opcional."
+  },
+  {
+   "enunciado": "Una kilocaloría es…",
+   "opciones": [
+    "La energía de un gramo de azúcar",
+    "1000 julios exactos",
+    "La energía de una vela",
+    "La energía para subir 1 °C un kilo de agua"
+   ],
+   "correcta": 3,
+   "explicacion": "Equivale a 4,184 kJ."
+  },
+  {
+   "enunciado": "Factores de energía: hidratos, proteínas, grasas y alcohol…",
+   "opciones": [
+    "4, 9, 4 y 7 kcal/g",
+    "7, 4, 9 y 4 kcal/g",
+    "4, 4, 9 y 7 kcal/g",
+    "9, 4, 4 y 2 kcal/g"
+   ],
+   "correcta": 2,
+   "explicacion": "Factores del anexo XIV."
+  },
+  {
+   "enunciado": "La fibra aporta…",
+   "opciones": [
+    "0 kcal/g",
+    "9 kcal/g",
+    "2 kcal/g",
+    "4 kcal/g"
+   ],
+   "correcta": 2,
+   "explicacion": "Factor propio."
+  },
+  {
+   "enunciado": "¿Por qué se redondean los valores nutricionales?",
+   "opciones": [
+    "Para que el producto parezca más sano",
+    "Para no dar falsa sensación de precisión",
+    "Para ahorrar tinta",
+    "Por estética"
+   ],
+   "correcta": 1,
+   "explicacion": "Criterio del redondeo."
+  },
+  {
+   "enunciado": "Si se da información por ración, ¿qué valor se redondea?",
+   "opciones": [
+    "El de la energía solo",
+    "El de la ración",
+    "Ninguno",
+    "El de 100 g y luego se multiplica"
+   ],
+   "correcta": 1,
+   "explicacion": "Se redondea cada valor declarado."
+  },
+  {
+   "enunciado": "¿Qué es un alérgeno?",
+   "opciones": [
+    "Un aditivo",
+    "Un microorganismo",
+    "Una sustancia tóxica para todos",
+    "Una sustancia inofensiva para la mayoría que en algunas personas provoca una reacción"
+   ],
+   "correcta": 3,
+   "explicacion": "Definición de los apuntes."
+  },
+  {
+   "enunciado": "¿Cuántos alérgenos de declaración obligatoria hay en la UE?",
+   "opciones": [
+    "8",
+    "20",
+    "14",
+    "10"
+   ],
+   "correcta": 2,
+   "explicacion": "Anexo II del Reg. 1169/2011."
+  },
+  {
+   "enunciado": "¿Cómo se destacan los alérgenos en la lista de ingredientes?",
+   "opciones": [
+    "Al final de la etiqueta",
+    "No se destacan",
+    "Con tipografía, estilo o color de fondo distinto",
+    "Con un icono obligatorio"
+   ],
+   "correcta": 2,
+   "explicacion": "Requisito del Reg. 1169/2011."
+  },
+  {
+   "enunciado": "Los iconos de alérgenos son…",
+   "opciones": [
+    "Prohibidos",
+    "Voluntarios",
+    "Obligatorios",
+    "Obligatorios solo en restaurantes"
+   ],
+   "correcta": 1,
+   "explicacion": "Lo obligatorio es destacar en la lista."
+  },
+  {
+   "enunciado": "En restaurantes y bares, la información de alérgenos…",
+   "opciones": [
+    "Solo si la piden",
+    "Solo en menús infantiles",
+    "También es obligatoria",
+    "Es voluntaria"
+   ],
+   "correcta": 2,
+   "explicacion": "Aplica también a alimentos no envasados."
+  },
+  {
+   "enunciado": "¿Qué alérgenos son los más difíciles de controlar en planta?",
+   "opciones": [
+    "Los congelados",
+    "Los que se dispersan por el aire, como las harinas",
+    "Los líquidos",
+    "Los envasados"
+   ],
+   "correcta": 1,
+   "explicacion": "Contaminación cruzada por el aire."
+  },
+  {
+   "enunciado": "Medidas para evitar la contaminación cruzada con alérgenos:",
+   "opciones": [
+    "Bajar la temperatura",
+    "Separar almacenamiento, equipos distintos o zonas y turnos separados, y limpieza a fondo",
+    "Mezclarlos al final",
+    "Solo poner «trazas»"
+   ],
+   "correcta": 1,
+   "explicacion": "Gestión de alérgenos en planta."
+  },
+  {
+   "enunciado": "«Sin gluten» se puede indicar si el producto tiene…",
+   "opciones": [
+    "Menos de 100 ppm",
+    "0 ppm exactas",
+    "Menos de 20 ppm",
+    "Menos de 200 ppm"
+   ],
+   "correcta": 2,
+   "explicacion": "«Muy bajo contenido en gluten» es menos de 100 ppm."
+  },
+  {
+   "enunciado": "¿Dónde aparece a menudo gluten «oculto»?",
+   "opciones": [
+    "Fruta fresca",
+    "Rebozados, salsas espesadas, embutidos e incluso medicamentos",
+    "Aceite de oliva",
+    "Agua mineral"
+   ],
+   "correcta": 1,
+   "explicacion": "Lugares inesperados."
+  },
+  {
+   "enunciado": "Según los apuntes, ¿dónde está sobre todo el alérgeno del huevo?",
+   "opciones": [
+    "En la membrana",
+    "En la cáscara",
+    "En la yema exclusivamente",
+    "En la clara"
+   ],
+   "correcta": 3,
+   "explicacion": "Proteínas de la clara (ovomucoide, ovoalbúmina)."
+  },
+  {
+   "enunciado": "¿Con qué nombres aparecen las proteínas de la leche en productos procesados?",
+   "opciones": [
+    "Almidón",
+    "Lecitina",
+    "Gelatina vegetal",
+    "Suero, caseína o proteínas lácteas"
+   ],
+   "correcta": 3,
+   "explicacion": "Nombres que esconden el alérgeno."
+  },
+  {
+   "enunciado": "¿Qué alérgenos reaccionan con cantidades mínimas y resisten el calor, según los apuntes?",
+   "opciones": [
+    "Los sulfitos",
+    "La leche y el huevo",
+    "El altramuz",
+    "Los frutos de cáscara y el apio"
+   ],
+   "correcta": 3,
+   "explicacion": "Destacado en los apuntes."
+  },
+  {
+   "enunciado": "Los sulfitos se encuentran en…",
+   "opciones": [
+    "Fruta fresca",
+    "Vino, salsas, embutidos, marisco y conservas",
+    "Leche fresca",
+    "Agua"
+   ],
+   "correcta": 1,
+   "explicacion": "Son conservantes."
+  },
+  {
+   "enunciado": "¿Cuáles son los tres tipos de agentes contaminantes?",
+   "opciones": [
+    "Físicos, químicos y biológicos",
+    "Sólidos, líquidos y gaseosos",
+    "Naturales, artificiales y mixtos",
+    "Internos, externos y cruzados"
+   ],
+   "correcta": 0,
+   "explicacion": "Clasificación básica."
+  },
+  {
+   "enunciado": "¿Por qué se recomiendan tiritas y guantes de color azul?",
+   "opciones": [
+    "Porque son estériles",
+    "Por estética",
+    "Para verlos si caen en el alimento",
+    "Porque son más baratos"
+   ],
+   "correcta": 2,
+   "explicacion": "Prevención de peligros físicos."
+  },
+  {
+   "enunciado": "¿Por qué un pelo puede ser también un peligro biológico?",
+   "opciones": [
+    "Porque es alérgeno",
+    "Porque es tóxico",
+    "Porque transporta microorganismos",
+    "No puede serlo"
+   ],
+   "correcta": 2,
+   "explicacion": "Un peligro físico puede arrastrar uno biológico."
+  },
+  {
+   "enunciado": "Los metales pesados (mercurio, plomo, cadmio, arsénico) son contaminantes…",
+   "opciones": [
+    "Producidos por bacterias",
+    "Ambientales que se acumulan en la cadena",
+    "Formados al freír",
+    "Añadidos como aditivos"
+   ],
+   "correcta": 1,
+   "explicacion": "Problema por exposición continuada."
+  },
+  {
+   "enunciado": "La acrilamida se forma…",
+   "opciones": [
+    "En el agua del grifo",
+    "En frituras y horneados intensos",
+    "Al refrigerar",
+    "Al congelar"
+   ],
+   "correcta": 1,
+   "explicacion": "Tóxico de proceso."
+  },
+  {
+   "enunciado": "¿Cuándo debe desecharse el aceite de freír?",
+   "opciones": [
+    "Cada año",
+    "Nunca",
+    "Cuando cambia de color solo",
+    "Cuando los compuestos polares superan un límite"
+   ],
+   "correcta": 3,
+   "explicacion": "Control de la reutilización del aceite."
+  },
+  {
+   "enunciado": "La melamina en leches o harinas es un ejemplo de…",
+   "opciones": [
+    "Toxina natural",
+    "Aditivo autorizado",
+    "Sustancia añadida de forma fraudulenta",
+    "Contaminante ambiental"
+   ],
+   "correcta": 2,
+   "explicacion": "Fraude alimentario."
+  },
+  {
+   "enunciado": "La solanina es un tóxico natural de…",
+   "opciones": [
+    "El atún",
+    "Las patatas (sobre todo verdes o germinadas)",
+    "La leche",
+    "Las setas"
+   ],
+   "correcta": 1,
+   "explicacion": "Tóxico de origen vegetal."
+  },
+  {
+   "enunciado": "¿Hay alguna regla segura para saber si una seta es comestible?",
+   "opciones": [
+    "Sí, si la comen animales",
+    "No",
+    "Sí, el color",
+    "Sí, si huele bien"
+   ],
+   "correcta": 1,
+   "explicacion": "Solo la identificación experta."
+  },
+  {
+   "enunciado": "Las micotoxinas…",
+   "opciones": [
+    "Las producen hongos en alimentos mal almacenados y pueden llegar a carne o leche por el pienso",
+    "Las producen virus",
+    "Solo están en el pescado",
+    "Se destruyen al cocinar siempre"
+   ],
+   "correcta": 0,
+   "explicacion": "Peligro químico de origen biológico."
+  },
+  {
+   "enunciado": "Las biotoxinas marinas…",
+   "opciones": [
+    "Las producen algas, se acumulan en moluscos filtradores y no se eliminan cocinando",
+    "Solo afectan al atún",
+    "Se eliminan cocinando",
+    "Las produce el anisakis"
+   ],
+   "correcta": 0,
+   "explicacion": "Hay que comprar moluscos controlados en origen."
+  },
+  {
+   "enunciado": "¿Qué grupo de microorganismos es el más importante en las enfermedades alimentarias?",
+   "opciones": [
+    "Las bacterias",
+    "Los virus",
+    "Los mohos",
+    "Las levaduras"
+   ],
+   "correcta": 0,
+   "explicacion": "Causa de la mayoría de enfermedades de transmisión alimentaria."
+  },
+  {
+   "enunciado": "Los tres eslabones de la cadena epidemiológica son…",
+   "opciones": [
+    "Productor, industria y consumidor",
+    "Bacteria, virus y moho",
+    "Agente causal en un reservorio, mecanismo de transmisión y hospedador susceptible",
+    "Frío, calor y humedad"
+   ],
+   "correcta": 2,
+   "explicacion": "Rompiendo uno, no hay infección."
+  },
+  {
+   "enunciado": "¿Qué personas son más vulnerables a las infecciones alimentarias?",
+   "opciones": [
+    "Deportistas",
+    "Bebés, mayores, enfermos, embarazadas y turistas",
+    "Vegetarianos",
+    "Adultos sanos"
+   ],
+   "correcta": 1,
+   "explicacion": "Hospedadores más susceptibles."
+  },
+  {
+   "enunciado": "Contaminación cruzada directa es…",
+   "opciones": [
+    "Por contacto entre alimentos (crudo con cocinado)",
+    "A través de utensilios",
+    "A través de las manos",
+    "Por el aire"
+   ],
+   "correcta": 0,
+   "explicacion": "La indirecta pasa por manos, utensilios o superficies."
+  },
+  {
+   "enunciado": "Usar las mismas carretillas para basura y materia prima sin desinfectar es contaminación cruzada…",
+   "opciones": [
+    "Química",
+    "Ambiental",
+    "Directa",
+    "Indirecta"
+   ],
+   "correcta": 3,
+   "explicacion": "A través de un equipo."
+  },
+  {
+   "enunciado": "Las esporas bacterianas…",
+   "opciones": [
+    "Son siempre beneficiosas",
+    "Solo las forman los mohos",
+    "Resisten condiciones adversas",
+    "Mueren a 20 °C"
+   ],
+   "correcta": 2,
+   "explicacion": "Formas de resistencia."
+  },
+  {
+   "enunciado": "Según su efecto, las bacterias pueden ser…",
+   "opciones": [
+    "Solo patógenas",
+    "Ácidas o básicas",
+    "Grandes o pequeñas",
+    "Beneficiosas, alterantes o patógenas"
+   ],
+   "correcta": 3,
+   "explicacion": "Clasificación por efecto en el alimento."
+  },
+  {
+   "enunciado": "Clostridium botulinum se asocia sobre todo a…",
+   "opciones": [
+    "Leche cruda",
+    "Conservas caseras mal hechas",
+    "Huevos crudos",
+    "Pescado crudo"
+   ],
+   "correcta": 1,
+   "explicacion": "Bacteria anaerobia productora de toxina."
+  },
+  {
+   "enunciado": "Clostridium perfringens es típico de…",
+   "opciones": [
+    "Fruta fresca",
+    "Conservas industriales",
+    "Agua embotellada",
+    "Comedores colectivos con grandes cantidades que se enfrían despacio y se recalientan"
+   ],
+   "correcta": 3,
+   "explicacion": "Enfriamiento lento."
+  },
+  {
+   "enunciado": "Vibrio parahaemolyticus se asocia a…",
+   "opciones": [
+    "Cereales",
+    "Huevos",
+    "Pescado y marisco crudos o poco hechos",
+    "Lácteos"
+   ],
+   "correcta": 2,
+   "explicacion": "Bacteria marina."
+  },
+  {
+   "enunciado": "¿Dónde vive Staphylococcus aureus en el manipulador?",
+   "opciones": [
+    "No vive en personas",
+    "Piel, nariz y sobre todo heridas",
+    "Cabello solo",
+    "Intestino solo"
+   ],
+   "correcta": 1,
+   "explicacion": "Por eso las heridas se tapan."
+  },
+  {
+   "enunciado": "A −18 °C las bacterias…",
+   "opciones": [
+    "Quedan latentes, sin morir ni crecer",
+    "Mueren todas",
+    "Crecen despacio",
+    "Producen toxinas"
+   ],
+   "correcta": 0,
+   "explicacion": "Los parásitos, en cambio, sí mueren."
+  },
+  {
+   "enunciado": "¿Por qué no sirve recongelar un producto que se ha calentado?",
+   "opciones": [
+    "Porque el frío no elimina lo que ya ha crecido ni sus toxinas",
+    "Porque está prohibido por el sabor",
+    "Porque se pone duro",
+    "Sí sirve"
+   ],
+   "correcta": 0,
+   "explicacion": "El frío no desinfecta."
+  },
+  {
+   "enunciado": "En buenas condiciones, una bacteria se duplica cada…",
+   "opciones": [
+    "Unos 20 minutos",
+    "Una semana",
+    "Unos 2 días",
+    "Unas 20 horas"
+   ],
+   "correcta": 0,
+   "explicacion": "Una sola puede dar millones en horas."
+  },
+  {
+   "enunciado": "La mayoría de microorganismos crece con un pH entre…",
+   "opciones": [
+    "0 y 2",
+    "1 y 3",
+    "9 y 12",
+    "5,5 y 7,5"
+   ],
+   "correcta": 3,
+   "explicacion": "Los alimentos ácidos los frenan."
+  },
+  {
+   "enunciado": "Por debajo de una Aw de 0,87…",
+   "opciones": [
+    "Crecen todas las bacterias",
+    "Dejan de crecer bacterias y levaduras; solo pueden los mohos",
+    "No cambia nada",
+    "Mueren los mohos"
+   ],
+   "correcta": 1,
+   "explicacion": "Secar, salar o azucarar reduce la Aw."
+  },
+  {
+   "enunciado": "¿Qué alimentos favorecen más el crecimiento microbiano por sus nutrientes?",
+   "opciones": [
+    "El azúcar",
+    "La sal",
+    "El aceite",
+    "Los ricos en proteínas: lácteos, carne, huevos, pescado y marisco"
+   ],
+   "correcta": 3,
+   "explicacion": "Alimentos de alto riesgo."
+  },
+  {
+   "enunciado": "Las bacterias anaerobias crecen…",
+   "opciones": [
+    "Solo en la superficie",
+    "Solo con mucho oxígeno",
+    "Solo congeladas",
+    "Sin oxígeno, por ejemplo dentro de latas o envases al vacío"
+   ],
+   "correcta": 3,
+   "explicacion": "Las aerobias necesitan oxígeno."
+  },
+  {
+   "enunciado": "La atmósfera protectora alarga la vida útil porque…",
+   "opciones": [
+    "Añade conservantes",
+    "Sustituye el aire por gases que frenan a los microorganismos",
+    "Esteriliza el alimento",
+    "Sube la temperatura"
+   ],
+   "correcta": 1,
+   "explicacion": "Juega con el factor oxígeno."
+  },
+  {
+   "enunciado": "La conservación de alimentos busca…",
+   "opciones": [
+    "Cambiar su sabor",
+    "Solo abaratarlos",
+    "Que sigan aptos para el consumo con el tiempo y conserven sus propiedades",
+    "Aumentar su peso"
+   ],
+   "correcta": 2,
+   "explicacion": "Métodos: frío, calor, desecación."
+  }
+ ]
+}

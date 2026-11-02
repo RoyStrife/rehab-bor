@@ -1,0 +1,556 @@
+{
+ "titulo": "1º Parcial · Teoría I",
+ "descripcion": "FAO, organismos, cadena alimentaria, industria, comercialización, consumidor y etiquetado",
+ "preguntas": [
+  {
+   "enunciado": "¿Qué cuatro dimensiones se desprenden de la definición de seguridad alimentaria de la FAO?",
+   "opciones": [
+    "Producción, venta, consumo y reciclaje",
+    "Frío, calor, secado y envasado",
+    "Disponibilidad, acceso, utilización y estabilidad",
+    "Higiene, calidad, precio y cantidad"
+   ],
+   "correcta": 2,
+   "explicacion": "Deben cumplirse a la vez."
+  },
+  {
+   "enunciado": "La dimensión de «utilización» se refiere a…",
+   "opciones": [
+    "Que haya alimentos en las tiendas",
+    "Que se mantenga en el tiempo",
+    "Que el organismo aproveche los nutrientes (agua potable, higiene, salud)",
+    "Que el precio sea asequible"
+   ],
+   "correcta": 2,
+   "explicacion": "Sin agua potable ni higiene, la comida no se aprovecha."
+  },
+  {
+   "enunciado": "La dimensión de «estabilidad» falla cuando…",
+   "opciones": [
+    "Los precios bajan",
+    "Se exporta mucho",
+    "Las demás condiciones fallan en crisis o malas temporadas",
+    "Hay mucha producción"
+   ],
+   "correcta": 2,
+   "explicacion": "Exige que todo se mantenga en el tiempo."
+  },
+  {
+   "enunciado": "¿Qué organismo español es el equivalente a la EFSA?",
+   "opciones": [
+    "El RGSEAA",
+    "La AESAN (antes AECOSAN)",
+    "El SCIRI",
+    "El SITRAN"
+   ],
+   "correcta": 1,
+   "explicacion": "Agencia Española de Seguridad Alimentaria y Nutrición."
+  },
+  {
+   "enunciado": "¿Qué documento europeo propuso crear la EFSA y la trazabilidad «del campo a la mesa»?",
+   "opciones": [
+    "El Libro Blanco de Seguridad Alimentaria",
+    "El Codex Alimentarius",
+    "El Reg. 1169/2011",
+    "El PNCOCA"
+   ],
+   "correcta": 0,
+   "explicacion": "Es la referencia europea en seguridad alimentaria."
+  },
+  {
+   "enunciado": "¿Qué es el Codex Alimentarius?",
+   "opciones": [
+    "Un conjunto de normas alimentarias internacionales de la FAO y la OMS",
+    "Un laboratorio de referencia",
+    "Un registro español de empresas",
+    "Un reglamento europeo"
+   ],
+   "correcta": 0,
+   "explicacion": "Sirve de referencia para el comercio internacional."
+  },
+  {
+   "enunciado": "¿En qué se basan las normas del Codex?",
+   "opciones": [
+    "En el precio de mercado",
+    "En criterios científicos, para proteger la salud y asegurar prácticas leales en el comercio",
+    "En la tradición de cada país",
+    "En la publicidad"
+   ],
+   "correcta": 1,
+   "explicacion": "Doble objetivo: salud y comercio justo."
+  },
+  {
+   "enunciado": "El JECFA surgió por la preocupación por…",
+   "opciones": [
+    "El uso dispar de aditivos entre países",
+    "Los envases de plástico",
+    "El hambre en el mundo",
+    "Las vacas locas"
+   ],
+   "correcta": 0,
+   "explicacion": "Comité mixto FAO/OMS de aditivos."
+  },
+  {
+   "enunciado": "¿Quién gestiona en España la red de alerta alimentaria conectada al RASFF?",
+   "opciones": [
+    "El JECFA",
+    "El SIRENTRA",
+    "El SITRAN",
+    "El SCIRI"
+   ],
+   "correcta": 3,
+   "explicacion": "Sistema Coordinado de Intercambio Rápido de Información."
+  },
+  {
+   "enunciado": "El SIRENTRA registra…",
+   "opciones": [
+    "Empresas de alimentos",
+    "Transportistas de animales vivos",
+    "Laboratorios",
+    "Explotaciones agrícolas"
+   ],
+   "correcta": 1,
+   "explicacion": "Registro de transportistas y medios de transporte de animales."
+  },
+  {
+   "enunciado": "¿Qué eslabón incluye agricultura, ganadería y pesca?",
+   "opciones": [
+    "La comercialización",
+    "El consumidor",
+    "La producción primaria",
+    "La industria"
+   ],
+   "correcta": 2,
+   "explicacion": "Primer eslabón de la cadena."
+  },
+  {
+   "enunciado": "El plazo de seguridad de un plaguicida es…",
+   "opciones": [
+    "El tiempo de almacenamiento del envase",
+    "El tiempo mínimo entre el último tratamiento y la cosecha",
+    "La fecha de caducidad del producto",
+    "El tiempo que tarda en actuar"
+   ],
+   "correcta": 1,
+   "explicacion": "Permite que los residuos bajen del límite."
+  },
+  {
+   "enunciado": "Un lote de fruta con residuos por encima del límite pero buen aspecto…",
+   "opciones": [
+    "Se exporta",
+    "Se vende más barato",
+    "Se puede vender lavándolo",
+    "No es seguro: se inmoviliza, se retira y se avisa a sanidad"
+   ],
+   "correcta": 3,
+   "explicacion": "El aspecto no garantiza la inocuidad."
+  },
+  {
+   "enunciado": "En pesca, ¿qué deben respetar los pescadores?",
+   "opciones": [
+    "Solo el horario de puerto",
+    "Solo el precio",
+    "Tallas mínimas, cuotas, periodos y zonas y especies protegidas",
+    "Nada específico"
+   ],
+   "correcta": 2,
+   "explicacion": "Normas de la producción primaria pesquera."
+  },
+  {
+   "enunciado": "¿Quién fija las directrices de sanidad agrícola y ganadera?",
+   "opciones": [
+    "La FAO",
+    "La EFSA directamente",
+    "El Ministerio de Agricultura, que delega el control en las comunidades autónomas",
+    "Los ayuntamientos"
+   ],
+   "correcta": 2,
+   "explicacion": "Reparto de competencias en España."
+  },
+  {
+   "enunciado": "Sacos de harina apoyados en una pared húmeda favorecen…",
+   "opciones": [
+    "Anisakis",
+    "Listeria",
+    "Histamina",
+    "Mohos y micotoxinas"
+   ],
+   "correcta": 3,
+   "explicacion": "Fallo de almacenaje."
+  },
+  {
+   "enunciado": "Un camión de pescado fresco llega a 10 °C por una avería…",
+   "opciones": [
+    "Se congela al llegar",
+    "Se acepta si huele bien",
+    "Se rechaza la carga",
+    "Se vende rápido"
+   ],
+   "correcta": 2,
+   "explicacion": "Rotura de la cadena de frío."
+  },
+  {
+   "enunciado": "Si la pasteurización no alcanza la temperatura fijada (punto crítico)…",
+   "opciones": [
+    "El producto se desvía y se vuelve a tratar",
+    "Se envasa igual",
+    "Se ignora si el lote es pequeño",
+    "Se vende con descuento"
+   ],
+   "correcta": 0,
+   "explicacion": "Medida correctora del APPCC."
+  },
+  {
+   "enunciado": "Si el fabricante del desinfectante indica aclarado…",
+   "opciones": [
+    "Se aclara antes de desinfectar",
+    "Se puede omitir si hay prisa",
+    "Solo se aclara una vez por semana",
+    "Hay que aclarar siempre después"
+   ],
+   "correcta": 3,
+   "explicacion": "Los restos pasarían al alimento."
+  },
+  {
+   "enunciado": "El agua de un pozo propio usada en la industria…",
+   "opciones": [
+    "Solo sirve para limpiar suelos",
+    "Debe demostrarse potable con análisis periódicos",
+    "Debe hervirse siempre",
+    "Se puede usar sin control"
+   ],
+   "correcta": 1,
+   "explicacion": "Toda agua en contacto con alimentos debe ser potable."
+  },
+  {
+   "enunciado": "Los cebos e insecticidas en una planta se colocan…",
+   "opciones": [
+    "Sobre los sacos de materia prima",
+    "Junto a la línea de producción",
+    "En estaciones cerradas y en el perímetro, fuera de salas con alimentos expuestos",
+    "En polvo por el suelo de la sala"
+   ],
+   "correcta": 2,
+   "explicacion": "El control de plagas no puede contaminar el alimento."
+  },
+  {
+   "enunciado": "Usar un lubricante no apto para alimentos en una picadora es un peligro…",
+   "opciones": [
+    "Alergénico",
+    "Biológico",
+    "Físico",
+    "Químico"
+   ],
+   "correcta": 3,
+   "explicacion": "Sustancia tóxica que puede pasar al alimento."
+  },
+  {
+   "enunciado": "El bisfenol A es un ejemplo de…",
+   "opciones": [
+    "Aditivo conservante",
+    "Micotoxina",
+    "Sustancia que migra desde el envase al alimento",
+    "Toxina bacteriana"
+   ],
+   "correcta": 2,
+   "explicacion": "Migración desde materiales en contacto."
+  },
+  {
+   "enunciado": "La migración desde el envase es mayor en alimentos…",
+   "opciones": [
+    "Grasos",
+    "Congelados",
+    "Secos",
+    "Ácidos únicamente"
+   ],
+   "correcta": 0,
+   "explicacion": "Las grasas extraen más sustancias del plástico."
+  },
+  {
+   "enunciado": "¿Qué obligaciones generales tiene toda empresa alimentaria?",
+   "opciones": [
+    "Solo pagar impuestos",
+    "Autocontrol, informar si un producto no es seguro e inscribirse en el RGSEAA",
+    "Solo tener un veterinario",
+    "Solo etiquetar"
+   ],
+   "correcta": 1,
+   "explicacion": "Obligaciones del segundo eslabón."
+  },
+  {
+   "enunciado": "¿Quién controla el eslabón de la comercialización?",
+   "opciones": [
+    "Los propios supermercados",
+    "Las consejerías de Sanidad y los ayuntamientos",
+    "El Codex",
+    "La EFSA"
+   ],
+   "correcta": 1,
+   "explicacion": "Control oficial en distribución y venta."
+  },
+  {
+   "enunciado": "Un producto con la fecha de caducidad vencida…",
+   "opciones": [
+    "Se puede vender con descuento",
+    "No se puede vender, ni rebajado",
+    "Se puede donar sin control",
+    "Se vende si el envase está bien"
+   ],
+   "correcta": 1,
+   "explicacion": "Pasada la caducidad no es seguro."
+  },
+  {
+   "enunciado": "Dejar carne picada horas en el maletero al sol es un fallo de…",
+   "opciones": [
+    "El productor",
+    "El distribuidor",
+    "La industria",
+    "El consumidor (rompe la cadena de frío)"
+   ],
+   "correcta": 3,
+   "explicacion": "El consumidor también es responsable."
+  },
+  {
+   "enunciado": "Galletas pasada su fecha de consumo preferente y bien guardadas…",
+   "opciones": [
+    "Siguen siendo seguras; pueden haber perdido textura o aroma",
+    "Se vuelven tóxicas",
+    "Hay que tirarlas siempre",
+    "Son peligrosas"
+   ],
+   "correcta": 0,
+   "explicacion": "El consumo preferente es de calidad, no de seguridad."
+  },
+  {
+   "enunciado": "Si el consumidor detecta algo raro en un producto, debe…",
+   "opciones": [
+    "Tirarlo sin más",
+    "Devolverlo sin decir nada",
+    "Comérselo si huele bien",
+    "Comunicarlo al distribuidor o a la autoridad"
+   ],
+   "correcta": 3,
+   "explicacion": "Permite retirar el lote."
+  },
+  {
+   "enunciado": "La etiqueta debe estar en…",
+   "opciones": [
+    "El idioma del fabricante",
+    "Castellano (salvo productos vendidos solo en una región con lengua propia)",
+    "Cualquier idioma",
+    "Inglés"
+   ],
+   "correcta": 1,
+   "explicacion": "Requisito para el mercado español."
+  },
+  {
+   "enunciado": "¿Puede una etiqueta atribuir a un alimento propiedades para curar enfermedades?",
+   "opciones": [
+    "No, salvo casos especiales como aguas minerales o productos para dietas concretas",
+    "Sí, si es natural",
+    "Sí, siempre",
+    "Sí, si lo dice un médico"
+   ],
+   "correcta": 0,
+   "explicacion": "Prohibición general."
+  },
+  {
+   "enunciado": "Los productos exportados fuera de la UE siguen…",
+   "opciones": [
+    "La ley del país de destino",
+    "El Codex obligatoriamente",
+    "El Reg. 1169/2011 siempre",
+    "La ley española"
+   ],
+   "correcta": 0,
+   "explicacion": "Las normas europeas de etiquetado no se aplican fuera."
+  },
+  {
+   "enunciado": "La denominación de un alimento incluye…",
+   "opciones": [
+    "El lote",
+    "Su nombre legal o descriptivo y su estado o tratamiento",
+    "Solo la marca",
+    "El precio"
+   ],
+   "correcta": 1,
+   "explicacion": "Por ejemplo «refrigerado», «ahumado», «en polvo»."
+  },
+  {
+   "enunciado": "La lista de ingredientes va ordenada…",
+   "opciones": [
+    "Por precio",
+    "De mayor a menor peso",
+    "De menor a mayor peso",
+    "Alfabéticamente"
+   ],
+   "correcta": 1,
+   "explicacion": "Encabezada por «Ingredientes»."
+  },
+  {
+   "enunciado": "Los aditivos se nombran…",
+   "opciones": [
+    "Solo por el número E",
+    "No se nombran",
+    "Solo por el nombre comercial",
+    "Por su función seguida de nombre o número E"
+   ],
+   "correcta": 3,
+   "explicacion": "Por ejemplo «conservante: E-211»."
+  },
+  {
+   "enunciado": "¿En qué casos no hace falta el QUID?",
+   "opciones": [
+    "En productos con óvalo",
+    "Nunca hay excepciones",
+    "En todos los productos importados",
+    "Aditivos, condimentos en poca cantidad, agua añadida en poca proporción o ingredientes con peso escurrido"
+   ],
+   "correcta": 3,
+   "explicacion": "Excepciones del art. 22."
+  },
+  {
+   "enunciado": "La fecha de elaboración en la etiqueta es…",
+   "opciones": [
+    "Obligatoria siempre",
+    "Prohibida",
+    "Opcional",
+    "Obligatoria en conservas"
+   ],
+   "correcta": 2,
+   "explicacion": "Solo son obligatorias consumo preferente o caducidad."
+  },
+  {
+   "enunciado": "El lote suele ir precedido de…",
+   "opciones": [
+    "El óvalo",
+    "La palabra «Lote» obligatoriamente",
+    "La fecha",
+    "La letra «L»"
+   ],
+   "correcta": 3,
+   "explicacion": "Permite identificar la partida."
+  },
+  {
+   "enunciado": "Un alimento con más de un 0,9 % de ingrediente transgénico indica…",
+   "opciones": [
+    "«Natural»",
+    "Nada",
+    "«Ecológico»",
+    "«Modificado genéticamente»"
+   ],
+   "correcta": 3,
+   "explicacion": "Umbral de etiquetado de OMG."
+  },
+  {
+   "enunciado": "«Envasado en atmósfera protectora» se indica cuando…",
+   "opciones": [
+    "El envase contiene gases que alargan la vida útil",
+    "El producto es ecológico",
+    "Lleva conservantes",
+    "Se envasa en vidrio"
+   ],
+   "correcta": 0,
+   "explicacion": "Mención adicional obligatoria."
+  },
+  {
+   "enunciado": "Las bebidas con mucha cafeína (salvo café y té) advierten que…",
+   "opciones": [
+    "Pueden contener trazas",
+    "Son ecológicas",
+    "Deben conservarse en frío",
+    "No se recomiendan a niños ni a embarazadas o mujeres en lactancia"
+   ],
+   "correcta": 3,
+   "explicacion": "Mención obligatoria por encima de 150 mg/l."
+  },
+  {
+   "enunciado": "El número RGSEAA en la etiqueta…",
+   "opciones": [
+    "Es obligatorio en vegetales",
+    "Sustituye al óvalo",
+    "En general no es obligatorio; basta nombre y dirección del operador",
+    "Es obligatorio siempre"
+   ],
+   "correcta": 2,
+   "explicacion": "El RGSEAA suelto es voluntario."
+  },
+  {
+   "enunciado": "El óvalo sanitario indica…",
+   "opciones": [
+    "Precio y peso",
+    "Fecha de caducidad",
+    "País, número de autorización del establecimiento y sigla de la UE",
+    "Alérgenos"
+   ],
+   "correcta": 2,
+   "explicacion": "Por ejemplo «ES 10.12345/PO CE»."
+  },
+  {
+   "enunciado": "¿Para qué sirve el número del óvalo además de garantizar la autorización?",
+   "opciones": [
+    "Para los alérgenos",
+    "Para calcular impuestos",
+    "Para la trazabilidad: identifica la planta que elaboró o envasó",
+    "Para el precio"
+   ],
+   "correcta": 2,
+   "explicacion": "Permite localizar el establecimiento."
+  },
+  {
+   "enunciado": "La marca que pone el veterinario en la canal del matadero es…",
+   "opciones": [
+    "El código del huevo",
+    "El mismo óvalo",
+    "El marcado CE",
+    "Distinta del óvalo de identificación del envase"
+   ],
+   "correcta": 3,
+   "explicacion": "Es la marca sanitaria de inspección post mortem."
+  },
+  {
+   "enunciado": "El marcado CE…",
+   "opciones": [
+    "Es el óvalo de los lácteos",
+    "Indica alimento ecológico",
+    "Es obligatorio en alimentos",
+    "No tiene nada que ver con el óvalo sanitario: es de aparatos y juguetes"
+   ],
+   "correcta": 3,
+   "explicacion": "Trampa típica."
+  },
+  {
+   "enunciado": "La tabla nutricional se expresa por…",
+   "opciones": [
+    "Kilo",
+    "Ración siempre",
+    "100 g o 100 ml",
+    "Envase"
+   ],
+   "correcta": 2,
+   "explicacion": "La ración es opcional."
+  },
+  {
+   "enunciado": "La declaración de nutrientes obligatoria incluye…",
+   "opciones": [
+    "Energía, grasas, saturadas, hidratos, azúcares, proteínas y sal",
+    "Solo energía",
+    "Fibra y colesterol",
+    "Vitaminas y minerales"
+   ],
+   "correcta": 0,
+   "explicacion": "Los siete elementos obligatorios."
+  },
+  {
+   "enunciado": "La información complementaria toma como referencia…",
+   "opciones": [
+    "3000 kcal",
+    "La de un niño",
+    "1000 kcal",
+    "Una ingesta de 2000 kcal de un adulto medio"
+   ],
+   "correcta": 3,
+   "explicacion": "Valores de referencia."
+  }
+ ]
+}

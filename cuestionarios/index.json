@@ -191,6 +191,24 @@
     "archivo": "Nutricion/cuestionarios/UD_1/nutri-ud1-particularidades-etiquetado.json"
   },
   {
+    "id": "nutri-ud1-casos-practicos-1",
+    "titulo": "Casos prácticos de etiquetado I",
+    "descripcion": "Platos refrigerados, yogur, conservas, cremas, bebidas alcohólicas, merluza, café y cárnicos",
+    "modulo": "Nutrición y Seguridad Alimentaria",
+    "unidad": "UD_1",
+    "preguntas": 40,
+    "archivo": "Nutricion/cuestionarios/UD_1/nutri-ud1-casos-practicos-1.json"
+  },
+  {
+    "id": "nutri-ud1-casos-practicos-2",
+    "titulo": "Casos prácticos de etiquetado II",
+    "descripcion": "Salmón ahumado, carne picada, bebida energética, galletas, OMG, origen, escabeche, huevos, leche y vino",
+    "modulo": "Nutrición y Seguridad Alimentaria",
+    "unidad": "UD_1",
+    "preguntas": 40,
+    "archivo": "Nutricion/cuestionarios/UD_1/nutri-ud1-casos-practicos-2.json"
+  },
+  {
     "id": "nutri-parcial1-examen",
     "titulo": "1º Parcial · Cuestionario T1. Seguridad alimentaria (examen completo)",
     "descripcion": "Las 40 preguntas del examen: FAO, Codex, niveles tróficos, producción primaria, industria, consumidor, etiquetado, higiene y trazabilidad",
@@ -209,5 +227,25 @@
     "asignatura": "Repaso",
     "preguntas": 30,
     "archivo": "Nutricion/cuestionarios/Parcial_1/nutri-parcial1-repaso.json"
+  },
+  {
+    "id": "nutri-parcial1-teoria-1",
+    "titulo": "1º Parcial · Teoría I",
+    "descripcion": "FAO, organismos, cadena alimentaria, industria, comercialización, consumidor y etiquetado",
+    "modulo": "Nutrición y Seguridad Alimentaria",
+    "unidad": "Parcial_1",
+    "asignatura": "Repaso",
+    "preguntas": 50,
+    "archivo": "Nutricion/cuestionarios/Parcial_1/nutri-parcial1-teoria-1.json"
+  },
+  {
+    "id": "nutri-parcial1-teoria-2",
+    "titulo": "1º Parcial · Teoría II",
+    "descripcion": "Información nutricional, alérgenos, agentes físicos, químicos y biológicos, y factores de crecimiento",
+    "modulo": "Nutrición y Seguridad Alimentaria",
+    "unidad": "Parcial_1",
+    "asignatura": "Repaso",
+    "preguntas": 50,
+    "archivo": "Nutricion/cuestionarios/Parcial_1/nutri-parcial1-teoria-2.json"
   }
 ]
