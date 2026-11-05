@@ -1,0 +1,366 @@
+{
+ "titulo": "Sostenibilidad UD1 · Cuestionario 1 (P1–P30)",
+ "descripcion": "Sostenibilidad y desarrollo sostenible: dimensiones, ISR, ASG, niveles de respuesta, RSC, grupos de interés, huellas y doble materialidad.",
+ "preguntas": [
+  {
+   "n": 1,
+   "enunciado": "Una empresa decide sustituir sus calderas tradicionales de gasoil por un sistema de energía solar térmica para reducir sus costes energéticos y su impacto ambiental. ¿A qué dimensión del desarrollo sostenible responde prioritariamente la búsqueda de eficiencia energética que no comprometa la viabilidad económica?",
+   "opciones": [
+    "A la dimensión puramente social orientada a la reducción de aranceles industriales",
+    "A una estrategia de cálculo de riesgos para evitar indemnizaciones por accidentes laborales",
+    "A la dimensión de prosperidad económica en intersección con la sostenibilidad medioambiental (viabilidad)",
+    "A un filtro negativo de inversión enfocado en la desinversión bursátil"
+   ],
+   "correcta": 2,
+   "explicacion": "Económico + ambiental = viable. Ahorra costes (económico) y reduce impacto (ambiental)."
+  },
+  {
+   "n": 2,
+   "enunciado": "Si una actividad productiva aporta grandes beneficios económicos y crea empleo local, pero agota un acuífero subterráneo de forma irreversible, ¿qué condición fundamental del desarrollo sostenible se está incumpliendo?",
+   "opciones": [
+    "La equidad salarial entre las distintas categorías profesionales de la plantilla",
+    "El mantenimiento del equilibrio del entorno para no comprometer a las generaciones futuras",
+    "La implantación obligatoria de un estándar de información contable exclusivamente financiero",
+    "El principio de deslocalización de la producción a países en desarrollo"
+   ],
+   "correcta": 1,
+   "explicacion": "Definición Brundtland: satisfacer las necesidades presentes sin comprometer las de las generaciones futuras. Agotar un acuífero de forma irreversible rompe ese equilibrio."
+  },
+  {
+   "n": 3,
+   "enunciado": "¿Qué concepto define la situación en la que el desarrollo de una sociedad promueve el bienestar humano y la cohesión social sin destruir la capacidad de carga de los ecosistemas que la sustentan?",
+   "opciones": [
+    "Viabilidad financiera",
+    "Soportabilidad",
+    "Transparencia corporativa",
+    "Desinversión ética"
+   ],
+   "correcta": 1,
+   "explicacion": "Social + ambiental = soportable (vivible)."
+  },
+  {
+   "n": 4,
+   "enunciado": "Cuando las políticas públicas promueven que los beneficios económicos del crecimiento se distribuyan de forma justa entre todos los sectores de la sociedad, garantizando oportunidades para los colectivos más vulnerables, se está potenciando la:",
+   "opciones": [
+    "Soportabilidad",
+    "Viabilidad",
+    "Gobernanza ambiental",
+    "Equidad"
+   ],
+   "correcta": 3,
+   "explicacion": "Económico + social = equitativo."
+  },
+  {
+   "n": 5,
+   "enunciado": "En el contexto de la prevención de riesgos y desastres naturales en zonas costeras, ¿cuál es el enfoque más adecuado que debe adoptar una organización para operar con sostenibilidad a largo plazo?",
+   "opciones": [
+    "Reaccionar únicamente cuando el daño se ha producido, asumiendo la indemnización como coste operativo",
+    "Trasladar las instalaciones a zonas protegidas sin realizar estudios de impacto previo",
+    "Diseñar planes de preparación y mitigación previa ante amenazas climáticas antes de que ocurran las catástrofes",
+    "Reducir el presupuesto de mantenimiento preventivo para maximizar el margen de beneficio anual"
+   ],
+   "correcta": 2,
+   "explicacion": "Prevención y preparación antes del desastre, no reacción después."
+  },
+  {
+   "n": 6,
+   "enunciado": "¿Qué distingue a una estrategia de desarrollo verdaderamente sostenible de una medida basada en el inmovilismo o el cese completo de la actividad?",
+   "opciones": [
+    "El desarrollo sostenible busca conciliar la salud del entorno con la mejora de la calidad de vida presente y futura",
+    "El inmovilismo incrementa la rentabilidad financiera a corto plazo sin considerar los costes sociales",
+    "El desarrollo sostenible exige eliminar cualquier tipo de tecnología industrial en la cadena de suministro",
+    "El inmovilismo se enfoca prioritariamente en la expansión hacia nuevos mercados internacionales"
+   ],
+   "correcta": 0,
+   "explicacion": "Sostenible no es parar la actividad: es desarrollarse conciliando entorno y calidad de vida."
+  },
+  {
+   "n": 7,
+   "enunciado": "Un inversor decide descartar de su cartera de inversión a todas aquellas empresas pertenecientes a sectores como la fabricación de armas, el tabaco o el juego. ¿Qué estrategia de inversión socialmente responsable está aplicando?",
+   "opciones": [
+    "Filtro negativo o exclusión",
+    "Premiar las mejores prácticas",
+    "Actuar desde dentro",
+    "Integración de valor compartido"
+   ],
+   "correcta": 0,
+   "explicacion": "Excluir sectores enteros = filtro negativo."
+  },
+  {
+   "n": 8,
+   "enunciado": "Un fondo ético adquiere una participación minoritaria pero significativa en una industria con elevadas emisiones contaminantes, con el propósito expreso de votar en las juntas directivas y presionar para que cambie sus procesos hacia alternativas limpias. ¿Qué estrategia está utilizando?",
+   "opciones": [
+    "Desinversión total",
+    "Actuar desde dentro",
+    "Filtro positivo",
+    "Cálculo de riesgos"
+   ],
+   "correcta": 1,
+   "explicacion": "Comprar acciones para votar y presionar = activismo accionarial (actuar desde dentro)."
+  },
+  {
+   "n": 9,
+   "enunciado": "Si una empresa decide invertir prioritariamente en aquellas compañías de su sector que presentan los mejores indicadores en gestión de residuos y eficiencia energética, independientemente de la rama de actividad, está aplicando:",
+   "opciones": [
+    "Un mecanismo de deslocalización productiva preventiva",
+    "Una estrategia de selección por mejores prácticas (filtro positivo)",
+    "Un modelo de respuesta empresarial inflexible frente al mercado",
+    "Un principio de doble materialidad puramente contable"
+   ],
+   "correcta": 1,
+   "explicacion": "Elegir a las mejores de cada sector (best in class) = filtro positivo."
+  },
+  {
+   "n": 10,
+   "enunciado": "Dentro del marco de evaluación ASG (Ambiental, Social y Gobernanza), ¿a cuál de las tres dimensiones corresponde la evaluación de la transparencia en la gestión de la directiva y la ética en los contratos?",
+   "opciones": [
+    "Dimensión Ambiental (A)",
+    "Dimensión Social (S)",
+    "Dimensión de Gobernanza (G)",
+    "Dimensión de Soportabilidad (S)"
+   ],
+   "correcta": 2,
+   "explicacion": "Directiva, transparencia, ética y anticorrupción = Gobernanza."
+  },
+  {
+   "n": 11,
+   "enunciado": "Las medidas orientadas a garantizar el respeto a los derechos laborales, fomentar la inclusión de personas con diversidad funcional y promover la conciliación familiar dentro de una empresa se encuadran en los criterios:",
+   "opciones": [
+    "Ambientales",
+    "Sociales",
+    "De gobernanza",
+    "De viabilidad estrictamente económica"
+   ],
+   "correcta": 1,
+   "explicacion": "Personas (plantilla, inclusión, conciliación) = criterio Social. En el examen la opción D pone «strictly económica»; aquí se ha corregido a «estrictamente»."
+  },
+  {
+   "n": 12,
+   "enunciado": "¿Cuál es el papel fundamental de las agencias especializadas en calificación de sostenibilidad (ratings ASG) para los mercados financieros?",
+   "opciones": [
+    "Imponer multas administrativas a las industrias que incumplen las normas de vertidos",
+    "Certificar las cuentas financieras tradicionales al cierre de cada ejercicio fiscal",
+    "Subvencionar la contratación de personal en situación de exclusión social",
+    "Evaluar objetivamente el desempeño socioambiental de las empresas para orientar a los inversores"
+   ],
+   "correcta": 3,
+   "explicacion": "Las agencias de rating ASG puntúan a las empresas para orientar a los inversores; no sancionan ni subvencionan."
+  },
+  {
+   "n": 13,
+   "enunciado": "¿Qué utilidad principal tienen los índices bursátiles de sostenibilidad para una empresa cotizada?",
+   "opciones": [
+    "Eximir a la empresa del pago de impuestos sobre beneficios e IVA industrial",
+    "Permitir el incumplimiento de la normativa laboral local mediante exenciones legales",
+    "Garantizar un incremento automático en las ventas de sus productos convencionales",
+    "Visibilizar públicamente su compromiso real con la sostenibilidad, mejorando su reputación y acceso a financiación"
+   ],
+   "correcta": 3,
+   "explicacion": "Estar en un índice (p. ej., Dow Jones Sustainability Index o FTSE4Good) da visibilidad, reputación y acceso a inversores."
+  },
+  {
+   "n": 14,
+   "enunciado": "Una compañía realiza campañas publicitarias masivas promocionando su compromiso con el medio ambiente por utilizar bolsas de papel reciclado, mientras mantiene vertidos químicos ilegales en su planta de producción. ¿A qué comportamiento empresarial corresponde?",
+   "opciones": [
+    "Compromiso genuino de RSC",
+    "Creación de valor compartido",
+    "Blanqueo ecológico o Greenwashing",
+    "Estrategia de contingencia preventiva"
+   ],
+   "correcta": 2,
+   "explicacion": "Publicitar un gesto verde menor para tapar un daño ambiental real = greenwashing."
+  },
+  {
+   "n": 15,
+   "enunciado": "Una empresa hotelera difunde públicamente un código de igualdad de género en su sitio web, pero en sus promociones internas reserva sistemáticamente los puestos directivos a hombres. Este fenómeno se conoce como:",
+   "opciones": [
+    "Greenwashing",
+    "Filtro negativo",
+    "Pinkwashing",
+    "Análisis de materialidad"
+   ],
+   "correcta": 2,
+   "explicacion": "Lavado de imagen en igualdad o diversidad = pinkwashing (el «-washing» social; el ambiental es greenwashing)."
+  },
+  {
+   "n": 16,
+   "enunciado": "Frente a una nueva exigencia medioambiental que implica mayores costes, una fábrica decide cerrar sus plantas en su país de origen y trasladar la producción a una nación con legislación muy laxa. ¿Cómo se califica este nivel de respuesta empresarial?",
+   "opciones": [
+    "Compromiso proactivo",
+    "Contingencia local",
+    "Creación de valor compartido",
+    "Inflexibilidad / Deslocalización"
+   ],
+   "correcta": 3,
+   "explicacion": "No adaptarse y huir a un país con leyes laxas = inflexibilidad (deslocalización). Es el nivel más bajo de respuesta."
+  },
+  {
+   "n": 17,
+   "enunciado": "Una empresa analiza las posibles sanciones económicas derivables de la contaminación que genera y concluye que le resulta más barato pagar las multas que modificar sus maquinarias. ¿En qué nivel de respuesta ante la sostenibilidad se encuentra?",
+   "opciones": [
+    "Cálculo de riesgos",
+    "Compromiso ético",
+    "Actuación desde dentro",
+    "Respuesta contingente proactiva"
+   ],
+   "correcta": 0,
+   "explicacion": "Comparar el coste de la multa con el coste de cambiar y elegir lo más barato = cálculo de riesgos."
+  },
+  {
+   "n": 18,
+   "enunciado": "¿Qué caracteriza a la respuesta empresarial basada en la 'Contingencia' ante un problema de sostenibilidad?",
+   "opciones": [
+    "Modificar de manera integral la misión y visión de la compañía hacia la ecología",
+    "Adoptar medidas puntuales para neutralizar un problema concreto sin cambiar la estrategia general de la empresa",
+    "Asumir la deslocalización productiva como primera opción operativa",
+    "Publicar informes de sostenibilidad bajo estándares internacionales unificados"
+   ],
+   "correcta": 1,
+   "explicacion": "Contingencia = parche puntual al problema concreto, sin cambiar la estrategia. El cambio integral sería el compromiso proactivo."
+  },
+  {
+   "n": 19,
+   "enunciado": "La Responsabilidad Social Corporativa (RSC) se distingue de las obligaciones legales en que la RSC es:",
+   "opciones": [
+    "Un impuesto obligatorio sobre el beneficio bruto empresarial",
+    "Una normativa sancionadora impuesta por los tribunales laborales",
+    "Un compromiso voluntario de la empresa para integrar aspectos sociales y ambientales en sus decisiones",
+    "Un requisito formal exclusivamente exigido para constituir una sociedad anónima"
+   ],
+   "correcta": 2,
+   "explicacion": "La RSC es voluntaria y va más allá de lo que exige la ley."
+  },
+  {
+   "n": 20,
+   "enunciado": "¿Cuál de los siguientes colectivos forma parte de los grupos de interés internos de una organización empresarial?",
+   "opciones": [
+    "La plantilla de trabajadores y los accionistas de la propia empresa",
+    "Las empresas competidoras del mismo sector",
+    "Las autoridades medioambientales y sanitarias",
+    "Las asociaciones de consumidores y medios de comunicación"
+   ],
+   "correcta": 0,
+   "explicacion": "Internos: los de dentro (plantilla, accionistas, directivos). El resto son externos."
+  },
+  {
+   "n": 21,
+   "enunciado": "Los clientes, proveedores y empleados se consideran grupos de interés primarios principalmente porque:",
+   "opciones": [
+    "Son entidades públicas encargadas de legislar sobre la materia ambiental",
+    "Carecen de cualquier tipo de poder de influencia sobre los resultados del negocio",
+    "Tienen una implicación y relación directa o contractual con las operaciones diarias de la empresa",
+    "Participan únicamente cuando se producen accidentes o crisis reputacionales"
+   ],
+   "correcta": 2,
+   "explicacion": "Primarios = relación directa o contractual con la actividad diaria. Secundarios = influencia indirecta (medios, ONG...)."
+  },
+  {
+   "n": 22,
+   "enunciado": "En el proceso metodológico de gestión de los grupos de interés, ¿cuál es el paso que debe ejecutarse inmediatamente después de haber identificado a todos los colectivos afectados?",
+   "opciones": [
+    "Rediseñar el producto final sin consultar a las partes",
+    "Excluir a los colectivos que no dispongan de capital accionarial",
+    "Publicar los estados financieros en el boletín oficial",
+    "Captar y analizar sus necesidades, demandas y expectativas específicas"
+   ],
+   "correcta": 3,
+   "explicacion": "Secuencia: identificar → conocer sus expectativas (diálogo) → priorizar → responder e informar."
+  },
+  {
+   "n": 23,
+   "enunciado": "Los costes financieros imprevistos que debe asumir una empresa para adaptar apresuradamente sus tecnologías obsoletas a nuevas exigencias ambientales de mercado representan un:",
+   "opciones": [
+    "Riesgo de transición hacia modelos sostenibles",
+    "Riesgo de gobernanza institucional",
+    "Riesgo físico derivado de inclemencias meteorológicas",
+    "Beneficio directo por filantropía corporativa"
+   ],
+   "correcta": 0,
+   "explicacion": "Riesgo de transición: normativa, mercado o tecnología cambian hacia lo sostenible. El riesgo físico es el daño directo del clima (tormentas, inundaciones)."
+  },
+  {
+   "n": 24,
+   "enunciado": "Una compañía de alimentación desarrolla una nueva línea de productos nutritivos a bajo coste utilizando excedentes agrícolas que antes se desperdiciaban, logrando un negocio rentable a la vez que reduce el hambre en su comunidad local. Este es un ejemplo claro de:",
+   "opciones": [
+    "Greenwashing estético",
+    "Respuesta de inflexibilidad",
+    "Filtro negativo de desinversión",
+    "Creación de valor compartido"
+   ],
+   "correcta": 3,
+   "explicacion": "Valor compartido (Porter y Kramer): ganar dinero resolviendo un problema social. Aquí, negocio rentable que además reduce el hambre."
+  },
+  {
+   "n": 25,
+   "enunciado": "¿Qué evalúa el indicador conocido como Huella Ecológica de una determinada actividad o población?",
+   "opciones": [
+    "La superficie de tierra y agua biológicamente productiva necesaria para producir los recursos consumidos y absorber los residuos generados",
+    "Exclusivamente los metros cúbicos de agua potable gastados en los procesos de fabricación",
+    "El porcentaje de directivas mujeres presentes en el consejo de administración",
+    "El volumen total de impuestos pagados en la comarca donde opera la fábrica"
+   ],
+   "correcta": 0,
+   "explicacion": "Huella ecológica = superficie productiva (hectáreas globales) para producir lo consumido y absorber los residuos."
+  },
+  {
+   "n": 26,
+   "enunciado": "En el análisis de la Huella Hídrica, el volumen de agua de lluvia consumida que queda incorporada en los productos agrícolas sin generar efluentes se clasifica como:",
+   "opciones": [
+    "Huella hídrica azul",
+    "Huella hídrica verde",
+    "Huella hídrica gris",
+    "Huella hídrica de absorción industrial"
+   ],
+   "correcta": 1,
+   "explicacion": "Verde = agua de lluvia. Azul = agua extraída de ríos o acuíferos. Gris = agua para diluir contaminantes."
+  },
+  {
+   "n": 27,
+   "enunciado": "¿A qué se refiere el concepto de Huella Hídrica Gris en la evaluación del desempeño ambiental?",
+   "opciones": [
+    "Al agua extraída directamente de acuíferos o ríos para riego por goteo",
+    "Al agua de lluvia que se evapora de las hojas de las plantas durante la noche",
+    "Al agua mineral embotellada destinada al consumo de la plantilla en las instalaciones",
+    "Al volumen de agua dulce necesario para diluir y neutralizar los contaminantes vertidos hasta alcanzar la calidad requerida por la norma"
+   ],
+   "correcta": 3,
+   "explicacion": "Gris = agua teórica necesaria para diluir los contaminantes hasta cumplir la norma. La opción A es la azul."
+  },
+  {
+   "n": 28,
+   "enunciado": "¿Qué mide prioritariamente la Huella Social de una organización empresarial?",
+   "opciones": [
+    "El impacto positivo o negativo de la actividad corporativa en el empleo, el desarrollo local y el bienestar de la comunidad",
+    "Las toneladas de dióxido de carbono emitidas por los vehículos de la flota comercial",
+    "El volumen de agua contaminada vertida a la red pública de alcantarillado",
+    "El coste de las materias primas importadas desde países extracomunitarios"
+   ],
+   "correcta": 0,
+   "explicacion": "Huella social = impacto sobre las personas y la comunidad (empleo, desarrollo local, bienestar)."
+  },
+  {
+   "n": 29,
+   "enunciado": "El principio de 'doble materialidad' en la información socioambiental exige a las empresas evaluar y reportar:",
+   "opciones": [
+    "Tanto el impacto que la empresa causa en el medio ambiente y la sociedad, como el impacto que las cuestiones ambientales y sociales generan en el rendimiento financiero de la propia empresa",
+    "Exclusivamente las pérdidas económicas directas producidas por la competencia",
+    "El cálculo duplicado de la huella de carbono y la huella ecológica de forma simultánea",
+    "Las aportaciones monetarias realizadas a fundaciones de la empresa y a los partidos políticos localmente"
+   ],
+   "correcta": 0,
+   "explicacion": "Doble materialidad (CSRD/ESRS): de dentro hacia fuera (impacto de la empresa en el entorno) y de fuera hacia dentro (impacto del entorno en sus finanzas)."
+  },
+  {
+   "n": 30,
+   "enunciado": "¿Cuál es el objetivo principal de publicar informes de sostenibilidad basados en estándares y métricas estandarizadas?",
+   "opciones": [
+    "Ocultar los datos de contaminación para evitar la pérdida de valor bursátil",
+    "Sustituir por completo la elaboración de las cuentas anuales financieras de la empresa",
+    "Proporcionar información rigurosa, comparable y verificable sobre el desempeño ambiental, social y de gobernanza a inversores y consumidores",
+    "Evitar la inspección de trabajo mediante declaraciones unilaterales no auditables"
+   ],
+   "correcta": 2,
+   "explicacion": "Estándares (GRI, ESRS) = información rigurosa, comparable y verificable. Complementan las cuentas anuales, no las sustituyen."
+  }
+ ]
+}

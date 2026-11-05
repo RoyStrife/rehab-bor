@@ -247,5 +247,23 @@
     "asignatura": "Repaso",
     "preguntas": 50,
     "archivo": "Nutricion/cuestionarios/Parcial_1/nutri-parcial1-teoria-2.json"
+  },
+  {
+    "id": "sost-ud1-cuestionario1",
+    "titulo": "Sostenibilidad UD1 · Cuestionario 1 (P1–P30)",
+    "descripcion": "Test del Cuestionario 1 de clase: desarrollo sostenible, ISR, ASG, niveles de respuesta, RSC, grupos de interés, riesgos, huellas y doble materialidad",
+    "modulo": "Sostenibilidad",
+    "unidad": "UD_1",
+    "preguntas": 30,
+    "archivo": "Sostenibilidad/cuestionarios/UD_1/sost-ud1-cuestionario1.json"
+  },
+  {
+    "id": "sost-ud1-preguntas-extra",
+    "titulo": "Sostenibilidad UD1 · Preguntas tipo examen (extra)",
+    "descripcion": "36 preguntas nuevas con el mismo estilo del Cuestionario 1, sobre todo el temario de la UD1",
+    "modulo": "Sostenibilidad",
+    "unidad": "UD_1",
+    "preguntas": 36,
+    "archivo": "Sostenibilidad/cuestionarios/UD_1/sost-ud1-preguntas-extra.json"
   }
 ]

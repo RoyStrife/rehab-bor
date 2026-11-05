@@ -1,0 +1,402 @@
+{
+ "titulo": "Sostenibilidad UD1 · Preguntas tipo examen (extra)",
+ "descripcion": "36 preguntas nuevas con el mismo estilo del Cuestionario 1, sobre todo el temario de la UD1",
+ "preguntas": [
+  {
+   "enunciado": "Una conservera instala una depuradora que reduce sus vertidos a la ría y, además, le ahorra el canon de vertido que pagaba cada año. ¿Qué intersección del desarrollo sostenible está reforzando?",
+   "opciones": [
+    "Equidad, porque reparte los beneficios entre la plantilla",
+    "Viabilidad, porque combina ahorro económico y menor impacto ambiental",
+    "Soportabilidad, porque reduce los aranceles industriales",
+    "Desinversión, porque retira capital de la ría"
+   ],
+   "correcta": 1,
+   "explicacion": "Económico + ambiental = viable."
+  },
+  {
+   "enunciado": "Una cooperativa agraria reparte sus beneficios con salarios justos entre todos los socios y reserva plazas de trabajo para personas en riesgo de exclusión. ¿Qué intersección del desarrollo sostenible potencia?",
+   "opciones": [
+    "Soportabilidad",
+    "Viabilidad",
+    "Equidad",
+    "Gobernanza ambiental"
+   ],
+   "correcta": 2,
+   "explicacion": "Económico + social = equitativo: reparto justo y oportunidades para los vulnerables."
+  },
+  {
+   "enunciado": "Un plan de turismo rural mejora la calidad de vida de los vecinos sin degradar el paisaje ni agotar los recursos naturales de la zona. ¿A qué concepto responde?",
+   "opciones": [
+    "Soportabilidad",
+    "Filtro positivo",
+    "Viabilidad financiera",
+    "Cálculo de riesgos"
+   ],
+   "correcta": 0,
+   "explicacion": "Social + ambiental = soportable: bienestar sin superar la capacidad del entorno."
+  },
+  {
+   "enunciado": "¿Por qué se considera la sostenibilidad medioambiental la piedra angular del desarrollo sostenible?",
+   "opciones": [
+    "Porque es la única dimensión que genera beneficios económicos",
+    "Porque solo afecta a las empresas cotizadas",
+    "Porque sustituye a las dimensiones social y económica",
+    "Porque es la dimensión más frágil y marca el marco de actuación de las otras dos"
+   ],
+   "correcta": 3,
+   "explicacion": "El libro: es la más frágil y establece el marco de las dimensiones social y económica."
+  },
+  {
+   "enunciado": "¿Qué organismo creó en 1987 el concepto de desarrollo sostenible?",
+   "opciones": [
+    "La Comisión Mundial para el Desarrollo y Medioambiente de la ONU",
+    "La Autoridad Europea de Valores y Mercados",
+    "La Organización Mundial del Comercio",
+    "El Consejo de administración del Ibex 35"
+   ],
+   "correcta": 0,
+   "explicacion": "Comisión Mundial para el Desarrollo y Medioambiente (ONU), 1987; definido en el principio 3 de la Declaración de Río (1992)."
+  },
+  {
+   "enunciado": "¿Cuál es el objetivo global que fija el Acuerdo de París?",
+   "opciones": [
+    "Duplicar la producción industrial de los países firmantes antes de 2030",
+    "Limitar el aumento de la temperatura mundial por debajo de 2 °C, preferentemente 1,5 °C",
+    "Eliminar todos los impuestos sobre los combustibles fósiles",
+    "Prohibir la publicación de informes de sostenibilidad"
+   ],
+   "correcta": 1,
+   "explicacion": "París: clima seguro; vinculante; por debajo de 2 °C, idealmente 1,5 °C."
+  },
+  {
+   "enunciado": "La Agenda 2030 de la ONU establece una relación directa entre la paz y el desarrollo sostenible. ¿Cuál?",
+   "opciones": [
+    "La paz depende exclusivamente del crecimiento del PIB",
+    "El desarrollo sostenible solo es posible en países sin industria",
+    "Sin paz no puede haber desarrollo sostenible y sin desarrollo sostenible la paz es frágil",
+    "La paz sustituye a la protección del planeta"
+   ],
+   "correcta": 2,
+   "explicacion": "Por eso necesita paz, justicia, instituciones fuertes y protección del planeta."
+  },
+  {
+   "enunciado": "¿Cuál es la naturaleza jurídica de los objetivos de desarrollo sostenible (ODS)?",
+   "opciones": [
+    "Son sanciones automáticas para las empresas que contaminan",
+    "No son jurídicamente obligatorios, pero se espera que los países los incorporen a sus leyes y políticas",
+    "Son un impuesto europeo sobre las emisiones",
+    "Solo obligan a las empresas del sector energético"
+   ],
+   "correcta": 1,
+   "explicacion": "Los ODS no son obligatorios: son un llamamiento a países y organizaciones."
+  },
+  {
+   "enunciado": "Una industria cárnica reduce el desperdicio en su línea de producción, recicla sus envases y compra materias primas certificadas. ¿Con qué ODS se vincula más directamente?",
+   "opciones": [
+    "ODS 16: Paz, justicia e instituciones sólidas",
+    "ODS 4: Educación de calidad",
+    "ODS 3: Salud y bienestar",
+    "ODS 12: Producción y consumo responsables"
+   ],
+   "correcta": 3,
+   "explicacion": "Residuos, reciclaje y compra sostenible son cuestiones clave del ODS 12."
+  },
+  {
+   "enunciado": "Una panificadora sustituye su caldera de gasóleo por una instalación de biomasa y paneles fotovoltaicos. ¿Con qué ODS se vincula principalmente?",
+   "opciones": [
+    "ODS 7: Energía asequible y no contaminante",
+    "ODS 14: Vida submarina",
+    "ODS 10: Reducción de las desigualdades",
+    "ODS 17: Alianzas para lograr los objetivos"
+   ],
+   "correcta": 0,
+   "explicacion": "Renovables y eficiencia energética = ODS 7 (y también ayuda al 13, Acción por el clima)."
+  },
+  {
+   "enunciado": "Una flota pesquera instala redes selectivas que reducen las capturas accesorias y colabora en la protección de los fondos marinos. ¿Qué ODS atiende de forma más directa?",
+   "opciones": [
+    "ODS 11: Ciudades y comunidades sostenibles",
+    "ODS 14: Vida submarina",
+    "ODS 9: Industria, innovación e infraestructura",
+    "ODS 5: Igualdad de género"
+   ],
+   "correcta": 1,
+   "explicacion": "Ecosistemas marinos, pesca y zonas costeras = ODS 14."
+  },
+  {
+   "enunciado": "Un inversor vende todas las acciones que tenía de una empresa textil tras descubrir que sus proveedores emplean mano de obra infantil. ¿Qué estrategia de ISR aplica?",
+   "opciones": [
+    "Actuar desde dentro",
+    "Premiar las mejores prácticas",
+    "Desinversión",
+    "Filtro positivo"
+   ],
+   "correcta": 2,
+   "explicacion": "Retirar activos que ya se tenían por objeciones éticas = desinversión (el filtro negativo es no entrar)."
+  },
+  {
+   "enunciado": "Un fondo decide invertir solo en empresas que se espera que tengan un impacto social positivo, como cooperativas de comercio justo. ¿Qué estrategia aplica?",
+   "opciones": [
+    "Filtro positivo",
+    "Desinversión",
+    "Filtro negativo o exclusión",
+    "Inflexibilidad"
+   ],
+   "correcta": 0,
+   "explicacion": "Invertir en empresas con buenas prácticas e impacto positivo = filtro positivo."
+  },
+  {
+   "enunciado": "Dentro del sector lácteo, un fondo elige invertir únicamente en la empresa con los mejores resultados ambientales y sociales del sector. ¿Qué estrategia aplica?",
+   "opciones": [
+    "Actuar desde dentro",
+    "Cálculo de riesgos",
+    "Desinversión total",
+    "Premiar las mejores prácticas"
+   ],
+   "correcta": 3,
+   "explicacion": "La mejor de cada sector (best in class) = premiar las mejores prácticas (el test de clase lo da también como filtro positivo)."
+  },
+  {
+   "enunciado": "Una empresa implanta un código ético y un canal de denuncias contra la corrupción. ¿A qué criterio ASG corresponde?",
+   "opciones": [
+    "Ambiental (A)",
+    "Social (S)",
+    "Gobernanza (G)",
+    "Soportabilidad (S)"
+   ],
+   "correcta": 2,
+   "explicacion": "Ética, transparencia y buen gobierno = Gobernanza."
+  },
+  {
+   "enunciado": "Una distribuidora renueva su flota de reparto con vehículos eléctricos para reducir las emisiones de gases contaminantes. ¿A qué criterio ASG corresponde?",
+   "opciones": [
+    "Ambiental (A)",
+    "Gobernanza (G)",
+    "Social (S)",
+    "Viabilidad estrictamente financiera"
+   ],
+   "correcta": 0,
+   "explicacion": "Emisiones y cambio climático = factor Ambiental."
+  },
+  {
+   "enunciado": "Una empresa aprueba un plan de igualdad salarial, medidas de conciliación y la adaptación de puestos para personas con discapacidad. ¿A qué criterio ASG corresponde?",
+   "opciones": [
+    "Ambiental (A)",
+    "Social (S)",
+    "Gobernanza (G)",
+    "Ninguno: son obligaciones fiscales"
+   ],
+   "correcta": 1,
+   "explicacion": "Derechos laborales, igualdad, inclusión y conciliación = factor Social."
+  },
+  {
+   "enunciado": "¿Qué entidad reúne información ASG de las empresas, la analiza y la sintetiza en listas o índices para aconsejar o no una inversión?",
+   "opciones": [
+    "La inspección de trabajo",
+    "El analista de sostenibilidad o extrafinanciero",
+    "El ayuntamiento de la localidad",
+    "La asociación de vecinos"
+   ],
+   "correcta": 1,
+   "explicacion": "Analistas extrafinancieros: recopilan, analizan y sintetizan; las agencias de rating puntúan."
+  },
+  {
+   "enunciado": "¿Qué empresas analiza el índice FTSE4Good IBEX?",
+   "opciones": [
+    "Las pymes de alimentación de Galicia",
+    "Las empresas españolas del Ibex 35",
+    "Las multinacionales con sede fuera de Europa",
+    "Las cooperativas agrarias sin cotización"
+   ],
+   "correcta": 1,
+   "explicacion": "FTSE4Good IBEX = empresas españolas del Ibex 35."
+  },
+  {
+   "enunciado": "Tras una denuncia por humos, una fábrica instala un filtro solo en la chimenea denunciada, sin cambiar su estrategia ni el resto de sus procesos. ¿Qué nivel de respuesta muestra?",
+   "opciones": [
+    "Compromiso",
+    "Contingencia",
+    "Creación de valor compartido",
+    "Actuar desde dentro"
+   ],
+   "correcta": 1,
+   "explicacion": "Resolver un problema concreto sin cambiar los objetivos generales = contingencia."
+  },
+  {
+   "enunciado": "Ante una nueva norma de vertidos, una empresa decide seguir trabajando igual con la esperanza de esquivar las sanciones. ¿Qué nivel de respuesta muestra?",
+   "opciones": [
+    "Inflexibilidad",
+    "Compromiso",
+    "Contingencia",
+    "Lavado de imagen"
+   ],
+   "correcta": 0,
+   "explicacion": "No ceder a las presiones (seguir igual, cerrar o deslocalizar) = inflexibilidad."
+  },
+  {
+   "enunciado": "Una empresa de bebidas rediseña todos sus envases con material compostable, implanta un código ético y forma a su plantilla en cultura ambiental. ¿Qué nivel de respuesta muestra?",
+   "opciones": [
+    "Cálculo de riesgos",
+    "Lavado de imagen",
+    "Compromiso",
+    "Inflexibilidad"
+   ],
+   "correcta": 2,
+   "explicacion": "Cambios reales de fondo y cultura social y ambiental = compromiso."
+  },
+  {
+   "enunciado": "Una empresa patrocina unas jornadas sobre sostenibilidad mientras sigue basando toda su producción en combustibles fósiles. ¿Cómo se denomina esta práctica?",
+   "opciones": [
+    "Ecoblanqueo o greenwashing",
+    "Creación de valor compartido",
+    "Filtro positivo",
+    "Compromiso con la comunidad"
+   ],
+   "correcta": 0,
+   "explicacion": "Ejemplo literal del libro de lavado de imagen ambiental."
+  },
+  {
+   "enunciado": "Una empresa láctea patrocina el equipo de fútbol del pueblo y organiza cursos de formación gratuitos para los vecinos. ¿En qué ámbito de la RSC se encuadra?",
+   "opciones": [
+    "Compromiso con el medioambiente",
+    "Compromiso con la diversidad",
+    "Riesgo de gobernanza",
+    "Compromiso con la comunidad local"
+   ],
+   "correcta": 3,
+   "explicacion": "Donaciones, patrocinios, voluntariado y formación = compromiso con la comunidad local."
+  },
+  {
+   "enunciado": "Los medios de comunicación no participan directamente en la actividad de la empresa, pero influyen en su reputación. ¿Qué tipo de grupo de interés son?",
+   "opciones": [
+    "Interno y primario",
+    "Externo y secundario",
+    "Interno y contractual",
+    "Accionista mayoritario"
+   ],
+   "correcta": 1,
+   "explicacion": "Externo (fuera de la organización) y secundario (influencia sin implicación directa)."
+  },
+  {
+   "enunciado": "En la gestión de los grupos de interés, ¿con qué criterio se realiza la fase de priorización?",
+   "opciones": [
+    "Por orden alfabético del nombre del grupo",
+    "Según su capacidad de influencia, la relación establecida y su vinculación con la organización",
+    "Solo según el capital que aporte cada grupo",
+    "Al azar, para no discriminar a ningún grupo"
+   ],
+   "correcta": 1,
+   "explicacion": "Priorizar: influencia, relación y vinculación con la empresa."
+  },
+  {
+   "enunciado": "Una huelga general paraliza durante una semana la planta de una empresa y le causa pérdidas directas. Según el libro, ¿qué tipo de riesgo de sostenibilidad se ha materializado?",
+   "opciones": [
+    "Riesgo de transición",
+    "Beneficio por filantropía corporativa",
+    "Riesgo físico de origen social",
+    "Riesgo por filtro negativo"
+   ],
+   "correcta": 2,
+   "explicacion": "Físico = impacto económico directo por un evento climático o social (el libro pone la huelga como ejemplo)."
+  },
+  {
+   "enunciado": "Se descubre que varios directivos de una empresa han cobrado sobornos de un proveedor. ¿En qué categoría de riesgo de sostenibilidad se clasifica?",
+   "opciones": [
+    "Riesgo medioambiental",
+    "Riesgo de gobernanza",
+    "Riesgo físico climático",
+    "Huella hídrica gris"
+   ],
+   "correcta": 1,
+   "explicacion": "Corrupción, ética y transparencia = riesgo de gobernanza."
+  },
+  {
+   "enunciado": "Las empresas sostenibles suelen descubrir oportunidades de mercado que las convencionales desconocen y colaboran más con otras organizaciones. ¿Qué oportunidad de sostenibilidad describe?",
+   "opciones": [
+    "Inflexibilidad",
+    "Riesgo de transición",
+    "Factores de innovación",
+    "Filtro negativo"
+   ],
+   "correcta": 2,
+   "explicacion": "Creatividad, nuevos mercados y colaboración = factores de innovación."
+  },
+  {
+   "enunciado": "¿Qué mide la huella de carbono de un producto?",
+   "opciones": [
+    "El total de gases de efecto invernadero emitidos en todo su ciclo, expresado en CO₂ equivalente",
+    "Únicamente el humo visible de las chimeneas de la fábrica",
+    "El número de árboles plantados por la empresa",
+    "Los metros cuadrados de oficina de la empresa"
+   ],
+   "correcta": 0,
+   "explicacion": "Desde las materias primas hasta los residuos; se expresa en masa de CO₂ equivalente."
+  },
+  {
+   "enunciado": "¿En qué unidad se expresa la huella ecológica?",
+   "opciones": [
+    "En litros de agua por kilo de producto",
+    "En euros de facturación anual",
+    "En hectáreas globales (hag) por habitante y año",
+    "En toneladas de residuos reciclados"
+   ],
+   "correcta": 2,
+   "explicacion": "Hectáreas globales por habitante y año, sumando cinco superficies."
+  },
+  {
+   "enunciado": "Una planta de zumos extrae agua de un río cercano para lavar la fruta. ¿Qué huella hídrica representa ese consumo?",
+   "opciones": [
+    "Huella hídrica azul",
+    "Huella hídrica verde",
+    "Huella hídrica gris",
+    "Huella social"
+   ],
+   "correcta": 0,
+   "explicacion": "Agua de ríos, lagos o acuíferos = azul. Lluvia = verde. Diluir contaminantes = gris."
+  },
+  {
+   "enunciado": "¿Por qué la huella social es más difícil de medir que otros indicadores de sostenibilidad?",
+   "opciones": [
+    "Porque solo se calcula en países sin industria",
+    "Porque valora impactos cualitativos sobre la comunidad, como el empleo de calidad o el desarrollo cultural",
+    "Porque está prohibido publicarla",
+    "Porque se mide en litros de agua"
+   ],
+   "correcta": 1,
+   "explicacion": "Mide efectos positivos y negativos en la comunidad, muchos de ellos cualitativos."
+  },
+  {
+   "enunciado": "¿Qué caracteriza a los estándares GRI?",
+   "opciones": [
+    "Son exclusivos para el sector petrolero y no tienen guía",
+    "Abarcan un amplio repertorio de temas con una guía para elaborar informes, y se dividen en universales, sectoriales y temáticos",
+    "Sustituyen por completo a las cuentas anuales",
+    "Solo miden la huella hídrica gris"
+   ],
+   "correcta": 1,
+   "explicacion": "GRI (Global Reporting Initiative): el más amplio, con guía de informes."
+  },
+  {
+   "enunciado": "¿Qué obliga a hacer la Directiva europea CSRD (2022/2464) a las empresas sujetas a ella?",
+   "opciones": [
+    "Ocultar su información ambiental para proteger su cotización",
+    "Pagar un impuesto por cada informe de sostenibilidad",
+    "Publicar de forma accesible y gratuita su información de sostenibilidad en el informe de gestión, siguiendo los estándares ESRS",
+    "Eliminar las auditorías externas"
+   ],
+   "correcta": 2,
+   "explicacion": "CSRD + ESRS: información pública y gratuita, con doble materialidad."
+  },
+  {
+   "enunciado": "¿Qué caracteriza a los estándares SASB?",
+   "opciones": [
+    "Son 77 conjuntos de estándares dirigidos a industrias concretas y centrados en lo que importa a los inversores",
+    "Son normas de etiquetado de alimentos",
+    "Son sanciones de la ESMA a las agencias de rating",
+    "Son los 17 ODS traducidos al inglés"
+   ],
+   "correcta": 0,
+   "explicacion": "SASB: estándares por industria (11 sectores), orientados a inversores."
+  }
+ ]
+}
