@@ -1,0 +1,193 @@
+{
+  "titulo": "UD1 · Planificación y programación de la producción",
+  "descripcion": "Conceptos previos, capacidad, plan de producción, programación, Lean aplicado (Heijunka y JIT)",
+  "preguntas": [
+    {
+      "enunciado": "La demanda es…",
+      "opciones": [
+        "La cantidad máxima que puede fabricar una instalación",
+        "Los productos terminados en el almacén",
+        "El tiempo que tarda en llegar un material",
+        "La cantidad de producto que los clientes están dispuestos a comprar durante un periodo determinado"
+      ],
+      "correcta": 3,
+      "explicacion": "La capacidad de producción es la cantidad máxima que puede fabricar la instalación en un tiempo determinado."
+    },
+    {
+      "enunciado": "Diferencia entre eficacia y eficiencia:",
+      "opciones": [
+        "Son sinónimos",
+        "Eficacia es gastar menos y eficiencia fabricar más",
+        "Eficacia es calidad y eficiencia es velocidad",
+        "Eficacia es lograr el objetivo previsto; eficiencia es lograrlo aprovechando al máximo los recursos, haciendo más con menos"
+      ],
+      "correcta": 3,
+      "explicacion": "Una empresa puede cumplir su objetivo de producción (eficaz) y usar mal sus recursos (poco eficiente)."
+    },
+    {
+      "enunciado": "¿Qué es la vida útil de un alimento?",
+      "opciones": [
+        "El tiempo que tarda en fabricarse",
+        "El periodo durante el cual mantiene su seguridad y/o características de calidad, en las condiciones establecidas",
+        "El plazo de aprovisionamiento",
+        "El periodo de mayor demanda"
+      ],
+      "correcta": 1,
+      "explicacion": "Condiciona cuánto se puede adelantar la producción."
+    },
+    {
+      "enunciado": "¿De qué depende la capacidad productiva?",
+      "opciones": [
+        "Solo del número de trabajadores",
+        "Solo de la demanda prevista",
+        "De líneas, rendimiento de equipos, turnos, días disponibles y paradas de mantenimiento, limpieza y cambios de producto",
+        "Del precio de las materias primas"
+      ],
+      "correcta": 2,
+      "explicacion": "Antes de planificar hay que comprobar si se dispone de capacidad suficiente para satisfacer la demanda."
+    },
+    {
+      "enunciado": "Una línea produce 2.000 yogures por turno de 8 h y trabaja 20 días al mes con 1 turno. ¿Capacidad mensual?",
+      "opciones": [
+        "20.000 unidades",
+        "80.000 unidades",
+        "40.000 unidades",
+        "32.000 unidades"
+      ],
+      "correcta": 2,
+      "explicacion": "2.000 × 20 = 40.000. Con dos turnos serían 2.000 × 20 × 2 = 80.000."
+    },
+    {
+      "enunciado": "¿Qué es la planificación de la producción?",
+      "opciones": [
+        "Detallar el orden de trabajos en una máquina cada día",
+        "Determinar qué productos se fabricarán, en qué cantidades, cuándo y con qué recursos para satisfacer la demanda prevista",
+        "Emitir la orden de fabricación de un lote",
+        "Calcular los kilos de patata de un pedido"
+      ],
+      "correcta": 1,
+      "explicacion": "Es general (qué y cuánto) y a medio/largo plazo."
+    },
+    {
+      "enunciado": "¿Cuál NO es un paso para elaborar un plan de producción?",
+      "opciones": [
+        "Programar el día y la hora exacta de cada operación en cada máquina",
+        "Analizar la demanda",
+        "Calcular la capacidad",
+        "Control y seguimiento"
+      ],
+      "correcta": 0,
+      "explicacion": "Los pasos de la pág. 10: analizar demanda, calcular capacidad, planificar materiales (MRP), determinar recursos y control y seguimiento."
+    },
+    {
+      "enunciado": "La programación de la producción…",
+      "opciones": [
+        "Describe de forma detallada la ejecución del plan, transformándolo en un calendario concreto de trabajo",
+        "Establece la estrategia a cinco años",
+        "Fija las especificaciones del producto",
+        "Calcula el beneficio anual"
+      ],
+      "correcta": 0,
+      "explicacion": "Detalla qué productos, fechas concretas, inicio y fin de operaciones, orden, equipos, trabajadores y fecha de entrega."
+    },
+    {
+      "enunciado": "Horizonte temporal de planificación y programación:",
+      "opciones": [
+        "Planificación a corto plazo; programación a largo",
+        "Planificación a medio/largo plazo; programación a corto plazo (diario o semanal)",
+        "Ambas a largo plazo",
+        "Ambas diarias"
+      ],
+      "correcta": 1,
+      "explicacion": "Planificación: mensual, trimestral, anual. Programación: diaria o semanal."
+    },
+    {
+      "enunciado": "«Producir 120.000 yogures este mes» es un ejemplo de…",
+      "opciones": [
+        "Planificación",
+        "Programación",
+        "Secuenciación",
+        "Orden de fabricación"
+      ],
+      "correcta": 0,
+      "explicacion": "La programación diría cuántos yogures cada día, de qué variedad, en qué turno y con qué equipos."
+    },
+    {
+      "enunciado": "En el ejemplo de programación semanal de yogures, ¿qué limita el trabajo al turno de mañana?",
+      "opciones": [
+        "El pasteurizador solo está disponible en turno de mañana (limpieza CIP a las 14:00)",
+        "La envasadora no funciona por la tarde",
+        "La cámara de fermentación es de 20.000 L",
+        "Los operarios no trabajan por la tarde"
+      ],
+      "correcta": 0,
+      "explicacion": "Son restricciones de equipos que condicionan la programación."
+    },
+    {
+      "enunciado": "¿Producir más significa ser más eficiente?",
+      "opciones": [
+        "Sí, siempre",
+        "No: se puede cumplir el objetivo y aun así usar mal los recursos",
+        "Solo en industrias de montaje",
+        "Sí, si se almacena el excedente"
+      ],
+      "correcta": 1,
+      "explicacion": "Fabricar más de lo necesario, acumular terminados o generar esperas son desperdicios. Lean busca fabricar lo necesario."
+    },
+    {
+      "enunciado": "Heijunka es…",
+      "opciones": [
+        "Producir solo cuando el cliente lo pide, sin adelantar nada",
+        "Corregir el error de inmediato",
+        "La nivelación de la producción para evitar grandes fluctuaciones en la carga de trabajo",
+        "Un sistema visual de tarjetas"
+      ],
+      "correcta": 2,
+      "explicacion": "Propone distribuir la producción de forma más uniforme, siempre que producto y cliente lo permitan."
+    },
+    {
+      "enunciado": "¿Por qué no siempre se puede adelantar la producción de un alimento?",
+      "opciones": [
+        "Por la estacionalidad (pesca, vendimia) y la vida útil, además de conservación, almacenamiento y demanda real",
+        "Porque Lean lo prohíbe",
+        "Porque los turnos son fijos",
+        "Porque los alimentos no se pueden almacenar nunca"
+      ],
+      "correcta": 0,
+      "explicacion": "Conservas: cierta anticipación posible, pero ligada a la pesca estacional. Frescos como yogures: limitados por la vida útil."
+    },
+    {
+      "enunciado": "Just in Time (JIT) implica…",
+      "opciones": [
+        "Producir cuanto antes para almacenar",
+        "Nivelar la producción a lo largo del año",
+        "Producir y suministrar la cantidad necesaria en el momento necesario, con la calidad requerida y mínimo consumo de recursos",
+        "Fabricar siempre en lotes grandes"
+      ],
+      "correcta": 2,
+      "explicacion": "Si hay que producir 150.000 unidades en julio, JIT implica producirlas en julio."
+    },
+    {
+      "enunciado": "Adelantar 50.000 unidades a enero o junio para evitar turnos en julio puede reducir el coste de turnos, pero genera…",
+      "opciones": [
+        "Ahorro adicional sin riesgos",
+        "Más sobreprocesado únicamente",
+        "Menos inventario",
+        "Costes de almacenamiento, inmovilización de capital y riesgo de caducidad"
+      ],
+      "correcta": 3,
+      "explicacion": "Por eso Heijunka y JIT no son incompatibles, pero hay que buscar un equilibrio entre ambos."
+    },
+    {
+      "enunciado": "¿Trabajar con tres turnos es en sí mismo un desperdicio Lean?",
+      "opciones": [
+        "Sí, siempre es sobreproducción",
+        "Sí, es un transporte innecesario",
+        "Solo en industria alimentaria",
+        "No: el problema surge si genera exceso de inventario, tiempos improductivos o costes evitables"
+      ],
+      "correcta": 3,
+      "explicacion": "Es la nota de la pág. 9."
+    }
+  ]
+}

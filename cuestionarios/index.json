@@ -265,5 +265,86 @@
     "unidad": "UD_1",
     "preguntas": 36,
     "archivo": "Sostenibilidad/cuestionarios/UD_1/sost-ud1-preguntas-extra.json"
+  },
+  {
+    "id": "op-ud1-industria-gamas",
+    "titulo": "UD1 · Industria alimentaria, sectores, procesos y gamas",
+    "descripcion": "Sectores económicos, características de la I.A., procesos de obtención y transformación, gamas, áreas funcionales y organigrama",
+    "modulo": "Organización de la Producción",
+    "unidad": "UD_1",
+    "preguntas": 19,
+    "archivo": "Organizacion_Produccion/cuestionarios/UD_1/op-ud1-industria-gamas.json"
+  },
+  {
+    "id": "op-ud1-evolucion-decisiones",
+    "titulo": "UD1 · Evolución productiva, decisiones y gestión de la producción",
+    "descripcion": "Taylorismo, fordismo, toyotismo, Lean, decisiones estratégicas y tácticas, funciones y objetivos de la gestión",
+    "modulo": "Organización de la Producción",
+    "unidad": "UD_1",
+    "preguntas": 19,
+    "archivo": "Organizacion_Produccion/cuestionarios/UD_1/op-ud1-evolucion-decisiones.json"
+  },
+  {
+    "id": "op-ud1-lean-mudas-5s",
+    "titulo": "UD1 · Lean: valor, mudas, Kaizen, estándares y 5S",
+    "descripcion": "Principios de Lean, valor y desperdicio, las 8 mudas, Kaizen, estandarización y metodología 5S",
+    "modulo": "Organización de la Producción",
+    "unidad": "UD_1",
+    "preguntas": 19,
+    "archivo": "Organizacion_Produccion/cuestionarios/UD_1/op-ud1-lean-mudas-5s.json"
+  },
+  {
+    "id": "op-ud1-planificacion-programacion",
+    "titulo": "UD1 · Planificación y programación de la producción",
+    "descripcion": "Conceptos previos, capacidad, plan de producción, programación, Lean aplicado (Heijunka y JIT)",
+    "modulo": "Organización de la Producción",
+    "unidad": "UD_1",
+    "preguntas": 17,
+    "archivo": "Organizacion_Produccion/cuestionarios/UD_1/op-ud1-planificacion-programacion.json"
+  },
+  {
+    "id": "op-ud1-secuenciacion-flujo",
+    "titulo": "UD1 · Secuenciación, lotes y flujo (batch, push, pull)",
+    "descripcion": "Reglas de secuencia FEP, PEPS y TPC, producción por lotes y los sistemas de flujo",
+    "modulo": "Organización de la Producción",
+    "unidad": "UD_1",
+    "preguntas": 15,
+    "archivo": "Organizacion_Produccion/cuestionarios/UD_1/op-ud1-secuenciacion-flujo.json"
+  },
+  {
+    "id": "op-ud1-gantt-pert-cpm",
+    "titulo": "UD1 · Gantt, PERT y CPM",
+    "descripcion": "Diagrama de Gantt, red PERT, tiempo esperado, camino crítico y holgura",
+    "modulo": "Organización de la Producción",
+    "unidad": "UD_1",
+    "preguntas": 18,
+    "archivo": "Organizacion_Produccion/cuestionarios/UD_1/op-ud1-gantt-pert-cpm.json"
+  },
+  {
+    "id": "op-ud1-mrp-ordenes-riesgo",
+    "titulo": "UD1 · MRP, ERP, órdenes de fabricación y riesgos",
+    "descripcion": "Planificación de necesidades de materiales, necesidades netas, ERP, orden de fabricación, incertidumbre y riesgo",
+    "modulo": "Organización de la Producción",
+    "unidad": "UD_1",
+    "preguntas": 18,
+    "archivo": "Organizacion_Produccion/cuestionarios/UD_1/op-ud1-mrp-ordenes-riesgo.json"
+  },
+  {
+    "id": "op-ud1-calculos-practicos",
+    "titulo": "UD1 · Problemas de cálculo (capacidad, costes, PERT, MRP)",
+    "descripcion": "Ejercicios numéricos del ejemplo práctico de planificación mensual, PERT, camino crítico y MRP",
+    "modulo": "Organización de la Producción",
+    "unidad": "UD_1",
+    "preguntas": 15,
+    "archivo": "Organizacion_Produccion/cuestionarios/UD_1/op-ud1-calculos-practicos.json"
+  },
+  {
+    "id": "op-ud1-examen-final",
+    "titulo": "UD1 · Examen final (preguntas tipo test, nivel examen)",
+    "descripcion": "Preguntas mezcladas de toda la unidad, con las confusiones más típicas",
+    "modulo": "Organización de la Producción",
+    "unidad": "UD_1",
+    "preguntas": 24,
+    "archivo": "Organizacion_Produccion/cuestionarios/UD_1/op-ud1-examen-final.json"
   }
 ]

@@ -1,0 +1,215 @@
+{
+  "titulo": "UD1 · Lean: valor, mudas, Kaizen, estándares y 5S",
+  "descripcion": "Principios de Lean, valor y desperdicio, las 8 mudas, Kaizen, estandarización y metodología 5S",
+  "preguntas": [
+    {
+      "enunciado": "Según Lean, ¿qué es el valor?",
+      "opciones": [
+        "Todo lo que la empresa considera importante producir",
+        "Cualquier actividad que consume recursos",
+        "Exclusivamente aquello por lo que el cliente está dispuesto a pagar",
+        "Lo que decide la dirección según sus costes"
+      ],
+      "correcta": 2,
+      "explicacion": "El valor lo define el cliente según sus necesidades de calidad, coste y entrega; es trabajo que transforma el producto y se hace bien a la primera."
+    },
+    {
+      "enunciado": "Los cuatro principios fundamentales de Lean son…",
+      "opciones": [
+        "Foco en el valor, eliminación de desperdicios (mudas), mejora continua (Kaizen) y Just in Time",
+        "Taylorismo, fordismo, toyotismo y Kanban",
+        "Planificar, organizar, ejecutar y controlar",
+        "Capacidad, demanda, eficacia y eficiencia"
+      ],
+      "correcta": 0,
+      "explicacion": "Son los principios de la pág. 58. Kanban, 5S, Poka-Yoke y flujo pull son herramientas."
+    },
+    {
+      "enunciado": "¿Qué es una muda?",
+      "opciones": [
+        "Una tarea que consume recursos (tiempo, dinero o espacio) pero no aporta valor",
+        "Una tarea que el cliente paga conscientemente",
+        "Una herramienta Lean para ordenar el puesto",
+        "Un tipo de decisión táctica"
+      ],
+      "correcta": 0,
+      "explicacion": "Muda es desperdicio en japonés. Contribuye a la ineficiencia."
+    },
+    {
+      "enunciado": "¿Cuál de estas NO es una de las mudas de la lista?",
+      "opciones": [
+        "Sobreproducción",
+        "Maximizar la eficiencia",
+        "Tiempos de espera",
+        "Productos defectuosos"
+      ],
+      "correcta": 1,
+      "explicacion": "Maximizar la eficiencia es un objetivo. Las ocho mudas: sobreproducción, stocks innecesarios, movimientos innecesarios, esperas, transportes innecesarios, sobreprocesado, defectuosos y no utilizar el talento de las personas."
+    },
+    {
+      "enunciado": "La octava muda añadida a las siete clásicas es…",
+      "opciones": [
+        "La sobreproducción",
+        "El exceso de turnos",
+        "No utilizar el talento (la capacidad de pensar) de las personas",
+        "La falta de inspección final"
+      ],
+      "correcta": 2,
+      "explicacion": "Es el «+1»: el talento humano desaprovechado."
+    },
+    {
+      "enunciado": "Diferencia entre «movimientos innecesarios» y «transportes innecesarios»:",
+      "opciones": [
+        "Los movimientos son de objetos y los transportes de personas",
+        "Los movimientos se refieren a personas y los transportes a objetos",
+        "Son lo mismo",
+        "Los movimientos son de información y los transportes de dinero"
+      ],
+      "correcta": 1,
+      "explicacion": "Movimientos innecesarios (de personas); transportes innecesarios (de objetos)."
+    },
+    {
+      "enunciado": "Un trabajador va continuamente al almacén a por material. Dotarle de un vehículo…",
+      "opciones": [
+        "Elimina la muda por completo",
+        "Convierte el desplazamiento en valor añadido",
+        "Mejora el tiempo pero no elimina la muda, que es ir y volver; Lean busca eliminar el desplazamiento",
+        "Es la solución Lean ideal"
+      ],
+      "correcta": 2,
+      "explicacion": "Una cinta transportadora que alimente la línea elimina el desplazamiento: ahí está la filosofía Lean."
+    },
+    {
+      "enunciado": "Resumen de la unidad sobre valor y desperdicio:",
+      "opciones": [
+        "Valor es lo que paga la empresa; desperdicio, el cliente",
+        "Ambos son lo que el cliente paga conscientemente",
+        "Desperdicio es todo lo que el cliente rechaza comprar",
+        "Valor es lo que el cliente paga conscientemente; desperdicio es lo que paga inconscientemente"
+      ],
+      "correcta": 3,
+      "explicacion": "Ejemplos: Amazon Prime o los costes de envío son valor; la logística o los costes fijos incluidos en el PVP son desperdicio que el cliente paga sin saberlo."
+    },
+    {
+      "enunciado": "¿Qué significa Kaizen?",
+      "opciones": [
+        "Mejora continua mediante pequeños cambios constantes con la participación de todo el personal",
+        "Producir solo lo necesario en el momento preciso",
+        "Evitar defectos corrigiendo el error de inmediato",
+        "Nivelar la producción"
+      ],
+      "correcta": 0,
+      "explicacion": "Es el tercer principio de Lean. Lo más difícil es cambiar la forma de pensar."
+    },
+    {
+      "enunciado": "Entre los principios Kaizen está…",
+      "opciones": [
+        "No culpar a las personas, sino a los procesos",
+        "Buscar al responsable de cada error",
+        "Esperar una idea genial antes de actuar",
+        "Mantener el estado actual si funciona"
+      ],
+      "correcta": 0,
+      "explicacion": "Otros: corregir el error inmediatamente, buscar la causa real, ver los problemas como oportunidades, soluciones sencillas y rápidas, mejor 10 ideas que esperar 1 genial."
+    },
+    {
+      "enunciado": "Un estándar de trabajo es…",
+      "opciones": [
+        "Un informe de ventas mensual",
+        "Un documento que describe la mejor forma posible de hacer una tarea; también IT o procedimiento",
+        "Un plan de producción anual",
+        "Una orden de fabricación"
+      ],
+      "correcta": 1,
+      "explicacion": "Debe ser tan claro que alguien que nunca hizo la tarea pueda hacerla sin dificultad."
+    },
+    {
+      "enunciado": "¿Cuál NO es una característica de un estándar de trabajo?",
+      "opciones": [
+        "Tareas numeradas",
+        "Verbos en infinitivo",
+        "Texto largo y complejo sin apoyo visual",
+        "Apoyo visual: esquemas, fotos, dibujos"
+      ],
+      "correcta": 2,
+      "explicacion": "Debe ser simple y concreto, en la medida de lo posible."
+    },
+    {
+      "enunciado": "Beneficio de la estandarización:",
+      "opciones": [
+        "Más personalización por trabajador",
+        "Reducción de tiempos de ejecución, producto siempre igual y menos picos de trabajo",
+        "Más documentación para archivar",
+        "Más inventario de seguridad"
+      ],
+      "correcta": 1,
+      "explicacion": "El estándar NO es algo personalizado y único para cada trabajador."
+    },
+    {
+      "enunciado": "Son ejemplos de estándares citados…",
+      "opciones": [
+        "Un balance contable",
+        "Un organigrama",
+        "Una factura",
+        "Las instrucciones de montaje de Ikea, una receta de cocina o un tutorial de YouTube"
+      ],
+      "correcta": 3,
+      "explicacion": "Todos describen cómo hacer algo siempre igual."
+    },
+    {
+      "enunciado": "Las 5S son…",
+      "opciones": [
+        "Cinco tipos de decisiones estratégicas",
+        "Cinco mudas principales",
+        "Cinco etapas del PERT",
+        "Una metodología de organización, limpieza y orden en el puesto de trabajo, originaria de Japón (años 50)"
+      ],
+      "correcta": 3,
+      "explicacion": "Seiri, Seiton, Seiso, Seiketsu y Shitsuke."
+    },
+    {
+      "enunciado": "¿Qué es Seiri en las 5S?",
+      "opciones": [
+        "Ordenar cada ítem en su lugar",
+        "Limpiar el entorno",
+        "Mantener la disciplina",
+        "Clasificar: separar lo necesario de lo innecesario y eliminar lo que no se use"
+      ],
+      "correcta": 3,
+      "explicacion": "Seiri = clasificar. Seiton = ordenar. Seiso = limpiar. Seiketsu = estandarizar. Shitsuke = mantener."
+    },
+    {
+      "enunciado": "En el armario de oficina, colocar lo de uso habitual en las baldas centrales y lo menos usado arriba y abajo es…",
+      "opciones": [
+        "Seiton (ordenar)",
+        "Seiri (clasificar)",
+        "Seiso (limpiar)",
+        "Shitsuke (mantener)"
+      ],
+      "correcta": 0,
+      "explicacion": "Cada ítem tiene un lugar asignado, ordenado por frecuencia de uso, para minimizar accidentes y facilitar el acceso."
+    },
+    {
+      "enunciado": "Etiquetar las baldas y poner en la puerta un aviso para limpiar las botas antes de guardarlas corresponde a…",
+      "opciones": [
+        "Seiri (clasificar)",
+        "Seiton (ordenar)",
+        "Seiketsu (estandarizar)",
+        "Seiso (limpiar)"
+      ],
+      "correcta": 2,
+      "explicacion": "Seiketsu deja claro por escrito o con gestión visual cómo mantener el orden."
+    },
+    {
+      "enunciado": "Shitsuke consiste en…",
+      "opciones": [
+        "Eliminar lo que sobra",
+        "Autodisciplina y hábito, con mejora continua mediante auditorías y feedback",
+        "Pintar el suelo de la fábrica",
+        "Comprar herramientas nuevas"
+      ],
+      "correcta": 1,
+      "explicacion": "La auditoría no es el fin: sus acciones y resultados se revisan con el equipo."
+    }
+  ]
+}

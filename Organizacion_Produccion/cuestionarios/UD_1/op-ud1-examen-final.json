@@ -1,0 +1,270 @@
+{
+  "titulo": "UD1 · Examen final (preguntas tipo test, nivel examen)",
+  "descripcion": "Preguntas mezcladas de toda la unidad, con las confusiones más típicas",
+  "preguntas": [
+    {
+      "enunciado": "¿Cuál de estas afirmaciones sobre planificación y programación es correcta?",
+      "opciones": [
+        "La planificación fija qué y cuánto a medio o largo plazo; la programación detalla qué, cuándo, cómo y con qué recursos a corto plazo",
+        "La planificación es diaria y la programación es anual",
+        "Ambas tienen el mismo horizonte temporal y solo cambia el responsable",
+        "La programación es general y la planificación es detallada"
+      ],
+      "correcta": 0,
+      "explicacion": "Planificación: mensual, trimestral o anual y de nivel general. Programación: diaria o semanal y detallada."
+    },
+    {
+      "enunciado": "¿Qué sector económico incluye a la industria alimentaria y qué tipo de proceso la caracteriza?",
+      "opciones": [
+        "Primario; procesos de montaje",
+        "Terciario; procesos de obtención",
+        "Secundario; procesos de obtención y transformación",
+        "Secundario; procesos de montaje y obtención únicamente"
+      ],
+      "correcta": 2,
+      "explicacion": "El montaje es de electrodomésticos y automoción."
+    },
+    {
+      "enunciado": "Un trabajador detecta un fallo y para la línea para corregirlo. Esto es un ejemplo de…",
+      "opciones": [
+        "Taylorismo",
+        "Jidoka (toyotismo)",
+        "Heijunka",
+        "Fordismo"
+      ],
+      "correcta": 1,
+      "explicacion": "En Toyota cualquier trabajador puede parar la línea. En Ford el control era en puntos automatizados."
+    },
+    {
+      "enunciado": "¿Cuál de estas es una herramienta de Lean y no un principio?",
+      "opciones": [
+        "Foco en el valor",
+        "Eliminación de desperdicios",
+        "Mejora continua",
+        "Kanban"
+      ],
+      "correcta": 3,
+      "explicacion": "Principios: valor, mudas, Kaizen y JIT. Herramientas: estándares y 5S, flujo pull, Kanban, Poka-Yoke…"
+    },
+    {
+      "enunciado": "¿Qué diferencia a la IV gama de la V gama?",
+      "opciones": [
+        "La IV gama son conservas y la V gama congelados",
+        "La IV gama se conserva a temperatura ambiente siempre y la V gama no",
+        "No hay diferencia: son la misma gama",
+        "La IV gama son frescos limpios, cortados y envasados; la V gama son alimentos cocinados o preparados, listos para consumir tras un calentamiento"
+      ],
+      "correcta": 3,
+      "explicacion": "IV gama: ensaladas en bolsa, fruta cortada (refrigeración, 1970-1980). V gama: lasaña, cremas, platos preparados (hacia 1990)."
+    },
+    {
+      "enunciado": "«Subida del precio del combustible» y «mayor coste de fabricación de las tortillas» son, respectivamente…",
+      "opciones": [
+        "Incertidumbre y riesgo",
+        "Riesgo e incertidumbre",
+        "Ambos incertidumbre",
+        "Ambos riesgo"
+      ],
+      "correcta": 0,
+      "explicacion": "La incertidumbre es el suceso externo; el riesgo, el problema que provoca en la empresa."
+    },
+    {
+      "enunciado": "¿Qué hace el sistema pull?",
+      "opciones": [
+        "Fabrica según previsiones y empuja el producto",
+        "Fabrica siempre en lotes grandes",
+        "Fabrica cuando hay demanda real de la etapa siguiente o del cliente",
+        "Mantiene grandes stocks intermedios"
+      ],
+      "correcta": 2,
+      "explicacion": "Push es lo contrario: se produce antes del pedido, con previsiones, y genera WIP."
+    },
+    {
+      "enunciado": "¿Cuál es el desperdicio al que se refiere «tener producto terminado acumulado que nadie ha pedido»?",
+      "opciones": [
+        "Sobreproducción y stocks innecesarios",
+        "Sobreprocesado",
+        "Tiempos de espera",
+        "Movimientos innecesarios"
+      ],
+      "correcta": 0,
+      "explicacion": "Producir más de lo necesario y acumularlo es la sobreproducción; acumularlo es además stock innecesario."
+    },
+    {
+      "enunciado": "En la regla FEP, ¿qué trabajo se hace primero?",
+      "opciones": [
+        "El más corto",
+        "El de la fecha de entrega más próxima, aunque llegara más tarde",
+        "El que llegó antes",
+        "El de mayor beneficio"
+      ],
+      "correcta": 1,
+      "explicacion": "PEPS: el que llegó antes. TPC: el más corto."
+    },
+    {
+      "enunciado": "¿Qué diferencia hay entre capacidad de producción y demanda?",
+      "opciones": [
+        "Son lo mismo",
+        "La capacidad es lo máximo que puede fabricar la instalación; la demanda es lo que los clientes quieren comprar",
+        "La capacidad es lo que se vende y la demanda lo que se fabrica",
+        "La demanda es lo máximo que se puede fabricar"
+      ],
+      "correcta": 1,
+      "explicacion": "Antes de planificar se comprueba si la capacidad es suficiente para la demanda."
+    },
+    {
+      "enunciado": "Si la demanda mensual es 150.000 y la capacidad a 1 turno es 50.000, ¿cuántos turnos diarios se marcan?",
+      "opciones": [
+        "2",
+        "4",
+        "3",
+        "1,5"
+      ],
+      "correcta": 2,
+      "explicacion": "150.000 / 50.000 = 3,00."
+    },
+    {
+      "enunciado": "En un mes con cociente demanda/capacidad de 2,17, ¿cuántos turnos se marcan y es necesario el tercer turno todos los días?",
+      "opciones": [
+        "2 turnos; basta con eso",
+        "3 turnos todos los días obligatoriamente",
+        "3 turnos; no hace falta todos los días, solo los necesarios para cubrir el faltante",
+        "1 turno"
+      ],
+      "correcta": 2,
+      "explicacion": "Con 2 turnos todos los días no se cubre la demanda; el tercero solo hace falta los días que completan el faltante."
+    },
+    {
+      "enunciado": "¿Por qué Heijunka y JIT pueden entrar en conflicto?",
+      "opciones": [
+        "Porque ambos exigen producir más",
+        "Porque Heijunka elimina la demanda estacional",
+        "Porque JIT prohíbe cualquier turno",
+        "Nivelar adelantando producción reduce turnos extra pero genera almacenamiento, capital inmovilizado y riesgo de caducidad; JIT pide producir cuando se necesita"
+      ],
+      "correcta": 3,
+      "explicacion": "No son incompatibles; hay que buscar un equilibrio."
+    },
+    {
+      "enunciado": "Con PERT, una actividad tiene o = 6, m = 9 y p = 18. ¿Tiempo esperado?",
+      "opciones": [
+        "9",
+        "10",
+        "11",
+        "12"
+      ],
+      "correcta": 1,
+      "explicacion": "(6 + 36 + 18) / 6 = 60 / 6 = 10."
+    },
+    {
+      "enunciado": "En una red, las actividades críticas son aquellas que…",
+      "opciones": [
+        "Duran menos",
+        "No tienen precedentes",
+        "Tienen holgura cero y cuyo retraso retrasa todo el proyecto",
+        "Son las más baratas"
+      ],
+      "correcta": 2,
+      "explicacion": "Forman el camino crítico, la secuencia más larga."
+    },
+    {
+      "enunciado": "¿Qué indica «NN = NB − D + SS»?",
+      "opciones": [
+        "Que el stock de seguridad se resta",
+        "Las necesidades netas son lo que hay que fabricar o adquirir además de lo disponible y para mantener el stock de seguridad",
+        "Que la disponibilidad se suma a las necesidades brutas",
+        "Que las necesidades netas siempre coinciden con las brutas"
+      ],
+      "correcta": 1,
+      "explicacion": "Ejemplo: 600 − 425 + 50 = 225."
+    },
+    {
+      "enunciado": "¿Cuál de estas NO aparece como característica del estándar de trabajo?",
+      "opciones": [
+        "Es simple, visual y accesible",
+        "Se crea en consenso con el equipo",
+        "Es único y personalizado para cada trabajador",
+        "Se preocupa por el resultado y por el cómo"
+      ],
+      "correcta": 2,
+      "explicacion": "Un estándar es la forma de hacerlo siempre igual."
+    },
+    {
+      "enunciado": "Una orden de fabricación se emite…",
+      "opciones": [
+        "A partir de la programación de la producción; sin ella la fábrica no se pone a trabajar",
+        "Antes de planificar la demanda",
+        "Solo cuando hay una avería",
+        "Por el cliente final directamente"
+      ],
+      "correcta": 0,
+      "explicacion": "Comunica qué, cuánto, cuándo, con qué materiales, equipos e instrucciones."
+    },
+    {
+      "enunciado": "La estacionalidad de la demanda en la I.A. implica que…",
+      "opciones": [
+        "Hay que planificar con flexibilidad, ajustando volúmenes y tiempos según la demanda (helados en verano, turrones en invierno)",
+        "La producción debe ser constante todo el año",
+        "No hace falta planificar",
+        "La demanda de alimentos es siempre inelástica y nunca cambia"
+      ],
+      "correcta": 0,
+      "explicacion": "Es una de las dos características que condicionan la gestión en la I.A., junto con la diversidad de procesos."
+    },
+    {
+      "enunciado": "Un técnico organiza los turnos de la semana. ¿Qué tipo de decisión toma?",
+      "opciones": [
+        "Estratégica",
+        "Financiera",
+        "De montaje",
+        "Táctica u operativa"
+      ],
+      "correcta": 3,
+      "explicacion": "Las estratégicas las toman los máximos directivos y son a largo plazo."
+    },
+    {
+      "enunciado": "Seiketsu y Seiton: ¿cuál es cuál?",
+      "opciones": [
+        "Seiketsu es estandarizar; Seiton es ordenar",
+        "Seiketsu es ordenar; Seiton es estandarizar",
+        "Ambos son limpiar",
+        "Seiketsu es clasificar; Seiton es mantener"
+      ],
+      "correcta": 0,
+      "explicacion": "Seiri clasifica, Seiton ordena, Seiso limpia, Seiketsu estandariza, Shitsuke mantiene."
+    },
+    {
+      "enunciado": "¿Qué sostiene la «casa del TPS»?",
+      "opciones": [
+        "Un solo pilar, el Kanban",
+        "Tres pilares: Taylor, Ford y Toyota",
+        "Un pilar de 5S y otro de MRP",
+        "Dos pilares, JIT y Jidoka, sobre una base de estabilidad (Heijunka, estándar, Kaizen)"
+      ],
+      "correcta": 3,
+      "explicacion": "El tejado lo forman mayor calidad, menos costes y menor tiempo de entrega."
+    },
+    {
+      "enunciado": "¿Qué hace el ERP con la información del MRP?",
+      "opciones": [
+        "La sustituye por el diagrama de Gantt",
+        "La integra con los demás procesos de la empresa (compras, producción, calidad, logística)",
+        "La ignora",
+        "La convierte en un organigrama"
+      ],
+      "correcta": 1,
+      "explicacion": "El ERP gestiona y coordina los procesos de la empresa."
+    },
+    {
+      "enunciado": "Se tiene una línea con 2.000 u/turno de 8 h, 22 días y un turno por día. Si la demanda es 44.000 unidades, ¿qué ocurre?",
+      "opciones": [
+        "Hacen falta 2 turnos",
+        "Sobra la mitad de la capacidad",
+        "Hace falta un tercer turno",
+        "Se cubre exactamente con 1 turno"
+      ],
+      "correcta": 3,
+      "explicacion": "Capacidad 2.000 × 22 = 44.000 = demanda; cociente 1,00."
+    }
+  ]
+}

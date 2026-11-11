@@ -1,0 +1,204 @@
+{
+  "titulo": "UD1 · Gantt, PERT y CPM",
+  "descripcion": "Diagrama de Gantt, red PERT, tiempo esperado, camino crítico y holgura",
+  "preguntas": [
+    {
+      "enunciado": "En un diagrama de Gantt, ¿qué se representa en el eje vertical y cuál en el horizontal?",
+      "opciones": [
+        "Vertical: el tiempo; horizontal: las actividades",
+        "Vertical: los costes; horizontal: los días",
+        "Vertical: las actividades; horizontal: el tiempo",
+        "Vertical: los recursos; horizontal: las máquinas"
+      ],
+      "correcta": 2,
+      "explicacion": "Las barras horizontales muestran el inicio, la duración y el final de cada actividad."
+    },
+    {
+      "enunciado": "¿Para qué sirve un diagrama de Gantt?",
+      "opciones": [
+        "Calcular las necesidades netas de materiales",
+        "Determinar el nivel de stock de seguridad",
+        "Organizar actividades, ver su duración, detectar tareas simultáneas, controlar plazos y retrasos",
+        "Clasificar los alimentos por gamas"
+      ],
+      "correcta": 2,
+      "explicacion": "Es una herramienta de programación que permite visualizar duraciones y solapamientos."
+    },
+    {
+      "enunciado": "Un proceso: A (1 h), B (2 h), C (3 h), D (2 h), E (2 h) y F (1 h), cada una precedida por la anterior. ¿Duración total?",
+      "opciones": [
+        "11 horas",
+        "9 horas",
+        "10 horas",
+        "12 horas"
+      ],
+      "correcta": 0,
+      "explicacion": "Al ir encadenadas se suman: 1 + 2 + 3 + 2 + 2 + 1 = 11 h."
+    },
+    {
+      "enunciado": "¿Qué significan las siglas PERT?",
+      "opciones": [
+        "Planning Efficient Resource Time",
+        "Program Evaluation and Review Technique",
+        "Production Estimate and Release Table",
+        "Program Execution for Raw Transformation"
+      ],
+      "correcta": 1,
+      "explicacion": "Es una técnica probabilística para planificar y controlar proyectos con actividades relacionadas."
+    },
+    {
+      "enunciado": "¿Qué tiempos define el método PERT para cada actividad?",
+      "opciones": [
+        "Optimista (o), normal o más probable (m) y pesimista (p)",
+        "Mínimo, medio y máximo de la línea",
+        "Inicio, fin y holgura",
+        "Tiempo de espera, de proceso y de transporte"
+      ],
+      "correcta": 0,
+      "explicacion": "El optimista es el menor tiempo posible; el pesimista, el mayor (por ejemplo, retrasos por falta de suministros); el normal, el más probable por experiencia."
+    },
+    {
+      "enunciado": "¿Cuál es la fórmula del tiempo esperado en PERT?",
+      "opciones": [
+        "te = (o + 4m + p) / 6",
+        "te = (o + m + p) / 3",
+        "te = (4o + m + p) / 6",
+        "te = (o + p) / 2"
+      ],
+      "correcta": 0,
+      "explicacion": "El valor más probable pesa cuatro veces. Es el tiempo que se usa en la red de actividades."
+    },
+    {
+      "enunciado": "Una actividad tiene o = 2 h, m = 4 h y p = 12 h. ¿Cuál es su tiempo esperado?",
+      "opciones": [
+        "6 h",
+        "5 h",
+        "7 h",
+        "4 h"
+      ],
+      "correcta": 1,
+      "explicacion": "(2 + 4·4 + 12) / 6 = 30 / 6 = 5."
+    },
+    {
+      "enunciado": "Una actividad tiene o = 3 días, m = 5 días y p = 13 días. ¿Tiempo esperado?",
+      "opciones": [
+        "5 días",
+        "7 días",
+        "8 días",
+        "6 días"
+      ],
+      "correcta": 3,
+      "explicacion": "(3 + 20 + 13) / 6 = 36 / 6 = 6."
+    },
+    {
+      "enunciado": "Una actividad tiene o = 4, m = 6 y p = 14. ¿Tiempo esperado?",
+      "opciones": [
+        "6",
+        "8",
+        "9",
+        "7"
+      ],
+      "correcta": 3,
+      "explicacion": "(4 + 24 + 14) / 6 = 42 / 6 = 7."
+    },
+    {
+      "enunciado": "¿Qué es el camino crítico (CPM)?",
+      "opciones": [
+        "La secuencia más larga de actividades de la red, que determina la duración mínima del proyecto",
+        "La secuencia más corta de actividades",
+        "El conjunto de actividades más caras",
+        "La actividad con más recursos"
+      ],
+      "correcta": 0,
+      "explicacion": "Las actividades críticas son aquellas cuyo retraso atrasa la finalización del proyecto."
+    },
+    {
+      "enunciado": "¿Qué holgura tienen las actividades del camino crítico?",
+      "opciones": [
+        "Positiva y alta",
+        "Negativa",
+        "Cero (H = 0)",
+        "Igual a la duración de la actividad"
+      ],
+      "correcta": 2,
+      "explicacion": "Holgura es el margen de retraso. Fuera del camino crítico hay margen de retraso sin afectar al plazo final."
+    },
+    {
+      "enunciado": "Diferencia de enfoque entre PERT y CPM:",
+      "opciones": [
+        "PERT trabaja con tiempos probabilísticos; CPM habitualmente con tiempos conocidos o fijos",
+        "PERT usa tiempos fijos y CPM probabilísticos",
+        "Ambos usan solo tiempos pesimistas",
+        "PERT ignora las precedencias"
+      ],
+      "correcta": 0,
+      "explicacion": "En la práctica se complementan: PERT calcula la duración esperada y CPM traza la ruta crítica y calcula holguras."
+    },
+    {
+      "enunciado": "Red: A (2) inicial; B (3) y C (4) tras A; D (2) tras B y C; E (1) tras A; F (3) tras D y E. ¿Duración mínima del proyecto?",
+      "opciones": [
+        "10 unidades de tiempo",
+        "11 unidades de tiempo",
+        "12 unidades de tiempo",
+        "9 unidades de tiempo"
+      ],
+      "correcta": 1,
+      "explicacion": "El camino más largo es A–C–D–F = 2 + 4 + 2 + 3 = 11. A–B–D–F suma 10 y A–E–F suma 6."
+    },
+    {
+      "enunciado": "En esa misma red, ¿cuál es el camino crítico?",
+      "opciones": [
+        "A–B–D–F",
+        "A–E–F",
+        "A–B–C–D–F",
+        "A–C–D–F"
+      ],
+      "correcta": 3,
+      "explicacion": "Es el de mayor duración (11). Las actividades B y E tienen holgura."
+    },
+    {
+      "enunciado": "En esa red, ¿qué holgura tiene la actividad B?",
+      "opciones": [
+        "0 unidades",
+        "3 unidades",
+        "1 unidad de tiempo",
+        "5 unidades"
+      ],
+      "correcta": 2,
+      "explicacion": "B termina en 5 y C en 6; D no puede empezar antes de 6, así que B puede retrasarse 1."
+    },
+    {
+      "enunciado": "En esa red, ¿qué holgura tiene la actividad E?",
+      "opciones": [
+        "0 unidades",
+        "5 unidades de tiempo",
+        "1 unidad",
+        "3 unidades"
+      ],
+      "correcta": 1,
+      "explicacion": "E termina en 3, pero F no empieza hasta que D acaba en 8: tiene 8 − 3 = 5 de margen."
+    },
+    {
+      "enunciado": "El primer paso para aplicar PERT/CPM es…",
+      "opciones": [
+        "Calcular el camino crítico",
+        "Identificar todas las actividades necesarias (empezando por la A)",
+        "Dibujar el Gantt",
+        "Calcular las necesidades netas"
+      ],
+      "correcta": 1,
+      "explicacion": "Después: precedencias, duraciones, red PERT, y duración del proyecto y camino crítico."
+    },
+    {
+      "enunciado": "En una red PERT, las flechas y los nodos representan…",
+      "opciones": [
+        "Flechas: costes; nodos: turnos",
+        "Flechas: proveedores; nodos: almacenes",
+        "Flechas: lotes; nodos: clientes",
+        "Flechas: relaciones de precedencia; nodos: inicio, fin o eventos"
+      ],
+      "correcta": 3,
+      "explicacion": "Las redes PERT son diagramas de líneas interconectadas que permiten planificar y controlar el proyecto."
+    }
+  ]
+}

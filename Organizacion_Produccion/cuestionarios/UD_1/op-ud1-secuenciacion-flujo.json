@@ -1,0 +1,171 @@
+{
+  "titulo": "UD1 · Secuenciación, lotes y flujo (batch, push, pull)",
+  "descripcion": "Reglas de secuencia FEP, PEPS y TPC, producción por lotes y los sistemas de flujo",
+  "preguntas": [
+    {
+      "enunciado": "¿Qué es la secuenciación de la producción?",
+      "opciones": [
+        "Establecer el orden en que se realizan los trabajos en una máquina, línea o centro de producción",
+        "Calcular la capacidad mensual",
+        "Calcular las necesidades netas de materiales",
+        "Dibujar la red de actividades"
+      ],
+      "correcta": 0,
+      "explicacion": "Sirve para minimizar esperas, aprovechar mejor las máquinas y terminar a tiempo los pedidos."
+    },
+    {
+      "enunciado": "La regla FEP prioriza…",
+      "opciones": [
+        "El que llegó antes",
+        "El trabajo más corto",
+        "El de mayor volumen",
+        "El trabajo con la fecha de entrega más próxima"
+      ],
+      "correcta": 3,
+      "explicacion": "FEP: fecha de entrega más próxima. PEPS: primero en llegar. TPC: trabajo más corto."
+    },
+    {
+      "enunciado": "La regla PEPS indica fabricar primero…",
+      "opciones": [
+        "El que se entrega antes",
+        "El más corto",
+        "El que llegó antes",
+        "El más caro"
+      ],
+      "correcta": 2,
+      "explicacion": "Primero en entrar, primero en servirse."
+    },
+    {
+      "enunciado": "La regla TPC indica fabricar primero…",
+      "opciones": [
+        "El más antiguo",
+        "El de entrega más cercana",
+        "El trabajo más corto",
+        "El de más unidades"
+      ],
+      "correcta": 2,
+      "explicacion": "Primero el trabajo con menor tiempo de fabricación."
+    },
+    {
+      "enunciado": "Dos pedidos usan la misma línea. Uno tarda 3 h y vence mañana; otro tarda 1 h y vence en una semana. ¿Qué fabrica primero la regla FEP?",
+      "opciones": [
+        "El de 3 h, porque se entrega antes",
+        "El de 1 h, porque es más corto",
+        "El que llegó antes, sin importar fechas",
+        "Ninguno: se fabrican a la vez"
+      ],
+      "correcta": 0,
+      "explicacion": "FEP mira solo la fecha de entrega. TPC elegiría el de 1 h."
+    },
+    {
+      "enunciado": "¿Qué otros criterios pueden usarse para secuenciar, además de las reglas FEP, PEPS y TPC?",
+      "opciones": [
+        "Disponibilidad de materias primas, tiempos de limpieza y cambio de producto, capacidad de los equipos",
+        "El color del envase",
+        "El orden alfabético",
+        "El número de operarios de turno de tarde únicamente"
+      ],
+      "correcta": 0,
+      "explicacion": "Pág. 22."
+    },
+    {
+      "enunciado": "Según la unidad, un lote es…",
+      "opciones": [
+        "El conjunto de unidades producidas en idénticas condiciones y que presumiblemente tendrán características similares",
+        "Un pedido de un cliente",
+        "La cantidad mensual planificada",
+        "Un tipo de producto"
+      ],
+      "correcta": 0,
+      "explicacion": "Normalmente se considera lote la cantidad diaria y es obligatorio etiquetar el lote en cada envase."
+    },
+    {
+      "enunciado": "En la producción por lotes…",
+      "opciones": [
+        "Se fabrica pieza a pieza sin esperas",
+        "Solo se fabrica contra pedido unitario",
+        "Se fabrica una cantidad determinada de producto antes de iniciar otro lote o referencia",
+        "No se identifica el producto"
+      ],
+      "correcta": 2,
+      "explicacion": "Cada lote puede identificarse y controlarse durante el proceso y a lo largo de toda la cadena alimentaria."
+    },
+    {
+      "enunciado": "¿Qué es el flujo de producción?",
+      "opciones": [
+        "El orden de entrada de los trabajos",
+        "El conjunto de unidades en idénticas condiciones",
+        "La cantidad de stock de seguridad",
+        "El movimiento sistemático y continuo de materiales, componentes y/o productos por las estaciones de trabajo y etapas de transformación"
+      ],
+      "correcta": 3,
+      "explicacion": "Tipos principales: por lotes, push y pull."
+    },
+    {
+      "enunciado": "En el flujo por lotes…",
+      "opciones": [
+        "Cada pieza pasa a la siguiente en cuanto termina",
+        "Cada puesto trabaja un lote completo antes de pasarlo al siguiente",
+        "La producción se activa por pedido real",
+        "Se produce siempre con previsiones de ventas"
+      ],
+      "correcta": 1,
+      "explicacion": "Por ejemplo, un lote de 5 piezas se comienza y termina en cada etapa antes del siguiente lote."
+    },
+    {
+      "enunciado": "El flujo push (por empuje)…",
+      "opciones": [
+        "Activa la producción solo con pedidos reales",
+        "Inicia la producción antes del pedido, en base a previsiones, empujando el producto a las etapas siguientes",
+        "Produce pieza única bajo demanda",
+        "Evita todo stock intermedio"
+      ],
+      "correcta": 1,
+      "explicacion": "Se produce para almacenar y suele generar stocks intermedios (WIP). Ejemplos: fordismo, capturas de pescado, vendimia."
+    },
+    {
+      "enunciado": "El flujo pull (por arrastre)…",
+      "opciones": [
+        "Produce según previsiones de ventas",
+        "Empuja producto sin saber si se necesita",
+        "Se basa en grandes lotes",
+        "Activa la producción con pedidos reales; cada etapa fabrica cuando la siguiente se lo pide"
+      ],
+      "correcta": 3,
+      "explicacion": "Modelo de flujo de pieza única. Ejemplos: Toyota, productos frescos o refrigerados."
+    },
+    {
+      "enunciado": "¿Qué sistema es más adecuado, según la unidad, para productos frescos o refrigerados?",
+      "opciones": [
+        "Push",
+        "Pull",
+        "Siempre por lotes grandes",
+        "Ninguno"
+      ],
+      "correcta": 1,
+      "explicacion": "Su vida útil limitada hace poco recomendable producir para almacenar."
+    },
+    {
+      "enunciado": "La vendimia y posterior fabricación de vino es un ejemplo de…",
+      "opciones": [
+        "Flujo pull",
+        "Flujo push",
+        "Flujo de pieza única",
+        "Producción por pedido"
+      ],
+      "correcta": 1,
+      "explicacion": "La producción depende de la estacionalidad de la cosecha, no del pedido del cliente."
+    },
+    {
+      "enunciado": "¿Cuál es una ventaja del flujo unitario frente a los lotes, según la figura del ejercicio?",
+      "opciones": [
+        "Se acumulan más inventarios intermedios",
+        "Cada estación espera a que termine el lote anterior",
+        "Las estaciones trabajan en paralelo y el tiempo total (lead time) se reduce",
+        "Se necesita más almacén"
+      ],
+      "correcta": 2,
+      "explicacion": "Con lotes cada estación espera al lote anterior; pieza a pieza se trabaja en paralelo."
+    }
+  ]
+}
