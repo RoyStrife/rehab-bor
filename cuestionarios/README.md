@@ -30,6 +30,8 @@ Cada asignatura tiene su carpeta en la raíz del repo y, dentro, sus cuestionari
 }
 ```
 
+Opcionalmente una pregunta puede llevar una figura: `"imagen": "<Asignatura>/cuestionarios/<UD_n>/img/figura.png"` (ruta desde la raíz del repo) y `"alt"` con su descripción.
+
 `correcta` es la posición de la respuesta buena empezando por 0 (0 = primera opción).
 Como las opciones se pueden barajar, en la explicación no uses «la a», «la b»…: nombra la respuesta por su contenido.
 

@@ -1,0 +1,162 @@
+{
+  "titulo": "UD1 · Preguntas sobre las figuras",
+  "descripcion": "Organigrama, pirámide Lean, casa del TPS, mudas, lotes, Gantt, red PERT y orden de producción",
+  "preguntas": [
+    {
+      "enunciado": "Observa el organigrama. ¿Qué funciones agrupa el departamento de producción?",
+      "imagen": "Organizacion_Produccion/cuestionarios/UD_1/img/organigrama.png",
+      "alt": "Organigrama tradicional: gerencia con compras, producción, comercial y financiero",
+      "opciones": [
+        "Aprovisionamiento y gestión de necesidades",
+        "Planificación, organización y control (calidad, costes, cantidades y fechas), además de I+D+i",
+        "Ventas y distribución",
+        "Pagos, cobros y financiación"
+      ],
+      "correcta": 1,
+      "explicacion": "En el organigrama, compras gestiona las necesidades (aprovisionamiento), comercial se ocupa de ventas y distribución, y producción agrupa planificación, organización, control e I+D+i."
+    },
+    {
+      "enunciado": "Según la figura, ¿qué cambia en el enfoque Lean respecto al tradicional?",
+      "imagen": "Organizacion_Produccion/cuestionarios/UD_1/img/piramide-lean.png",
+      "alt": "Pirámide tradicional frente a pirámide invertida Lean",
+      "opciones": [
+        "Se añaden más niveles jerárquicos entre el CEO y los operarios",
+        "El CEO sigue en la cima y todo escala hacia él",
+        "La pirámide se invierte: arriba están los generadores de valor y la dirección (CEO) queda en la base, dando formación, soporte y objetivos",
+        "Desaparecen los líderes y solo quedan los operarios"
+      ],
+      "correcta": 2,
+      "explicacion": "En Lean se amplía la base donde se genera valor para el cliente; los problemas se escalan y los resultados se comunican, y la dirección sostiene a quien produce."
+    },
+    {
+      "enunciado": "Según la figura, una célula de trabajo es un grupo reducido de…",
+      "imagen": "Organizacion_Produccion/cuestionarios/UD_1/img/celula-trabajo.png",
+      "alt": "Célula de trabajo: grupo de 5–8 personas con objetivos comunes y un líder",
+      "opciones": [
+        "20 a 30 personas, con varios jefes",
+        "2 personas, un operario y un inspector",
+        "Todas las personas de un departamento",
+        "5 a 8 personas, con un entorno de trabajo común, objetivos comunes y un coordinador o líder"
+      ],
+      "correcta": 3,
+      "explicacion": "Está alineada con una organización plana: menos niveles acortan la comunicación y el tiempo entre problema y solución."
+    },
+    {
+      "enunciado": "En la casa del TPS, ¿cuáles son los dos pilares?",
+      "imagen": "Organizacion_Produccion/cuestionarios/UD_1/img/casa-tps.png",
+      "alt": "Casa del TPS: pilares JIT y Jidoka sobre una base de estabilidad",
+      "opciones": [
+        "Taylorismo y fordismo",
+        "Kaizen y 5S",
+        "Heijunka y estándar",
+        "Just in Time (JIT) y Jidoka"
+      ],
+      "correcta": 3,
+      "explicacion": "JIT: la pieza correcta, en la cantidad justa y en el tiempo requerido. Jidoka: calidad a la primera y hacer visibles los problemas."
+    },
+    {
+      "enunciado": "En la misma casa, ¿qué forma la base de la estabilidad?",
+      "imagen": "Organizacion_Produccion/cuestionarios/UD_1/img/casa-tps.png",
+      "alt": "Casa del TPS: base de estabilidad con Heijunka, estándar y Kaizen",
+      "opciones": [
+        "JIT y Jidoka",
+        "Mayor calidad, menos costes y menos plazo de entrega",
+        "Heijunka, estándar y Kaizen",
+        "Compras, producción y comercial"
+      ],
+      "correcta": 2,
+      "explicacion": "Mayor calidad, menos costes y menos tiempo de entrega son el tejado (el resultado). Personas, mejora continua y reducción de mudas ocupan el centro."
+    },
+    {
+      "enunciado": "Además de las siete mudas clásicas, ¿qué desperdicio se añade como «+1» en la figura?",
+      "imagen": "Organizacion_Produccion/cuestionarios/UD_1/img/mudas.png",
+      "alt": "Rueda de las siete mudas más una",
+      "opciones": [
+        "No utilizar la capacidad de pensar (el talento) de las personas",
+        "Un octavo tipo de transporte",
+        "El exceso de calidad",
+        "El mantenimiento preventivo"
+      ],
+      "correcta": 0,
+      "explicacion": "La rueda recoge sobreproducción, movimiento, esperas, transporte, sobreprocesado, defectos y stock; el talento humano desaprovechado es la octava muda."
+    },
+    {
+      "enunciado": "Según la figura, ¿qué hace Lean frente al sistema tradicional?",
+      "imagen": "Organizacion_Produccion/cuestionarios/UD_1/img/eliminar-muda.png",
+      "alt": "Sistema tradicional frente a sistema Lean: barras de valor añadido y muda",
+      "opciones": [
+        "Acelera las tareas que añaden valor y deja la muda",
+        "Elimina las tareas de valor añadido",
+        "Ataca la muda y mantiene el valor añadido, mientras el tradicional acelera las tareas de valor y deja la muda",
+        "Mantiene igual todos los tiempos"
+      ],
+      "correcta": 2,
+      "explicacion": "Es el mismo mensaje que el del operario que va al almacén: un vehículo acorta el viaje, pero solo eliminar el viaje elimina la muda."
+    },
+    {
+      "enunciado": "¿Qué lead time muestra la figura para la producción por lotes y para el flujo pieza a pieza?",
+      "imagen": "Organizacion_Produccion/cuestionarios/UD_1/img/lotes-flujo.png",
+      "alt": "Producción por lotes (30 min de lead time) frente a flujo pieza a pieza (15 min)",
+      "opciones": [
+        "30 minutos con lotes y 15 minutos pieza a pieza",
+        "15 minutos con lotes y 30 pieza a pieza",
+        "30 minutos en ambos",
+        "10 minutos con lotes y 1 minuto pieza a pieza"
+      ],
+      "correcta": 0,
+      "explicacion": "Con lotes, cada estación espera a que termine el lote anterior. Pieza a pieza, las estaciones trabajan en paralelo y el lead time se reduce."
+    },
+    {
+      "enunciado": "En el Gantt del proceso alimentario (el de la derecha), ¿entre qué horas se realiza el envasado (E)?",
+      "imagen": "Organizacion_Produccion/cuestionarios/UD_1/img/gantt.png",
+      "alt": "Dos diagramas de Gantt: esquema genérico y proceso alimentario de 11 horas",
+      "opciones": [
+        "Entre la hora 6 y la 8",
+        "Entre la hora 8 y la 10",
+        "Entre la hora 10 y la 11",
+        "Entre la hora 3 y la 6"
+      ],
+      "correcta": 1,
+      "explicacion": "Las actividades van encadenadas: A (0-1), B (1-3), C (3-6), D (6-8), E (8-10) y F (10-11). Duración total: 11 h."
+    },
+    {
+      "enunciado": "En la red de la tortilla, ¿qué actividades deben terminar antes de empezar a freír la mezcla (D)?",
+      "imagen": "Organizacion_Produccion/cuestionarios/UD_1/img/red-pert.png",
+      "alt": "Red PERT de la tortilla de patatas con tabla de precedencias",
+      "opciones": [
+        "Solo batir los huevos (E)",
+        "Mezclar patatas, cebolla y huevo (F)",
+        "Cuajar la tortilla (G)",
+        "Pelar y cortar patatas (A), cortar cebolla (B) y calentar aceite (C)"
+      ],
+      "correcta": 3,
+      "explicacion": "D depende de A, B y C; F depende de D y E; G depende de F. Batir huevos (E) no tiene precedentes."
+    },
+    {
+      "enunciado": "En esa red, ¿qué actividades no tienen ninguna precedente y pueden empezar al inicio?",
+      "imagen": "Organizacion_Produccion/cuestionarios/UD_1/img/red-pert.png",
+      "alt": "Red PERT de la tortilla de patatas con tabla de precedencias",
+      "opciones": [
+        "Solo A",
+        "A, B, C y E",
+        "D, F y G",
+        "A y G"
+      ],
+      "correcta": 1,
+      "explicacion": "Las actividades sin precedentes salen directamente del nodo de inicio y pueden hacerse simultáneamente."
+    },
+    {
+      "enunciado": "Según la captura de la orden de producción en el ERP, ¿qué bloques contiene?",
+      "imagen": "Organizacion_Produccion/cuestionarios/UD_1/img/orden-erp.png",
+      "alt": "Orden de producción en un ERP: cabecera, artículo, depósitos y lotes consumidos",
+      "opciones": [
+        "Cabecera y fechas, artículo y cantidad a producir (con su fórmula), depósitos de reserva y consumo, y lotes consumidos para la trazabilidad",
+        "Solo el nombre del cliente y el precio",
+        "Únicamente las fechas de entrega",
+        "Los costes salariales de cada turno"
+      ],
+      "correcta": 0,
+      "explicacion": "La orden permite organizar, autorizar y poner en marcha la fabricación, y comunica qué producir, cuánto, cuándo y con qué materiales."
+    }
+  ]
+}

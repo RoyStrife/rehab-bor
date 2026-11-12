@@ -103,6 +103,7 @@ header.top h1{font-size:1.25rem; margin:0; flex:1; line-height:1.25}
 .review .why{color:var(--muted); font-size:.92rem}
 .settings{display:flex; align-items:center; gap:8px; margin:14px 0 4px; font-size:.92rem; color:var(--muted)}
 .settings input{width:20px; height:20px; accent-color:var(--accent)}
+.qimg{display:block; width:100%; height:auto; margin:12px 0 2px; border-radius:8px; border:1px solid var(--line,#d5dfdc); background:#fff}
 .qnum{display:inline-block; font-size:.78rem; font-weight:700; color:var(--accent); background:var(--accent-soft); border-radius:6px; padding:1px 7px; margin-right:6px; vertical-align:2px}
 .hidden{display:none !important}
 </style>
@@ -267,7 +268,7 @@ header.top h1{font-size:1.25rem; margin:0; flex:1; line-height:1.25}
     $('counter').textContent = 'Pregunta ' + (idx+1) + ' de ' + order.length;
     var ok = answers.filter(function(a){ return a.ok; }).length;
     $('liveScore').textContent = idx ? ok + ' / ' + idx + ' bien' : '';
-    $('prompt').innerHTML = (q.n != null ? '<span class="qnum">P'+esc(q.n)+'</span>' : '') + esc(q.enunciado);
+    $('prompt').innerHTML = (q.n != null ? '<span class="qnum">P'+esc(q.n)+'</span>' : '') + esc(q.enunciado) + (q.imagen ? '<img class="qimg" src="../'+esc(q.imagen)+'" alt="'+esc(q.alt || 'Figura de la pregunta')+'">' : '');
     $('options').innerHTML = opts.map(function(o,k){
       return '<button class="opt" data-k="'+k+'"><span class="l">'+LETTERS[k]+'</span><span>'+esc(o.texto)+'</span></button>';
     }).join('');
@@ -327,7 +328,7 @@ header.top h1{font-size:1.25rem; margin:0; flex:1; line-height:1.25}
     $('retryWrongBtn').classList.toggle('hidden', !wrong.length);
     $('review').innerHTML = wrong.length ? '<h3>Repasa las falladas</h3>' + wrong.map(function(a){
       var q = current.preguntas[a.q];
-      return '<div class="item"><p class="q">'+esc(q.enunciado)+'</p>' +
+      return '<div class="item"><p class="q">'+esc(q.enunciado)+'</p>' + (q.imagen ? '<img class="qimg" src="../'+esc(q.imagen)+'" alt="">' : '') +
         '<p class="yours">✗ '+esc(q.opciones[a.elegida])+'</p>' +
         '<p class="right">✓ '+esc(q.opciones[q.correcta])+'</p>' +
         (q.explicacion ? '<p class="why">'+esc(q.explicacion)+'</p>' : '') + '</div>';

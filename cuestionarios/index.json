@@ -339,6 +339,15 @@
     "archivo": "Organizacion_Produccion/cuestionarios/UD_1/op-ud1-calculos-practicos.json"
   },
   {
+    "id": "op-ud1-figuras",
+    "titulo": "UD1 · Preguntas sobre las figuras",
+    "descripcion": "Organigrama, pirámide Lean, casa del TPS, mudas, lotes, Gantt, red PERT y orden de producción",
+    "modulo": "Organización de la Producción",
+    "unidad": "UD_1",
+    "preguntas": 12,
+    "archivo": "Organizacion_Produccion/cuestionarios/UD_1/op-ud1-figuras.json"
+  },
+  {
     "id": "op-ud1-examen-final",
     "titulo": "UD1 · Examen final (preguntas tipo test, nivel examen)",
     "descripcion": "Preguntas mezcladas de toda la unidad, con las confusiones más típicas",
