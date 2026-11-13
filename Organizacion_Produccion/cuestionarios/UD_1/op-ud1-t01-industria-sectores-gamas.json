@@ -1,6 +1,6 @@
 {
-  "titulo": "UD1 · Industria alimentaria, sectores, procesos y gamas",
-  "descripcion": "Sectores económicos, características de la I.A., procesos de obtención y transformación, gamas, áreas funcionales y organigrama",
+  "titulo": "UD1 · La industria alimentaria: sectores, procesos y gamas",
+  "descripcion": "Sectores económicos, características de la I.A., procesos de obtención y transformación y gamas de alimentos (P1, págs. 4-19)",
   "preguntas": [
     {
       "enunciado": "¿A qué sector económico pertenece la industria alimentaria?",
@@ -18,32 +18,32 @@
       "opciones": [
         "Actividades que transforman materias primas en bienes de consumo",
         "Actividades que ofrecen servicios a personas y empresas",
-        "Actividades extractivas que obtienen directamente los recursos de la naturaleza",
-        "Actividades de distribución y comercialización de alimentos"
+        "Actividades de distribución y comercialización de alimentos",
+        "Actividades extractivas que obtienen directamente los recursos de la naturaleza"
       ],
-      "correcta": 2,
+      "correcta": 3,
       "explicacion": "Agricultura, ganadería, pesca y minería obtienen recursos del suelo, subsuelo, ríos o mar. Transformar es secundario y prestar servicios es terciario."
     },
     {
       "enunciado": "El comercio, la hostelería y la banca pertenecen al sector…",
       "opciones": [
         "Secundario, porque manejan productos elaborados",
-        "Terciario, que presta servicios en lugar de producir bienes materiales",
         "Primario, porque dependen de recursos naturales",
+        "Terciario, que presta servicios en lugar de producir bienes materiales",
         "Secundario, porque utilizan capital físico"
       ],
-      "correcta": 1,
+      "correcta": 2,
       "explicacion": "El sector terciario reúne las actividades de servicios: transporte, comercio, hostelería, educación, sanidad, banca, administración pública…"
     },
     {
       "enunciado": "¿Cuál es el objetivo básico de toda industria alimentaria según la unidad?",
       "opciones": [
         "Garantizar el suministro de alimentos aunque haya pérdidas",
+        "Conseguir bienes económicos: maximizar beneficios minimizando los costes",
         "Producir la mayor cantidad posible sin atender al coste",
-        "Sustituir a la agricultura y la ganadería",
-        "Conseguir bienes económicos: maximizar beneficios minimizando los costes"
+        "Sustituir a la agricultura y la ganadería"
       ],
-      "correcta": 3,
+      "correcta": 1,
       "explicacion": "Toda I.A. es una empresa, por lo que su objetivo básico es tener y maximizar beneficios, minimizando los costes."
     },
     {
@@ -62,21 +62,21 @@
       "opciones": [
         "Todas las empresas tienen la misma forma jurídica",
         "Solo existen grandes multinacionales",
-        "Conviven desde la industria artesanal modesta hasta la gran multinacional, con miles de productos distintos",
-        "Todas elaboran el mismo tipo de materia prima"
+        "Todas elaboran el mismo tipo de materia prima",
+        "Conviven desde la industria artesanal modesta hasta la gran multinacional, con miles de productos distintos"
       ],
-      "correcta": 2,
+      "correcta": 3,
       "explicacion": "La heterogeneidad es su condición más visible: es enormemente variada en tamaño, forma jurídica, materias primas y productos."
     },
     {
       "enunciado": "¿Qué significa que los alimentos tengan «escasa elasticidad de demanda»?",
       "opciones": [
         "Que la demanda sube mucho cuando bajan los precios",
+        "Que la demanda se mantiene casi constante aunque cambien los precios o la renta del consumidor",
         "Que la demanda desaparece si sube la renta",
-        "Que los alimentos no se pueden almacenar",
-        "Que la demanda se mantiene casi constante aunque cambien los precios o la renta del consumidor"
+        "Que los alimentos no se pueden almacenar"
       ],
-      "correcta": 3,
+      "correcta": 1,
       "explicacion": "La demanda de alimentos apenas varía con el precio o la renta, salvo consumos estacionales como helados o turrones."
     },
     {
@@ -84,10 +84,10 @@
       "opciones": [
         "Obtención y montaje",
         "Transformación y montaje",
-        "Obtención (de cabecera) y transformación",
-        "Montaje únicamente"
+        "Montaje únicamente",
+        "Obtención (de cabecera) y transformación"
       ],
-      "correcta": 2,
+      "correcta": 3,
       "explicacion": "El montaje es típico de electrodomésticos o automoción. La I.A. realiza obtención y transformación."
     },
     {
@@ -104,23 +104,23 @@
     {
       "enunciado": "Una panadería parte de harina, que procede de una industria de cabecera. ¿Qué proceso realiza?",
       "opciones": [
-        "Transformación: convierte materias primas, a veces ya semielaboradas, en bienes de consumo",
         "Obtención, porque la harina es su materia prima",
+        "Transformación: convierte materias primas, a veces ya semielaboradas, en bienes de consumo",
         "Montaje, porque junta ingredientes",
         "Ninguno de los tres, porque es un servicio"
       ],
-      "correcta": 0,
+      "correcta": 1,
       "explicacion": "En los procesos de transformación las materias primas, que a veces ya son semielaboradas, se convierten en bienes listos para la venta. Otro ejemplo: la cervecera con la malta."
     },
     {
       "enunciado": "¿Qué gama corresponde a los alimentos frescos, sin tratamientos importantes de conservación?",
       "opciones": [
         "II gama",
-        "I gama",
         "IV gama",
-        "V gama"
+        "V gama",
+        "I gama"
       ],
-      "correcta": 1,
+      "correcta": 3,
       "explicacion": "I gama: frutas, verduras, carne, pescado y huevos; anterior a 1800."
     },
     {
@@ -137,23 +137,23 @@
     {
       "enunciado": "¿Qué caracteriza a los alimentos de IV gama?",
       "opciones": [
-        "Frescos, limpios, cortados y envasados, listos para consumir o cocinar, sin tratamiento térmico de conservación",
         "Alimentos cocinados listos para calentar",
         "Alimentos congelados a −18 °C o menos",
+        "Frescos, limpios, cortados y envasados, listos para consumir o cocinar, sin tratamiento térmico de conservación",
         "Alimentos esterilizados en envase hermético"
       ],
-      "correcta": 0,
+      "correcta": 2,
       "explicacion": "Ejemplos: ensaladas en bolsa, lechuga lavada y cortada, fruta cortada. Se conservan en refrigeración (1970-1980)."
     },
     {
       "enunciado": "Una lasaña envasada, lista para consumir tras calentarla, es un alimento de…",
       "opciones": [
-        "V gama (cocinados o preparados)",
         "III gama (congelados)",
         "IV gama (fresco preparado)",
+        "V gama (cocinados o preparados)",
         "II gama (conservas)"
       ],
-      "correcta": 0,
+      "correcta": 2,
       "explicacion": "V gama: alimentos cocinados o preparados, envasados y listos para consumir directamente o tras calentar; aparece hacia 1990."
     },
     {
@@ -168,48 +168,59 @@
       "explicacion": "La clasificación por gamas distingue sobre todo frescos, conservas, congelados y preparados. Estos productos tradicionales se clasifican por la técnica: salazón, curado, secado, ahumado, fermentación…"
     },
     {
-      "enunciado": "¿Cuál es el «alma máter» de una industria alimentaria?",
+      "enunciado": "¿Qué engloba también la industria alimentaria además de los alimentos?",
       "opciones": [
-        "El área financiera",
-        "El área comercial",
-        "El área de compras",
-        "El área de producción, porque sin ella no existiría la industria"
-      ],
-      "correcta": 3,
-      "explicacion": "El área de producción elabora los productos que llegan al consumidor, transformando materias primas con procesos racionales, seguros y eficientes."
-    },
-    {
-      "enunciado": "¿Qué área se encarga de conseguir materias primas de buena calidad, a tiempo y al mejor precio?",
-      "opciones": [
-        "El área de compras",
-        "El área financiera",
-        "El área comercial",
-        "El área de producción"
+        "Las bebidas y la alimentación animal",
+        "Solo los productos de hostelería",
+        "La extracción de minerales",
+        "El transporte de mercancías"
       ],
       "correcta": 0,
-      "explicacion": "Compras asegura que la producción no se detenga por falta de materiales. Financiera gestiona el dinero y comercial vende."
+      "explicacion": "La I.A. produce alimentos y bebidas, y engloba también la alimentación animal."
     },
     {
-      "enunciado": "El organigrama tradicional más básico de una industria incluye los departamentos de…",
+      "enunciado": "¿Qué recursos utiliza principalmente el sector secundario?",
       "opciones": [
-        "Calidad, logística, marketing y sostenibilidad",
-        "Compras, producción, comercial y financiero",
-        "Compras, producción y recursos humanos",
-        "Producción, I+D+i y auditoría interna"
+        "Capital físico (maquinaria, edificios, talleres) y capital humano y tecnológico; el factor tierra solo en menor medida",
+        "Principalmente la naturaleza como fuente de recursos",
+        "Principalmente el factor tierra y la mano de obra agraria",
+        "Solo servicios profesionales"
       ],
-      "correcta": 1,
-      "explicacion": "Según el tamaño pueden existir otros (RRHH, PRL, Logística, Marketing, RSC, Sostenibilidad, Auditoría interna, Asesoría jurídica…)."
+      "correcta": 0,
+      "explicacion": "A diferencia del primario, el secundario se aleja de la naturaleza y se centra en procesos de fabricación y transformación."
     },
     {
-      "enunciado": "¿Qué es un organigrama?",
+      "enunciado": "¿Para qué sirve transformar los productos alimenticios perecederos en conservables?",
       "opciones": [
-        "Un calendario de turnos de producción",
-        "Un esquema gráfico de la estructura funcional de la empresa: cómo se organizan las funciones y quién depende de quién",
-        "Un documento que describe cómo hacer una tarea",
-        "Un diagrama de las fases de fabricación"
+        "Resolver la escasez en ciertas épocas, valorizar productos agrarios, absorber excedentes y regular los mercados",
+        "Aumentar la elasticidad de la demanda",
+        "Evitar toda transformación industrial",
+        "Eliminar el sector primario"
+      ],
+      "correcta": 0,
+      "explicacion": "Es una de las características esenciales: permite evitar subidas de precios y regular los mercados de productos de alimentación."
+    },
+    {
+      "enunciado": "¿Quién ganó el premio de Napoleón por conservar la comida del ejército y quién explicó después por qué funcionaba?",
+      "opciones": [
+        "Nicolas Appert; Louis Pasteur explicó años después que el calor mataba los microorganismos",
+        "Louis Pasteur; Nicolas Appert lo explicó después",
+        "Henry Ford; Taylor lo explicó después",
+        "Kiichiro Toyota; Ohno lo explicó después"
+      ],
+      "correcta": 0,
+      "explicacion": "Appert ganó el premio en 1809-1810 con botellas de vidrio tapadas con corcho y cera y calentadas al baño maría, sin saber por qué funcionaba."
+    },
+    {
+      "enunciado": "Pescado congelado, verduras congeladas, pizzas y croquetas son alimentos de…",
+      "opciones": [
+        "I gama, que son frescos",
+        "III gama, que se conserva congelada, normalmente a −18 °C o menos",
+        "II gama, que son conservas",
+        "IV gama, que son frescos preparados"
       ],
       "correcta": 1,
-      "explicacion": "Permite ver de un vistazo la jerarquía y la distribución de los departamentos. Se basa en la departamentalización."
+      "explicacion": "La III gama (congelados o ultracongelados) aparece hacia 1940-1950."
     }
   ]
 }

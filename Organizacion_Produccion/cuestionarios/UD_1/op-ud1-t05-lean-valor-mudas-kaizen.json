@@ -1,0 +1,234 @@
+{
+  "titulo": "UD1 · Lean: valor, mudas, Kaizen y casa del TPS",
+  "descripcion": "Principios y herramientas de Lean, valor y desperdicio, las 8 mudas, Kaizen y los pilares del TPS (P1, págs. 57-71)",
+  "preguntas": [
+    {
+      "enunciado": "Según Lean, ¿qué es el valor?",
+      "opciones": [
+        "Todo lo que la empresa considera importante producir",
+        "Cualquier actividad que consume recursos",
+        "Exclusivamente aquello por lo que el cliente está dispuesto a pagar",
+        "Lo que decide la dirección según sus costes"
+      ],
+      "correcta": 2,
+      "explicacion": "El valor lo define el cliente según sus necesidades de calidad, coste y entrega; es trabajo que transforma el producto y se hace bien a la primera."
+    },
+    {
+      "enunciado": "Los cuatro principios fundamentales de Lean son…",
+      "opciones": [
+        "Taylorismo, fordismo, toyotismo y Kanban",
+        "Foco en el valor, eliminación de desperdicios (mudas), mejora continua (Kaizen) y Just in Time",
+        "Planificar, organizar, ejecutar y controlar",
+        "Capacidad, demanda, eficacia y eficiencia"
+      ],
+      "correcta": 1,
+      "explicacion": "Son los principios de la pág. 58. Kanban, 5S, Poka-Yoke y flujo pull son herramientas."
+    },
+    {
+      "enunciado": "¿Qué es una muda?",
+      "opciones": [
+        "Una tarea que el cliente paga conscientemente",
+        "Una herramienta Lean para ordenar el puesto",
+        "Una tarea que consume recursos (tiempo, dinero o espacio) pero no aporta valor",
+        "Un tipo de decisión táctica"
+      ],
+      "correcta": 2,
+      "explicacion": "Muda es desperdicio en japonés. Contribuye a la ineficiencia."
+    },
+    {
+      "enunciado": "¿Cuál de estas NO es una de las mudas de la lista?",
+      "opciones": [
+        "Sobreproducción",
+        "Maximizar la eficiencia",
+        "Tiempos de espera",
+        "Productos defectuosos"
+      ],
+      "correcta": 1,
+      "explicacion": "Maximizar la eficiencia es un objetivo. Las ocho mudas: sobreproducción, stocks innecesarios, movimientos innecesarios, esperas, transportes innecesarios, sobreprocesado, defectuosos y no utilizar el talento de las personas."
+    },
+    {
+      "enunciado": "La octava muda añadida a las siete clásicas es…",
+      "opciones": [
+        "La sobreproducción",
+        "El exceso de turnos",
+        "No utilizar el talento (la capacidad de pensar) de las personas",
+        "La falta de inspección final"
+      ],
+      "correcta": 2,
+      "explicacion": "Es el «+1»: el talento humano desaprovechado."
+    },
+    {
+      "enunciado": "Diferencia entre «movimientos innecesarios» y «transportes innecesarios»:",
+      "opciones": [
+        "Los movimientos son de objetos y los transportes de personas",
+        "Los movimientos se refieren a personas y los transportes a objetos",
+        "Son lo mismo",
+        "Los movimientos son de información y los transportes de dinero"
+      ],
+      "correcta": 1,
+      "explicacion": "Movimientos innecesarios (de personas); transportes innecesarios (de objetos)."
+    },
+    {
+      "enunciado": "Un trabajador va continuamente al almacén a por material. Dotarle de un vehículo…",
+      "opciones": [
+        "Elimina la muda por completo",
+        "Mejora el tiempo pero no elimina la muda, que es ir y volver; Lean busca eliminar el desplazamiento",
+        "Convierte el desplazamiento en valor añadido",
+        "Es la solución Lean ideal"
+      ],
+      "correcta": 1,
+      "explicacion": "Una cinta transportadora que alimente la línea elimina el desplazamiento: ahí está la filosofía Lean."
+    },
+    {
+      "enunciado": "Resumen de la unidad sobre valor y desperdicio:",
+      "opciones": [
+        "Valor es lo que el cliente paga conscientemente; desperdicio es lo que paga inconscientemente",
+        "Valor es lo que paga la empresa; desperdicio, el cliente",
+        "Ambos son lo que el cliente paga conscientemente",
+        "Desperdicio es todo lo que el cliente rechaza comprar"
+      ],
+      "correcta": 0,
+      "explicacion": "Ejemplos: Amazon Prime o los costes de envío son valor; la logística o los costes fijos incluidos en el PVP son desperdicio que el cliente paga sin saberlo."
+    },
+    {
+      "enunciado": "¿Qué significa Kaizen?",
+      "opciones": [
+        "Producir solo lo necesario en el momento preciso",
+        "Evitar defectos corrigiendo el error de inmediato",
+        "Mejora continua mediante pequeños cambios constantes con la participación de todo el personal",
+        "Nivelar la producción"
+      ],
+      "correcta": 2,
+      "explicacion": "Es el tercer principio de Lean. Lo más difícil es cambiar la forma de pensar."
+    },
+    {
+      "enunciado": "Entre los principios Kaizen está…",
+      "opciones": [
+        "Buscar al responsable de cada error",
+        "Esperar una idea genial antes de actuar",
+        "Mantener el estado actual si funciona",
+        "No culpar a las personas, sino a los procesos"
+      ],
+      "correcta": 3,
+      "explicacion": "Otros: corregir el error inmediatamente, buscar la causa real, ver los problemas como oportunidades, soluciones sencillas y rápidas, mejor 10 ideas que esperar 1 genial."
+    },
+    {
+      "enunciado": "¿Qué significa que el valor esté «hecho a la primera»?",
+      "opciones": [
+        "Que el proceso no requiere correcciones, retrasos ni reparaciones posteriores",
+        "Que se hace en la primera semana del mes",
+        "Que lo fabrica el primer turno",
+        "Que lo decide la dirección"
+      ],
+      "correcta": 0,
+      "explicacion": "Es una de las tres características del valor, junto con estar definido por el cliente y caracterizarse por la transformación."
+    },
+    {
+      "enunciado": "Lean Manufacturing significa…",
+      "opciones": [
+        "Producir únicamente lo necesario, cuando se necesita, usando los recursos de forma eficiente, con calidad y menor coste",
+        "Producir lo máximo posible",
+        "Mantener grandes inventarios",
+        "Fabricar solo por previsión anual"
+      ],
+      "correcta": 0,
+      "explicacion": "No significa producir más, sino producir lo necesario."
+    },
+    {
+      "enunciado": "Según la unidad, Lean es…",
+      "opciones": [
+        "Solo un conjunto de herramientas de limpieza",
+        "Solo un sistema informático",
+        "Un método exclusivo para el área de compras",
+        "No solo un conjunto de herramientas, sino una filosofía y un sistema de gestión que implica a toda la organización"
+      ],
+      "correcta": 3,
+      "explicacion": "Por eso lo más difícil es cambiar la forma de pensar."
+    },
+    {
+      "enunciado": "En el paradigma Lean, el conocimiento…",
+      "opciones": [
+        "Está en el equipo: formación y gestión de la polivalencia",
+        "Lo tiene solo una persona",
+        "Lo guarda el inspector",
+        "Es propiedad de la dirección"
+      ],
+      "correcta": 0,
+      "explicacion": "En el paradigma tradicional solo una persona tiene el conocimiento."
+    },
+    {
+      "enunciado": "Frente a «los defectos son inevitables en un pequeño porcentaje», el paradigma Lean propone…",
+      "opciones": [
+        "Aceptar un porcentaje fijo de defectos",
+        "Los errores salen a la luz para mejorar: calidad total, los errores pueden eliminarse",
+        "Esconder los errores",
+        "Culpar al operario"
+      ],
+      "correcta": 1,
+      "explicacion": "Es coherente con el principio Kaizen de no culpar a las personas, sino a los procesos."
+    },
+    {
+      "enunciado": "¿Qué es Kanban?",
+      "opciones": [
+        "Un sistema visual para controlar el flujo de producción y aprovisionamiento",
+        "Un tipo de desperdicio",
+        "Una regla de secuenciación",
+        "Un método para calcular necesidades netas"
+      ],
+      "correcta": 0,
+      "explicacion": "Es una de las herramientas principales de Lean, junto con estándares y 5S, flujo pull y Poka-Yoke."
+    },
+    {
+      "enunciado": "En la casa del TPS, ¿cuáles son los dos pilares?",
+      "imagen": "Organizacion_Produccion/cuestionarios/UD_1/img/casa-tps.png",
+      "alt": "Casa del TPS: pilares JIT y Jidoka sobre una base de estabilidad",
+      "opciones": [
+        "Taylorismo y fordismo",
+        "Kaizen y 5S",
+        "Just in Time (JIT) y Jidoka",
+        "Heijunka y estándar"
+      ],
+      "correcta": 2,
+      "explicacion": "JIT: la pieza correcta, en la cantidad justa y en el tiempo requerido. Jidoka: calidad a la primera y hacer visibles los problemas."
+    },
+    {
+      "enunciado": "En la misma casa, ¿qué forma la base de la estabilidad?",
+      "imagen": "Organizacion_Produccion/cuestionarios/UD_1/img/casa-tps.png",
+      "alt": "Casa del TPS: base de estabilidad con Heijunka, estándar y Kaizen",
+      "opciones": [
+        "JIT y Jidoka",
+        "Mayor calidad, menos costes y menos plazo de entrega",
+        "Compras, producción y comercial",
+        "Heijunka, estándar y Kaizen"
+      ],
+      "correcta": 3,
+      "explicacion": "Mayor calidad, menos costes y menos tiempo de entrega son el tejado (el resultado). Personas, mejora continua y reducción de mudas ocupan el centro."
+    },
+    {
+      "enunciado": "Además de las siete mudas clásicas, ¿qué desperdicio se añade como «+1» en la figura?",
+      "imagen": "Organizacion_Produccion/cuestionarios/UD_1/img/mudas.png",
+      "alt": "Rueda de las siete mudas más una",
+      "opciones": [
+        "Un octavo tipo de transporte",
+        "El exceso de calidad",
+        "El mantenimiento preventivo",
+        "No utilizar la capacidad de pensar (el talento) de las personas"
+      ],
+      "correcta": 3,
+      "explicacion": "La rueda recoge sobreproducción, movimiento, esperas, transporte, sobreprocesado, defectos y stock; el talento humano desaprovechado es la octava muda."
+    },
+    {
+      "enunciado": "Según la figura, ¿qué hace Lean frente al sistema tradicional?",
+      "imagen": "Organizacion_Produccion/cuestionarios/UD_1/img/eliminar-muda.png",
+      "alt": "Sistema tradicional frente a sistema Lean: barras de valor añadido y muda",
+      "opciones": [
+        "Acelera las tareas que añaden valor y deja la muda",
+        "Elimina las tareas de valor añadido",
+        "Mantiene igual todos los tiempos",
+        "Ataca la muda y mantiene el valor añadido, mientras el tradicional acelera las tareas de valor y deja la muda"
+      ],
+      "correcta": 3,
+      "explicacion": "Es el mismo mensaje que el del operario que va al almacén: un vehículo acorta el viaje, pero solo eliminar el viaje elimina la muda."
+    }
+  ]
+}

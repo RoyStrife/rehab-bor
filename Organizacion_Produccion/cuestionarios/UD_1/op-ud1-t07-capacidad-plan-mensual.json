@@ -1,0 +1,226 @@
+{
+  "titulo": "UD1 · Capacidad, plan de producción y ejercicio mensual",
+  "descripcion": "Conceptos previos, capacidad, pasos del plan y cálculos del ejemplo práctico de planificación mensual (P2, págs. 3-10)",
+  "preguntas": [
+    {
+      "enunciado": "La demanda es…",
+      "opciones": [
+        "La cantidad de producto que los clientes están dispuestos a comprar durante un periodo determinado",
+        "La cantidad máxima que puede fabricar una instalación",
+        "Los productos terminados en el almacén",
+        "El tiempo que tarda en llegar un material"
+      ],
+      "correcta": 0,
+      "explicacion": "La capacidad de producción es la cantidad máxima que puede fabricar la instalación en un tiempo determinado."
+    },
+    {
+      "enunciado": "Diferencia entre eficacia y eficiencia:",
+      "opciones": [
+        "Son sinónimos",
+        "Eficacia es gastar menos y eficiencia fabricar más",
+        "Eficacia es calidad y eficiencia es velocidad",
+        "Eficacia es lograr el objetivo previsto; eficiencia es lograrlo aprovechando al máximo los recursos, haciendo más con menos"
+      ],
+      "correcta": 3,
+      "explicacion": "Una empresa puede cumplir su objetivo de producción (eficaz) y usar mal sus recursos (poco eficiente)."
+    },
+    {
+      "enunciado": "¿Qué es la vida útil de un alimento?",
+      "opciones": [
+        "El tiempo que tarda en fabricarse",
+        "El plazo de aprovisionamiento",
+        "El periodo de mayor demanda",
+        "El periodo durante el cual mantiene su seguridad y/o características de calidad, en las condiciones establecidas"
+      ],
+      "correcta": 3,
+      "explicacion": "Condiciona cuánto se puede adelantar la producción."
+    },
+    {
+      "enunciado": "¿De qué depende la capacidad productiva?",
+      "opciones": [
+        "Solo del número de trabajadores",
+        "Solo de la demanda prevista",
+        "De líneas, rendimiento de equipos, turnos, días disponibles y paradas de mantenimiento, limpieza y cambios de producto",
+        "Del precio de las materias primas"
+      ],
+      "correcta": 2,
+      "explicacion": "Antes de planificar hay que comprobar si se dispone de capacidad suficiente para satisfacer la demanda."
+    },
+    {
+      "enunciado": "Una línea produce 2.000 yogures por turno de 8 h y trabaja 20 días al mes con 1 turno. ¿Capacidad mensual?",
+      "opciones": [
+        "20.000 unidades",
+        "40.000 unidades",
+        "80.000 unidades",
+        "32.000 unidades"
+      ],
+      "correcta": 1,
+      "explicacion": "2.000 × 20 = 40.000. Con dos turnos serían 2.000 × 20 × 2 = 80.000."
+    },
+    {
+      "enunciado": "¿Qué es la planificación de la producción?",
+      "opciones": [
+        "Detallar el orden de trabajos en una máquina cada día",
+        "Emitir la orden de fabricación de un lote",
+        "Determinar qué productos se fabricarán, en qué cantidades, cuándo y con qué recursos para satisfacer la demanda prevista",
+        "Calcular los kilos de patata de un pedido"
+      ],
+      "correcta": 2,
+      "explicacion": "Es general (qué y cuánto) y a medio/largo plazo."
+    },
+    {
+      "enunciado": "¿Cuál NO es un paso para elaborar un plan de producción?",
+      "opciones": [
+        "Analizar la demanda",
+        "Programar el día y la hora exacta de cada operación en cada máquina",
+        "Calcular la capacidad",
+        "Control y seguimiento"
+      ],
+      "correcta": 1,
+      "explicacion": "Los pasos de la pág. 10: analizar demanda, calcular capacidad, planificar materiales (MRP), determinar recursos y control y seguimiento."
+    },
+    {
+      "enunciado": "Línea de 2.000 u/turno de 8 h. Marzo: 22 días, demanda 60.000. ¿Capacidad mensual a 1 turno?",
+      "opciones": [
+        "40.000 unidades",
+        "66.000 unidades",
+        "44.000 unidades",
+        "30.000 unidades"
+      ],
+      "correcta": 2,
+      "explicacion": "2.000 × 22 = 44.000."
+    },
+    {
+      "enunciado": "En marzo (demanda 60.000, capacidad 44.000), ¿cuántos turnos diarios se marcan?",
+      "opciones": [
+        "2 turnos",
+        "1 turno",
+        "3 turnos",
+        "4 turnos"
+      ],
+      "correcta": 0,
+      "explicacion": "60.000 / 44.000 = 1,36 → se redondea hacia arriba a 2 turnos."
+    },
+    {
+      "enunciado": "¿Cuál es el coste de producción de marzo (0,80 €/u el primer turno y 0,88 €/u los turnos adicionales)?",
+      "opciones": [
+        "48.000 €",
+        "52.800 €",
+        "35.200 €",
+        "49.280 €"
+      ],
+      "correcta": 3,
+      "explicacion": "44.000 × 0,80 = 35.200 € + 16.000 × 0,88 = 14.080 € → 49.280 €."
+    },
+    {
+      "enunciado": "Enero: demanda 30.000, 20 días. ¿Cuántos turnos y coste?",
+      "opciones": [
+        "1 turno y 24.000 € (infrautilización)",
+        "2 turnos y 26.400 €",
+        "1 turno y 30.000 €",
+        "2 turnos y 48.000 €"
+      ],
+      "correcta": 0,
+      "explicacion": "Capacidad 40.000; 30.000 / 40.000 = 0,75 → 1 turno. Coste 30.000 × 0,80 = 24.000 €. Hay capacidad sin usar."
+    },
+    {
+      "enunciado": "Julio: demanda 150.000, 25 días. ¿Turnos marcados y cociente demanda/capacidad?",
+      "opciones": [
+        "2 turnos y 2,50",
+        "3 turnos y 2,70",
+        "3 turnos y 3,00 exactamente",
+        "4 turnos y 3,50"
+      ],
+      "correcta": 2,
+      "explicacion": "Capacidad a 1 turno = 50.000; 150.000 / 50.000 = 3,00."
+    },
+    {
+      "enunciado": "Coste de julio (150.000 u; 50.000 al precio base):",
+      "opciones": [
+        "120.000 €",
+        "132.000 €",
+        "128.000 €",
+        "110.000 €"
+      ],
+      "correcta": 2,
+      "explicacion": "50.000 × 0,80 = 40.000 € + 100.000 × 0,88 = 88.000 € → 128.000 €."
+    },
+    {
+      "enunciado": "Mayo: demanda 100.000 y 23 días. Cociente demanda/capacidad a 1 turno:",
+      "opciones": [
+        "2,17, por lo que se marcan 2 turnos",
+        "2,17, por lo que se marcan 3 turnos",
+        "1,50, por lo que se marcan 2 turnos",
+        "3,00, por lo que se marcan 3 turnos"
+      ],
+      "correcta": 1,
+      "explicacion": "Capacidad 46.000; 100.000 / 46.000 = 2,17 → se redondea a 3. Con 2 turnos se producen 92.000."
+    },
+    {
+      "enunciado": "En mayo, ¿cuántos días hace falta un tercer turno realmente?",
+      "opciones": [
+        "23 días, todos",
+        "8 días",
+        "12 días",
+        "4 días"
+      ],
+      "correcta": 3,
+      "explicacion": "Con 2 turnos todos los días se producen 92.000; faltan 8.000 u, y un turno diario produce 2.000: 8.000 / 2.000 = 4 días. No hace falta trabajar a 3 turnos todo el mes."
+    },
+    {
+      "enunciado": "¿En qué meses (demanda ≤ 60.000 u) se haría mantenimiento preventivo o formación?",
+      "opciones": [
+        "Enero, febrero, marzo, noviembre y diciembre",
+        "Junio, julio y agosto",
+        "Abril y octubre",
+        "Todos los meses"
+      ],
+      "correcta": 0,
+      "explicacion": "Son los meses de menor demanda según el criterio de la unidad."
+    },
+    {
+      "enunciado": "Coste total anual de la planificación (resolución propuesta):",
+      "opciones": [
+        "838.400 €, es decir 38.400 € más que 800.000 € a precio base",
+        "800.000 €",
+        "880.000 €",
+        "826.000 €"
+      ],
+      "correcta": 0,
+      "explicacion": "El sobrecoste proviene de las unidades en turnos adicionales (×0,88)."
+    },
+    {
+      "enunciado": "Con dos turnos diarios de 8 h, 2.000 unidades por turno y 20 días al mes, ¿cuál es la capacidad mensual?",
+      "opciones": [
+        "40.000 unidades",
+        "80.000 unidades",
+        "60.000 unidades",
+        "20.000 unidades"
+      ],
+      "correcta": 1,
+      "explicacion": "2.000 × 20 × 2 = 80.000."
+    },
+    {
+      "enunciado": "¿Cómo se calculan los turnos necesarios según la presentación?",
+      "opciones": [
+        "Capacidad mensual dividida entre la demanda",
+        "Demanda mensual multiplicada por los días",
+        "Días de producción divididos entre la demanda",
+        "Demanda mensual dividida entre la capacidad mensual a 1 turno"
+      ],
+      "correcta": 3,
+      "explicacion": "La capacidad mensual a 1 turno de 8 h es 2.000 unidades × días de producción."
+    },
+    {
+      "enunciado": "Abril: demanda 80.000 y 22 días. ¿Cuántos turnos diarios y cuál es el coste (0,80 € el primer turno y 0,88 € los turnos adicionales)?",
+      "opciones": [
+        "1 turno y 64.000 €",
+        "2 turnos y 66.880 €",
+        "2 turnos y 70.400 €",
+        "3 turnos y 66.880 €"
+      ],
+      "correcta": 1,
+      "explicacion": "Capacidad a 1 turno 44.000; 80.000 / 44.000 = 1,82 → 2 turnos. Coste: 44.000 × 0,80 = 35.200 € + 36.000 × 0,88 = 31.680 € → 66.880 €."
+    }
+  ]
+}

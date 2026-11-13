@@ -1,0 +1,226 @@
+{
+  "titulo": "UD1 · Programación de la producción, Heijunka y JIT",
+  "descripcion": "Planificación frente a programación, ejemplo de yogures y conceptos Lean aplicados (P2, págs. 11-20)",
+  "preguntas": [
+    {
+      "enunciado": "La programación de la producción…",
+      "opciones": [
+        "Establece la estrategia a cinco años",
+        "Describe de forma detallada la ejecución del plan, transformándolo en un calendario concreto de trabajo",
+        "Fija las especificaciones del producto",
+        "Calcula el beneficio anual"
+      ],
+      "correcta": 1,
+      "explicacion": "Detalla qué productos, fechas concretas, inicio y fin de operaciones, orden, equipos, trabajadores y fecha de entrega."
+    },
+    {
+      "enunciado": "Horizonte temporal de planificación y programación:",
+      "opciones": [
+        "Planificación a corto plazo; programación a largo",
+        "Planificación a medio/largo plazo; programación a corto plazo (diario o semanal)",
+        "Ambas a largo plazo",
+        "Ambas diarias"
+      ],
+      "correcta": 1,
+      "explicacion": "Planificación: mensual, trimestral, anual. Programación: diaria o semanal."
+    },
+    {
+      "enunciado": "«Producir 120.000 yogures este mes» es un ejemplo de…",
+      "opciones": [
+        "Programación",
+        "Secuenciación",
+        "Orden de fabricación",
+        "Planificación"
+      ],
+      "correcta": 3,
+      "explicacion": "La programación diría cuántos yogures cada día, de qué variedad, en qué turno y con qué equipos."
+    },
+    {
+      "enunciado": "En el ejemplo de programación semanal de yogures, ¿qué limita el trabajo al turno de mañana?",
+      "opciones": [
+        "La envasadora no funciona por la tarde",
+        "La cámara de fermentación es de 20.000 L",
+        "Los operarios no trabajan por la tarde",
+        "El pasteurizador solo está disponible en turno de mañana (limpieza CIP a las 14:00)"
+      ],
+      "correcta": 3,
+      "explicacion": "Son restricciones de equipos que condicionan la programación."
+    },
+    {
+      "enunciado": "¿Producir más significa ser más eficiente?",
+      "opciones": [
+        "Sí, siempre",
+        "Solo en industrias de montaje",
+        "No: se puede cumplir el objetivo y aun así usar mal los recursos",
+        "Sí, si se almacena el excedente"
+      ],
+      "correcta": 2,
+      "explicacion": "Fabricar más de lo necesario, acumular terminados o generar esperas son desperdicios. Lean busca fabricar lo necesario."
+    },
+    {
+      "enunciado": "Heijunka es…",
+      "opciones": [
+        "La nivelación de la producción para evitar grandes fluctuaciones en la carga de trabajo",
+        "Producir solo cuando el cliente lo pide, sin adelantar nada",
+        "Corregir el error de inmediato",
+        "Un sistema visual de tarjetas"
+      ],
+      "correcta": 0,
+      "explicacion": "Propone distribuir la producción de forma más uniforme, siempre que producto y cliente lo permitan."
+    },
+    {
+      "enunciado": "¿Por qué no siempre se puede adelantar la producción de un alimento?",
+      "opciones": [
+        "Por la estacionalidad (pesca, vendimia) y la vida útil, además de conservación, almacenamiento y demanda real",
+        "Porque Lean lo prohíbe",
+        "Porque los turnos son fijos",
+        "Porque los alimentos no se pueden almacenar nunca"
+      ],
+      "correcta": 0,
+      "explicacion": "Conservas: cierta anticipación posible, pero ligada a la pesca estacional. Frescos como yogures: limitados por la vida útil."
+    },
+    {
+      "enunciado": "Just in Time (JIT) implica…",
+      "opciones": [
+        "Producir y suministrar la cantidad necesaria en el momento necesario, con la calidad requerida y mínimo consumo de recursos",
+        "Producir cuanto antes para almacenar",
+        "Nivelar la producción a lo largo del año",
+        "Fabricar siempre en lotes grandes"
+      ],
+      "correcta": 0,
+      "explicacion": "Si hay que producir 150.000 unidades en julio, JIT implica producirlas en julio."
+    },
+    {
+      "enunciado": "Adelantar 50.000 unidades a enero o junio para evitar turnos en julio puede reducir el coste de turnos, pero genera…",
+      "opciones": [
+        "Ahorro adicional sin riesgos",
+        "Más sobreprocesado únicamente",
+        "Menos inventario",
+        "Costes de almacenamiento, inmovilización de capital y riesgo de caducidad"
+      ],
+      "correcta": 3,
+      "explicacion": "Por eso Heijunka y JIT no son incompatibles, pero hay que buscar un equilibrio entre ambos."
+    },
+    {
+      "enunciado": "¿Trabajar con tres turnos es en sí mismo un desperdicio Lean?",
+      "opciones": [
+        "Sí, siempre es sobreproducción",
+        "Sí, es un transporte innecesario",
+        "No: el problema surge si genera exceso de inventario, tiempos improductivos o costes evitables",
+        "Solo en industria alimentaria"
+      ],
+      "correcta": 2,
+      "explicacion": "Es la nota de la pág. 9."
+    },
+    {
+      "enunciado": "¿Qué detalla la programación de la producción?",
+      "opciones": [
+        "Solo la demanda anual prevista",
+        "Qué productos, fechas concretas, inicio y fin de cada operación, orden, equipos y trabajadores, y plazo de entrega",
+        "Solo el coste de las materias primas",
+        "La estrategia de la empresa"
+      ],
+      "correcta": 1,
+      "explicacion": "Transforma el plan de producción en un calendario concreto de trabajo."
+    },
+    {
+      "enunciado": "¿Quién es el responsable de la programación?",
+      "opciones": [
+        "Solo el gerente",
+        "La dirección de producción, el encargado de línea o el supervisor",
+        "Solo el cliente",
+        "El proveedor"
+      ],
+      "correcta": 1,
+      "explicacion": "La planificación es responsabilidad de la dirección de producción."
+    },
+    {
+      "enunciado": "En el ejemplo de la semana 2 de octubre, ¿qué se quería producir?",
+      "opciones": [
+        "17.500 yogures de fresa",
+        "7.500 yogures naturales y 10.000 de fresa",
+        "20.000 yogures naturales",
+        "10.000 yogures naturales y 7.500 con trozos de fresa"
+      ],
+      "correcta": 3,
+      "explicacion": "El yogur con fresa se elabora a partir de yogur natural."
+    },
+    {
+      "enunciado": "La cámara de fermentación compartida tiene capacidad de 2.000 L. ¿Qué límite impone?",
+      "opciones": [
+        "Máximo 2.000 unidades al día",
+        "Máximo 7.500 unidades al día",
+        "Sin límite",
+        "Máximo 20.000 unidades al día"
+      ],
+      "correcta": 3,
+      "explicacion": "Es un detalle técnico que condiciona la programación."
+    },
+    {
+      "enunciado": "La envasadora del ejemplo está calibrada para…",
+      "opciones": [
+        "125 ± 1 g por envase",
+        "250 ± 5 g por envase",
+        "100 g exactos",
+        "125 ± 10 g por envase"
+      ],
+      "correcta": 0,
+      "explicacion": "Es uno de los detalles técnicos de la programación de yogures."
+    },
+    {
+      "enunciado": "En el ejemplo, ¿cuánto dura la fermentación y a qué temperatura?",
+      "opciones": [
+        "8 h a 43 °C",
+        "4,5 h a 43 °C",
+        "4,5 h a 4 °C",
+        "1 h a 70 °C"
+      ],
+      "correcta": 1,
+      "explicacion": "Junto con el pasteurizador solo disponible por la mañana, condiciona el orden de actividades."
+    },
+    {
+      "enunciado": "¿Cuál de estos es un desperdicio Lean citado en la planificación?",
+      "opciones": [
+        "Mantener equipos funcionando sin necesidad",
+        "Producir exactamente lo necesario",
+        "Controlar la calidad",
+        "Programar los turnos"
+      ],
+      "correcta": 0,
+      "explicacion": "Otros: fabricar más unidades de las que se necesitan, acumular terminados, esperas o movimientos innecesarios y producir defectos."
+    },
+    {
+      "enunciado": "Para evitar turnos en julio (150.000 unidades), Heijunka propone estudiar…",
+      "opciones": [
+        "Retrasar la producción a agosto",
+        "Reducir la demanda",
+        "Adelantar parte de la producción a junio",
+        "Eliminar los turnos de enero"
+      ],
+      "correcta": 2,
+      "explicacion": "Siempre que las características del producto y las necesidades del cliente lo permitan."
+    },
+    {
+      "enunciado": "¿Qué producto permite más anticipación de la producción?",
+      "opciones": [
+        "Los yogures frescos",
+        "Los productos refrigerados de vida corta",
+        "Las conservas, aunque pueden estar ligadas a la pesca estacional",
+        "Ninguno, porque nunca se puede adelantar"
+      ],
+      "correcta": 2,
+      "explicacion": "Los productos frescos como los yogures presentan mayores limitaciones por su vida útil."
+    },
+    {
+      "enunciado": "¿Qué significa Lean según la nota final de la unidad?",
+      "opciones": [
+        "Producir lo máximo posible para tener stock",
+        "Adelantar siempre la producción para nivelarla",
+        "No producir más, sino producir lo necesario, cuando se necesita y con los recursos de forma eficiente",
+        "Trabajar siempre con tres turnos"
+      ],
+      "correcta": 2,
+      "explicacion": "Heijunka y JIT no son incompatibles, pero hay que buscar un equilibrio entre ambos."
+    }
+  ]
+}

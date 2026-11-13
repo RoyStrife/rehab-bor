@@ -1,16 +1,16 @@
 {
   "titulo": "UD1 · Gantt, PERT y CPM",
-  "descripcion": "Diagrama de Gantt, red PERT, tiempo esperado, camino crítico y holgura",
+  "descripcion": "Diagrama de Gantt, red PERT, tiempo esperado, camino crítico y holguras (P2, págs. 32-44)",
   "preguntas": [
     {
       "enunciado": "En un diagrama de Gantt, ¿qué se representa en el eje vertical y cuál en el horizontal?",
       "opciones": [
         "Vertical: el tiempo; horizontal: las actividades",
-        "Vertical: los costes; horizontal: los días",
         "Vertical: las actividades; horizontal: el tiempo",
+        "Vertical: los costes; horizontal: los días",
         "Vertical: los recursos; horizontal: las máquinas"
       ],
-      "correcta": 2,
+      "correcta": 1,
       "explicacion": "Las barras horizontales muestran el inicio, la duración y el final de cada actividad."
     },
     {
@@ -18,76 +18,76 @@
       "opciones": [
         "Calcular las necesidades netas de materiales",
         "Determinar el nivel de stock de seguridad",
-        "Organizar actividades, ver su duración, detectar tareas simultáneas, controlar plazos y retrasos",
-        "Clasificar los alimentos por gamas"
+        "Clasificar los alimentos por gamas",
+        "Organizar actividades, ver su duración, detectar tareas simultáneas, controlar plazos y retrasos"
       ],
-      "correcta": 2,
+      "correcta": 3,
       "explicacion": "Es una herramienta de programación que permite visualizar duraciones y solapamientos."
     },
     {
       "enunciado": "Un proceso: A (1 h), B (2 h), C (3 h), D (2 h), E (2 h) y F (1 h), cada una precedida por la anterior. ¿Duración total?",
       "opciones": [
-        "11 horas",
         "9 horas",
         "10 horas",
+        "11 horas",
         "12 horas"
       ],
-      "correcta": 0,
+      "correcta": 2,
       "explicacion": "Al ir encadenadas se suman: 1 + 2 + 3 + 2 + 2 + 1 = 11 h."
     },
     {
       "enunciado": "¿Qué significan las siglas PERT?",
       "opciones": [
         "Planning Efficient Resource Time",
-        "Program Evaluation and Review Technique",
         "Production Estimate and Release Table",
-        "Program Execution for Raw Transformation"
+        "Program Execution for Raw Transformation",
+        "Program Evaluation and Review Technique"
       ],
-      "correcta": 1,
+      "correcta": 3,
       "explicacion": "Es una técnica probabilística para planificar y controlar proyectos con actividades relacionadas."
     },
     {
       "enunciado": "¿Qué tiempos define el método PERT para cada actividad?",
       "opciones": [
-        "Optimista (o), normal o más probable (m) y pesimista (p)",
         "Mínimo, medio y máximo de la línea",
         "Inicio, fin y holgura",
-        "Tiempo de espera, de proceso y de transporte"
+        "Tiempo de espera, de proceso y de transporte",
+        "Optimista (o), normal o más probable (m) y pesimista (p)"
       ],
-      "correcta": 0,
+      "correcta": 3,
       "explicacion": "El optimista es el menor tiempo posible; el pesimista, el mayor (por ejemplo, retrasos por falta de suministros); el normal, el más probable por experiencia."
     },
     {
       "enunciado": "¿Cuál es la fórmula del tiempo esperado en PERT?",
       "opciones": [
-        "te = (o + 4m + p) / 6",
         "te = (o + m + p) / 3",
+        "te = (o + 4m + p) / 6",
         "te = (4o + m + p) / 6",
         "te = (o + p) / 2"
       ],
-      "correcta": 0,
+      "correcta": 1,
       "explicacion": "El valor más probable pesa cuatro veces. Es el tiempo que se usa en la red de actividades."
     },
     {
       "enunciado": "Una actividad tiene o = 2 h, m = 4 h y p = 12 h. ¿Cuál es su tiempo esperado?",
       "opciones": [
         "6 h",
-        "5 h",
         "7 h",
-        "4 h"
+        "4 h",
+        "5 h"
       ],
-      "correcta": 1,
+      "correcta": 3,
       "explicacion": "(2 + 4·4 + 12) / 6 = 30 / 6 = 5."
     },
     {
       "enunciado": "Una actividad tiene o = 3 días, m = 5 días y p = 13 días. ¿Tiempo esperado?",
       "opciones": [
+        "6 días",
         "5 días",
         "7 días",
-        "8 días",
-        "6 días"
+        "8 días"
       ],
-      "correcta": 3,
+      "correcta": 0,
       "explicacion": "(3 + 20 + 13) / 6 = 36 / 6 = 6."
     },
     {
@@ -95,10 +95,10 @@
       "opciones": [
         "6",
         "8",
-        "9",
-        "7"
+        "7",
+        "9"
       ],
-      "correcta": 3,
+      "correcta": 2,
       "explicacion": "(4 + 24 + 14) / 6 = 42 / 6 = 7."
     },
     {
@@ -126,23 +126,23 @@
     {
       "enunciado": "Diferencia de enfoque entre PERT y CPM:",
       "opciones": [
-        "PERT trabaja con tiempos probabilísticos; CPM habitualmente con tiempos conocidos o fijos",
         "PERT usa tiempos fijos y CPM probabilísticos",
+        "PERT trabaja con tiempos probabilísticos; CPM habitualmente con tiempos conocidos o fijos",
         "Ambos usan solo tiempos pesimistas",
         "PERT ignora las precedencias"
       ],
-      "correcta": 0,
+      "correcta": 1,
       "explicacion": "En la práctica se complementan: PERT calcula la duración esperada y CPM traza la ruta crítica y calcula holguras."
     },
     {
       "enunciado": "Red: A (2) inicial; B (3) y C (4) tras A; D (2) tras B y C; E (1) tras A; F (3) tras D y E. ¿Duración mínima del proyecto?",
       "opciones": [
         "10 unidades de tiempo",
-        "11 unidades de tiempo",
         "12 unidades de tiempo",
-        "9 unidades de tiempo"
+        "9 unidades de tiempo",
+        "11 unidades de tiempo"
       ],
-      "correcta": 1,
+      "correcta": 3,
       "explicacion": "El camino más largo es A–C–D–F = 2 + 4 + 2 + 3 = 11. A–B–D–F suma 10 y A–E–F suma 6."
     },
     {
@@ -150,10 +150,10 @@
       "opciones": [
         "A–B–D–F",
         "A–E–F",
-        "A–B–C–D–F",
-        "A–C–D–F"
+        "A–C–D–F",
+        "A–B–C–D–F"
       ],
-      "correcta": 3,
+      "correcta": 2,
       "explicacion": "Es el de mayor duración (11). Las actividades B y E tienen holgura."
     },
     {
@@ -192,13 +192,39 @@
     {
       "enunciado": "En una red PERT, las flechas y los nodos representan…",
       "opciones": [
+        "Flechas: relaciones de precedencia; nodos: inicio, fin o eventos",
         "Flechas: costes; nodos: turnos",
         "Flechas: proveedores; nodos: almacenes",
-        "Flechas: lotes; nodos: clientes",
-        "Flechas: relaciones de precedencia; nodos: inicio, fin o eventos"
+        "Flechas: lotes; nodos: clientes"
       ],
-      "correcta": 3,
+      "correcta": 0,
       "explicacion": "Las redes PERT son diagramas de líneas interconectadas que permiten planificar y controlar el proyecto."
+    },
+    {
+      "enunciado": "En el Gantt del proceso alimentario (el de la derecha), ¿entre qué horas se realiza el envasado (E)?",
+      "imagen": "Organizacion_Produccion/cuestionarios/UD_1/img/gantt.png",
+      "alt": "Dos diagramas de Gantt: esquema genérico y proceso alimentario de 11 horas",
+      "opciones": [
+        "Entre la hora 8 y la 10",
+        "Entre la hora 6 y la 8",
+        "Entre la hora 10 y la 11",
+        "Entre la hora 3 y la 6"
+      ],
+      "correcta": 0,
+      "explicacion": "Las actividades van encadenadas: A (0-1), B (1-3), C (3-6), D (6-8), E (8-10) y F (10-11). Duración total: 11 h."
+    },
+    {
+      "enunciado": "En la red de la tortilla, ¿qué actividades deben terminar antes de empezar a freír la mezcla (D)?",
+      "imagen": "Organizacion_Produccion/cuestionarios/UD_1/img/red-pert.png",
+      "alt": "Red PERT de la tortilla de patatas con tabla de precedencias",
+      "opciones": [
+        "Pelar y cortar patatas (A), cortar cebolla (B) y calentar aceite (C)",
+        "Solo batir los huevos (E)",
+        "Mezclar patatas, cebolla y huevo (F)",
+        "Cuajar la tortilla (G)"
+      ],
+      "correcta": 0,
+      "explicacion": "D depende de A, B y C; F depende de D y E; G depende de F. Batir huevos (E) no tiene precedentes."
     }
   ]
 }

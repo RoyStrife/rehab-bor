@@ -1,0 +1,226 @@
+{
+  "titulo": "UD1 · Evolución del sistema productivo",
+  "descripcion": "Producción artesanal, taylorismo, fordismo, toyotismo (TPS), Lean y sistema pull (P1, págs. 37-40)",
+  "preguntas": [
+    {
+      "enunciado": "¿Qué idea clave define el taylorismo (1900)?",
+      "opciones": [
+        "La cadena de montaje con productos iguales para todos",
+        "Dividir el trabajo en tareas pequeñas y repetitivas para que cada trabajador se vuelva experto y rápido",
+        "Producir solo lo necesario, cuando se necesita",
+        "Un solo trabajador realiza todo el producto"
+      ],
+      "correcta": 1,
+      "explicacion": "Taylor busca aumentar la productividad con la división del trabajo. El control de calidad se hace al producto terminado por un inspector externo."
+    },
+    {
+      "enunciado": "¿Qué aporta el fordismo (1910-1920)?",
+      "opciones": [
+        "La cadena de montaje: producción en masa de productos estandarizados",
+        "El Just in Time",
+        "La mejora continua con participación de todos",
+        "La producción artesanal diferenciada"
+      ],
+      "correcta": 0,
+      "explicacion": "Henry Ford: el producto pasa por la línea y cada trabajador hace su parte; ejemplo, el Modelo T. Hay puntos de control automatizados en fases intermedias."
+    },
+    {
+      "enunciado": "Diferencia en el control de calidad entre taylorismo y fordismo:",
+      "opciones": [
+        "En ambos se controla únicamente el producto terminado",
+        "En Taylor se controla en fases intermedias y en Ford al final",
+        "En Taylor se inspecciona el producto terminado por un inspector externo; en Ford hay puntos de control en fases intermedias",
+        "En ambos lo hace el propio operario parando la línea"
+      ],
+      "correcta": 2,
+      "explicacion": "Ford rechaza defectuosos antes de que avancen en la cadena. Parar la línea ante un fallo es del toyotismo."
+    },
+    {
+      "enunciado": "Los dos pilares del Toyota Production System son…",
+      "opciones": [
+        "Taylorismo y fordismo",
+        "Jidoka y Just in Time",
+        "Kanban y Poka-Yoke",
+        "5S y Gantt"
+      ],
+      "correcta": 1,
+      "explicacion": "Jidoka evita defectos y corrige el error de inmediato; JIT produce solo lo necesario, en el momento y la cantidad necesarios. Kanban es una herramienta del JIT."
+    },
+    {
+      "enunciado": "¿Qué significa Jidoka?",
+      "opciones": [
+        "Producir solo lo que pide el cliente",
+        "Nivelar la producción a lo largo del tiempo",
+        "Organizar y limpiar el puesto de trabajo",
+        "Evitar defectos y corregir el error de inmediato, pudiendo parar la línea"
+      ],
+      "correcta": 3,
+      "explicacion": "En Toyota, si un trabajador ve un fallo puede parar la línea para corregirlo."
+    },
+    {
+      "enunciado": "¿Quiénes están detrás del Toyota Production System (1955)?",
+      "opciones": [
+        "Frederick W. Taylor y Henry Ford",
+        "Deming y Juran",
+        "Kiichiro Toyota y Taiichi Ohno",
+        "Napoleón y Appert"
+      ],
+      "correcta": 2,
+      "explicacion": "El TPS nace en Japón con Kiichiro Toyota y Taiichi Ohno."
+    },
+    {
+      "enunciado": "Un sistema Pull (flujo tirado) significa que…",
+      "opciones": [
+        "La producción se activa solo cuando hay una demanda real del cliente o de la etapa siguiente",
+        "Cada etapa empuja material a la siguiente según previsiones",
+        "Se fabrica en grandes lotes para almacenar",
+        "La dirección fija la producción anual de una vez"
+      ],
+      "correcta": 0,
+      "explicacion": "Se fabrica porque alguien lo necesita, no para almacenar. Cada etapa «tira» de la anterior."
+    },
+    {
+      "enunciado": "¿Cuándo y dónde surge Lean Manufacturing?",
+      "opciones": [
+        "En Japón en 1955 con Ohno",
+        "En Europa en 1900 con Taylor",
+        "En EE. UU. en 1910 con Ford",
+        "En EE. UU. en los años 90, al estudiar el éxito de Toyota: es la «occidentalización» del TPS"
+      ],
+      "correcta": 3,
+      "explicacion": "Investigadores estudiaron el éxito de Toyota y desarrollaron el modelo para aplicarlo a cualquier industria global (Lean Enterprise, 1993)."
+    },
+    {
+      "enunciado": "¿Cómo era la producción artesanal (hasta 1900)?",
+      "opciones": [
+        "Diferenciada («productos únicos»): un trabajador realiza todo el producto y se aprende por experiencia, desde aprendiz",
+        "Producción en serie en cadena de montaje",
+        "División del trabajo en tareas repetitivas",
+        "Producción ajustada con flujo tirado"
+      ],
+      "correcta": 0,
+      "explicacion": "Es la primera etapa de la evolución del sistema productivo."
+    },
+    {
+      "enunciado": "¿Qué etapa agrupa al taylorismo y al fordismo?",
+      "opciones": [
+        "La producción artesanal",
+        "La producción ajustada (JIT)",
+        "El Lean Enterprise",
+        "La producción en masa (1900-1950)"
+      ],
+      "correcta": 3,
+      "explicacion": "El toyotismo corresponde a la producción ajustada (JIT)."
+    },
+    {
+      "enunciado": "Ejemplo de taylorismo citado en la unidad:",
+      "opciones": [
+        "Una persona solo pone tapones a botellas y otra solo las etiqueta",
+        "Todos los coches Modelo T son iguales",
+        "Un trabajador para la línea al ver un fallo",
+        "Un artesano hace todo el producto"
+      ],
+      "correcta": 0,
+      "explicacion": "Cada trabajador hace siempre lo mismo y se vuelve experto y rápido."
+    },
+    {
+      "enunciado": "Ejemplo de fordismo citado en la unidad:",
+      "opciones": [
+        "El trabajador que para la línea",
+        "Un artesano de conservas",
+        "Una célula de trabajo",
+        "Los coches Modelo T, todos iguales y fabricados muy rápido"
+      ],
+      "correcta": 3,
+      "explicacion": "Es la cadena de montaje que da lugar a la producción en masa de productos iguales para todos."
+    },
+    {
+      "enunciado": "¿Cuál de estos NO es uno de los «ceros» del toyotismo en la pág. 39?",
+      "opciones": [
+        "Cero defectos",
+        "Cero ventas",
+        "Cero stocks innecesarios",
+        "Cero retrasos"
+      ],
+      "correcta": 1,
+      "explicacion": "La búsqueda de cero desperdicio incluye cero defectos, cero stocks innecesarios y cero retrasos."
+    },
+    {
+      "enunciado": "¿Qué cinco «ceros» enumera la tabla de evolución para el toyotismo?",
+      "opciones": [
+        "Costes, ventas, clientes, turnos y lotes",
+        "Mudas, kaizen, JIT, 5S y Kanban",
+        "Defectos, papeles, stock, averías y plazos",
+        "Gantt, PERT, CPM, MRP y ERP"
+      ],
+      "correcta": 2,
+      "explicacion": "La pág. 37 lo fecha en 1960; la pág. 39 data el TPS en 1955 y cita tres ceros."
+    },
+    {
+      "enunciado": "¿Qué significa Just in Time dentro del TPS?",
+      "opciones": [
+        "Producir lo máximo posible para almacenar",
+        "Producir solo lo que se necesita, en el momento en que se necesita y en la cantidad necesaria, usando herramientas como Kanban",
+        "Producir al ritmo de la previsión anual",
+        "Hacer los pedidos al proveedor una vez al año"
+      ],
+      "correcta": 1,
+      "explicacion": "Busca cero desperdicio: cero defectos, cero stocks innecesarios y cero retrasos."
+    },
+    {
+      "enunciado": "¿Qué rasgo tiene el toyotismo respecto a los trabajadores?",
+      "opciones": [
+        "Los reduce a una sola tarea repetitiva",
+        "Involucra a todos los trabajadores en la mejora de la calidad",
+        "Delega la calidad en un inspector externo",
+        "Elimina la participación del operario"
+      ],
+      "correcta": 1,
+      "explicacion": "En una fábrica Toyota, si un trabajador ve un fallo, puede parar la línea para corregirlo."
+    },
+    {
+      "enunciado": "¿Cuál es el orden cronológico correcto de los modelos?",
+      "opciones": [
+        "Fordismo, taylorismo, artesanal, Lean, toyotismo",
+        "Toyotismo, Lean, taylorismo, fordismo, artesanal",
+        "Artesanal, taylorismo, fordismo, toyotismo, Lean",
+        "Taylorismo, artesanal, toyotismo, fordismo, Lean"
+      ],
+      "correcta": 2,
+      "explicacion": "Artesano hasta 1900; Taylor 1900; Ford 1910-1920; TPS 1955; Lean años 90."
+    },
+    {
+      "enunciado": "¿Qué aporta Lean Enterprise (1993) respecto al TPS?",
+      "opciones": [
+        "Limita Lean a la línea de montaje",
+        "Elimina la cultura de mejora continua",
+        "Aplica Lean a todas las funciones de la empresa y optimiza el valor para todos los agentes implicados",
+        "Vuelve al control de calidad al final"
+      ],
+      "correcta": 2,
+      "explicacion": "Lean Enterprise añade cultura de mejora continua y más valor para todos los agentes implicados."
+    },
+    {
+      "enunciado": "En el TPS, ¿qué papel tiene el operario?",
+      "opciones": [
+        "Resuelve los problemas y es dueño del proceso (Just-In-Time)",
+        "Solo ejecuta una tarea sin opinar",
+        "Depende de un inspector externo",
+        "No puede parar la línea"
+      ],
+      "correcta": 0,
+      "explicacion": "Es una de las ideas del Toyota Production System recogidas en la pág. 40."
+    },
+    {
+      "enunciado": "¿Qué técnica de control de calidad corresponde a Taylor?",
+      "opciones": [
+        "Puntos de control automatizados en fases intermedias",
+        "Parar la línea ante un fallo",
+        "Autocontrol por el propio operario con Jidoka",
+        "Inspección del producto terminado por un inspector externo"
+      ],
+      "correcta": 3,
+      "explicacion": "Ford introduce puntos de control en fases intermedias y Toyota la calidad integrada."
+    }
+  ]
+}

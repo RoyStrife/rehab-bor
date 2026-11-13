@@ -1,0 +1,226 @@
+{
+  "titulo": "UD1 · Decisiones y gestión de la producción",
+  "descripcion": "Decisiones estratégicas y tácticas, funciones y objetivos de la gestión de la producción (P1, págs. 41-56)",
+  "preguntas": [
+    {
+      "enunciado": "Las decisiones estratégicas se caracterizan por ser…",
+      "opciones": [
+        "Concretas, del día a día y tomadas por los responsables de departamento",
+        "Generales, a largo plazo, tomadas por los máximos directivos y con gran trascendencia en recursos y tiempo",
+        "Rutinarias, de corto plazo y tomadas por los operarios",
+        "Siempre sobre cuestiones de calidad"
+      ],
+      "correcta": 1,
+      "explicacion": "Afectan al diseño y configuración de la estructura productiva. Las tácticas son concretas y apoyan que lo estratégico se cumpla."
+    },
+    {
+      "enunciado": "¿Cuál de estas es una decisión estratégica?",
+      "opciones": [
+        "Implantar un sistema de certificación ISO 22000 en toda la empresa",
+        "Revisar cada mañana el stock de harina, azúcar y leche",
+        "Programar los turnos de producción de la semana",
+        "Organizar una inspección de limpieza semanal en envasado"
+      ],
+      "correcta": 0,
+      "explicacion": "Implantar la certificación en toda la empresa es una decisión a largo plazo y de gran alcance. Las otras son tareas operativas."
+    },
+    {
+      "enunciado": "¿Cuál de estas es una decisión táctica u operativa?",
+      "opciones": [
+        "Controlar que las botellas de leche pasteurizada salgan con el peso exacto",
+        "Abrir una nueva planta de galletas en otra ciudad",
+        "Apostar por una línea de productos sin gluten para nuevos mercados",
+        "Invertir en envases biodegradables"
+      ],
+      "correcta": 0,
+      "explicacion": "El control del peso es una decisión concreta del día a día. Las demás afectan a la estructura y al futuro de la empresa."
+    },
+    {
+      "enunciado": "En el restaurante de comida rápida, «Ampliar el restaurante con una terraza nueva» es una decisión…",
+      "opciones": [
+        "Táctica de capacidad",
+        "Estratégica de capacidad",
+        "Estratégica de mantenimiento",
+        "Táctica de inventarios"
+      ],
+      "correcta": 1,
+      "explicacion": "Ampliar instalaciones es estratégico. La táctica de capacidad es, por ejemplo, decidir cuántas mesas se reservan para clientes con cita."
+    },
+    {
+      "enunciado": "¿Qué nivel de decisiones suele tomar un Técnico Superior en Procesos y Calidad en la Industria Alimentaria?",
+      "opciones": [
+        "Táctico u operativo: organización del trabajo diario, mejora de procesos, control de calidad e incidencias",
+        "Estratégico, como abrir nuevas plantas",
+        "Solo estratégico, de seguridad alimentaria",
+        "Ninguno, porque no tiene responsabilidad"
+      ],
+      "correcta": 0,
+      "explicacion": "Su nivel se sitúa en lo táctico, aunque debe formarse para decidir con criterio."
+    },
+    {
+      "enunciado": "¿En qué consiste la gestión de la producción?",
+      "opciones": [
+        "Planificar, organizar (programar), coordinar y controlar los recursos y actividades necesarios para fabricar un producto",
+        "Solo decidir cuántos productos se venden",
+        "Únicamente comprar materias primas",
+        "Fijar la estrategia de la empresa a diez años"
+      ],
+      "correcta": 0,
+      "explicacion": "Es una actividad de tipo operativo o táctico. Los recursos son humanos, materiales, técnicos, energéticos y digitales."
+    },
+    {
+      "enunciado": "Dos características que condicionan la gestión de la producción en la I.A. son…",
+      "opciones": [
+        "La uniformidad de los productos y la demanda constante",
+        "La variabilidad (estacionalidad) de la demanda y la diversidad de procesos",
+        "El montaje de componentes y el tamaño de las plantas",
+        "El tipo de organigrama y el número de turnos"
+      ],
+      "correcta": 1,
+      "explicacion": "Ejemplo de estacionalidad: helados en verano y turrones en invierno. La diversidad: pasteurización, esterilización, refrigeración, congelación, liofilización, envasado…"
+    },
+    {
+      "enunciado": "En la función «Controlar» de la gestión de la producción se debe…",
+      "opciones": [
+        "Establecer el plan de producción según la demanda prevista",
+        "Colocar y distribuir ordenadamente los recursos y tareas",
+        "Guiar el trabajo del equipo hacia las metas",
+        "Comprobar si lo hecho coincide con lo planificado y corregir los errores"
+      ],
+      "correcta": 3,
+      "explicacion": "Controlar es comprobar y corregir. Planificar es lo previo; programar y organizar es distribuir; ejecutar y coordinar es guiar al equipo."
+    },
+    {
+      "enunciado": "En una industria cárnica, ¿quién establece las especificaciones técnicas de cada producto?",
+      "opciones": [
+        "Producción",
+        "Compras",
+        "Calidad",
+        "Financiera"
+      ],
+      "correcta": 2,
+      "explicacion": "Calidad fija presentación, peso, materias primas y características físicas, químicas y microbiológicas. Producción organiza proceso, equipos, personal y controles."
+    },
+    {
+      "enunciado": "Entre los objetivos de la gestión de la producción, «flexibilidad» significa…",
+      "opciones": [
+        "Cumplir los plazos y resultados previstos",
+        "Cumplir las especificaciones del cliente",
+        "Adaptarse rápidamente a cambios en la demanda, en el diseño del producto o en los recursos",
+        "Reducir residuos y emisiones"
+      ],
+      "correcta": 2,
+      "explicacion": "Cumplir plazos es confiabilidad; cumplir especificaciones es calidad; reducir residuos y emisiones es sostenibilidad."
+    },
+    {
+      "enunciado": "¿Qué objetivo hace referencia a cumplir con los plazos y evitar errores o averías?",
+      "opciones": [
+        "Maximizar la eficiencia",
+        "Reducir costes",
+        "Sostenibilidad",
+        "Asegurar la confiabilidad"
+      ],
+      "correcta": 3,
+      "explicacion": "La confiabilidad es la capacidad del sistema productivo de cumplir plazos y resultados previstos, garantizando la estabilidad del proceso."
+    },
+    {
+      "enunciado": "¿Quién toma las decisiones tácticas u operativas?",
+      "opciones": [
+        "Los máximos directivos únicamente",
+        "Los clientes",
+        "Los responsables de los diferentes departamentos",
+        "Los proveedores"
+      ],
+      "correcta": 2,
+      "explicacion": "Son concretas, del día a día y apoyan que lo estratégico se cumpla."
+    },
+    {
+      "enunciado": "Revisar cada mañana el nivel de stock de harina, azúcar y leche es una decisión…",
+      "opciones": [
+        "Estratégica",
+        "Táctica u operativa",
+        "Financiera",
+        "Comercial"
+      ],
+      "correcta": 1,
+      "explicacion": "Es una decisión concreta del día a día."
+    },
+    {
+      "enunciado": "Invertir en tecnologías de envasado sostenible (por ejemplo, envases biodegradables) es una decisión…",
+      "opciones": [
+        "Táctica",
+        "Operativa diaria",
+        "Estratégica",
+        "De programación semanal"
+      ],
+      "correcta": 2,
+      "explicacion": "Afecta a la configuración de la estructura productiva y es a largo plazo."
+    },
+    {
+      "enunciado": "En el restaurante, la decisión táctica de «coste y calidad» es…",
+      "opciones": [
+        "Obtener la certificación ISO de calidad",
+        "Ampliar el restaurante con una terraza",
+        "Comprar robots de limpieza cada 5 años",
+        "Revisar que las hamburguesas cumplan con el peso estándar antes de servirlas"
+      ],
+      "correcta": 3,
+      "explicacion": "Obtener la certificación ISO es la decisión estratégica de esa categoría."
+    },
+    {
+      "enunciado": "En el restaurante, la decisión táctica de «mantenimiento» es…",
+      "opciones": [
+        "Comprar robots de limpieza para la fábrica cada 5 años",
+        "Diseñar un plan de bienestar",
+        "Lanzar una app móvil",
+        "Limpiar los filtros de las máquinas de café cada lunes"
+      ],
+      "correcta": 3,
+      "explicacion": "Comprar robots cada cinco años es la decisión estratégica."
+    },
+    {
+      "enunciado": "Los recursos que gestiona la gestión de la producción son…",
+      "opciones": [
+        "Solo humanos y financieros",
+        "Solo materiales y económicos",
+        "Humanos, materiales, técnicos, energéticos y digitales",
+        "Únicamente maquinaria"
+      ],
+      "correcta": 2,
+      "explicacion": "Gestionar es planificar, organizar, coordinar y controlar esos recursos y actividades."
+    },
+    {
+      "enunciado": "¿En qué consiste «planificar» dentro de la gestión de la producción?",
+      "opciones": [
+        "Establecer previamente el plan de producción según la demanda prevista, la capacidad de la fábrica y los recursos disponibles",
+        "Guiar el trabajo del equipo",
+        "Comprobar lo hecho frente a lo planificado",
+        "Distribuir tareas el día a día"
+      ],
+      "correcta": 0,
+      "explicacion": "Programar y organizar es colocar los recursos y tareas; ejecutar y coordinar, guiar al equipo; controlar, comprobar y corregir."
+    },
+    {
+      "enunciado": "«Maximizar la eficiencia» como objetivo significa…",
+      "opciones": [
+        "Producir lo máximo sin importar el coste",
+        "Cumplir solo los plazos",
+        "Aumentar los turnos siempre",
+        "Aprovechar al máximo los recursos, hacer más con menos, eliminando la muda o desperdicios"
+      ],
+      "correcta": 3,
+      "explicacion": "Los otros objetivos son reducir costes, asegurar la calidad, flexibilidad, confiabilidad y sostenibilidad."
+    },
+    {
+      "enunciado": "El objetivo de sostenibilidad en la gestión de la producción implica…",
+      "opciones": [
+        "Aumentar el consumo energético",
+        "Producir de manera responsable reduciendo consumo energético, residuos y emisiones, y usando materiales reciclables",
+        "Producir más residuos para almacenar",
+        "Ignorar el impacto social"
+      ],
+      "correcta": 1,
+      "explicacion": "Se promueven procesos respetuosos con el entorno."
+    }
+  ]
+}

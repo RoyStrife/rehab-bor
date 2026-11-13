@@ -1,0 +1,228 @@
+{
+  "titulo": "UD1 · ERP, órdenes de fabricación y riesgos",
+  "descripcion": "Del MRP al ERP, orden de fabricación, incertidumbre y riesgo (P2, págs. 52-58)",
+  "preguntas": [
+    {
+      "enunciado": "Un ERP es…",
+      "opciones": [
+        "Una regla de secuencia",
+        "Una técnica de mejora continua japonesa",
+        "Un tipo de diagrama de flujo",
+        "El sistema informático que gestiona y coordina los procesos de la empresa (compras, producción, calidad, logística)"
+      ],
+      "correcta": 3,
+      "explicacion": "La información del MRP se integra en el ERP (Enterprise Resource Planning)."
+    },
+    {
+      "enunciado": "Una orden de fabricación es…",
+      "opciones": [
+        "El documento o registro digital que organiza, autoriza y pone en marcha la fabricación de una cantidad determinada de producto",
+        "Un pedido de materias primas a un proveedor",
+        "Un informe de calidad del producto final",
+        "Un contrato con el cliente"
+      ],
+      "correcta": 0,
+      "explicacion": "Se emite a partir de la programación. Si no se emite, la fábrica no se pone a trabajar."
+    },
+    {
+      "enunciado": "¿Qué datos comunica una orden de fabricación a la planta?",
+      "opciones": [
+        "Solo el precio de venta",
+        "Producto, cantidad, cuándo, materiales, equipos y recursos, e instrucciones de fabricación",
+        "El balance de la empresa",
+        "El nombre del cliente únicamente"
+      ],
+      "correcta": 1,
+      "explicacion": "Objetivo: garantizar que la producción se hace conforme a lo programado y a los requisitos."
+    },
+    {
+      "enunciado": "En la orden de ejemplo (OF-2026-025) del yogur natural de 125 g, ¿qué cantidad estaba prevista?",
+      "opciones": [
+        "10.000 unidades",
+        "17.500 unidades",
+        "7.500 unidades",
+        "125 unidades"
+      ],
+      "correcta": 0,
+      "explicacion": "Lote YN261028, fabricación el 28/10/2026, línea 1, turno de mañana, responsable el supervisor de producción."
+    },
+    {
+      "enunciado": "Incertidumbre, según la unidad:",
+      "opciones": [
+        "Sucesos externos a la fábrica que no sabemos si ocurrirán, pero podrían afectar a la producción",
+        "El problema interno que provocan los sucesos externos",
+        "Un retraso de proveedor ya producido",
+        "Una avería de maquinaria"
+      ],
+      "correcta": 0,
+      "explicacion": "Ejemplos: gripe aviar, sequía, subida del precio del combustible."
+    },
+    {
+      "enunciado": "Riesgo, según la unidad:",
+      "opciones": [
+        "El problema interno que puede generar esa incertidumbre, como retrasos o costes más altos",
+        "Un suceso externo incontrolable",
+        "Un tipo de decisión estratégica",
+        "La demanda estacional"
+      ],
+      "correcta": 0,
+      "explicacion": "Ejemplo: subida del coste de fabricación por el precio de los huevos o dificultad para encontrar proveedores de patatas."
+    },
+    {
+      "enunciado": "Una sequía que reduce la cosecha de patata es un ejemplo de…",
+      "opciones": [
+        "Riesgo; la incertidumbre sería el coste",
+        "Un problema interno de producción",
+        "Incertidumbre; el riesgo asociado sería menos patatas o más caras",
+        "Un desperdicio Lean"
+      ],
+      "correcta": 2,
+      "explicacion": "La sequía es externa y no controlable; los problemas que causa en la empresa son los riesgos."
+    },
+    {
+      "enunciado": "¿Quién gestiona el plan de riesgos?",
+      "opciones": [
+        "Los directores de producción, que deben estar atentos, decidir a tiempo y pedir ayuda a especialistas si es necesario",
+        "Solo los clientes",
+        "Únicamente los proveedores",
+        "Los operarios de línea sin apoyo"
+      ],
+      "correcta": 0,
+      "explicacion": "Las empresas deben identificar, analizar y controlar los riesgos."
+    },
+    {
+      "enunciado": "Según la captura de la orden de producción en el ERP, ¿qué bloques contiene?",
+      "imagen": "Organizacion_Produccion/cuestionarios/UD_1/img/orden-erp.png",
+      "alt": "Orden de producción en un ERP: cabecera, artículo, depósitos y lotes consumidos",
+      "opciones": [
+        "Solo el nombre del cliente y el precio",
+        "Únicamente las fechas de entrega",
+        "Los costes salariales de cada turno",
+        "Cabecera y fechas, artículo y cantidad a producir (con su fórmula), depósitos de reserva y consumo, y lotes consumidos para la trazabilidad"
+      ],
+      "correcta": 3,
+      "explicacion": "La orden permite organizar, autorizar y poner en marcha la fabricación, y comunica qué producir, cuánto, cuándo y con qué materiales."
+    },
+    {
+      "enunciado": "En la orden OF-2026-025, ¿en qué línea y turno se fabrica?",
+      "opciones": [
+        "Línea 2, turno de tarde",
+        "Línea 1, turno de noche",
+        "Línea 1, turno de mañana",
+        "Línea 3, turno de mañana"
+      ],
+      "correcta": 2,
+      "explicacion": "Producto: yogur natural de 125 g; responsable: supervisor de producción."
+    },
+    {
+      "enunciado": "¿Cuál es el lote y la fecha de fabricación de la orden de ejemplo?",
+      "opciones": [
+        "Lote LNV2410, fecha 10/10/2026",
+        "Lote YN261028, fecha 28/10/2026",
+        "Lote YN261028, fecha 02/10/2026",
+        "Lote OF-2026-025, fecha 28/10/2025"
+      ],
+      "correcta": 1,
+      "explicacion": "El Nº de orden es OF-2026-025 y la cantidad prevista 10.000 unidades."
+    },
+    {
+      "enunciado": "Responsable de la orden de fabricación de ejemplo:",
+      "opciones": [
+        "El gerente",
+        "El cliente",
+        "El proveedor de leche",
+        "El supervisor de producción"
+      ],
+      "correcta": 3,
+      "explicacion": "La orden también indica la línea y el turno."
+    },
+    {
+      "enunciado": "¿Qué ocurre si no se emite la orden de producción?",
+      "opciones": [
+        "La fábrica produce igualmente",
+        "Se emite automáticamente el MRP",
+        "Se cancela el pedido",
+        "La fábrica no se pone a trabajar"
+      ],
+      "correcta": 3,
+      "explicacion": "La orden de fabricación autoriza y pone en marcha la fabricación."
+    },
+    {
+      "enunciado": "¿Cuál es el objetivo de la orden de fabricación?",
+      "opciones": [
+        "Aumentar el stock de seguridad",
+        "Sustituir a la planificación",
+        "Garantizar que la producción se realiza de acuerdo con lo programado y con los requisitos establecidos",
+        "Calcular el beneficio"
+      ],
+      "correcta": 2,
+      "explicacion": "Comunica qué producto, cantidad, cuándo, materiales, equipos e instrucciones."
+    },
+    {
+      "enunciado": "En la orden de ejemplo, ¿cuál es la materia prima principal y qué otros materiales aparecen?",
+      "opciones": [
+        "Harina; sal y agua",
+        "Huevos; patatas y aceite",
+        "Azúcar; cacao y moldes",
+        "Leche; fermentos, envases, tapas y etiquetas"
+      ],
+      "correcta": 3,
+      "explicacion": "El producto es yogur natural de 125 g."
+    },
+    {
+      "enunciado": "La gripe aviar es un ejemplo de…",
+      "opciones": [
+        "Riesgo",
+        "Orden de fabricación",
+        "Incertidumbre",
+        "Necesidad bruta"
+      ],
+      "correcta": 2,
+      "explicacion": "Es un suceso externo que no sabemos si ocurrirá; el riesgo asociado sería el aumento de costes de los huevos."
+    },
+    {
+      "enunciado": "«Dificultad para encontrar proveedores de patatas» es un ejemplo de…",
+      "opciones": [
+        "Incertidumbre",
+        "Muda",
+        "Riesgo",
+        "Stock de seguridad"
+      ],
+      "correcta": 2,
+      "explicacion": "El riesgo es el problema interno que genera la incertidumbre (por ejemplo, una sequía)."
+    },
+    {
+      "enunciado": "Un plan de gestión de riesgos consiste en…",
+      "opciones": [
+        "Eliminar la incertidumbre",
+        "Identificar, analizar y controlar los riesgos",
+        "Esperar a que ocurran",
+        "Subir los precios"
+      ],
+      "correcta": 1,
+      "explicacion": "Gestionar bien los riesgos ayuda a evitar problemas en la producción."
+    },
+    {
+      "enunciado": "Si sube el precio del combustible, ¿qué consecuencia (riesgo) se cita?",
+      "opciones": [
+        "Habrá más patatas",
+        "Fabricar las tortillas costará más",
+        "Se reducirán los turnos",
+        "El MRP calculará menos necesidades"
+      ],
+      "correcta": 1,
+      "explicacion": "La subida del combustible es la incertidumbre; el mayor coste es el riesgo."
+    },
+    {
+      "enunciado": "Si un proveedor falla, ¿qué puede ocurrir?",
+      "opciones": [
+        "Aumenta el stock de seguridad automáticamente",
+        "La producción puede retrasarse",
+        "Se emite una orden de fabricación nueva",
+        "Desaparecen los costes"
+      ],
+      "correcta": 1,
+      "explicacion": "Es un ejemplo de riesgo asociado a la incertidumbre en el aprovisionamiento."
+    }
+  ]
+}

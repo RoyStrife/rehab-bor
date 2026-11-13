@@ -1,0 +1,226 @@
+{
+  "titulo": "UD1 · MRP: planificación de necesidades de materiales",
+  "descripcion": "Información del MRP, necesidades brutas y netas y cálculos (P2, págs. 45-51)",
+  "preguntas": [
+    {
+      "enunciado": "¿Qué determina el MRP?",
+      "opciones": [
+        "Qué materiales se necesitan, en qué cantidades y cuándo",
+        "Qué productos se venderán el próximo año",
+        "Quién fabrica cada producto",
+        "Cómo se organiza el organigrama"
+      ],
+      "correcta": 0,
+      "explicacion": "Su objetivo es disponer de los materiales cuando se necesitan, evitando roturas de stock e inventarios innecesarios."
+    },
+    {
+      "enunciado": "¿Qué significan las siglas MRP?",
+      "opciones": [
+        "Manufacturing Resource Process",
+        "Material Requirements Planning",
+        "Maximum Resource Planning",
+        "Material Risk Prevention"
+      ],
+      "correcta": 1,
+      "explicacion": "Es el sistema de planificación de necesidades de materiales."
+    },
+    {
+      "enunciado": "¿Qué información necesita el MRP?",
+      "opciones": [
+        "Solo la demanda histórica",
+        "Plan de producción, lista de materiales, inventario disponible, stock de seguridad y plazo de aprovisionamiento",
+        "Organigrama, plantilla y turnos",
+        "Precios de venta y beneficios previstos"
+      ],
+      "correcta": 1,
+      "explicacion": "Con ella calcula qué hay que fabricar o comprar y cuándo."
+    },
+    {
+      "enunciado": "¿Qué es el stock de seguridad?",
+      "opciones": [
+        "La cantidad que se necesita fabricar",
+        "La cantidad mínima que hay que tener siempre en almacén para cubrir imprevistos",
+        "El tiempo que tarda en llegar un material",
+        "La cantidad total que se vende al mes"
+      ],
+      "correcta": 1,
+      "explicacion": "Se aplica tanto a materiales como a producto terminado."
+    },
+    {
+      "enunciado": "¿Cuál es la fórmula de las necesidades netas (NN)?",
+      "opciones": [
+        "NN = NB + D − SS",
+        "NN = D − NB + SS",
+        "NN = NB − SS",
+        "NN = NB − D + SS"
+      ],
+      "correcta": 3,
+      "explicacion": "NB: necesidades brutas; D: disponibilidad; SS: stock de seguridad."
+    },
+    {
+      "enunciado": "Una empresa debe entregar 600 tortillas, tiene 425 en almacén y quiere un stock de seguridad de 50. ¿Necesidades netas?",
+      "opciones": [
+        "175 tortillas",
+        "275 tortillas",
+        "225 tortillas",
+        "125 tortillas"
+      ],
+      "correcta": 2,
+      "explicacion": "NN = 600 − 425 + 50 = 225."
+    },
+    {
+      "enunciado": "NB = 1.000, disponibilidad = 300 y stock de seguridad = 100. ¿NN?",
+      "opciones": [
+        "800",
+        "600",
+        "900",
+        "700"
+      ],
+      "correcta": 0,
+      "explicacion": "1.000 − 300 + 100 = 800."
+    },
+    {
+      "enunciado": "¿Qué recoge la lista de materiales en el MRP?",
+      "opciones": [
+        "Los trabajadores de cada turno",
+        "Las fechas de entrega de los clientes",
+        "Los costes fijos de la empresa",
+        "Las materias primas y materiales auxiliares (envases, etiquetas…) y las cantidades que requiere cada producto"
+      ],
+      "correcta": 3,
+      "explicacion": "Es una de las informaciones de entrada del MRP, junto con el plan de producción, el inventario, el stock de seguridad y el plazo de aprovisionamiento."
+    },
+    {
+      "enunciado": "Los huevos tardan una semana en llegar. ¿Cómo influye en el MRP?",
+      "opciones": [
+        "Se piden el mismo día que se usan",
+        "Se piden al terminar la producción",
+        "Hay que pedirlos una semana antes de necesitarlos (plazo de aprovisionamiento)",
+        "No influye"
+      ],
+      "correcta": 2,
+      "explicacion": "El plazo de aprovisionamiento permite calcular cuándo emitir las órdenes de compra."
+    },
+    {
+      "enunciado": "¿Para qué sirve el MRP?",
+      "opciones": [
+        "Aumentar el stock al máximo",
+        "Calcular sueldos",
+        "Diseñar el organigrama",
+        "Tener materiales cuando se necesitan, evitar paradas y roturas de stock, no comprar de más y cumplir el plan"
+      ],
+      "correcta": 3,
+      "explicacion": "Evita costes innecesarios y paradas."
+    },
+    {
+      "enunciado": "Una fábrica necesita 900 tortillas, tiene 250 en almacén y quiere 60 de seguridad. ¿Necesidades netas?",
+      "opciones": [
+        "590",
+        "1.210",
+        "710",
+        "650"
+      ],
+      "correcta": 2,
+      "explicacion": "NN = 900 − 250 + 60 = 710."
+    },
+    {
+      "enunciado": "¿Qué es el plazo de aprovisionamiento?",
+      "opciones": [
+        "La cantidad mínima en almacén",
+        "El plan de producción",
+        "El inventario disponible",
+        "El tiempo que tarda en llegar un material (o en completarse una fase de producción)"
+      ],
+      "correcta": 3,
+      "explicacion": "Ejemplo: los huevos tardan una semana en llegar y hay que pedirlos una semana antes."
+    },
+    {
+      "enunciado": "¿Qué es el inventario disponible para el MRP?",
+      "opciones": [
+        "La cantidad que se necesita fabricar",
+        "Los materiales que faltan",
+        "Los materiales y productos que ya hay en el almacén",
+        "El stock de seguridad"
+      ],
+      "correcta": 2,
+      "explicacion": "Indica las cantidades que se tienen en el almacén."
+    },
+    {
+      "enunciado": "Las necesidades brutas (NB) son…",
+      "opciones": [
+        "Los productos terminados en almacén",
+        "La reserva mínima en almacén",
+        "La cantidad que hay que fabricar según el plan o programa",
+        "La cantidad adicional a fabricar tras restar existencias"
+      ],
+      "correcta": 2,
+      "explicacion": "La disponibilidad (D) son los productos finales terminados que ya hay en el almacén."
+    },
+    {
+      "enunciado": "La disponibilidad (D) en el MRP es…",
+      "opciones": [
+        "La cantidad que se quiere fabricar",
+        "El tiempo de entrega",
+        "El stock de seguridad",
+        "Los productos finales terminados que ya hay en el almacén para cubrir las necesidades brutas"
+      ],
+      "correcta": 3,
+      "explicacion": "El stock de seguridad (SS) es la reserva que se quiere mantener en almacén."
+    },
+    {
+      "enunciado": "En el ejemplo de 1.000 tortillas de lunes a viernes para entregar el viernes, el MRP permite calcular…",
+      "opciones": [
+        "Cuántos kg de patatas y huevos y qué otros ingredientes hacen falta, y cuándo deben estar disponibles",
+        "Solo el precio de venta",
+        "Solo el número de operarios",
+        "Solo el coste de la luz"
+      ],
+      "correcta": 0,
+      "explicacion": "Es el ejemplo de la pág. 46."
+    },
+    {
+      "enunciado": "Una vez calculadas las necesidades netas, el MRP permite…",
+      "opciones": [
+        "Calcular los materiales necesarios y emitir las órdenes de compra",
+        "Calcular el organigrama",
+        "Dibujar el diagrama de Gantt",
+        "Fijar el precio final"
+      ],
+      "correcta": 0,
+      "explicacion": "Las órdenes se emiten teniendo en cuenta el plazo de aprovisionamiento."
+    },
+    {
+      "enunciado": "NB = 800, D = 500 y SS = 100. ¿Cuáles son las necesidades netas?",
+      "opciones": [
+        "200",
+        "400",
+        "1.200",
+        "300"
+      ],
+      "correcta": 1,
+      "explicacion": "NN = 800 − 500 + 100 = 400."
+    },
+    {
+      "enunciado": "NB = 1.200, D = 200 y SS = 0. ¿Necesidades netas?",
+      "opciones": [
+        "1.000",
+        "1.400",
+        "1.200",
+        "800"
+      ],
+      "correcta": 0,
+      "explicacion": "NN = 1.200 − 200 + 0 = 1.000."
+    },
+    {
+      "enunciado": "¿Qué es una rotura de stock?",
+      "opciones": [
+        "Comprar de más",
+        "Quedarse sin existencias, ya sea de producto terminado o de materias primas o materiales",
+        "Un exceso de producto terminado",
+        "Un retraso en el pago"
+      ],
+      "correcta": 1,
+      "explicacion": "El MRP busca evitar tanto las roturas de stock como los inventarios innecesarios."
+    }
+  ]
+}

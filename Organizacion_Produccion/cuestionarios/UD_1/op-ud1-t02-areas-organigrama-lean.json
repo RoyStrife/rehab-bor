@@ -1,0 +1,232 @@
+{
+  "titulo": "UD1 · Áreas funcionales, organigrama y enfoque Lean",
+  "descripcion": "Áreas de la empresa, departamentalización, organigrama y pirámide tradicional frente a Lean (P1, págs. 20-34)",
+  "preguntas": [
+    {
+      "enunciado": "¿Cuál es el «alma máter» de una industria alimentaria?",
+      "opciones": [
+        "El área financiera",
+        "El área comercial",
+        "El área de compras",
+        "El área de producción, porque sin ella no existiría la industria"
+      ],
+      "correcta": 3,
+      "explicacion": "El área de producción elabora los productos que llegan al consumidor, transformando materias primas con procesos racionales, seguros y eficientes."
+    },
+    {
+      "enunciado": "¿Qué área se encarga de conseguir materias primas de buena calidad, a tiempo y al mejor precio?",
+      "opciones": [
+        "El área financiera",
+        "El área de compras",
+        "El área comercial",
+        "El área de producción"
+      ],
+      "correcta": 1,
+      "explicacion": "Compras asegura que la producción no se detenga por falta de materiales. Financiera gestiona el dinero y comercial vende."
+    },
+    {
+      "enunciado": "El organigrama tradicional más básico de una industria incluye los departamentos de…",
+      "opciones": [
+        "Calidad, logística, marketing y sostenibilidad",
+        "Compras, producción y recursos humanos",
+        "Compras, producción, comercial y financiero",
+        "Producción, I+D+i y auditoría interna"
+      ],
+      "correcta": 2,
+      "explicacion": "Según el tamaño pueden existir otros (RRHH, PRL, Logística, Marketing, RSC, Sostenibilidad, Auditoría interna, Asesoría jurídica…)."
+    },
+    {
+      "enunciado": "¿Qué es un organigrama?",
+      "opciones": [
+        "Un calendario de turnos de producción",
+        "Un esquema gráfico de la estructura funcional de la empresa: cómo se organizan las funciones y quién depende de quién",
+        "Un documento que describe cómo hacer una tarea",
+        "Un diagrama de las fases de fabricación"
+      ],
+      "correcta": 1,
+      "explicacion": "Permite ver de un vistazo la jerarquía y la distribución de los departamentos. Se basa en la departamentalización."
+    },
+    {
+      "enunciado": "¿Qué hace el área financiera?",
+      "opciones": [
+        "Obtiene y gestiona el dinero que la empresa necesita: pagos, cobros, inversiones y fuentes de financiación",
+        "Vende los productos elaborados",
+        "Adquiere las materias primas",
+        "Elabora los alimentos"
+      ],
+      "correcta": 0,
+      "explicacion": "Gracias a ella la empresa mantiene su actividad diaria y planifica su crecimiento."
+    },
+    {
+      "enunciado": "¿Qué área conecta directamente la industria con el mercado y los consumidores?",
+      "opciones": [
+        "El área de compras",
+        "El área financiera",
+        "El área comercial, que conoce las necesidades de los clientes y vende los productos",
+        "El área de producción"
+      ],
+      "correcta": 2,
+      "explicacion": "Incluye la gestión de pedidos, la atención al cliente, la promoción y el control de ventas."
+    },
+    {
+      "enunciado": "¿Qué asegura un buen sistema de compras?",
+      "opciones": [
+        "Que se vendan más productos",
+        "Que se obtengan más préstamos",
+        "Que la producción no se detenga por falta de materiales",
+        "Que se reduzcan los turnos"
+      ],
+      "correcta": 2,
+      "explicacion": "Compras debe garantizar materias primas de buena calidad, a tiempo y al mejor precio posible."
+    },
+    {
+      "enunciado": "La departamentalización es…",
+      "opciones": [
+        "La clasificación del trabajo en base a funciones y con varios niveles jerárquicos, que agrupa actividades y empleados",
+        "Un sistema de producción japonés",
+        "Una técnica de planificación de la demanda",
+        "Un tipo de decisión táctica"
+      ],
+      "correcta": 0,
+      "explicacion": "Es el sistema tradicional de organización en una industria."
+    },
+    {
+      "enunciado": "¿Cuál es el objetivo de un organigrama?",
+      "opciones": [
+        "Calcular los costes de producción",
+        "Programar los turnos de la semana",
+        "Describir cómo se hace una tarea",
+        "Visualizar de un vistazo la jerarquía y la distribución de los departamentos"
+      ],
+      "correcta": 3,
+      "explicacion": "Representa cómo se organizan las funciones y quién depende de quién."
+    },
+    {
+      "enunciado": "Según el tamaño de la empresa, además de compras, producción, comercial y financiero pueden existir…",
+      "opciones": [
+        "RRHH, PRL, logística, marketing, RSC, sostenibilidad, auditoría interna o asesoría jurídica",
+        "Solo un departamento de ventas",
+        "Únicamente departamentos de producción",
+        "Ningún otro departamento"
+      ],
+      "correcta": 0,
+      "explicacion": "Estos departamentos pueden encontrarse además en diferentes niveles jerárquicos."
+    },
+    {
+      "enunciado": "Función del área de producción:",
+      "opciones": [
+        "Gestionar pagos y cobros",
+        "Transformar materias primas en productos elaborados listos para su distribución y consumo, con procesos racionales, seguros y eficientes",
+        "Atender a los clientes",
+        "Adquirir suministros"
+      ],
+      "correcta": 1,
+      "explicacion": "Sin esta área no existiría la industria alimentaria."
+    },
+    {
+      "enunciado": "¿Qué se pretende con una organización plana, con menos niveles jerárquicos?",
+      "opciones": [
+        "Aumentar el número de mandos intermedios",
+        "Acortar la comunicación y el tiempo entre problema y solución",
+        "Centralizar todas las decisiones",
+        "Reducir la formación del personal"
+      ],
+      "correcta": 1,
+      "explicacion": "Es lo que persigue la organización plana en células de trabajo."
+    },
+    {
+      "enunciado": "¿Qué nombres recibe también la célula de trabajo según la presentación?",
+      "opciones": [
+        "Kanban, Kaizen o Jidoka",
+        "Gantt, PERT o CPM",
+        "MRP, ERP o OF",
+        "GAP, UAP, círculo, red o línea"
+      ],
+      "correcta": 3,
+      "explicacion": "Es un grupo reducido de personas con entorno común, objetivos comunes y un coordinador o líder."
+    },
+    {
+      "enunciado": "En el organigrama de la presentación, ¿bajo qué departamento aparece I+D+i?",
+      "opciones": [
+        "Compras",
+        "Comercial",
+        "Financiero",
+        "Producción"
+      ],
+      "correcta": 3,
+      "explicacion": "Producción agrupa planificación, organización, control (calidad, costes, cantidades y fechas) e I+D+i."
+    },
+    {
+      "enunciado": "¿Cuál de estas NO es función del área financiera?",
+      "opciones": [
+        "Controlar pagos y cobros",
+        "Buscar fuentes de financiación internas o externas",
+        "Vender los productos elaborados",
+        "Gestionar las inversiones"
+      ],
+      "correcta": 2,
+      "explicacion": "Vender es función del área comercial."
+    },
+    {
+      "enunciado": "Según la presentación, el enfoque tradicional (pirámide) se caracteriza por…",
+      "opciones": [
+        "Autoridad descentralizada y equipos autónomos",
+        "Una base ancha de generadores de valor",
+        "Líderes que dan formación y soporte desde abajo",
+        "Muchos niveles jerárquicos y la información que sube hasta la cima"
+      ],
+      "correcta": 3,
+      "explicacion": "En Lean la pirámide se invierte y los generadores de valor quedan arriba."
+    },
+    {
+      "enunciado": "En una célula de trabajo, los objetivos comunes están representados por…",
+      "opciones": [
+        "El inspector externo",
+        "El gerente de la empresa",
+        "Un coordinador o líder",
+        "El área financiera"
+      ],
+      "correcta": 2,
+      "explicacion": "La célula agrupa a 5-8 personas que trabajan en un mismo entorno y con objetivos comunes."
+    },
+    {
+      "enunciado": "Observa el organigrama. ¿Qué funciones agrupa el departamento de producción?",
+      "imagen": "Organizacion_Produccion/cuestionarios/UD_1/img/organigrama.png",
+      "alt": "Organigrama tradicional: gerencia con compras, producción, comercial y financiero",
+      "opciones": [
+        "Aprovisionamiento y gestión de necesidades",
+        "Planificación, organización y control (calidad, costes, cantidades y fechas), además de I+D+i",
+        "Ventas y distribución",
+        "Pagos, cobros y financiación"
+      ],
+      "correcta": 1,
+      "explicacion": "En el organigrama, compras gestiona las necesidades (aprovisionamiento), comercial se ocupa de ventas y distribución, y producción agrupa planificación, organización, control e I+D+i."
+    },
+    {
+      "enunciado": "Según la figura, ¿qué cambia en el enfoque Lean respecto al tradicional?",
+      "imagen": "Organizacion_Produccion/cuestionarios/UD_1/img/piramide-lean.png",
+      "alt": "Pirámide tradicional frente a pirámide invertida Lean",
+      "opciones": [
+        "La pirámide se invierte: arriba están los generadores de valor y la dirección (CEO) queda en la base, dando formación, soporte y objetivos",
+        "Se añaden más niveles jerárquicos entre el CEO y los operarios",
+        "El CEO sigue en la cima y todo escala hacia él",
+        "Desaparecen los líderes y solo quedan los operarios"
+      ],
+      "correcta": 0,
+      "explicacion": "En Lean se amplía la base donde se genera valor para el cliente; los problemas se escalan y los resultados se comunican, y la dirección sostiene a quien produce."
+    },
+    {
+      "enunciado": "Según la figura, una célula de trabajo es un grupo reducido de…",
+      "imagen": "Organizacion_Produccion/cuestionarios/UD_1/img/celula-trabajo.png",
+      "alt": "Célula de trabajo: grupo de 5–8 personas con objetivos comunes y un líder",
+      "opciones": [
+        "5 a 8 personas, con un entorno de trabajo común, objetivos comunes y un coordinador o líder",
+        "20 a 30 personas, con varios jefes",
+        "2 personas, un operario y un inspector",
+        "Todas las personas de un departamento"
+      ],
+      "correcta": 0,
+      "explicacion": "Está alineada con una organización plana: menos niveles acortan la comunicación y el tiempo entre problema y solución."
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 {
-  "titulo": "UD1 · Secuenciación, lotes y flujo (batch, push, pull)",
-  "descripcion": "Reglas de secuencia FEP, PEPS y TPC, producción por lotes y los sistemas de flujo",
+  "titulo": "UD1 · Secuenciación, lotes y flujos push/pull",
+  "descripcion": "Reglas FEP, PEPS y TPC, producción por lotes y sistemas de flujo (P2, págs. 21-31)",
   "preguntas": [
     {
       "enunciado": "¿Qué es la secuenciación de la producción?",
@@ -18,21 +18,21 @@
       "opciones": [
         "El que llegó antes",
         "El trabajo más corto",
-        "El de mayor volumen",
-        "El trabajo con la fecha de entrega más próxima"
+        "El trabajo con la fecha de entrega más próxima",
+        "El de mayor volumen"
       ],
-      "correcta": 3,
+      "correcta": 2,
       "explicacion": "FEP: fecha de entrega más próxima. PEPS: primero en llegar. TPC: trabajo más corto."
     },
     {
       "enunciado": "La regla PEPS indica fabricar primero…",
       "opciones": [
+        "El que llegó antes",
         "El que se entrega antes",
         "El más corto",
-        "El que llegó antes",
         "El más caro"
       ],
-      "correcta": 2,
+      "correcta": 0,
       "explicacion": "Primero en entrar, primero en servirse."
     },
     {
@@ -49,34 +49,34 @@
     {
       "enunciado": "Dos pedidos usan la misma línea. Uno tarda 3 h y vence mañana; otro tarda 1 h y vence en una semana. ¿Qué fabrica primero la regla FEP?",
       "opciones": [
-        "El de 3 h, porque se entrega antes",
         "El de 1 h, porque es más corto",
+        "El de 3 h, porque se entrega antes",
         "El que llegó antes, sin importar fechas",
         "Ninguno: se fabrican a la vez"
       ],
-      "correcta": 0,
+      "correcta": 1,
       "explicacion": "FEP mira solo la fecha de entrega. TPC elegiría el de 1 h."
     },
     {
       "enunciado": "¿Qué otros criterios pueden usarse para secuenciar, además de las reglas FEP, PEPS y TPC?",
       "opciones": [
-        "Disponibilidad de materias primas, tiempos de limpieza y cambio de producto, capacidad de los equipos",
         "El color del envase",
+        "Disponibilidad de materias primas, tiempos de limpieza y cambio de producto, capacidad de los equipos",
         "El orden alfabético",
         "El número de operarios de turno de tarde únicamente"
       ],
-      "correcta": 0,
+      "correcta": 1,
       "explicacion": "Pág. 22."
     },
     {
       "enunciado": "Según la unidad, un lote es…",
       "opciones": [
-        "El conjunto de unidades producidas en idénticas condiciones y que presumiblemente tendrán características similares",
         "Un pedido de un cliente",
+        "El conjunto de unidades producidas en idénticas condiciones y que presumiblemente tendrán características similares",
         "La cantidad mensual planificada",
         "Un tipo de producto"
       ],
-      "correcta": 0,
+      "correcta": 1,
       "explicacion": "Normalmente se considera lote la cantidad diaria y es obligatorio etiquetar el lote en cada envase."
     },
     {
@@ -84,21 +84,21 @@
       "opciones": [
         "Se fabrica pieza a pieza sin esperas",
         "Solo se fabrica contra pedido unitario",
-        "Se fabrica una cantidad determinada de producto antes de iniciar otro lote o referencia",
-        "No se identifica el producto"
+        "No se identifica el producto",
+        "Se fabrica una cantidad determinada de producto antes de iniciar otro lote o referencia"
       ],
-      "correcta": 2,
+      "correcta": 3,
       "explicacion": "Cada lote puede identificarse y controlarse durante el proceso y a lo largo de toda la cadena alimentaria."
     },
     {
       "enunciado": "¿Qué es el flujo de producción?",
       "opciones": [
+        "El movimiento sistemático y continuo de materiales, componentes y/o productos por las estaciones de trabajo y etapas de transformación",
         "El orden de entrada de los trabajos",
         "El conjunto de unidades en idénticas condiciones",
-        "La cantidad de stock de seguridad",
-        "El movimiento sistemático y continuo de materiales, componentes y/o productos por las estaciones de trabajo y etapas de transformación"
+        "La cantidad de stock de seguridad"
       ],
-      "correcta": 3,
+      "correcta": 0,
       "explicacion": "Tipos principales: por lotes, push y pull."
     },
     {
@@ -116,11 +116,11 @@
       "enunciado": "El flujo push (por empuje)…",
       "opciones": [
         "Activa la producción solo con pedidos reales",
-        "Inicia la producción antes del pedido, en base a previsiones, empujando el producto a las etapas siguientes",
         "Produce pieza única bajo demanda",
+        "Inicia la producción antes del pedido, en base a previsiones, empujando el producto a las etapas siguientes",
         "Evita todo stock intermedio"
       ],
-      "correcta": 1,
+      "correcta": 2,
       "explicacion": "Se produce para almacenar y suele generar stocks intermedios (WIP). Ejemplos: fordismo, capturas de pescado, vendimia."
     },
     {
@@ -138,22 +138,22 @@
       "enunciado": "¿Qué sistema es más adecuado, según la unidad, para productos frescos o refrigerados?",
       "opciones": [
         "Push",
-        "Pull",
         "Siempre por lotes grandes",
-        "Ninguno"
+        "Ninguno",
+        "Pull"
       ],
-      "correcta": 1,
+      "correcta": 3,
       "explicacion": "Su vida útil limitada hace poco recomendable producir para almacenar."
     },
     {
       "enunciado": "La vendimia y posterior fabricación de vino es un ejemplo de…",
       "opciones": [
         "Flujo pull",
-        "Flujo push",
         "Flujo de pieza única",
-        "Producción por pedido"
+        "Producción por pedido",
+        "Flujo push"
       ],
-      "correcta": 1,
+      "correcta": 3,
       "explicacion": "La producción depende de la estacionalidad de la cosecha, no del pedido del cliente."
     },
     {
@@ -166,6 +166,63 @@
       ],
       "correcta": 2,
       "explicacion": "Con lotes cada estación espera al lote anterior; pieza a pieza se trabaja en paralelo."
+    },
+    {
+      "enunciado": "Dos trabajos comparten línea: A tarda 3 h y B 1 h. Con la regla TPC, ¿cuál va primero?",
+      "opciones": [
+        "B, por ser el más corto",
+        "A, por ser el más largo",
+        "El que llegó último",
+        "Da igual: TPC no ordena"
+      ],
+      "correcta": 0,
+      "explicacion": "TPC (trabajo más corto) prioriza el de menor tiempo de fabricación."
+    },
+    {
+      "enunciado": "¿Qué se considera normalmente un lote en alimentación y qué es obligatorio?",
+      "opciones": [
+        "La cantidad anual; es opcional etiquetarlo",
+        "La cantidad diaria; es obligatorio etiquetar el lote en cada envase de alimento",
+        "El producto de una hora; no se etiqueta",
+        "Un pedido de un cliente; solo se etiqueta en el almacén"
+      ],
+      "correcta": 1,
+      "explicacion": "El lote identifica y controla el producto a lo largo de toda la cadena alimentaria."
+    },
+    {
+      "enunciado": "¿Qué provoca habitualmente el flujo push?",
+      "opciones": [
+        "Cero stocks intermedios",
+        "Producción solo contra pedido",
+        "Stocks intermedios (WIP), porque se produce para almacenar y no para vender",
+        "Flujo de pieza única"
+      ],
+      "correcta": 2,
+      "explicacion": "Todos los puestos operan a una capacidad fija, p. ej. 10 piezas/hora."
+    },
+    {
+      "enunciado": "En el flujo pull…",
+      "opciones": [
+        "Se basa en flujo de pieza única, aunque puede ser necesario un pequeño stock en alguna etapa o de producto final",
+        "No se permite ningún stock en ningún caso",
+        "Se fabrica según previsión anual",
+        "Los puestos trabajan a una capacidad fija"
+      ],
+      "correcta": 0,
+      "explicacion": "Se produce únicamente para vender; ejemplo: Toyota, productos frescos o refrigerados."
+    },
+    {
+      "enunciado": "¿Qué lead time muestra la figura para la producción por lotes y para el flujo pieza a pieza?",
+      "imagen": "Organizacion_Produccion/cuestionarios/UD_1/img/lotes-flujo.png",
+      "alt": "Producción por lotes (30 min de lead time) frente a flujo pieza a pieza (15 min)",
+      "opciones": [
+        "15 minutos con lotes y 30 pieza a pieza",
+        "30 minutos en ambos",
+        "10 minutos con lotes y 1 minuto pieza a pieza",
+        "30 minutos con lotes y 15 minutos pieza a pieza"
+      ],
+      "correcta": 3,
+      "explicacion": "Con lotes, cada estación espera a que termine el lote anterior. Pieza a pieza, las estaciones trabajan en paralelo y el lead time se reduce."
     }
   ]
 }
